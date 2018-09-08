@@ -28,8 +28,14 @@
   Vision Node
     vision_service
     VisionPub
+
+
 練習步驟
   try coscup_3
   做自己的 Vision Node, make, try
+    第一版：第一個自製的 service, 主要是熟悉 build 流程
+    Committed revision 3. 
+     
   做自己的 Harvest Node  , make, try
+  	第二版加入 publisher, subscriber,logger
   完成其他的部分

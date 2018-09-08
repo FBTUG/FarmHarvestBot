@@ -1,11 +1,28 @@
 ------ Commands List ------
 cd ~/catkin_ws/src
-catkin_create_pkg harvest_try1 rospy std_msgs
+catkin_create_pkg coscup_3_service rospy std_msgs
+cd coscup_3_service
+mkdir srv
+vim srv/AddTwoInts.srv
+vim package.xml
+vim CMakeLists.txt
+cd ../..
 catkin_make
 source devel/setup.bash
-rossrv show harvest_try1/fruit_pos
+rossrv show coscup_3_service/AddTwoInts
+------------
 
--- BUILD -- 
+osboxes@osboxes:~/catkin_ws/src/coscup_3_service$ tree
+.
+├── CMakeLists.txt
+├── package.xml
+├── src
+│   ├── add_two_ints_client.py
+│   └── add_two_ints_server.py
+└── srv
+└── AddTwoInts.srv
+
+
 osboxes@osboxes:~/catkin_ws$ catkin_make
 Base path: /home/osboxes/catkin_ws
 Source space: /home/osboxes/catkin_ws/src
@@ -30,39 +47,91 @@ Install space: /home/osboxes/catkin_ws/install
 -- catkin 0.7.14
 -- BUILD_SHARED_LIBS is on
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
--- ~~  traversing 1 packages in topological order:
--- ~~  - harvest_try1
+-- ~~  traversing 3 packages in topological order:
+-- ~~  - coscup_1_node
+-- ~~  - coscup_2_topic
+-- ~~  - coscup_3_service
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
--- +++ processing catkin package: 'harvest_try1'
--- ==> add_subdirectory(harvest_try1)
+-- +++ processing catkin package: 'coscup_1_node'
+-- ==> add_subdirectory(coscup_1_node)
+-- +++ processing catkin package: 'coscup_2_topic'
+-- ==> add_subdirectory(coscup_2_topic)
 -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
--- harvest_try1: 0 messages, 1 services
+-- coscup_2_topic: 1 messages, 0 services
+-- +++ processing catkin package: 'coscup_3_service'
+-- ==> add_subdirectory(coscup_3_service)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- coscup_3_service: 0 messages, 1 services
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/osboxes/catkin_ws/build
 ####
 #### Running command: "make -j2 -l2" in "/home/osboxes/catkin_ws/build"
 ####
-Scanning dependencies of target std_msgs_generate_messages_nodejs
 [  0%] Built target std_msgs_generate_messages_nodejs
-Scanning dependencies of target std_msgs_generate_messages_cpp
-[  0%] Built target std_msgs_generate_messages_cpp
-[  0%] Built target _harvest_try1_generate_messages_check_deps_fruit_pos
-Scanning dependencies of target std_msgs_generate_messages_py
-[  0%] Built target std_msgs_generate_messages_py
-Scanning dependencies of target std_msgs_generate_messages_eus
-Scanning dependencies of target std_msgs_generate_messages_lisp
 [  0%] Built target std_msgs_generate_messages_eus
-[ 14%] Built target harvest_try1_generate_messages_nodejs
-[ 14%] Built target std_msgs_generate_messages_lisp
-[ 42%] Built target harvest_try1_generate_messages_py
-[ 57%] Built target harvest_try1_generate_messages_cpp
-[ 85%] Built target harvest_try1_generate_messages_eus
-[100%] Built target harvest_try1_generate_messages_lisp
-[100%] Built target harvest_try1_generate_messages
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target _coscup_2_topic_generate_messages_check_deps_Num
+Scanning dependencies of target _coscup_3_service_generate_messages_check_deps_AddTwoInts
+[  0%] Built target std_msgs_generate_messages_cpp
+[  7%] Built target coscup_2_topic_generate_messages_nodejs
+[  7%] Built target _coscup_3_service_generate_messages_check_deps_AddTwoInts
+[ 21%] Built target coscup_2_topic_generate_messages_eus
+[ 35%] Built target coscup_2_topic_generate_messages_py
+[ 42%] Built target coscup_2_topic_generate_messages_lisp
+Scanning dependencies of target coscup_3_service_generate_messages_lisp
+[ 50%] Generating Lisp code from coscup_3_service/AddTwoInts.srv
+[ 57%] Built target coscup_2_topic_generate_messages_cpp
+Scanning dependencies of target coscup_3_service_generate_messages_py
+[ 64%] Generating Python code from SRV coscup_3_service/AddTwoInts
+[ 64%] Built target coscup_3_service_generate_messages_lisp
+Scanning dependencies of target coscup_3_service_generate_messages_cpp
+[ 71%] Generating C++ code from coscup_3_service/AddTwoInts.srv
+[ 78%] Generating Python srv __init__.py for coscup_3_service
+[ 78%] Built target coscup_3_service_generate_messages_py
+Scanning dependencies of target coscup_3_service_generate_messages_nodejs
+[ 85%] Generating Javascript code from coscup_3_service/AddTwoInts.srv
+[ 85%] Built target coscup_3_service_generate_messages_cpp
+Scanning dependencies of target coscup_3_service_generate_messages_eus
+[ 85%] Built target coscup_3_service_generate_messages_nodejs
+[ 92%] Built target coscup_2_topic_generate_messages
+[ 92%] Generating EusLisp code from coscup_3_service/AddTwoInts.srv
+[100%] Generating EusLisp manifest code for coscup_3_service
+[100%] Built target coscup_3_service_generate_messages_eus
+Scanning dependencies of target coscup_3_service_generate_messages
+[100%] Built target coscup_3_service_generate_messages
+
+------ Commands List ------
+寫個 server
+cd coscup_3_service
+vim src/add_two_ints_server.py
+cd ../..
+source devel/setup.bash
+chmod +x src/add_two_ints_server.py
+rosrun coscup_3_service add_two_ints_server.py
+-------
+
+osboxes@osboxes:~/catkin_ws/src/coscup_3_service$ rosrun coscup_3_service add_two_ints_server.py
+Ready to add two ints.
+
+
+------ Commands List ------
+寫一個client，送出request給server
+cd coscup_3_service
+vim src/add_two_ints_client.py
+chmod +x src/add_two_ints_client.py
+rosrun coscup_3_service add_two_ints_client.py 5 6
+-------
+osboxes@osboxes:~/catkin_ws$ rosrun coscup_3_service add_two_ints_client.py 5 6
+Requesting 5+6
+5 + 6 = 11
+
+=> 會看到 server 顯示
+Returning [5 + 6 = 11]
+
 
 ------ 測試 harvest_try1 ------
-roscore
 
 chmod +x src/vision_server.py
 rosrun harvest_try1 vision_server.py
@@ -70,13 +139,110 @@ rosrun harvest_try1 vision_server.py
 chmod +x src/vision_client.py
 rosrun harvest_try1 vision_client.py 5 6
 
----- SERVER -----
+------ 測試 harvest_try1 第二版------
+rosrun harvest_try1 vision_pub.py
+rosrun harvest_try1 harvest.py
+-------------
+osboxes@osboxes:~/catkin_ws$ cat tip.sh
+#cp -r ../FarmHarvestBot/harvest_try1 .
+#catkin_make
+#source devel/setup.bash
+#rosrun harvest_try1 vision_server.py
+#rosrun harvest_try1 vision_client.py 5 6
+WS=~/catkin_ws
+echo "run at ~catkin_ws"
+echo "Updating file from shared directory"
+cp -r FarmHarvestBot/harvest_try1 src/
+echo "Make..."
+catkin_make
 
-osboxes@osboxes:~/catkin_ws/src/harvest_try1$ rosrun harvest_try1 vision_server.py
-Ready to process vision commands.
-Returning [5 + 6 = 11]
 
----- CLIENT -----
-osboxes@osboxes:~/catkin_ws/src/harvest_try1$ rosrun harvest_try1 vision_client.py 10 11
-Requesting 10+11
-10 + 11 = 21
+osboxes@osboxes:~/catkin_ws$ ./tip.sh
+run at ~catkin_ws
+Updating file from shared directory
+Make...
+Base path: /home/osboxes/catkin_ws
+Source space: /home/osboxes/catkin_ws/src
+Build space: /home/osboxes/catkin_ws/build
+Devel space: /home/osboxes/catkin_ws/devel
+Install space: /home/osboxes/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/osboxes/catkin_ws/build"
+####
+-- Using CATKIN_DEVEL_PREFIX: /home/osboxes/catkin_ws/devel
+-- Using CMAKE_PREFIX_PATH: /home/osboxes/catkin_ws/devel;/opt/ros/kinetic
+-- This workspace overlays: /home/osboxes/catkin_ws/devel;/opt/ros/kinetic
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/osboxes/catkin_ws/build/test_results
+-- Found gmock sources under '/usr/src/gmock': gmock will be built
+-- Found gtest sources under '/usr/src/gmock': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.14
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - harvest_try1
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'harvest_try1'
+-- ==> add_subdirectory(harvest_try1)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- harvest_try1: 1 messages, 1 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/osboxes/catkin_ws/build
+####
+#### Running command: "make -j2 -l2" in "/home/osboxes/catkin_ws/build"
+####
+Scanning dependencies of target _harvest_try1_generate_messages_check_deps_FruitCnt
+[  0%] Built target _harvest_try1_generate_messages_check_deps_fruit_pos
+[  0%] Built target _harvest_try1_generate_messages_check_deps_FruitCnt
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  7%] Generating Javascript code from harvest_try1/FruitCnt.msg
+[ 15%] Generating C++ code from harvest_try1/FruitCnt.msg
+[ 23%] Generating Javascript code from harvest_try1/fruit_pos.srv
+[ 30%] Generating C++ code from harvest_try1/fruit_pos.srv
+[ 30%] Built target harvest_try1_generate_messages_nodejs
+[ 38%] Generating Python from MSG harvest_try1/FruitCnt
+[ 46%] Generating Python code from SRV harvest_try1/fruit_pos
+[ 46%] Built target harvest_try1_generate_messages_cpp
+[ 61%] Generating EusLisp code from harvest_try1/FruitCnt.msg
+[ 61%] Generating Python msg __init__.py for harvest_try1
+[ 69%] Generating EusLisp code from harvest_try1/fruit_pos.srv
+[ 76%] Generating Python srv __init__.py for harvest_try1
+[ 84%] Built target harvest_try1_generate_messages_eus
+[ 92%] Generating Lisp code from harvest_try1/FruitCnt.msg
+[ 92%] Built target harvest_try1_generate_messages_py
+[100%] Generating Lisp code from harvest_try1/fruit_pos.srv
+[100%] Built target harvest_try1_generate_messages_lisp
+[100%] Built target harvest_try1_generate_messages
+
+osboxes@osboxes:~/catkin_ws$ source devel/setup.bash
+osboxes@osboxes:~/catkin_ws$ rosrun harvest_try1 vision_pub.py
+
+
+osboxes@osboxes:~/catkin_ws$ rosrun harvest_try1 harvest.py
+[INFO] [1536365962.897323]: I heard fruit_cnt=0
+[INFO] [1536365962.997542]: I heard fruit_cnt=0
+[INFO] [1536365963.097438]: I heard fruit_cnt=0
+[INFO] [1536365963.198129]: I heard fruit_cnt=0
+[INFO] [1536365963.302448]: I heard fruit_cnt=1
+[INFO] [1536365963.397959]: I heard fruit_cnt=0
+[INFO] [1536365963.500991]: I heard fruit_cnt=0
+[INFO] [1536365963.598122]: I heard fruit_cnt=0
+
+
+osboxes@osboxes:~/catkin_ws$ rosrun harvest_try1 vision_sub.py
+[INFO] [1536365903.097337]: I heard fruit_cnt=0
+[INFO] [1536365903.198313]: I heard fruit_cnt=0
+[INFO] [1536365903.300628]: I heard fruit_cnt=1
+[INFO] [1536365903.405974]: I heard fruit_cnt=0
+
+

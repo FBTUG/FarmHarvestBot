@@ -10,7 +10,7 @@ def handle_fruit_pos(req):
 def vision_server():
     rospy.init_node('vision_server')
     s = rospy.Service('fruit_pos', fruit_pos, handle_fruit_pos)
-    print "Ready to process vision commands."
+    print "Ready to process vision commands.."
     rospy.spin()
 
 if __name__ == "__main__":
