@@ -245,4 +245,381 @@ osboxes@osboxes:~/catkin_ws$ rosrun harvest_try1 vision_sub.py
 [INFO] [1536365903.300628]: I heard fruit_cnt=1
 [INFO] [1536365903.405974]: I heard fruit_cnt=0
 
+--v3 hit
+rosrun harvest_try1 vision_pub.py
+rosrun harvest_try1 vision_server.py
+rosrun harvest_try1 car_server.py
+rosrun harvest_try1 harvest.py
+-- result
+
+osboxes@osboxes:~/catkin_ws$ ./tip.sh 
+run at ~catkin_ws
+Updating file from shared directory
+Make...
+Base path: /home/osboxes/catkin_ws
+Source space: /home/osboxes/catkin_ws/src
+Build space: /home/osboxes/catkin_ws/build
+Devel space: /home/osboxes/catkin_ws/devel
+Install space: /home/osboxes/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/osboxes/catkin_ws/build"
+####
+-- Using CATKIN_DEVEL_PREFIX: /home/osboxes/catkin_ws/devel
+-- Using CMAKE_PREFIX_PATH: /home/osboxes/catkin_ws/devel;/opt/ros/kinetic
+-- This workspace overlays: /home/osboxes/catkin_ws/devel;/opt/ros/kinetic
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/osboxes/catkin_ws/build/test_results
+-- Found gmock sources under '/usr/src/gmock': gmock will be built
+-- Found gtest sources under '/usr/src/gmock': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.14
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - harvest_try1
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'harvest_try1'
+-- ==> add_subdirectory(harvest_try1)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- harvest_try1: 1 messages, 2 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/osboxes/catkin_ws/build
+####
+#### Running command: "make -j2 -l2" in "/home/osboxes/catkin_ws/build"
+####
+[  0%] Built target _harvest_try1_generate_messages_check_deps_CarMove
+[  0%] Built target _harvest_try1_generate_messages_check_deps_fruit_pos
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _harvest_try1_generate_messages_check_deps_FruitCnt
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  5%] Generating Javascript code from harvest_try1/FruitCnt.msg
+[  5%] Built target std_msgs_generate_messages_lisp
+[ 11%] Generating C++ code from harvest_try1/FruitCnt.msg
+[ 16%] Generating Javascript code from harvest_try1/fruit_pos.srv
+[ 22%] Generating Javascript code from harvest_try1/CarMove.srv
+[ 22%] Built target harvest_try1_generate_messages_nodejs
+[ 27%] Generating EusLisp code from harvest_try1/FruitCnt.msg
+[ 33%] Generating C++ code from harvest_try1/fruit_pos.srv
+[ 38%] Generating EusLisp code from harvest_try1/fruit_pos.srv
+[ 44%] Generating EusLisp code from harvest_try1/CarMove.srv
+[ 50%] Built target harvest_try1_generate_messages_eus
+[ 55%] Generating Python from MSG harvest_try1/FruitCnt
+[ 61%] Generating C++ code from harvest_try1/CarMove.srv
+[ 66%] Generating Python code from SRV harvest_try1/fruit_pos
+[ 72%] Generating Python code from SRV harvest_try1/CarMove
+[ 77%] Generating Python msg __init__.py for harvest_try1
+[ 77%] Built target harvest_try1_generate_messages_cpp
+[ 83%] Generating Lisp code from harvest_try1/FruitCnt.msg
+[ 88%] Generating Lisp code from harvest_try1/fruit_pos.srv
+[ 94%] Generating Python srv __init__.py for harvest_try1
+[100%] Generating Lisp code from harvest_try1/CarMove.srv
+[100%] Built target harvest_try1_generate_messages_lisp
+[100%] Built target harvest_try1_generate_messages_py
+[100%] Built target harvest_try1_generate_messages
+
+
+osboxes@osboxes:~/catkin_ws$ rosrun harvest_try1 vision_pub.py
+
+osboxes@osboxes:~/catkin_ws$ rosrun harvest_try1 vision_server.py
+[INFO] [1536382820.151022]: Ready to process vision commands..
+[INFO] [1536382975.193866]: vision_server get request! Ignore useless input 0 , 0 ]
+[INFO] [1536382977.754785]: vision_server get request! Ignore useless input 0 , 0 ]
+[INFO] [1536382980.291790]: vision_server get request! Ignore useless input 0 , 0 ]
+
+osboxes@osboxes:~/catkin_ws$ rosrun harvest_try1 car_server.py
+[INFO] [1536384070.301287]: current running mode=debug
+[INFO] [1536384070.501186]: Ready to process car commands..
+[INFO] [1536384072.817939]: car_server get request! [input 10 , 0 ]
+[INFO] [1536384072.921022]: car_server get request! [input 10 , 0 ]
+[INFO] [1536384073.032862]: car_server get request! [input 10 , 0 ]
+[INFO] [1536384073.124979]: car_server get request! [input 10 , 0 ]
+[INFO] [1536384073.228183]: car_server get request! [input 10 , 0 ]
+
+osboxes@osboxes:~/catkin_ws$ rosrun harvest_try1 harvest.py
+[INFO] [1536384072.818831]: car move to diff_x = 10, diff_y= 0, cur_x=10, cur_y=0
+[INFO] [1536384072.904409]: I heard fruit_cnt=0
+[INFO] [1536384072.926528]: car move to diff_x = 10, diff_y= 0, cur_x=20, cur_y=0
+[INFO] [1536384073.003180]: I heard fruit_cnt=0
+[INFO] [1536384073.035211]: car move to diff_x = 10, diff_y= 0, cur_x=30, cur_y=0
+[INFO] [1536384073.105404]: I heard fruit_cnt=0
+[INFO] [1536384073.126220]: car move to diff_x = 10, diff_y= 0, cur_x=40, cur_y=0
+[INFO] [1536384073.203735]: I heard fruit_cnt=0
+[INFO] [1536384073.229201]: car move to diff_x = 10, diff_y= 0, cur_x=50, cur_y=0
+[INFO] [1536384073.303817]: I heard fruit_cnt=0
+[INFO] [1536384073.328715]: car move to diff_x = 10, diff_y= 0, cur_x=60, cur_y=0
+[INFO] [1536384073.404698]: I heard fruit_cnt=0
+[INFO] [1536384073.425529]: car move to diff_x = 10, diff_y= 0, cur_x=70, cur_y=0
+[INFO] [1536384073.504960]: I heard fruit_cnt=0
+[INFO] [1536384073.522421]: car move to diff_x = 10, diff_y= 0, cur_x=80, cur_y=0
+[INFO] [1536384073.603578]: I heard fruit_cnt=0
+[INFO] [1536384073.627444]: car move to diff_x = 10, diff_y= 0, cur_x=90, cur_y=0
+[INFO] [1536384073.702866]: I heard fruit_cnt=0
+[INFO] [1536384073.734703]: car move to diff_x = 10, diff_y= 0, cur_x=100, cur_y=0
+[INFO] [1536384073.812134]: I heard fruit_cnt=0
+[INFO] [1536384073.827025]: car move to diff_x = 10, diff_y= 0, cur_x=110, cur_y=0
+[INFO] [1536384073.904727]: I heard fruit_cnt=0
+[INFO] [1536384073.924674]: car move to diff_x = 10, diff_y= 0, cur_x=120, cur_y=0
+[INFO] [1536384074.010899]: I heard fruit_cnt=0
+[INFO] [1536384074.022236]: car move to diff_x = 10, diff_y= 0, cur_x=130, cur_y=0
+[INFO] [1536384074.103514]: I heard fruit_cnt=0
+[INFO] [1536384074.126141]: car move to diff_x = 10, diff_y= 0, cur_x=140, cur_y=0
+[INFO] [1536384074.204078]: I heard fruit_cnt=0
+[INFO] [1536384074.228188]: car move to diff_x = 10, diff_y= 0, cur_x=150, cur_y=0
+[INFO] [1536384074.302759]: I heard fruit_cnt=0
+[INFO] [1536384074.349386]: car move to diff_x = 10, diff_y= 0, cur_x=160, cur_y=0
+[INFO] [1536384074.416297]: I heard fruit_cnt=0
+[INFO] [1536384074.427776]: car move to diff_x = 10, diff_y= 0, cur_x=170, cur_y=0
+[INFO] [1536384074.503277]: I heard fruit_cnt=0
+[INFO] [1536384074.535422]: car move to diff_x = 10, diff_y= 0, cur_x=180, cur_y=0
+[INFO] [1536384074.603955]: I heard fruit_cnt=0
+[INFO] [1536384074.635261]: car move to diff_x = 10, diff_y= 0, cur_x=190, cur_y=0
+[INFO] [1536384074.704825]: I heard fruit_cnt=0
+[INFO] [1536384074.724708]: car move to diff_x = 10, diff_y= 0, cur_x=200, cur_y=0
+[INFO] [1536384074.803372]: I heard fruit_cnt=0
+[INFO] [1536384074.825854]: car move to diff_x = 10, diff_y= 0, cur_x=210, cur_y=0
+[INFO] [1536384074.903018]: I heard fruit_cnt=0
+[INFO] [1536384074.946937]: car move to diff_x = 10, diff_y= 0, cur_x=220, cur_y=0
+[INFO] [1536384075.013991]: I heard fruit_cnt=0
+[INFO] [1536384075.029594]: car move to diff_x = 10, diff_y= 0, cur_x=230, cur_y=0
+[INFO] [1536384075.102885]: I heard fruit_cnt=1
+[INFO] [1536384075.113669]: fruit found!
+[INFO] [1536384075.134063]: ask vision to find the position of fruit, position index result=0
+[INFO] [1536384075.135233]: ask robot to pick that one!
+[INFO] [1536384075.205319]: I heard fruit_cnt=1
+[INFO] [1536384075.308515]: I heard fruit_cnt=1
+[INFO] [1536384075.402765]: I heard fruit_cnt=1
+[INFO] [1536384075.503312]: I heard fruit_cnt=1
+[INFO] [1536384075.605810]: I heard fruit_cnt=1
+[INFO] [1536384075.707940]: I heard fruit_cnt=1
+[INFO] [1536384075.803617]: I heard fruit_cnt=1
+[INFO] [1536384075.902570]: I heard fruit_cnt=1
+[INFO] [1536384076.002429]: I heard fruit_cnt=1
+[INFO] [1536384076.107696]: I heard fruit_cnt=1
+[INFO] [1536384076.202397]: I heard fruit_cnt=1
+[INFO] [1536384076.307934]: I heard fruit_cnt=1
+[INFO] [1536384076.403137]: I heard fruit_cnt=1
+[INFO] [1536384076.503748]: I heard fruit_cnt=1
+[INFO] [1536384076.603154]: I heard fruit_cnt=1
+[INFO] [1536384076.705328]: I heard fruit_cnt=1
+[INFO] [1536384076.803199]: I heard fruit_cnt=1
+[INFO] [1536384076.910509]: I heard fruit_cnt=1
+[INFO] [1536384077.003772]: I heard fruit_cnt=1
+[INFO] [1536384077.104119]: I heard fruit_cnt=1
+[INFO] [1536384077.203427]: I heard fruit_cnt=1
+[INFO] [1536384077.303555]: I heard fruit_cnt=1
+[INFO] [1536384077.403500]: I heard fruit_cnt=1
+[INFO] [1536384077.503020]: I heard fruit_cnt=1
+[INFO] [1536384077.604224]: I heard fruit_cnt=1
+[INFO] [1536384077.638735]: fruit found!
+[INFO] [1536384077.656587]: ask vision to find the position of fruit, position index result=1
+[INFO] [1536384077.659921]: ask robot to pick that one!
+[INFO] [1536384077.703180]: I heard fruit_cnt=1
+[INFO] [1536384077.803298]: I heard fruit_cnt=1
+[INFO] [1536384077.902620]: I heard fruit_cnt=1
+[INFO] [1536384078.002776]: I heard fruit_cnt=1
+[INFO] [1536384078.102606]: I heard fruit_cnt=1
+[INFO] [1536384078.203347]: I heard fruit_cnt=1
+[INFO] [1536384078.302900]: I heard fruit_cnt=1
+[INFO] [1536384078.402903]: I heard fruit_cnt=1
+[INFO] [1536384078.508463]: I heard fruit_cnt=1
+[INFO] [1536384078.606177]: I heard fruit_cnt=1
+[INFO] [1536384078.702819]: I heard fruit_cnt=1
+[INFO] [1536384078.804403]: I heard fruit_cnt=1
+[INFO] [1536384078.904552]: I heard fruit_cnt=1
+[INFO] [1536384079.004191]: I heard fruit_cnt=1
+[INFO] [1536384079.103063]: I heard fruit_cnt=1
+[INFO] [1536384079.202805]: I heard fruit_cnt=1
+[INFO] [1536384079.302742]: I heard fruit_cnt=1
+[INFO] [1536384079.402847]: I heard fruit_cnt=1
+[INFO] [1536384079.502703]: I heard fruit_cnt=1
+[INFO] [1536384079.603388]: I heard fruit_cnt=1
+[INFO] [1536384079.702618]: I heard fruit_cnt=1
+[INFO] [1536384079.803730]: I heard fruit_cnt=1
+[INFO] [1536384079.903377]: I heard fruit_cnt=1
+[INFO] [1536384080.002627]: I heard fruit_cnt=1
+[INFO] [1536384080.109482]: I heard fruit_cnt=1
+[INFO] [1536384080.161957]: fruit found!
+[INFO] [1536384080.173151]: ask vision to find the position of fruit, position index result=2
+[INFO] [1536384080.173980]: ask robot to pick that one!
+[INFO] [1536384080.203485]: I heard fruit_cnt=1
+[INFO] [1536384080.334771]: I heard fruit_cnt=1
+[INFO] [1536384080.402951]: I heard fruit_cnt=1
+[INFO] [1536384080.502942]: I heard fruit_cnt=1
+[INFO] [1536384080.607013]: I heard fruit_cnt=1
+[INFO] [1536384080.703057]: I heard fruit_cnt=1
+[INFO] [1536384080.803693]: I heard fruit_cnt=1
+[INFO] [1536384080.902846]: I heard fruit_cnt=1
+[INFO] [1536384081.003116]: I heard fruit_cnt=1
+[INFO] [1536384081.103170]: I heard fruit_cnt=1
+[INFO] [1536384081.203524]: I heard fruit_cnt=1
+[INFO] [1536384081.303641]: I heard fruit_cnt=1
+[INFO] [1536384081.403589]: I heard fruit_cnt=1
+[INFO] [1536384081.503598]: I heard fruit_cnt=1
+[INFO] [1536384081.603523]: I heard fruit_cnt=1
+[INFO] [1536384081.703645]: I heard fruit_cnt=1
+[INFO] [1536384081.802586]: I heard fruit_cnt=1
+[INFO] [1536384081.902609]: I heard fruit_cnt=1
+[INFO] [1536384082.003430]: I heard fruit_cnt=1
+[INFO] [1536384082.103188]: I heard fruit_cnt=1
+[INFO] [1536384082.203581]: I heard fruit_cnt=1
+[INFO] [1536384082.303073]: I heard fruit_cnt=1
+[INFO] [1536384082.402929]: I heard fruit_cnt=1
+[INFO] [1536384082.503002]: I heard fruit_cnt=1
+[INFO] [1536384082.604431]: I heard fruit_cnt=1
+[INFO] [1536384082.678461]: fruit found!
+[INFO] [1536384082.685421]: ask vision to find the position of fruit, position index result=3
+[INFO] [1536384082.687068]: ask robot to pick that one!
+[INFO] [1536384082.704723]: I heard fruit_cnt=1
+[INFO] [1536384082.803156]: I heard fruit_cnt=1
+[INFO] [1536384082.903929]: I heard fruit_cnt=1
+[INFO] [1536384083.003809]: I heard fruit_cnt=1
+[INFO] [1536384083.103213]: I heard fruit_cnt=1
+[INFO] [1536384083.203685]: I heard fruit_cnt=1
+[INFO] [1536384083.303722]: I heard fruit_cnt=1
+[INFO] [1536384083.404156]: I heard fruit_cnt=1
+[INFO] [1536384083.502709]: I heard fruit_cnt=1
+[INFO] [1536384083.603726]: I heard fruit_cnt=1
+[INFO] [1536384083.702503]: I heard fruit_cnt=1
+[INFO] [1536384083.803231]: I heard fruit_cnt=1
+[INFO] [1536384083.904472]: I heard fruit_cnt=1
+[INFO] [1536384084.003628]: I heard fruit_cnt=1
+[INFO] [1536384084.103838]: I heard fruit_cnt=1
+[INFO] [1536384084.202597]: I heard fruit_cnt=1
+[INFO] [1536384084.302608]: I heard fruit_cnt=1
+[INFO] [1536384084.403603]: I heard fruit_cnt=1
+[INFO] [1536384084.503324]: I heard fruit_cnt=1
+[INFO] [1536384084.605120]: I heard fruit_cnt=1
+[INFO] [1536384084.703408]: I heard fruit_cnt=1
+[INFO] [1536384084.803052]: I heard fruit_cnt=1
+[INFO] [1536384084.904395]: I heard fruit_cnt=1
+[INFO] [1536384085.003344]: I heard fruit_cnt=1
+[INFO] [1536384085.102791]: I heard fruit_cnt=0
+[INFO] [1536384085.200751]: car move to diff_x = 10, diff_y= 0, cur_x=240, cur_y=0
+[INFO] [1536384085.203117]: I heard fruit_cnt=0
+[INFO] [1536384085.300918]: car move to diff_x = 10, diff_y= 0, cur_x=250, cur_y=0
+[INFO] [1536384085.302790]: I heard fruit_cnt=0
+[INFO] [1536384085.400593]: car move to diff_x = 10, diff_y= 0, cur_x=260, cur_y=0
+[INFO] [1536384085.402932]: I heard fruit_cnt=0
+[INFO] [1536384085.506606]: I heard fruit_cnt=0
+[INFO] [1536384085.510343]: car move to diff_x = 10, diff_y= 0, cur_x=270, cur_y=0
+[INFO] [1536384085.605481]: I heard fruit_cnt=0
+[INFO] [1536384085.609532]: car move to diff_x = 10, diff_y= 0, cur_x=280, cur_y=0
+[INFO] [1536384085.716302]: I heard fruit_cnt=0
+[INFO] [1536384085.718667]: car move to diff_x = 10, diff_y= 0, cur_x=290, cur_y=0
+[INFO] [1536384085.801785]: car move to diff_x = 10, diff_y= 0, cur_x=300, cur_y=0
+[INFO] [1536384085.802769]: I heard fruit_cnt=0
+[INFO] [1536384085.902844]: I heard fruit_cnt=0
+[INFO] [1536384085.905535]: car move to diff_x = 10, diff_y= 0, cur_x=310, cur_y=0
+[INFO] [1536384086.003403]: car move to diff_x = 10, diff_y= 0, cur_x=320, cur_y=0
+[INFO] [1536384086.004099]: I heard fruit_cnt=0
+[INFO] [1536384086.107279]: I heard fruit_cnt=0
+[INFO] [1536384086.110463]: car move to diff_x = 10, diff_y= 0, cur_x=330, cur_y=0
+[INFO] [1536384086.202822]: I heard fruit_cnt=0
+[INFO] [1536384086.203779]: car move to diff_x = 10, diff_y= 0, cur_x=340, cur_y=0
+[INFO] [1536384086.301842]: car move to diff_x = 10, diff_y= 0, cur_x=350, cur_y=0
+[INFO] [1536384086.303099]: I heard fruit_cnt=0
+[INFO] [1536384086.403302]: I heard fruit_cnt=0
+[INFO] [1536384086.422605]: car move to diff_x = 10, diff_y= 0, cur_x=360, cur_y=0
+[INFO] [1536384086.509365]: I heard fruit_cnt=0
+[INFO] [1536384086.536856]: car move to diff_x = 10, diff_y= 0, cur_x=370, cur_y=0
+[INFO] [1536384086.603252]: I heard fruit_cnt=0
+[INFO] [1536384086.604417]: car move to diff_x = 10, diff_y= 0, cur_x=380, cur_y=0
+[INFO] [1536384086.704801]: I heard fruit_cnt=0
+[INFO] [1536384086.720067]: car move to diff_x = 10, diff_y= 0, cur_x=390, cur_y=0
+[INFO] [1536384086.803131]: I heard fruit_cnt=0
+[INFO] [1536384086.805734]: car move to diff_x = 10, diff_y= 0, cur_x=400, cur_y=0
+[INFO] [1536384086.904901]: I heard fruit_cnt=0
+[INFO] [1536384086.912303]: car move to diff_x = 10, diff_y= 0, cur_x=410, cur_y=0
+[INFO] [1536384087.003068]: I heard fruit_cnt=0
+[INFO] [1536384087.005139]: car move to diff_x = 10, diff_y= 0, cur_x=420, cur_y=0
+[INFO] [1536384087.103253]: I heard fruit_cnt=0
+[INFO] [1536384087.106908]: car move to diff_x = 10, diff_y= 0, cur_x=430, cur_y=0
+[INFO] [1536384087.203801]: I heard fruit_cnt=0
+[INFO] [1536384087.211827]: car move to diff_x = 10, diff_y= 0, cur_x=440, cur_y=0
+[INFO] [1536384087.306711]: I heard fruit_cnt=0
+[INFO] [1536384087.309576]: car move to diff_x = 10, diff_y= 0, cur_x=450, cur_y=0
+[INFO] [1536384087.401417]: car move to diff_x = 10, diff_y= 0, cur_x=460, cur_y=0
+[INFO] [1536384087.404937]: I heard fruit_cnt=0
+[INFO] [1536384087.502502]: car move to diff_x = 10, diff_y= 0, cur_x=470, cur_y=0
+[INFO] [1536384087.504751]: I heard fruit_cnt=0
+[INFO] [1536384087.603848]: I heard fruit_cnt=0
+[INFO] [1536384087.607814]: car move to diff_x = 10, diff_y= 0, cur_x=480, cur_y=0
+[INFO] [1536384087.699096]: car move to diff_x = 10, diff_y= 0, cur_x=490, cur_y=0
+[INFO] [1536384087.703866]: I heard fruit_cnt=0
+[INFO] [1536384087.818814]: I heard fruit_cnt=0
+[INFO] [1536384087.822181]: car move to diff_x = 10, diff_y= 0, cur_x=500, cur_y=0
+[INFO] [1536384087.903338]: I heard fruit_cnt=0
+[INFO] [1536384087.905233]: car move to diff_x = 10, diff_y= 0, cur_x=510, cur_y=0
+[INFO] [1536384088.002915]: I heard fruit_cnt=0
+[INFO] [1536384088.005840]: car move to diff_x = 10, diff_y= 0, cur_x=520, cur_y=0
+[INFO] [1536384088.103297]: I heard fruit_cnt=0
+[INFO] [1536384088.105850]: car move to diff_x = 10, diff_y= 0, cur_x=530, cur_y=0
+[INFO] [1536384088.204024]: I heard fruit_cnt=0
+[INFO] [1536384088.206348]: car move to diff_x = 10, diff_y= 0, cur_x=540, cur_y=0
+[INFO] [1536384088.301034]: car move to diff_x = 10, diff_y= 0, cur_x=550, cur_y=0
+[INFO] [1536384088.302801]: I heard fruit_cnt=0
+[INFO] [1536384088.398011]: car move to diff_x = 10, diff_y= 0, cur_x=560, cur_y=0
+[INFO] [1536384088.402639]: I heard fruit_cnt=0
+[INFO] [1536384088.504185]: I heard fruit_cnt=0
+[INFO] [1536384088.509207]: car move to diff_x = 10, diff_y= 0, cur_x=570, cur_y=0
+[INFO] [1536384088.603194]: I heard fruit_cnt=0
+[INFO] [1536384088.604189]: car move to diff_x = 10, diff_y= 0, cur_x=580, cur_y=0
+[INFO] [1536384088.699747]: car move to diff_x = 10, diff_y= 0, cur_x=590, cur_y=0
+[INFO] [1536384088.703984]: I heard fruit_cnt=0
+[INFO] [1536384088.802554]: car move to diff_x = 10, diff_y= 0, cur_x=600, cur_y=0
+[INFO] [1536384088.805460]: I heard fruit_cnt=0
+[INFO] [1536384088.917068]: I heard fruit_cnt=0
+[INFO] [1536384088.919915]: car move to diff_x = 10, diff_y= 0, cur_x=610, cur_y=0
+[INFO] [1536384089.004009]: I heard fruit_cnt=0
+[INFO] [1536384089.008235]: car move to diff_x = 10, diff_y= 0, cur_x=620, cur_y=0
+[INFO] [1536384089.107421]: I heard fruit_cnt=0
+[INFO] [1536384089.108719]: car move to diff_x = 10, diff_y= 0, cur_x=630, cur_y=0
+[INFO] [1536384089.200641]: car move to diff_x = 10, diff_y= 0, cur_x=640, cur_y=0
+[INFO] [1536384089.203881]: I heard fruit_cnt=0
+[INFO] [1536384089.303127]: I heard fruit_cnt=0
+[INFO] [1536384089.309845]: car move to diff_x = 10, diff_y= 0, cur_x=650, cur_y=0
+[INFO] [1536384089.406755]: car move to diff_x = 10, diff_y= 0, cur_x=660, cur_y=0
+[INFO] [1536384089.412381]: I heard fruit_cnt=0
+[INFO] [1536384089.500547]: car move to diff_x = 10, diff_y= 0, cur_x=670, cur_y=0
+[INFO] [1536384089.505008]: I heard fruit_cnt=0
+[INFO] [1536384089.606158]: I heard fruit_cnt=0
+[INFO] [1536384089.608538]: car move to diff_x = 10, diff_y= 0, cur_x=680, cur_y=0
+[INFO] [1536384089.697901]: car move to diff_x = 10, diff_y= 0, cur_x=690, cur_y=0
+[INFO] [1536384089.703598]: I heard fruit_cnt=0
+^Cosboxes@osboxes:~/catkin_ws$ rosrun harvest_try1 harvest.py
+[INFO] [1536384094.757587]: car move to diff_x = 10, diff_y= 0, cur_x=700, cur_y=0
+[INFO] [1536384094.805198]: I heard fruit_cnt=0
+[INFO] [1536384094.865595]: car move to diff_x = 10, diff_y= 0, cur_x=710, cur_y=0
+[INFO] [1536384094.903694]: I heard fruit_cnt=0
+[INFO] [1536384094.964331]: car move to diff_x = 10, diff_y= 0, cur_x=720, cur_y=0
+[INFO] [1536384095.002903]: I heard fruit_cnt=0
+[INFO] [1536384095.062492]: car move to diff_x = 10, diff_y= 0, cur_x=730, cur_y=0
+[INFO] [1536384095.103139]: I heard fruit_cnt=1
+[INFO] [1536384095.152297]: fruit found!
+[INFO] [1536384095.163962]: ask vision to find the position of fruit, position index result=4
+[INFO] [1536384095.165367]: ask robot to pick that one!
+[INFO] [1536384095.203030]: I heard fruit_cnt=1
+[INFO] [1536384095.308328]: I heard fruit_cnt=1
+[INFO] [1536384095.402915]: I heard fruit_cnt=1
+[INFO] [1536384095.502803]: I heard fruit_cnt=1
+[INFO] [1536384095.604274]: I heard fruit_cnt=1
+[INFO] [1536384095.702904]: I heard fruit_cnt=1
+[INFO] [1536384095.804404]: I heard fruit_cnt=1
+[INFO] [1536384095.902993]: I heard fruit_cnt=1
+[INFO] [1536384096.002844]: I heard fruit_cnt=1
+[INFO] [1536384096.102572]: I heard fruit_cnt=1
+[INFO] [1536384096.203383]: I heard fruit_cnt=1
+[INFO] [1536384096.303612]: I heard fruit_cnt=1
+[INFO] [1536384096.402909]: I heard fruit_cnt=1
+[INFO] [1536384096.508987]: I heard fruit_cnt=1
+[INFO] [1536384096.613789]: I heard fruit_cnt=1
+[INFO] [1536384096.704762]: I heard fruit_cnt=1
+
 

@@ -14,10 +14,10 @@
         while(){
           Car 往下一位置前進
           持續看收到 Vision 傳來資訊
-          發現番茄，Car 停下
+          發現水果，Car 停下
           while(){
-            要求 VisionService，給個番茄座標
-            print("採一個番茄")
+            要求 VisionService，給個水果座標
+            print("採一個水果")
           }
         做點 Log
         }
@@ -38,4 +38,8 @@
      
   做自己的 Harvest Node  , make, try
   	第二版加入 publisher, subscriber,logger
+  	Committed revision 4.
   完成其他的部分
+  	第三版加入 car node, car services. get/set parameter
+  	基本示意完成此練習要求
+  	Committed revision 4.

@@ -16,9 +16,8 @@ def vision_pub():
     while not rospy.is_shutdown():
         check_cnt += 1
         if 	check_cnt % 100 ==0:
-            message.fruit_cnt =1
-        else:
-            message.fruit_cnt =0
+            message.fruit_cnt = (message.fruit_cnt+1)%2
+
         pub.publish(message)
         rate.sleep()
 

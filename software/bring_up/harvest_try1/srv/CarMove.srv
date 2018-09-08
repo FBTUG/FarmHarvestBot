@@ -1,0 +1,5 @@
+int64 diff_x
+int64 diff_y
+---
+int64 cur_x
+int64 cur_y

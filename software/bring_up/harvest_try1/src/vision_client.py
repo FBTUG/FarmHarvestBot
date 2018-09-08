@@ -9,7 +9,7 @@ def vision_client(x, y):
     try:
         fruit_pos1 = rospy.ServiceProxy('fruit_pos', fruit_pos)
         resp1 = fruit_pos1(x, y)
-        return resp1.sum
+        return resp1.pos_idx
     except rospy.ServiceException, e:
         print "Service call failed: %s"%e
 

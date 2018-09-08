@@ -2,15 +2,19 @@
 
 from harvest_try1.srv import *
 import rospy
-
+fruit_pos_idx=0
 def handle_fruit_pos(req):
-    print "Returning [%s + %s = %s]"%(req.a, req.b, (req.a + req.b))
-    return fruit_posResponse(req.a + req.b)
+    rospy.loginfo("vision_server get request! Ignore useless input %s , %s ]"%(req.a, req.b))
+    global fruit_pos_idx
+    fruit_pos_idx +=1
+    if fruit_pos_idx % 5 ==0:
+        fruit_pos_idx = 0
+    return fruit_posResponse(fruit_pos_idx)
 
 def vision_server():
     rospy.init_node('vision_server')
     s = rospy.Service('fruit_pos', fruit_pos, handle_fruit_pos)
-    print "Ready to process vision commands.."
+    rospy.loginfo( "Ready to process vision commands..")
     rospy.spin()
 
 if __name__ == "__main__":
