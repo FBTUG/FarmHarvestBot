@@ -31,16 +31,16 @@
       
   </link>
 
-  <joint name="semi_sphere_joint" type="continuous">
+  <joint name="semi_sphere_joint" type="fixed">
     <parent link="base_link"/>
     <child link="semi_sphere_link"/>
-    <origin xyz="0 0 200" rpy="0 0 1.57"/>
+    <origin xyz="0 0 10" rpy="0 0 1.57"/>
     <axis xyz="0 0 1"/>
   </joint>
 
   <link name="semi_sphere_link">
     <visual>
-      <origin xyz="0 0 200" rpy="0 0 1.57"/>
+      <origin xyz="0 0 10" rpy="0 0 1.57"/>
       <geometry>
         <mesh filename="package://turtlebot3_description/meshes/bases/semi_sphere.stl" scale="1 1 1"/>
       </geometry>
@@ -48,9 +48,9 @@
     </visual>
 
     <collision>
-      <origin xyz="0 0 200" rpy="0 0 0"/>
+      <origin xyz="0 0 10" rpy="0 0 0"/>
       <geometry>
-        <cylinder length="200" radius="50"/>
+        <cylinder length="10" radius="5"/>
       </geometry>
     </collision>
 
