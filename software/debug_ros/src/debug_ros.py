@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import rospy
 import rosnode
+import rosbag
 import cmd
 import time
 
@@ -31,7 +32,27 @@ class RosDebugCli(cmd.Cmd):
         """Dump information"""
         nodes = rosnode.get_node_names()
         rospy.loginfo("node list:%s" %(nodes))
-    
+    def do_bag(self,line):
+        """Show bag information
+        bag {filename}
+            filename :  default big.bag
+        """
+        bag_filename = "big.bag"
+        pars = line.split("\n")
+        if len(pars)>1:        
+            bag_filename = pars[0]
+        
+        bag = rosbag.Bag(bag_filename)
+        topics = bag.get_type_and_topic_info()[1].keys()
+        rospy.loginfo("topics=%s" %(topics))
+        types = []
+        for i in range(0,len(bag.get_type_and_topic_info()[1].values())):
+            types.append(bag.get_type_and_topic_info()[1].values()[i][0])
+        rospy.loginfo("types=%s" %(types))
+
+        for topic, msg, t in rosbag.Bag(bag_filename).read_messages():
+            rospy.loginfo("topic=%s,t=%s,msg=%s" %(topic,t,msg))
+
     def do_version(self,line):
         """Report software version"""
         output = "V" + VERSION

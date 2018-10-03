@@ -29,30 +29,34 @@ do
         		#echo "dump rosgraph =====>"
         		#rosgraph
         		
-            echo "dump nodes =====>"
+        		echo "[NODE_LIST]\$rosnode list =====>"
+        		rosnode list
+        		
             for item in `rosnode list` 
             do 
-              echo "\$rosnode info "$item" =====>"
+              echo "[NODE=$item]\$rosnode info $item =====>"
               rosnode info "$item" 
             done
             
-            echo "dump topics =====>"
+
+            echo "[TOPIC_LIST]\$rostopic list =====>"
+            rostopic list
             for item in `rostopic list` 
             do 
-              echo "\$rostopic info "$item" =====>"
+              echo "[TOPIC=$item]\$rostopic info $item =====>"
               rostopic info "$item"
               
-              echo "\$timeout 1 rostopic hz "$item" =====>"
+              echo "[TOPIC_HZ=$item]\$timeout 1 rostopic hz $item =====>"
               timeout 1 rostopic hz "$item"
                
               for msg in `rostopic type $item` 
                 do 
-                  echo "\$rosmsg show "$msg" =====>"
+                  echo "[TOPIC_TYPE=$msg]\$rosmsg show $msg =====>"
                   rosmsg show "$msg" 
               
                 done
             done
-            echo "\$timeout -s SIGINT 10 rosbag record -a =====>"
+            echo "[BAG]\$timeout -s SIGINT 10 rosbag record -a =====>"
             timeout -s SIGINT 10 rosbag record -a
             ;;          
         "quit")
