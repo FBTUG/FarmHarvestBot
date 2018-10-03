@@ -1,6 +1,4 @@
-
-              echo "\$rostopic info "$item" =====>"
-rt NODE=/turtlesim;export TOPIC=/turtle1/cmd_vel; export MSG=geometry_msgs/Twist
+export NODE=/turtlesim;export TOPIC=/turtle1/cmd_vel; export MSG=geometry_msgs/Twist
 echo "User defined setting: NODE=$NODE, TOPIC=$TOPIC, MSG=$MSG"
 PS3='run 1-quit,2-basic,3-info,4-runtime,5-design,6-dump: '
 options=("quit" "basic" "info" "runtime" "design" "dump")
@@ -28,6 +26,9 @@ do
             rosmsg show $MSG
             ;;
         "dump")
+        		#echo "dump rosgraph =====>"
+        		#rosgraph
+        		
             echo "dump nodes =====>"
             for item in `rosnode list` 
             do 
@@ -39,8 +40,20 @@ do
             for item in `rostopic list` 
             do 
               echo "\$rostopic info "$item" =====>"
-              rostopic info "$item" 
+              rostopic info "$item"
+              
+              echo "\$timeout 1 rostopic hz "$item" =====>"
+              timeout 1 rostopic hz "$item"
+               
+              for msg in `rostopic type $item` 
+                do 
+                  echo "\$rosmsg show "$msg" =====>"
+                  rosmsg show "$msg" 
+              
+                done
             done
+            echo "\$timeout -s SIGINT 10 rosbag record -a =====>"
+            timeout -s SIGINT 10 rosbag record -a
             ;;          
         "quit")
             break
