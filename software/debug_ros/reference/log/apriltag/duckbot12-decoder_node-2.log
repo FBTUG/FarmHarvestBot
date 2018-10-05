@@ -1,0 +1,24 @@
+[rospy.client][INFO] 2018-10-05 16:53:59,325: init_node, name[/duckbot12/decoder_node], pid[2322]
+[xmlrpc][INFO] 2018-10-05 16:53:59,328: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-05 16:53:59,330: Started XML-RPC server [http://duckbot12:45192/]
+[rospy.impl.masterslave][INFO] 2018-10-05 16:53:59,331: _ready: http://duckbot12:45192/
+[xmlrpc][INFO] 2018-10-05 16:53:59,347: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-05 16:53:59,348: ROS Slave URI: [http://duckbot12:45192/]
+[rospy.registration][INFO] 2018-10-05 16:53:59,353: Registering with master node http://duckbot12:11311
+[rospy.init][INFO] 2018-10-05 16:53:59,455: registered with master
+[rospy.rosout][INFO] 2018-10-05 16:53:59,456: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-05 16:53:59,476: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-05 16:53:59,493: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-05 16:53:59,561: [/duckbot12/decoder_node] ~publish_freq = 2.0 
+[rospy.internal][INFO] 2018-10-05 16:53:59,779: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-05 16:53:59,859: topic[/duckbot12/camera_node/image/raw] adding connection to [/duckbot12/image_proc_node], count 0
+[rospy.internal][INFO] 2018-10-05 16:54:30,325: topic[/duckbot12/camera_node/image/compressed] adding connection to [http://duckbot12:32805/], count 0
+[rospy.internal][INFO] 2018-10-05 16:54:30,703: topic[/duckbot12/camera_node/image/raw] adding connection to [/duckbot12/raw_cam_info_reader_node], count 1
+[rospy.internal][INFO] 2018-10-05 16:54:59,267: topic[/duckbot12/camera_node/image/raw] adding connection to [/rostopic_18183_1538729698744], count 2
+[rospy.internal][INFO] 2018-10-05 16:54:59,738: topic[/duckbot12/camera_node/image/raw] removing connection to /rostopic_18183_1538729698744
+[rospy.internal][INFO] 2018-10-05 16:58:01,422: topic[/rosout] adding connection to [/rostopic_19304_1538729880816], count 1
+[rospy.internal][INFO] 2018-10-05 16:58:01,804: topic[/rosout] removing connection to /rostopic_19304_1538729880816
+[rospy.internal][INFO] 2018-10-05 16:58:12,630: topic[/duckbot12/camera_node/image/raw] adding connection to [/record_1538729888974602378], count 2
+[rospy.internal][INFO] 2018-10-05 16:58:13,983: topic[/rosout] adding connection to [/record_1538729888974602378], count 1
+[rospy.internal][INFO] 2018-10-05 16:58:19,667: topic[/duckbot12/camera_node/image/raw] removing connection to /record_1538729888974602378
+[rospy.internal][INFO] 2018-10-05 16:58:20,360: topic[/rosout] removing connection to /record_1538729888974602378

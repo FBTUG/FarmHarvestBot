@@ -1,0 +1,43 @@
+[rospy.client][INFO] 2018-10-05 16:37:31,921: [32minit_node, name[/duckbot12/inverse_kinematics_node], pid[3078][0m
+[xmlrpc][INFO] 2018-10-05 16:37:31,922: [32mXML-RPC server binding to 0.0.0.0:0[0m
+[xmlrpc][INFO] 2018-10-05 16:37:31,924: [32mStarted XML-RPC server [http://duckbot12:45085/][0m
+[rospy.init][INFO] 2018-10-05 16:37:31,925: [32mROS Slave URI: [http://duckbot12:45085/][0m
+[rospy.impl.masterslave][INFO] 2018-10-05 16:37:31,925: [32m_ready: http://duckbot12:45085/[0m
+[rospy.registration][INFO] 2018-10-05 16:37:31,928: [32mRegistering with master node http://duckbot12:11311[0m
+[xmlrpc][INFO] 2018-10-05 16:37:31,930: [32mxml rpc node: starting XML-RPC server[0m
+[rospy.init][INFO] 2018-10-05 16:37:32,026: [32mregistered with master[0m
+[rospy.rosout][INFO] 2018-10-05 16:37:32,026: [32minitializing /rosout core topic[0m
+[rospy.rosout][INFO] 2018-10-05 16:37:32,036: [32mconnected to core topic /rosout[0m
+[rospy.simtime][INFO] 2018-10-05 16:37:32,041: [32m/use_sim_time is not set, will not subscribe to simulated time [/clock] topic[0m
+[rosout][INFO] 2018-10-05 16:37:32,119: [32m[/duckbot12/inverse_kinematics_node] ~gain = 1.0 [0m
+[rosout][INFO] 2018-10-05 16:37:32,129: [32m[/duckbot12/inverse_kinematics_node] ~trim = 0.0399999991059 [0m
+[rosout][INFO] 2018-10-05 16:37:32,139: [32m[/duckbot12/inverse_kinematics_node] ~baseline = 0.1 [0m
+[rosout][INFO] 2018-10-05 16:37:32,152: [32m[/duckbot12/inverse_kinematics_node] ~radius = 0.0318 [0m
+[rosout][INFO] 2018-10-05 16:37:32,171: [32m[/duckbot12/inverse_kinematics_node] ~k = 27.0 [0m
+[rosout][INFO] 2018-10-05 16:37:32,182: [32m[/duckbot12/inverse_kinematics_node] ~limit = 1.0 [0m
+[rospy.internal][INFO] 2018-10-05 16:37:32,253: [32mtopic[/duckbot12/joy_mapper_node/car_cmd] adding connection to [http://duckbot12:43810/], count 0[0m
+[rosout][INFO] 2018-10-05 16:37:32,258: [32m[/duckbot12/inverse_kinematics_node] Initialized.[0m
+[rosout][INFO] 2018-10-05 16:37:32,259: [32m[/duckbot12/inverse_kinematics_node] gain: 1.0 trim: 0.0399999991059 baseline: 0.1 radius: 0.0318 k: 27.0 limit: 1.0[0m
+[rospy.internal][INFO] 2018-10-05 16:37:32,269: [32mtopic[/rosout] adding connection to [/rosout], count 0[0m
+[rospy.internal][INFO] 2018-10-05 16:37:32,293: [32mtopic[/duckbot12/wheels_driver_node/wheels_cmd] adding connection to [/duckbot12/wheels_driver_node], count 0[0m
+[rospy.internal][INFO] 2018-10-05 16:40:49,673: [32mtopic[/rosout] adding connection to [/rostopic_17332_1538728849212], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:40:50,382: [32mtopic[/rosout] removing connection to /rostopic_17332_1538728849212[0m
+[rospy.internal][INFO] 2018-10-05 16:43:20,347: [32mtopic[/rosout] adding connection to [/rostopic_17742_1538728999951], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:43:20,995: [32mtopic[/rosout] removing connection to /rostopic_17742_1538728999951[0m
+[rospy.internal][INFO] 2018-10-05 16:43:24,978: [32mtopic[/rosout] adding connection to [/record_1538729004482226979], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:43:25,107: [32mtopic[/duckbot12/inverse_kinematics_node/actuator_params] adding connection to [/record_1538729004482226979], count 0[0m
+[rospy.internal][INFO] 2018-10-05 16:43:25,673: [32mtopic[/duckbot12/wheels_driver_node/wheels_cmd] adding connection to [/record_1538729004482226979], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:43:34,505: [32mtopic[/duckbot12/wheels_driver_node/wheels_cmd] removing connection to /record_1538729004482226979[0m
+[rospy.internal][INFO] 2018-10-05 16:43:34,506: [32mtopic[/duckbot12/inverse_kinematics_node/actuator_params] removing connection to /record_1538729004482226979[0m
+[rospy.internal][INFO] 2018-10-05 16:43:34,507: [32mtopic[/rosout] removing connection to /record_1538729004482226979[0m
+[rospy.internal][INFO] 2018-10-05 16:43:34,973: [32mtopic[/rosout] adding connection to [/rqt_gui_py_node_17714], count 1[0m
+[rosout][WARNING] 2018-10-05 16:43:50,464: [33mInbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.[0m
+[rospy.internal][ERROR] 2018-10-05 16:43:50,468: [31mInbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[0m
+[rospy.internal][INFO] 2018-10-05 16:43:50,518: [32mtopic[/rosout] removing connection to /rqt_gui_py_node_17714[0m

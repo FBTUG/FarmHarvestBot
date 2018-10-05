@@ -1,0 +1,49 @@
+[rospy.client][INFO] 2018-10-05 16:54:30,140: [32minit_node, name[/duckbot12/raw_cam_info_reader_node], pid[2324][0m
+[xmlrpc][INFO] 2018-10-05 16:54:30,143: [32mXML-RPC server binding to 0.0.0.0:0[0m
+[xmlrpc][INFO] 2018-10-05 16:54:30,145: [32mStarted XML-RPC server [http://duckbot12:37700/][0m
+[rospy.init][INFO] 2018-10-05 16:54:30,150: [32mROS Slave URI: [http://duckbot12:37700/][0m
+[rospy.impl.masterslave][INFO] 2018-10-05 16:54:30,153: [32m_ready: http://duckbot12:37700/[0m
+[rospy.registration][INFO] 2018-10-05 16:54:30,160: [32mRegistering with master node http://duckbot12:11311[0m
+[xmlrpc][INFO] 2018-10-05 16:54:30,161: [32mxml rpc node: starting XML-RPC server[0m
+[rospy.init][INFO] 2018-10-05 16:54:30,255: [32mregistered with master[0m
+[rospy.rosout][INFO] 2018-10-05 16:54:30,256: [32minitializing /rosout core topic[0m
+[rospy.rosout][INFO] 2018-10-05 16:54:30,285: [32mconnected to core topic /rosout[0m
+[rospy.simtime][INFO] 2018-10-05 16:54:30,301: [32m/use_sim_time is not set, will not subscribe to simulated time [/clock] topic[0m
+[rosout][INFO] 2018-10-05 16:54:30,373: [32m[/duckbot12/raw_cam_info_reader_node] ~config = baseline [0m
+[rosout][INFO] 2018-10-05 16:54:30,396: [32m[/duckbot12/raw_cam_info_reader_node] ~cali_file_name = duckbot12 [0m
+[rosout][INFO] 2018-10-05 16:54:30,419: [32m[/duckbot12/raw_cam_info_reader_node] ~image_type = raw [0m
+[rosout][INFO] 2018-10-05 16:54:30,440: [32m[/duckbot12/raw_cam_info_reader_node] Using calibration file: /home/ubuntu/duckiefleet/calibrations/camera_intrinsic/duckbot12.yaml[0m
+[rospy.internal][INFO] 2018-10-05 16:54:30,578: [32mtopic[/rosout] adding connection to [/rosout], count 0[0m
+[rosout][INFO] 2018-10-05 16:54:30,598: [32m[/duckbot12/raw_cam_info_reader_node] CameraInfo: header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: "/duckbot12/camera_optical_frame"
+height: 480
+width: 640
+distortion_model: "plumb_bob"
+D: [-0.2642335191586474, 0.04928076042331032, 0.0033845862284124055, -0.0008903623017115541, 0.0]
+K: [313.86267626197287, 0.0, 321.2600884044547, 0.0, 315.37408531067985, 231.12840661833283, 0.0, 0.0, 1.0]
+R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+P: [217.34449768066406, 0.0, 319.97532869551287, 0.0, 0.0, 253.4927978515625, 230.13211377258995, 0.0, 0.0, 0.0, 1.0, 0.0]
+binning_x: 0
+binning_y: 0
+roi: 
+  x_offset: 0
+  y_offset: 0
+  height: 0
+  width: 0
+  do_rectify: False[0m
+[rosout][WARNING] 2018-10-05 16:54:30,607: [33m[/duckbot12/raw_cam_info_reader_node] ==============Image[0m
+[rospy.internal][INFO] 2018-10-05 16:54:30,674: [32mtopic[/duckbot12/camera_node/image/raw] adding connection to [http://duckbot12:45192/], count 0[0m
+[rospy.internal][INFO] 2018-10-05 16:54:30,691: [32mtopic[/duckbot12/camera_node/raw_camera_info] adding connection to [/duckbot12/apriltag_detector_node], count 0[0m
+[rospy.internal][INFO] 2018-10-05 16:54:30,709: [32mtopic[/duckbot12/camera_node/raw_camera_info] adding connection to [/duckbot12/image_proc_node], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:55:30,213: [32mtopic[/duckbot12/camera_node/raw_camera_info] adding connection to [/rostopic_18382_1538729729723], count 2[0m
+[rospy.internal][INFO] 2018-10-05 16:55:30,769: [32mtopic[/duckbot12/camera_node/raw_camera_info] removing connection to /rostopic_18382_1538729729723[0m
+[rospy.internal][INFO] 2018-10-05 16:58:01,432: [32mtopic[/rosout] adding connection to [/rostopic_19304_1538729880816], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:58:02,070: [32mtopic[/rosout] removing connection to /rostopic_19304_1538729880816[0m
+[rospy.internal][INFO] 2018-10-05 16:58:09,663: [32mtopic[/duckbot12/camera_node/raw_camera_info] adding connection to [/record_1538729888974602378], count 2[0m
+[rospy.internal][INFO] 2018-10-05 16:58:13,980: [32mtopic[/rosout] adding connection to [/record_1538729888974602378], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:58:19,130: [32mtopic[/duckbot12/camera_node/raw_camera_info] removing connection to /record_1538729888974602378[0m
+[rospy.internal][INFO] 2018-10-05 16:58:20,134: [32mtopic[/rosout] removing connection to /record_1538729888974602378[0m

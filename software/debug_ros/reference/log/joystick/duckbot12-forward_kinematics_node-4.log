@@ -1,0 +1,33 @@
+[rospy.client][INFO] 2018-10-05 16:37:31,923: [32minit_node, name[/duckbot12/forward_kinematics_node], pid[3082][0m
+[xmlrpc][INFO] 2018-10-05 16:37:31,925: [32mXML-RPC server binding to 0.0.0.0:0[0m
+[xmlrpc][INFO] 2018-10-05 16:37:31,926: [32mStarted XML-RPC server [http://duckbot12:41190/][0m
+[rospy.init][INFO] 2018-10-05 16:37:31,926: [32mROS Slave URI: [http://duckbot12:41190/][0m
+[rospy.impl.masterslave][INFO] 2018-10-05 16:37:31,927: [32m_ready: http://duckbot12:41190/[0m
+[rospy.registration][INFO] 2018-10-05 16:37:31,930: [32mRegistering with master node http://duckbot12:11311[0m
+[xmlrpc][INFO] 2018-10-05 16:37:31,930: [32mxml rpc node: starting XML-RPC server[0m
+[rospy.init][INFO] 2018-10-05 16:37:32,028: [32mregistered with master[0m
+[rospy.rosout][INFO] 2018-10-05 16:37:32,028: [32minitializing /rosout core topic[0m
+[rospy.rosout][INFO] 2018-10-05 16:37:32,038: [32mconnected to core topic /rosout[0m
+[rospy.simtime][INFO] 2018-10-05 16:37:32,046: [32m/use_sim_time is not set, will not subscribe to simulated time [/clock] topic[0m
+[rosout][INFO] 2018-10-05 16:37:32,116: [32m[/duckbot12/forward_kinematics_node] ~gain = 1.0 [0m
+[rosout][INFO] 2018-10-05 16:37:32,132: [32m[/duckbot12/forward_kinematics_node] ~trim = 0.0399999991059 [0m
+[rosout][INFO] 2018-10-05 16:37:32,149: [32m[/duckbot12/forward_kinematics_node] ~baseline = 0.1 [0m
+[rosout][INFO] 2018-10-05 16:37:32,166: [32m[/duckbot12/forward_kinematics_node] ~radius = 0.0318 [0m
+[rosout][INFO] 2018-10-05 16:37:32,182: [32m[/duckbot12/forward_kinematics_node] ~k = 27.0 [0m
+[rosout][INFO] 2018-10-05 16:37:32,203: [32m[/duckbot12/forward_kinematics_node] Initialized.[0m
+[rosout][INFO] 2018-10-05 16:37:32,205: [32m[/duckbot12/forward_kinematics_node] gain: 1.0 trim: 0.0399999991059 baseline: 0.1 radius: 0.0318 k: 27.0[0m
+[rospy.internal][INFO] 2018-10-05 16:37:32,211: [32mtopic[/duckbot12/wheels_driver_node/wheels_cmd_executed] adding connection to [http://duckbot12:40902/], count 0[0m
+[rospy.internal][INFO] 2018-10-05 16:37:32,267: [32mtopic[/rosout] adding connection to [/rosout], count 0[0m
+[rospy.internal][INFO] 2018-10-05 16:37:32,293: [32mtopic[/duckbot12/forward_kinematics_node/velocity] adding connection to [/duckbot12/velocity_to_pose_node], count 0[0m
+[rospy.internal][INFO] 2018-10-05 16:40:49,689: [32mtopic[/rosout] adding connection to [/rostopic_17332_1538728849212], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:40:50,325: [32mtopic[/rosout] removing connection to /rostopic_17332_1538728849212[0m
+[rospy.internal][INFO] 2018-10-05 16:43:20,349: [32mtopic[/rosout] adding connection to [/rostopic_17742_1538728999951], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:43:21,412: [32mtopic[/rosout] removing connection to /rostopic_17742_1538728999951[0m
+[rospy.internal][INFO] 2018-10-05 16:43:24,979: [32mtopic[/rosout] adding connection to [/record_1538729004482226979], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:43:25,994: [32mtopic[/duckbot12/forward_kinematics_node/velocity] adding connection to [/record_1538729004482226979], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:43:34,420: [32mtopic[/rosout] removing connection to /record_1538729004482226979[0m
+[rospy.internal][INFO] 2018-10-05 16:43:34,922: [32mtopic[/duckbot12/forward_kinematics_node/velocity] removing connection to /record_1538729004482226979[0m
+[rospy.internal][INFO] 2018-10-05 16:43:35,038: [32mtopic[/rosout] adding connection to [/rqt_gui_py_node_17714], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:43:50,473: [32mtopic[/rosout] adding connection to [/rqt_gui_py_node_17714], count 2[0m
+[rospy.internal][INFO] 2018-10-05 16:43:50,473: [32mtopic[/rosout] removing connection to /rqt_gui_py_node_17714[0m
+[rospy.internal][INFO] 2018-10-05 16:43:50,932: [32mtopic[/rosout] removing connection to /rqt_gui_py_node_17714[0m

@@ -1,0 +1,584 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[NODE_LIST]$rosnode list =====>
+/duckbot12/forward_kinematics_node
+/duckbot12/inverse_kinematics_node
+/duckbot12/joy
+/duckbot12/joy_mapper_node
+/duckbot12/velocity_to_pose_node
+/duckbot12/wheels_driver_node
+/record_1538728853792083716
+/rosout
+[NODE=/duckbot12/forward_kinematics_node]$rosnode info /duckbot12/forward_kinematics_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/forward_kinematics_node]
+Publications: 
+ * /duckbot12/forward_kinematics_node/velocity [duckietown_msgs/Twist2DStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/wheels_driver_node/wheels_cmd_executed [duckietown_msgs/WheelsCmdStamped]
+
+Services: 
+ * /duckbot12/forward_kinematics_node/get_loggers
+ * /duckbot12/forward_kinematics_node/set_logger_level
+
+
+contacting node http://duckbot12:41190/ ...
+Pid: 3082
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/forward_kinematics_node/velocity
+    * to: /duckbot12/velocity_to_pose_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/wheels_driver_node/wheels_cmd_executed
+    * to: /duckbot12/wheels_driver_node (http://duckbot12:40902/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/inverse_kinematics_node]$rosnode info /duckbot12/inverse_kinematics_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/inverse_kinematics_node]
+Publications: 
+ * /duckbot12/inverse_kinematics_node/actuator_params [duckietown_msgs/ActuatorParameters]
+ * /duckbot12/wheels_driver_node/wheels_cmd [duckietown_msgs/WheelsCmdStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/inverse_kinematics_node/actuator_params_received [unknown type]
+ * /duckbot12/joy_mapper_node/car_cmd [duckietown_msgs/Twist2DStamped]
+
+Services: 
+ * /duckbot12/inverse_kinematics_node/get_loggers
+ * /duckbot12/inverse_kinematics_node/save_calibration
+ * /duckbot12/inverse_kinematics_node/set_baseline
+ * /duckbot12/inverse_kinematics_node/set_gain
+ * /duckbot12/inverse_kinematics_node/set_k
+ * /duckbot12/inverse_kinematics_node/set_limit
+ * /duckbot12/inverse_kinematics_node/set_logger_level
+ * /duckbot12/inverse_kinematics_node/set_radius
+ * /duckbot12/inverse_kinematics_node/set_trim
+
+
+contacting node http://duckbot12:45085/ ...
+Pid: 3078
+Connections:
+ * topic: /duckbot12/wheels_driver_node/wheels_cmd
+    * to: /duckbot12/wheels_driver_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy_mapper_node/car_cmd
+    * to: /duckbot12/joy_mapper_node (http://duckbot12:43810/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/joy]$rosnode info /duckbot12/joy =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/joy]
+Publications: 
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /duckbot12/joy [sensor_msgs/Joy]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: None
+
+Services: 
+ * /duckbot12/joy/get_loggers
+ * /duckbot12/joy/set_logger_level
+
+
+contacting node http://duckbot12:34797/ ...
+Pid: 3066
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rostopic_17332_1538728849212
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy
+    * to: /duckbot12/joy_mapper_node
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/joy_mapper_node]$rosnode info /duckbot12/joy_mapper_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/joy_mapper_node]
+Publications: 
+ * /duckbot12/anti_instagram_node/click [duckietown_msgs/BoolStamped]
+ * /duckbot12/joy_mapper_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /duckbot12/joy_mapper_node/joystick_override [duckietown_msgs/BoolStamped]
+ * /duckbot12/joy_mapper_node/parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /duckbot12/joy_mapper_node/start_avoidance [duckietown_msgs/BoolStamped]
+ * /duckbot12/wheels_driver_node/emergency_stop [duckietown_msgs/BoolStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/joy [sensor_msgs/Joy]
+
+Services: 
+ * /duckbot12/joy_mapper_node/get_loggers
+ * /duckbot12/joy_mapper_node/set_logger_level
+
+
+contacting node http://duckbot12:43810/ ...
+Pid: 3067
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy_mapper_node/car_cmd
+    * to: /duckbot12/inverse_kinematics_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/wheels_driver_node/emergency_stop
+    * to: /duckbot12/wheels_driver_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy
+    * to: /duckbot12/joy (http://duckbot12:34797/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/velocity_to_pose_node]$rosnode info /duckbot12/velocity_to_pose_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/velocity_to_pose_node]
+Publications: 
+ * /duckbot12/velocity_to_pose_node/pose [duckietown_msgs/Pose2DStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/forward_kinematics_node/velocity [duckietown_msgs/Twist2DStamped]
+
+Services: 
+ * /duckbot12/velocity_to_pose_node/get_loggers
+ * /duckbot12/velocity_to_pose_node/set_logger_level
+
+
+contacting node http://duckbot12:39281/ ...
+Pid: 3086
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/forward_kinematics_node/velocity
+    * to: /duckbot12/forward_kinematics_node (http://duckbot12:41190/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/wheels_driver_node]$rosnode info /duckbot12/wheels_driver_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/wheels_driver_node]
+Publications: 
+ * /duckbot12/wheels_driver_node/wheels_cmd_executed [duckietown_msgs/WheelsCmdStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/wheels_driver_node/emergency_stop [duckietown_msgs/BoolStamped]
+ * /duckbot12/wheels_driver_node/radius_limit [unknown type]
+ * /duckbot12/wheels_driver_node/wheels_cmd [duckietown_msgs/WheelsCmdStamped]
+
+Services: 
+ * /duckbot12/wheels_driver_node/get_loggers
+ * /duckbot12/wheels_driver_node/set_logger_level
+
+
+contacting node http://duckbot12:40902/ ...
+Pid: 3091
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/wheels_driver_node/wheels_cmd_executed
+    * to: /duckbot12/forward_kinematics_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/wheels_driver_node/wheels_cmd
+    * to: /duckbot12/inverse_kinematics_node (http://duckbot12:45085/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/wheels_driver_node/emergency_stop
+    * to: /duckbot12/joy_mapper_node (http://duckbot12:43810/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/record_1538728853792083716]$rosnode info /record_1538728853792083716 =====>
+--------------------------------------------------------------------------------
+Node [/record_1538728853792083716]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/joy_mapper_node/start_avoidance [duckietown_msgs/BoolStamped]
+ * /duckbot12/wheels_driver_node/wheels_cmd_executed [duckietown_msgs/WheelsCmdStamped]
+
+Services: 
+ * /record_1538728853792083716/get_loggers
+ * /record_1538728853792083716/set_logger_level
+
+
+contacting node http://osboxes:40195/ ...
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://duckbot12:39405/ ...
+Pid: 2995
+Connections:
+ * topic: /rosout_agg
+    * to: /rostopic_17364_1538728851758
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/joy (http://duckbot12:34797/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/joy_mapper_node (http://duckbot12:43810/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/velocity_to_pose_node (http://duckbot12:39281/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/wheels_driver_node (http://duckbot12:40902/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/forward_kinematics_node (http://duckbot12:41190/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/inverse_kinematics_node (http://duckbot12:45085/)
+    * direction: inbound
+    * transport: TCPROS
+
+[TOPIC_LIST]$rostopic list =====>
+/diagnostics
+/duckbot12/anti_instagram_node/click
+/duckbot12/forward_kinematics_node/velocity
+/duckbot12/inverse_kinematics_node/actuator_params
+/duckbot12/inverse_kinematics_node/actuator_params_received
+/duckbot12/joy
+/duckbot12/joy_mapper_node/car_cmd
+/duckbot12/joy_mapper_node/joystick_override
+/duckbot12/joy_mapper_node/parallel_autonomy
+/duckbot12/joy_mapper_node/start_avoidance
+/duckbot12/velocity_to_pose_node/pose
+/duckbot12/wheels_driver_node/emergency_stop
+/duckbot12/wheels_driver_node/radius_limit
+/duckbot12/wheels_driver_node/wheels_cmd
+/duckbot12/wheels_driver_node/wheels_cmd_executed
+/rosout
+/rosout_agg
+[TOPIC=/diagnostics]$rostopic info /diagnostics =====>
+Type: diagnostic_msgs/DiagnosticArray
+
+Publishers: 
+ * /duckbot12/joy (http://duckbot12:34797/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/diagnostics]$timeout 1 rostopic hz /diagnostics =====>
+subscribed to [/diagnostics]
+no new messages
+[TOPIC_TYPE=diagnostic_msgs/DiagnosticArray]$rosmsg show diagnostic_msgs/DiagnosticArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+diagnostic_msgs/DiagnosticStatus[] status
+  byte OK=0
+  byte WARN=1
+  byte ERROR=2
+  byte STALE=3
+  byte level
+  string name
+  string message
+  string hardware_id
+  diagnostic_msgs/KeyValue[] values
+    string key
+    string value
+
+[TOPIC=/duckbot12/anti_instagram_node/click]$rostopic info /duckbot12/anti_instagram_node/click =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:43810/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/anti_instagram_node/click]$timeout 1 rostopic hz /duckbot12/anti_instagram_node/click =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/forward_kinematics_node/velocity]$rostopic info /duckbot12/forward_kinematics_node/velocity =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /duckbot12/forward_kinematics_node (http://duckbot12:41190/)
+
+Subscribers: 
+ * /duckbot12/velocity_to_pose_node (http://duckbot12:39281/)
+
+
+[TOPIC_HZ=/duckbot12/forward_kinematics_node/velocity]$timeout 1 rostopic hz /duckbot12/forward_kinematics_node/velocity =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/duckbot12/inverse_kinematics_node/actuator_params]$rostopic info /duckbot12/inverse_kinematics_node/actuator_params =====>
+Type: duckietown_msgs/ActuatorParameters
+
+Publishers: 
+ * /duckbot12/inverse_kinematics_node (http://duckbot12:45085/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/inverse_kinematics_node/actuator_params]$timeout 1 rostopic hz /duckbot12/inverse_kinematics_node/actuator_params =====>
+[TOPIC_TYPE=duckietown_msgs/ActuatorParameters]$rosmsg show duckietown_msgs/ActuatorParameters =====>
+[TOPIC=/duckbot12/inverse_kinematics_node/actuator_params_received]$rostopic info /duckbot12/inverse_kinematics_node/actuator_params_received =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/inverse_kinematics_node (http://duckbot12:45085/)
+
+
+[TOPIC_HZ=/duckbot12/inverse_kinematics_node/actuator_params_received]$timeout 1 rostopic hz /duckbot12/inverse_kinematics_node/actuator_params_received =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/joy]$rostopic info /duckbot12/joy =====>
+Type: sensor_msgs/Joy
+
+Publishers: 
+ * /duckbot12/joy (http://duckbot12:34797/)
+
+Subscribers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:43810/)
+
+
+[TOPIC_HZ=/duckbot12/joy]$timeout 1 rostopic hz /duckbot12/joy =====>
+subscribed to [/duckbot12/joy]
+average rate: 1.994
+	min: 0.501s max: 0.501s std dev: 0.00000s window: 2
+[TOPIC_TYPE=sensor_msgs/Joy]$rosmsg show sensor_msgs/Joy =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32[] axes
+int32[] buttons
+
+[TOPIC=/duckbot12/joy_mapper_node/car_cmd]$rostopic info /duckbot12/joy_mapper_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:43810/)
+
+Subscribers: 
+ * /duckbot12/inverse_kinematics_node (http://duckbot12:45085/)
+
+
+[TOPIC_HZ=/duckbot12/joy_mapper_node/car_cmd]$timeout 1 rostopic hz /duckbot12/joy_mapper_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/duckbot12/joy_mapper_node/joystick_override]$rostopic info /duckbot12/joy_mapper_node/joystick_override =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:43810/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/joy_mapper_node/joystick_override]$timeout 1 rostopic hz /duckbot12/joy_mapper_node/joystick_override =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/joy_mapper_node/parallel_autonomy]$rostopic info /duckbot12/joy_mapper_node/parallel_autonomy =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:43810/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/joy_mapper_node/parallel_autonomy]$timeout 1 rostopic hz /duckbot12/joy_mapper_node/parallel_autonomy =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/joy_mapper_node/start_avoidance]$rostopic info /duckbot12/joy_mapper_node/start_avoidance =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:43810/)
+
+Subscribers: 
+ * /record_1538728853792083716 (http://osboxes:40195/)
+
+
+[TOPIC_HZ=/duckbot12/joy_mapper_node/start_avoidance]$timeout 1 rostopic hz /duckbot12/joy_mapper_node/start_avoidance =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/velocity_to_pose_node/pose]$rostopic info /duckbot12/velocity_to_pose_node/pose =====>
+Type: duckietown_msgs/Pose2DStamped
+
+Publishers: 
+ * /duckbot12/velocity_to_pose_node (http://duckbot12:39281/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/velocity_to_pose_node/pose]$timeout 1 rostopic hz /duckbot12/velocity_to_pose_node/pose =====>
+[TOPIC_TYPE=duckietown_msgs/Pose2DStamped]$rosmsg show duckietown_msgs/Pose2DStamped =====>
+[TOPIC=/duckbot12/wheels_driver_node/emergency_stop]$rostopic info /duckbot12/wheels_driver_node/emergency_stop =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:43810/)
+
+Subscribers: 
+ * /duckbot12/wheels_driver_node (http://duckbot12:40902/)
+
+
+[TOPIC_HZ=/duckbot12/wheels_driver_node/emergency_stop]$timeout 1 rostopic hz /duckbot12/wheels_driver_node/emergency_stop =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/wheels_driver_node/radius_limit]$rostopic info /duckbot12/wheels_driver_node/radius_limit =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/wheels_driver_node (http://duckbot12:40902/)
+
+
+[TOPIC_HZ=/duckbot12/wheels_driver_node/radius_limit]$timeout 1 rostopic hz /duckbot12/wheels_driver_node/radius_limit =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/wheels_driver_node/wheels_cmd]$rostopic info /duckbot12/wheels_driver_node/wheels_cmd =====>
+Type: duckietown_msgs/WheelsCmdStamped
+
+Publishers: 
+ * /duckbot12/inverse_kinematics_node (http://duckbot12:45085/)
+
+Subscribers: 
+ * /duckbot12/wheels_driver_node (http://duckbot12:40902/)
+
+
+[TOPIC_HZ=/duckbot12/wheels_driver_node/wheels_cmd]$timeout 1 rostopic hz /duckbot12/wheels_driver_node/wheels_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/WheelsCmdStamped]$rosmsg show duckietown_msgs/WheelsCmdStamped =====>
+[TOPIC=/duckbot12/wheels_driver_node/wheels_cmd_executed]$rostopic info /duckbot12/wheels_driver_node/wheels_cmd_executed =====>
+Type: duckietown_msgs/WheelsCmdStamped
+
+Publishers: 
+ * /duckbot12/wheels_driver_node (http://duckbot12:40902/)
+
+Subscribers: 
+ * /duckbot12/forward_kinematics_node (http://duckbot12:41190/)
+ * /record_1538728853792083716 (http://osboxes:40195/)
+
+
+[TOPIC_HZ=/duckbot12/wheels_driver_node/wheels_cmd_executed]$timeout 1 rostopic hz /duckbot12/wheels_driver_node/wheels_cmd_executed =====>
+[TOPIC_TYPE=duckietown_msgs/WheelsCmdStamped]$rosmsg show duckietown_msgs/WheelsCmdStamped =====>
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /duckbot12/joy (http://duckbot12:34797/)
+ * /duckbot12/joy_mapper_node (http://duckbot12:43810/)
+ * /duckbot12/velocity_to_pose_node (http://duckbot12:39281/)
+ * /duckbot12/wheels_driver_node (http://duckbot12:40902/)
+ * /duckbot12/inverse_kinematics_node (http://duckbot12:45085/)
+ * /duckbot12/forward_kinematics_node (http://duckbot12:41190/)
+ * /record_1538728853792083716 (http://osboxes:40195/)
+ * /rqt_gui_py_node_17714 (http://osboxes:39701/)
+
+Subscribers: 
+ * /rosout (http://duckbot12:39405/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+average rate: 882.751
+	min: 0.000s max: 0.004s std dev: 0.00147s window: 6
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://duckbot12:39405/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+subscribed to [/rosout_agg]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>
+[0m[ INFO] [1538729004.528111572]: Recording to 2018-10-05-04-43-24.bag.[0m
+[0m[ INFO] [1538729004.534080262]: Subscribing to /duckbot12/joy_mapper_node/start_avoidance[0m
+[0m[ INFO] [1538729004.583000809]: Subscribing to /duckbot12/wheels_driver_node/wheels_cmd_executed[0m
+[0m[ INFO] [1538729004.630014328]: Subscribing to /rosout[0m
+[0m[ INFO] [1538729004.674953912]: Subscribing to /duckbot12/inverse_kinematics_node/actuator_params[0m
+[0m[ INFO] [1538729004.736557417]: Subscribing to /duckbot12/joy_mapper_node/car_cmd[0m
+[0m[ INFO] [1538729004.781335277]: Subscribing to /duckbot12/joy[0m
+[0m[ INFO] [1538729004.889731318]: Subscribing to /duckbot12/joy_mapper_node/parallel_autonomy[0m
+[0m[ INFO] [1538729004.991520869]: Subscribing to /duckbot12/joy_mapper_node/joystick_override[0m
+[0m[ INFO] [1538729005.115919856]: Subscribing to /rosout_agg[0m
+[0m[ INFO] [1538729005.194146858]: Subscribing to /duckbot12/anti_instagram_node/click[0m
+[0m[ INFO] [1538729005.275095747]: Subscribing to /duckbot12/wheels_driver_node/wheels_cmd[0m
+[0m[ INFO] [1538729005.388707088]: Subscribing to /diagnostics[0m
+[0m[ INFO] [1538729005.472256348]: Subscribing to /duckbot12/wheels_driver_node/emergency_stop[0m
+[0m[ INFO] [1538729005.543564514]: Subscribing to /duckbot12/velocity_to_pose_node/pose[0m
+[0m[ INFO] [1538729005.605512877]: Subscribing to /duckbot12/forward_kinematics_node/velocity[0m

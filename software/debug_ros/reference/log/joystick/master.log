@@ -1,0 +1,583 @@
+[rosmaster.main][INFO] 2018-10-05 16:35:01,514: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2018-10-05 16:35:01,515: Starting ROS Master Node
+[xmlrpc][INFO] 2018-10-05 16:35:01,517: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2018-10-05 16:35:01,518: Started XML-RPC server [http://duckbot12:11311/]
+[rosmaster.master][INFO] 2018-10-05 16:35:01,518: Master initialized: port[11311], uri[http://duckbot12:11311/]
+[xmlrpc][INFO] 2018-10-05 16:35:01,519: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2018-10-05 16:35:01,546: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:35:01,552: +PARAM [/roslaunch/uris/host_duckbot12__42717] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:35:02,062: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:35:02,063: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:35:02,261: +SERVICE [/rosout/get_loggers] /rosout http://duckbot12:39405/
+[rosmaster.master][INFO] 2018-10-05 16:35:02,264: +SERVICE [/rosout/set_logger_level] /rosout http://duckbot12:39405/
+[rosmaster.master][INFO] 2018-10-05 16:35:02,270: +PUB [/rosout_agg] /rosout http://duckbot12:39405/
+[rosmaster.master][INFO] 2018-10-05 16:35:02,284: +SUB [/rosout] /rosout http://duckbot12:39405/
+[rosmaster.master][INFO] 2018-10-05 16:37:14,262: +PARAM [/roslaunch/uris/host_duckbot12__39525] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,297: +PARAM [/duckbot12/joy_mapper_node/bicycle_kinematics] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,298: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,298: +PARAM [/duckbot12/joy/dev] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,299: +PARAM [/duckbot12/joy_mapper_node/steer_angle_gain] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,299: +PARAM [/duckbot12/joy/deadzone] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,299: +PARAM [/duckbot12/joy/autorepeat_rate] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,300: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,300: +PARAM [/duckbot12/joy_mapper_node/speed_gain] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,301: +PARAM [/duckbot12/joy/coalesce_interval] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,301: +PARAM [/duckbot12/wheels_driver_node/min_rad] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,301: +PARAM [/duckbot12/wheels_driver_node/wheel_distance] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,302: +PARAM [/duckbot12/joy_mapper_node/steer_gain] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,302: +PARAM [/duckbot12/joy_mapper_node/simulated_vehicle_length] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,303: +PARAM [/duckbot12/wheels_driver_node/use_rad_lim] by /roslaunch
+[rosmaster.master][INFO] 2018-10-05 16:37:14,832: +PUB [/rosout] /duckbot12/joy http://duckbot12:34797/
+[rosmaster.master][INFO] 2018-10-05 16:37:14,836: +SERVICE [/duckbot12/joy/get_loggers] /duckbot12/joy http://duckbot12:34797/
+[rosmaster.master][INFO] 2018-10-05 16:37:14,840: +SERVICE [/duckbot12/joy/set_logger_level] /duckbot12/joy http://duckbot12:34797/
+[rosmaster.master][INFO] 2018-10-05 16:37:14,847: +PUB [/diagnostics] /duckbot12/joy http://duckbot12:34797/
+[rosmaster.master][INFO] 2018-10-05 16:37:14,874: +PUB [/duckbot12/joy] /duckbot12/joy http://duckbot12:34797/
+[rosmaster.master][INFO] 2018-10-05 16:37:14,903: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/']
+[rosmaster.master][INFO] 2018-10-05 16:37:14,920: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:37:16,405: +PUB [/rosout] /duckbot12/joy_mapper_node http://duckbot12:43810/
+[rosmaster.master][INFO] 2018-10-05 16:37:16,410: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/']
+[rosmaster.master][INFO] 2018-10-05 16:37:16,413: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:37:16,428: +SERVICE [/duckbot12/joy_mapper_node/get_loggers] /duckbot12/joy_mapper_node http://duckbot12:43810/
+[rosmaster.master][INFO] 2018-10-05 16:37:16,437: +SERVICE [/duckbot12/joy_mapper_node/set_logger_level] /duckbot12/joy_mapper_node http://duckbot12:43810/
+[rosmaster.master][INFO] 2018-10-05 16:37:16,452: +PARAM [/duckbot12/joy_mapper_node/speed_gain] by /duckbot12/joy_mapper_node
+[rosmaster.master][INFO] 2018-10-05 16:37:16,464: +PARAM [/duckbot12/joy_mapper_node/steer_gain] by /duckbot12/joy_mapper_node
+[rosmaster.master][INFO] 2018-10-05 16:37:16,476: +PARAM [/duckbot12/joy_mapper_node/bicycle_kinematics] by /duckbot12/joy_mapper_node
+[rosmaster.master][INFO] 2018-10-05 16:37:16,488: +PARAM [/duckbot12/joy_mapper_node/steer_angle_gain] by /duckbot12/joy_mapper_node
+[rosmaster.master][INFO] 2018-10-05 16:37:16,502: +PARAM [/duckbot12/joy_mapper_node/simulated_vehicle_length] by /duckbot12/joy_mapper_node
+[rosmaster.master][INFO] 2018-10-05 16:37:16,513: +PUB [/duckbot12/joy_mapper_node/car_cmd] /duckbot12/joy_mapper_node http://duckbot12:43810/
+[rosmaster.master][INFO] 2018-10-05 16:37:16,522: +PUB [/duckbot12/joy_mapper_node/joystick_override] /duckbot12/joy_mapper_node http://duckbot12:43810/
+[rosmaster.master][INFO] 2018-10-05 16:37:16,533: +PUB [/duckbot12/joy_mapper_node/parallel_autonomy] /duckbot12/joy_mapper_node http://duckbot12:43810/
+[rosmaster.master][INFO] 2018-10-05 16:37:16,540: +PUB [/duckbot12/anti_instagram_node/click] /duckbot12/joy_mapper_node http://duckbot12:43810/
+[rosmaster.master][INFO] 2018-10-05 16:37:16,555: +PUB [/duckbot12/wheels_driver_node/emergency_stop] /duckbot12/joy_mapper_node http://duckbot12:43810/
+[rosmaster.master][INFO] 2018-10-05 16:37:16,563: +PUB [/duckbot12/joy_mapper_node/start_avoidance] /duckbot12/joy_mapper_node http://duckbot12:43810/
+[rosmaster.master][INFO] 2018-10-05 16:37:16,575: +SUB [/duckbot12/joy] /duckbot12/joy_mapper_node http://duckbot12:43810/
+[rosmaster.master][INFO] 2018-10-05 16:37:16,974: +PUB [/rosout] /duckbot12/velocity_to_pose_node http://duckbot12:39281/
+[rosmaster.master][INFO] 2018-10-05 16:37:16,983: +PUB [/rosout] /duckbot12/wheels_driver_node http://duckbot12:40902/
+[rosmaster.master][INFO] 2018-10-05 16:37:16,993: +SERVICE [/duckbot12/velocity_to_pose_node/get_loggers] /duckbot12/velocity_to_pose_node http://duckbot12:39281/
+[rosmaster.master][INFO] 2018-10-05 16:37:17,011: +SERVICE [/duckbot12/velocity_to_pose_node/set_logger_level] /duckbot12/velocity_to_pose_node http://duckbot12:39281/
+[rosmaster.master][INFO] 2018-10-05 16:37:17,012: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/']
+[rosmaster.master][INFO] 2018-10-05 16:37:17,016: +SERVICE [/duckbot12/wheels_driver_node/get_loggers] /duckbot12/wheels_driver_node http://duckbot12:40902/
+[rosmaster.master][INFO] 2018-10-05 16:37:17,018: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:37:17,022: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/']
+[rosmaster.master][INFO] 2018-10-05 16:37:17,030: +SERVICE [/duckbot12/wheels_driver_node/set_logger_level] /duckbot12/wheels_driver_node http://duckbot12:40902/
+[rosmaster.master][INFO] 2018-10-05 16:37:17,031: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:37:17,034: +SUB [/duckbot12/forward_kinematics_node/velocity] /duckbot12/velocity_to_pose_node http://duckbot12:39281/
+[rosmaster.master][INFO] 2018-10-05 16:37:17,042: +PUB [/duckbot12/velocity_to_pose_node/pose] /duckbot12/velocity_to_pose_node http://duckbot12:39281/
+[rosmaster.master][INFO] 2018-10-05 16:37:17,048: +PARAM [/duckbot12/wheels_driver_node/use_rad_lim] by /duckbot12/wheels_driver_node
+[rosmaster.master][INFO] 2018-10-05 16:37:17,067: +PARAM [/duckbot12/wheels_driver_node/min_rad] by /duckbot12/wheels_driver_node
+[rosmaster.master][INFO] 2018-10-05 16:37:17,077: +PARAM [/duckbot12/wheels_driver_node/wheel_distance] by /duckbot12/wheels_driver_node
+[rosmaster.master][INFO] 2018-10-05 16:37:17,114: +PUB [/duckbot12/wheels_driver_node/wheels_cmd_executed] /duckbot12/wheels_driver_node http://duckbot12:40902/
+[rosmaster.master][INFO] 2018-10-05 16:37:17,124: +SUB [/duckbot12/wheels_driver_node/wheels_cmd] /duckbot12/wheels_driver_node http://duckbot12:40902/
+[rosmaster.master][INFO] 2018-10-05 16:37:17,134: +SUB [/duckbot12/wheels_driver_node/emergency_stop] /duckbot12/wheels_driver_node http://duckbot12:40902/
+[rosmaster.master][INFO] 2018-10-05 16:37:17,144: +SUB [/duckbot12/wheels_driver_node/radius_limit] /duckbot12/wheels_driver_node http://duckbot12:40902/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,032: +PUB [/rosout] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,035: +PUB [/rosout] /duckbot12/forward_kinematics_node http://duckbot12:41190/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,043: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/']
+[rosmaster.master][INFO] 2018-10-05 16:37:32,046: +SERVICE [/duckbot12/inverse_kinematics_node/get_loggers] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,048: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:37:32,049: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:37:32,053: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:37:32,055: +SERVICE [/duckbot12/inverse_kinematics_node/set_logger_level] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,058: +SERVICE [/duckbot12/forward_kinematics_node/get_loggers] /duckbot12/forward_kinematics_node http://duckbot12:41190/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,063: +SERVICE [/duckbot12/forward_kinematics_node/set_logger_level] /duckbot12/forward_kinematics_node http://duckbot12:41190/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,074: +PARAM [/duckbot12/inverse_kinematics_node/gain] by /duckbot12/inverse_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,076: +PARAM [/duckbot12/forward_kinematics_node/gain] by /duckbot12/forward_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,079: +PARAM [/duckbot12/inverse_kinematics_node/trim] by /duckbot12/inverse_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,084: +PARAM [/duckbot12/forward_kinematics_node/trim] by /duckbot12/forward_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,086: +PARAM [/duckbot12/inverse_kinematics_node/baseline] by /duckbot12/inverse_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,092: +PARAM [/duckbot12/forward_kinematics_node/baseline] by /duckbot12/forward_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,095: +PARAM [/duckbot12/inverse_kinematics_node/k] by /duckbot12/inverse_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,098: +PARAM [/duckbot12/forward_kinematics_node/k] by /duckbot12/forward_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,101: +PARAM [/duckbot12/inverse_kinematics_node/radius] by /duckbot12/inverse_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,104: +PARAM [/duckbot12/forward_kinematics_node/radius] by /duckbot12/forward_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,106: +PARAM [/duckbot12/inverse_kinematics_node/limit] by /duckbot12/inverse_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,114: +PARAM [/duckbot12/forward_kinematics_node/gain] by /duckbot12/forward_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,117: +PARAM [/duckbot12/inverse_kinematics_node/gain] by /duckbot12/inverse_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,127: +PARAM [/duckbot12/inverse_kinematics_node/trim] by /duckbot12/inverse_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,130: +PARAM [/duckbot12/forward_kinematics_node/trim] by /duckbot12/forward_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,137: +PARAM [/duckbot12/inverse_kinematics_node/baseline] by /duckbot12/inverse_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,147: +PARAM [/duckbot12/forward_kinematics_node/baseline] by /duckbot12/forward_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,150: +PARAM [/duckbot12/inverse_kinematics_node/radius] by /duckbot12/inverse_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,164: +PARAM [/duckbot12/forward_kinematics_node/radius] by /duckbot12/forward_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,169: +PARAM [/duckbot12/inverse_kinematics_node/k] by /duckbot12/inverse_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,177: +PARAM [/duckbot12/forward_kinematics_node/k] by /duckbot12/forward_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,180: +PARAM [/duckbot12/inverse_kinematics_node/limit] by /duckbot12/inverse_kinematics_node
+[rosmaster.master][INFO] 2018-10-05 16:37:32,186: +SERVICE [/duckbot12/inverse_kinematics_node/set_gain] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,189: +PUB [/duckbot12/forward_kinematics_node/velocity] /duckbot12/forward_kinematics_node http://duckbot12:41190/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,192: +SERVICE [/duckbot12/inverse_kinematics_node/set_trim] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,197: +SERVICE [/duckbot12/inverse_kinematics_node/set_baseline] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,200: +SUB [/duckbot12/wheels_driver_node/wheels_cmd_executed] /duckbot12/forward_kinematics_node http://duckbot12:41190/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,203: +SERVICE [/duckbot12/inverse_kinematics_node/set_radius] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,209: +SERVICE [/duckbot12/inverse_kinematics_node/set_k] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,214: +SERVICE [/duckbot12/inverse_kinematics_node/set_limit] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,220: +SERVICE [/duckbot12/inverse_kinematics_node/save_calibration] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,229: +SUB [/duckbot12/joy_mapper_node/car_cmd] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,238: +SUB [/duckbot12/inverse_kinematics_node/actuator_params_received] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,243: +PUB [/duckbot12/wheels_driver_node/wheels_cmd] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,251: +PUB [/duckbot12/inverse_kinematics_node/actuator_params] /duckbot12/inverse_kinematics_node http://duckbot12:45085/
+[rosmaster.master][INFO] 2018-10-05 16:37:32,254: publisherUpdate[/duckbot12/forward_kinematics_node/velocity] -> http://duckbot12:39281/ ['http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:37:32,254: publisherUpdate[/duckbot12/wheels_driver_node/wheels_cmd] -> http://duckbot12:40902/ ['http://duckbot12:45085/']
+[rosmaster.master][INFO] 2018-10-05 16:37:32,261: publisherUpdate[/duckbot12/wheels_driver_node/wheels_cmd] -> http://duckbot12:40902/ ['http://duckbot12:45085/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:37:32,265: publisherUpdate[/duckbot12/forward_kinematics_node/velocity] -> http://duckbot12:39281/ ['http://duckbot12:41190/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:20,614: +PUB [/rosout] /rostopic_17082_1538728820338 http://osboxes:36043/
+[rosmaster.master][INFO] 2018-10-05 16:40:20,625: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:36043/']
+[rosmaster.master][INFO] 2018-10-05 16:40:20,627: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:36043/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:20,639: +SERVICE [/rostopic_17082_1538728820338/get_loggers] /rostopic_17082_1538728820338 http://osboxes:36043/
+[rosmaster.master][INFO] 2018-10-05 16:40:20,652: +SERVICE [/rostopic_17082_1538728820338/set_logger_level] /rostopic_17082_1538728820338 http://osboxes:36043/
+[rosmaster.master][INFO] 2018-10-05 16:40:20,681: +SUB [/diagnostics] /rostopic_17082_1538728820338 http://osboxes:36043/
+[rosmaster.master][INFO] 2018-10-05 16:40:21,239: -SUB [/diagnostics] /rostopic_17082_1538728820338 http://osboxes:36043/
+[rosmaster.master][INFO] 2018-10-05 16:40:21,239: -PUB [/rosout] /rostopic_17082_1538728820338 http://osboxes:36043/
+[rosmaster.master][INFO] 2018-10-05 16:40:21,240: -SERVICE [/rostopic_17082_1538728820338/set_logger_level] /rostopic_17082_1538728820338 rosrpc://osboxes:39631
+[rosmaster.master][INFO] 2018-10-05 16:40:21,240: -SERVICE [/rostopic_17082_1538728820338/get_loggers] /rostopic_17082_1538728820338 rosrpc://osboxes:39631
+[rosmaster.master][INFO] 2018-10-05 16:40:21,327: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:21,329: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:23,572: +PUB [/rosout] /rostopic_17100_1538728823300 http://osboxes:34105/
+[rosmaster.master][INFO] 2018-10-05 16:40:23,594: +SERVICE [/rostopic_17100_1538728823300/get_loggers] /rostopic_17100_1538728823300 http://osboxes:34105/
+[rosmaster.master][INFO] 2018-10-05 16:40:23,601: +SERVICE [/rostopic_17100_1538728823300/set_logger_level] /rostopic_17100_1538728823300 http://osboxes:34105/
+[rosmaster.master][INFO] 2018-10-05 16:40:23,632: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:34105/']
+[rosmaster.master][INFO] 2018-10-05 16:40:23,634: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:34105/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:23,699: -PUB [/rosout] /rostopic_17100_1538728823300 http://osboxes:34105/
+[rosmaster.master][INFO] 2018-10-05 16:40:23,699: -SERVICE [/rostopic_17100_1538728823300/get_loggers] /rostopic_17100_1538728823300 rosrpc://osboxes:34741
+[rosmaster.master][INFO] 2018-10-05 16:40:23,700: -SERVICE [/rostopic_17100_1538728823300/set_logger_level] /rostopic_17100_1538728823300 rosrpc://osboxes:34741
+[rosmaster.master][INFO] 2018-10-05 16:40:23,733: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:23,736: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:25,450: +PUB [/rosout] /rostopic_17116_1538728825178 http://osboxes:40693/
+[rosmaster.master][INFO] 2018-10-05 16:40:25,470: +SERVICE [/rostopic_17116_1538728825178/get_loggers] /rostopic_17116_1538728825178 http://osboxes:40693/
+[rosmaster.master][INFO] 2018-10-05 16:40:25,484: +SERVICE [/rostopic_17116_1538728825178/set_logger_level] /rostopic_17116_1538728825178 http://osboxes:40693/
+[rosmaster.master][INFO] 2018-10-05 16:40:25,537: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40693/']
+[rosmaster.master][INFO] 2018-10-05 16:40:25,540: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40693/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:25,568: -PUB [/rosout] /rostopic_17116_1538728825178 http://osboxes:40693/
+[rosmaster.master][INFO] 2018-10-05 16:40:25,569: -SERVICE [/rostopic_17116_1538728825178/set_logger_level] /rostopic_17116_1538728825178 rosrpc://osboxes:46161
+[rosmaster.master][INFO] 2018-10-05 16:40:25,569: -SERVICE [/rostopic_17116_1538728825178/get_loggers] /rostopic_17116_1538728825178 rosrpc://osboxes:46161
+[rosmaster.master][INFO] 2018-10-05 16:40:25,639: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:25,647: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:27,949: +PUB [/rosout] /rostopic_17132_1538728827680 http://osboxes:39189/
+[rosmaster.master][INFO] 2018-10-05 16:40:27,951: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:39189/']
+[rosmaster.master][INFO] 2018-10-05 16:40:27,953: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:39189/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:27,967: +SERVICE [/rostopic_17132_1538728827680/get_loggers] /rostopic_17132_1538728827680 http://osboxes:39189/
+[rosmaster.master][INFO] 2018-10-05 16:40:27,976: +SERVICE [/rostopic_17132_1538728827680/set_logger_level] /rostopic_17132_1538728827680 http://osboxes:39189/
+[rosmaster.master][INFO] 2018-10-05 16:40:28,087: -PUB [/rosout] /rostopic_17132_1538728827680 http://osboxes:39189/
+[rosmaster.master][INFO] 2018-10-05 16:40:28,088: -SERVICE [/rostopic_17132_1538728827680/set_logger_level] /rostopic_17132_1538728827680 rosrpc://osboxes:43007
+[rosmaster.master][INFO] 2018-10-05 16:40:28,088: -SERVICE [/rostopic_17132_1538728827680/get_loggers] /rostopic_17132_1538728827680 rosrpc://osboxes:43007
+[rosmaster.master][INFO] 2018-10-05 16:40:28,143: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:28,145: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:29,548: +PUB [/rosout] /rostopic_17148_1538728829282 http://osboxes:33175/
+[rosmaster.master][INFO] 2018-10-05 16:40:29,557: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:33175/']
+[rosmaster.master][INFO] 2018-10-05 16:40:29,560: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:33175/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:29,564: +SERVICE [/rostopic_17148_1538728829282/get_loggers] /rostopic_17148_1538728829282 http://osboxes:33175/
+[rosmaster.master][INFO] 2018-10-05 16:40:29,572: +SERVICE [/rostopic_17148_1538728829282/set_logger_level] /rostopic_17148_1538728829282 http://osboxes:33175/
+[rosmaster.master][INFO] 2018-10-05 16:40:29,631: -PUB [/rosout] /rostopic_17148_1538728829282 http://osboxes:33175/
+[rosmaster.master][INFO] 2018-10-05 16:40:29,632: -SERVICE [/rostopic_17148_1538728829282/get_loggers] /rostopic_17148_1538728829282 rosrpc://osboxes:41359
+[rosmaster.master][INFO] 2018-10-05 16:40:29,632: -SERVICE [/rostopic_17148_1538728829282/set_logger_level] /rostopic_17148_1538728829282 rosrpc://osboxes:41359
+[rosmaster.master][INFO] 2018-10-05 16:40:29,646: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:29,649: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:30,979: +PUB [/rosout] /rostopic_17164_1538728830703 http://osboxes:45653/
+[rosmaster.master][INFO] 2018-10-05 16:40:30,999: +SERVICE [/rostopic_17164_1538728830703/get_loggers] /rostopic_17164_1538728830703 http://osboxes:45653/
+[rosmaster.master][INFO] 2018-10-05 16:40:31,008: +SERVICE [/rostopic_17164_1538728830703/set_logger_level] /rostopic_17164_1538728830703 http://osboxes:45653/
+[rosmaster.master][INFO] 2018-10-05 16:40:31,035: +SUB [/duckbot12/joy] /rostopic_17164_1538728830703 http://osboxes:45653/
+[rosmaster.master][INFO] 2018-10-05 16:40:31,051: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:45653/']
+[rosmaster.master][INFO] 2018-10-05 16:40:31,055: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:45653/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:31,679: -SUB [/duckbot12/joy] /rostopic_17164_1538728830703 http://osboxes:45653/
+[rosmaster.master][INFO] 2018-10-05 16:40:31,680: -PUB [/rosout] /rostopic_17164_1538728830703 http://osboxes:45653/
+[rosmaster.master][INFO] 2018-10-05 16:40:31,681: -SERVICE [/rostopic_17164_1538728830703/get_loggers] /rostopic_17164_1538728830703 rosrpc://osboxes:42387
+[rosmaster.master][INFO] 2018-10-05 16:40:31,681: -SERVICE [/rostopic_17164_1538728830703/set_logger_level] /rostopic_17164_1538728830703 rosrpc://osboxes:42387
+[rosmaster.master][INFO] 2018-10-05 16:40:31,753: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:31,755: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:33,170: +PUB [/rosout] /rostopic_17182_1538728832870 http://osboxes:39513/
+[rosmaster.master][INFO] 2018-10-05 16:40:33,190: +SERVICE [/rostopic_17182_1538728832870/get_loggers] /rostopic_17182_1538728832870 http://osboxes:39513/
+[rosmaster.master][INFO] 2018-10-05 16:40:33,199: +SERVICE [/rostopic_17182_1538728832870/set_logger_level] /rostopic_17182_1538728832870 http://osboxes:39513/
+[rosmaster.master][INFO] 2018-10-05 16:40:33,258: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:39513/']
+[rosmaster.master][INFO] 2018-10-05 16:40:33,261: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:39513/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:33,289: -PUB [/rosout] /rostopic_17182_1538728832870 http://osboxes:39513/
+[rosmaster.master][INFO] 2018-10-05 16:40:33,290: -SERVICE [/rostopic_17182_1538728832870/set_logger_level] /rostopic_17182_1538728832870 rosrpc://osboxes:42485
+[rosmaster.master][INFO] 2018-10-05 16:40:33,290: -SERVICE [/rostopic_17182_1538728832870/get_loggers] /rostopic_17182_1538728832870 rosrpc://osboxes:42485
+[rosmaster.master][INFO] 2018-10-05 16:40:33,362: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:33,365: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:35,379: +PUB [/rosout] /rostopic_17198_1538728835078 http://osboxes:36309/
+[rosmaster.master][INFO] 2018-10-05 16:40:35,395: +SERVICE [/rostopic_17198_1538728835078/get_loggers] /rostopic_17198_1538728835078 http://osboxes:36309/
+[rosmaster.master][INFO] 2018-10-05 16:40:35,405: +SERVICE [/rostopic_17198_1538728835078/set_logger_level] /rostopic_17198_1538728835078 http://osboxes:36309/
+[rosmaster.master][INFO] 2018-10-05 16:40:35,465: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:36309/']
+[rosmaster.master][INFO] 2018-10-05 16:40:35,468: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:36309/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:35,478: -PUB [/rosout] /rostopic_17198_1538728835078 http://osboxes:36309/
+[rosmaster.master][INFO] 2018-10-05 16:40:35,479: -SERVICE [/rostopic_17198_1538728835078/set_logger_level] /rostopic_17198_1538728835078 rosrpc://osboxes:40549
+[rosmaster.master][INFO] 2018-10-05 16:40:35,480: -SERVICE [/rostopic_17198_1538728835078/get_loggers] /rostopic_17198_1538728835078 rosrpc://osboxes:40549
+[rosmaster.master][INFO] 2018-10-05 16:40:35,569: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:35,571: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:37,172: +PUB [/rosout] /rostopic_17215_1538728836854 http://osboxes:33107/
+[rosmaster.master][INFO] 2018-10-05 16:40:37,173: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:33107/']
+[rosmaster.master][INFO] 2018-10-05 16:40:37,176: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:33107/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:37,194: +SERVICE [/rostopic_17215_1538728836854/get_loggers] /rostopic_17215_1538728836854 http://osboxes:33107/
+[rosmaster.master][INFO] 2018-10-05 16:40:37,202: +SERVICE [/rostopic_17215_1538728836854/set_logger_level] /rostopic_17215_1538728836854 http://osboxes:33107/
+[rosmaster.master][INFO] 2018-10-05 16:40:37,279: -PUB [/rosout] /rostopic_17215_1538728836854 http://osboxes:33107/
+[rosmaster.master][INFO] 2018-10-05 16:40:37,280: -SERVICE [/rostopic_17215_1538728836854/get_loggers] /rostopic_17215_1538728836854 rosrpc://osboxes:34405
+[rosmaster.master][INFO] 2018-10-05 16:40:37,280: -SERVICE [/rostopic_17215_1538728836854/set_logger_level] /rostopic_17215_1538728836854 rosrpc://osboxes:34405
+[rosmaster.master][INFO] 2018-10-05 16:40:37,372: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:37,374: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:39,326: +PUB [/rosout] /rostopic_17231_1538728838978 http://osboxes:38135/
+[rosmaster.master][INFO] 2018-10-05 16:40:39,341: +SERVICE [/rostopic_17231_1538728838978/get_loggers] /rostopic_17231_1538728838978 http://osboxes:38135/
+[rosmaster.master][INFO] 2018-10-05 16:40:39,347: +SERVICE [/rostopic_17231_1538728838978/set_logger_level] /rostopic_17231_1538728838978 http://osboxes:38135/
+[rosmaster.master][INFO] 2018-10-05 16:40:39,379: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:38135/']
+[rosmaster.master][INFO] 2018-10-05 16:40:39,382: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:38135/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:39,451: -PUB [/rosout] /rostopic_17231_1538728838978 http://osboxes:38135/
+[rosmaster.master][INFO] 2018-10-05 16:40:39,452: -SERVICE [/rostopic_17231_1538728838978/get_loggers] /rostopic_17231_1538728838978 rosrpc://osboxes:36633
+[rosmaster.master][INFO] 2018-10-05 16:40:39,452: -SERVICE [/rostopic_17231_1538728838978/set_logger_level] /rostopic_17231_1538728838978 rosrpc://osboxes:36633
+[rosmaster.master][INFO] 2018-10-05 16:40:39,479: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:39,481: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:41,484: +PUB [/rosout] /rostopic_17249_1538728841177 http://osboxes:35517/
+[rosmaster.master][INFO] 2018-10-05 16:40:41,485: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:35517/']
+[rosmaster.master][INFO] 2018-10-05 16:40:41,487: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:35517/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:41,497: +SERVICE [/rostopic_17249_1538728841177/get_loggers] /rostopic_17249_1538728841177 http://osboxes:35517/
+[rosmaster.master][INFO] 2018-10-05 16:40:41,506: +SERVICE [/rostopic_17249_1538728841177/set_logger_level] /rostopic_17249_1538728841177 http://osboxes:35517/
+[rosmaster.master][INFO] 2018-10-05 16:40:41,589: -PUB [/rosout] /rostopic_17249_1538728841177 http://osboxes:35517/
+[rosmaster.master][INFO] 2018-10-05 16:40:41,591: -SERVICE [/rostopic_17249_1538728841177/set_logger_level] /rostopic_17249_1538728841177 rosrpc://osboxes:44611
+[rosmaster.master][INFO] 2018-10-05 16:40:41,592: -SERVICE [/rostopic_17249_1538728841177/get_loggers] /rostopic_17249_1538728841177 rosrpc://osboxes:44611
+[rosmaster.master][INFO] 2018-10-05 16:40:41,684: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:41,686: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:43,101: +PUB [/rosout] /rostopic_17265_1538728842832 http://osboxes:39345/
+[rosmaster.master][INFO] 2018-10-05 16:40:43,118: +SERVICE [/rostopic_17265_1538728842832/get_loggers] /rostopic_17265_1538728842832 http://osboxes:39345/
+[rosmaster.master][INFO] 2018-10-05 16:40:43,127: +SERVICE [/rostopic_17265_1538728842832/set_logger_level] /rostopic_17265_1538728842832 http://osboxes:39345/
+[rosmaster.master][INFO] 2018-10-05 16:40:43,191: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:39345/']
+[rosmaster.master][INFO] 2018-10-05 16:40:43,194: -PUB [/rosout] /rostopic_17265_1538728842832 http://osboxes:39345/
+[rosmaster.master][INFO] 2018-10-05 16:40:43,195: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:39345/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:43,196: -SERVICE [/rostopic_17265_1538728842832/set_logger_level] /rostopic_17265_1538728842832 rosrpc://osboxes:40667
+[rosmaster.master][INFO] 2018-10-05 16:40:43,196: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:43,197: -SERVICE [/rostopic_17265_1538728842832/get_loggers] /rostopic_17265_1538728842832 rosrpc://osboxes:40667
+[rosmaster.master][INFO] 2018-10-05 16:40:43,199: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:44,690: +PUB [/rosout] /rostopic_17281_1538728844405 http://osboxes:43201/
+[rosmaster.master][INFO] 2018-10-05 16:40:44,693: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:43201/']
+[rosmaster.master][INFO] 2018-10-05 16:40:44,696: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:43201/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:44,706: +SERVICE [/rostopic_17281_1538728844405/get_loggers] /rostopic_17281_1538728844405 http://osboxes:43201/
+[rosmaster.master][INFO] 2018-10-05 16:40:44,717: +SERVICE [/rostopic_17281_1538728844405/set_logger_level] /rostopic_17281_1538728844405 http://osboxes:43201/
+[rosmaster.master][INFO] 2018-10-05 16:40:44,783: -PUB [/rosout] /rostopic_17281_1538728844405 http://osboxes:43201/
+[rosmaster.master][INFO] 2018-10-05 16:40:44,784: -SERVICE [/rostopic_17281_1538728844405/set_logger_level] /rostopic_17281_1538728844405 rosrpc://osboxes:34279
+[rosmaster.master][INFO] 2018-10-05 16:40:44,784: -SERVICE [/rostopic_17281_1538728844405/get_loggers] /rostopic_17281_1538728844405 rosrpc://osboxes:34279
+[rosmaster.master][INFO] 2018-10-05 16:40:44,795: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:44,798: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:46,162: +PUB [/rosout] /rostopic_17297_1538728845892 http://osboxes:33837/
+[rosmaster.master][INFO] 2018-10-05 16:40:46,176: +SERVICE [/rostopic_17297_1538728845892/get_loggers] /rostopic_17297_1538728845892 http://osboxes:33837/
+[rosmaster.master][INFO] 2018-10-05 16:40:46,185: +SERVICE [/rostopic_17297_1538728845892/set_logger_level] /rostopic_17297_1538728845892 http://osboxes:33837/
+[rosmaster.master][INFO] 2018-10-05 16:40:46,200: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:33837/']
+[rosmaster.master][INFO] 2018-10-05 16:40:46,244: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:33837/']: sec=0.04, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:46,254: -PUB [/rosout] /rostopic_17297_1538728845892 http://osboxes:33837/
+[rosmaster.master][INFO] 2018-10-05 16:40:46,254: -SERVICE [/rostopic_17297_1538728845892/get_loggers] /rostopic_17297_1538728845892 rosrpc://osboxes:33737
+[rosmaster.master][INFO] 2018-10-05 16:40:46,255: -SERVICE [/rostopic_17297_1538728845892/set_logger_level] /rostopic_17297_1538728845892 rosrpc://osboxes:33737
+[rosmaster.master][INFO] 2018-10-05 16:40:46,301: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:46,303: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:47,829: +PUB [/rosout] /rostopic_17314_1538728847554 http://osboxes:37973/
+[rosmaster.master][INFO] 2018-10-05 16:40:47,844: +SERVICE [/rostopic_17314_1538728847554/get_loggers] /rostopic_17314_1538728847554 http://osboxes:37973/
+[rosmaster.master][INFO] 2018-10-05 16:40:47,847: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:37973/']
+[rosmaster.master][INFO] 2018-10-05 16:40:47,850: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:37973/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:47,856: +SERVICE [/rostopic_17314_1538728847554/set_logger_level] /rostopic_17314_1538728847554 http://osboxes:37973/
+[rosmaster.master][INFO] 2018-10-05 16:40:47,941: -PUB [/rosout] /rostopic_17314_1538728847554 http://osboxes:37973/
+[rosmaster.master][INFO] 2018-10-05 16:40:47,942: -SERVICE [/rostopic_17314_1538728847554/set_logger_level] /rostopic_17314_1538728847554 rosrpc://osboxes:40223
+[rosmaster.master][INFO] 2018-10-05 16:40:47,942: -SERVICE [/rostopic_17314_1538728847554/get_loggers] /rostopic_17314_1538728847554 rosrpc://osboxes:40223
+[rosmaster.master][INFO] 2018-10-05 16:40:47,950: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:47,953: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:49,488: +PUB [/rosout] /rostopic_17332_1538728849212 http://osboxes:44231/
+[rosmaster.master][INFO] 2018-10-05 16:40:49,510: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:44231/']
+[rosmaster.master][INFO] 2018-10-05 16:40:49,511: +SERVICE [/rostopic_17332_1538728849212/get_loggers] /rostopic_17332_1538728849212 http://osboxes:44231/
+[rosmaster.master][INFO] 2018-10-05 16:40:49,513: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:44231/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:49,521: +SERVICE [/rostopic_17332_1538728849212/set_logger_level] /rostopic_17332_1538728849212 http://osboxes:44231/
+[rosmaster.master][INFO] 2018-10-05 16:40:49,582: +SUB [/rosout] /rostopic_17332_1538728849212 http://osboxes:44231/
+[rosmaster.master][INFO] 2018-10-05 16:40:50,159: -SUB [/rosout] /rostopic_17332_1538728849212 http://osboxes:44231/
+[rosmaster.master][INFO] 2018-10-05 16:40:50,160: -PUB [/rosout] /rostopic_17332_1538728849212 http://osboxes:44231/
+[rosmaster.master][INFO] 2018-10-05 16:40:50,163: -SERVICE [/rostopic_17332_1538728849212/get_loggers] /rostopic_17332_1538728849212 rosrpc://osboxes:43727
+[rosmaster.master][INFO] 2018-10-05 16:40:50,163: -SERVICE [/rostopic_17332_1538728849212/set_logger_level] /rostopic_17332_1538728849212 rosrpc://osboxes:43727
+[rosmaster.master][INFO] 2018-10-05 16:40:50,211: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:50,214: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:52,047: +PUB [/rosout] /rostopic_17364_1538728851758 http://osboxes:38895/
+[rosmaster.master][INFO] 2018-10-05 16:40:52,061: +SERVICE [/rostopic_17364_1538728851758/get_loggers] /rostopic_17364_1538728851758 http://osboxes:38895/
+[rosmaster.master][INFO] 2018-10-05 16:40:52,062: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:38895/']
+[rosmaster.master][INFO] 2018-10-05 16:40:52,066: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:38895/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:52,069: +SERVICE [/rostopic_17364_1538728851758/set_logger_level] /rostopic_17364_1538728851758 http://osboxes:38895/
+[rosmaster.master][INFO] 2018-10-05 16:40:52,091: +SUB [/rosout_agg] /rostopic_17364_1538728851758 http://osboxes:38895/
+[rosmaster.master][INFO] 2018-10-05 16:40:52,665: -SUB [/rosout_agg] /rostopic_17364_1538728851758 http://osboxes:38895/
+[rosmaster.master][INFO] 2018-10-05 16:40:52,666: -PUB [/rosout] /rostopic_17364_1538728851758 http://osboxes:38895/
+[rosmaster.master][INFO] 2018-10-05 16:40:52,667: -SERVICE [/rostopic_17364_1538728851758/set_logger_level] /rostopic_17364_1538728851758 rosrpc://osboxes:45541
+[rosmaster.master][INFO] 2018-10-05 16:40:52,667: -SERVICE [/rostopic_17364_1538728851758/get_loggers] /rostopic_17364_1538728851758 rosrpc://osboxes:45541
+[rosmaster.master][INFO] 2018-10-05 16:40:52,667: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']
+[rosmaster.master][INFO] 2018-10-05 16:40:52,671: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:53,920: +PUB [/rosout] /record_1538728853792083716 http://osboxes:40195/
+[rosmaster.master][INFO] 2018-10-05 16:40:53,920: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:40:53,924: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:40:53,930: +SERVICE [/record_1538728853792083716/get_loggers] /record_1538728853792083716 http://osboxes:40195/
+[rosmaster.master][INFO] 2018-10-05 16:40:53,938: +SERVICE [/record_1538728853792083716/set_logger_level] /record_1538728853792083716 http://osboxes:40195/
+[rosmaster.master][INFO] 2018-10-05 16:40:53,998: +SUB [/duckbot12/joy_mapper_node/start_avoidance] /record_1538728853792083716 http://osboxes:40195/
+[rosmaster.master][INFO] 2018-10-05 16:40:54,060: +SUB [/duckbot12/wheels_driver_node/wheels_cmd_executed] /record_1538728853792083716 http://osboxes:40195/
+[rosmaster.master][INFO] 2018-10-05 16:42:51,870: +PUB [/rosout] /rostopic_17478_1538728971516 http://osboxes:35941/
+[rosmaster.master][INFO] 2018-10-05 16:42:51,886: +SERVICE [/rostopic_17478_1538728971516/get_loggers] /rostopic_17478_1538728971516 http://osboxes:35941/
+[rosmaster.master][INFO] 2018-10-05 16:42:51,892: +SERVICE [/rostopic_17478_1538728971516/set_logger_level] /rostopic_17478_1538728971516 http://osboxes:35941/
+[rosmaster.master][INFO] 2018-10-05 16:42:51,915: +SUB [/diagnostics] /rostopic_17478_1538728971516 http://osboxes:35941/
+[rosmaster.master][INFO] 2018-10-05 16:42:51,915: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:35941/']
+[rosmaster.master][INFO] 2018-10-05 16:42:51,919: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:35941/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:42:52,431: -SUB [/diagnostics] /rostopic_17478_1538728971516 http://osboxes:35941/
+[rosmaster.master][INFO] 2018-10-05 16:42:52,432: -PUB [/rosout] /rostopic_17478_1538728971516 http://osboxes:35941/
+[rosmaster.master][INFO] 2018-10-05 16:42:52,433: -SERVICE [/rostopic_17478_1538728971516/get_loggers] /rostopic_17478_1538728971516 rosrpc://osboxes:33243
+[rosmaster.master][INFO] 2018-10-05 16:42:52,433: -SERVICE [/rostopic_17478_1538728971516/set_logger_level] /rostopic_17478_1538728971516 rosrpc://osboxes:33243
+[rosmaster.master][INFO] 2018-10-05 16:42:52,449: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:42:52,451: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:42:54,115: +PUB [/rosout] /rostopic_17496_1538728973797 http://osboxes:40473/
+[rosmaster.master][INFO] 2018-10-05 16:42:54,119: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:40473/']
+[rosmaster.master][INFO] 2018-10-05 16:42:54,122: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:40473/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:42:54,133: +SERVICE [/rostopic_17496_1538728973797/get_loggers] /rostopic_17496_1538728973797 http://osboxes:40473/
+[rosmaster.master][INFO] 2018-10-05 16:42:54,141: +SERVICE [/rostopic_17496_1538728973797/set_logger_level] /rostopic_17496_1538728973797 http://osboxes:40473/
+[rosmaster.master][INFO] 2018-10-05 16:42:54,233: -PUB [/rosout] /rostopic_17496_1538728973797 http://osboxes:40473/
+[rosmaster.master][INFO] 2018-10-05 16:42:54,233: -SERVICE [/rostopic_17496_1538728973797/set_logger_level] /rostopic_17496_1538728973797 rosrpc://osboxes:45639
+[rosmaster.master][INFO] 2018-10-05 16:42:54,234: -SERVICE [/rostopic_17496_1538728973797/get_loggers] /rostopic_17496_1538728973797 rosrpc://osboxes:45639
+[rosmaster.master][INFO] 2018-10-05 16:42:54,256: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:42:54,259: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:42:56,388: +PUB [/rosout] /rostopic_17512_1538728976077 http://osboxes:37063/
+[rosmaster.master][INFO] 2018-10-05 16:42:56,408: +SERVICE [/rostopic_17512_1538728976077/get_loggers] /rostopic_17512_1538728976077 http://osboxes:37063/
+[rosmaster.master][INFO] 2018-10-05 16:42:56,415: +SERVICE [/rostopic_17512_1538728976077/set_logger_level] /rostopic_17512_1538728976077 http://osboxes:37063/
+[rosmaster.master][INFO] 2018-10-05 16:42:56,427: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:37063/']
+[rosmaster.master][INFO] 2018-10-05 16:42:56,432: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:37063/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:42:56,504: -PUB [/rosout] /rostopic_17512_1538728976077 http://osboxes:37063/
+[rosmaster.master][INFO] 2018-10-05 16:42:56,505: -SERVICE [/rostopic_17512_1538728976077/get_loggers] /rostopic_17512_1538728976077 rosrpc://osboxes:35735
+[rosmaster.master][INFO] 2018-10-05 16:42:56,505: -SERVICE [/rostopic_17512_1538728976077/set_logger_level] /rostopic_17512_1538728976077 rosrpc://osboxes:35735
+[rosmaster.master][INFO] 2018-10-05 16:42:56,529: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:42:56,532: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:42:58,399: +PUB [/rosout] /rostopic_17529_1538728978115 http://osboxes:45507/
+[rosmaster.master][INFO] 2018-10-05 16:42:58,418: +SERVICE [/rostopic_17529_1538728978115/get_loggers] /rostopic_17529_1538728978115 http://osboxes:45507/
+[rosmaster.master][INFO] 2018-10-05 16:42:58,426: +SERVICE [/rostopic_17529_1538728978115/set_logger_level] /rostopic_17529_1538728978115 http://osboxes:45507/
+[rosmaster.master][INFO] 2018-10-05 16:42:58,435: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:45507/']
+[rosmaster.master][INFO] 2018-10-05 16:42:58,439: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:45507/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:42:58,518: -PUB [/rosout] /rostopic_17529_1538728978115 http://osboxes:45507/
+[rosmaster.master][INFO] 2018-10-05 16:42:58,519: -SERVICE [/rostopic_17529_1538728978115/set_logger_level] /rostopic_17529_1538728978115 rosrpc://osboxes:37885
+[rosmaster.master][INFO] 2018-10-05 16:42:58,519: -SERVICE [/rostopic_17529_1538728978115/get_loggers] /rostopic_17529_1538728978115 rosrpc://osboxes:37885
+[rosmaster.master][INFO] 2018-10-05 16:42:58,536: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:42:58,538: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:00,862: +PUB [/rosout] /rostopic_17547_1538728980561 http://osboxes:39429/
+[rosmaster.master][INFO] 2018-10-05 16:43:00,878: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39429/']
+[rosmaster.master][INFO] 2018-10-05 16:43:00,880: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39429/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:00,887: +SERVICE [/rostopic_17547_1538728980561/get_loggers] /rostopic_17547_1538728980561 http://osboxes:39429/
+[rosmaster.master][INFO] 2018-10-05 16:43:00,896: +SERVICE [/rostopic_17547_1538728980561/set_logger_level] /rostopic_17547_1538728980561 http://osboxes:39429/
+[rosmaster.master][INFO] 2018-10-05 16:43:00,971: -PUB [/rosout] /rostopic_17547_1538728980561 http://osboxes:39429/
+[rosmaster.master][INFO] 2018-10-05 16:43:00,972: -SERVICE [/rostopic_17547_1538728980561/set_logger_level] /rostopic_17547_1538728980561 rosrpc://osboxes:34591
+[rosmaster.master][INFO] 2018-10-05 16:43:00,972: -SERVICE [/rostopic_17547_1538728980561/get_loggers] /rostopic_17547_1538728980561 rosrpc://osboxes:34591
+[rosmaster.master][INFO] 2018-10-05 16:43:00,981: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:43:00,984: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:02,901: +PUB [/rosout] /rostopic_17563_1538728982619 http://osboxes:44015/
+[rosmaster.master][INFO] 2018-10-05 16:43:02,917: +SERVICE [/rostopic_17563_1538728982619/get_loggers] /rostopic_17563_1538728982619 http://osboxes:44015/
+[rosmaster.master][INFO] 2018-10-05 16:43:02,924: +SERVICE [/rostopic_17563_1538728982619/set_logger_level] /rostopic_17563_1538728982619 http://osboxes:44015/
+[rosmaster.master][INFO] 2018-10-05 16:43:02,945: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:44015/']
+[rosmaster.master][INFO] 2018-10-05 16:43:02,948: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:44015/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:02,952: +SUB [/duckbot12/joy] /rostopic_17563_1538728982619 http://osboxes:44015/
+[rosmaster.master][INFO] 2018-10-05 16:43:03,590: -SUB [/duckbot12/joy] /rostopic_17563_1538728982619 http://osboxes:44015/
+[rosmaster.master][INFO] 2018-10-05 16:43:03,593: -PUB [/rosout] /rostopic_17563_1538728982619 http://osboxes:44015/
+[rosmaster.master][INFO] 2018-10-05 16:43:03,598: -SERVICE [/rostopic_17563_1538728982619/get_loggers] /rostopic_17563_1538728982619 rosrpc://osboxes:46077
+[rosmaster.master][INFO] 2018-10-05 16:43:03,599: -SERVICE [/rostopic_17563_1538728982619/set_logger_level] /rostopic_17563_1538728982619 rosrpc://osboxes:46077
+[rosmaster.master][INFO] 2018-10-05 16:43:03,649: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:43:03,651: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:05,706: +PUB [/rosout] /rostopic_17581_1538728985409 http://osboxes:44241/
+[rosmaster.master][INFO] 2018-10-05 16:43:05,722: +SERVICE [/rostopic_17581_1538728985409/get_loggers] /rostopic_17581_1538728985409 http://osboxes:44241/
+[rosmaster.master][INFO] 2018-10-05 16:43:05,730: +SERVICE [/rostopic_17581_1538728985409/set_logger_level] /rostopic_17581_1538728985409 http://osboxes:44241/
+[rosmaster.master][INFO] 2018-10-05 16:43:05,753: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:44241/']
+[rosmaster.master][INFO] 2018-10-05 16:43:05,756: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:44241/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:05,790: -PUB [/rosout] /rostopic_17581_1538728985409 http://osboxes:44241/
+[rosmaster.master][INFO] 2018-10-05 16:43:05,791: -SERVICE [/rostopic_17581_1538728985409/set_logger_level] /rostopic_17581_1538728985409 rosrpc://osboxes:39151
+[rosmaster.master][INFO] 2018-10-05 16:43:05,791: -SERVICE [/rostopic_17581_1538728985409/get_loggers] /rostopic_17581_1538728985409 rosrpc://osboxes:39151
+[rosmaster.master][INFO] 2018-10-05 16:43:05,797: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:43:05,799: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:07,280: +PUB [/rosout] /rostopic_17599_1538728987000 http://osboxes:44051/
+[rosmaster.master][INFO] 2018-10-05 16:43:07,302: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:44051/']
+[rosmaster.master][INFO] 2018-10-05 16:43:07,305: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:44051/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:07,307: +SERVICE [/rostopic_17599_1538728987000/get_loggers] /rostopic_17599_1538728987000 http://osboxes:44051/
+[rosmaster.master][INFO] 2018-10-05 16:43:07,314: +SERVICE [/rostopic_17599_1538728987000/set_logger_level] /rostopic_17599_1538728987000 http://osboxes:44051/
+[rosmaster.master][INFO] 2018-10-05 16:43:07,379: -PUB [/rosout] /rostopic_17599_1538728987000 http://osboxes:44051/
+[rosmaster.master][INFO] 2018-10-05 16:43:07,380: -SERVICE [/rostopic_17599_1538728987000/set_logger_level] /rostopic_17599_1538728987000 rosrpc://osboxes:44987
+[rosmaster.master][INFO] 2018-10-05 16:43:07,380: -SERVICE [/rostopic_17599_1538728987000/get_loggers] /rostopic_17599_1538728987000 rosrpc://osboxes:44987
+[rosmaster.master][INFO] 2018-10-05 16:43:07,407: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:43:07,410: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:08,844: +PUB [/rosout] /rostopic_17615_1538728988565 http://osboxes:43911/
+[rosmaster.master][INFO] 2018-10-05 16:43:08,859: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:43911/']
+[rosmaster.master][INFO] 2018-10-05 16:43:08,862: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:43911/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:08,866: +SERVICE [/rostopic_17615_1538728988565/get_loggers] /rostopic_17615_1538728988565 http://osboxes:43911/
+[rosmaster.master][INFO] 2018-10-05 16:43:08,874: +SERVICE [/rostopic_17615_1538728988565/set_logger_level] /rostopic_17615_1538728988565 http://osboxes:43911/
+[rosmaster.master][INFO] 2018-10-05 16:43:08,976: -PUB [/rosout] /rostopic_17615_1538728988565 http://osboxes:43911/
+[rosmaster.master][INFO] 2018-10-05 16:43:08,976: -SERVICE [/rostopic_17615_1538728988565/get_loggers] /rostopic_17615_1538728988565 rosrpc://osboxes:42083
+[rosmaster.master][INFO] 2018-10-05 16:43:08,977: -SERVICE [/rostopic_17615_1538728988565/set_logger_level] /rostopic_17615_1538728988565 rosrpc://osboxes:42083
+[rosmaster.master][INFO] 2018-10-05 16:43:09,013: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:43:09,015: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:10,401: +PUB [/rosout] /rostopic_17631_1538728990114 http://osboxes:38829/
+[rosmaster.master][INFO] 2018-10-05 16:43:10,418: +SERVICE [/rostopic_17631_1538728990114/get_loggers] /rostopic_17631_1538728990114 http://osboxes:38829/
+[rosmaster.master][INFO] 2018-10-05 16:43:10,418: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:38829/']
+[rosmaster.master][INFO] 2018-10-05 16:43:10,422: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:38829/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:10,429: +SERVICE [/rostopic_17631_1538728990114/set_logger_level] /rostopic_17631_1538728990114 http://osboxes:38829/
+[rosmaster.master][INFO] 2018-10-05 16:43:10,501: -PUB [/rosout] /rostopic_17631_1538728990114 http://osboxes:38829/
+[rosmaster.master][INFO] 2018-10-05 16:43:10,502: -SERVICE [/rostopic_17631_1538728990114/set_logger_level] /rostopic_17631_1538728990114 rosrpc://osboxes:33043
+[rosmaster.master][INFO] 2018-10-05 16:43:10,502: -SERVICE [/rostopic_17631_1538728990114/get_loggers] /rostopic_17631_1538728990114 rosrpc://osboxes:33043
+[rosmaster.master][INFO] 2018-10-05 16:43:10,522: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:43:10,525: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:12,095: +PUB [/rosout] /rostopic_17647_1538728991807 http://osboxes:44449/
+[rosmaster.master][INFO] 2018-10-05 16:43:12,112: +SERVICE [/rostopic_17647_1538728991807/get_loggers] /rostopic_17647_1538728991807 http://osboxes:44449/
+[rosmaster.master][INFO] 2018-10-05 16:43:12,121: +SERVICE [/rostopic_17647_1538728991807/set_logger_level] /rostopic_17647_1538728991807 http://osboxes:44449/
+[rosmaster.master][INFO] 2018-10-05 16:43:12,130: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:44449/']
+[rosmaster.master][INFO] 2018-10-05 16:43:12,133: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:44449/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:12,183: -PUB [/rosout] /rostopic_17647_1538728991807 http://osboxes:44449/
+[rosmaster.master][INFO] 2018-10-05 16:43:12,183: -SERVICE [/rostopic_17647_1538728991807/set_logger_level] /rostopic_17647_1538728991807 rosrpc://osboxes:45839
+[rosmaster.master][INFO] 2018-10-05 16:43:12,184: -SERVICE [/rostopic_17647_1538728991807/get_loggers] /rostopic_17647_1538728991807 rosrpc://osboxes:45839
+[rosmaster.master][INFO] 2018-10-05 16:43:12,233: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:43:12,236: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:14,074: +PUB [/rosout] /rostopic_17665_1538728993767 http://osboxes:41893/
+[rosmaster.master][INFO] 2018-10-05 16:43:14,090: +SERVICE [/rostopic_17665_1538728993767/get_loggers] /rostopic_17665_1538728993767 http://osboxes:41893/
+[rosmaster.master][INFO] 2018-10-05 16:43:14,099: +SERVICE [/rostopic_17665_1538728993767/set_logger_level] /rostopic_17665_1538728993767 http://osboxes:41893/
+[rosmaster.master][INFO] 2018-10-05 16:43:14,139: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:41893/']
+[rosmaster.master][INFO] 2018-10-05 16:43:14,142: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:41893/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:14,164: -PUB [/rosout] /rostopic_17665_1538728993767 http://osboxes:41893/
+[rosmaster.master][INFO] 2018-10-05 16:43:14,165: -SERVICE [/rostopic_17665_1538728993767/get_loggers] /rostopic_17665_1538728993767 rosrpc://osboxes:40055
+[rosmaster.master][INFO] 2018-10-05 16:43:14,165: -SERVICE [/rostopic_17665_1538728993767/set_logger_level] /rostopic_17665_1538728993767 rosrpc://osboxes:40055
+[rosmaster.master][INFO] 2018-10-05 16:43:14,169: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:43:14,171: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:15,551: +PUB [/rosout] /rostopic_17681_1538728995273 http://osboxes:44037/
+[rosmaster.master][INFO] 2018-10-05 16:43:15,569: +SERVICE [/rostopic_17681_1538728995273/get_loggers] /rostopic_17681_1538728995273 http://osboxes:44037/
+[rosmaster.master][INFO] 2018-10-05 16:43:15,572: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:44037/']
+[rosmaster.master][INFO] 2018-10-05 16:43:15,576: +SERVICE [/rostopic_17681_1538728995273/set_logger_level] /rostopic_17681_1538728995273 http://osboxes:44037/
+[rosmaster.master][INFO] 2018-10-05 16:43:15,578: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:44037/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:15,644: -PUB [/rosout] /rostopic_17681_1538728995273 http://osboxes:44037/
+[rosmaster.master][INFO] 2018-10-05 16:43:15,644: -SERVICE [/rostopic_17681_1538728995273/get_loggers] /rostopic_17681_1538728995273 rosrpc://osboxes:35585
+[rosmaster.master][INFO] 2018-10-05 16:43:15,645: -SERVICE [/rostopic_17681_1538728995273/set_logger_level] /rostopic_17681_1538728995273 rosrpc://osboxes:35585
+[rosmaster.master][INFO] 2018-10-05 16:43:15,645: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:43:15,648: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:17,073: +PUB [/rosout] /rostopic_17697_1538728996768 http://osboxes:35501/
+[rosmaster.master][INFO] 2018-10-05 16:43:17,079: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:35501/']
+[rosmaster.master][INFO] 2018-10-05 16:43:17,083: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:35501/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:17,091: +SERVICE [/rostopic_17697_1538728996768/get_loggers] /rostopic_17697_1538728996768 http://osboxes:35501/
+[rosmaster.master][INFO] 2018-10-05 16:43:17,099: +SERVICE [/rostopic_17697_1538728996768/set_logger_level] /rostopic_17697_1538728996768 http://osboxes:35501/
+[rosmaster.master][INFO] 2018-10-05 16:43:17,164: -PUB [/rosout] /rostopic_17697_1538728996768 http://osboxes:35501/
+[rosmaster.master][INFO] 2018-10-05 16:43:17,164: -SERVICE [/rostopic_17697_1538728996768/set_logger_level] /rostopic_17697_1538728996768 rosrpc://osboxes:35311
+[rosmaster.master][INFO] 2018-10-05 16:43:17,165: -SERVICE [/rostopic_17697_1538728996768/get_loggers] /rostopic_17697_1538728996768 rosrpc://osboxes:35311
+[rosmaster.master][INFO] 2018-10-05 16:43:17,182: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:43:17,184: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:18,550: +PUB [/rosout] /rostopic_17713_1538728998232 http://osboxes:37221/
+[rosmaster.master][INFO] 2018-10-05 16:43:18,554: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:37221/']
+[rosmaster.master][INFO] 2018-10-05 16:43:18,557: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:37221/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:18,566: +SERVICE [/rostopic_17713_1538728998232/get_loggers] /rostopic_17713_1538728998232 http://osboxes:37221/
+[rosmaster.master][INFO] 2018-10-05 16:43:18,574: +SERVICE [/rostopic_17713_1538728998232/set_logger_level] /rostopic_17713_1538728998232 http://osboxes:37221/
+[rosmaster.master][INFO] 2018-10-05 16:43:18,641: -PUB [/rosout] /rostopic_17713_1538728998232 http://osboxes:37221/
+[rosmaster.master][INFO] 2018-10-05 16:43:18,642: -SERVICE [/rostopic_17713_1538728998232/get_loggers] /rostopic_17713_1538728998232 rosrpc://osboxes:37307
+[rosmaster.master][INFO] 2018-10-05 16:43:18,642: -SERVICE [/rostopic_17713_1538728998232/set_logger_level] /rostopic_17713_1538728998232 rosrpc://osboxes:37307
+[rosmaster.master][INFO] 2018-10-05 16:43:18,658: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:43:18,660: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:19,227: +PUB [/rosout] /rqt_gui_py_node_17714 http://osboxes:39701/
+[rosmaster.master][INFO] 2018-10-05 16:43:19,244: +SERVICE [/rqt_gui_py_node_17714/get_loggers] /rqt_gui_py_node_17714 http://osboxes:39701/
+[rosmaster.master][INFO] 2018-10-05 16:43:19,251: +SERVICE [/rqt_gui_py_node_17714/set_logger_level] /rqt_gui_py_node_17714 http://osboxes:39701/
+[rosmaster.master][INFO] 2018-10-05 16:43:19,266: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/']
+[rosmaster.master][INFO] 2018-10-05 16:43:19,269: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:20,244: +PUB [/rosout] /rostopic_17742_1538728999951 http://osboxes:34475/
+[rosmaster.master][INFO] 2018-10-05 16:43:20,259: +SERVICE [/rostopic_17742_1538728999951/get_loggers] /rostopic_17742_1538728999951 http://osboxes:34475/
+[rosmaster.master][INFO] 2018-10-05 16:43:20,268: +SERVICE [/rostopic_17742_1538728999951/set_logger_level] /rostopic_17742_1538728999951 http://osboxes:34475/
+[rosmaster.master][INFO] 2018-10-05 16:43:20,271: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/', 'http://osboxes:34475/']
+[rosmaster.master][INFO] 2018-10-05 16:43:20,277: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/', 'http://osboxes:34475/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:20,293: +SUB [/rosout] /rostopic_17742_1538728999951 http://osboxes:34475/
+[rosmaster.master][INFO] 2018-10-05 16:43:20,913: -SUB [/rosout] /rostopic_17742_1538728999951 http://osboxes:34475/
+[rosmaster.master][INFO] 2018-10-05 16:43:20,914: -PUB [/rosout] /rostopic_17742_1538728999951 http://osboxes:34475/
+[rosmaster.master][INFO] 2018-10-05 16:43:20,914: -SERVICE [/rostopic_17742_1538728999951/set_logger_level] /rostopic_17742_1538728999951 rosrpc://osboxes:46737
+[rosmaster.master][INFO] 2018-10-05 16:43:20,914: -SERVICE [/rostopic_17742_1538728999951/get_loggers] /rostopic_17742_1538728999951 rosrpc://osboxes:46737
+[rosmaster.master][INFO] 2018-10-05 16:43:20,978: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/']
+[rosmaster.master][INFO] 2018-10-05 16:43:20,981: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:22,947: +PUB [/rosout] /rostopic_17786_1538729002622 http://osboxes:38553/
+[rosmaster.master][INFO] 2018-10-05 16:43:22,963: +SERVICE [/rostopic_17786_1538729002622/get_loggers] /rostopic_17786_1538729002622 http://osboxes:38553/
+[rosmaster.master][INFO] 2018-10-05 16:43:22,972: +SERVICE [/rostopic_17786_1538729002622/set_logger_level] /rostopic_17786_1538729002622 http://osboxes:38553/
+[rosmaster.master][INFO] 2018-10-05 16:43:22,987: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/', 'http://osboxes:38553/']
+[rosmaster.master][INFO] 2018-10-05 16:43:22,990: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/', 'http://osboxes:38553/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:22,998: +SUB [/rosout_agg] /rostopic_17786_1538729002622 http://osboxes:38553/
+[rosmaster.master][INFO] 2018-10-05 16:43:23,539: -SUB [/rosout_agg] /rostopic_17786_1538729002622 http://osboxes:38553/
+[rosmaster.master][INFO] 2018-10-05 16:43:23,539: -PUB [/rosout] /rostopic_17786_1538729002622 http://osboxes:38553/
+[rosmaster.master][INFO] 2018-10-05 16:43:23,540: -SERVICE [/rostopic_17786_1538729002622/set_logger_level] /rostopic_17786_1538729002622 rosrpc://osboxes:39277
+[rosmaster.master][INFO] 2018-10-05 16:43:23,540: -SERVICE [/rostopic_17786_1538729002622/get_loggers] /rostopic_17786_1538729002622 rosrpc://osboxes:39277
+[rosmaster.master][INFO] 2018-10-05 16:43:23,592: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/']
+[rosmaster.master][INFO] 2018-10-05 16:43:23,595: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:24,630: +PUB [/rosout] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:24,638: +SERVICE [/record_1538729004482226979/get_loggers] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:24,647: +SERVICE [/record_1538729004482226979/set_logger_level] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:24,697: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/', 'http://osboxes:39325/']
+[rosmaster.master][INFO] 2018-10-05 16:43:24,701: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/', 'http://osboxes:39325/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:24,704: +SUB [/duckbot12/joy_mapper_node/start_avoidance] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:24,755: +SUB [/duckbot12/wheels_driver_node/wheels_cmd_executed] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:24,797: +SUB [/rosout] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:24,862: +SUB [/duckbot12/inverse_kinematics_node/actuator_params] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:24,906: +SUB [/duckbot12/joy_mapper_node/car_cmd] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:25,015: +SUB [/duckbot12/joy] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:25,116: +SUB [/duckbot12/joy_mapper_node/parallel_autonomy] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:25,234: +SUB [/duckbot12/joy_mapper_node/joystick_override] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:25,319: +SUB [/rosout_agg] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:25,396: +SUB [/duckbot12/anti_instagram_node/click] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:25,513: +SUB [/duckbot12/wheels_driver_node/wheels_cmd] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:25,594: +SUB [/diagnostics] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:25,667: +SUB [/duckbot12/wheels_driver_node/emergency_stop] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:25,731: +SUB [/duckbot12/velocity_to_pose_node/pose] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:25,786: +SUB [/duckbot12/forward_kinematics_node/velocity] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,372: -PUB [/rosout] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,382: -SUB [/duckbot12/joy_mapper_node/start_avoidance] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,390: -SUB [/duckbot12/wheels_driver_node/wheels_cmd_executed] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,408: -SUB [/rosout] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,417: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/']
+[rosmaster.master][INFO] 2018-10-05 16:43:34,417: publisherUpdate[/rosout] -> http://osboxes:39325/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/']
+[rosmaster.master][INFO] 2018-10-05 16:43:34,419: -SUB [/duckbot12/inverse_kinematics_node/actuator_params] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,422: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:34,423: publisherUpdate[/rosout] -> http://osboxes:39325/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:39701/']: sec=0.00, exception=[Errno 111] Connection refused
+[rosmaster.master][INFO] 2018-10-05 16:43:34,431: -SUB [/duckbot12/joy_mapper_node/car_cmd] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,439: -SUB [/duckbot12/joy] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.threadpool][ERROR] 2018-10-05 16:43:34,444: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1053, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 897, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 859, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 836, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosmaster.master][INFO] 2018-10-05 16:43:34,450: -SUB [/duckbot12/joy_mapper_node/parallel_autonomy] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,457: -SUB [/duckbot12/joy_mapper_node/joystick_override] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,467: -SUB [/rosout_agg] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,475: -SUB [/duckbot12/anti_instagram_node/click] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,481: -SUB [/duckbot12/wheels_driver_node/wheels_cmd] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,488: -SUB [/diagnostics] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,496: -SUB [/duckbot12/wheels_driver_node/emergency_stop] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,507: -SUB [/duckbot12/velocity_to_pose_node/pose] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,515: -SUB [/duckbot12/forward_kinematics_node/velocity] /record_1538729004482226979 http://osboxes:39325/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,522: -SERVICE [/record_1538729004482226979/get_loggers] /record_1538729004482226979 rosrpc://osboxes:37795
+[rosmaster.master][INFO] 2018-10-05 16:43:34,533: -SERVICE [/record_1538729004482226979/set_logger_level] /record_1538729004482226979 rosrpc://osboxes:37795
+[rosmaster.master][INFO] 2018-10-05 16:43:34,816: +SUB [/rosout] /rqt_gui_py_node_17714 http://osboxes:39701/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,889: +SUB [/duckbot12/joy] /rqt_gui_py_node_17714 http://osboxes:39701/
+[rosmaster.master][INFO] 2018-10-05 16:43:34,986: +SUB [/rosout_agg] /rqt_gui_py_node_17714 http://osboxes:39701/
+[rosmaster.master][INFO] 2018-10-05 16:43:35,012: +SUB [/diagnostics] /rqt_gui_py_node_17714 http://osboxes:39701/
+[rosmaster.master][INFO] 2018-10-05 16:43:50,423: -SUB [/diagnostics] /rqt_gui_py_node_17714 http://osboxes:39701/
+[rosmaster.master][INFO] 2018-10-05 16:43:50,485: -SUB [/rosout] /rqt_gui_py_node_17714 http://osboxes:39701/
+[rosmaster.master][INFO] 2018-10-05 16:43:50,502: -SUB [/rosout_agg] /rqt_gui_py_node_17714 http://osboxes:39701/
+[rosmaster.master][INFO] 2018-10-05 16:43:50,522: -SUB [/duckbot12/joy] /rqt_gui_py_node_17714 http://osboxes:39701/
+[rosmaster.master][INFO] 2018-10-05 16:43:50,533: -PUB [/rosout] /rqt_gui_py_node_17714 http://osboxes:39701/
+[rosmaster.master][INFO] 2018-10-05 16:43:50,534: -SERVICE [/rqt_gui_py_node_17714/get_loggers] /rqt_gui_py_node_17714 rosrpc://osboxes:36299
+[rosmaster.master][INFO] 2018-10-05 16:43:50,534: -SERVICE [/rqt_gui_py_node_17714/set_logger_level] /rqt_gui_py_node_17714 rosrpc://osboxes:36299
+[rosmaster.master][INFO] 2018-10-05 16:43:50,541: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:43:50,544: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:57,451: +PUB [/rosout] /rqt_gui_py_node_17855 http://osboxes:34021/
+[rosmaster.master][INFO] 2018-10-05 16:43:57,455: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:34021/']
+[rosmaster.master][INFO] 2018-10-05 16:43:57,459: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/', 'http://osboxes:34021/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-05 16:43:57,468: +SERVICE [/rqt_gui_py_node_17855/get_loggers] /rqt_gui_py_node_17855 http://osboxes:34021/
+[rosmaster.master][INFO] 2018-10-05 16:43:57,476: +SERVICE [/rqt_gui_py_node_17855/set_logger_level] /rqt_gui_py_node_17855 http://osboxes:34021/
+[rosmaster.master][INFO] 2018-10-05 16:43:57,506: +SUB [/statistics] /rqt_gui_py_node_17855 http://osboxes:34021/
+[rosmaster.master][INFO] 2018-10-05 16:47:47,806: -SUB [/statistics] /rqt_gui_py_node_17855 http://osboxes:34021/
+[rosmaster.master][INFO] 2018-10-05 16:47:47,807: -PUB [/rosout] /rqt_gui_py_node_17855 http://osboxes:34021/
+[rosmaster.master][INFO] 2018-10-05 16:47:47,807: -SERVICE [/rqt_gui_py_node_17855/set_logger_level] /rqt_gui_py_node_17855 rosrpc://osboxes:33735
+[rosmaster.master][INFO] 2018-10-05 16:47:47,808: -SERVICE [/rqt_gui_py_node_17855/get_loggers] /rqt_gui_py_node_17855 rosrpc://osboxes:33735
+[rosmaster.master][INFO] 2018-10-05 16:47:47,814: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']
+[rosmaster.master][INFO] 2018-10-05 16:47:47,817: publisherUpdate[/rosout] -> http://duckbot12:39405/ ['http://duckbot12:34797/', 'http://duckbot12:43810/', 'http://duckbot12:39281/', 'http://duckbot12:40902/', 'http://duckbot12:45085/', 'http://duckbot12:41190/', 'http://osboxes:40195/']: sec=0.00, result=[1, '', 0]

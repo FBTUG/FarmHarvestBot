@@ -1,0 +1,47 @@
+[rospy.client][INFO] 2018-10-05 16:37:16,865: init_node, name[/duckbot12/wheels_driver_node], pid[3091]
+[xmlrpc][INFO] 2018-10-05 16:37:16,866: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-05 16:37:16,872: Started XML-RPC server [http://duckbot12:40902/]
+[rospy.init][INFO] 2018-10-05 16:37:16,873: ROS Slave URI: [http://duckbot12:40902/]
+[rospy.impl.masterslave][INFO] 2018-10-05 16:37:16,873: _ready: http://duckbot12:40902/
+[xmlrpc][INFO] 2018-10-05 16:37:16,875: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-10-05 16:37:16,877: Registering with master node http://duckbot12:11311
+[rospy.init][INFO] 2018-10-05 16:37:16,974: registered with master
+[rospy.rosout][INFO] 2018-10-05 16:37:16,975: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-05 16:37:16,987: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-05 16:37:16,999: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-05 16:37:17,033: [/duckbot12/wheels_driver_node] Initializing 
+[rosout][INFO] 2018-10-05 16:37:17,051: [/duckbot12/wheels_driver_node] ~use_rad_lim = False 
+[rosout][INFO] 2018-10-05 16:37:17,069: [/duckbot12/wheels_driver_node] ~min_rad = 0.06 
+[rosout][INFO] 2018-10-05 16:37:17,080: [/duckbot12/wheels_driver_node] ~wheel_distance = 0.103 
+[rospy.internal][INFO] 2018-10-05 16:37:17,133: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-05 16:37:17,154: topic[/duckbot12/wheels_driver_node/emergency_stop] adding connection to [http://duckbot12:43810/], count 0
+[rospy.internal][INFO] 2018-10-05 16:37:32,220: topic[/duckbot12/wheels_driver_node/wheels_cmd_executed] adding connection to [/duckbot12/forward_kinematics_node], count 0
+[rospy.internal][INFO] 2018-10-05 16:37:32,287: topic[/duckbot12/wheels_driver_node/wheels_cmd] adding connection to [http://duckbot12:45085/], count 0
+[rospy.internal][INFO] 2018-10-05 16:40:49,688: topic[/rosout] adding connection to [/rostopic_17332_1538728849212], count 1
+[rospy.internal][INFO] 2018-10-05 16:40:50,402: topic[/rosout] removing connection to /rostopic_17332_1538728849212
+[rospy.internal][INFO] 2018-10-05 16:43:20,344: topic[/rosout] adding connection to [/rostopic_17742_1538728999951], count 1
+[rosout][WARNING] 2018-10-05 16:43:20,928: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-05 16:43:20,932: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-05 16:43:21,081: topic[/rosout] removing connection to /rostopic_17742_1538728999951
+[rospy.internal][INFO] 2018-10-05 16:43:24,977: topic[/duckbot12/wheels_driver_node/wheels_cmd_executed] adding connection to [/record_1538729004482226979], count 1
+[rospy.internal][INFO] 2018-10-05 16:43:24,979: topic[/rosout] adding connection to [/record_1538729004482226979], count 1
+[rospy.internal][INFO] 2018-10-05 16:43:34,600: topic[/rosout] removing connection to /record_1538729004482226979
+[rospy.internal][INFO] 2018-10-05 16:43:34,602: topic[/duckbot12/wheels_driver_node/wheels_cmd_executed] removing connection to /record_1538729004482226979
+[rospy.internal][INFO] 2018-10-05 16:43:34,962: topic[/rosout] adding connection to [/rqt_gui_py_node_17714], count 1
+[rosout][WARNING] 2018-10-05 16:43:50,455: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-05 16:43:50,457: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-05 16:43:50,621: topic[/rosout] removing connection to /rqt_gui_py_node_17714

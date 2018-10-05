@@ -1,0 +1,56 @@
+[rospy.client][INFO] 2018-10-05 16:54:30,181: [32minit_node, name[/duckbot12/cam_info_reader_node], pid[2323][0m
+[xmlrpc][INFO] 2018-10-05 16:54:30,184: [32mXML-RPC server binding to 0.0.0.0:0[0m
+[xmlrpc][INFO] 2018-10-05 16:54:30,187: [32mStarted XML-RPC server [http://duckbot12:37632/][0m
+[rospy.init][INFO] 2018-10-05 16:54:30,188: [32mROS Slave URI: [http://duckbot12:37632/][0m
+[rospy.impl.masterslave][INFO] 2018-10-05 16:54:30,189: [32m_ready: http://duckbot12:37632/[0m
+[rospy.registration][INFO] 2018-10-05 16:54:30,195: [32mRegistering with master node http://duckbot12:11311[0m
+[xmlrpc][INFO] 2018-10-05 16:54:30,196: [32mxml rpc node: starting XML-RPC server[0m
+[rospy.init][INFO] 2018-10-05 16:54:30,291: [32mregistered with master[0m
+[rospy.rosout][INFO] 2018-10-05 16:54:30,292: [32minitializing /rosout core topic[0m
+[rospy.rosout][INFO] 2018-10-05 16:54:30,323: [32mconnected to core topic /rosout[0m
+[rospy.simtime][INFO] 2018-10-05 16:54:30,339: [32m/use_sim_time is not set, will not subscribe to simulated time [/clock] topic[0m
+[rosout][INFO] 2018-10-05 16:54:30,402: [32m[/duckbot12/cam_info_reader_node] ~config = baseline [0m
+[rosout][INFO] 2018-10-05 16:54:30,425: [32m[/duckbot12/cam_info_reader_node] ~cali_file_name = duckbot12 [0m
+[rosout][INFO] 2018-10-05 16:54:30,453: [32m[/duckbot12/cam_info_reader_node] ~image_type = compressed [0m
+[rosout][INFO] 2018-10-05 16:54:30,479: [32m[/duckbot12/cam_info_reader_node] Using calibration file: /home/ubuntu/duckiefleet/calibrations/camera_intrinsic/duckbot12.yaml[0m
+[rospy.internal][INFO] 2018-10-05 16:54:30,621: [32mtopic[/rosout] adding connection to [/rosout], count 0[0m
+[rosout][INFO] 2018-10-05 16:54:30,619: [32m[/duckbot12/cam_info_reader_node] CameraInfo: header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: "/duckbot12/camera_optical_frame"
+height: 480
+width: 640
+distortion_model: "plumb_bob"
+D: [-0.2642335191586474, 0.04928076042331032, 0.0033845862284124055, -0.0008903623017115541, 0.0]
+K: [313.86267626197287, 0.0, 321.2600884044547, 0.0, 315.37408531067985, 231.12840661833283, 0.0, 0.0, 1.0]
+R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+P: [217.34449768066406, 0.0, 319.97532869551287, 0.0, 0.0, 253.4927978515625, 230.13211377258995, 0.0, 0.0, 0.0, 1.0, 0.0]
+binning_x: 0
+binning_y: 0
+roi: 
+  x_offset: 0
+  y_offset: 0
+  height: 0
+  width: 0
+  do_rectify: False[0m
+[rosout][WARNING] 2018-10-05 16:54:30,628: [33m[/duckbot12/cam_info_reader_node] ==============CompressedImage[0m
+[rospy.internal][INFO] 2018-10-05 16:54:30,687: [32mtopic[/duckbot12/camera_node/image/compressed] adding connection to [http://duckbot12:32805/], count 0[0m
+[rospy.internal][INFO] 2018-10-05 16:54:51,233: [32mtopic[/duckbot12/camera_node/camera_info] adding connection to [/rostopic_18131_1538729690756], count 0[0m
+[rospy.internal][INFO] 2018-10-05 16:54:51,829: [32mtopic[/duckbot12/camera_node/camera_info] removing connection to /rostopic_18131_1538729690756[0m
+[rospy.internal][INFO] 2018-10-05 16:58:01,431: [32mtopic[/rosout] adding connection to [/rostopic_19304_1538729880816], count 1[0m
+[rosout][WARNING] 2018-10-05 16:58:01,707: [33mInbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.[0m
+[rospy.internal][ERROR] 2018-10-05 16:58:01,715: [31mInbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[0m
+[rospy.internal][INFO] 2018-10-05 16:58:02,018: [32mtopic[/rosout] removing connection to /rostopic_19304_1538729880816[0m
+[rospy.internal][INFO] 2018-10-05 16:58:12,149: [32mtopic[/duckbot12/camera_node/camera_info] adding connection to [/record_1538729888974602378], count 0[0m
+[rospy.internal][INFO] 2018-10-05 16:58:13,982: [32mtopic[/rosout] adding connection to [/record_1538729888974602378], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:58:19,657: [32mtopic[/duckbot12/camera_node/camera_info] removing connection to /record_1538729888974602378[0m
+[rospy.internal][INFO] 2018-10-05 16:58:20,057: [32mtopic[/rosout] removing connection to /record_1538729888974602378[0m

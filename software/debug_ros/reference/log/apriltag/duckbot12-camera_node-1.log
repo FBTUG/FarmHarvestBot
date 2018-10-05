@@ -1,0 +1,39 @@
+[rospy.client][INFO] 2018-10-05 16:54:29,424: [32minit_node, name[/duckbot12/camera_node], pid[2321][0m
+[xmlrpc][INFO] 2018-10-05 16:54:29,428: [32mXML-RPC server binding to 0.0.0.0:0[0m
+[xmlrpc][INFO] 2018-10-05 16:54:29,431: [32mStarted XML-RPC server [http://duckbot12:32805/][0m
+[rospy.init][INFO] 2018-10-05 16:54:29,433: [32mROS Slave URI: [http://duckbot12:32805/][0m
+[rospy.impl.masterslave][INFO] 2018-10-05 16:54:29,434: [32m_ready: http://duckbot12:32805/[0m
+[rospy.registration][INFO] 2018-10-05 16:54:29,441: [32mRegistering with master node http://duckbot12:11311[0m
+[xmlrpc][INFO] 2018-10-05 16:54:29,441: [32mxml rpc node: starting XML-RPC server[0m
+[rospy.init][INFO] 2018-10-05 16:54:29,536: [32mregistered with master[0m
+[rospy.rosout][INFO] 2018-10-05 16:54:29,537: [32minitializing /rosout core topic[0m
+[rospy.rosout][INFO] 2018-10-05 16:54:29,556: [32mconnected to core topic /rosout[0m
+[rospy.simtime][INFO] 2018-10-05 16:54:29,578: [32m/use_sim_time is not set, will not subscribe to simulated time [/clock] topic[0m
+[rosout][INFO] 2018-10-05 16:54:29,604: [32m[/duckbot12/camera_node] Initializing......[0m
+[rosout][INFO] 2018-10-05 16:54:29,627: [32m[/duckbot12/camera_node] ~framerate_high = 30 [0m
+[rosout][INFO] 2018-10-05 16:54:29,654: [32m[/duckbot12/camera_node] ~framerate_low = 15 [0m
+[rosout][INFO] 2018-10-05 16:54:29,675: [32m[/duckbot12/camera_node] ~res_w = 640 [0m
+[rosout][INFO] 2018-10-05 16:54:29,696: [32m[/duckbot12/camera_node] ~res_h = 480 [0m
+[rospy.internal][INFO] 2018-10-05 16:54:29,849: [32mtopic[/rosout] adding connection to [/rosout], count 0[0m
+[rosout][INFO] 2018-10-05 16:54:30,313: [32m[/duckbot12/camera_node] Initialized.[0m
+[rosout][INFO] 2018-10-05 16:54:30,322: [32m[/duckbot12/camera_node] Start capturing.[0m
+[rospy.internal][INFO] 2018-10-05 16:54:30,352: [32mtopic[/duckbot12/camera_node/image/compressed] adding connection to [/duckbot12/decoder_node], count 0[0m
+[rosout][INFO] 2018-10-05 16:54:30,441: [32m[/duckbot12/camera_node] Published the first image.[0m
+[rospy.internal][INFO] 2018-10-05 16:54:30,703: [32mtopic[/duckbot12/camera_node/image/compressed] adding connection to [/duckbot12/cam_info_reader_node], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:54:56,205: [32mtopic[/duckbot12/camera_node/image/compressed] adding connection to [/rostopic_18165_1538729695686], count 2[0m
+[rospy.internal][INFO] 2018-10-05 16:54:56,700: [32mtopic[/duckbot12/camera_node/image/compressed] removing connection to /rostopic_18165_1538729695686[0m
+[rospy.internal][INFO] 2018-10-05 16:58:01,438: [32mtopic[/rosout] adding connection to [/rostopic_19304_1538729880816], count 1[0m
+[rosout][WARNING] 2018-10-05 16:58:01,699: [33mInbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.[0m
+[rospy.internal][ERROR] 2018-10-05 16:58:01,714: [31mInbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[0m
+[rospy.internal][INFO] 2018-10-05 16:58:01,755: [32mtopic[/rosout] removing connection to /rostopic_19304_1538729880816[0m
+[rospy.internal][INFO] 2018-10-05 16:58:14,000: [32mtopic[/rosout] adding connection to [/record_1538729888974602378], count 1[0m
+[rospy.internal][INFO] 2018-10-05 16:58:17,121: [32mtopic[/duckbot12/camera_node/image/compressed] adding connection to [/record_1538729888974602378], count 2[0m
+[rospy.internal][INFO] 2018-10-05 16:58:20,323: [32mtopic[/rosout] removing connection to /record_1538729888974602378[0m
+[rospy.internal][INFO] 2018-10-05 16:58:20,413: [32mtopic[/duckbot12/camera_node/image/compressed] removing connection to /record_1538729888974602378[0m
