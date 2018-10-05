@@ -1,0 +1,731 @@
+
+osboxes@osboxes:~$ export ROS_MASTER_URI=http://duckbot12:11311
+osboxes@osboxes:~$ rosnode list
+/duckbot12/forward_kinematics_node
+/duckbot12/inverse_kinematics_node
+/duckbot12/joy
+/duckbot12/joy_mapper_node
+/duckbot12/velocity_to_pose_node
+/duckbot12/wheels_driver_node
+/rosout
+osboxes@osboxes:~$ rviz
+[ INFO] [1538637332.029955335]: rviz version 1.12.16
+[ INFO] [1538637332.032824984]: compiled against Qt version 5.5.1
+[ INFO] [1538637332.034317744]: compiled against OGRE version 1.9.0 (Ghadamon)
+[ INFO] [1538637332.757482549]: Stereo is NOT SUPPORTED
+[ INFO] [1538637332.757724414]: OpenGl version: 3 (GLSL 1.3).
+osboxes@osboxes:~$ rviz
+[ INFO] [1538638111.541004321]: rviz version 1.12.16
+[ INFO] [1538638111.541106221]: compiled against Qt version 5.5.1
+[ INFO] [1538638111.541131010]: compiled against OGRE version 1.9.0 (Ghadamon)
+[ INFO] [1538638111.864926128]: Stereo is NOT SUPPORTED
+[ INFO] [1538638111.865057334]: OpenGl version: 3 (GLSL 1.3).
+osboxes@osboxes:~$ rosnode list
+/duckbot12/cam_info_reader_node
+/duckbot12/camera_node
+/rosout
+osboxes@osboxes:~$ rosnode info /duckbot12/camera_node
+--------------------------------------------------------------------------------
+Node [/duckbot12/camera_node]
+Publications:
+* /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+* /rosout [rosgraph_msgs/Log]
+
+Subscriptions:
+* /duckbot12/camera_node/framerate_high_switch [unknown type]
+
+Services:
+* /duckbot12/camera_node/get_loggers
+* /duckbot12/camera_node/set_camera_info
+* /duckbot12/camera_node/set_logger_level
+
+
+contacting node http://duckbot12:39583/ ...
+Pid: 17443
+Connections:
+* topic: /duckbot12/camera_node/image/compressed
+* to: /duckbot12/cam_info_reader_node
+* direction: outbound
+* transport: TCPROS
+* topic: /rosout
+* to: /rosout
+* direction: outbound
+* transport: TCPROS
+
+osboxes@osboxes:~$ rosnode info /duckbot12/camera_node
+--------------------------------------------------------------------------------
+Node [/duckbot12/camera_node]
+Publications:
+* /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+* /rosout [rosgraph_msgs/Log]
+
+Subscriptions:
+* /duckbot12/camera_node/framerate_high_switch [unknown type]
+
+Services:
+* /duckbot12/camera_node/get_loggers
+* /duckbot12/camera_node/set_camera_info
+* /duckbot12/camera_node/set_logger_level
+
+
+contacting node http://duckbot12:42535/ ...
+Pid: 17648
+Connections:
+* topic: /duckbot12/camera_node/image/compressed
+* to: /duckbot12/cam_info_reader_node
+* direction: outbound
+* transport: TCPROS
+* topic: /rosout
+* to: /rosout
+* direction: outbound
+* transport: TCPROS
+
+osboxes@osboxes:~$ ls
+a.bag      code        Documents         Music        Public
+a.log      Desktop     Downloads         notebook_ws  Templates
+catkin_ws  dockietown  examples.desktop  Pictures     Videos
+osboxes@osboxes:~$ cd catkin_ws/
+osboxes@osboxes:~/catkin_ws$ ls
+build
+cmd
+coscup2016-ROS-workshop.git
+devel
+FarmHarvestBot
+rospy
+src
+src_bk
+t2_2018-09-25-23-31-38.bag
+t3_2018-09-25-23-35-47.bag
+time
+tip.sh
+turtlesim_2018-09-25-23-25-03_2018-09-25-23-27-38.bag
+turtlesim_2018-09-25-23-25-03.bag
+osboxes@osboxes:~/catkin_ws$ cd src
+osboxes@osboxes:~/catkin_ws/src$ ls
+CMakeLists.txt  debug_ros  harvest_try1
+osboxes@osboxes:~/catkin_ws/src$ cd debug_ros/
+osboxes@osboxes:~/catkin_ws/src/debug_ros$ ls
+CMakeLists.txt  package.xml  reference  script  src
+osboxes@osboxes:~/catkin_ws/src/debug_ros$ cd script/
+osboxes@osboxes:~/catkin_ws/src/debug_ros/script$ ls
+2018-10-03-16-38-07.bag              2018-10-03-17-35-11.bag
+2018-10-03-16-44-20.bag.active       2018-10-03-17-37-46.bag
+2018-10-03-16-47-13.bag.active       2018-10-03-19-13-00.bag
+2018-10-03-16-56-03.bag.active       2018-10-03-19-14-01.bag
+2018-10-03-16-56-03.bag.orig.active  2018-10-03-19-15-37.bag
+2018-10-03-17-00-02.bag              2018-10-03-19-17-15.bag
+2018-10-03-17-00-45.bag.active       big.bag
+2018-10-03-17-00-45.bag.orig.active  debug_ros.sh
+2018-10-03-17-04-32.bag              small1.bag
+2018-10-03-17-06-07.bag              small.bag
+osboxes@osboxes:~/catkin_ws/src/debug_ros/script$ ./debug_ros.sh
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+1) quit
+2) basic
+3) info
+4) runtime
+5) design
+6) dump
+run 1-quit,2-basic,3-info,4-runtime,5-design,6-dump: 6
+[NODE_LIST]$rosnode list =====>
+/duckbot12/cam_info_reader_node
+/duckbot12/camera_node
+/rosout
+/rviz_1538638520378038263
+[NODE=/duckbot12/cam_info_reader_node]$rosnode info /duckbot12/cam_info_reader_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/cam_info_reader_node]
+Publications:
+* /duckbot12/camera_node/camera_info [sensor_msgs/CameraInfo]
+* /rosout [rosgraph_msgs/Log]
+
+Subscriptions:
+* /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+
+Services:
+* /duckbot12/cam_info_reader_node/get_loggers
+* /duckbot12/cam_info_reader_node/set_logger_level
+
+
+contacting node http://duckbot12:36942/ ...
+Pid: 17803
+Connections:
+* topic: /rosout
+* to: /rosout
+* direction: outbound
+* transport: TCPROS
+* topic: /duckbot12/camera_node/image/compressed
+* to: /duckbot12/camera_node (http://duckbot12:46371/)
+* direction: inbound
+* transport: TCPROS
+
+[NODE=/duckbot12/camera_node]$rosnode info /duckbot12/camera_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/camera_node]
+Publications:
+* /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+* /rosout [rosgraph_msgs/Log]
+
+Subscriptions:
+* /duckbot12/camera_node/framerate_high_switch [unknown type]
+
+Services:
+* /duckbot12/camera_node/get_loggers
+* /duckbot12/camera_node/set_camera_info
+* /duckbot12/camera_node/set_logger_level
+
+
+contacting node http://duckbot12:46371/ ...
+Pid: 17802
+Connections:
+* topic: /duckbot12/camera_node/image/compressed
+* to: /duckbot12/cam_info_reader_node
+* direction: outbound
+* transport: TCPROS
+* topic: /rosout
+* to: /rosout
+* direction: outbound
+* transport: TCPROS
+
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications:
+* /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions:
+* /rosout [rosgraph_msgs/Log]
+
+Services:
+* /rosout/get_loggers
+* /rosout/set_logger_level
+
+
+contacting node http://duckbot12:40383/ ...
+Pid: 16926
+Connections:
+* topic: /rosout
+* to: /duckbot12/camera_node (http://duckbot12:46371/)
+* direction: inbound
+* transport: TCPROS
+* topic: /rosout
+* to: /duckbot12/cam_info_reader_node (http://duckbot12:36942/)
+* direction: inbound
+* transport: TCPROS
+
+[NODE=/rviz_1538638520378038263]$rosnode info /rviz_1538638520378038263 =====>
+--------------------------------------------------------------------------------
+Node [/rviz_1538638520378038263]
+Publications:
+* /clicked_point [geometry_msgs/PointStamped]
+* /initialpose [geometry_msgs/PoseWithCovarianceStamped]
+* /move_base_simple/goal [geometry_msgs/PoseStamped]
+* /rosout [rosgraph_msgs/Log]
+
+Subscriptions:
+* /duckbot12/camera_node/image/camera_info [unknown type]
+* /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+* /tf [unknown type]
+* /tf_static [unknown type]
+* /visualization_marker [unknown type]
+* /visualization_marker_array [unknown type]
+
+Services:
+* /rviz_1538638520378038263/get_loggers
+* /rviz_1538638520378038263/reload_shaders
+* /rviz_1538638520378038263/set_logger_level
+
+
+contacting node http://osboxes:34085/ ...
+Pid: 7273
+
+[TOPIC_LIST]$rostopic list =====>
+/clicked_point
+/duckbot12/camera_node/camera_info
+/duckbot12/camera_node/framerate_high_switch
+/duckbot12/camera_node/image/camera_info
+/duckbot12/camera_node/image/compressed
+/initialpose
+/move_base_simple/goal
+/rosout
+/rosout_agg
+/tf
+/tf_static
+/visualization_marker
+/visualization_marker_array
+[TOPIC=/clicked_point]$rostopic info /clicked_point =====>
+Type: geometry_msgs/PointStamped
+
+Publishers:
+* /rviz_1538638520378038263 (http://osboxes:34085/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/clicked_point]$timeout 1 rostopic hz /clicked_point =====>
+subscribed to [/clicked_point]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PointStamped]$rosmsg show geometry_msgs/PointStamped =====>
+std_msgs/Header header
+uint32 seq
+time stamp
+string frame_id
+geometry_msgs/Point point
+float64 x
+float64 y
+float64 z
+
+[TOPIC=/duckbot12/camera_node/camera_info]$rostopic info /duckbot12/camera_node/camera_info =====>
+Type: sensor_msgs/CameraInfo
+
+Publishers:
+* /duckbot12/cam_info_reader_node (http://duckbot12:36942/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/camera_info]$timeout 1 rostopic hz /duckbot12/camera_node/camera_info =====>
+subscribed to [/duckbot12/camera_node/camera_info]
+average rate: 31.458
+min: 0.024s max: 0.037s std dev: 0.00410s window: 7
+[TOPIC_TYPE=sensor_msgs/CameraInfo]$rosmsg show sensor_msgs/CameraInfo =====>
+std_msgs/Header header
+uint32 seq
+time stamp
+string frame_id
+uint32 height
+uint32 width
+string distortion_model
+float64[] D
+float64[9] K
+float64[9] R
+float64[12] P
+uint32 binning_x
+uint32 binning_y
+sensor_msgs/RegionOfInterest roi
+uint32 x_offset
+uint32 y_offset
+uint32 height
+uint32 width
+bool do_rectify
+
+[TOPIC=/duckbot12/camera_node/framerate_high_switch]$rostopic info /duckbot12/camera_node/framerate_high_switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers:
+* /duckbot12/camera_node (http://duckbot12:46371/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/framerate_high_switch]$timeout 1 rostopic hz /duckbot12/camera_node/framerate_high_switch =====>
+Unable to register with master node [http://duckbot12:11311]: master may not be running yet. Will keep trying.
+ERROR: Cannot load message class for [duckietown_msgs/BoolStamped]. Are your messages built?
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+Unable to load msg [duckietown_msgs/BoolStamped]: Cannot locate message [BoolStamped]: unknown package [duckietown_msgs] on search path [{'rosconsole': ['/opt/ros/kinetic/share/rosconsole/msg'], 'calibration_estimation': ['/opt/ros/kinetic/share/calibration_estimation/msg'], 'rosgraph': ['/opt/ros/kinetic/share/rosgraph/msg'], 'pr2_move_base': ['/opt/ros/kinetic/share/pr2_move_base/msg'], 'pr2_position_scripts': ['/opt/ros/kinetic/share/pr2_position_scripts/msg'], 'tf': ['/opt/ros/kinetic/share/tf/msg'], 'rqt_publisher': ['/opt/ros/kinetic/share/rqt_publisher/msg'], 'smach_ros': ['/opt/ros/kinetic/share/smach_ros/msg'], 'timestamp_tools': ['/opt/ros/kinetic/share/timestamp_tools/msg'], 'diagnostic_aggregator': ['/opt/ros/kinetic/share/diagnostic_aggregator/msg'], 'moveit_msgs': ['/opt/ros/kinetic/share/moveit_msgs/msg'], 'lockfree': ['/opt/ros/kinetic/share/lockfree/msg'], 'rqt_topic': ['/opt/ros/kinetic/share/rqt_topic/msg'], 'smach': ['/opt/ros/kinetic/share/smach/msg'], 'pr2_head_action': ['/opt/ros/kinetic/share/pr2_head_action/msg'], 'rosboost_cfg': ['/opt/ros/kinetic/share/rosboost_cfg/msg'], 'rqt_service_caller': ['/opt/ros/kinetic/share/rqt_service_caller/msg'], 'rqt_pose_view': ['/opt/ros/kinetic/share/rqt_pose_view/msg'], 'pcl_conversions': ['/opt/ros/kinetic/share/pcl_conversions/msg'], 'rqt_image_view': ['/opt/ros/kinetic/share/rqt_image_view/msg'], 'rqt_console': ['/opt/ros/kinetic/share/rqt_console/msg'], 'rqt_gui': ['/opt/ros/kinetic/share/rqt_gui/msg'], 'wifi_ddwrt': ['/opt/ros/kinetic/share/wifi_ddwrt/msg'], 'eigen_conversions': ['/opt/ros/kinetic/share/eigen_conversions/msg'], 'prosilica_gige_sdk': ['/opt/ros/kinetic/share/prosilica_gige_sdk/msg'], 'diagnostic_common_diagnostics': ['/opt/ros/kinetic/share/diagnostic_common_diagnostics/msg'], 'rostopic': ['/opt/ros/kinetic/share/rostopic/msg'], 'visualization_msgs': ['/opt/ros/kinetic/share/visualization_msgs/msg'], 'message_generation': ['/opt/ros/kinetic/share/message_generation/msg'], 'polled_camera': ['/opt/ros/kinetic/share/polled_camera/msg'], 'urdf_tutorial': ['/opt/ros/kinetic/share/urdf_tutorial/msg'], 'interval_intersection': ['/opt/ros/kinetic/share/interval_intersection/msg'], 'rospy': ['/opt/ros/kinetic/share/rospy/msg'], 'roscpp_tutorials': ['/opt/ros/kinetic/share/roscpp_tutorials/msg'], 'python_orocos_kdl': ['/opt/ros/kinetic/share/python_orocos_kdl/msg'], 'microstrain_3dmgx2_imu': ['/opt/ros/kinetic/share/microstrain_3dmgx2_imu/msg'], 'rosmsg': ['/opt/ros/kinetic/share/rosmsg/msg'], 'joint_trajectory_generator': ['/opt/ros/kinetic/share/joint_trajectory_generator/msg'], 'rosparam': ['/opt/ros/kinetic/share/rosparam/msg'], 'diagnostic_updater': ['/opt/ros/kinetic/share/diagnostic_updater/msg'], 'rgbd_launch': ['/opt/ros/kinetic/share/rgbd_launch/msg'], 'pr2_tuck_arms_action': ['/opt/ros/kinetic/share/pr2_tuck_arms_action/msg'], 'rqt_runtime_monitor': ['/opt/ros/kinetic/share/rqt_runtime_monitor/msg'], 'topic_tools': ['/opt/ros/kinetic/share/topic_tools/msg'], 'interactive_marker_tutorials': ['/opt/ros/kinetic/share/interactive_marker_tutorials/msg'], 'stage_ros': ['/opt/ros/kinetic/share/stage_ros/msg'], 'rqt_robot_steering': ['/opt/ros/kinetic/share/rqt_robot_steering/msg'], 'hardware_interface': ['/opt/ros/kinetic/share/hardware_interface/msg'], 'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/msg'], 'realtime_tools': ['/opt/ros/kinetic/share/realtime_tools/msg'], 'rqt_launch': ['/opt/ros/kinetic/share/rqt_launch/msg'], 'settlerlib': ['/opt/ros/kinetic/share/settlerlib/msg'], 'srdfdom': ['/opt/ros/kinetic/share/srdfdom/msg'], 'gazebo_ros': ['/opt/ros/kinetic/share/gazebo_ros/msg'], 'laser_joint_processor': ['/opt/ros/kinetic/share/laser_joint_processor/msg'], 'pr2_gripper_sensor_action': ['/opt/ros/kinetic/share/pr2_gripper_sensor_action/msg'], 'pr2_se_calibration_launch': ['/opt/ros/kinetic/share/pr2_se_calibration_launch/msg'], 'mk': ['/opt/ros/kinetic/share/mk/msg'], 'joint_states_settler': ['/opt/ros/kinetic/share/joint_states_settler/msg'], 'pr2_bringup': ['/opt/ros/kinetic/share/pr2_bringup/msg'], 'pr2_mechanism_msgs': ['/opt/ros/kinetic/share/pr2_mechanism_msgs/msg'], 'dense_laser_assembler': ['/opt/ros/kinetic/share/dense_laser_assembler/msg'], 'shape_msgs': ['/opt/ros/kinetic/share/shape_msgs/msg'], 'pr2_moveit_config': ['/opt/ros/kinetic/share/pr2_moveit_config/msg'], 'pr2_tuckarm': ['/opt/ros/kinetic/share/pr2_tuckarm/msg'], 'move_slow_and_clear': ['/opt/ros/kinetic/share/move_slow_and_clear/msg'], 'pcl_ros': ['/opt/ros/kinetic/share/pcl_ros/msg'], 'rqt_srv': ['/opt/ros/kinetic/share/rqt_srv/msg'], 'rqt_moveit': ['/opt/ros/kinetic/share/rqt_moveit/msg'], 'pr2_mechanism_controllers': ['/opt/ros/kinetic/share/pr2_mechanism_controllers/msg'], 'laser_filters': ['/opt/ros/kinetic/share/laser_filters/msg'], 'pr2_computer_monitor': ['/opt/ros/kinetic/share/pr2_computer_monitor/msg'], 'eigen_stl_containers': ['/opt/ros/kinetic/share/eigen_stl_containers/msg'], 'imu_monitor': ['/opt/ros/kinetic/share/imu_monitor/msg'], 'gmapping': ['/opt/ros/kinetic/share/gmapping/msg'], 'laser_assembler': ['/opt/ros/kinetic/share/laser_assembler/msg'], 'urg_c': ['/opt/ros/kinetic/share/urg_c/msg'], 'tf2_eigen': ['/opt/ros/kinetic/share/tf2_eigen/msg'], 'rqt_tf_tree': ['/opt/ros/kinetic/share/rqt_tf_tree/msg'], 'gazebo_ros_control': ['/opt/ros/kinetic/share/gazebo_ros_control/msg'], 'moveit_ros_perception': ['/opt/ros/kinetic/share/moveit_ros_perception/msg'], 'collada_parser': ['/opt/ros/kinetic/share/collada_parser/msg'], 'pr2_app_manager': ['/opt/ros/kinetic/share/pr2_app_manager/msg'], 'theora_image_transport': ['/opt/ros/kinetic/share/theora_image_transport/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/msg'], 'pr2_controller_configuration_gazebo': ['/opt/ros/kinetic/share/pr2_controller_configuration_gazebo/msg'], 'pr2_mechanism_model': ['/opt/ros/kinetic/share/pr2_mechanism_model/msg'], 'moveit_ros_move_group': ['/opt/ros/kinetic/share/moveit_ros_move_group/msg'], 'urdf': ['/opt/ros/kinetic/share/urdf/msg'], 'resource_retriever': ['/opt/ros/kinetic/share/resource_retriever/msg'], 'ocean_battery_driver': ['/opt/ros/kinetic/share/ocean_battery_driver/msg'], 'rotate_recovery': ['/opt/ros/kinetic/share/rotate_recovery/msg'], 'fake_localization': ['/opt/ros/kinetic/share/fake_localization/msg'], 'qt_gui': ['/opt/ros/kinetic/share/qt_gui/msg'], 'filters': ['/opt/ros/kinetic/share/filters/msg'], 'roscpp_serialization': ['/opt/ros/kinetic/share/roscpp_serialization/msg'], 'ps3joy': ['/opt/ros/kinetic/share/ps3joy/msg'], 'rqt_web': ['/opt/ros/kinetic/share/rqt_web/msg'], 'pr2_calibration_launch': ['/opt/ros/kinetic/share/pr2_calibration_launch/msg'], 'moveit_kinematics': ['/opt/ros/kinetic/share/moveit_kinematics/msg'], 'costmap_2d': ['/opt/ros/kinetic/share/costmap_2d/msg'], 'urdfdom_py': ['/opt/ros/kinetic/share/urdfdom_py/msg'], 'rqt_action': ['/opt/ros/kinetic/share/rqt_action/msg'], 'diagnostic_msgs': ['/opt/ros/kinetic/share/diagnostic_msgs/msg'], 'pr2_navigation_teleop': ['/opt/ros/kinetic/share/pr2_navigation_teleop/msg'], 'rqt_robot_dashboard': ['/opt/ros/kinetic/share/rqt_robot_dashboard/msg'], 'pluginlib': ['/opt/ros/kinetic/share/pluginlib/msg'], 'rqt_msg': ['/opt/ros/kinetic/share/rqt_msg/msg'], 'bond': ['/opt/ros/kinetic/share/bond/msg'], 'self_test': ['/opt/ros/kinetic/share/self_test/msg'], 'pr2_navigation_self_filter': ['/opt/ros/kinetic/share/pr2_navigation_self_filter/msg'], 'rospack': ['/opt/ros/kinetic/share/rospack/msg'], 'pr2_ethercat': ['/opt/ros/kinetic/share/pr2_ethercat/msg'], 'image_rotate': ['/opt/ros/kinetic/share/image_rotate/msg'], 'rosserial_server': ['/opt/ros/kinetic/share/rosserial_server/msg'], 'rviz_plugin_tutorials': ['/opt/ros/kinetic/share/rviz_plugin_tutorials/msg'], 'tf2_msgs': ['/opt/ros/kinetic/share/tf2_msgs/msg'], 'rviz': ['/opt/ros/kinetic/share/rviz/msg'], 'pr2_camera_synchronizer': ['/opt/ros/kinetic/share/pr2_camera_synchronizer/msg'], 'driver_base': ['/opt/ros/kinetic/share/driver_base/msg'], 'joint_trajectory_action_tools': ['/opt/ros/kinetic/share/joint_trajectory_action_tools/msg'], 'camera_calibration': ['/opt/ros/kinetic/share/camera_calibration/msg'], 'pr2_teleop': ['/opt/ros/kinetic/share/pr2_teleop/msg'], 'rosservice': ['/opt/ros/kinetic/share/rosservice/msg'], 'turtle_tf': ['/opt/ros/kinetic/share/turtle_tf/msg'], 'pr2_gripper_action': ['/opt/ros/kinetic/share/pr2_gripper_action/msg'], 'pr2_controllers_msgs': ['/opt/ros/kinetic/share/pr2_controllers_msgs/msg'], 'tf2_geometry_msgs': ['/opt/ros/kinetic/share/tf2_geometry_msgs/msg'], 'depthimage_to_laserscan': ['/opt/ros/kinetic/share/depthimage_to_laserscan/msg'], 'visualization_marker_tutorials': ['/opt/ros/kinetic/share/visualization_marker_tutorials/msg'], 'rosconsole_bridge': ['/opt/ros/kinetic/share/rosconsole_bridge/msg'], 'pluginlib_tutorials': ['/opt/ros/kinetic/share/pluginlib_tutorials/msg'], 'roslz4': ['/opt/ros/kinetic/share/roslz4/msg'], 'rqt_dep': ['/opt/ros/kinetic/share/rqt_dep/msg'], 'allocators': ['/opt/ros/kinetic/share/allocators/msg'], 'rqt_robot_monitor': ['/opt/ros/kinetic/share/rqt_robot_monitor/msg'], 'stereo_msgs': ['/opt/ros/kinetic/share/stereo_msgs/msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/msg'], 'object_recognition_msgs': ['/opt/ros/kinetic/share/object_recognition_msgs/msg'], 'pr2_machine': ['/opt/ros/kinetic/share/pr2_machine/msg'], 'app_manager': ['/opt/ros/kinetic/share/app_manager/msg'], 'tf2': ['/opt/ros/kinetic/share/tf2/msg'], 'image_publisher': ['/opt/ros/kinetic/share/image_publisher/msg'], 'rostest': ['/opt/ros/kinetic/share/rostest/msg'], 'cpp_common': ['/opt/ros/kinetic/share/cpp_common/msg'], 'nodelet': ['/opt/ros/kinetic/share/nodelet/msg'], 'roslaunch': ['/opt/ros/kinetic/share/roslaunch/msg'], 'compressed_image_transport': ['/opt/ros/kinetic/share/compressed_image_transport/msg'], 'gazebo_msgs': ['/opt/ros/kinetic/share/gazebo_msgs/msg'], 'pr2_gazebo_plugins': ['/opt/ros/kinetic/share/pr2_gazebo_plugins/msg'], 'octomap_msgs': ['/opt/ros/kineti
+
+
+
+c/share/octomap_msgs/msg'], 'qt_dotgraph': ['/opt/ros/kinetic/share/qt_dotgraph/msg'], 'rosbag_storage': ['/opt/ros/kinetic/share/rosbag_storage/msg'], 'sound_play':
+['/opt/ros/kinetic/share/sound_play/msg'], 'fingertip_pressure': ['/opt/ros/kinetic/share/fingertip_pressure/msg'], 'rqt_logger_level': ['/opt/ros/kinetic/share/rqt_logger_level/msg'], 'pr2_navigation_perception': ['/opt/ros/kinetic/share/pr2_navigation_perception/msg'], 'pr2_gripper_sensor_controller': ['/opt/ros/kinetic/share/pr2_gripper_sensor_controller/msg'], 'pr2_controller_manager': ['/opt/ros/kinetic/share/pr2_controller_manager/msg'], 'tf2_kdl': ['/opt/ros/kinetic/share/tf2_kdl/msg'], 'ethercat_trigger_controllers': ['/opt/ros/kinetic/share/ethercat_trigger_controllers/msg'], 'monocam_settler': ['/opt/ros/kinetic/share/monocam_settler/msg'], 'collada_urdf': ['/opt/ros/kinetic/share/collada_urdf/msg'], 'rosmake': ['/opt/ros/kinetic/share/rosmake/msg'], 'media_export': ['/opt/ros/kinetic/share/media_export/msg'], 'actionlib': ['/opt/ros/kinetic/share/actionlib/msg'], 'base_local_planner': ['/opt/ros/kinetic/share/base_local_planner/msg'], 'roslisp': ['/opt/ros/kinetic/share/roslisp/msg'], 'rosserial_arduino': ['/opt/ros/kinetic/share/rosserial_arduino/msg'], 'image_transport': ['/opt/ros/kinetic/share/image_transport/msg'], 'rqt_py_common': ['/opt/ros/kinetic/share/rqt_py_common/msg'], 'compressed_depth_image_transport': ['/opt/ros/kinetic/share/compressed_depth_image_transport/msg'], 'pr2_gripper_sensor_msgs': ['/opt/ros/kinetic/share/pr2_gripper_sensor_msgs/msg'], 'pr2_moveit_plugins': ['/opt/ros/kinetic/share/pr2_moveit_plugins/msg'], 'rosserial_msgs': ['/opt/ros/kinetic/share/rosserial_msgs/msg'], 'urdf_parser_plugin': ['/opt/ros/kinetic/share/urdf_parser_plugin/msg'], 'orocos_kdl': ['/opt/ros/kinetic/share/orocos_kdl/msg'], 'rosbag_migration_rule': ['/opt/ros/kinetic/share/rosbag_migration_rule/msg'], 'carrot_planner': ['/opt/ros/kinetic/share/carrot_planner/msg'], 'qt_gui_py_common': ['/opt/ros/kinetic/share/qt_gui_py_common/msg'], 'nodelet_topic_tools': ['/opt/ros/kinetic/share/nodelet_topic_tools/msg'], 'rosatomic': ['/opt/ros/kinetic/share/rosatomic/msg'], 'nodelet_tutorial_math': ['/opt/ros/kinetic/share/nodelet_tutorial_math/msg'], 'laser_cb_detector': ['/opt/ros/kinetic/share/laser_cb_detector/msg'], 'roslib': ['/opt/ros/kinetic/share/roslib/msg'], 'geneus': ['/opt/ros/kinetic/share/geneus/msg'], 'bfl': ['/opt/ros/kinetic/share/bfl/msg'], 'roswtf': ['/opt/ros/kinetic/share/roswtf/msg'], 'geometric_shapes': ['/opt/ros/kinetic/share/geometric_shapes/msg'], 'map_server': ['/opt/ros/kinetic/share/map_server/msg'], 'teleop_twist_keyboard': ['/opt/ros/kinetic/share/teleop_twist_keyboard/msg'], 'rqt_rviz': ['/opt/ros/kinetic/share/rqt_rviz/msg'], 'rosgraph_msgs': ['/opt/ros/kinetic/share/rosgraph_msgs/msg'], 'xacro': ['/opt/ros/kinetic/share/xacro/msg'], 'rqt_graph': ['/opt/ros/kinetic/share/rqt_graph/msg'], 'xmlrpcpp': ['/opt/ros/kinetic/share/xmlrpcpp/msg'], 'eml': ['/opt/ros/kinetic/share/eml/msg'], 'gl_dependency': ['/opt/ros/kinetic/share/gl_dependency/msg'], 'rosnode': ['/opt/ros/kinetic/share/rosnode/msg'], 'wge100_camera': ['/opt/ros/kinetic/share/wge100_camera/msg'], 'pr2_arm_kinematics': ['/opt/ros/kinetic/share/pr2_arm_kinematics/msg'], 'pr2_power_board': ['/opt/ros/kinetic/share/pr2_power_board/msg'], 'global_planner': ['/opt/ros/kinetic/share/global_planner/msg'], 'depth_image_proc': ['/opt/ros/kinetic/share/depth_image_proc/msg'], 'python_qt_binding': ['/opt/ros/kinetic/share/python_qt_binding/msg'], 'single_joint_position_action': ['/opt/ros/kinetic/share/single_joint_position_action/msg'], 'clear_costmap_recovery': ['/opt/ros/kinetic/share/clear_costmap_recovery/msg'], 'rqt_gui_cpp': ['/opt/ros/kinetic/share/rqt_gui_cpp/msg'], 'roscpp_traits': ['/opt/ros/kinetic/share/roscpp_traits/msg'], 'smach_msgs': ['/opt/ros/kinetic/share/smach_msgs/msg'], 'image_cb_detector': ['/opt/ros/kinetic/share/image_cb_detector/msg'], 'gazebo_dev': ['/opt/ros/kinetic/share/gazebo_dev/msg'], 'pr2_mechanism_diagnostics': ['/opt/ros/kinetic/share/pr2_mechanism_diagnostics/msg'], 'joy': ['/opt/ros/kinetic/share/joy/msg'], 'kdl_conversions': ['/opt/ros/kinetic/share/kdl_conversions/msg'], 'actionlib_tutorials': ['/opt/ros/kinetic/share/actionlib_tutorials/msg'], 'map_msgs': ['/opt/ros/kinetic/share/map_msgs/msg'], 'turtle_actionlib': ['/opt/ros/kinetic/share/turtle_actionlib/msg'], 'bondcpp': ['/opt/ros/kinetic/share/bondcpp/msg'], 'turtlesim': ['/opt/ros/kinetic/share/turtlesim/msg'], 'diagnostic_analysis': ['/opt/ros/kinetic/share/diagnostic_analysis/msg'], 'interactive_markers': ['/opt/ros/kinetic/share/interactive_markers/msg'], 'pr2_navigation_global': ['/opt/ros/kinetic/share/pr2_navigation_global/msg'], 'laser_joint_projector': ['/opt/ros/kinetic/share/laser_joint_projector/msg'], 'rqt_reconfigure': ['/opt/ros/kinetic/share/rqt_reconfigure/msg'], 'pr2_controller_interface': ['/opt/ros/kinetic/share/pr2_controller_interface/msg'], 'prosilica_camera': ['/opt/ros/kinetic/share/prosilica_camera/msg'], 'pr2_dense_laser_snapshotter': ['/opt/ros/kinetic/share/pr2_dense_laser_snapshotter/msg'], 'calibration_msgs': ['/opt/ros/kinetic/share/calibration_msgs/msg'], 'message_runtime': ['/opt/ros/kinetic/share/message_runtime/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/msg'], 'angles': ['/opt/ros/kinetic/share/angles/msg'], 'rosrt': ['/opt/ros/kinetic/share/rosrt/msg'], 'joint_limits_interface': ['/opt/ros/kinetic/share/joint_limits_interface/msg'], 'joint_state_publisher': ['/opt/ros/kinetic/share/joint_state_publisher/msg'], 'stereo_image_proc': ['/opt/ros/kinetic/share/stereo_image_proc/msg'], 'class_loader': ['/opt/ros/kinetic/share/class_loader/msg'], 'laser_tilt_controller_filter': ['/opt/ros/kinetic/share/laser_tilt_controller_filter/msg'], 'nav_msgs': ['/opt/ros/kinetic/share/nav_msgs/msg'], 'pr2_arm_move_ik': ['/opt/ros/kinetic/share/pr2_arm_move_ik/msg'], 'tf2_ros': ['/opt/ros/kinetic/share/tf2_ros/msg'], 'librviz_tutorial': ['/opt/ros/kinetic/share/librviz_tutorial/msg'], 'image_geometry': ['/opt/ros/kinetic/share/image_geometry/msg'], 'tf_conversions': ['/opt/ros/kinetic/share/tf_conversions/msg'], 'pr2_gazebo': ['/opt/ros/kinetic/share/pr2_gazebo/msg'], 'dynamic_reconfigure': ['/opt/ros/kinetic/share/dynamic_reconfigure/msg'], 'pr2_hardware_interface': ['/opt/ros/kinetic/share/pr2_hardware_interface/msg'], 'openslam_gmapping': ['/opt/ros/kinetic/share/openslam_gmapping/msg'], 'kdl_parser': ['/opt/ros/kinetic/share/kdl_parser/msg'], 'catkin': ['/opt/ros/kinetic/share/catkin/msg'], 'image_view': ['/opt/ros/kinetic/share/image_view/msg'], 'pr2_mannequin_mode': ['/opt/ros/kinetic/share/pr2_mannequin_mode/msg'], 'rqt_py_console': ['/opt/ros/kinetic/share/rqt_py_console/msg'], 'moveit_ros_planning': ['/opt/ros/kinetic/share/moveit_ros_planning/msg'], 'navfn': ['/opt/ros/kinetic/share/navfn/msg'], 'dwa_local_planner': ['/opt/ros/kinetic/share/dwa_local_planner/msg'], 'smclib': ['/opt/ros/kinetic/share/smclib/msg'], 'pr2_navigation_slam': ['/opt/ros/kinetic/share/pr2_navigation_slam/msg'], 'rosbuild': ['/opt/ros/kinetic/share/rosbuild/msg'], 'rosclean': ['/opt/ros/kinetic/share/rosclean/msg'], 'pr2_navigation_local': ['/opt/ros/kinetic/share/pr2_navigation_local/msg'], 'roslang': ['/opt/ros/kinetic/share/roslang/msg'], 'genlisp': ['/opt/ros/kinetic/share/genlisp/msg'], 'robot_state_publisher': ['/opt/ros/kinetic/share/robot_state_publisher/msg'], 'joint_trajectory_action': ['/opt/ros/kinetic/share/joint_trajectory_action/msg'], 'opencv3': ['/opt/ros/kinetic/share/opencv3/msg'], 'laser_proc': ['/opt/ros/kinetic/share/laser_proc/msg'], 'rqt_top': ['/opt/ros/kinetic/share/rqt_top/msg'], 'urg_node': ['/opt/ros/kinetic/share/urg_node/msg'], 'move_base': ['/opt/ros/kinetic/share/move_base/msg'], 'genmsg': ['/opt/ros/kinetic/share/genmsg/msg'], 'control_toolbox': ['/opt/ros/kinetic/share/control_toolbox/msg'], 'turtle_tf2': ['/opt/ros/kinetic/share/turtle_tf2/msg'], 'robot_mechanism_controllers': ['/opt/ros/kinetic/share/robot_mechanism_controllers/msg'], 'rosserial_python': ['/opt/ros/kinetic/share/rosserial_python/msg'], 'rosmaster': ['/opt/ros/kinetic/share/rosmaster/msg'], 'actionlib_msgs': ['/opt/ros/kinetic/share/actionlib_msgs/msg'], 'webkit_dependency': ['/opt/ros/kinetic/share/webkit_dependency/msg'], 'rosserial_client': ['/opt/ros/kinetic/share/rosserial_client/msg'], 'laser_geometry': ['/opt/ros/kinetic/share/laser_geometry/msg'], 'gencpp': ['/opt/ros/kinetic/share/gencpp/msg'], 'rqt_bag': ['/opt/ros/kinetic/share/rqt_bag/msg'], 'rosout': ['/opt/ros/kinetic/share/rosout/msg'], 'camera_calibration_parsers': ['/opt/ros/kinetic/share/camera_calibration_parsers/msg'], 'ros_environment': ['/opt/ros/kinetic/share/ros_environment/msg'], 'qwt_dependency': ['/opt/ros/kinetic/share/qwt_dependency/msg'], 'ethercat_hardware': ['/opt/ros/kinetic/share/ethercat_hardware/msg'], 'rostime': ['/opt/ros/kinetic/share/rostime/msg'], 'rqt_nav_view': ['/opt/ros/kinetic/share/rqt_nav_view/msg'], 'roslint': ['/opt/ros/kinetic/share/roslint/msg'], 'rosunit': ['/opt/ros/kinetic/share/rosunit/msg'], 'move_base_msgs': ['/opt/ros/kinetic/share/move_base_msgs/msg'], 'stage': ['/opt/ros/kinetic/share/stage/msg'], 'moveit_core': ['/opt/ros/kinetic/share/moveit_core/msg'], 'camera_info_manager': ['/opt/ros/kinetic/share/camera_info_manager/msg'], 'calibration_launch': ['/opt/ros/kinetic/share/calibration_launch/msg'], 'controller_interface': ['/opt/ros/kinetic/share/controller_interface/msg'], 'pcl_msgs': ['/opt/ros/kinetic/share/pcl_msgs/msg'], 'rviz_python_tutorial': ['/opt/ros/kinetic/share/rviz_python_tutorial/msg'], 'rosbash': ['/opt/ros/kinetic/share/rosbash/msg'], 'rqt_bag_plugins': ['/opt/ros/kinetic/share/rqt_bag_plugins/msg'], 'rqt_plot': ['/opt/ros/kinetic/share/rqt_plot/msg'], 'teleop_twist_joy': ['/opt/ros/kinetic/share/teleop_twist_joy/msg'], 'control_msgs': ['/opt/ros/kinetic/share/control_msgs/msg'], 'pr2_msgs': ['/opt/ros/kinetic/share/pr2_msgs/msg
+'], 'transmission_interface': ['/opt/ros/kinetic/share/transmission_interface/msg'], 'pr2_navigation_config': ['/opt/ros/kinetic/share/pr2_navigation_config/msg'], 'controller_manager_msgs': ['/opt/ros/kinetic/share/controller_manager_msgs/msg'], 'rqt_shell': ['/opt/ros/kinetic/share/rqt_shell/msg'], 'pr2_run_stop_auto_restart': ['/opt/ros/kinetic/share/pr2_run_stop_auto_restart/msg'], 'pr2_teleop_general': ['/opt/ros/kinetic/share/pr2_teleop_general/msg'], 'cv_bridge': ['/opt/ros/kinetic/share/cv_bridge/msg'], 'audio_common_msgs': ['/opt/ros/kinetic/share/audio_common_msgs/msg'], 'std_srvs': ['/opt/ros/kinetic/share/std_srvs/msg'], 'willow_maps': ['/opt/ros/kinetic/share/willow_maps/msg'], 'octomap': ['/opt/ros/kinetic/share/octomap/msg'], 'amcl': ['/opt/ros/kinetic/share/amcl/msg'], 'semantic_point_annotator': ['/opt/ros/kinetic/share/semantic_point_annotator/msg'], 'pr2_tilt_laser_interface': ['/opt/ros/kinetic/share/pr2_tilt_laser_interface/msg'], 'bondpy': ['/opt/ros/kinetic/share/bondpy/msg'], 'tf2_py': ['/opt/ros/kinetic/share/tf2_py/msg'], 'genpy': ['/opt/ros/kinetic/share/genpy/msg'], 'cmake_modules': ['/opt/ros/kinetic/share/cmake_modules/msg'], 'nav_core': ['/opt/ros/kinetic/share/nav_core/msg'], 'robot_pose_ekf': ['/opt/ros/kinetic/share/robot_pose_ekf/msg'], 'image_proc': ['/opt/ros/kinetic/share/image_proc/msg'], 'roscpp': ['/opt/ros/kinetic/share/roscpp/msg'], 'controller_manager': ['/opt/ros/kinetic/share/controller_manager/msg'], 'qt_gui_cpp': ['/opt/ros/kinetic/share/qt_gui_cpp/msg'], 'pr2_description': ['/opt/ros/kinetic/share/pr2_description/msg'], 'message_filters': ['/opt/ros/kinetic/share/message_filters/msg'], 'pr2_controller_configuration': ['/opt/ros/kinetic/share/pr2_controller_configuration/msg'], 'pr2_dashboard_aggregator': ['/opt/ros/kinetic/share/pr2_dashboard_aggregator/msg'], 'pr2_common_action_msgs': ['/opt/ros/kinetic/share/pr2_common_action_msgs/msg'], 'roscreate': ['/opt/ros/kinetic/share/roscreate/msg'], 'rospy_tutorials': ['/opt/ros/kinetic/share/rospy_tutorials/msg'], 'random_numbers': ['/opt/ros/kinetic/share/random_numbers/msg'], 'gazebo_plugins': ['/opt/ros/kinetic/share/gazebo_plugins/msg'], 'rqt_gui_py': ['/opt/ros/kinetic/share/rqt_gui_py/msg'], 'voxel_grid': ['/opt/ros/kinetic/share/voxel_grid/msg'], 'pr2_calibration_controllers': ['/opt/ros/kinetic/share/pr2_calibration_controllers/msg'], 'gennodejs': ['/opt/ros/kinetic/share/gennodejs/msg'], 'power_monitor': ['/opt/ros/kinetic/share/power_monitor/msg'], 'rosbag': ['/opt/ros/kinetic/share/rosbag/msg']}]
+
+
+[TOPIC=/duckbot12/camera_node/image/camera_info]$rostopic info /duckbot12/camera_node/image/camera_info =====>
+Type: sensor_msgs/CameraInfo
+
+Publishers: None
+
+Subscribers:
+* /rviz_1538638520378038263 (http://osboxes:34085/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/camera_info]$timeout 1 rostopic hz /duckbot12/camera_node/image/camera_info =====>
+subscribed to [/duckbot12/camera_node/image/camera_info]
+no new messages
+[TOPIC_TYPE=sensor_msgs/CameraInfo]$rosmsg show sensor_msgs/CameraInfo =====>
+std_msgs/Header header
+uint32 seq
+time stamp
+string frame_id
+uint32 height
+uint32 width
+string distortion_model
+float64[] D
+float64[9] K
+float64[9] R
+float64[12] P
+uint32 binning_x
+uint32 binning_y
+sensor_msgs/RegionOfInterest roi
+uint32 x_offset
+uint32 y_offset
+uint32 height
+uint32 width
+bool do_rectify
+
+[TOPIC=/duckbot12/camera_node/image/compressed]$rostopic info /duckbot12/camera_node/image/compressed =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers:
+* /duckbot12/camera_node (http://duckbot12:46371/)
+
+Subscribers:
+* /rviz_1538638520378038263 (http://osboxes:34085/)
+* /duckbot12/cam_info_reader_node (http://duckbot12:36942/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/compressed]$timeout 1 rostopic hz /duckbot12/camera_node/image/compressed =====>
+subscribed to [/duckbot12/camera_node/image/compressed]
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+uint32 seq
+time stamp
+string frame_id
+string format
+uint8[] data
+
+[TOPIC=/initialpose]$rostopic info /initialpose =====>
+Type: geometry_msgs/PoseWithCovarianceStamped
+
+Publishers:
+* /rviz_1538638520378038263 (http://osboxes:34085/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/initialpose]$timeout 1 rostopic hz /initialpose =====>
+subscribed to [/initialpose]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PoseWithCovarianceStamped]$rosmsg show geometry_msgs/PoseWithCovarianceStamped =====>
+std_msgs/Header header
+uint32 seq
+time stamp
+string frame_id
+geometry_msgs/PoseWithCovariance pose
+geometry_msgs/Pose pose
+geometry_msgs/Point position
+float64 x
+float64 y
+float64 z
+geometry_msgs/Quaternion orientation
+float64 x
+float64 y
+float64 z
+float64 w
+float64[36] covariance
+
+[TOPIC=/move_base_simple/goal]$rostopic info /move_base_simple/goal =====>
+Type: geometry_msgs/PoseStamped
+
+Publishers:
+* /rviz_1538638520378038263 (http://osboxes:34085/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base_simple/goal]$timeout 1 rostopic hz /move_base_simple/goal =====>
+subscribed to [/move_base_simple/goal]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PoseStamped]$rosmsg show geometry_msgs/PoseStamped =====>
+std_msgs/Header header
+uint32 seq
+time stamp
+string frame_id
+geometry_msgs/Pose pose
+geometry_msgs/Point position
+float64 x
+float64 y
+float64 z
+geometry_msgs/Quaternion orientation
+float64 x
+float64 y
+float64 z
+float64 w
+
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers:
+* /rviz_1538638520378038263 (http://osboxes:34085/)
+* /duckbot12/camera_node (http://duckbot12:46371/)
+* /duckbot12/cam_info_reader_node (http://duckbot12:36942/)
+
+Subscribers:
+* /rosout (http://duckbot12:40383/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+Network communication failed. Most likely failed to communicate with master.
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+uint32 seq
+time stamp
+string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers:
+* /rosout (http://duckbot12:40383/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+subscribed to [/rosout_agg]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+uint32 seq
+time stamp
+string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/tf]$rostopic info /tf =====>
+Type: tf2_msgs/TFMessage
+
+Publishers: None
+
+Subscribers:
+* /rviz_1538638520378038263 (http://osboxes:34085/)
+
+
+[TOPIC_HZ=/tf]$timeout 1 rostopic hz /tf =====>
+subscribed to [/tf]
+no new messages
+[TOPIC_TYPE=tf2_msgs/TFMessage]$rosmsg show tf2_msgs/TFMessage =====>
+geometry_msgs/TransformStamped[] transforms
+std_msgs/Header header
+uint32 seq
+time stamp
+string frame_id
+string child_frame_id
+geometry_msgs/Transform transform
+geometry_msgs/Vector3 translation
+float64 x
+float64 y
+float64 z
+geometry_msgs/Quaternion rotation
+float64 x
+float64 y
+float64 z
+float64 w
+
+[TOPIC=/tf_static]$rostopic info /tf_static =====>
+Type: tf2_msgs/TFMessage
+
+Publishers: None
+
+Subscribers:
+* /rviz_1538638520378038263 (http://osboxes:34085/)
+
+
+[TOPIC_HZ=/tf_static]$timeout 1 rostopic hz /tf_static =====>
+Traceback (most recent call last):
+File "/opt/ros/kinetic/bin/rostopic", line 35, in <module>
+rostopic.rostopicmain()
+File "/opt/ros/kinetic/lib/python2.7/dist-packages/rostopic/__init__.py", line 2095, in rostopicmain
+_rostopic_cmd_hz(argv)
+File "/opt/ros/kinetic/lib/python2.7/dist-packages/rostopic/__init__.py", line 1507, in _rostopic_cmd_hz
+use_wtime=options.use_wtime)
+File "/opt/ros/kinetic/lib/python2.7/dist-packages/rostopic/__init__.py", line 304, in _rostopic_hz
+rospy.init_node(NAME, anonymous=True)
+File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/client.py", line 323, in init_node
+raise rospy.exceptions.ROSInitException("init_node interrupted before it could complete")
+rospy.exceptions.ROSInitException: init_node interrupted before it could complete
+[TOPIC_TYPE=tf2_msgs/TFMessage]$rosmsg show tf2_msgs/TFMessage =====>
+geometry_msgs/TransformStamped[] transforms
+std_msgs/Header header
+uint32 seq
+time stamp
+string frame_id
+string child_frame_id
+geometry_msgs/Transform transform
+geometry_msgs/Vector3 translation
+float64 x
+float64 y
+float64 z
+geometry_msgs/Quaternion rotation
+float64 x
+float64 y
+float64 z
+float64 w
+
+[TOPIC=/visualization_marker]$rostopic info /visualization_marker =====>
+Type: visualization_msgs/Marker
+
+Publishers: None
+
+Subscribers:
+* /rviz_1538638520378038263 (http://osboxes:34085/)
+
+
+[TOPIC_HZ=/visualization_marker]$timeout 1 rostopic hz /visualization_marker =====>
+subscribed to [/visualization_marker]
+[TOPIC_TYPE=visualization_msgs/Marker]$rosmsg show visualization_msgs/Marker =====>
+uint8 ARROW=0
+uint8 CUBE=1
+uint8 SPHERE=2
+uint8 CYLINDER=3
+uint8 LINE_STRIP=4
+uint8 LINE_LIST=5
+uint8 CUBE_LIST=6
+uint8 SPHERE_LIST=7
+uint8 POINTS=8
+uint8 TEXT_VIEW_FACING=9
+uint8 MESH_RESOURCE=10
+uint8 TRIANGLE_LIST=11
+uint8 ADD=0
+uint8 MODIFY=0
+uint8 DELETE=2
+uint8 DELETEALL=3
+std_msgs/Header header
+uint32 seq
+time stamp
+string frame_id
+string ns
+int32 id
+int32 type
+int32 action
+geometry_msgs/Pose pose
+geometry_msgs/Point position
+float64 x
+float64 y
+float64 z
+geometry_msgs/Quaternion orientation
+float64 x
+float64 y
+float64 z
+float64 w
+geometry_msgs/Vector3 scale
+float64 x
+float64 y
+float64 z
+std_msgs/ColorRGBA color
+float32 r
+float32 g
+float32 b
+float32 a
+duration lifetime
+bool frame_locked
+geometry_msgs/Point[] points
+float64 x
+float64 y
+float64 z
+std_msgs/ColorRGBA[] colors
+float32 r
+float32 g
+float32 b
+float32 a
+string text
+string mesh_resource
+bool mesh_use_embedded_materials
+
+[TOPIC=/visualization_marker_array]$rostopic info /visualization_marker_array =====>
+Type: visualization_msgs/MarkerArray
+
+Publishers: None
+
+Subscribers:
+* /rviz_1538638520378038263 (http://osboxes:34085/)
+
+
+[TOPIC_HZ=/visualization_marker_array]$timeout 1 rostopic hz /visualization_marker_array =====>
+subscribed to [/visualization_marker_array]
+no new messages
+[TOPIC_TYPE=visualization_msgs/MarkerArray]$rosmsg show visualization_msgs/MarkerArray =====>
+visualization_msgs/Marker[] markers
+uint8 ARROW=0
+uint8 CUBE=1
+uint8 SPHERE=2
+uint8 CYLINDER=3
+uint8 LINE_STRIP=4
+uint8 LINE_LIST=5
+uint8 CUBE_LIST=6
+uint8 SPHERE_LIST=7
+uint8 POINTS=8
+uint8 TEXT_VIEW_FACING=9
+uint8 MESH_RESOURCE=10
+uint8 TRIANGLE_LIST=11
+uint8 ADD=0
+uint8 MODIFY=0
+uint8 DELETE=2
+uint8 DELETEALL=3
+std_msgs/Header header
+uint32 seq
+time stamp
+string frame_id
+string ns
+int32 id
+int32 type
+int32 action
+geometry_msgs/Pose pose
+geometry_msgs/Point position
+float64 x
+float64 y
+float64 z
+geometry_msgs/Quaternion orientation
+float64 x
+float64 y
+float64 z
+float64 w
+geometry_msgs/Vector3 scale
+float64 x
+float64 y
+float64 z
+std_msgs/ColorRGBA color
+float32 r
+float32 g
+float32 b
+float32 a
+duration lifetime
+bool frame_locked
+geometry_msgs/Point[] points
+float64 x
+float64 y
+float64 z
+std_msgs/ColorRGBA[] colors
+float32 r
+float32 g
+float32 b
+float32 a
+string text
+string mesh_resource
+bool mesh_use_embedded_materials
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>
+[ INFO] [1538639047.715904934]: Recording to 2018-10-04-03-44-07.bag.
+[ INFO] [1538639047.750832205]: Subscribing to /initialpose
+[ INFO] [1538639047.937917604]: Subscribing to /move_base_simple/goal
+[ INFO] [1538639048.130042870]: Subscribing to /duckbot12/camera_node/camera_info
+[ INFO] [1538639048.317461166]: Subscribing to /duckbot12/camera_node/image/compressed
+[ INFO] [1538639048.487902427]: Subscribing to /rosout
+[ INFO] [1538639048.615181579]: Subscribing to /rosout_agg
+[ INFO] [1538639048.778022662]: Subscribing to /clicked_point
+run 1-quit,2-basic,3-info,4-runtime,5-design,6-dump: 1
+osboxes@osboxes:~/catkin_ws/src/debug_ros/script$

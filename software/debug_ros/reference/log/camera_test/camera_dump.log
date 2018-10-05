@@ -1,0 +1,719 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[NODE_LIST]$rosnode list =====>
+/duckbot12/cam_info_reader_node
+/duckbot12/camera_node
+/duckbot12/decoder_node
+/duckbot12/raw_cam_info_reader_node
+/record_1538702498027157708
+/rosout
+/rviz_1538702221345073376
+[NODE=/duckbot12/cam_info_reader_node]$rosnode info /duckbot12/cam_info_reader_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/cam_info_reader_node]
+Publications: 
+ * /duckbot12/camera_node/camera_info [sensor_msgs/CameraInfo]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+
+Services: 
+ * /duckbot12/cam_info_reader_node/get_loggers
+ * /duckbot12/cam_info_reader_node/set_logger_level
+
+
+contacting node http://duckbot12:40630/ ...
+Pid: 2677
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/camera_node (http://duckbot12:43842/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/camera_node]$rosnode info /duckbot12/camera_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/camera_node]
+Publications: 
+ * /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/framerate_high_switch [unknown type]
+
+Services: 
+ * /duckbot12/camera_node/get_loggers
+ * /duckbot12/camera_node/set_camera_info
+ * /duckbot12/camera_node/set_logger_level
+
+
+contacting node http://duckbot12:43842/ ...
+Pid: 2675
+Connections:
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/decoder_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/cam_info_reader_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/decoder_node]$rosnode info /duckbot12/decoder_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/decoder_node]
+Publications: 
+ * /duckbot12/camera_node/image/raw [sensor_msgs/Image]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+ * /duckbot12/decoder_node/switch [unknown type]
+
+Services: 
+ * /duckbot12/decoder_node/get_loggers
+ * /duckbot12/decoder_node/set_logger_level
+
+
+contacting node http://duckbot12:43351/ ...
+Pid: 2676
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/raw
+    * to: /duckbot12/raw_cam_info_reader_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/raw
+    * to: /rviz_1538702221345073376
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/camera_node (http://duckbot12:43842/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/raw_cam_info_reader_node]$rosnode info /duckbot12/raw_cam_info_reader_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/raw_cam_info_reader_node]
+Publications: 
+ * /duckbot12/camera_node/raw_camera_info [sensor_msgs/CameraInfo]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/image/raw [sensor_msgs/Image]
+
+Services: 
+ * /duckbot12/raw_cam_info_reader_node/get_loggers
+ * /duckbot12/raw_cam_info_reader_node/set_logger_level
+
+
+contacting node http://duckbot12:40112/ ...
+Pid: 2678
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/raw
+    * to: /duckbot12/decoder_node (http://duckbot12:43351/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/record_1538702498027157708]$rosnode info /record_1538702498027157708 =====>
+--------------------------------------------------------------------------------
+Node [/record_1538702498027157708]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/raw_camera_info [sensor_msgs/CameraInfo]
+
+Services: 
+ * /record_1538702498027157708/get_loggers
+ * /record_1538702498027157708/set_logger_level
+
+
+contacting node http://osboxes:37393/ ...
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://duckbot12:45096/ ...
+Pid: 2557
+Connections:
+ * topic: /rosout_agg
+    * to: /rostopic_12345_1538702482664
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/decoder_node (http://duckbot12:43351/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/camera_node (http://duckbot12:43842/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/raw_cam_info_reader_node (http://duckbot12:40112/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/cam_info_reader_node (http://duckbot12:40630/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/rviz_1538702221345073376]$rosnode info /rviz_1538702221345073376 =====>
+--------------------------------------------------------------------------------
+Node [/rviz_1538702221345073376]
+Publications: 
+ * /clicked_point [geometry_msgs/PointStamped]
+ * /initialpose [geometry_msgs/PoseWithCovarianceStamped]
+ * /move_base_simple/goal [geometry_msgs/PoseStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/image/raw [sensor_msgs/Image]
+ * /tf [unknown type]
+ * /tf_static [unknown type]
+ * /visualization_marker [unknown type]
+ * /visualization_marker_array [unknown type]
+
+Services: 
+ * /rviz_1538702221345073376/get_loggers
+ * /rviz_1538702221345073376/reload_shaders
+ * /rviz_1538702221345073376/set_logger_level
+
+
+contacting node http://osboxes:39791/ ...
+Pid: 12012
+Connections:
+ * topic: /duckbot12/camera_node/image/raw
+    * to: /duckbot12/decoder_node (http://duckbot12:43351/)
+    * direction: inbound
+    * transport: TCPROS
+
+[TOPIC_LIST]$rostopic list =====>
+/clicked_point
+/duckbot12/camera_node/camera_info
+/duckbot12/camera_node/framerate_high_switch
+/duckbot12/camera_node/image/compressed
+/duckbot12/camera_node/image/raw
+/duckbot12/camera_node/raw_camera_info
+/duckbot12/decoder_node/switch
+/initialpose
+/move_base_simple/goal
+/rosout
+/rosout_agg
+/tf
+/tf_static
+/visualization_marker
+/visualization_marker_array
+[TOPIC=/clicked_point]$rostopic info /clicked_point =====>
+Type: geometry_msgs/PointStamped
+
+Publishers: 
+ * /rviz_1538702221345073376 (http://osboxes:39791/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/clicked_point]$timeout 1 rostopic hz /clicked_point =====>
+subscribed to [/clicked_point]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PointStamped]$rosmsg show geometry_msgs/PointStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Point point
+  float64 x
+  float64 y
+  float64 z
+
+[TOPIC=/duckbot12/camera_node/camera_info]$rostopic info /duckbot12/camera_node/camera_info =====>
+Type: sensor_msgs/CameraInfo
+
+Publishers: 
+ * /duckbot12/cam_info_reader_node (http://duckbot12:40630/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/camera_info]$timeout 1 rostopic hz /duckbot12/camera_node/camera_info =====>
+subscribed to [/duckbot12/camera_node/camera_info]
+average rate: 29.877
+	min: 0.030s max: 0.038s std dev: 0.00317s window: 6
+[TOPIC_TYPE=sensor_msgs/CameraInfo]$rosmsg show sensor_msgs/CameraInfo =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string distortion_model
+float64[] D
+float64[9] K
+float64[9] R
+float64[12] P
+uint32 binning_x
+uint32 binning_y
+sensor_msgs/RegionOfInterest roi
+  uint32 x_offset
+  uint32 y_offset
+  uint32 height
+  uint32 width
+  bool do_rectify
+
+[TOPIC=/duckbot12/camera_node/framerate_high_switch]$rostopic info /duckbot12/camera_node/framerate_high_switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/camera_node (http://duckbot12:43842/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/framerate_high_switch]$timeout 1 rostopic hz /duckbot12/camera_node/framerate_high_switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/camera_node/image/compressed]$rostopic info /duckbot12/camera_node/image/compressed =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/camera_node (http://duckbot12:43842/)
+
+Subscribers: 
+ * /duckbot12/decoder_node (http://duckbot12:43351/)
+ * /duckbot12/cam_info_reader_node (http://duckbot12:40630/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/compressed]$timeout 1 rostopic hz /duckbot12/camera_node/image/compressed =====>
+subscribed to [/duckbot12/camera_node/image/compressed]
+average rate: 31.050
+	min: 0.032s max: 0.032s std dev: 0.00000s window: 2
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/camera_node/image/raw]$rostopic info /duckbot12/camera_node/image/raw =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /duckbot12/decoder_node (http://duckbot12:43351/)
+
+Subscribers: 
+ * /duckbot12/raw_cam_info_reader_node (http://duckbot12:40112/)
+ * /rviz_1538702221345073376 (http://osboxes:39791/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/raw]$timeout 1 rostopic hz /duckbot12/camera_node/image/raw =====>
+subscribed to [/duckbot12/camera_node/image/raw]
+no new messages
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/duckbot12/camera_node/raw_camera_info]$rostopic info /duckbot12/camera_node/raw_camera_info =====>
+Type: sensor_msgs/CameraInfo
+
+Publishers: 
+ * /duckbot12/raw_cam_info_reader_node (http://duckbot12:40112/)
+
+Subscribers: 
+ * /record_1538702498027157708 (http://osboxes:37393/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/raw_camera_info]$timeout 1 rostopic hz /duckbot12/camera_node/raw_camera_info =====>
+subscribed to [/duckbot12/camera_node/raw_camera_info]
+[TOPIC_TYPE=sensor_msgs/CameraInfo]$rosmsg show sensor_msgs/CameraInfo =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string distortion_model
+float64[] D
+float64[9] K
+float64[9] R
+float64[12] P
+uint32 binning_x
+uint32 binning_y
+sensor_msgs/RegionOfInterest roi
+  uint32 x_offset
+  uint32 y_offset
+  uint32 height
+  uint32 width
+  bool do_rectify
+
+[TOPIC=/duckbot12/decoder_node/switch]$rostopic info /duckbot12/decoder_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/decoder_node (http://duckbot12:43351/)
+
+
+[TOPIC_HZ=/duckbot12/decoder_node/switch]$timeout 1 rostopic hz /duckbot12/decoder_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/initialpose]$rostopic info /initialpose =====>
+Type: geometry_msgs/PoseWithCovarianceStamped
+
+Publishers: 
+ * /rviz_1538702221345073376 (http://osboxes:39791/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/initialpose]$timeout 1 rostopic hz /initialpose =====>
+subscribed to [/initialpose]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PoseWithCovarianceStamped]$rosmsg show geometry_msgs/PoseWithCovarianceStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/PoseWithCovariance pose
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  float64[36] covariance
+
+[TOPIC=/move_base_simple/goal]$rostopic info /move_base_simple/goal =====>
+Type: geometry_msgs/PoseStamped
+
+Publishers: 
+ * /rviz_1538702221345073376 (http://osboxes:39791/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base_simple/goal]$timeout 1 rostopic hz /move_base_simple/goal =====>
+subscribed to [/move_base_simple/goal]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PoseStamped]$rosmsg show geometry_msgs/PoseStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Pose pose
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /duckbot12/decoder_node (http://duckbot12:43351/)
+ * /duckbot12/raw_cam_info_reader_node (http://duckbot12:40112/)
+ * /duckbot12/camera_node (http://duckbot12:43842/)
+ * /duckbot12/cam_info_reader_node (http://duckbot12:40630/)
+ * /rviz_1538702221345073376 (http://osboxes:39791/)
+ * /record_1538702498027157708 (http://osboxes:37393/)
+
+Subscribers: 
+ * /rosout (http://duckbot12:45096/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+average rate: 305.852
+	min: 0.001s max: 0.006s std dev: 0.00198s window: 5
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://duckbot12:45096/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+subscribed to [/rosout_agg]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/tf]$rostopic info /tf =====>
+Type: tf2_msgs/TFMessage
+
+Publishers: None
+
+Subscribers: 
+ * /rviz_1538702221345073376 (http://osboxes:39791/)
+
+
+[TOPIC_HZ=/tf]$timeout 1 rostopic hz /tf =====>
+subscribed to [/tf]
+no new messages
+[TOPIC_TYPE=tf2_msgs/TFMessage]$rosmsg show tf2_msgs/TFMessage =====>
+geometry_msgs/TransformStamped[] transforms
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string child_frame_id
+  geometry_msgs/Transform transform
+    geometry_msgs/Vector3 translation
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion rotation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[TOPIC=/tf_static]$rostopic info /tf_static =====>
+Type: tf2_msgs/TFMessage
+
+Publishers: None
+
+Subscribers: 
+ * /rviz_1538702221345073376 (http://osboxes:39791/)
+
+
+[TOPIC_HZ=/tf_static]$timeout 1 rostopic hz /tf_static =====>
+subscribed to [/tf_static]
+no new messages
+[TOPIC_TYPE=tf2_msgs/TFMessage]$rosmsg show tf2_msgs/TFMessage =====>
+geometry_msgs/TransformStamped[] transforms
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string child_frame_id
+  geometry_msgs/Transform transform
+    geometry_msgs/Vector3 translation
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion rotation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[TOPIC=/visualization_marker]$rostopic info /visualization_marker =====>
+Type: visualization_msgs/Marker
+
+Publishers: None
+
+Subscribers: 
+ * /rviz_1538702221345073376 (http://osboxes:39791/)
+
+
+[TOPIC_HZ=/visualization_marker]$timeout 1 rostopic hz /visualization_marker =====>
+subscribed to [/visualization_marker]
+no new messages
+[TOPIC_TYPE=visualization_msgs/Marker]$rosmsg show visualization_msgs/Marker =====>
+uint8 ARROW=0
+uint8 CUBE=1
+uint8 SPHERE=2
+uint8 CYLINDER=3
+uint8 LINE_STRIP=4
+uint8 LINE_LIST=5
+uint8 CUBE_LIST=6
+uint8 SPHERE_LIST=7
+uint8 POINTS=8
+uint8 TEXT_VIEW_FACING=9
+uint8 MESH_RESOURCE=10
+uint8 TRIANGLE_LIST=11
+uint8 ADD=0
+uint8 MODIFY=0
+uint8 DELETE=2
+uint8 DELETEALL=3
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string ns
+int32 id
+int32 type
+int32 action
+geometry_msgs/Pose pose
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+geometry_msgs/Vector3 scale
+  float64 x
+  float64 y
+  float64 z
+std_msgs/ColorRGBA color
+  float32 r
+  float32 g
+  float32 b
+  float32 a
+duration lifetime
+bool frame_locked
+geometry_msgs/Point[] points
+  float64 x
+  float64 y
+  float64 z
+std_msgs/ColorRGBA[] colors
+  float32 r
+  float32 g
+  float32 b
+  float32 a
+string text
+string mesh_resource
+bool mesh_use_embedded_materials
+
+[TOPIC=/visualization_marker_array]$rostopic info /visualization_marker_array =====>
+Type: visualization_msgs/MarkerArray
+
+Publishers: None
+
+Subscribers: 
+ * /rviz_1538702221345073376 (http://osboxes:39791/)
+
+
+[TOPIC_HZ=/visualization_marker_array]$timeout 1 rostopic hz /visualization_marker_array =====>
+Unable to register with master node [http://duckbot12:11311]: master may not be running yet. Will keep trying.
+subscribed to [/visualization_marker_array]
+[TOPIC_TYPE=visualization_msgs/MarkerArray]$rosmsg show visualization_msgs/MarkerArray =====>
+visualization_msgs/Marker[] markers
+  uint8 ARROW=0
+  uint8 CUBE=1
+  uint8 SPHERE=2
+  uint8 CYLINDER=3
+  uint8 LINE_STRIP=4
+  uint8 LINE_LIST=5
+  uint8 CUBE_LIST=6
+  uint8 SPHERE_LIST=7
+  uint8 POINTS=8
+  uint8 TEXT_VIEW_FACING=9
+  uint8 MESH_RESOURCE=10
+  uint8 TRIANGLE_LIST=11
+  uint8 ADD=0
+  uint8 MODIFY=0
+  uint8 DELETE=2
+  uint8 DELETEALL=3
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string ns
+  int32 id
+  int32 type
+  int32 action
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  geometry_msgs/Vector3 scale
+    float64 x
+    float64 y
+    float64 z
+  std_msgs/ColorRGBA color
+    float32 r
+    float32 g
+    float32 b
+    float32 a
+  duration lifetime
+  bool frame_locked
+  geometry_msgs/Point[] points
+    float64 x
+    float64 y
+    float64 z
+  std_msgs/ColorRGBA[] colors
+    float32 r
+    float32 g
+    float32 b
+    float32 a
+  string text
+  string mesh_resource
+  bool mesh_use_embedded_materials
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>

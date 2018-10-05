@@ -1,0 +1,223 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[NODE_LIST]$rosnode list =====>
+/duckbot12/cam_info_reader_node
+/duckbot12/camera_node
+/rosout
+[NODE=/duckbot12/cam_info_reader_node]$rosnode info /duckbot12/cam_info_reader_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/cam_info_reader_node]
+Publications: 
+ * /duckbot12/camera_node/camera_info [sensor_msgs/CameraInfo]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+
+Services: 
+ * /duckbot12/cam_info_reader_node/get_loggers
+ * /duckbot12/cam_info_reader_node/set_logger_level
+
+
+contacting node http://duckbot12:46178/ ...
+Pid: 2665
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/camera_node (http://duckbot12:45730/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/camera_node]$rosnode info /duckbot12/camera_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/camera_node]
+Publications: 
+ * /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/framerate_high_switch [unknown type]
+
+Services: 
+ * /duckbot12/camera_node/get_loggers
+ * /duckbot12/camera_node/set_camera_info
+ * /duckbot12/camera_node/set_logger_level
+
+
+contacting node http://duckbot12:45730/ ...
+Pid: 2664
+Connections:
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/cam_info_reader_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://duckbot12:40551/ ...
+Pid: 2417
+Connections:
+ * topic: /rosout
+    * to: /duckbot12/camera_node (http://duckbot12:45730/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/cam_info_reader_node (http://duckbot12:46178/)
+    * direction: inbound
+    * transport: TCPROS
+
+[TOPIC_LIST]$rostopic list =====>
+/duckbot12/camera_node/camera_info
+/duckbot12/camera_node/framerate_high_switch
+/duckbot12/camera_node/image/compressed
+/rosout
+/rosout_agg
+[TOPIC=/duckbot12/camera_node/camera_info]$rostopic info /duckbot12/camera_node/camera_info =====>
+Type: sensor_msgs/CameraInfo
+
+Publishers: 
+ * /duckbot12/cam_info_reader_node (http://duckbot12:46178/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/camera_info]$timeout 1 rostopic hz /duckbot12/camera_node/camera_info =====>
+subscribed to [/duckbot12/camera_node/camera_info]
+average rate: 30.035
+	min: 0.031s max: 0.035s std dev: 0.00116s window: 13
+[TOPIC_TYPE=sensor_msgs/CameraInfo]$rosmsg show sensor_msgs/CameraInfo =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string distortion_model
+float64[] D
+float64[9] K
+float64[9] R
+float64[12] P
+uint32 binning_x
+uint32 binning_y
+sensor_msgs/RegionOfInterest roi
+  uint32 x_offset
+  uint32 y_offset
+  uint32 height
+  uint32 width
+  bool do_rectify
+
+[TOPIC=/duckbot12/camera_node/framerate_high_switch]$rostopic info /duckbot12/camera_node/framerate_high_switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/camera_node (http://duckbot12:45730/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/framerate_high_switch]$timeout 1 rostopic hz /duckbot12/camera_node/framerate_high_switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/camera_node/image/compressed]$rostopic info /duckbot12/camera_node/image/compressed =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/camera_node (http://duckbot12:45730/)
+
+Subscribers: 
+ * /duckbot12/cam_info_reader_node (http://duckbot12:46178/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/compressed]$timeout 1 rostopic hz /duckbot12/camera_node/image/compressed =====>
+subscribed to [/duckbot12/camera_node/image/compressed]
+average rate: 30.086
+	min: 0.023s max: 0.045s std dev: 0.00479s window: 14
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /duckbot12/camera_node (http://duckbot12:45730/)
+ * /duckbot12/cam_info_reader_node (http://duckbot12:46178/)
+
+Subscribers: 
+ * /rosout (http://duckbot12:40551/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+average rate: 557.753
+	min: 0.002s max: 0.002s std dev: 0.00000s window: 2
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://duckbot12:40551/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+subscribed to [/rosout_agg]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>

@@ -1,0 +1,3219 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[NODE_LIST]$rosnode list =====>
+/duckbot12/apriltag_detector_node
+/duckbot12/apriltags_postprocessing_node
+/duckbot12/cam_info_reader_node
+/duckbot12/camera_node
+/duckbot12/decoder_node
+/duckbot12/image_proc_node
+/duckbot12/raw_cam_info_reader_node
+/rosout
+[NODE=/duckbot12/apriltag_detector_node]$rosnode info /duckbot12/apriltag_detector_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/apriltag_detector_node]
+Publications: 
+ * /duckbot12/tag_detections [duckietown_msgs/AprilTagDetectionArray]
+ * /duckbot12/tag_detections_image [sensor_msgs/Image]
+ * /duckbot12/tag_detections_image/compressed [sensor_msgs/CompressedImage]
+ * /duckbot12/tag_detections_image/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/tag_detections_image/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/tag_detections_image/compressedDepth [sensor_msgs/CompressedImage]
+ * /duckbot12/tag_detections_image/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/tag_detections_image/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/tag_detections_image/theora [theora_image_transport/Packet]
+ * /duckbot12/tag_detections_image/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/tag_detections_image/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/tag_detections_pose [geometry_msgs/PoseArray]
+ * /rosout [rosgraph_msgs/Log]
+ * /tf [tf2_msgs/TFMessage]
+
+Subscriptions: 
+ * /duckbot12/camera_node/image/rect [sensor_msgs/Image]
+ * /duckbot12/camera_node/raw_camera_info [sensor_msgs/CameraInfo]
+ * /duckbot12/switch [unknown type]
+
+Services: 
+ * /duckbot12/apriltag_detector_node/get_loggers
+ * /duckbot12/apriltag_detector_node/set_logger_level
+ * /duckbot12/tag_detections_image/compressed/set_parameters
+ * /duckbot12/tag_detections_image/compressedDepth/set_parameters
+ * /duckbot12/tag_detections_image/theora/set_parameters
+
+
+contacting node http://duckbot12:39414/ ...
+Pid: 2593
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/tag_detections
+    * to: /duckbot12/apriltags_postprocessing_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/rect
+    * to: /duckbot12/image_proc_node (http://duckbot12:39452/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/raw_camera_info
+    * to: /duckbot12/raw_cam_info_reader_node (http://duckbot12:34725/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/apriltags_postprocessing_node]$rosnode info /duckbot12/apriltags_postprocessing_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/apriltags_postprocessing_node]
+Publications: 
+ * /duckbot12/apriltags_postprocessing_node/apriltags_intersection [duckietown_msgs/BoolStamped]
+ * /duckbot12/apriltags_postprocessing_node/apriltags_out [duckietown_msgs/AprilTagsWithInfos]
+ * /duckbot12/apriltags_postprocessing_node/apriltags_parking [duckietown_msgs/BoolStamped]
+ * /duckbot12/apriltags_postprocessing_node/tag_pose [geometry_msgs/PoseStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/tag_detections [duckietown_msgs/AprilTagDetectionArray]
+
+Services: 
+ * /duckbot12/apriltags_postprocessing_node/get_loggers
+ * /duckbot12/apriltags_postprocessing_node/set_logger_level
+
+
+contacting node http://duckbot12:45457/ ...
+Pid: 2594
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/tag_detections
+    * to: /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/cam_info_reader_node]$rosnode info /duckbot12/cam_info_reader_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/cam_info_reader_node]
+Publications: 
+ * /duckbot12/camera_node/camera_info [sensor_msgs/CameraInfo]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+
+Services: 
+ * /duckbot12/cam_info_reader_node/get_loggers
+ * /duckbot12/cam_info_reader_node/set_logger_level
+
+
+contacting node http://duckbot12:42319/ ...
+Pid: 2590
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/camera_node (http://duckbot12:36261/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/camera_node]$rosnode info /duckbot12/camera_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/camera_node]
+Publications: 
+ * /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/framerate_high_switch [unknown type]
+
+Services: 
+ * /duckbot12/camera_node/get_loggers
+ * /duckbot12/camera_node/set_camera_info
+ * /duckbot12/camera_node/set_logger_level
+
+
+contacting node http://duckbot12:36261/ ...
+Pid: 2588
+Connections:
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/cam_info_reader_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/decoder_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/decoder_node]$rosnode info /duckbot12/decoder_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/decoder_node]
+Publications: 
+ * /duckbot12/camera_node/image/raw [sensor_msgs/Image]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+ * /duckbot12/decoder_node/switch [unknown type]
+
+Services: 
+ * /duckbot12/decoder_node/get_loggers
+ * /duckbot12/decoder_node/set_logger_level
+
+
+contacting node http://duckbot12:46877/ ...
+Pid: 2589
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/raw
+    * to: /duckbot12/image_proc_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/raw
+    * to: /duckbot12/raw_cam_info_reader_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/camera_node (http://duckbot12:36261/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/image_proc_node]$rosnode info /duckbot12/image_proc_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/image_proc_node]
+Publications: 
+ * /duckbot12/camera_node/image/rect [sensor_msgs/Image]
+ * /duckbot12/camera_node/image/rect/compressed [sensor_msgs/CompressedImage]
+ * /duckbot12/camera_node/image/rect/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/camera_node/image/rect/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/camera_node/image/rect/compressedDepth [sensor_msgs/CompressedImage]
+ * /duckbot12/camera_node/image/rect/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/camera_node/image/rect/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/camera_node/image/rect/theora [theora_image_transport/Packet]
+ * /duckbot12/camera_node/image/rect/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/camera_node/image/rect/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/image_color [sensor_msgs/Image]
+ * /duckbot12/image_color/compressed [sensor_msgs/CompressedImage]
+ * /duckbot12/image_color/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/image_color/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/image_color/compressedDepth [sensor_msgs/CompressedImage]
+ * /duckbot12/image_color/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/image_color/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/image_color/theora [theora_image_transport/Packet]
+ * /duckbot12/image_color/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/image_color/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/image_mono [sensor_msgs/Image]
+ * /duckbot12/image_mono/compressed [sensor_msgs/CompressedImage]
+ * /duckbot12/image_mono/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/image_mono/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/image_mono/compressedDepth [sensor_msgs/CompressedImage]
+ * /duckbot12/image_mono/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/image_mono/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/image_mono/theora [theora_image_transport/Packet]
+ * /duckbot12/image_mono/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/image_mono/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/image_proc_node_debayer/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/image_proc_node_debayer/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/image_proc_node_rectify_color/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/image_proc_node_rectify_color/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/image_proc_node_rectify_mono/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/image_proc_node_rectify_mono/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/image_rect [sensor_msgs/Image]
+ * /duckbot12/image_rect/compressed [sensor_msgs/CompressedImage]
+ * /duckbot12/image_rect/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/image_rect/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/image_rect/compressedDepth [sensor_msgs/CompressedImage]
+ * /duckbot12/image_rect/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/image_rect/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /duckbot12/image_rect/theora [theora_image_transport/Packet]
+ * /duckbot12/image_rect/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /duckbot12/image_rect/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/image/raw [sensor_msgs/Image]
+ * /duckbot12/camera_node/raw_camera_info [sensor_msgs/CameraInfo]
+ * /duckbot12/image_color [sensor_msgs/Image]
+
+Services: 
+ * /duckbot12/camera_node/image/rect/compressed/set_parameters
+ * /duckbot12/camera_node/image/rect/compressedDepth/set_parameters
+ * /duckbot12/camera_node/image/rect/theora/set_parameters
+ * /duckbot12/image_color/compressed/set_parameters
+ * /duckbot12/image_color/compressedDepth/set_parameters
+ * /duckbot12/image_color/theora/set_parameters
+ * /duckbot12/image_mono/compressed/set_parameters
+ * /duckbot12/image_mono/compressedDepth/set_parameters
+ * /duckbot12/image_mono/theora/set_parameters
+ * /duckbot12/image_proc_node/get_loggers
+ * /duckbot12/image_proc_node/set_logger_level
+ * /duckbot12/image_proc_node_debayer/set_parameters
+ * /duckbot12/image_proc_node_rectify_color/set_parameters
+ * /duckbot12/image_proc_node_rectify_mono/set_parameters
+ * /duckbot12/image_rect/compressed/set_parameters
+ * /duckbot12/image_rect/compressedDepth/set_parameters
+ * /duckbot12/image_rect/theora/set_parameters
+
+
+contacting node http://duckbot12:39452/ ...
+Pid: 2592
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/image_color
+    * to: /duckbot12/image_proc_node
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /duckbot12/camera_node/image/rect
+    * to: /duckbot12/apriltag_detector_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/image_color
+    * to: /duckbot12/image_proc_node (http://duckbot12:39452/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /duckbot12/camera_node/raw_camera_info
+    * to: /duckbot12/raw_cam_info_reader_node (http://duckbot12:34725/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/raw
+    * to: /duckbot12/decoder_node (http://duckbot12:46877/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/raw_cam_info_reader_node]$rosnode info /duckbot12/raw_cam_info_reader_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/raw_cam_info_reader_node]
+Publications: 
+ * /duckbot12/camera_node/raw_camera_info [sensor_msgs/CameraInfo]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/image/raw [sensor_msgs/Image]
+
+Services: 
+ * /duckbot12/raw_cam_info_reader_node/get_loggers
+ * /duckbot12/raw_cam_info_reader_node/set_logger_level
+
+
+contacting node http://duckbot12:34725/ ...
+Pid: 2591
+Connections:
+ * topic: /duckbot12/camera_node/raw_camera_info
+    * to: /duckbot12/apriltag_detector_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/raw_camera_info
+    * to: /duckbot12/image_proc_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/raw
+    * to: /duckbot12/decoder_node (http://duckbot12:46877/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://duckbot12:41296/ ...
+Pid: 2545
+Connections:
+ * topic: /rosout
+    * to: /duckbot12/image_proc_node (http://duckbot12:39452/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/decoder_node (http://duckbot12:46877/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/apriltags_postprocessing_node (http://duckbot12:45457/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/cam_info_reader_node (http://duckbot12:42319/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/raw_cam_info_reader_node (http://duckbot12:34725/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/camera_node (http://duckbot12:36261/)
+    * direction: inbound
+    * transport: TCPROS
+
+[TOPIC_LIST]$rostopic list =====>
+/duckbot12/apriltags_postprocessing_node/apriltags_intersection
+/duckbot12/apriltags_postprocessing_node/apriltags_out
+/duckbot12/apriltags_postprocessing_node/apriltags_parking
+/duckbot12/apriltags_postprocessing_node/tag_pose
+/duckbot12/camera_node/camera_info
+/duckbot12/camera_node/framerate_high_switch
+/duckbot12/camera_node/image/compressed
+/duckbot12/camera_node/image/raw
+/duckbot12/camera_node/image/rect
+/duckbot12/camera_node/image/rect/compressed
+/duckbot12/camera_node/image/rect/compressed/parameter_descriptions
+/duckbot12/camera_node/image/rect/compressed/parameter_updates
+/duckbot12/camera_node/image/rect/compressedDepth
+/duckbot12/camera_node/image/rect/compressedDepth/parameter_descriptions
+/duckbot12/camera_node/image/rect/compressedDepth/parameter_updates
+/duckbot12/camera_node/image/rect/theora
+/duckbot12/camera_node/image/rect/theora/parameter_descriptions
+/duckbot12/camera_node/image/rect/theora/parameter_updates
+/duckbot12/camera_node/raw_camera_info
+/duckbot12/decoder_node/switch
+/duckbot12/image_color
+/duckbot12/image_color/compressed
+/duckbot12/image_color/compressed/parameter_descriptions
+/duckbot12/image_color/compressed/parameter_updates
+/duckbot12/image_color/compressedDepth
+/duckbot12/image_color/compressedDepth/parameter_descriptions
+/duckbot12/image_color/compressedDepth/parameter_updates
+/duckbot12/image_color/theora
+/duckbot12/image_color/theora/parameter_descriptions
+/duckbot12/image_color/theora/parameter_updates
+/duckbot12/image_mono
+/duckbot12/image_mono/compressed
+/duckbot12/image_mono/compressed/parameter_descriptions
+/duckbot12/image_mono/compressed/parameter_updates
+/duckbot12/image_mono/compressedDepth
+/duckbot12/image_mono/compressedDepth/parameter_descriptions
+/duckbot12/image_mono/compressedDepth/parameter_updates
+/duckbot12/image_mono/theora
+/duckbot12/image_mono/theora/parameter_descriptions
+/duckbot12/image_mono/theora/parameter_updates
+/duckbot12/image_proc_node_debayer/parameter_descriptions
+/duckbot12/image_proc_node_debayer/parameter_updates
+/duckbot12/image_proc_node_rectify_color/parameter_descriptions
+/duckbot12/image_proc_node_rectify_color/parameter_updates
+/duckbot12/image_proc_node_rectify_mono/parameter_descriptions
+/duckbot12/image_proc_node_rectify_mono/parameter_updates
+/duckbot12/image_rect
+/duckbot12/image_rect/compressed
+/duckbot12/image_rect/compressed/parameter_descriptions
+/duckbot12/image_rect/compressed/parameter_updates
+/duckbot12/image_rect/compressedDepth
+/duckbot12/image_rect/compressedDepth/parameter_descriptions
+/duckbot12/image_rect/compressedDepth/parameter_updates
+/duckbot12/image_rect/theora
+/duckbot12/image_rect/theora/parameter_descriptions
+/duckbot12/image_rect/theora/parameter_updates
+/duckbot12/switch
+/duckbot12/tag_detections
+/duckbot12/tag_detections_image
+/duckbot12/tag_detections_image/compressed
+/duckbot12/tag_detections_image/compressed/parameter_descriptions
+/duckbot12/tag_detections_image/compressed/parameter_updates
+/duckbot12/tag_detections_image/compressedDepth
+/duckbot12/tag_detections_image/compressedDepth/parameter_descriptions
+/duckbot12/tag_detections_image/compressedDepth/parameter_updates
+/duckbot12/tag_detections_image/theora
+/duckbot12/tag_detections_image/theora/parameter_descriptions
+/duckbot12/tag_detections_image/theora/parameter_updates
+/duckbot12/tag_detections_pose
+/rosout
+/rosout_agg
+/tf
+[TOPIC=/duckbot12/apriltags_postprocessing_node/apriltags_intersection]$rostopic info /duckbot12/apriltags_postprocessing_node/apriltags_intersection =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/apriltags_postprocessing_node (http://duckbot12:45457/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/apriltags_postprocessing_node/apriltags_intersection]$timeout 1 rostopic hz /duckbot12/apriltags_postprocessing_node/apriltags_intersection =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/apriltags_postprocessing_node/apriltags_out]$rostopic info /duckbot12/apriltags_postprocessing_node/apriltags_out =====>
+Type: duckietown_msgs/AprilTagsWithInfos
+
+Publishers: 
+ * /duckbot12/apriltags_postprocessing_node (http://duckbot12:45457/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/apriltags_postprocessing_node/apriltags_out]$timeout 1 rostopic hz /duckbot12/apriltags_postprocessing_node/apriltags_out =====>
+[TOPIC_TYPE=duckietown_msgs/AprilTagsWithInfos]$rosmsg show duckietown_msgs/AprilTagsWithInfos =====>
+[TOPIC=/duckbot12/apriltags_postprocessing_node/apriltags_parking]$rostopic info /duckbot12/apriltags_postprocessing_node/apriltags_parking =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/apriltags_postprocessing_node (http://duckbot12:45457/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/apriltags_postprocessing_node/apriltags_parking]$timeout 1 rostopic hz /duckbot12/apriltags_postprocessing_node/apriltags_parking =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/apriltags_postprocessing_node/tag_pose]$rostopic info /duckbot12/apriltags_postprocessing_node/tag_pose =====>
+Type: geometry_msgs/PoseStamped
+
+Publishers: 
+ * /duckbot12/apriltags_postprocessing_node (http://duckbot12:45457/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/apriltags_postprocessing_node/tag_pose]$timeout 1 rostopic hz /duckbot12/apriltags_postprocessing_node/tag_pose =====>
+subscribed to [/duckbot12/apriltags_postprocessing_node/tag_pose]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PoseStamped]$rosmsg show geometry_msgs/PoseStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Pose pose
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+
+[TOPIC=/duckbot12/camera_node/camera_info]$rostopic info /duckbot12/camera_node/camera_info =====>
+Type: sensor_msgs/CameraInfo
+
+Publishers: 
+ * /duckbot12/cam_info_reader_node (http://duckbot12:42319/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/camera_info]$timeout 1 rostopic hz /duckbot12/camera_node/camera_info =====>
+subscribed to [/duckbot12/camera_node/camera_info]
+average rate: 29.571
+	min: 0.022s max: 0.044s std dev: 0.00529s window: 14
+[TOPIC_TYPE=sensor_msgs/CameraInfo]$rosmsg show sensor_msgs/CameraInfo =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string distortion_model
+float64[] D
+float64[9] K
+float64[9] R
+float64[12] P
+uint32 binning_x
+uint32 binning_y
+sensor_msgs/RegionOfInterest roi
+  uint32 x_offset
+  uint32 y_offset
+  uint32 height
+  uint32 width
+  bool do_rectify
+
+[TOPIC=/duckbot12/camera_node/framerate_high_switch]$rostopic info /duckbot12/camera_node/framerate_high_switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/camera_node (http://duckbot12:36261/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/framerate_high_switch]$timeout 1 rostopic hz /duckbot12/camera_node/framerate_high_switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/camera_node/image/compressed]$rostopic info /duckbot12/camera_node/image/compressed =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/camera_node (http://duckbot12:36261/)
+
+Subscribers: 
+ * /duckbot12/decoder_node (http://duckbot12:46877/)
+ * /duckbot12/cam_info_reader_node (http://duckbot12:42319/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/compressed]$timeout 1 rostopic hz /duckbot12/camera_node/image/compressed =====>
+subscribed to [/duckbot12/camera_node/image/compressed]
+average rate: 10.073
+	min: 0.073s max: 0.129s std dev: 0.01849s window: 6
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/camera_node/image/raw]$rostopic info /duckbot12/camera_node/image/raw =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /duckbot12/decoder_node (http://duckbot12:46877/)
+
+Subscribers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+ * /duckbot12/raw_cam_info_reader_node (http://duckbot12:34725/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/raw]$timeout 1 rostopic hz /duckbot12/camera_node/image/raw =====>
+subscribed to [/duckbot12/camera_node/image/raw]
+no new messages
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/duckbot12/camera_node/image/rect]$rostopic info /duckbot12/camera_node/image/rect =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/rect]$timeout 1 rostopic hz /duckbot12/camera_node/image/rect =====>
+subscribed to [/duckbot12/camera_node/image/rect]
+no new messages
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/duckbot12/camera_node/image/rect/compressed]$rostopic info /duckbot12/camera_node/image/rect/compressed =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/rect/compressed]$timeout 1 rostopic hz /duckbot12/camera_node/image/rect/compressed =====>
+subscribed to [/duckbot12/camera_node/image/rect/compressed]
+no new messages
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/camera_node/image/rect/compressed/parameter_descriptions]$rostopic info /duckbot12/camera_node/image/rect/compressed/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/rect/compressed/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/camera_node/image/rect/compressed/parameter_descriptions =====>
+subscribed to [/duckbot12/camera_node/image/rect/compressed/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/camera_node/image/rect/compressed/parameter_updates]$rostopic info /duckbot12/camera_node/image/rect/compressed/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/rect/compressed/parameter_updates]$timeout 1 rostopic hz /duckbot12/camera_node/image/rect/compressed/parameter_updates =====>
+subscribed to [/duckbot12/camera_node/image/rect/compressed/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/camera_node/image/rect/compressedDepth]$rostopic info /duckbot12/camera_node/image/rect/compressedDepth =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/rect/compressedDepth]$timeout 1 rostopic hz /duckbot12/camera_node/image/rect/compressedDepth =====>
+subscribed to [/duckbot12/camera_node/image/rect/compressedDepth]
+no new messages
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/camera_node/image/rect/compressedDepth/parameter_descriptions]$rostopic info /duckbot12/camera_node/image/rect/compressedDepth/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/rect/compressedDepth/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/camera_node/image/rect/compressedDepth/parameter_descriptions =====>
+subscribed to [/duckbot12/camera_node/image/rect/compressedDepth/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/camera_node/image/rect/compressedDepth/parameter_updates]$rostopic info /duckbot12/camera_node/image/rect/compressedDepth/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/rect/compressedDepth/parameter_updates]$timeout 1 rostopic hz /duckbot12/camera_node/image/rect/compressedDepth/parameter_updates =====>
+subscribed to [/duckbot12/camera_node/image/rect/compressedDepth/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/camera_node/image/rect/theora]$rostopic info /duckbot12/camera_node/image/rect/theora =====>
+Type: theora_image_transport/Packet
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/rect/theora]$timeout 1 rostopic hz /duckbot12/camera_node/image/rect/theora =====>
+subscribed to [/duckbot12/camera_node/image/rect/theora]
+no new messages
+[TOPIC_TYPE=theora_image_transport/Packet]$rosmsg show theora_image_transport/Packet =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint8[] data
+int32 b_o_s
+int32 e_o_s
+int64 granulepos
+int64 packetno
+
+[TOPIC=/duckbot12/camera_node/image/rect/theora/parameter_descriptions]$rostopic info /duckbot12/camera_node/image/rect/theora/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/rect/theora/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/camera_node/image/rect/theora/parameter_descriptions =====>
+subscribed to [/duckbot12/camera_node/image/rect/theora/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/camera_node/image/rect/theora/parameter_updates]$rostopic info /duckbot12/camera_node/image/rect/theora/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/rect/theora/parameter_updates]$timeout 1 rostopic hz /duckbot12/camera_node/image/rect/theora/parameter_updates =====>
+subscribed to [/duckbot12/camera_node/image/rect/theora/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/camera_node/raw_camera_info]$rostopic info /duckbot12/camera_node/raw_camera_info =====>
+Type: sensor_msgs/CameraInfo
+
+Publishers: 
+ * /duckbot12/raw_cam_info_reader_node (http://duckbot12:34725/)
+
+Subscribers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/raw_camera_info]$timeout 1 rostopic hz /duckbot12/camera_node/raw_camera_info =====>
+subscribed to [/duckbot12/camera_node/raw_camera_info]
+no new messages
+[TOPIC_TYPE=sensor_msgs/CameraInfo]$rosmsg show sensor_msgs/CameraInfo =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string distortion_model
+float64[] D
+float64[9] K
+float64[9] R
+float64[12] P
+uint32 binning_x
+uint32 binning_y
+sensor_msgs/RegionOfInterest roi
+  uint32 x_offset
+  uint32 y_offset
+  uint32 height
+  uint32 width
+  bool do_rectify
+
+[TOPIC=/duckbot12/decoder_node/switch]$rostopic info /duckbot12/decoder_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/decoder_node (http://duckbot12:46877/)
+
+
+[TOPIC_HZ=/duckbot12/decoder_node/switch]$timeout 1 rostopic hz /duckbot12/decoder_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/image_color]$rostopic info /duckbot12/image_color =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+
+[TOPIC_HZ=/duckbot12/image_color]$timeout 1 rostopic hz /duckbot12/image_color =====>
+subscribed to [/duckbot12/image_color]
+no new messages
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/duckbot12/image_color/compressed]$rostopic info /duckbot12/image_color/compressed =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_color/compressed]$timeout 1 rostopic hz /duckbot12/image_color/compressed =====>
+subscribed to [/duckbot12/image_color/compressed]
+no new messages
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/image_color/compressed/parameter_descriptions]$rostopic info /duckbot12/image_color/compressed/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_color/compressed/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/image_color/compressed/parameter_descriptions =====>
+subscribed to [/duckbot12/image_color/compressed/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/image_color/compressed/parameter_updates]$rostopic info /duckbot12/image_color/compressed/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_color/compressed/parameter_updates]$timeout 1 rostopic hz /duckbot12/image_color/compressed/parameter_updates =====>
+subscribed to [/duckbot12/image_color/compressed/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/image_color/compressedDepth]$rostopic info /duckbot12/image_color/compressedDepth =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_color/compressedDepth]$timeout 1 rostopic hz /duckbot12/image_color/compressedDepth =====>
+subscribed to [/duckbot12/image_color/compressedDepth]
+no new messages
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/image_color/compressedDepth/parameter_descriptions]$rostopic info /duckbot12/image_color/compressedDepth/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_color/compressedDepth/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/image_color/compressedDepth/parameter_descriptions =====>
+subscribed to [/duckbot12/image_color/compressedDepth/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/image_color/compressedDepth/parameter_updates]$rostopic info /duckbot12/image_color/compressedDepth/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_color/compressedDepth/parameter_updates]$timeout 1 rostopic hz /duckbot12/image_color/compressedDepth/parameter_updates =====>
+subscribed to [/duckbot12/image_color/compressedDepth/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/image_color/theora]$rostopic info /duckbot12/image_color/theora =====>
+Type: theora_image_transport/Packet
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_color/theora]$timeout 1 rostopic hz /duckbot12/image_color/theora =====>
+subscribed to [/duckbot12/image_color/theora]
+average rate: 438.025
+	min: 0.001s max: 0.004s std dev: 0.00124s window: 3
+[TOPIC_TYPE=theora_image_transport/Packet]$rosmsg show theora_image_transport/Packet =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint8[] data
+int32 b_o_s
+int32 e_o_s
+int64 granulepos
+int64 packetno
+
+[TOPIC=/duckbot12/image_color/theora/parameter_descriptions]$rostopic info /duckbot12/image_color/theora/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_color/theora/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/image_color/theora/parameter_descriptions =====>
+subscribed to [/duckbot12/image_color/theora/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/image_color/theora/parameter_updates]$rostopic info /duckbot12/image_color/theora/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_color/theora/parameter_updates]$timeout 1 rostopic hz /duckbot12/image_color/theora/parameter_updates =====>
+subscribed to [/duckbot12/image_color/theora/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/image_mono]$rostopic info /duckbot12/image_mono =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_mono]$timeout 1 rostopic hz /duckbot12/image_mono =====>
+subscribed to [/duckbot12/image_mono]
+no new messages
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/duckbot12/image_mono/compressed]$rostopic info /duckbot12/image_mono/compressed =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_mono/compressed]$timeout 1 rostopic hz /duckbot12/image_mono/compressed =====>
+subscribed to [/duckbot12/image_mono/compressed]
+no new messages
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/image_mono/compressed/parameter_descriptions]$rostopic info /duckbot12/image_mono/compressed/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_mono/compressed/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/image_mono/compressed/parameter_descriptions =====>
+subscribed to [/duckbot12/image_mono/compressed/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/image_mono/compressed/parameter_updates]$rostopic info /duckbot12/image_mono/compressed/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_mono/compressed/parameter_updates]$timeout 1 rostopic hz /duckbot12/image_mono/compressed/parameter_updates =====>
+subscribed to [/duckbot12/image_mono/compressed/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/image_mono/compressedDepth]$rostopic info /duckbot12/image_mono/compressedDepth =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_mono/compressedDepth]$timeout 1 rostopic hz /duckbot12/image_mono/compressedDepth =====>
+subscribed to [/duckbot12/image_mono/compressedDepth]
+no new messages
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/image_mono/compressedDepth/parameter_descriptions]$rostopic info /duckbot12/image_mono/compressedDepth/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_mono/compressedDepth/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/image_mono/compressedDepth/parameter_descriptions =====>
+subscribed to [/duckbot12/image_mono/compressedDepth/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/image_mono/compressedDepth/parameter_updates]$rostopic info /duckbot12/image_mono/compressedDepth/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_mono/compressedDepth/parameter_updates]$timeout 1 rostopic hz /duckbot12/image_mono/compressedDepth/parameter_updates =====>
+subscribed to [/duckbot12/image_mono/compressedDepth/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/image_mono/theora]$rostopic info /duckbot12/image_mono/theora =====>
+Type: theora_image_transport/Packet
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_mono/theora]$timeout 1 rostopic hz /duckbot12/image_mono/theora =====>
+subscribed to [/duckbot12/image_mono/theora]
+no new messages
+[TOPIC_TYPE=theora_image_transport/Packet]$rosmsg show theora_image_transport/Packet =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint8[] data
+int32 b_o_s
+int32 e_o_s
+int64 granulepos
+int64 packetno
+
+[TOPIC=/duckbot12/image_mono/theora/parameter_descriptions]$rostopic info /duckbot12/image_mono/theora/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_mono/theora/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/image_mono/theora/parameter_descriptions =====>
+subscribed to [/duckbot12/image_mono/theora/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/image_mono/theora/parameter_updates]$rostopic info /duckbot12/image_mono/theora/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_mono/theora/parameter_updates]$timeout 1 rostopic hz /duckbot12/image_mono/theora/parameter_updates =====>
+subscribed to [/duckbot12/image_mono/theora/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/image_proc_node_debayer/parameter_descriptions]$rostopic info /duckbot12/image_proc_node_debayer/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_proc_node_debayer/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/image_proc_node_debayer/parameter_descriptions =====>
+subscribed to [/duckbot12/image_proc_node_debayer/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/image_proc_node_debayer/parameter_updates]$rostopic info /duckbot12/image_proc_node_debayer/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_proc_node_debayer/parameter_updates]$timeout 1 rostopic hz /duckbot12/image_proc_node_debayer/parameter_updates =====>
+subscribed to [/duckbot12/image_proc_node_debayer/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/image_proc_node_rectify_color/parameter_descriptions]$rostopic info /duckbot12/image_proc_node_rectify_color/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_proc_node_rectify_color/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/image_proc_node_rectify_color/parameter_descriptions =====>
+subscribed to [/duckbot12/image_proc_node_rectify_color/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/image_proc_node_rectify_color/parameter_updates]$rostopic info /duckbot12/image_proc_node_rectify_color/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_proc_node_rectify_color/parameter_updates]$timeout 1 rostopic hz /duckbot12/image_proc_node_rectify_color/parameter_updates =====>
+subscribed to [/duckbot12/image_proc_node_rectify_color/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/image_proc_node_rectify_mono/parameter_descriptions]$rostopic info /duckbot12/image_proc_node_rectify_mono/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_proc_node_rectify_mono/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/image_proc_node_rectify_mono/parameter_descriptions =====>
+subscribed to [/duckbot12/image_proc_node_rectify_mono/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/image_proc_node_rectify_mono/parameter_updates]$rostopic info /duckbot12/image_proc_node_rectify_mono/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_proc_node_rectify_mono/parameter_updates]$timeout 1 rostopic hz /duckbot12/image_proc_node_rectify_mono/parameter_updates =====>
+subscribed to [/duckbot12/image_proc_node_rectify_mono/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/image_rect]$rostopic info /duckbot12/image_rect =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_rect]$timeout 1 rostopic hz /duckbot12/image_rect =====>
+subscribed to [/duckbot12/image_rect]
+no new messages
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/duckbot12/image_rect/compressed]$rostopic info /duckbot12/image_rect/compressed =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_rect/compressed]$timeout 1 rostopic hz /duckbot12/image_rect/compressed =====>
+subscribed to [/duckbot12/image_rect/compressed]
+no new messages
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/image_rect/compressed/parameter_descriptions]$rostopic info /duckbot12/image_rect/compressed/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_rect/compressed/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/image_rect/compressed/parameter_descriptions =====>
+subscribed to [/duckbot12/image_rect/compressed/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/image_rect/compressed/parameter_updates]$rostopic info /duckbot12/image_rect/compressed/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_rect/compressed/parameter_updates]$timeout 1 rostopic hz /duckbot12/image_rect/compressed/parameter_updates =====>
+subscribed to [/duckbot12/image_rect/compressed/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/image_rect/compressedDepth]$rostopic info /duckbot12/image_rect/compressedDepth =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_rect/compressedDepth]$timeout 1 rostopic hz /duckbot12/image_rect/compressedDepth =====>
+subscribed to [/duckbot12/image_rect/compressedDepth]
+no new messages
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/image_rect/compressedDepth/parameter_descriptions]$rostopic info /duckbot12/image_rect/compressedDepth/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_rect/compressedDepth/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/image_rect/compressedDepth/parameter_descriptions =====>
+subscribed to [/duckbot12/image_rect/compressedDepth/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/image_rect/compressedDepth/parameter_updates]$rostopic info /duckbot12/image_rect/compressedDepth/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_rect/compressedDepth/parameter_updates]$timeout 1 rostopic hz /duckbot12/image_rect/compressedDepth/parameter_updates =====>
+subscribed to [/duckbot12/image_rect/compressedDepth/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/image_rect/theora]$rostopic info /duckbot12/image_rect/theora =====>
+Type: theora_image_transport/Packet
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_rect/theora]$timeout 1 rostopic hz /duckbot12/image_rect/theora =====>
+subscribed to [/duckbot12/image_rect/theora]
+no new messages
+[TOPIC_TYPE=theora_image_transport/Packet]$rosmsg show theora_image_transport/Packet =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint8[] data
+int32 b_o_s
+int32 e_o_s
+int64 granulepos
+int64 packetno
+
+[TOPIC=/duckbot12/image_rect/theora/parameter_descriptions]$rostopic info /duckbot12/image_rect/theora/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_rect/theora/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/image_rect/theora/parameter_descriptions =====>
+subscribed to [/duckbot12/image_rect/theora/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/image_rect/theora/parameter_updates]$rostopic info /duckbot12/image_rect/theora/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/image_rect/theora/parameter_updates]$timeout 1 rostopic hz /duckbot12/image_rect/theora/parameter_updates =====>
+subscribed to [/duckbot12/image_rect/theora/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/switch]$rostopic info /duckbot12/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+
+[TOPIC_HZ=/duckbot12/switch]$timeout 1 rostopic hz /duckbot12/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/duckbot12/tag_detections]$rostopic info /duckbot12/tag_detections =====>
+Type: duckietown_msgs/AprilTagDetectionArray
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: 
+ * /duckbot12/apriltags_postprocessing_node (http://duckbot12:45457/)
+
+
+[TOPIC_HZ=/duckbot12/tag_detections]$timeout 1 rostopic hz /duckbot12/tag_detections =====>
+[TOPIC_TYPE=duckietown_msgs/AprilTagDetectionArray]$rosmsg show duckietown_msgs/AprilTagDetectionArray =====>
+[TOPIC=/duckbot12/tag_detections_image]$rostopic info /duckbot12/tag_detections_image =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/tag_detections_image]$timeout 1 rostopic hz /duckbot12/tag_detections_image =====>
+subscribed to [/duckbot12/tag_detections_image]
+no new messages
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/duckbot12/tag_detections_image/compressed]$rostopic info /duckbot12/tag_detections_image/compressed =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/tag_detections_image/compressed]$timeout 1 rostopic hz /duckbot12/tag_detections_image/compressed =====>
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/tag_detections_image/compressed/parameter_descriptions]$rostopic info /duckbot12/tag_detections_image/compressed/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: 
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+
+[TOPIC_HZ=/duckbot12/tag_detections_image/compressed/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/tag_detections_image/compressed/parameter_descriptions =====>
+subscribed to [/duckbot12/tag_detections_image/compressed/parameter_descriptions]
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/tag_detections_image/compressed/parameter_updates]$rostopic info /duckbot12/tag_detections_image/compressed/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: 
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+
+[TOPIC_HZ=/duckbot12/tag_detections_image/compressed/parameter_updates]$timeout 1 rostopic hz /duckbot12/tag_detections_image/compressed/parameter_updates =====>
+subscribed to [/duckbot12/tag_detections_image/compressed/parameter_updates]
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/tag_detections_image/compressedDepth]$rostopic info /duckbot12/tag_detections_image/compressedDepth =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: 
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+
+[TOPIC_HZ=/duckbot12/tag_detections_image/compressedDepth]$timeout 1 rostopic hz /duckbot12/tag_detections_image/compressedDepth =====>
+Unable to register with master node [http://duckbot12:11311]: master may not be running yet. Will keep trying.
+subscribed to [/duckbot12/tag_detections_image/compressedDepth]
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/tag_detections_image/compressedDepth/parameter_descriptions]$rostopic info /duckbot12/tag_detections_image/compressedDepth/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: 
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+
+[TOPIC_HZ=/duckbot12/tag_detections_image/compressedDepth/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/tag_detections_image/compressedDepth/parameter_descriptions =====>
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/tag_detections_image/compressedDepth/parameter_updates]$rostopic info /duckbot12/tag_detections_image/compressedDepth/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: 
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+
+[TOPIC_HZ=/duckbot12/tag_detections_image/compressedDepth/parameter_updates]$timeout 1 rostopic hz /duckbot12/tag_detections_image/compressedDepth/parameter_updates =====>
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/tag_detections_image/theora]$rostopic info /duckbot12/tag_detections_image/theora =====>
+Type: theora_image_transport/Packet
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: 
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+
+[TOPIC_HZ=/duckbot12/tag_detections_image/theora]$timeout 1 rostopic hz /duckbot12/tag_detections_image/theora =====>
+Unable to register with master node [http://duckbot12:11311]: master may not be running yet. Will keep trying.
+subscribed to [/duckbot12/tag_detections_image/theora]
+[TOPIC_TYPE=theora_image_transport/Packet]$rosmsg show theora_image_transport/Packet =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint8[] data
+int32 b_o_s
+int32 e_o_s
+int64 granulepos
+int64 packetno
+
+[TOPIC=/duckbot12/tag_detections_image/theora/parameter_descriptions]$rostopic info /duckbot12/tag_detections_image/theora/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: 
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+
+[TOPIC_HZ=/duckbot12/tag_detections_image/theora/parameter_descriptions]$timeout 1 rostopic hz /duckbot12/tag_detections_image/theora/parameter_descriptions =====>
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/duckbot12/tag_detections_image/theora/parameter_updates]$rostopic info /duckbot12/tag_detections_image/theora/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: 
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+
+[TOPIC_HZ=/duckbot12/tag_detections_image/theora/parameter_updates]$timeout 1 rostopic hz /duckbot12/tag_detections_image/theora/parameter_updates =====>
+subscribed to [/duckbot12/tag_detections_image/theora/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/duckbot12/tag_detections_pose]$rostopic info /duckbot12/tag_detections_pose =====>
+Type: geometry_msgs/PoseArray
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: 
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+
+[TOPIC_HZ=/duckbot12/tag_detections_pose]$timeout 1 rostopic hz /duckbot12/tag_detections_pose =====>
+subscribed to [/duckbot12/tag_detections_pose]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PoseArray]$rosmsg show geometry_msgs/PoseArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Pose[] poses
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+ * /duckbot12/image_proc_node (http://duckbot12:39452/)
+ * /duckbot12/decoder_node (http://duckbot12:46877/)
+ * /duckbot12/apriltags_postprocessing_node (http://duckbot12:45457/)
+ * /duckbot12/cam_info_reader_node (http://duckbot12:42319/)
+ * /duckbot12/raw_cam_info_reader_node (http://duckbot12:34725/)
+ * /duckbot12/camera_node (http://duckbot12:36261/)
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+Subscribers: 
+ * /rosout (http://duckbot12:41296/)
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+average rate: 42.376
+	min: 0.000s max: 0.144s std dev: 0.04176s window: 12
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://duckbot12:41296/)
+
+Subscribers: 
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+subscribed to [/rosout_agg]
+average rate: 93.208
+	min: 0.000s max: 0.028s std dev: 0.01243s window: 4
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/tf]$rostopic info /tf =====>
+Type: tf2_msgs/TFMessage
+
+Publishers: 
+ * /duckbot12/apriltag_detector_node (http://duckbot12:39414/)
+
+Subscribers: 
+ * /rqt_gui_py_node_14508 (http://osboxes:45991/)
+
+
+[TOPIC_HZ=/tf]$timeout 1 rostopic hz /tf =====>
+subscribed to [/tf]
+no new messages
+[TOPIC_TYPE=tf2_msgs/TFMessage]$rosmsg show tf2_msgs/TFMessage =====>
+geometry_msgs/TransformStamped[] transforms
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string child_frame_id
+  geometry_msgs/Transform transform
+    geometry_msgs/Vector3 translation
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion rotation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>
