@@ -1,0 +1,94 @@
+[rospy.client][INFO] 2018-10-05 21:04:33,214: [32minit_node, name[/duckbot12/lane_filter_node], pid[2658][0m
+[xmlrpc][INFO] 2018-10-05 21:04:33,230: [32mXML-RPC server binding to 0.0.0.0:0[0m
+[xmlrpc][INFO] 2018-10-05 21:04:33,235: [32mStarted XML-RPC server [http://duckbot12:41679/][0m
+[rospy.impl.masterslave][INFO] 2018-10-05 21:04:33,246: [32m_ready: http://duckbot12:41679/[0m
+[rospy.init][INFO] 2018-10-05 21:04:33,236: [32mROS Slave URI: [http://duckbot12:41679/][0m
+[xmlrpc][INFO] 2018-10-05 21:04:33,254: [32mxml rpc node: starting XML-RPC server[0m
+[rospy.registration][INFO] 2018-10-05 21:04:33,264: [32mRegistering with master node http://duckbot12:11311[0m
+[rospy.init][INFO] 2018-10-05 21:04:33,351: [32mregistered with master[0m
+[rospy.rosout][INFO] 2018-10-05 21:04:33,353: [32minitializing /rosout core topic[0m
+[rospy.rosout][INFO] 2018-10-05 21:04:33,389: [32mconnected to core topic /rosout[0m
+[rospy.simtime][INFO] 2018-10-05 21:04:33,419: [32m/use_sim_time is not set, will not subscribe to simulated time [/clock] topic[0m
+[rosout][INFO] 2018-10-05 21:04:33,552: [32m[Lane Filter] new filter config: ['lane_filter.LaneFilterHistogram', {'configuration': {'phi_max': 1.5, 'lanewidth': 0.23, 'mean_d_0': 0, 'min_max': 0.1, 'phi_min': -1.5, 'd_max': 0.3, 'sigma_phi_mask': 2.0, 'sigma_d_mask': 1.0, 'mean_phi_0': 0, 'sigma_phi_0': 0.1, 'linewidth_white': 0.05, 'linewidth_yellow': 0.025, 'delta_d': 0.02, 'd_min': -0.15, 'delta_phi': 0.1, 'sigma_d_0': 0.1, 'cov_v': 0.5}}][0m
+[rospy.internal][INFO] 2018-10-05 21:04:34,278: [32mtopic[/rosout] adding connection to [/rosout], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:59,522: [32mtopic[/duckbot12/ground_projection/lineseglist_out] adding connection to [http://duckbot12:33958/], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:59,568: [32mtopic[/duckbot12/lane_filter_node/switch] adding connection to [http://duckbot12:42308/], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:59,631: [32mtopic[/duckbot12/lane_filter_node/lane_pose] adding connection to [/duckbot12/lane_controller_node], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:59,720: [32mtopic[/duckbot12/lane_filter_node/lane_pose] adding connection to [/duckbot12/stop_line_filter_node], count 1[0m
+[rospy.internal][INFO] 2018-10-05 21:04:59,801: [32mtopic[/duckbot12/lane_filter_node/lane_pose] adding connection to [/duckbot12/lane_pose_visualizer_node], count 2[0m
+[rospy.internal][INFO] 2018-10-05 21:04:59,901: [32mtopic[/duckbot12/car_cmd_switch_node/cmd] adding connection to [http://duckbot12:39455/], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:13:12,185: [32mtopic[/duckbot12/lane_filter_node/ml_img] adding connection to [/record_1538745190769931271], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:13:15,115: [32mtopic[/duckbot12/lane_filter_node/entropy] adding connection to [/record_1538745190769931271], count 0[0m
+[rosout][WARNING] 2018-10-05 21:14:20,189: [33mInbound TCP/IP connection failed: timed out[0m
+[rospy.internal][ERROR] 2018-10-05 21:14:20,221: [31mInbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+timeout: timed out
+[0m
+[rospy.internal][INFO] 2018-10-05 21:21:55,032: [32mtopic[/duckbot12/lane_filter_node/ml_img] adding connection to [/rqt_gui_py_node_2192], count 1[0m
+[rospy.internal][INFO] 2018-10-05 21:21:55,457: [32mtopic[/duckbot12/lane_filter_node/entropy] adding connection to [/rqt_gui_py_node_2192], count 1[0m
+[rospy.internal][INFO] 2018-10-05 21:21:55,637: [32mtopic[/duckbot12/lane_filter_node/belief_img] adding connection to [/rqt_gui_py_node_2192], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:21:56,021: [32mtopic[/rosout] adding connection to [/rqt_gui_py_node_2192], count 1[0m
+[rospy.internal][INFO] 2018-10-05 21:22:17,096: [32mtopic[/duckbot12/lane_filter_node/ml_img] removing connection to /rqt_gui_py_node_2192[0m
+[rospy.internal][INFO] 2018-10-05 21:22:17,210: [32mtopic[/duckbot12/lane_filter_node/belief_img] removing connection to /rqt_gui_py_node_2192[0m
+[rosout][WARNING] 2018-10-05 21:22:17,482: [33mInbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.[0m
+[rospy.internal][ERROR] 2018-10-05 21:22:17,585: [31mInbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[0m
+[rospy.internal][INFO] 2018-10-05 21:22:17,738: [32mtopic[/rosout] removing connection to /rqt_gui_py_node_2192[0m
+[rospy.internal][INFO] 2018-10-05 21:22:18,243: [32mtopic[/duckbot12/lane_filter_node/entropy] removing connection to /rqt_gui_py_node_2192[0m
+[rospy.internal][ERROR] 2018-10-05 21:22:31,197: [31mUnable to initiate TCP/IP socket to duckbot12:41632 (http://duckbot12:39455/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+[0m
+[rospy.internal][ERROR] 2018-10-05 21:22:31,993: [31mUnable to initiate TCP/IP socket to duckbot12:46171 (http://duckbot12:42308/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+[0m
+[rospy.core][INFO] 2018-10-05 21:22:32,134: [32msignal_shutdown [signal-2][0m
+[rosout][INFO] 2018-10-05 21:22:32,135: [32m[LaneFilterNode] Shutdown.[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,149: [32mtopic[/duckbot12/lane_filter_node/lane_pose] removing connection to /duckbot12/lane_controller_node[0m
+[rospy.internal][WARNING] 2018-10-05 21:22:32,204: [33mUnknown error initiating TCP/IP socket to duckbot12:41632 (http://duckbot12:39455/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,206: [32mtopic[/duckbot12/car_cmd_switch_node/cmd] removing connection to http://duckbot12:39455/[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,652: [32mtopic[/duckbot12/lane_filter_node/lane_pose] removing connection to /duckbot12/lane_pose_visualizer_node[0m
+[rospy.internal][ERROR] 2018-10-05 21:22:32,745: [31mUnable to initiate TCP/IP socket to duckbot12:45356 (http://duckbot12:33958/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,972: [32mtopic[/duckbot12/lane_filter_node/ml_img] removing connection to /record_1538745190769931271[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,975: [32mtopic[/rosout] removing connection to /rosout[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,987: [32mtopic[/duckbot12/lane_filter_node/lane_pose] removing connection to /duckbot12/stop_line_filter_node[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,989: [32mtopic[/duckbot12/lane_filter_node/entropy] removing connection to /record_1538745190769931271[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,992: [32mtopic[/duckbot12/lane_filter_node/switch] removing connection to http://duckbot12:42308/[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,993: [32mtopic[/duckbot12/ground_projection/lineseglist_out] removing connection to http://duckbot12:33958/[0m
+[rospy.impl.masterslave][INFO] 2018-10-05 21:22:32,995: [32msignal-2[0m
+[rospy.core][INFO] 2018-10-05 21:22:33,265: [32msignal_shutdown [atexit][0m

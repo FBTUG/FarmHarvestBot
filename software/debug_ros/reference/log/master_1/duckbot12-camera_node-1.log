@@ -1,0 +1,40 @@
+[rospy.client][INFO] 2018-10-05 21:04:34,253: [32minit_node, name[/duckbot12/camera_node], pid[2621][0m
+[xmlrpc][INFO] 2018-10-05 21:04:34,256: [32mXML-RPC server binding to 0.0.0.0:0[0m
+[xmlrpc][INFO] 2018-10-05 21:04:34,261: [32mStarted XML-RPC server [http://duckbot12:46817/][0m
+[rospy.impl.masterslave][INFO] 2018-10-05 21:04:34,275: [32m_ready: http://duckbot12:46817/[0m
+[rospy.init][INFO] 2018-10-05 21:04:34,277: [32mROS Slave URI: [http://duckbot12:46817/][0m
+[xmlrpc][INFO] 2018-10-05 21:04:34,289: [32mxml rpc node: starting XML-RPC server[0m
+[rospy.registration][INFO] 2018-10-05 21:04:34,282: [32mRegistering with master node http://duckbot12:11311[0m
+[rospy.init][INFO] 2018-10-05 21:04:34,389: [32mregistered with master[0m
+[rospy.rosout][INFO] 2018-10-05 21:04:34,390: [32minitializing /rosout core topic[0m
+[rospy.rosout][INFO] 2018-10-05 21:04:34,419: [32mconnected to core topic /rosout[0m
+[rospy.simtime][INFO] 2018-10-05 21:04:34,444: [32m/use_sim_time is not set, will not subscribe to simulated time [/clock] topic[0m
+[rosout][INFO] 2018-10-05 21:04:34,512: [32m[/duckbot12/camera_node] Initializing......[0m
+[rosout][INFO] 2018-10-05 21:04:34,575: [32m[/duckbot12/camera_node] ~framerate_high = 30 [0m
+[rosout][INFO] 2018-10-05 21:04:34,657: [32m[/duckbot12/camera_node] ~framerate_low = 15 [0m
+[rospy.internal][INFO] 2018-10-05 21:04:34,691: [32mtopic[/rosout] adding connection to [/rosout], count 0[0m
+[rosout][INFO] 2018-10-05 21:04:34,754: [32m[/duckbot12/camera_node] ~res_w = 640 [0m
+[rosout][INFO] 2018-10-05 21:04:34,803: [32m[/duckbot12/camera_node] ~res_h = 480 [0m
+[rosout][INFO] 2018-10-05 21:04:37,621: [32m[/duckbot12/camera_node] Initialized.[0m
+[rosout][INFO] 2018-10-05 21:04:37,641: [32m[/duckbot12/camera_node] Start capturing.[0m
+[rospy.internal][INFO] 2018-10-05 21:04:37,664: [32mtopic[/duckbot12/camera_node/framerate_high_switch] adding connection to [http://duckbot12:42308/], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:37,677: [32mtopic[/duckbot12/camera_node/image/compressed] adding connection to [/duckbot12/cam_info_reader_node], count 0[0m
+[rosout][INFO] 2018-10-05 21:04:37,865: [32m[/duckbot12/camera_node] Published the first image.[0m
+[rospy.internal][INFO] 2018-10-05 21:04:38,402: [32mtopic[/duckbot12/camera_node/image/compressed] adding connection to [/duckbot12/line_detector_node], count 1[0m
+[rospy.internal][INFO] 2018-10-05 21:04:44,089: [32mtopic[/duckbot12/camera_node/image/compressed] adding connection to [/duckbot12/anti_instagram_node], count 2[0m
+[rospy.internal][INFO] 2018-10-05 21:07:10,827: [32mtopic[/duckbot12/camera_node/image/compressed] adding connection to [/rostopic_819_1538744830027], count 3[0m
+[rospy.internal][INFO] 2018-10-05 21:07:10,991: [32mtopic[/duckbot12/camera_node/image/compressed] removing connection to /rostopic_819_1538744830027[0m
+[rospy.internal][INFO] 2018-10-05 21:21:56,015: [32mtopic[/rosout] adding connection to [/rqt_gui_py_node_2192], count 1[0m
+[rospy.internal][INFO] 2018-10-05 21:21:56,214: [32mtopic[/duckbot12/camera_node/image/compressed] adding connection to [/rqt_gui_py_node_2192], count 3[0m
+[rospy.internal][INFO] 2018-10-05 21:22:17,792: [32mtopic[/rosout] removing connection to /rqt_gui_py_node_2192[0m
+[rospy.internal][INFO] 2018-10-05 21:22:17,891: [32mtopic[/duckbot12/camera_node/image/compressed] removing connection to /rqt_gui_py_node_2192[0m
+[rospy.internal][INFO] 2018-10-05 21:22:30,312: [32mtopic[/duckbot12/camera_node/image/compressed] removing connection to /duckbot12/anti_instagram_node[0m
+[rospy.internal][INFO] 2018-10-05 21:22:30,636: [32mtopic[/duckbot12/camera_node/image/compressed] removing connection to /duckbot12/cam_info_reader_node[0m
+[rospy.impl.masterslave][INFO] 2018-10-05 21:22:30,750: [32mexternal shutdown request from [/rosnode]: user request[0m
+[rospy.core][INFO] 2018-10-05 21:22:30,759: [32msignal_shutdown [external shutdown request from [/rosnode]: [user request]][0m
+[rosout][INFO] 2018-10-05 21:22:30,760: [32m[/duckbot12/camera_node] Closing camera.[0m
+[rosout][INFO] 2018-10-05 21:22:30,763: [32m[/duckbot12/camera_node] Shutdown.[0m
+[rospy.internal][INFO] 2018-10-05 21:22:30,908: [32mtopic[/duckbot12/camera_node/image/compressed] removing connection to /duckbot12/line_detector_node[0m
+[rospy.internal][INFO] 2018-10-05 21:22:30,913: [32mtopic[/rosout] removing connection to /rosout[0m
+[rospy.internal][INFO] 2018-10-05 21:22:30,916: [32mtopic[/duckbot12/camera_node/framerate_high_switch] removing connection to http://duckbot12:42308/[0m
+[rospy.core][INFO] 2018-10-05 21:22:31,048: [32msignal_shutdown [atexit][0m

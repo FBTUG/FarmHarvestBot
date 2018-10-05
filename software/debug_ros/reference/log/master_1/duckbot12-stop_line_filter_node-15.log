@@ -1,0 +1,64 @@
+[rospy.client][INFO] 2018-10-05 21:03:13,475: init_node, name[/duckbot12/stop_line_filter_node], pid[2659]
+[xmlrpc][INFO] 2018-10-05 21:03:13,491: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-05 21:03:13,509: Started XML-RPC server [http://duckbot12:42698/]
+[rospy.init][INFO] 2018-10-05 21:03:13,511: ROS Slave URI: [http://duckbot12:42698/]
+[rospy.impl.masterslave][INFO] 2018-10-05 21:03:13,515: _ready: http://duckbot12:42698/
+[rospy.registration][INFO] 2018-10-05 21:03:13,529: Registering with master node http://duckbot12:11311
+[xmlrpc][INFO] 2018-10-05 21:03:13,535: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-05 21:03:13,616: registered with master
+[rospy.rosout][INFO] 2018-10-05 21:03:13,618: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-05 21:03:13,795: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-05 21:03:13,897: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-05 21:03:14,094: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-05 21:03:14,466: [Stop Line Filter] ~stop_distance = 0.22 
+[rosout][INFO] 2018-10-05 21:03:14,628: [Stop Line Filter] ~min_segs = 2 
+[rosout][INFO] 2018-10-05 21:03:14,830: [Stop Line Filter] ~off_time = 2 
+[rosout][INFO] 2018-10-05 21:03:15,013: [Stop Line Filter] ~max_y  = 0.2 
+[rospy.internal][INFO] 2018-10-05 21:03:15,700: topic[/duckbot12/fsm_node/mode] adding connection to [http://duckbot12:42308/], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:16,056: topic[/duckbot12/stop_line_filter_node/at_stop_line] adding connection to [/duckbot12/logic_gate_node], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:16,093: topic[/duckbot12/stop_line_filter_node/switch] adding connection to [http://duckbot12:42308/], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:16,314: topic[/duckbot12/stop_line_filter_node/at_stop_line] adding connection to [/duckbot12/fsm_node], count 1
+[rospy.internal][INFO] 2018-10-05 21:04:38,762: topic[/duckbot12/ground_projection/lineseglist_out] adding connection to [http://duckbot12:33958/], count 0
+[rospy.internal][INFO] 2018-10-05 21:04:59,673: topic[/duckbot12/lane_filter_node/lane_pose] adding connection to [http://duckbot12:41679/], count 0
+[rospy.internal][INFO] 2018-10-05 21:13:14,192: topic[/duckbot12/stop_line_filter_node/stop_line_reading] adding connection to [/record_1538745190769931271], count 0
+[rospy.internal][INFO] 2018-10-05 21:21:55,836: topic[/rosout] adding connection to [/rqt_gui_py_node_2192], count 1
+[rosout][WARNING] 2018-10-05 21:22:17,328: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-05 21:22:17,338: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-05 21:22:17,393: topic[/rosout] removing connection to /rqt_gui_py_node_2192
+[rospy.internal][ERROR] 2018-10-05 21:22:31,944: Unable to initiate TCP/IP socket to duckbot12:46171 (http://duckbot12:42308/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2018-10-05 21:22:32,001: Unable to initiate TCP/IP socket to duckbot12:46171 (http://duckbot12:42308/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.core][INFO] 2018-10-05 21:22:32,102: signal_shutdown [signal-2]
+[rosout][INFO] 2018-10-05 21:22:32,103: [StopLineFilterNode] Shutdown.
+[rospy.internal][INFO] 2018-10-05 21:22:32,148: topic[/duckbot12/stop_line_filter_node/at_stop_line] removing connection to /duckbot12/fsm_node
+[rospy.internal][INFO] 2018-10-05 21:22:32,703: topic[/duckbot12/stop_line_filter_node/stop_line_reading] removing connection to /record_1538745190769931271
+[rospy.internal][INFO] 2018-10-05 21:22:32,705: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-05 21:22:32,707: topic[/duckbot12/stop_line_filter_node/at_stop_line] removing connection to /duckbot12/logic_gate_node
+[rospy.internal][INFO] 2018-10-05 21:22:32,709: topic[/duckbot12/fsm_node/mode] removing connection to http://duckbot12:42308/
+[rospy.internal][INFO] 2018-10-05 21:22:32,711: topic[/duckbot12/ground_projection/lineseglist_out] removing connection to http://duckbot12:33958/
+[rospy.internal][INFO] 2018-10-05 21:22:32,714: topic[/duckbot12/stop_line_filter_node/switch] removing connection to http://duckbot12:42308/
+[rospy.internal][INFO] 2018-10-05 21:22:32,716: topic[/duckbot12/lane_filter_node/lane_pose] removing connection to http://duckbot12:41679/
+[rospy.impl.masterslave][INFO] 2018-10-05 21:22:32,718: signal-2
+[rospy.core][INFO] 2018-10-05 21:22:33,299: signal_shutdown [atexit]

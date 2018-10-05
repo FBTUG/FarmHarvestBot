@@ -1,0 +1,98 @@
+[rospy.client][INFO] 2018-10-05 21:03:11,646: init_node, name[/duckbot12/logic_gate_node], pid[2653]
+[xmlrpc][INFO] 2018-10-05 21:03:11,649: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-05 21:03:11,652: Started XML-RPC server [http://duckbot12:39733/]
+[rospy.impl.masterslave][INFO] 2018-10-05 21:03:11,667: _ready: http://duckbot12:39733/
+[rospy.registration][INFO] 2018-10-05 21:03:11,673: Registering with master node http://duckbot12:11311
+[rospy.init][INFO] 2018-10-05 21:03:11,675: ROS Slave URI: [http://duckbot12:39733/]
+[rospy.init][INFO] 2018-10-05 21:03:11,697: registered with master
+[rospy.rosout][INFO] 2018-10-05 21:03:11,698: initializing /rosout core topic
+[xmlrpc][INFO] 2018-10-05 21:03:11,688: xml rpc node: starting XML-RPC server
+[rospy.rosout][INFO] 2018-10-05 21:03:11,915: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-05 21:03:12,083: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-05 21:03:12,194: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:15,152: topic[/duckbot12/joy_mapper_node/joystick_override] adding connection to [http://duckbot12:46496/], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:15,696: topic[/duckbot12/joy_mapper_node/parallel_autonomy] adding connection to [http://duckbot12:46496/], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:15,842: topic[/duckbot12/logic_gate_node/intersection_done_and_deep_lane_on] adding connection to [/duckbot12/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:15,964: topic[/duckbot12/stop_line_filter_node/at_stop_line] adding connection to [http://duckbot12:42698/], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:16,218: topic[/duckbot12/logic_gate_node/intersection_done_and_deep_lane_off] adding connection to [/duckbot12/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:16,584: topic[/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on] adding connection to [/duckbot12/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:16,667: topic[/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on] adding connection to [/duckbot12/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:16,873: topic[/duckbot12/logic_gate_node/at_stop_line_and_parking_off] adding connection to [/duckbot12/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:17,061: topic[/duckbot12/logic_gate_node/at_stop_line_and_parking_on] adding connection to [/duckbot12/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:17,300: topic[/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off] adding connection to [/duckbot12/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:17,474: topic[/duckbot12/logic_gate_node/intersection_go] adding connection to [/duckbot12/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:17,492: topic[/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off] adding connection to [/duckbot12/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-05 21:10:38,254: topic[/duckbot12/logic_gate_node/at_stop_line_and_parking_off] adding connection to [/rostopic_1555_1538745037489], count 1
+[rospy.internal][INFO] 2018-10-05 21:10:38,918: topic[/duckbot12/logic_gate_node/at_stop_line_and_parking_off] removing connection to /rostopic_1555_1538745037489
+[rospy.internal][INFO] 2018-10-05 21:10:41,192: topic[/duckbot12/logic_gate_node/at_stop_line_and_parking_on] adding connection to [/rostopic_1573_1538745040366], count 1
+[rospy.internal][INFO] 2018-10-05 21:10:41,930: topic[/duckbot12/logic_gate_node/at_stop_line_and_parking_on] removing connection to /rostopic_1573_1538745040366
+[rospy.internal][INFO] 2018-10-05 21:10:43,521: topic[/duckbot12/logic_gate_node/intersection_done_and_deep_lane_off] adding connection to [/rostopic_1591_1538745042759], count 1
+[rospy.internal][INFO] 2018-10-05 21:10:44,438: topic[/duckbot12/logic_gate_node/intersection_done_and_deep_lane_off] removing connection to /rostopic_1591_1538745042759
+[rospy.internal][INFO] 2018-10-05 21:10:46,329: topic[/duckbot12/logic_gate_node/intersection_done_and_deep_lane_on] adding connection to [/rostopic_1610_1538745045552], count 1
+[rospy.internal][INFO] 2018-10-05 21:10:46,949: topic[/duckbot12/logic_gate_node/intersection_done_and_deep_lane_on] removing connection to /rostopic_1610_1538745045552
+[rospy.internal][INFO] 2018-10-05 21:10:49,304: topic[/duckbot12/logic_gate_node/intersection_go] adding connection to [/rostopic_1628_1538745048511], count 1
+[rospy.internal][INFO] 2018-10-05 21:10:49,961: topic[/duckbot12/logic_gate_node/intersection_go] removing connection to /rostopic_1628_1538745048511
+[rospy.internal][INFO] 2018-10-05 21:10:52,204: topic[/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off] adding connection to [/rostopic_1646_1538745051445], count 1
+[rospy.internal][INFO] 2018-10-05 21:10:52,980: topic[/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off] removing connection to /rostopic_1646_1538745051445
+[rospy.internal][INFO] 2018-10-05 21:10:55,194: topic[/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on] adding connection to [/rostopic_1664_1538745054323], count 1
+[rospy.internal][INFO] 2018-10-05 21:10:55,999: topic[/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on] removing connection to /rostopic_1664_1538745054323
+[rospy.internal][INFO] 2018-10-05 21:10:58,244: topic[/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off] adding connection to [/rostopic_1682_1538745057346], count 1
+[rospy.internal][INFO] 2018-10-05 21:10:58,514: topic[/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off] removing connection to /rostopic_1682_1538745057346
+[rospy.internal][INFO] 2018-10-05 21:11:02,692: topic[/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on] adding connection to [/rostopic_1702_1538745061635], count 1
+[rospy.internal][INFO] 2018-10-05 21:11:03,028: topic[/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on] removing connection to /rostopic_1702_1538745061635
+[rospy.internal][INFO] 2018-10-05 21:12:58,636: topic[/rosout] adding connection to [/rostopic_2068_1538745177644], count 1
+[rospy.internal][INFO] 2018-10-05 21:12:58,914: topic[/rosout] removing connection to /rostopic_2068_1538745177644
+[rospy.internal][INFO] 2018-10-05 21:13:12,635: topic[/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on] adding connection to [/record_1538745190769931271], count 1
+[rospy.internal][INFO] 2018-10-05 21:13:15,908: topic[/duckbot12/logic_gate_node/at_stop_line_and_parking_on] adding connection to [/record_1538745190769931271], count 1
+[rospy.internal][INFO] 2018-10-05 21:13:16,040: topic[/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off] adding connection to [/record_1538745190769931271], count 1
+[rospy.internal][INFO] 2018-10-05 21:13:19,595: topic[/duckbot12/logic_gate_node/at_stop_line_and_parking_off] adding connection to [/record_1538745190769931271], count 1
+[rospy.internal][INFO] 2018-10-05 21:21:55,935: topic[/rosout] adding connection to [/rqt_gui_py_node_2192], count 1
+[rospy.internal][INFO] 2018-10-05 21:22:17,351: topic[/rosout] removing connection to /rqt_gui_py_node_2192
+[rospy.core][INFO] 2018-10-05 21:22:32,159: signal_shutdown [signal-2]
+[rosout][INFO] 2018-10-05 21:22:32,160: [/duckbot12/logic_gate_node] Shutting down.
+[rospy.internal][INFO] 2018-10-05 21:22:32,175: topic[/duckbot12/logic_gate_node/intersection_go] removing connection to /duckbot12/fsm_node
+[rospy.internal][INFO] 2018-10-05 21:22:32,177: topic[/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off] removing connection to /duckbot12/fsm_node
+[rospy.internal][INFO] 2018-10-05 21:22:32,179: topic[/duckbot12/logic_gate_node/at_stop_line_and_parking_off] removing connection to /duckbot12/fsm_node
+[rospy.internal][INFO] 2018-10-05 21:22:32,184: topic[/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on] removing connection to /duckbot12/fsm_node
+[rospy.internal][INFO] 2018-10-05 21:22:32,191: topic[/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off] removing connection to /duckbot12/fsm_node
+[rospy.internal][INFO] 2018-10-05 21:22:32,205: topic[/duckbot12/logic_gate_node/at_stop_line_and_parking_on] removing connection to /duckbot12/fsm_node
+[rospy.internal][INFO] 2018-10-05 21:22:32,210: topic[/duckbot12/logic_gate_node/intersection_done_and_deep_lane_on] removing connection to /duckbot12/fsm_node
+[rospy.internal][INFO] 2018-10-05 21:22:32,212: topic[/duckbot12/logic_gate_node/intersection_done_and_deep_lane_off] removing connection to /duckbot12/fsm_node
+[rospy.internal][INFO] 2018-10-05 21:22:32,228: topic[/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on] removing connection to /duckbot12/fsm_node
+[rospy.internal][ERROR] 2018-10-05 21:22:32,716: Unable to initiate TCP/IP socket to duckbot12:46363 (http://duckbot12:42698/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2018-10-05 21:22:32,886: Unable to initiate TCP/IP socket to duckbot12:36037 (http://duckbot12:46496/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2018-10-05 21:22:32,905: Unable to initiate TCP/IP socket to duckbot12:36037 (http://duckbot12:46496/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2018-10-05 21:22:33,132: topic[/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off] removing connection to /record_1538745190769931271
+[rospy.internal][INFO] 2018-10-05 21:22:33,136: topic[/duckbot12/logic_gate_node/at_stop_line_and_parking_off] removing connection to /record_1538745190769931271
+[rospy.internal][INFO] 2018-10-05 21:22:33,139: topic[/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on] removing connection to /record_1538745190769931271
+[rospy.internal][INFO] 2018-10-05 21:22:33,141: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-05 21:22:33,153: topic[/duckbot12/logic_gate_node/at_stop_line_and_parking_on] removing connection to /record_1538745190769931271
+[rospy.internal][INFO] 2018-10-05 21:22:33,159: topic[/duckbot12/joy_mapper_node/parallel_autonomy] removing connection to http://duckbot12:46496/
+[rospy.internal][INFO] 2018-10-05 21:22:33,161: topic[/duckbot12/joy_mapper_node/joystick_override] removing connection to http://duckbot12:46496/
+[rospy.internal][INFO] 2018-10-05 21:22:33,163: topic[/duckbot12/stop_line_filter_node/at_stop_line] removing connection to http://duckbot12:42698/
+[rospy.impl.masterslave][INFO] 2018-10-05 21:22:33,165: signal-2
+[rospy.core][INFO] 2018-10-05 21:22:33,383: signal_shutdown [atexit]

@@ -1,0 +1,37 @@
+[rospy.client][INFO] 2018-10-05 21:03:10,701: init_node, name[/duckbot12/duckiebot_visualizer], pid[2656]
+[xmlrpc][INFO] 2018-10-05 21:03:10,735: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-05 21:03:10,737: Started XML-RPC server [http://duckbot12:45150/]
+[rospy.impl.masterslave][INFO] 2018-10-05 21:03:10,739: _ready: http://duckbot12:45150/
+[rospy.registration][INFO] 2018-10-05 21:03:10,750: Registering with master node http://duckbot12:11311
+[rospy.init][INFO] 2018-10-05 21:03:10,764: ROS Slave URI: [http://duckbot12:45150/]
+[rospy.init][INFO] 2018-10-05 21:03:10,766: registered with master
+[rospy.rosout][INFO] 2018-10-05 21:03:10,767: initializing /rosout core topic
+[xmlrpc][INFO] 2018-10-05 21:03:10,822: xml rpc node: starting XML-RPC server
+[rospy.rosout][INFO] 2018-10-05 21:03:11,045: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-05 21:03:11,212: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-05 21:03:11,372: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-05 21:03:11,451: [/duckbot12/duckiebot_visualizer] Initialzing.
+[rosout][INFO] 2018-10-05 21:03:11,680: [/duckbot12/duckiebot_visualizer] ~veh_name = duckbot12 
+[rosout][INFO] 2018-10-05 21:03:12,148: [/duckbot12/duckiebot_visualizer] Initialzed.
+[rospy.internal][INFO] 2018-10-05 21:04:38,775: topic[/duckbot12/ground_projection/lineseglist_out] adding connection to [http://duckbot12:33958/], count 0
+[rospy.internal][INFO] 2018-10-05 21:12:58,617: topic[/rosout] adding connection to [/rostopic_2068_1538745177644], count 1
+[rospy.internal][INFO] 2018-10-05 21:12:58,672: topic[/rosout] removing connection to /rostopic_2068_1538745177644
+[rospy.internal][INFO] 2018-10-05 21:21:55,775: topic[/rosout] adding connection to [/rqt_gui_py_node_2192], count 1
+[rospy.internal][INFO] 2018-10-05 21:21:56,204: topic[/duckbot12/duckiebot_visualizer/segment_list_markers] adding connection to [/rqt_gui_py_node_2192], count 0
+[rosout][WARNING] 2018-10-05 21:22:17,281: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-05 21:22:17,293: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-05 21:22:17,618: topic[/rosout] removing connection to /rqt_gui_py_node_2192
+[rospy.internal][INFO] 2018-10-05 21:22:18,067: topic[/duckbot12/duckiebot_visualizer/segment_list_markers] removing connection to /rqt_gui_py_node_2192
+[rospy.impl.masterslave][INFO] 2018-10-05 21:22:31,330: external shutdown request from [/rosnode]: user request
+[rospy.core][INFO] 2018-10-05 21:22:31,331: signal_shutdown [external shutdown request from [/rosnode]: [user request]]
+[rosout][INFO] 2018-10-05 21:22:31,332: [/duckbot12/duckiebot_visualizer] Shutting down.
+[rospy.internal][INFO] 2018-10-05 21:22:31,379: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-05 21:22:31,385: topic[/duckbot12/ground_projection/lineseglist_out] removing connection to http://duckbot12:33958/
+[rospy.core][INFO] 2018-10-05 21:22:31,886: signal_shutdown [atexit]

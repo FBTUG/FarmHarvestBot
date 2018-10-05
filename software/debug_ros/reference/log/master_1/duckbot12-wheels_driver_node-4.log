@@ -1,0 +1,67 @@
+[rospy.client][INFO] 2018-10-05 21:03:11,926: init_node, name[/duckbot12/wheels_driver_node], pid[2624]
+[xmlrpc][INFO] 2018-10-05 21:03:11,940: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-05 21:03:12,044: Started XML-RPC server [http://duckbot12:39251/]
+[rospy.impl.masterslave][INFO] 2018-10-05 21:03:12,047: _ready: http://duckbot12:39251/
+[rospy.init][INFO] 2018-10-05 21:03:12,054: ROS Slave URI: [http://duckbot12:39251/]
+[rospy.registration][INFO] 2018-10-05 21:03:12,059: Registering with master node http://duckbot12:11311
+[xmlrpc][INFO] 2018-10-05 21:03:12,064: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-05 21:03:12,155: registered with master
+[rospy.rosout][INFO] 2018-10-05 21:03:12,161: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-05 21:03:12,259: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-05 21:03:12,425: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-05 21:03:12,436: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-05 21:03:12,596: [/duckbot12/wheels_driver_node] Initializing 
+[rosout][INFO] 2018-10-05 21:03:12,813: [/duckbot12/wheels_driver_node] ~use_rad_lim = False 
+[rosout][INFO] 2018-10-05 21:03:13,019: [/duckbot12/wheels_driver_node] ~min_rad = 0.06 
+[rosout][INFO] 2018-10-05 21:03:13,328: [/duckbot12/wheels_driver_node] ~wheel_distance = 0.103 
+[rospy.internal][INFO] 2018-10-05 21:03:14,297: topic[/duckbot12/wheels_driver_node/emergency_stop] adding connection to [http://duckbot12:46496/], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:14,702: topic[/duckbot12/lane_controller_node/radius_limit] adding connection to [http://duckbot12:44070/], count 0
+[rospy.internal][INFO] 2018-10-05 21:03:15,198: topic[/duckbot12/wheels_driver_node/wheels_cmd_executed] adding connection to [/duckbot12/lane_controller_node], count 0
+[rospy.internal][INFO] 2018-10-05 21:04:34,829: topic[/duckbot12/wheels_driver_node/wheels_cmd] adding connection to [http://duckbot12:36201/], count 0
+[rospy.internal][INFO] 2018-10-05 21:21:55,773: topic[/rosout] adding connection to [/rqt_gui_py_node_2192], count 1
+[rosout][WARNING] 2018-10-05 21:22:17,288: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-05 21:22:17,307: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-05 21:22:17,737: topic[/rosout] removing connection to /rqt_gui_py_node_2192
+[rospy.internal][ERROR] 2018-10-05 21:22:32,913: Unable to initiate TCP/IP socket to duckbot12:36037 (http://duckbot12:46496/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2018-10-05 21:22:33,046: Unable to initiate TCP/IP socket to duckbot12:45154 (http://duckbot12:36201/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.core][INFO] 2018-10-05 21:22:33,119: signal_shutdown [signal-2]
+[rosout][INFO] 2018-10-05 21:22:33,137: [/duckbot12/wheels_driver_node] Shutting down.
+[rospy.internal][INFO] 2018-10-05 21:22:33,189: topic[/duckbot12/wheels_driver_node/wheels_cmd_executed] removing connection to /duckbot12/lane_controller_node
+[rospy.internal][ERROR] 2018-10-05 21:22:33,203: Unable to initiate TCP/IP socket to duckbot12:39631 (http://duckbot12:44070/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2018-10-05 21:22:33,298: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-05 21:22:33,300: topic[/duckbot12/wheels_driver_node/wheels_cmd] removing connection to http://duckbot12:36201/
+[rospy.internal][INFO] 2018-10-05 21:22:33,303: topic[/duckbot12/wheels_driver_node/emergency_stop] removing connection to http://duckbot12:46496/
+[rospy.internal][INFO] 2018-10-05 21:22:33,304: topic[/duckbot12/lane_controller_node/radius_limit] removing connection to http://duckbot12:44070/
+[rospy.impl.masterslave][INFO] 2018-10-05 21:22:33,310: signal-2
+[rospy.core][INFO] 2018-10-05 21:22:33,795: signal_shutdown [atexit]

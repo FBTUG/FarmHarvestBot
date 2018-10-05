@@ -1,0 +1,35 @@
+[rospy.client][INFO] 2018-10-05 21:03:25,233: init_node, name[/duckbot12/lane_pose_visualizer_node], pid[2671]
+[xmlrpc][INFO] 2018-10-05 21:03:25,256: XML-RPC server binding to 0.0.0.0:0
+[rospy.init][INFO] 2018-10-05 21:03:25,260: ROS Slave URI: [http://duckbot12:37639/]
+[xmlrpc][INFO] 2018-10-05 21:03:25,262: Started XML-RPC server [http://duckbot12:37639/]
+[rospy.impl.masterslave][INFO] 2018-10-05 21:03:25,263: _ready: http://duckbot12:37639/
+[xmlrpc][INFO] 2018-10-05 21:03:25,270: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-10-05 21:03:25,275: Registering with master node http://duckbot12:11311
+[rospy.init][INFO] 2018-10-05 21:03:25,362: registered with master
+[rospy.rosout][INFO] 2018-10-05 21:03:25,364: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-05 21:03:25,393: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-05 21:03:25,405: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-05 21:03:25,450: [/duckbot12/lane_pose_visualizer_node] Initialzing.
+[rosout][INFO] 2018-10-05 21:03:25,452: [/duckbot12/lane_pose_visualizer_node] Vehicle name: duckbot12
+[rosout][INFO] 2018-10-05 21:03:25,522: [/duckbot12/lane_pose_visualizer_node] Initialzed.
+[rospy.internal][INFO] 2018-10-05 21:03:25,647: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-05 21:04:59,726: topic[/duckbot12/lane_filter_node/lane_pose] adding connection to [http://duckbot12:41679/], count 0
+[rospy.internal][INFO] 2018-10-05 21:21:55,887: topic[/rosout] adding connection to [/rqt_gui_py_node_2192], count 1
+[rospy.internal][INFO] 2018-10-05 21:21:56,256: topic[/duckbot12/lane_pose_visualizer_node/lane_pose_markers] adding connection to [/rqt_gui_py_node_2192], count 0
+[rospy.internal][INFO] 2018-10-05 21:22:17,388: topic[/rosout] removing connection to /rqt_gui_py_node_2192
+[rosout][WARNING] 2018-10-05 21:22:17,619: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-05 21:22:17,635: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-05 21:22:17,891: topic[/duckbot12/lane_pose_visualizer_node/lane_pose_markers] removing connection to /rqt_gui_py_node_2192
+[rospy.core][INFO] 2018-10-05 21:22:32,102: signal_shutdown [signal-2]
+[rosout][INFO] 2018-10-05 21:22:32,103: [/duckbot12/lane_pose_visualizer_node] Shutting down.
+[rospy.internal][INFO] 2018-10-05 21:22:32,518: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-05 21:22:32,520: topic[/duckbot12/lane_filter_node/lane_pose] removing connection to http://duckbot12:41679/
+[rospy.impl.masterslave][INFO] 2018-10-05 21:22:32,522: signal-2
+[rospy.core][INFO] 2018-10-05 21:22:32,738: signal_shutdown [atexit]

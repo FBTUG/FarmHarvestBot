@@ -1,0 +1,8 @@
+logging to /home/ubuntu/.ros/log/d2d91738-c89c-11e8-90e7-b827ebaf8d45/rosout.log
+re-publishing aggregated messages to /rosout_agg
+subscribed to /rosout
+[33m[ WARN] [1538745753.743421104]: Shutdown request received.[0m
+[33m[ WARN] [1538745753.743634335]: Reason given for shutdown: [user request][0m
+logging to /home/ubuntu/.ros/log/d2d91738-c89c-11e8-90e7-b827ebaf8d45/rosout.log
+re-publishing aggregated messages to /rosout_agg
+subscribed to /rosout

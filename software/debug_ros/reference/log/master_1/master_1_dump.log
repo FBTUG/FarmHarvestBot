@@ -1,0 +1,3074 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[NODE_LIST]$rosnode list =====>
+/duckbot12/anti_instagram_node
+/duckbot12/cam_info_reader_node
+/duckbot12/camera_node
+/duckbot12/car_cmd_switch_node
+/duckbot12/duckiebot_visualizer
+/duckbot12/fake_coordinator_node
+/duckbot12/fsm_node
+/duckbot12/ground_projection
+/duckbot12/inverse_kinematics_node
+/duckbot12/joy_mapper_node
+/duckbot12/joy_node
+/duckbot12/lane_controller_node
+/duckbot12/lane_filter_node
+/duckbot12/lane_pose_visualizer_node
+/duckbot12/led_emitter_node
+/duckbot12/line_detector_node
+/duckbot12/logic_gate_node
+/duckbot12/stop_line_filter_node
+/duckbot12/wheels_driver_node
+/duckbot12_to_map
+/rosout
+[NODE=/duckbot12/anti_instagram_node]$rosnode info /duckbot12/anti_instagram_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/anti_instagram_node]
+Publications: 
+ * /duckbot12/anti_instagram_node/corrected_image [sensor_msgs/Image]
+ * /duckbot12/anti_instagram_node/health [duckietown_msgs/AntiInstagramHealth]
+ * /duckbot12/anti_instagram_node/transform [duckietown_msgs/AntiInstagramTransform]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/anti_instagram_node/click [duckietown_msgs/BoolStamped]
+ * /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+
+Services: 
+ * /duckbot12/anti_instagram_node/get_loggers
+ * /duckbot12/anti_instagram_node/set_logger_level
+
+
+contacting node http://duckbot12:40512/ ...
+Pid: 2676
+Connections:
+ * topic: /duckbot12/anti_instagram_node/transform
+    * to: /duckbot12/line_detector_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/camera_node (http://duckbot12:46817/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/anti_instagram_node/click
+    * to: /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/cam_info_reader_node]$rosnode info /duckbot12/cam_info_reader_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/cam_info_reader_node]
+Publications: 
+ * /duckbot12/camera_node/camera_info [sensor_msgs/CameraInfo]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+
+Services: 
+ * /duckbot12/cam_info_reader_node/get_loggers
+ * /duckbot12/cam_info_reader_node/set_logger_level
+
+
+contacting node http://duckbot12:40909/ ...
+Pid: 2622
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/camera_node (http://duckbot12:46817/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/camera_node]$rosnode info /duckbot12/camera_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/camera_node]
+Publications: 
+ * /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/camera_node/framerate_high_switch [duckietown_msgs/BoolStamped]
+
+Services: 
+ * /duckbot12/camera_node/get_loggers
+ * /duckbot12/camera_node/set_camera_info
+ * /duckbot12/camera_node/set_logger_level
+
+
+contacting node http://duckbot12:46817/ ...
+Pid: 2621
+Connections:
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/cam_info_reader_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/line_detector_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/anti_instagram_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/framerate_high_switch
+    * to: /duckbot12/fsm_node (http://duckbot12:42308/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/car_cmd_switch_node]$rosnode info /duckbot12/car_cmd_switch_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/car_cmd_switch_node]
+Publications: 
+ * /duckbot12/car_cmd_switch_node/cmd [duckietown_msgs/Twist2DStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/duckiebot_il_lane_following/car_cmd [unknown type]
+ * /duckbot12/fsm_node/mode [duckietown_msgs/FSMState]
+ * /duckbot12/joy_mapper_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /duckbot12/lane_controller_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /duckbot12/lane_recovery_node/car_cmd [unknown type]
+ * /duckbot12/lane_supervisor_node/car_cmd [unknown type]
+ * /duckbot12/open_loop_intersection_control_node/car_cmd [unknown type]
+ * /duckbot12/simple_stop_controller_node/car_cmd [unknown type]
+ * /duckbot12/vehicle_avoidance_control_node/car_cmd [unknown type]
+
+Services: 
+ * /duckbot12/car_cmd_switch_node/get_loggers
+ * /duckbot12/car_cmd_switch_node/set_logger_level
+
+
+contacting node http://duckbot12:39455/ ...
+Pid: 2652
+Connections:
+ * topic: /duckbot12/car_cmd_switch_node/cmd
+    * to: /duckbot12/inverse_kinematics_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/car_cmd_switch_node/cmd
+    * to: /duckbot12/lane_filter_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_controller_node/car_cmd
+    * to: /duckbot12/lane_controller_node (http://duckbot12:44070/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/fsm_node/mode
+    * to: /duckbot12/fsm_node (http://duckbot12:42308/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy_mapper_node/car_cmd
+    * to: /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/duckiebot_visualizer]$rosnode info /duckbot12/duckiebot_visualizer =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/duckiebot_visualizer]
+Publications: 
+ * /duckbot12/duckiebot_visualizer/segment_list_markers [visualization_msgs/MarkerArray]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/ground_projection/lineseglist_out [duckietown_msgs/SegmentList]
+
+Services: 
+ * /duckbot12/duckiebot_visualizer/get_loggers
+ * /duckbot12/duckiebot_visualizer/set_logger_level
+
+
+contacting node http://duckbot12:45150/ ...
+Pid: 2656
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/ground_projection/lineseglist_out
+    * to: /duckbot12/ground_projection (http://duckbot12:33958/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/fake_coordinator_node]$rosnode info /duckbot12/fake_coordinator_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/fake_coordinator_node]
+Publications: 
+ * /duckbot12/simple_coordinator_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /duckbot12/simple_coordinator_node/intersection_go [duckietown_msgs/BoolStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/fsm_node/mode [duckietown_msgs/FSMState]
+
+Services: 
+ * /duckbot12/fake_coordinator_node/get_loggers
+ * /duckbot12/fake_coordinator_node/set_logger_level
+
+
+contacting node http://duckbot12:41231/ ...
+Pid: 2674
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/fsm_node/mode
+    * to: /duckbot12/fsm_node (http://duckbot12:42308/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/fsm_node]$rosnode info /duckbot12/fsm_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/fsm_node]
+Publications: 
+ * /duckbot12/LED_coordination_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/LED_detection_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/LED_detector_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/apriltag_detector_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/camera_node/framerate_high_switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/central_fleet_planning_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/decoder_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/duckiebot_il_lane_following/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/fsm_node/mode [duckietown_msgs/FSMState]
+ * /duckbot12/implicit_coordination_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/intersection_localization_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/intersection_navigation_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/lane_controller_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/lane_filter_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/led_emitter_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/line_detector_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/obstacle_avoidance_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/parking_control/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/parking_path_planning/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/parking_perception_localization/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/static_object_detector_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/stop_line_filter_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/vehicle_avoidance_control_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/vehicle_detection_node/switch [duckietown_msgs/BoolStamped]
+ * /duckbot12/vehicle_filter_node/switch [duckietown_msgs/BoolStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/apriltags_postprocessing_node/apriltags_intersection [unknown type]
+ * /duckbot12/joy_mapper_node/deep_learn_toggle [unknown type]
+ * /duckbot12/joy_mapper_node/parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /duckbot12/joy_mapper_node/start_avoidance [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/apriltag_parking_and_parking_active [unknown type]
+ * /duckbot12/logic_gate_node/at_stop_line_and_parking_off [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/at_stop_line_and_parking_on [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/intersection_done_and_deep_lane_off [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/intersection_done_and_deep_lane_on [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/intersection_go [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on [duckietown_msgs/BoolStamped]
+ * /duckbot12/stop_line_filter_node/at_stop_line [duckietown_msgs/BoolStamped]
+
+Services: 
+ * /duckbot12/fsm_node/get_loggers
+ * /duckbot12/fsm_node/set_logger_level
+ * /duckbot12/fsm_node/set_state
+
+
+contacting node http://duckbot12:42308/ ...
+Pid: 2644
+Connections:
+ * topic: /duckbot12/camera_node/framerate_high_switch
+    * to: /duckbot12/camera_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/stop_line_filter_node/switch
+    * to: /duckbot12/stop_line_filter_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/led_emitter_node/switch
+    * to: /duckbot12/led_emitter_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/line_detector_node/switch
+    * to: /duckbot12/line_detector_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_filter_node/switch
+    * to: /duckbot12/lane_filter_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/fsm_node/mode
+    * to: /duckbot12/car_cmd_switch_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/fsm_node/mode
+    * to: /duckbot12/fake_coordinator_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/fsm_node/mode
+    * to: /duckbot12/stop_line_filter_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on
+    * to: /duckbot12/logic_gate_node (http://duckbot12:39733/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off
+    * to: /duckbot12/logic_gate_node (http://duckbot12:39733/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/at_stop_line_and_parking_off
+    * to: /duckbot12/logic_gate_node (http://duckbot12:39733/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on
+    * to: /duckbot12/logic_gate_node (http://duckbot12:39733/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/intersection_go
+    * to: /duckbot12/logic_gate_node (http://duckbot12:39733/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy_mapper_node/start_avoidance
+    * to: /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy_mapper_node/parallel_autonomy
+    * to: /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/at_stop_line_and_parking_on
+    * to: /duckbot12/logic_gate_node (http://duckbot12:39733/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off
+    * to: /duckbot12/logic_gate_node (http://duckbot12:39733/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/intersection_done_and_deep_lane_on
+    * to: /duckbot12/logic_gate_node (http://duckbot12:39733/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/intersection_done_and_deep_lane_off
+    * to: /duckbot12/logic_gate_node (http://duckbot12:39733/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/stop_line_filter_node/at_stop_line
+    * to: /duckbot12/stop_line_filter_node (http://duckbot12:42698/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/ground_projection]$rosnode info /duckbot12/ground_projection =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/ground_projection]
+Publications: 
+ * /duckbot12/ground_projection/lineseglist_out [duckietown_msgs/SegmentList]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/line_detector_node/segment_list [duckietown_msgs/SegmentList]
+
+Services: 
+ * /duckbot12/ground_projection/estimate_homography
+ * /duckbot12/ground_projection/get_ground_coordinate
+ * /duckbot12/ground_projection/get_image_coordinate
+ * /duckbot12/ground_projection/get_loggers
+ * /duckbot12/ground_projection/set_logger_level
+
+
+contacting node http://duckbot12:33958/ ...
+Pid: 2655
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/ground_projection/lineseglist_out
+    * to: /duckbot12/stop_line_filter_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/ground_projection/lineseglist_out
+    * to: /duckbot12/duckiebot_visualizer
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/ground_projection/lineseglist_out
+    * to: /duckbot12/lane_filter_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/line_detector_node/segment_list
+    * to: /duckbot12/line_detector_node (http://duckbot12:45749/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/inverse_kinematics_node]$rosnode info /duckbot12/inverse_kinematics_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/inverse_kinematics_node]
+Publications: 
+ * /duckbot12/inverse_kinematics_node/actuator_params [duckietown_msgs/ActuatorParameters]
+ * /duckbot12/wheels_driver_node/wheels_cmd [duckietown_msgs/WheelsCmdStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/car_cmd_switch_node/cmd [duckietown_msgs/Twist2DStamped]
+ * /duckbot12/lane_controller_node/actuator_params_received [duckietown_msgs/BoolStamped]
+
+Services: 
+ * /duckbot12/inverse_kinematics_node/get_loggers
+ * /duckbot12/inverse_kinematics_node/save_calibration
+ * /duckbot12/inverse_kinematics_node/set_baseline
+ * /duckbot12/inverse_kinematics_node/set_gain
+ * /duckbot12/inverse_kinematics_node/set_k
+ * /duckbot12/inverse_kinematics_node/set_limit
+ * /duckbot12/inverse_kinematics_node/set_logger_level
+ * /duckbot12/inverse_kinematics_node/set_radius
+ * /duckbot12/inverse_kinematics_node/set_trim
+
+
+contacting node http://duckbot12:36201/ ...
+Pid: 2623
+Connections:
+ * topic: /duckbot12/wheels_driver_node/wheels_cmd
+    * to: /duckbot12/wheels_driver_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/inverse_kinematics_node/actuator_params
+    * to: /duckbot12/lane_controller_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/car_cmd_switch_node/cmd
+    * to: /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_controller_node/actuator_params_received
+    * to: /duckbot12/lane_controller_node (http://duckbot12:44070/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/joy_mapper_node]$rosnode info /duckbot12/joy_mapper_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/joy_mapper_node]
+Publications: 
+ * /duckbot12/anti_instagram_node/click [duckietown_msgs/BoolStamped]
+ * /duckbot12/joy_mapper_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /duckbot12/joy_mapper_node/joystick_override [duckietown_msgs/BoolStamped]
+ * /duckbot12/joy_mapper_node/parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /duckbot12/joy_mapper_node/start_avoidance [duckietown_msgs/BoolStamped]
+ * /duckbot12/wheels_driver_node/emergency_stop [duckietown_msgs/BoolStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/joy [sensor_msgs/Joy]
+
+Services: 
+ * /duckbot12/joy_mapper_node/get_loggers
+ * /duckbot12/joy_mapper_node/set_logger_level
+
+
+contacting node http://duckbot12:46496/ ...
+Pid: 2628
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy_mapper_node/car_cmd
+    * to: /duckbot12/car_cmd_switch_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy_mapper_node/parallel_autonomy
+    * to: /duckbot12/logic_gate_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy_mapper_node/parallel_autonomy
+    * to: /duckbot12/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy_mapper_node/joystick_override
+    * to: /duckbot12/logic_gate_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy_mapper_node/start_avoidance
+    * to: /duckbot12/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/anti_instagram_node/click
+    * to: /duckbot12/anti_instagram_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/wheels_driver_node/emergency_stop
+    * to: /duckbot12/wheels_driver_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy
+    * to: /duckbot12/joy_node (http://duckbot12:44522/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/joy_node]$rosnode info /duckbot12/joy_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/joy_node]
+Publications: 
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /duckbot12/joy [sensor_msgs/Joy]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: None
+
+Services: 
+ * /duckbot12/joy_node/get_loggers
+ * /duckbot12/joy_node/set_logger_level
+
+
+contacting node http://duckbot12:44522/ ...
+Pid: 2625
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy
+    * to: /duckbot12/joy_mapper_node
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/lane_controller_node]$rosnode info /duckbot12/lane_controller_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/lane_controller_node]
+Publications: 
+ * /duckbot12/lane_controller_node/actuator_params_received [duckietown_msgs/BoolStamped]
+ * /duckbot12/lane_controller_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /duckbot12/lane_controller_node/radius_limit [duckietown_msgs/BoolStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/inverse_kinematics_node/actuator_params [duckietown_msgs/ActuatorParameters]
+ * /duckbot12/lane_filter_node/lane_pose [duckietown_msgs/LanePose]
+ * /duckbot12/wheels_driver_node/wheels_cmd_executed [duckietown_msgs/WheelsCmdStamped]
+
+Services: 
+ * /duckbot12/lane_controller_node/get_loggers
+ * /duckbot12/lane_controller_node/set_logger_level
+
+
+contacting node http://duckbot12:44070/ ...
+Pid: 2667
+Connections:
+ * topic: /duckbot12/lane_controller_node/car_cmd
+    * to: /duckbot12/car_cmd_switch_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_controller_node/actuator_params_received
+    * to: /duckbot12/inverse_kinematics_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_controller_node/radius_limit
+    * to: /duckbot12/wheels_driver_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/inverse_kinematics_node/actuator_params
+    * to: /duckbot12/inverse_kinematics_node (http://duckbot12:36201/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_filter_node/lane_pose
+    * to: /duckbot12/lane_filter_node (http://duckbot12:41679/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/wheels_driver_node/wheels_cmd_executed
+    * to: /duckbot12/wheels_driver_node (http://duckbot12:39251/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/lane_filter_node]$rosnode info /duckbot12/lane_filter_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/lane_filter_node]
+Publications: 
+ * /duckbot12/lane_filter_node/belief_img [sensor_msgs/Image]
+ * /duckbot12/lane_filter_node/entropy [std_msgs/Float32]
+ * /duckbot12/lane_filter_node/in_lane [duckietown_msgs/BoolStamped]
+ * /duckbot12/lane_filter_node/lane_pose [duckietown_msgs/LanePose]
+ * /duckbot12/lane_filter_node/ml_img [sensor_msgs/Image]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/car_cmd_switch_node/cmd [duckietown_msgs/Twist2DStamped]
+ * /duckbot12/ground_projection/lineseglist_out [duckietown_msgs/SegmentList]
+ * /duckbot12/lane_filter_node/switch [duckietown_msgs/BoolStamped]
+
+Services: 
+ * /duckbot12/lane_filter_node/get_loggers
+ * /duckbot12/lane_filter_node/set_logger_level
+
+
+contacting node http://duckbot12:41679/ ...
+Pid: 2658
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_filter_node/lane_pose
+    * to: /duckbot12/lane_controller_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_filter_node/lane_pose
+    * to: /duckbot12/stop_line_filter_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_filter_node/lane_pose
+    * to: /duckbot12/lane_pose_visualizer_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_filter_node/switch
+    * to: /duckbot12/fsm_node (http://duckbot12:42308/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/car_cmd_switch_node/cmd
+    * to: /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/ground_projection/lineseglist_out
+    * to: /duckbot12/ground_projection (http://duckbot12:33958/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/lane_pose_visualizer_node]$rosnode info /duckbot12/lane_pose_visualizer_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/lane_pose_visualizer_node]
+Publications: 
+ * /duckbot12/lane_pose_visualizer_node/lane_pose_markers [visualization_msgs/MarkerArray]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/lane_filter_node/lane_pose [duckietown_msgs/LanePose]
+
+Services: 
+ * /duckbot12/lane_pose_visualizer_node/get_loggers
+ * /duckbot12/lane_pose_visualizer_node/set_logger_level
+
+
+contacting node http://duckbot12:37639/ ...
+Pid: 2671
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_filter_node/lane_pose
+    * to: /duckbot12/lane_filter_node (http://duckbot12:41679/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/led_emitter_node]$rosnode info /duckbot12/led_emitter_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/led_emitter_node]
+Publications: 
+ * /duckbot12/led_emitter_node/current_led_state [std_msgs/Float32]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/led_emitter_node/change_color_pattern [unknown type]
+ * /duckbot12/led_emitter_node/switch [duckietown_msgs/BoolStamped]
+
+Services: 
+ * /duckbot12/led_emitter_node/get_loggers
+ * /duckbot12/led_emitter_node/set_logger_level
+
+
+contacting node http://duckbot12:33596/ ...
+Pid: 2672
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/led_emitter_node/switch
+    * to: /duckbot12/fsm_node (http://duckbot12:42308/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/line_detector_node]$rosnode info /duckbot12/line_detector_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/line_detector_node]
+Publications: 
+ * /duckbot12/line_detector_node/image_with_lines [sensor_msgs/Image]
+ * /duckbot12/line_detector_node/segment_list [duckietown_msgs/SegmentList]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/anti_instagram_node/transform [duckietown_msgs/AntiInstagramTransform]
+ * /duckbot12/camera_node/image/compressed [sensor_msgs/CompressedImage]
+ * /duckbot12/line_detector_node/switch [duckietown_msgs/BoolStamped]
+
+Services: 
+ * /duckbot12/line_detector_node/get_loggers
+ * /duckbot12/line_detector_node/set_logger_level
+
+
+contacting node http://duckbot12:45749/ ...
+Pid: 2654
+Connections:
+ * topic: /duckbot12/line_detector_node/segment_list
+    * to: /duckbot12/ground_projection
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/anti_instagram_node/transform
+    * to: /duckbot12/anti_instagram_node (http://duckbot12:40512/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/camera_node/image/compressed
+    * to: /duckbot12/camera_node (http://duckbot12:46817/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/line_detector_node/switch
+    * to: /duckbot12/fsm_node (http://duckbot12:42308/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/logic_gate_node]$rosnode info /duckbot12/logic_gate_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/logic_gate_node]
+Publications: 
+ * /duckbot12/logic_gate_node/at_stop_line_and_parking_off [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/at_stop_line_and_parking_on [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/intersection_done_and_deep_lane_off [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/intersection_done_and_deep_lane_on [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/intersection_go [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off [duckietown_msgs/BoolStamped]
+ * /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on [duckietown_msgs/BoolStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/LED_coordination/move_intersection [unknown type]
+ * /duckbot12/apriltags_postprocessing_node/apriltags_parking [unknown type]
+ * /duckbot12/implicit_coord/flag_go_wait [unknown type]
+ * /duckbot12/intersection_navigation_node/intersection_done [unknown type]
+ * /duckbot12/joy_mapper_node/deep_learn_toggle [unknown type]
+ * /duckbot12/joy_mapper_node/joystick_override [duckietown_msgs/BoolStamped]
+ * /duckbot12/joy_mapper_node/parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /duckbot12/parking_on [unknown type]
+ * /duckbot12/stop_line_filter_node/at_stop_line [duckietown_msgs/BoolStamped]
+
+Services: 
+ * /duckbot12/logic_gate_node/get_loggers
+ * /duckbot12/logic_gate_node/set_logger_level
+
+
+contacting node http://duckbot12:39733/ ...
+Pid: 2653
+Connections:
+ * topic: /duckbot12/logic_gate_node/intersection_go
+    * to: /duckbot12/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off
+    * to: /duckbot12/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/at_stop_line_and_parking_off
+    * to: /duckbot12/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on
+    * to: /duckbot12/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off
+    * to: /duckbot12/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/at_stop_line_and_parking_on
+    * to: /duckbot12/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/intersection_done_and_deep_lane_on
+    * to: /duckbot12/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/intersection_done_and_deep_lane_off
+    * to: /duckbot12/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on
+    * to: /duckbot12/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy_mapper_node/parallel_autonomy
+    * to: /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/joy_mapper_node/joystick_override
+    * to: /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/stop_line_filter_node/at_stop_line
+    * to: /duckbot12/stop_line_filter_node (http://duckbot12:42698/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/stop_line_filter_node]$rosnode info /duckbot12/stop_line_filter_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/stop_line_filter_node]
+Publications: 
+ * /duckbot12/stop_line_filter_node/at_stop_line [duckietown_msgs/BoolStamped]
+ * /duckbot12/stop_line_filter_node/stop_line_reading [duckietown_msgs/StopLineReading]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/fsm_node/mode [duckietown_msgs/FSMState]
+ * /duckbot12/ground_projection/lineseglist_out [duckietown_msgs/SegmentList]
+ * /duckbot12/lane_filter_node/lane_pose [duckietown_msgs/LanePose]
+ * /duckbot12/stop_line_filter_node/switch [duckietown_msgs/BoolStamped]
+
+Services: 
+ * /duckbot12/stop_line_filter_node/get_loggers
+ * /duckbot12/stop_line_filter_node/set_logger_level
+
+
+contacting node http://duckbot12:42698/ ...
+Pid: 2659
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/stop_line_filter_node/at_stop_line
+    * to: /duckbot12/logic_gate_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/stop_line_filter_node/at_stop_line
+    * to: /duckbot12/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/fsm_node/mode
+    * to: /duckbot12/fsm_node (http://duckbot12:42308/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/ground_projection/lineseglist_out
+    * to: /duckbot12/ground_projection (http://duckbot12:33958/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/stop_line_filter_node/switch
+    * to: /duckbot12/fsm_node (http://duckbot12:42308/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_filter_node/lane_pose
+    * to: /duckbot12/lane_filter_node (http://duckbot12:41679/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12/wheels_driver_node]$rosnode info /duckbot12/wheels_driver_node =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12/wheels_driver_node]
+Publications: 
+ * /duckbot12/wheels_driver_node/wheels_cmd_executed [duckietown_msgs/WheelsCmdStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /duckbot12/lane_controller_node/radius_limit [duckietown_msgs/BoolStamped]
+ * /duckbot12/wheels_driver_node/emergency_stop [duckietown_msgs/BoolStamped]
+ * /duckbot12/wheels_driver_node/wheels_cmd [duckietown_msgs/WheelsCmdStamped]
+
+Services: 
+ * /duckbot12/wheels_driver_node/get_loggers
+ * /duckbot12/wheels_driver_node/set_logger_level
+
+
+contacting node http://duckbot12:39251/ ...
+Pid: 2624
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/wheels_driver_node/wheels_cmd_executed
+    * to: /duckbot12/lane_controller_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /duckbot12/wheels_driver_node/wheels_cmd
+    * to: /duckbot12/inverse_kinematics_node (http://duckbot12:36201/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/wheels_driver_node/emergency_stop
+    * to: /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /duckbot12/lane_controller_node/radius_limit
+    * to: /duckbot12/lane_controller_node (http://duckbot12:44070/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/duckbot12_to_map]$rosnode info /duckbot12_to_map =====>
+--------------------------------------------------------------------------------
+Node [/duckbot12_to_map]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /tf [tf2_msgs/TFMessage]
+
+Subscriptions: None
+
+Services: 
+ * /duckbot12_to_map/get_loggers
+ * /duckbot12_to_map/set_logger_level
+
+
+contacting node http://duckbot12:45931/ ...
+Pid: 2657
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://duckbot12:34295/ ...
+Pid: 2248
+Connections:
+ * topic: /rosout
+    * to: /duckbot12/joy_node (http://duckbot12:44522/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12_to_map (http://duckbot12:45931/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/fsm_node (http://duckbot12:42308/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/duckiebot_visualizer (http://duckbot12:45150/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/logic_gate_node (http://duckbot12:39733/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/wheels_driver_node (http://duckbot12:39251/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/fake_coordinator_node (http://duckbot12:41231/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/led_emitter_node (http://duckbot12:33596/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/lane_controller_node (http://duckbot12:44070/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/stop_line_filter_node (http://duckbot12:42698/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/lane_pose_visualizer_node (http://duckbot12:37639/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/ground_projection (http://duckbot12:33958/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/lane_filter_node (http://duckbot12:41679/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/cam_info_reader_node (http://duckbot12:40909/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/inverse_kinematics_node (http://duckbot12:36201/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/camera_node (http://duckbot12:46817/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/line_detector_node (http://duckbot12:45749/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /duckbot12/anti_instagram_node (http://duckbot12:40512/)
+    * direction: inbound
+    * transport: TCPROS
+
+[TOPIC_LIST]$rostopic list =====>
+/diagnostics
+/duckbot12/LED_coordination/move_intersection
+/duckbot12/LED_coordination_node/switch
+/duckbot12/LED_detection_node/switch
+/duckbot12/LED_detector_node/switch
+/duckbot12/anti_instagram_node/click
+/duckbot12/anti_instagram_node/corrected_image
+/duckbot12/anti_instagram_node/health
+/duckbot12/anti_instagram_node/transform
+/duckbot12/apriltag_detector_node/switch
+/duckbot12/apriltags_postprocessing_node/apriltags_intersection
+/duckbot12/apriltags_postprocessing_node/apriltags_parking
+/duckbot12/camera_node/camera_info
+/duckbot12/camera_node/framerate_high_switch
+/duckbot12/camera_node/image/compressed
+/duckbot12/car_cmd_switch_node/cmd
+/duckbot12/central_fleet_planning_node/switch
+/duckbot12/decoder_node/switch
+/duckbot12/duckiebot_il_lane_following/car_cmd
+/duckbot12/duckiebot_il_lane_following/switch
+/duckbot12/duckiebot_visualizer/segment_list_markers
+/duckbot12/fsm_node/mode
+/duckbot12/ground_projection/lineseglist_out
+/duckbot12/implicit_coord/flag_go_wait
+/duckbot12/implicit_coordination_node/switch
+/duckbot12/intersection_localization_node/switch
+/duckbot12/intersection_navigation_node/intersection_done
+/duckbot12/intersection_navigation_node/switch
+/duckbot12/inverse_kinematics_node/actuator_params
+/duckbot12/joy
+/duckbot12/joy_mapper_node/car_cmd
+/duckbot12/joy_mapper_node/deep_learn_toggle
+/duckbot12/joy_mapper_node/joystick_override
+/duckbot12/joy_mapper_node/parallel_autonomy
+/duckbot12/joy_mapper_node/start_avoidance
+/duckbot12/lane_controller_node/actuator_params_received
+/duckbot12/lane_controller_node/car_cmd
+/duckbot12/lane_controller_node/radius_limit
+/duckbot12/lane_controller_node/switch
+/duckbot12/lane_filter_node/belief_img
+/duckbot12/lane_filter_node/entropy
+/duckbot12/lane_filter_node/in_lane
+/duckbot12/lane_filter_node/lane_pose
+/duckbot12/lane_filter_node/ml_img
+/duckbot12/lane_filter_node/switch
+/duckbot12/lane_pose_visualizer_node/lane_pose_markers
+/duckbot12/lane_recovery_node/car_cmd
+/duckbot12/lane_supervisor_node/car_cmd
+/duckbot12/led_emitter_node/change_color_pattern
+/duckbot12/led_emitter_node/current_led_state
+/duckbot12/led_emitter_node/switch
+/duckbot12/line_detector_node/image_with_lines
+/duckbot12/line_detector_node/segment_list
+/duckbot12/line_detector_node/switch
+/duckbot12/logic_gate_node/apriltag_parking_and_parking_active
+/duckbot12/logic_gate_node/at_stop_line_and_parking_off
+/duckbot12/logic_gate_node/at_stop_line_and_parking_on
+/duckbot12/logic_gate_node/intersection_done_and_deep_lane_off
+/duckbot12/logic_gate_node/intersection_done_and_deep_lane_on
+/duckbot12/logic_gate_node/intersection_go
+/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off
+/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on
+/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off
+/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on
+/duckbot12/obstacle_avoidance_node/switch
+/duckbot12/open_loop_intersection_control_node/car_cmd
+/duckbot12/parking_control/switch
+/duckbot12/parking_on
+/duckbot12/parking_path_planning/switch
+/duckbot12/parking_perception_localization/switch
+/duckbot12/simple_coordinator_node/car_cmd
+/duckbot12/simple_coordinator_node/intersection_go
+/duckbot12/simple_stop_controller_node/car_cmd
+/duckbot12/static_object_detector_node/switch
+/duckbot12/stop_line_filter_node/at_stop_line
+/duckbot12/stop_line_filter_node/stop_line_reading
+/duckbot12/stop_line_filter_node/switch
+/duckbot12/vehicle_avoidance_control_node/car_cmd
+/duckbot12/vehicle_avoidance_control_node/switch
+/duckbot12/vehicle_detection_node/switch
+/duckbot12/vehicle_filter_node/switch
+/duckbot12/wheels_driver_node/emergency_stop
+/duckbot12/wheels_driver_node/wheels_cmd
+/duckbot12/wheels_driver_node/wheels_cmd_executed
+/rosout
+/rosout_agg
+/tf
+[TOPIC=/diagnostics]$rostopic info /diagnostics =====>
+Type: diagnostic_msgs/DiagnosticArray
+
+Publishers: 
+ * /duckbot12/joy_node (http://duckbot12:44522/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/diagnostics]$timeout 1 rostopic hz /diagnostics =====>
+subscribed to [/diagnostics]
+[TOPIC_TYPE=diagnostic_msgs/DiagnosticArray]$rosmsg show diagnostic_msgs/DiagnosticArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+diagnostic_msgs/DiagnosticStatus[] status
+  byte OK=0
+  byte WARN=1
+  byte ERROR=2
+  byte STALE=3
+  byte level
+  string name
+  string message
+  string hardware_id
+  diagnostic_msgs/KeyValue[] values
+    string key
+    string value
+
+[TOPIC=/duckbot12/LED_coordination/move_intersection]$rostopic info /duckbot12/LED_coordination/move_intersection =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+
+[TOPIC_HZ=/duckbot12/LED_coordination/move_intersection]$timeout 1 rostopic hz /duckbot12/LED_coordination/move_intersection =====>
+subscribed to [/duckbot12/LED_coordination/move_intersection]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/LED_coordination_node/switch]$rostopic info /duckbot12/LED_coordination_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/LED_coordination_node/switch]$timeout 1 rostopic hz /duckbot12/LED_coordination_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/LED_detection_node/switch]$rostopic info /duckbot12/LED_detection_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/LED_detection_node/switch]$timeout 1 rostopic hz /duckbot12/LED_detection_node/switch =====>
+subscribed to [/duckbot12/LED_detection_node/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/LED_detector_node/switch]$rostopic info /duckbot12/LED_detector_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/LED_detector_node/switch]$timeout 1 rostopic hz /duckbot12/LED_detector_node/switch =====>
+Unable to register with master node [http://duckbot12:11311]: master may not be running yet. Will keep trying.
+subscribed to [/duckbot12/LED_detector_node/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/anti_instagram_node/click]$rostopic info /duckbot12/anti_instagram_node/click =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+
+Subscribers: 
+ * /duckbot12/anti_instagram_node (http://duckbot12:40512/)
+
+
+[TOPIC_HZ=/duckbot12/anti_instagram_node/click]$timeout 1 rostopic hz /duckbot12/anti_instagram_node/click =====>
+subscribed to [/duckbot12/anti_instagram_node/click]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/anti_instagram_node/corrected_image]$rostopic info /duckbot12/anti_instagram_node/corrected_image =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /duckbot12/anti_instagram_node (http://duckbot12:40512/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/anti_instagram_node/corrected_image]$timeout 1 rostopic hz /duckbot12/anti_instagram_node/corrected_image =====>
+subscribed to [/duckbot12/anti_instagram_node/corrected_image]
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/duckbot12/anti_instagram_node/health]$rostopic info /duckbot12/anti_instagram_node/health =====>
+Type: duckietown_msgs/AntiInstagramHealth
+
+Publishers: 
+ * /duckbot12/anti_instagram_node (http://duckbot12:40512/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/anti_instagram_node/health]$timeout 1 rostopic hz /duckbot12/anti_instagram_node/health =====>
+subscribed to [/duckbot12/anti_instagram_node/health]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/AntiInstagramHealth]$rosmsg show duckietown_msgs/AntiInstagramHealth =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 J1
+float32 J2
+float32 J3
+
+[TOPIC=/duckbot12/anti_instagram_node/transform]$rostopic info /duckbot12/anti_instagram_node/transform =====>
+Type: duckietown_msgs/AntiInstagramTransform
+
+Publishers: 
+ * /duckbot12/anti_instagram_node (http://duckbot12:40512/)
+
+Subscribers: 
+ * /duckbot12/line_detector_node (http://duckbot12:45749/)
+
+
+[TOPIC_HZ=/duckbot12/anti_instagram_node/transform]$timeout 1 rostopic hz /duckbot12/anti_instagram_node/transform =====>
+subscribed to [/duckbot12/anti_instagram_node/transform]
+[TOPIC_TYPE=duckietown_msgs/AntiInstagramTransform]$rosmsg show duckietown_msgs/AntiInstagramTransform =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float64[6] s
+
+[TOPIC=/duckbot12/apriltag_detector_node/switch]$rostopic info /duckbot12/apriltag_detector_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/apriltag_detector_node/switch]$timeout 1 rostopic hz /duckbot12/apriltag_detector_node/switch =====>
+subscribed to [/duckbot12/apriltag_detector_node/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/apriltags_postprocessing_node/apriltags_intersection]$rostopic info /duckbot12/apriltags_postprocessing_node/apriltags_intersection =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/apriltags_postprocessing_node/apriltags_intersection]$timeout 1 rostopic hz /duckbot12/apriltags_postprocessing_node/apriltags_intersection =====>
+subscribed to [/duckbot12/apriltags_postprocessing_node/apriltags_intersection]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/apriltags_postprocessing_node/apriltags_parking]$rostopic info /duckbot12/apriltags_postprocessing_node/apriltags_parking =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+
+[TOPIC_HZ=/duckbot12/apriltags_postprocessing_node/apriltags_parking]$timeout 1 rostopic hz /duckbot12/apriltags_postprocessing_node/apriltags_parking =====>
+subscribed to [/duckbot12/apriltags_postprocessing_node/apriltags_parking]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/camera_node/camera_info]$rostopic info /duckbot12/camera_node/camera_info =====>
+Type: sensor_msgs/CameraInfo
+
+Publishers: 
+ * /duckbot12/cam_info_reader_node (http://duckbot12:40909/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/camera_node/camera_info]$timeout 1 rostopic hz /duckbot12/camera_node/camera_info =====>
+Unable to register with master node [http://duckbot12:11311]: master may not be running yet. Will keep trying.
+subscribed to [/duckbot12/camera_node/camera_info]
+[TOPIC_TYPE=sensor_msgs/CameraInfo]$rosmsg show sensor_msgs/CameraInfo =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string distortion_model
+float64[] D
+float64[9] K
+float64[9] R
+float64[12] P
+uint32 binning_x
+uint32 binning_y
+sensor_msgs/RegionOfInterest roi
+  uint32 x_offset
+  uint32 y_offset
+  uint32 height
+  uint32 width
+  bool do_rectify
+
+[TOPIC=/duckbot12/camera_node/framerate_high_switch]$rostopic info /duckbot12/camera_node/framerate_high_switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: 
+ * /duckbot12/camera_node (http://duckbot12:46817/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/framerate_high_switch]$timeout 1 rostopic hz /duckbot12/camera_node/framerate_high_switch =====>
+subscribed to [/duckbot12/camera_node/framerate_high_switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/camera_node/image/compressed]$rostopic info /duckbot12/camera_node/image/compressed =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /duckbot12/camera_node (http://duckbot12:46817/)
+
+Subscribers: 
+ * /duckbot12/cam_info_reader_node (http://duckbot12:40909/)
+ * /duckbot12/line_detector_node (http://duckbot12:45749/)
+ * /duckbot12/anti_instagram_node (http://duckbot12:40512/)
+
+
+[TOPIC_HZ=/duckbot12/camera_node/image/compressed]$timeout 1 rostopic hz /duckbot12/camera_node/image/compressed =====>
+subscribed to [/duckbot12/camera_node/image/compressed]
+average rate: 25.433
+	min: 0.028s max: 0.051s std dev: 0.01165s window: 3
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/duckbot12/car_cmd_switch_node/cmd]$rostopic info /duckbot12/car_cmd_switch_node/cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+
+Subscribers: 
+ * /duckbot12/inverse_kinematics_node (http://duckbot12:36201/)
+ * /duckbot12/lane_filter_node (http://duckbot12:41679/)
+
+
+[TOPIC_HZ=/duckbot12/car_cmd_switch_node/cmd]$timeout 1 rostopic hz /duckbot12/car_cmd_switch_node/cmd =====>
+subscribed to [/duckbot12/car_cmd_switch_node/cmd]
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 v
+float32 omega
+
+[TOPIC=/duckbot12/central_fleet_planning_node/switch]$rostopic info /duckbot12/central_fleet_planning_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/central_fleet_planning_node/switch]$timeout 1 rostopic hz /duckbot12/central_fleet_planning_node/switch =====>
+subscribed to [/duckbot12/central_fleet_planning_node/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/decoder_node/switch]$rostopic info /duckbot12/decoder_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/decoder_node/switch]$timeout 1 rostopic hz /duckbot12/decoder_node/switch =====>
+subscribed to [/duckbot12/decoder_node/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/duckiebot_il_lane_following/car_cmd]$rostopic info /duckbot12/duckiebot_il_lane_following/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+
+
+[TOPIC_HZ=/duckbot12/duckiebot_il_lane_following/car_cmd]$timeout 1 rostopic hz /duckbot12/duckiebot_il_lane_following/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 v
+float32 omega
+
+[TOPIC=/duckbot12/duckiebot_il_lane_following/switch]$rostopic info /duckbot12/duckiebot_il_lane_following/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/duckiebot_il_lane_following/switch]$timeout 1 rostopic hz /duckbot12/duckiebot_il_lane_following/switch =====>
+subscribed to [/duckbot12/duckiebot_il_lane_following/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/duckiebot_visualizer/segment_list_markers]$rostopic info /duckbot12/duckiebot_visualizer/segment_list_markers =====>
+Type: visualization_msgs/MarkerArray
+
+Publishers: 
+ * /duckbot12/duckiebot_visualizer (http://duckbot12:45150/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/duckiebot_visualizer/segment_list_markers]$timeout 1 rostopic hz /duckbot12/duckiebot_visualizer/segment_list_markers =====>
+subscribed to [/duckbot12/duckiebot_visualizer/segment_list_markers]
+[TOPIC_TYPE=visualization_msgs/MarkerArray]$rosmsg show visualization_msgs/MarkerArray =====>
+visualization_msgs/Marker[] markers
+  uint8 ARROW=0
+  uint8 CUBE=1
+  uint8 SPHERE=2
+  uint8 CYLINDER=3
+  uint8 LINE_STRIP=4
+  uint8 LINE_LIST=5
+  uint8 CUBE_LIST=6
+  uint8 SPHERE_LIST=7
+  uint8 POINTS=8
+  uint8 TEXT_VIEW_FACING=9
+  uint8 MESH_RESOURCE=10
+  uint8 TRIANGLE_LIST=11
+  uint8 ADD=0
+  uint8 MODIFY=0
+  uint8 DELETE=2
+  uint8 DELETEALL=3
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string ns
+  int32 id
+  int32 type
+  int32 action
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  geometry_msgs/Vector3 scale
+    float64 x
+    float64 y
+    float64 z
+  std_msgs/ColorRGBA color
+    float32 r
+    float32 g
+    float32 b
+    float32 a
+  duration lifetime
+  bool frame_locked
+  geometry_msgs/Point[] points
+    float64 x
+    float64 y
+    float64 z
+  std_msgs/ColorRGBA[] colors
+    float32 r
+    float32 g
+    float32 b
+    float32 a
+  string text
+  string mesh_resource
+  bool mesh_use_embedded_materials
+
+[TOPIC=/duckbot12/fsm_node/mode]$rostopic info /duckbot12/fsm_node/mode =====>
+Type: duckietown_msgs/FSMState
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: 
+ * /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+ * /duckbot12/fake_coordinator_node (http://duckbot12:41231/)
+ * /duckbot12/stop_line_filter_node (http://duckbot12:42698/)
+
+
+[TOPIC_HZ=/duckbot12/fsm_node/mode]$timeout 1 rostopic hz /duckbot12/fsm_node/mode =====>
+subscribed to [/duckbot12/fsm_node/mode]
+[TOPIC_TYPE=duckietown_msgs/FSMState]$rosmsg show duckietown_msgs/FSMState =====>
+string LANE_FOLLOWING="LANE_FOLLOWING"
+string INTERSECTION_COORDINATION="INTERSECTION_COORDINATION"
+string INTERSECTION_CONTROL="INTERSECTION_CONTROL"
+string NORMAL_JOYSTICK_CONTROL="NORMAL_JOYSTICK_CONTROL"
+string SAFE_JOYSTICK_CONTROL="SAFE_JOYSTICK_CONTROL"
+string PARKING="PARKING"
+string ARRIVE_AT_STOP_LINE="ARRIVE_AT_STOP_LINE"
+string LANE_RECOVERY="LANE_RECOVERY"
+string INTERSECTION_RECOVERY="INTERSECTION_RECOVERY"
+string CALIBRATING="CALIBRATING"
+string CALIBRATING_CALC="CALIBRATING_CALC"
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string state
+
+[TOPIC=/duckbot12/ground_projection/lineseglist_out]$rostopic info /duckbot12/ground_projection/lineseglist_out =====>
+Type: duckietown_msgs/SegmentList
+
+Publishers: 
+ * /duckbot12/ground_projection (http://duckbot12:33958/)
+
+Subscribers: 
+ * /duckbot12/duckiebot_visualizer (http://duckbot12:45150/)
+ * /duckbot12/stop_line_filter_node (http://duckbot12:42698/)
+ * /duckbot12/lane_filter_node (http://duckbot12:41679/)
+
+
+[TOPIC_HZ=/duckbot12/ground_projection/lineseglist_out]$timeout 1 rostopic hz /duckbot12/ground_projection/lineseglist_out =====>
+subscribed to [/duckbot12/ground_projection/lineseglist_out]
+[TOPIC_TYPE=duckietown_msgs/SegmentList]$rosmsg show duckietown_msgs/SegmentList =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+duckietown_msgs/Segment[] segments
+  uint8 WHITE=0
+  uint8 YELLOW=1
+  uint8 RED=2
+  uint8 color
+  duckietown_msgs/Vector2D[2] pixels_normalized
+    float32 x
+    float32 y
+  duckietown_msgs/Vector2D normal
+    float32 x
+    float32 y
+  geometry_msgs/Point[2] points
+    float64 x
+    float64 y
+    float64 z
+
+[TOPIC=/duckbot12/implicit_coord/flag_go_wait]$rostopic info /duckbot12/implicit_coord/flag_go_wait =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+
+[TOPIC_HZ=/duckbot12/implicit_coord/flag_go_wait]$timeout 1 rostopic hz /duckbot12/implicit_coord/flag_go_wait =====>
+subscribed to [/duckbot12/implicit_coord/flag_go_wait]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/implicit_coordination_node/switch]$rostopic info /duckbot12/implicit_coordination_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/implicit_coordination_node/switch]$timeout 1 rostopic hz /duckbot12/implicit_coordination_node/switch =====>
+subscribed to [/duckbot12/implicit_coordination_node/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/intersection_localization_node/switch]$rostopic info /duckbot12/intersection_localization_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/intersection_localization_node/switch]$timeout 1 rostopic hz /duckbot12/intersection_localization_node/switch =====>
+subscribed to [/duckbot12/intersection_localization_node/switch]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/intersection_navigation_node/intersection_done]$rostopic info /duckbot12/intersection_navigation_node/intersection_done =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+
+[TOPIC_HZ=/duckbot12/intersection_navigation_node/intersection_done]$timeout 1 rostopic hz /duckbot12/intersection_navigation_node/intersection_done =====>
+subscribed to [/duckbot12/intersection_navigation_node/intersection_done]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/intersection_navigation_node/switch]$rostopic info /duckbot12/intersection_navigation_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/intersection_navigation_node/switch]$timeout 1 rostopic hz /duckbot12/intersection_navigation_node/switch =====>
+subscribed to [/duckbot12/intersection_navigation_node/switch]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/inverse_kinematics_node/actuator_params]$rostopic info /duckbot12/inverse_kinematics_node/actuator_params =====>
+Type: duckietown_msgs/ActuatorParameters
+
+Publishers: 
+ * /duckbot12/inverse_kinematics_node (http://duckbot12:36201/)
+
+Subscribers: 
+ * /duckbot12/lane_controller_node (http://duckbot12:44070/)
+
+
+[TOPIC_HZ=/duckbot12/inverse_kinematics_node/actuator_params]$timeout 1 rostopic hz /duckbot12/inverse_kinematics_node/actuator_params =====>
+[TOPIC_TYPE=duckietown_msgs/ActuatorParameters]$rosmsg show duckietown_msgs/ActuatorParameters =====>
+[TOPIC=/duckbot12/joy]$rostopic info /duckbot12/joy =====>
+Type: sensor_msgs/Joy
+
+Publishers: 
+ * /duckbot12/joy_node (http://duckbot12:44522/)
+
+Subscribers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+
+
+[TOPIC_HZ=/duckbot12/joy]$timeout 1 rostopic hz /duckbot12/joy =====>
+subscribed to [/duckbot12/joy]
+no new messages
+[TOPIC_TYPE=sensor_msgs/Joy]$rosmsg show sensor_msgs/Joy =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32[] axes
+int32[] buttons
+
+[TOPIC=/duckbot12/joy_mapper_node/car_cmd]$rostopic info /duckbot12/joy_mapper_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+
+Subscribers: 
+ * /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+
+
+[TOPIC_HZ=/duckbot12/joy_mapper_node/car_cmd]$timeout 1 rostopic hz /duckbot12/joy_mapper_node/car_cmd =====>
+subscribed to [/duckbot12/joy_mapper_node/car_cmd]
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 v
+float32 omega
+
+[TOPIC=/duckbot12/joy_mapper_node/deep_learn_toggle]$rostopic info /duckbot12/joy_mapper_node/deep_learn_toggle =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/joy_mapper_node/deep_learn_toggle]$timeout 1 rostopic hz /duckbot12/joy_mapper_node/deep_learn_toggle =====>
+subscribed to [/duckbot12/joy_mapper_node/deep_learn_toggle]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/joy_mapper_node/joystick_override]$rostopic info /duckbot12/joy_mapper_node/joystick_override =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+
+Subscribers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+
+[TOPIC_HZ=/duckbot12/joy_mapper_node/joystick_override]$timeout 1 rostopic hz /duckbot12/joy_mapper_node/joystick_override =====>
+subscribed to [/duckbot12/joy_mapper_node/joystick_override]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/joy_mapper_node/parallel_autonomy]$rostopic info /duckbot12/joy_mapper_node/parallel_autonomy =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+
+Subscribers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/joy_mapper_node/parallel_autonomy]$timeout 1 rostopic hz /duckbot12/joy_mapper_node/parallel_autonomy =====>
+subscribed to [/duckbot12/joy_mapper_node/parallel_autonomy]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/joy_mapper_node/start_avoidance]$rostopic info /duckbot12/joy_mapper_node/start_avoidance =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+
+Subscribers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/joy_mapper_node/start_avoidance]$timeout 1 rostopic hz /duckbot12/joy_mapper_node/start_avoidance =====>
+subscribed to [/duckbot12/joy_mapper_node/start_avoidance]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/lane_controller_node/actuator_params_received]$rostopic info /duckbot12/lane_controller_node/actuator_params_received =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/lane_controller_node (http://duckbot12:44070/)
+
+Subscribers: 
+ * /duckbot12/inverse_kinematics_node (http://duckbot12:36201/)
+
+
+[TOPIC_HZ=/duckbot12/lane_controller_node/actuator_params_received]$timeout 1 rostopic hz /duckbot12/lane_controller_node/actuator_params_received =====>
+subscribed to [/duckbot12/lane_controller_node/actuator_params_received]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/lane_controller_node/car_cmd]$rostopic info /duckbot12/lane_controller_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /duckbot12/lane_controller_node (http://duckbot12:44070/)
+
+Subscribers: 
+ * /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+
+
+[TOPIC_HZ=/duckbot12/lane_controller_node/car_cmd]$timeout 1 rostopic hz /duckbot12/lane_controller_node/car_cmd =====>
+subscribed to [/duckbot12/lane_controller_node/car_cmd]
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 v
+float32 omega
+
+[TOPIC=/duckbot12/lane_controller_node/radius_limit]$rostopic info /duckbot12/lane_controller_node/radius_limit =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/lane_controller_node (http://duckbot12:44070/)
+
+Subscribers: 
+ * /duckbot12/wheels_driver_node (http://duckbot12:39251/)
+
+
+[TOPIC_HZ=/duckbot12/lane_controller_node/radius_limit]$timeout 1 rostopic hz /duckbot12/lane_controller_node/radius_limit =====>
+subscribed to [/duckbot12/lane_controller_node/radius_limit]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/lane_controller_node/switch]$rostopic info /duckbot12/lane_controller_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/lane_controller_node/switch]$timeout 1 rostopic hz /duckbot12/lane_controller_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/lane_filter_node/belief_img]$rostopic info /duckbot12/lane_filter_node/belief_img =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /duckbot12/lane_filter_node (http://duckbot12:41679/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/lane_filter_node/belief_img]$timeout 1 rostopic hz /duckbot12/lane_filter_node/belief_img =====>
+subscribed to [/duckbot12/lane_filter_node/belief_img]
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/duckbot12/lane_filter_node/entropy]$rostopic info /duckbot12/lane_filter_node/entropy =====>
+Type: std_msgs/Float32
+
+Publishers: 
+ * /duckbot12/lane_filter_node (http://duckbot12:41679/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/lane_filter_node/entropy]$timeout 1 rostopic hz /duckbot12/lane_filter_node/entropy =====>
+subscribed to [/duckbot12/lane_filter_node/entropy]
+[TOPIC_TYPE=std_msgs/Float32]$rosmsg show std_msgs/Float32 =====>
+float32 data
+
+[TOPIC=/duckbot12/lane_filter_node/in_lane]$rostopic info /duckbot12/lane_filter_node/in_lane =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/lane_filter_node (http://duckbot12:41679/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/lane_filter_node/in_lane]$timeout 1 rostopic hz /duckbot12/lane_filter_node/in_lane =====>
+subscribed to [/duckbot12/lane_filter_node/in_lane]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/lane_filter_node/lane_pose]$rostopic info /duckbot12/lane_filter_node/lane_pose =====>
+Type: duckietown_msgs/LanePose
+
+Publishers: 
+ * /duckbot12/lane_filter_node (http://duckbot12:41679/)
+
+Subscribers: 
+ * /duckbot12/lane_controller_node (http://duckbot12:44070/)
+ * /duckbot12/stop_line_filter_node (http://duckbot12:42698/)
+ * /duckbot12/lane_pose_visualizer_node (http://duckbot12:37639/)
+
+
+[TOPIC_HZ=/duckbot12/lane_filter_node/lane_pose]$timeout 1 rostopic hz /duckbot12/lane_filter_node/lane_pose =====>
+Unable to register with master node [http://duckbot12:11311]: master may not be running yet. Will keep trying.
+[TOPIC_TYPE=duckietown_msgs/LanePose]$rosmsg show duckietown_msgs/LanePose =====>
+int32 NORMAL=0
+int32 ERROR=1
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 d
+float32 d_ref
+float32 sigma_d
+float32 phi
+float32 phi_ref
+float32 sigma_phi
+float32 curvature
+float32 curvature_ref
+float32 v_ref
+int32 status
+bool in_lane
+
+[TOPIC=/duckbot12/lane_filter_node/ml_img]$rostopic info /duckbot12/lane_filter_node/ml_img =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /duckbot12/lane_filter_node (http://duckbot12:41679/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/lane_filter_node/ml_img]$timeout 1 rostopic hz /duckbot12/lane_filter_node/ml_img =====>
+subscribed to [/duckbot12/lane_filter_node/ml_img]
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/duckbot12/lane_filter_node/switch]$rostopic info /duckbot12/lane_filter_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: 
+ * /duckbot12/lane_filter_node (http://duckbot12:41679/)
+
+
+[TOPIC_HZ=/duckbot12/lane_filter_node/switch]$timeout 1 rostopic hz /duckbot12/lane_filter_node/switch =====>
+subscribed to [/duckbot12/lane_filter_node/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/lane_pose_visualizer_node/lane_pose_markers]$rostopic info /duckbot12/lane_pose_visualizer_node/lane_pose_markers =====>
+Type: visualization_msgs/MarkerArray
+
+Publishers: 
+ * /duckbot12/lane_pose_visualizer_node (http://duckbot12:37639/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/lane_pose_visualizer_node/lane_pose_markers]$timeout 1 rostopic hz /duckbot12/lane_pose_visualizer_node/lane_pose_markers =====>
+[TOPIC_TYPE=visualization_msgs/MarkerArray]$rosmsg show visualization_msgs/MarkerArray =====>
+visualization_msgs/Marker[] markers
+  uint8 ARROW=0
+  uint8 CUBE=1
+  uint8 SPHERE=2
+  uint8 CYLINDER=3
+  uint8 LINE_STRIP=4
+  uint8 LINE_LIST=5
+  uint8 CUBE_LIST=6
+  uint8 SPHERE_LIST=7
+  uint8 POINTS=8
+  uint8 TEXT_VIEW_FACING=9
+  uint8 MESH_RESOURCE=10
+  uint8 TRIANGLE_LIST=11
+  uint8 ADD=0
+  uint8 MODIFY=0
+  uint8 DELETE=2
+  uint8 DELETEALL=3
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string ns
+  int32 id
+  int32 type
+  int32 action
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  geometry_msgs/Vector3 scale
+    float64 x
+    float64 y
+    float64 z
+  std_msgs/ColorRGBA color
+    float32 r
+    float32 g
+    float32 b
+    float32 a
+  duration lifetime
+  bool frame_locked
+  geometry_msgs/Point[] points
+    float64 x
+    float64 y
+    float64 z
+  std_msgs/ColorRGBA[] colors
+    float32 r
+    float32 g
+    float32 b
+    float32 a
+  string text
+  string mesh_resource
+  bool mesh_use_embedded_materials
+
+[TOPIC=/duckbot12/lane_recovery_node/car_cmd]$rostopic info /duckbot12/lane_recovery_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+
+
+[TOPIC_HZ=/duckbot12/lane_recovery_node/car_cmd]$timeout 1 rostopic hz /duckbot12/lane_recovery_node/car_cmd =====>
+subscribed to [/duckbot12/lane_recovery_node/car_cmd]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 v
+float32 omega
+
+[TOPIC=/duckbot12/lane_supervisor_node/car_cmd]$rostopic info /duckbot12/lane_supervisor_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+
+
+[TOPIC_HZ=/duckbot12/lane_supervisor_node/car_cmd]$timeout 1 rostopic hz /duckbot12/lane_supervisor_node/car_cmd =====>
+subscribed to [/duckbot12/lane_supervisor_node/car_cmd]
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 v
+float32 omega
+
+[TOPIC=/duckbot12/led_emitter_node/change_color_pattern]$rostopic info /duckbot12/led_emitter_node/change_color_pattern =====>
+Type: std_msgs/String
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/led_emitter_node (http://duckbot12:33596/)
+
+
+[TOPIC_HZ=/duckbot12/led_emitter_node/change_color_pattern]$timeout 1 rostopic hz /duckbot12/led_emitter_node/change_color_pattern =====>
+subscribed to [/duckbot12/led_emitter_node/change_color_pattern]
+no new messages
+[TOPIC_TYPE=std_msgs/String]$rosmsg show std_msgs/String =====>
+string data
+
+[TOPIC=/duckbot12/led_emitter_node/current_led_state]$rostopic info /duckbot12/led_emitter_node/current_led_state =====>
+Type: std_msgs/Float32
+
+Publishers: 
+ * /duckbot12/led_emitter_node (http://duckbot12:33596/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/led_emitter_node/current_led_state]$timeout 1 rostopic hz /duckbot12/led_emitter_node/current_led_state =====>
+subscribed to [/duckbot12/led_emitter_node/current_led_state]
+[TOPIC_TYPE=std_msgs/Float32]$rosmsg show std_msgs/Float32 =====>
+float32 data
+
+[TOPIC=/duckbot12/led_emitter_node/switch]$rostopic info /duckbot12/led_emitter_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: 
+ * /duckbot12/led_emitter_node (http://duckbot12:33596/)
+
+
+[TOPIC_HZ=/duckbot12/led_emitter_node/switch]$timeout 1 rostopic hz /duckbot12/led_emitter_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/line_detector_node/image_with_lines]$rostopic info /duckbot12/line_detector_node/image_with_lines =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /duckbot12/line_detector_node (http://duckbot12:45749/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/line_detector_node/image_with_lines]$timeout 1 rostopic hz /duckbot12/line_detector_node/image_with_lines =====>
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/duckbot12/line_detector_node/segment_list]$rostopic info /duckbot12/line_detector_node/segment_list =====>
+Type: duckietown_msgs/SegmentList
+
+Publishers: 
+ * /duckbot12/line_detector_node (http://duckbot12:45749/)
+
+Subscribers: 
+ * /duckbot12/ground_projection (http://duckbot12:33958/)
+
+
+[TOPIC_HZ=/duckbot12/line_detector_node/segment_list]$timeout 1 rostopic hz /duckbot12/line_detector_node/segment_list =====>
+subscribed to [/duckbot12/line_detector_node/segment_list]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/SegmentList]$rosmsg show duckietown_msgs/SegmentList =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+duckietown_msgs/Segment[] segments
+  uint8 WHITE=0
+  uint8 YELLOW=1
+  uint8 RED=2
+  uint8 color
+  duckietown_msgs/Vector2D[2] pixels_normalized
+    float32 x
+    float32 y
+  duckietown_msgs/Vector2D normal
+    float32 x
+    float32 y
+  geometry_msgs/Point[2] points
+    float64 x
+    float64 y
+    float64 z
+
+[TOPIC=/duckbot12/line_detector_node/switch]$rostopic info /duckbot12/line_detector_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: 
+ * /duckbot12/line_detector_node (http://duckbot12:45749/)
+
+
+[TOPIC_HZ=/duckbot12/line_detector_node/switch]$timeout 1 rostopic hz /duckbot12/line_detector_node/switch =====>
+subscribed to [/duckbot12/line_detector_node/switch]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/logic_gate_node/apriltag_parking_and_parking_active]$rostopic info /duckbot12/logic_gate_node/apriltag_parking_and_parking_active =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/logic_gate_node/apriltag_parking_and_parking_active]$timeout 1 rostopic hz /duckbot12/logic_gate_node/apriltag_parking_and_parking_active =====>
+subscribed to [/duckbot12/logic_gate_node/apriltag_parking_and_parking_active]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/logic_gate_node/at_stop_line_and_parking_off]$rostopic info /duckbot12/logic_gate_node/at_stop_line_and_parking_off =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+Subscribers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/logic_gate_node/at_stop_line_and_parking_off]$timeout 1 rostopic hz /duckbot12/logic_gate_node/at_stop_line_and_parking_off =====>
+subscribed to [/duckbot12/logic_gate_node/at_stop_line_and_parking_off]
+average rate: 4.874
+	min: 0.205s max: 0.205s std dev: 0.00000s window: 2
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/logic_gate_node/at_stop_line_and_parking_on]$rostopic info /duckbot12/logic_gate_node/at_stop_line_and_parking_on =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+Subscribers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/logic_gate_node/at_stop_line_and_parking_on]$timeout 1 rostopic hz /duckbot12/logic_gate_node/at_stop_line_and_parking_on =====>
+subscribed to [/duckbot12/logic_gate_node/at_stop_line_and_parking_on]
+average rate: 6.167
+	min: 0.162s max: 0.162s std dev: 0.00000s window: 2
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/logic_gate_node/intersection_done_and_deep_lane_off]$rostopic info /duckbot12/logic_gate_node/intersection_done_and_deep_lane_off =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+Subscribers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/logic_gate_node/intersection_done_and_deep_lane_off]$timeout 1 rostopic hz /duckbot12/logic_gate_node/intersection_done_and_deep_lane_off =====>
+subscribed to [/duckbot12/logic_gate_node/intersection_done_and_deep_lane_off]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/logic_gate_node/intersection_done_and_deep_lane_on]$rostopic info /duckbot12/logic_gate_node/intersection_done_and_deep_lane_on =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+Subscribers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/logic_gate_node/intersection_done_and_deep_lane_on]$timeout 1 rostopic hz /duckbot12/logic_gate_node/intersection_done_and_deep_lane_on =====>
+subscribed to [/duckbot12/logic_gate_node/intersection_done_and_deep_lane_on]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/logic_gate_node/intersection_go]$rostopic info /duckbot12/logic_gate_node/intersection_go =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+Subscribers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/logic_gate_node/intersection_go]$timeout 1 rostopic hz /duckbot12/logic_gate_node/intersection_go =====>
+subscribed to [/duckbot12/logic_gate_node/intersection_go]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off]$rostopic info /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+Subscribers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off]$timeout 1 rostopic hz /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off =====>
+subscribed to [/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on]$rostopic info /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+Subscribers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on]$timeout 1 rostopic hz /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on =====>
+subscribed to [/duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_on]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off]$rostopic info /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+Subscribers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off]$timeout 1 rostopic hz /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off =====>
+subscribed to [/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_off]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on]$rostopic info /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+Subscribers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on]$timeout 1 rostopic hz /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on =====>
+subscribed to [/duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/obstacle_avoidance_node/switch]$rostopic info /duckbot12/obstacle_avoidance_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/obstacle_avoidance_node/switch]$timeout 1 rostopic hz /duckbot12/obstacle_avoidance_node/switch =====>
+subscribed to [/duckbot12/obstacle_avoidance_node/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/open_loop_intersection_control_node/car_cmd]$rostopic info /duckbot12/open_loop_intersection_control_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+
+
+[TOPIC_HZ=/duckbot12/open_loop_intersection_control_node/car_cmd]$timeout 1 rostopic hz /duckbot12/open_loop_intersection_control_node/car_cmd =====>
+subscribed to [/duckbot12/open_loop_intersection_control_node/car_cmd]
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 v
+float32 omega
+
+[TOPIC=/duckbot12/parking_control/switch]$rostopic info /duckbot12/parking_control/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/parking_control/switch]$timeout 1 rostopic hz /duckbot12/parking_control/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/parking_on]$rostopic info /duckbot12/parking_on =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+
+
+[TOPIC_HZ=/duckbot12/parking_on]$timeout 1 rostopic hz /duckbot12/parking_on =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/parking_path_planning/switch]$rostopic info /duckbot12/parking_path_planning/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/parking_path_planning/switch]$timeout 1 rostopic hz /duckbot12/parking_path_planning/switch =====>
+subscribed to [/duckbot12/parking_path_planning/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/parking_perception_localization/switch]$rostopic info /duckbot12/parking_perception_localization/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/parking_perception_localization/switch]$timeout 1 rostopic hz /duckbot12/parking_perception_localization/switch =====>
+subscribed to [/duckbot12/parking_perception_localization/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/simple_coordinator_node/car_cmd]$rostopic info /duckbot12/simple_coordinator_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /duckbot12/fake_coordinator_node (http://duckbot12:41231/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/simple_coordinator_node/car_cmd]$timeout 1 rostopic hz /duckbot12/simple_coordinator_node/car_cmd =====>
+subscribed to [/duckbot12/simple_coordinator_node/car_cmd]
+no new messages
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 v
+float32 omega
+
+[TOPIC=/duckbot12/simple_coordinator_node/intersection_go]$rostopic info /duckbot12/simple_coordinator_node/intersection_go =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fake_coordinator_node (http://duckbot12:41231/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/simple_coordinator_node/intersection_go]$timeout 1 rostopic hz /duckbot12/simple_coordinator_node/intersection_go =====>
+subscribed to [/duckbot12/simple_coordinator_node/intersection_go]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/simple_stop_controller_node/car_cmd]$rostopic info /duckbot12/simple_stop_controller_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+
+
+[TOPIC_HZ=/duckbot12/simple_stop_controller_node/car_cmd]$timeout 1 rostopic hz /duckbot12/simple_stop_controller_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 v
+float32 omega
+
+[TOPIC=/duckbot12/static_object_detector_node/switch]$rostopic info /duckbot12/static_object_detector_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/static_object_detector_node/switch]$timeout 1 rostopic hz /duckbot12/static_object_detector_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/stop_line_filter_node/at_stop_line]$rostopic info /duckbot12/stop_line_filter_node/at_stop_line =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/stop_line_filter_node (http://duckbot12:42698/)
+
+Subscribers: 
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+
+[TOPIC_HZ=/duckbot12/stop_line_filter_node/at_stop_line]$timeout 1 rostopic hz /duckbot12/stop_line_filter_node/at_stop_line =====>
+subscribed to [/duckbot12/stop_line_filter_node/at_stop_line]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/stop_line_filter_node/stop_line_reading]$rostopic info /duckbot12/stop_line_filter_node/stop_line_reading =====>
+Type: duckietown_msgs/StopLineReading
+
+Publishers: 
+ * /duckbot12/stop_line_filter_node (http://duckbot12:42698/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/stop_line_filter_node/stop_line_reading]$timeout 1 rostopic hz /duckbot12/stop_line_filter_node/stop_line_reading =====>
+subscribed to [/duckbot12/stop_line_filter_node/stop_line_reading]
+[TOPIC_TYPE=duckietown_msgs/StopLineReading]$rosmsg show duckietown_msgs/StopLineReading =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool stop_line_detected
+bool at_stop_line
+geometry_msgs/Point stop_line_point
+  float64 x
+  float64 y
+  float64 z
+
+[TOPIC=/duckbot12/stop_line_filter_node/switch]$rostopic info /duckbot12/stop_line_filter_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: 
+ * /duckbot12/stop_line_filter_node (http://duckbot12:42698/)
+
+
+[TOPIC_HZ=/duckbot12/stop_line_filter_node/switch]$timeout 1 rostopic hz /duckbot12/stop_line_filter_node/switch =====>
+subscribed to [/duckbot12/stop_line_filter_node/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/vehicle_avoidance_control_node/car_cmd]$rostopic info /duckbot12/vehicle_avoidance_control_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: None
+
+Subscribers: 
+ * /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+
+
+[TOPIC_HZ=/duckbot12/vehicle_avoidance_control_node/car_cmd]$timeout 1 rostopic hz /duckbot12/vehicle_avoidance_control_node/car_cmd =====>
+subscribed to [/duckbot12/vehicle_avoidance_control_node/car_cmd]
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 v
+float32 omega
+
+[TOPIC=/duckbot12/vehicle_avoidance_control_node/switch]$rostopic info /duckbot12/vehicle_avoidance_control_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/vehicle_avoidance_control_node/switch]$timeout 1 rostopic hz /duckbot12/vehicle_avoidance_control_node/switch =====>
+subscribed to [/duckbot12/vehicle_avoidance_control_node/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/vehicle_detection_node/switch]$rostopic info /duckbot12/vehicle_detection_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/vehicle_detection_node/switch]$timeout 1 rostopic hz /duckbot12/vehicle_detection_node/switch =====>
+subscribed to [/duckbot12/vehicle_detection_node/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/vehicle_filter_node/switch]$rostopic info /duckbot12/vehicle_filter_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/duckbot12/vehicle_filter_node/switch]$timeout 1 rostopic hz /duckbot12/vehicle_filter_node/switch =====>
+subscribed to [/duckbot12/vehicle_filter_node/switch]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/wheels_driver_node/emergency_stop]$rostopic info /duckbot12/wheels_driver_node/emergency_stop =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+
+Subscribers: 
+ * /duckbot12/wheels_driver_node (http://duckbot12:39251/)
+
+
+[TOPIC_HZ=/duckbot12/wheels_driver_node/emergency_stop]$timeout 1 rostopic hz /duckbot12/wheels_driver_node/emergency_stop =====>
+subscribed to [/duckbot12/wheels_driver_node/emergency_stop]
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+bool data
+
+[TOPIC=/duckbot12/wheels_driver_node/wheels_cmd]$rostopic info /duckbot12/wheels_driver_node/wheels_cmd =====>
+Type: duckietown_msgs/WheelsCmdStamped
+
+Publishers: 
+ * /duckbot12/inverse_kinematics_node (http://duckbot12:36201/)
+
+Subscribers: 
+ * /duckbot12/wheels_driver_node (http://duckbot12:39251/)
+
+
+[TOPIC_HZ=/duckbot12/wheels_driver_node/wheels_cmd]$timeout 1 rostopic hz /duckbot12/wheels_driver_node/wheels_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/WheelsCmdStamped]$rosmsg show duckietown_msgs/WheelsCmdStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 vel_left
+float32 vel_right
+
+[TOPIC=/duckbot12/wheels_driver_node/wheels_cmd_executed]$rostopic info /duckbot12/wheels_driver_node/wheels_cmd_executed =====>
+Type: duckietown_msgs/WheelsCmdStamped
+
+Publishers: 
+ * /duckbot12/wheels_driver_node (http://duckbot12:39251/)
+
+Subscribers: 
+ * /duckbot12/lane_controller_node (http://duckbot12:44070/)
+
+
+[TOPIC_HZ=/duckbot12/wheels_driver_node/wheels_cmd_executed]$timeout 1 rostopic hz /duckbot12/wheels_driver_node/wheels_cmd_executed =====>
+subscribed to [/duckbot12/wheels_driver_node/wheels_cmd_executed]
+[TOPIC_TYPE=duckietown_msgs/WheelsCmdStamped]$rosmsg show duckietown_msgs/WheelsCmdStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 vel_left
+float32 vel_right
+
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /duckbot12/joy_node (http://duckbot12:44522/)
+ * /duckbot12_to_map (http://duckbot12:45931/)
+ * /duckbot12/fsm_node (http://duckbot12:42308/)
+ * /duckbot12/duckiebot_visualizer (http://duckbot12:45150/)
+ * /duckbot12/car_cmd_switch_node (http://duckbot12:39455/)
+ * /duckbot12/joy_mapper_node (http://duckbot12:46496/)
+ * /duckbot12/logic_gate_node (http://duckbot12:39733/)
+ * /duckbot12/wheels_driver_node (http://duckbot12:39251/)
+ * /duckbot12/fake_coordinator_node (http://duckbot12:41231/)
+ * /duckbot12/led_emitter_node (http://duckbot12:33596/)
+ * /duckbot12/stop_line_filter_node (http://duckbot12:42698/)
+ * /duckbot12/lane_controller_node (http://duckbot12:44070/)
+ * /duckbot12/lane_pose_visualizer_node (http://duckbot12:37639/)
+ * /duckbot12/ground_projection (http://duckbot12:33958/)
+ * /duckbot12/lane_filter_node (http://duckbot12:41679/)
+ * /duckbot12/cam_info_reader_node (http://duckbot12:40909/)
+ * /duckbot12/inverse_kinematics_node (http://duckbot12:36201/)
+ * /duckbot12/camera_node (http://duckbot12:46817/)
+ * /duckbot12/line_detector_node (http://duckbot12:45749/)
+ * /duckbot12/anti_instagram_node (http://duckbot12:40512/)
+
+Subscribers: 
+ * /rosout (http://duckbot12:34295/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://duckbot12:34295/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+subscribed to [/rosout_agg]
+average rate: 1950.537
+	min: 0.000s max: 0.001s std dev: 0.00066s window: 4
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/tf]$rostopic info /tf =====>
+Type: tf2_msgs/TFMessage
+
+Publishers: 
+ * /duckbot12_to_map (http://duckbot12:45931/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/tf]$timeout 1 rostopic hz /tf =====>
+subscribed to [/tf]
+[TOPIC_TYPE=tf2_msgs/TFMessage]$rosmsg show tf2_msgs/TFMessage =====>
+geometry_msgs/TransformStamped[] transforms
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string child_frame_id
+  geometry_msgs/Transform transform
+    geometry_msgs/Vector3 translation
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion rotation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>
+[0m[ INFO] [1538745190.898354233]: Recording to 2018-10-05-09-13-10.bag.[0m
+[0m[ INFO] [1538745190.919407213]: Subscribing to /duckbot12/LED_coordination_node/switch[0m
+[0m[ INFO] [1538745191.076101767]: Subscribing to /duckbot12/implicit_coordination_node/switch[0m
+[0m[ INFO] [1538745191.230649687]: Subscribing to /duckbot12/camera_node/framerate_high_switch[0m
+[0m[ INFO] [1538745191.350663221]: Subscribing to /duckbot12/stop_line_filter_node/switch[0m
+[0m[ INFO] [1538745191.469245327]: Subscribing to /duckbot12/lane_filter_node/ml_img[0m
+[0m[ INFO] [1538745191.667148383]: Subscribing to /duckbot12/anti_instagram_node/health[0m
+[0m[ INFO] [1538745191.852919983]: Subscribing to /duckbot12/logic_gate_node/joystick_override_on_and_parallel_autonomy_on[0m
+[0m[ INFO] [1538745192.045601948]: Subscribing to /duckbot12/led_emitter_node/current_led_state[0m
+[0m[ INFO] [1538745192.267093320]: Subscribing to /tf[0m
+[0m[ INFO] [1538745192.480398505]: Subscribing to /duckbot12/simple_coordinator_node/car_cmd[0m
+[0m[ INFO] [1538745192.695175776]: Subscribing to /duckbot12/joy_mapper_node/parallel_autonomy[0m
+[0m[ INFO] [1538745192.898504896]: Subscribing to /duckbot12/joy_mapper_node/joystick_override[0m
+[0m[ INFO] [1538745193.175768169]: Subscribing to /duckbot12/parking_path_planning/switch[0m
+[0m[ INFO] [1538745193.398580144]: Subscribing to /duckbot12/lane_controller_node/switch[0m
+[0m[ INFO] [1538745193.544987464]: Subscribing to /duckbot12/stop_line_filter_node/stop_line_reading[0m
+[0m[ INFO] [1538745193.711245546]: Subscribing to /duckbot12/lane_controller_node/radius_limit[0m
+[0m[ INFO] [1538745193.918214913]: Subscribing to /duckbot12/anti_instagram_node/corrected_image[0m
+[0m[ INFO] [1538745194.258462236]: Subscribing to /duckbot12/lane_filter_node/entropy[0m
+[0m[ INFO] [1538745194.545883481]: Subscribing to /duckbot12/lane_controller_node/car_cmd[0m
+[0m[ INFO] [1538745194.744881892]: Subscribing to /duckbot12/parking_control/switch[0m
+[0m[ INFO] [1538745194.997337301]: Subscribing to /duckbot12/inverse_kinematics_node/actuator_params[0m
+[0m[ INFO] [1538745195.199987961]: Subscribing to /duckbot12/logic_gate_node/at_stop_line_and_parking_on[0m
+[0m[ INFO] [1538745195.366453433]: Subscribing to /duckbot12/logic_gate_node/joystick_override_off_and_deep_lane_off[0m
+[0m[ INFO] [1538745195.503260548]: Subscribing to /duckbot12/camera_node/camera_info[0m
+[0m[ INFO] [1538745195.665646538]: Subscribing to /duckbot12/car_cmd_switch_node/cmd[0m
+[0m[ INFO] [1538745195.866710080]: Subscribing to /duckbot12/line_detector_node/segment_list[0m
+[0m[ INFO] [1538745196.094381283]: Subscribing to /duckbot12/intersection_navigation_node/switch[0m
+[0m[ INFO] [1538745196.244635723]: Subscribing to /duckbot12/anti_instagram_node/transform[0m
+[0m[ INFO] [1538745196.411191677]: Subscribing to /duckbot12/joy_mapper_node/car_cmd[0m
+[0m[ INFO] [1538745196.610498077]: Subscribing to /duckbot12/apriltag_detector_node/switch[0m
+[0m[ INFO] [1538745196.828742561]: Subscribing to /duckbot12/LED_detection_node/switch[0m
+[0m[ INFO] [1538745196.982020828]: Subscribing to /duckbot12/LED_detector_node/switch[0m
+[0m[ INFO] [1538745197.163229524]: Subscribing to /duckbot12/intersection_localization_node/switch[0m
+[0m[ INFO] [1538745197.324021564]: Subscribing to /diagnostics[0m
+[0m[ INFO] [1538745197.466349185]: Subscribing to /duckbot12/wheels_driver_node/emergency_stop[0m
+[0m[ INFO] [1538745197.670066348]: Subscribing to /duckbot12/ground_projection/lineseglist_out[0m
+[0m[ INFO] [1538745197.888220344]: Subscribing to /duckbot12/line_detector_node/image_with_lines[0m
+[0m[ INFO] [1538745198.030917441]: Subscribing to /duckbot12/led_emitter_node/switch[0m
+[0m[ INFO] [1538745198.184589900]: Subscribing to /duckbot12/line_detector_node/switch[0m
+[0m[ INFO] [1538745198.346389356]: Subscribing to /duckbot12/obstacle_avoidance_node/switch[0m
+[0m[ INFO] [1538745198.623870509]: Subscribing to /duckbot12/lane_controller_node/actuator_params_received[0m
+[0m[ INFO] [1538745198.863232914]: Sub

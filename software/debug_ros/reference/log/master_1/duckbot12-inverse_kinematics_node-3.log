@@ -1,0 +1,70 @@
+[rospy.client][INFO] 2018-10-05 21:04:33,536: [32minit_node, name[/duckbot12/inverse_kinematics_node], pid[2623][0m
+[xmlrpc][INFO] 2018-10-05 21:04:33,539: [32mXML-RPC server binding to 0.0.0.0:0[0m
+[xmlrpc][INFO] 2018-10-05 21:04:33,545: [32mStarted XML-RPC server [http://duckbot12:36201/][0m
+[rospy.init][INFO] 2018-10-05 21:04:33,546: [32mROS Slave URI: [http://duckbot12:36201/][0m
+[rospy.impl.masterslave][INFO] 2018-10-05 21:04:33,548: [32m_ready: http://duckbot12:36201/[0m
+[rospy.registration][INFO] 2018-10-05 21:04:33,556: [32mRegistering with master node http://duckbot12:11311[0m
+[xmlrpc][INFO] 2018-10-05 21:04:33,558: [32mxml rpc node: starting XML-RPC server[0m
+[rospy.init][INFO] 2018-10-05 21:04:33,650: [32mregistered with master[0m
+[rospy.rosout][INFO] 2018-10-05 21:04:33,652: [32minitializing /rosout core topic[0m
+[rospy.rosout][INFO] 2018-10-05 21:04:33,701: [32mconnected to core topic /rosout[0m
+[rospy.simtime][INFO] 2018-10-05 21:04:33,732: [32m/use_sim_time is not set, will not subscribe to simulated time [/clock] topic[0m
+[rospy.internal][INFO] 2018-10-05 21:04:33,914: [32mtopic[/rosout] adding connection to [/rosout], count 0[0m
+[rosout][INFO] 2018-10-05 21:04:34,186: [32m[/duckbot12/inverse_kinematics_node] ~gain = 1.0 [0m
+[rosout][INFO] 2018-10-05 21:04:34,234: [32m[/duckbot12/inverse_kinematics_node] ~trim = 0.0399999991059 [0m
+[rosout][INFO] 2018-10-05 21:04:34,281: [32m[/duckbot12/inverse_kinematics_node] ~baseline = 0.1 [0m
+[rosout][INFO] 2018-10-05 21:04:34,331: [32m[/duckbot12/inverse_kinematics_node] ~radius = 0.0318 [0m
+[rosout][INFO] 2018-10-05 21:04:34,362: [32m[/duckbot12/inverse_kinematics_node] ~k = 27.0 [0m
+[rosout][INFO] 2018-10-05 21:04:34,410: [32m[/duckbot12/inverse_kinematics_node] ~limit = 1.0 [0m
+[rospy.internal][INFO] 2018-10-05 21:04:34,688: [32mtopic[/duckbot12/car_cmd_switch_node/cmd] adding connection to [http://duckbot12:39455/], count 0[0m
+[rosout][INFO] 2018-10-05 21:04:34,791: [32m[/duckbot12/inverse_kinematics_node] Initialized.[0m
+[rosout][INFO] 2018-10-05 21:04:34,796: [32m[/duckbot12/inverse_kinematics_node] gain: 1.0 trim: 0.0399999991059 baseline: 0.1 radius: 0.0318 k: 27.0 limit: 1.0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:34,805: [32mtopic[/duckbot12/lane_controller_node/actuator_params_received] adding connection to [http://duckbot12:44070/], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:34,867: [32mtopic[/duckbot12/wheels_driver_node/wheels_cmd] adding connection to [/duckbot12/wheels_driver_node], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:34,887: [32mtopic[/duckbot12/inverse_kinematics_node/actuator_params] adding connection to [/duckbot12/lane_controller_node], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:13:15,695: [32mtopic[/duckbot12/inverse_kinematics_node/actuator_params] adding connection to [/record_1538745190769931271], count 1[0m
+[rospy.internal][INFO] 2018-10-05 21:21:56,019: [32mtopic[/rosout] adding connection to [/rqt_gui_py_node_2192], count 1[0m
+[rosout][WARNING] 2018-10-05 21:22:17,397: [33mInbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.[0m
+[rospy.internal][ERROR] 2018-10-05 21:22:17,409: [31mInbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[0m
+[rospy.internal][INFO] 2018-10-05 21:22:17,837: [32mtopic[/rosout] removing connection to /rqt_gui_py_node_2192[0m
+[rospy.internal][ERROR] 2018-10-05 21:22:31,181: [31mUnable to initiate TCP/IP socket to duckbot12:41632 (http://duckbot12:39455/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+[0m
+[rospy.internal][WARNING] 2018-10-05 21:22:32,188: [33mUnknown error initiating TCP/IP socket to duckbot12:41632 (http://duckbot12:39455/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,191: [32mtopic[/duckbot12/car_cmd_switch_node/cmd] removing connection to http://duckbot12:39455/[0m
+[rospy.impl.masterslave][INFO] 2018-10-05 21:22:32,216: [32mexternal shutdown request from [/rosnode]: user request[0m
+[rospy.core][INFO] 2018-10-05 21:22:32,218: [32msignal_shutdown [external shutdown request from [/rosnode]: [user request]][0m
+[rospy.internal][INFO] 2018-10-05 21:22:33,040: [32mtopic[/duckbot12/wheels_driver_node/wheels_cmd] removing connection to /duckbot12/wheels_driver_node[0m
+[rospy.internal][INFO] 2018-10-05 21:22:33,046: [32mtopic[/duckbot12/inverse_kinematics_node/actuator_params] removing connection to /duckbot12/lane_controller_node[0m
+[rospy.internal][INFO] 2018-10-05 21:22:33,048: [32mtopic[/duckbot12/inverse_kinematics_node/actuator_params] removing connection to /record_1538745190769931271[0m
+[rospy.internal][INFO] 2018-10-05 21:22:33,051: [32mtopic[/rosout] removing connection to /rosout[0m
+[rospy.internal][ERROR] 2018-10-05 21:22:33,059: [31mUnable to initiate TCP/IP socket to duckbot12:39631 (http://duckbot12:44070/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+[0m
+[rospy.internal][INFO] 2018-10-05 21:22:33,061: [32mtopic[/duckbot12/lane_controller_node/actuator_params_received] removing connection to http://duckbot12:44070/[0m
+[rospy.core][INFO] 2018-10-05 21:22:33,168: [32msignal_shutdown [atexit][0m

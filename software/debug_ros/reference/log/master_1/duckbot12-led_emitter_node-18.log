@@ -1,0 +1,52 @@
+[rospy.client][INFO] 2018-10-05 21:03:12,429: init_node, name[/duckbot12/led_emitter_node], pid[2672]
+[xmlrpc][INFO] 2018-10-05 21:03:12,433: XML-RPC server binding to 0.0.0.0:0
+[rospy.init][INFO] 2018-10-05 21:03:12,447: ROS Slave URI: [http://duckbot12:33596/]
+[xmlrpc][INFO] 2018-10-05 21:03:12,449: Started XML-RPC server [http://duckbot12:33596/]
+[rospy.impl.masterslave][INFO] 2018-10-05 21:03:12,450: _ready: http://duckbot12:33596/
+[rospy.registration][INFO] 2018-10-05 21:03:12,472: Registering with master node http://duckbot12:11311
+[xmlrpc][INFO] 2018-10-05 21:03:12,482: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-05 21:03:12,549: registered with master
+[rospy.rosout][INFO] 2018-10-05 21:03:12,551: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-05 21:03:12,670: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-05 21:03:12,765: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-05 21:03:12,900: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-05 21:03:13,780: changePattern('CAR_SIGNAL_A')
+[rospy.internal][INFO] 2018-10-05 21:03:15,379: topic[/duckbot12/led_emitter_node/switch] adding connection to [http://duckbot12:42308/], count 0
+[rosout][WARNING] 2018-10-05 21:10:09,750: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-05 21:10:09,770: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-05 21:13:12,769: topic[/duckbot12/led_emitter_node/current_led_state] adding connection to [/record_1538745190769931271], count 0
+[rospy.internal][INFO] 2018-10-05 21:21:55,031: topic[/duckbot12/led_emitter_node/current_led_state] adding connection to [/rqt_gui_py_node_2192], count 1
+[rospy.internal][INFO] 2018-10-05 21:21:55,805: topic[/rosout] adding connection to [/rqt_gui_py_node_2192], count 1
+[rosout][WARNING] 2018-10-05 21:22:17,307: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-05 21:22:17,311: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-05 21:22:17,534: topic[/rosout] removing connection to /rqt_gui_py_node_2192
+[rospy.internal][INFO] 2018-10-05 21:22:17,549: topic[/duckbot12/led_emitter_node/current_led_state] removing connection to /rqt_gui_py_node_2192
+[rospy.internal][ERROR] 2018-10-05 21:22:31,975: Unable to initiate TCP/IP socket to duckbot12:46171 (http://duckbot12:42308/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.core][INFO] 2018-10-05 21:22:32,106: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2018-10-05 21:22:32,407: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-05 21:22:32,409: topic[/duckbot12/led_emitter_node/current_led_state] removing connection to /record_1538745190769931271
+[rospy.internal][INFO] 2018-10-05 21:22:32,412: topic[/duckbot12/led_emitter_node/switch] removing connection to http://duckbot12:42308/
+[rospy.impl.masterslave][INFO] 2018-10-05 21:22:32,418: signal-2
+[rospy.core][INFO] 2018-10-05 21:22:32,740: signal_shutdown [atexit]

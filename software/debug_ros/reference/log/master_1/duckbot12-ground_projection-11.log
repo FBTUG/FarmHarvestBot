@@ -1,0 +1,47 @@
+[rospy.client][INFO] 2018-10-05 21:04:33,206: [32minit_node, name[/duckbot12/ground_projection], pid[2655][0m
+[xmlrpc][INFO] 2018-10-05 21:04:33,227: [32mXML-RPC server binding to 0.0.0.0:0[0m
+[xmlrpc][INFO] 2018-10-05 21:04:33,234: [32mStarted XML-RPC server [http://duckbot12:33958/][0m
+[rospy.impl.masterslave][INFO] 2018-10-05 21:04:33,251: [32m_ready: http://duckbot12:33958/[0m
+[xmlrpc][INFO] 2018-10-05 21:04:33,253: [32mxml rpc node: starting XML-RPC server[0m
+[rospy.registration][INFO] 2018-10-05 21:04:33,263: [32mRegistering with master node http://duckbot12:11311[0m
+[rospy.init][INFO] 2018-10-05 21:04:33,269: [32mROS Slave URI: [http://duckbot12:33958/][0m
+[rospy.init][INFO] 2018-10-05 21:04:33,274: [32mregistered with master[0m
+[rospy.rosout][INFO] 2018-10-05 21:04:33,276: [32minitializing /rosout core topic[0m
+[rospy.rosout][INFO] 2018-10-05 21:04:33,378: [32mconnected to core topic /rosout[0m
+[rospy.simtime][INFO] 2018-10-05 21:04:33,398: [32m/use_sim_time is not set, will not subscribe to simulated time [/clock] topic[0m
+[rospy.internal][INFO] 2018-10-05 21:04:33,805: [32mtopic[/rosout] adding connection to [/rosout], count 0[0m
+[DT][INFO] 2018-10-05 21:04:35,703: [32mUsing filename /home/ubuntu/duckiefleet/calibrations/camera_extrinsic/duckbot12.yaml[0m
+[DT][INFO] 2018-10-05 21:04:38,459: [32mUsing filename /home/ubuntu/duckiefleet/calibrations/camera_extrinsic/duckbot12.yaml[0m
+[rosout][INFO] 2018-10-05 21:04:38,520: [32mcamera info topic is /duckbot12/camera_node/camera_info[0m
+[rosout][INFO] 2018-10-05 21:04:38,525: [32mwaiting for camera info[0m
+[rospy.internal][INFO] 2018-10-05 21:04:38,574: [32mtopic[/duckbot12/camera_node/camera_info] adding connection to [http://duckbot12:40909/], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:38,641: [32mtopic impl's ref count is zero, deleting topic /duckbot12/camera_node/camera_info...[0m
+[rospy.internal][INFO] 2018-10-05 21:04:38,642: [32mtopic[/duckbot12/camera_node/camera_info] removing connection to http://duckbot12:40909/[0m
+[rosout][INFO] 2018-10-05 21:04:38,669: [32mcamera info received[0m
+[rospy.internal][INFO] 2018-10-05 21:04:38,805: [32mtopic[/duckbot12/ground_projection/lineseglist_out] adding connection to [/duckbot12/stop_line_filter_node], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:38,822: [32mtopic[/duckbot12/ground_projection/lineseglist_out] adding connection to [/duckbot12/duckiebot_visualizer], count 1[0m
+[rospy.internal][INFO] 2018-10-05 21:04:38,840: [32mtopic[/duckbot12/line_detector_node/segment_list] adding connection to [http://duckbot12:45749/], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:59,558: [32mtopic[/duckbot12/ground_projection/lineseglist_out] adding connection to [/duckbot12/lane_filter_node], count 2[0m
+[rospy.internal][INFO] 2018-10-05 21:13:18,412: [32mtopic[/duckbot12/ground_projection/lineseglist_out] adding connection to [/record_1538745190769931271], count 3[0m
+[rospy.internal][INFO] 2018-10-05 21:21:55,902: [32mtopic[/rosout] adding connection to [/rqt_gui_py_node_2192], count 1[0m
+[rospy.internal][INFO] 2018-10-05 21:22:17,402: [32mtopic[/rosout] removing connection to /rqt_gui_py_node_2192[0m
+[rospy.internal][INFO] 2018-10-05 21:22:31,566: [32mtopic[/duckbot12/ground_projection/lineseglist_out] removing connection to /duckbot12/duckiebot_visualizer[0m
+[rospy.core][INFO] 2018-10-05 21:22:32,162: [32msignal_shutdown [signal-2][0m
+[rosout][INFO] 2018-10-05 21:22:32,163: [32m[GroundProjectionNode] Shutdown.[0m
+[rospy.impl.masterslave][INFO] 2018-10-05 21:22:32,195: [32mexternal shutdown request from [/rosnode]: user request[0m
+[rospy.core][INFO] 2018-10-05 21:22:32,198: [32msignal_shutdown [external shutdown request from [/rosnode]: [user request]][0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,689: [32mtopic[/rosout] removing connection to /rosout[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,733: [32mtopic[/duckbot12/ground_projection/lineseglist_out] removing connection to /duckbot12/stop_line_filter_node[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,735: [32mtopic[/duckbot12/ground_projection/lineseglist_out] removing connection to /duckbot12/lane_filter_node[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,738: [32mtopic[/duckbot12/ground_projection/lineseglist_out] removing connection to /record_1538745190769931271[0m
+[rospy.internal][ERROR] 2018-10-05 21:22:32,753: [31mUnable to initiate TCP/IP socket to duckbot12:41135 (http://duckbot12:45749/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+[0m
+[rospy.internal][INFO] 2018-10-05 21:22:32,749: [32mtopic[/duckbot12/line_detector_node/segment_list] removing connection to http://duckbot12:45749/[0m
+[rospy.core][INFO] 2018-10-05 21:22:32,860: [32msignal_shutdown [atexit][0m

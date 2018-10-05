@@ -1,0 +1,57 @@
+[rospy.client][INFO] 2018-10-05 21:03:12,038: init_node, name[/duckbot12/fake_coordinator_node], pid[2674]
+[xmlrpc][INFO] 2018-10-05 21:03:12,045: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-05 21:03:12,048: Started XML-RPC server [http://duckbot12:41231/]
+[rospy.impl.masterslave][INFO] 2018-10-05 21:03:12,049: _ready: http://duckbot12:41231/
+[rospy.init][INFO] 2018-10-05 21:03:12,054: ROS Slave URI: [http://duckbot12:41231/]
+[rospy.registration][INFO] 2018-10-05 21:03:12,087: Registering with master node http://duckbot12:11311
+[xmlrpc][INFO] 2018-10-05 21:03:12,101: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-05 21:03:12,155: registered with master
+[rospy.rosout][INFO] 2018-10-05 21:03:12,161: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-05 21:03:12,314: connected to core topic /rosout
+[rospy.internal][INFO] 2018-10-05 21:03:12,449: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.simtime][INFO] 2018-10-05 21:03:12,492: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-05 21:03:13,069: topic[/duckbot12/fsm_node/mode] adding connection to [http://duckbot12:42308/], count 0
+[rospy.internal][INFO] 2018-10-05 21:11:41,604: topic[/duckbot12/simple_coordinator_node/car_cmd] adding connection to [/rostopic_1820_1538745100665], count 0
+[rosout][WARNING] 2018-10-05 21:11:41,695: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-05 21:11:41,707: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-05 21:11:41,892: topic[/duckbot12/simple_coordinator_node/car_cmd] removing connection to /rostopic_1820_1538745100665
+[rospy.internal][INFO] 2018-10-05 21:13:13,217: topic[/duckbot12/simple_coordinator_node/car_cmd] adding connection to [/record_1538745190769931271], count 0
+[rospy.internal][INFO] 2018-10-05 21:21:55,935: topic[/rosout] adding connection to [/rqt_gui_py_node_2192], count 1
+[rosout][WARNING] 2018-10-05 21:22:17,345: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-05 21:22:17,350: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-05 21:22:17,701: topic[/rosout] removing connection to /rqt_gui_py_node_2192
+[rospy.impl.masterslave][INFO] 2018-10-05 21:22:31,501: external shutdown request from [/rosnode]: user request
+[rospy.core][INFO] 2018-10-05 21:22:31,503: signal_shutdown [external shutdown request from [/rosnode]: [user request]]
+[rosout][INFO] 2018-10-05 21:22:31,504: [LaneFilterNode] Shutdown.
+[rospy.internal][INFO] 2018-10-05 21:22:31,539: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-05 21:22:31,541: topic[/duckbot12/simple_coordinator_node/car_cmd] removing connection to /record_1538745190769931271
+[rospy.internal][INFO] 2018-10-05 21:22:31,543: topic[/duckbot12/fsm_node/mode] removing connection to http://duckbot12:42308/
+[rospy.internal][WARNING] 2018-10-05 21:22:31,545: Unknown error initiating TCP/IP socket to duckbot12:46171 (http://duckbot12:42308/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.topics][ERROR] 2018-10-05 21:22:31,549: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 838, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.core][INFO] 2018-10-05 21:22:31,661: signal_shutdown [atexit]

@@ -1,0 +1,57 @@
+[rospy.client][INFO] 2018-10-05 21:04:43,605: [32minit_node, name[/duckbot12/anti_instagram_node], pid[2676][0m
+[xmlrpc][INFO] 2018-10-05 21:04:43,608: [32mXML-RPC server binding to 0.0.0.0:0[0m
+[xmlrpc][INFO] 2018-10-05 21:04:43,611: [32mStarted XML-RPC server [http://duckbot12:40512/][0m
+[rospy.impl.masterslave][INFO] 2018-10-05 21:04:43,615: [32m_ready: http://duckbot12:40512/[0m
+[rospy.init][INFO] 2018-10-05 21:04:43,613: [32mROS Slave URI: [http://duckbot12:40512/][0m
+[xmlrpc][INFO] 2018-10-05 21:04:43,624: [32mxml rpc node: starting XML-RPC server[0m
+[rospy.registration][INFO] 2018-10-05 21:04:43,627: [32mRegistering with master node http://duckbot12:11311[0m
+[rospy.init][INFO] 2018-10-05 21:04:43,722: [32mregistered with master[0m
+[rospy.rosout][INFO] 2018-10-05 21:04:43,723: [32minitializing /rosout core topic[0m
+[rospy.rosout][INFO] 2018-10-05 21:04:43,745: [32mconnected to core topic /rosout[0m
+[rospy.simtime][INFO] 2018-10-05 21:04:43,762: [32m/use_sim_time is not set, will not subscribe to simulated time [/clock] topic[0m
+[rospy.internal][INFO] 2018-10-05 21:04:44,010: [32mtopic[/duckbot12/camera_node/image/compressed] adding connection to [http://duckbot12:46817/], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:44,021: [32mtopic[/rosout] adding connection to [/rosout], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:44,057: [32mtopic[/duckbot12/anti_instagram_node/click] adding connection to [http://duckbot12:46496/], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:04:44,130: [32mtopic[/duckbot12/anti_instagram_node/transform] adding connection to [/duckbot12/line_detector_node], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:06:30,237: [32mtopic[/duckbot12/anti_instagram_node/health] adding connection to [/rostopic_700_1538744789315], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:06:30,286: [32mtopic[/duckbot12/anti_instagram_node/health] removing connection to /rostopic_700_1538744789315[0m
+[rospy.internal][INFO] 2018-10-05 21:13:12,405: [32mtopic[/duckbot12/anti_instagram_node/health] adding connection to [/record_1538745190769931271], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:13:14,825: [32mtopic[/duckbot12/anti_instagram_node/corrected_image] adding connection to [/record_1538745190769931271], count 0[0m
+[rospy.internal][INFO] 2018-10-05 21:13:16,916: [32mtopic[/duckbot12/anti_instagram_node/transform] adding connection to [/record_1538745190769931271], count 1[0m
+[rospy.internal][INFO] 2018-10-05 21:21:55,271: [32mtopic[/duckbot12/anti_instagram_node/corrected_image] adding connection to [/rqt_gui_py_node_2192], count 1[0m
+[rospy.internal][INFO] 2018-10-05 21:21:56,061: [32mtopic[/rosout] adding connection to [/rqt_gui_py_node_2192], count 1[0m
+[rosout][WARNING] 2018-10-05 21:22:17,430: [33mInbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.[0m
+[rospy.internal][ERROR] 2018-10-05 21:22:17,440: [31mInbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[0m
+[rospy.internal][INFO] 2018-10-05 21:22:17,798: [32mtopic[/rosout] removing connection to /rqt_gui_py_node_2192[0m
+[rospy.internal][INFO] 2018-10-05 21:22:17,804: [32mtopic[/duckbot12/anti_instagram_node/corrected_image] removing connection to /rqt_gui_py_node_2192[0m
+[rospy.impl.masterslave][INFO] 2018-10-05 21:22:30,176: [32mexternal shutdown request from [/rosnode]: user request[0m
+[rospy.core][INFO] 2018-10-05 21:22:30,177: [32msignal_shutdown [external shutdown request from [/rosnode]: [user request]][0m
+[rospy.internal][INFO] 2018-10-05 21:22:30,246: [32mtopic[/duckbot12/anti_instagram_node/health] removing connection to /record_1538745190769931271[0m
+[rospy.internal][INFO] 2018-10-05 21:22:30,249: [32mtopic[/duckbot12/anti_instagram_node/transform] removing connection to /duckbot12/line_detector_node[0m
+[rospy.internal][INFO] 2018-10-05 21:22:30,257: [32mtopic[/duckbot12/anti_instagram_node/transform] removing connection to /record_1538745190769931271[0m
+[rospy.internal][INFO] 2018-10-05 21:22:30,259: [32mtopic[/rosout] removing connection to /rosout[0m
+[rospy.internal][INFO] 2018-10-05 21:22:30,265: [32mtopic[/duckbot12/anti_instagram_node/corrected_image] removing connection to /record_1538745190769931271[0m
+[rospy.internal][INFO] 2018-10-05 21:22:30,267: [32mtopic[/duckbot12/camera_node/image/compressed] removing connection to http://duckbot12:46817/[0m
+[rospy.internal][INFO] 2018-10-05 21:22:30,269: [32mtopic[/duckbot12/anti_instagram_node/click] removing connection to http://duckbot12:46496/[0m
+[rospy.internal][WARNING] 2018-10-05 21:22:30,272: [33mUnknown error initiating TCP/IP socket to duckbot12:36037 (http://duckbot12:46496/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+[0m
+[rospy.topics][ERROR] 2018-10-05 21:22:30,329: [31mTraceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 838, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+[0m
+[rospy.core][INFO] 2018-10-05 21:22:30,433: [32msignal_shutdown [atexit][0m
