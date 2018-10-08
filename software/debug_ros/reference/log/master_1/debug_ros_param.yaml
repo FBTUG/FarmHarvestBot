@@ -1,0 +1,247 @@
+duckbot12:
+  cam_info_reader_node: {cali_file_name: duckbot12, config: baseline, image_type: compressed,
+    pub_freq: 1.0}
+  camera_node: {framerate_high: 30, framerate_low: 15, res_h: 480, res_w: 640}
+  car_cmd_switch_node:
+    mappings: {ARRIVE_AT_STOP_LINE: stop, AVOID_OBSTACLE: obstacle, AVOID_VEHICLE: vehicle,
+      DEEP_LANE_FOLLOWING: deep_learning, INTERSECTION_CONTROL: intersection, INTERSECTION_COORDINATION: stop,
+      INTERSECTION_RECOVERY: recovery, LANE_FOLLOWING: lane, LANE_FOLLOWING_AVOID: lane,
+      LANE_RECOVERY: recovery, LOCALIZATION: stop, NORMAL_JOYSTICK_CONTROL: joystick,
+      PARALLEL_AUTONOMY: parallel_autonomy, PARKING: parking, SAFE_JOYSTICK_CONTROL: joystick}
+    mode_topic: fsm_node/mode
+    source_topics: {deep_learning: duckiebot_il_lane_following/car_cmd, intersection: open_loop_intersection_control_node/car_cmd,
+      joystick: joy_mapper_node/car_cmd, lane: lane_controller_node/car_cmd, obstacle: simple_stop_controller_node/car_cmd,
+      parallel_autonomy: lane_supervisor_node/car_cmd, parking: lane_controller_node/car_cmd,
+      recovery: lane_recovery_node/car_cmd, stop: simple_stop_controller_node/car_cmd,
+      vehicle: vehicle_avoidance_control_node/car_cmd}
+  duckiebot_visualizer: {veh_name: duckbot12}
+  fsm_node:
+    events:
+      apriltag_intersection: {msg_type: BoolStamped, topic: apriltags_postprocessing_node/apriltags_intersection,
+        trigger: true}
+      apriltag_parking_and_parking_active: {msg_type: BoolStamped, topic: logic_gate_node/apriltag_parking_and_parking_active,
+        trigger: true}
+      at_stop_line: {msg_type: BoolStamped, topic: stop_line_filter_node/at_stop_line,
+        trigger: true}
+      at_stop_line_and_parking_off: {msg_type: BoolStamped, topic: logic_gate_node/at_stop_line_and_parking_off,
+        trigger: true}
+      at_stop_line_and_parking_on: {msg_type: BoolStamped, topic: logic_gate_node/at_stop_line_and_parking_on,
+        trigger: true}
+      deep_lane_following_off: {msg_type: BoolStamped, topic: joy_mapper_node/deep_learn_toggle,
+        trigger: false}
+      deep_lane_following_on: {msg_type: BoolStamped, topic: joy_mapper_node/deep_learn_toggle,
+        trigger: true}
+      intersection_done_and_deep_lane_off: {msg_type: BoolStamped, topic: logic_gate_node/intersection_done_and_deep_lane_off,
+        trigger: true}
+      intersection_done_and_deep_lane_on: {msg_type: BoolStamped, topic: logic_gate_node/intersection_done_and_deep_lane_on,
+        trigger: true}
+      intersection_go: {msg_type: BoolStamped, topic: logic_gate_node/intersection_go,
+        trigger: true}
+      joystick_override_off_and_deep_lane_off: {msg_type: BoolStamped, topic: logic_gate_node/joystick_override_off_and_deep_lane_off,
+        trigger: true}
+      joystick_override_off_and_deep_lane_on: {msg_type: BoolStamped, topic: logic_gate_node/joystick_override_off_and_deep_lane_on,
+        trigger: true}
+      joystick_override_on_and_parallel_autonomy_off: {msg_type: BoolStamped, topic: logic_gate_node/joystick_override_on_and_parallel_autonomy_off,
+        trigger: true}
+      joystick_override_on_and_parallel_autonomy_on: {msg_type: BoolStamped, topic: logic_gate_node/joystick_override_on_and_parallel_autonomy_on,
+        trigger: true}
+      parallel_autonomy_off: {msg_type: BoolStamped, topic: joy_mapper_node/parallel_autonomy,
+        trigger: false}
+      parallel_autonomy_on: {msg_type: BoolStamped, topic: joy_mapper_node/parallel_autonomy,
+        trigger: true}
+      start_avoidance: {msg_type: BoolStamped, topic: joy_mapper_node/start_avoidance,
+        trigger: true}
+    global_transitions: {joystick_override_on_and_parallel_autonomy_off: NORMAL_JOYSTICK_CONTROL,
+      joystick_override_on_and_parallel_autonomy_on: SAFE_JOYSTICK_CONTROL}
+    initial_state: NORMAL_JOYSTICK_CONTROL
+    nodes: {LED_coordination_node: LED_coordination_node/switch, LED_detection_node: LED_detection_node/switch,
+      apriltag_node: apriltag_detector_node/switch, central_fleet_planning_node: central_fleet_planning_node/switch,
+      decoder_node: decoder_node/switch, duckiebot_il_lane_following: duckiebot_il_lane_following/switch,
+      framerate_high: camera_node/framerate_high_switch, implicit_coordination_node: implicit_coordination_node/switch,
+      intersection_localization_node: intersection_localization_node/switch, intersection_navigation_node: intersection_navigation_node/switch,
+      lane_controller_node: lane_controller_node/switch, lane_filter_node: lane_filter_node/switch,
+      led_detector_node: LED_detector_node/switch, led_emitter_node: led_emitter_node/switch,
+      line_detector_node: line_detector_node/switch, obstacle_avoidance_node: obstacle_avoidance_node/switch,
+      parking_control: parking_control/switch, parking_path_planning: parking_path_planning/switch,
+      parking_perception_localization: parking_perception_localization/switch, static_object_detector_node: static_object_detector_node/switch,
+      stop_line_filter_node: stop_line_filter_node/switch, vehicle_avoidance_control_node: vehicle_avoidance_control_node/switch,
+      vehicle_detection_node: vehicle_detection_node/switch, vehicle_filter_node: vehicle_filter_node/switch}
+    states:
+      ARRIVE_AT_STOP_LINE:
+        active_nodes: [apriltag_node, decoder_node]
+        current_status: implemented
+        transitions: {apriltag_intersection: INTERSECTION_COORDINATION, apriltag_parking_and_parking_active: PARKING}
+      DEEP_LANE_FOLLOWING:
+        active_nodes: [decoder_node, apriltag_node, line_detector_node, stop_line_filter_node,
+          duckiebot_il_lane_following]
+        transitions: {at_stop_line_and_parking_off: INTERSECTION_COORDINATION, at_stop_line_and_parking_on: ARRIVE_AT_STOP_LINE,
+          deep_lane_following_off: LANE_FOLLOWING}
+      INTERSECTION_CONTROL:
+        active_nodes: [apriltag_node, decoder_node, led_emitter_node, line_detector_node,
+          lane_filter_node, intersection_navigation_node, intersection_localization_node,
+          lane_controller_node]
+        current_status: in_progress
+        transitions: {intersection_done_and_deep_lane_off: LANE_FOLLOWING, intersection_done_and_deep_lane_on: DEEP_LANE_FOLLOWING}
+      INTERSECTION_COORDINATION:
+        active_nodes: [decoder_node, apriltag_node, framerate_high, led_emitter_node,
+          led_detector_node, implicit_coordination_node, LED_coordination_node, LED_detection_node]
+        current_status: in_progress
+        lights: [coordination]
+        transitions: {intersection_go: INTERSECTION_CONTROL}
+      LANE_FOLLOWING:
+        active_nodes: [decoder_node, line_detector_node, apriltag_node, lane_filter_node,
+          lane_controller_node, stop_line_filter_node, obstacle_avoidance_node, vehicle_filter_node,
+          vehicle_detection_node, vehicle_avoidance_control_node]
+        current_status: in_progress
+        lights: [lane_following]
+        transitions: {at_stop_line_and_parking_off: INTERSECTION_COORDINATION, at_stop_line_and_parking_on: ARRIVE_AT_STOP_LINE,
+          deep_lane_following_on: DEEP_LANE_FOLLOWING}
+      NORMAL_JOYSTICK_CONTROL:
+        active_nodes: [lane_filter_node, line_detector_node, stop_line_filter_node,
+          framerate_high, decoder_node, apriltag_node]
+        current_status: implemented
+        lights: [joystick]
+        transitions: {joystick_override_off_and_deep_lane_off: LANE_FOLLOWING, joystick_override_off_and_deep_lane_on: DEEP_LANE_FOLLOWING,
+          parallel_autonomy_on: SAFE_JOYSTICK_CONTROL}
+      PARKING:
+        active_nodes: [decoder_node, apriltag_node, line_detector_node, lane_filter_node,
+          parking_node, lane_controller_node, parking_perception_localization, parking_path_planning,
+          parking_control]
+        current_status: in_progress
+        transitions: {at_stop_line_and_parking_off: INTERSECTION_COORDINATION, at_stop_line_and_parking_on: ARRIVE_AT_STOP_LINE}
+      SAFE_JOYSTICK_CONTROL:
+        active_nodes: [decoder_node, apriltag_node, framerate_high, line_detector_node,
+          lane_filter_node, stop_line_filter_node]
+        current_status: implemented
+        lights: [joystick]
+        transitions: {joystick_override_off_and_deep_lane_off: LANE_FOLLOWING, joystick_override_off_and_deep_lane_on: DEEP_LANE_FOLLOWING,
+          parallel_autonomy_off: NORMAL_JOYSTICK_CONTROL}
+  ground_projection: {config: baseline, config_file_name: duckbot12}
+  joy_mapper_node: {bicycle_kinematics: 0.0, simulated_vehicle_length: 0.18, speed_gain: 0.41,
+    steer_angle_gain: 1.04, steer_gain: 8.3}
+  joy_node: {autorepeat_rate: 2.0, coalesce_interval: 0.02, deadzone: 0.01, dev: /dev/input/js0}
+  lane_controller_node: {d_offset: 0.0, d_ref: 0.0, d_thres: 0.2615, k_Id: 2.5, k_Iphi: 0.0,
+    k_d: -60, k_theta: -10, object_detected: false, phi_ref: 0.0, theta_thres: 0.523,
+    turn_off_feedforward_part: true, use_radius_limit: true, v_bar: 0.3864}
+  lane_filter_node:
+    filter:
+    - lane_filter.LaneFilterHistogram
+    - configuration: {cov_v: 0.5, d_max: 0.3, d_min: -0.15, delta_d: 0.02, delta_phi: 0.1,
+        lanewidth: 0.23, linewidth_white: 0.05, linewidth_yellow: 0.025, mean_d_0: 0,
+        mean_phi_0: 0, min_max: 0.1, phi_max: 1.5, phi_min: -1.5, sigma_d_0: 0.1,
+        sigma_d_mask: 1.0, sigma_phi_0: 0.1, sigma_phi_mask: 2.0}
+    use_propagation: true
+  led_emitter_node:
+    LED_protocol:
+      colors:
+        black: [0, 0, 0]
+        blue: [0, 0, 1]
+        cyan: [0, 1, 1]
+        green: [0, 1, 0]
+        purple: [1, 0, 1]
+        red: [1, 0, 0]
+        white: [0, 0, 0]
+        yellow: [1, 1, 0]
+      frequencies: {f1: 7.8, f2: 4, f3: 5.7}
+      signals:
+        CAR_SIGNAL_A: {color: green, frequency: 7.8}
+        CAR_SIGNAL_B: {color: purple, frequency: 4}
+        CAR_SIGNAL_C: {color: yellow, frequency: 5.7}
+        light_off: {color: black, frequency: 7.8}
+        traffic_light_go: {color: green, frequency: 7.8}
+        traffic_light_stop: {color: red, frequency: 5.7}
+  line_detector_node:
+    detector:
+    - line_detector.LineDetectorHSV
+    - configuration:
+        canny_thresholds: [80, 200]
+        dilation_kernel_size: 3
+        hough_max_line_gap: 1
+        hough_min_line_length: 3
+        hough_threshold: 2
+        hsv_red1: [0, 140, 100]
+        hsv_red2: [15, 255, 255]
+        hsv_red3: [165, 140, 100]
+        hsv_red4: [180, 255, 255]
+        hsv_white1: [0, 0, 150]
+        hsv_white2: [180, 60, 255]
+        hsv_yellow1: [25, 140, 100]
+        hsv_yellow2: [45, 255, 255]
+    img_size: [120, 160]
+    top_cutoff: 40
+    verbose: false
+  logic_gate_node:
+    events:
+      apriltag_parking: {msg_type: BoolStamped, topic: apriltags_postprocessing_node/apriltags_parking,
+        trigger: true}
+      at_stop_line: {msg_type: BoolStamped, topic: stop_line_filter_node/at_stop_line,
+        trigger: true}
+      deep_lane_following_off: {default: true, msg_type: BoolStamped, topic: joy_mapper_node/deep_learn_toggle,
+        trigger: false}
+      deep_lane_following_on: {default: false, msg_type: BoolStamped, topic: joy_mapper_node/deep_learn_toggle,
+        trigger: true}
+      intersection_done: {msg_type: BoolStamped, topic: intersection_navigation_node/intersection_done,
+        trigger: true}
+      intersection_go_explicit: {msg_type: BoolStamped, topic: LED_coordination/move_intersection,
+        trigger: true}
+      intersection_go_implicit: {msg_type: BoolStamped, topic: implicit_coord/flag_go_wait,
+        trigger: true}
+      joystick_override_off: {msg_type: BoolStamped, topic: joy_mapper_node/joystick_override,
+        trigger: false}
+      joystick_override_on: {msg_type: BoolStamped, topic: joy_mapper_node/joystick_override,
+        trigger: true}
+      parallel_autonomy_off: {default: true, msg_type: BoolStamped, topic: joy_mapper_node/parallel_autonomy,
+        trigger: false}
+      parallel_autonomy_on: {default: false, msg_type: BoolStamped, topic: joy_mapper_node/parallel_autonomy,
+        trigger: true}
+      parking_off: {default: true, msg_type: BoolStamped, topic: parking_on, trigger: false}
+      parking_on: {default: false, msg_type: BoolStamped, topic: parking_on, trigger: true}
+    gates:
+      at_stop_line_and_parking_off:
+        gate_type: AND
+        inputs: [at_stop_line, parking_off]
+        output_topic: ~at_stop_line_and_parking_off
+      at_stop_line_and_parking_on:
+        gate_type: AND
+        inputs: [at_stop_line, parking_on]
+        output_topic: ~at_stop_line_and_parking_on
+      intersection_done_and_deep_lane_off:
+        gate_type: AND
+        inputs: [intersection_done, deep_lane_following_off]
+        output_topic: ~intersection_done_and_deep_lane_off
+      intersection_done_and_deep_lane_on:
+        gate_type: AND
+        inputs: [intersection_done, deep_lane_following_on]
+        output_topic: ~intersection_done_and_deep_lane_on
+      intersection_go:
+        gate_type: OR
+        inputs: [intersection_go_implicit, intersection_go_explicit]
+        output_topic: ~intersection_go
+      joystick_override_off_and_deep_lane_off:
+        gate_type: AND
+        inputs: [joystick_override_off, deep_lane_following_off]
+        output_topic: ~joystick_override_off_and_deep_lane_off
+      joystick_override_off_and_deep_lane_on:
+        gate_type: AND
+        inputs: [joystick_override_off, deep_lane_following_on]
+        output_topic: ~joystick_override_off_and_deep_lane_on
+      joystick_override_on_and_parallel_autonomy_off:
+        gate_type: AND
+        inputs: [joystick_override_on, parallel_autonomy_off]
+        output_topic: ~joystick_override_on_and_parallel_autonomy_off
+      joystick_override_on_and_parallel_autonomy_on:
+        gate_type: AND
+        inputs: [joystick_override_on, parallel_autonomy_on]
+        output_topic: ~joystick_override_on_and_parallel_autonomy_on
+  stop_line_filter_node: {max_y: 0.2, 'max_y ': 0.2, min_segs: 2, off_time: 2, stop_distance: 0.22}
+  wheels_driver_node: {min_rad: 0.06, use_rad_lim: true, wheel_distance: 0.103}
+enable_statistics: false
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_duckbot12__44452: 'http://duckbot12:44452/', host_osboxes__44851: 'http://osboxes:44851/'}
+rosversion: '1.12.14
+
+  '
+run_id: 14893b7a-caf2-11e8-a767-08002773ed26

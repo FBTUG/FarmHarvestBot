@@ -29,8 +29,14 @@ do
         		#echo "dump rosgraph =====>"
         		#rosgraph
         		
+        		echo "[PARAM_DUMP]\$rosparam dump debug_ros_param.yaml =====>"
+        		rosparam dump debug_ros_param.yaml
+        		
         		echo "[NODE_LIST]\$rosnode list =====>"
         		rosnode list
+        		
+        		echo "[SRV_LIST]\$rossrv list =====>"
+        		rossrv list
         		
             for item in `rosnode list` 
             do 
@@ -56,6 +62,9 @@ do
               
                 done
             done
+            
+            
+        		
             echo "[BAG]\$timeout -s SIGINT 10 rosbag record -a =====>"
             timeout -s SIGINT 10 rosbag record -a
             ;;          

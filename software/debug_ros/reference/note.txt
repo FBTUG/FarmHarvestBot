@@ -1,0 +1,13 @@
+
+roslaunch duckietown joystick.launch veh:=duckbot12
+roslaunch duckietown camera.launch veh:=duckbot12 
+roslaunch duckietown intrinsic_calibration.launch veh:=duckbot12 raw=true
+
+export ROS_MASTER_URI=http://duckbot12:11311
+export ROS_MASTER_URI=http://osboxes:11311
+
+rosrun image_view image_view image:=/camera/image
+
+scp -r * ubuntu@duckbot12:~/sync
+
+roslaunch duckietown camera.launch veh:=duckbot12 raw:=true
