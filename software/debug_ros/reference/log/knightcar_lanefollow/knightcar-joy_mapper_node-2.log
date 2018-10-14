@@ -1,0 +1,38 @@
+[rospy.client][INFO] 2018-10-14 07:39:20,267: init_node, name[/knightcar/joy_mapper_node], pid[1954]
+[xmlrpc][INFO] 2018-10-14 07:39:20,269: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 07:39:20,270: Started XML-RPC server [http://knightcar.local:38671/]
+[rospy.init][INFO] 2018-10-14 07:39:20,270: ROS Slave URI: [http://knightcar.local:38671/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:39:20,271: _ready: http://knightcar.local:38671/
+[xmlrpc][INFO] 2018-10-14 07:39:20,272: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-10-14 07:39:20,275: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-14 07:39:20,372: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:39:20,372: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 07:39:20,390: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:39:20,400: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 07:39:20,415: [/knightcar/joy_mapper_node] Initializing 
+[rosout][INFO] 2018-10-14 07:39:20,429: [/knightcar/joy_mapper_node] ~speed_gain = 0.41 
+[rosout][INFO] 2018-10-14 07:39:20,455: [/knightcar/joy_mapper_node] ~steer_gain = 8.3 
+[rosout][INFO] 2018-10-14 07:39:20,468: [/knightcar/joy_mapper_node] ~bicycle_kinematics = 0.0 
+[rosout][INFO] 2018-10-14 07:39:20,481: [/knightcar/joy_mapper_node] ~steer_angle_gain = 1.04 
+[rosout][INFO] 2018-10-14 07:39:20,494: [/knightcar/joy_mapper_node] ~simulated_vehicle_length = 0.18 
+[rospy.internal][INFO] 2018-10-14 07:39:20,560: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 07:39:20,572: topic[/knightcar/wheels_driver_node/emergency_stop] adding connection to [/knightcar/wheels_driver_node], count 0
+[rospy.internal][INFO] 2018-10-14 07:39:20,602: topic[/knightcar/joy] adding connection to [http://knightcar.local:38866/], count 0
+[rospy.internal][INFO] 2018-10-14 07:39:20,876: topic[/knightcar/joy_mapper_node/car_cmd] adding connection to [/knightcar/inverse_kinematics_node], count 0
+[rospy.impl.masterslave][INFO] 2018-10-14 07:41:35,191: external shutdown request from [/rosnode]: user request
+[rospy.core][INFO] 2018-10-14 07:41:35,192: signal_shutdown [external shutdown request from [/rosnode]: [user request]]
+[rospy.internal][INFO] 2018-10-14 07:41:35,195: topic[/knightcar/joy_mapper_node/car_cmd] removing connection to /knightcar/inverse_kinematics_node
+[rospy.internal][INFO] 2018-10-14 07:41:35,214: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-14 07:41:35,218: topic[/knightcar/wheels_driver_node/emergency_stop] removing connection to /knightcar/wheels_driver_node
+[rospy.internal][INFO] 2018-10-14 07:41:35,221: topic[/knightcar/joy] removing connection to http://knightcar.local:38866/
+[rospy.internal][WARNING] 2018-10-14 07:41:35,315: Unknown error initiating TCP/IP socket to knightcar.local:54571 (http://knightcar.local:38866/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.core][INFO] 2018-10-14 07:41:35,323: signal_shutdown [signal-2]
+[rospy.core][INFO] 2018-10-14 07:41:35,324: signal_shutdown [atexit]

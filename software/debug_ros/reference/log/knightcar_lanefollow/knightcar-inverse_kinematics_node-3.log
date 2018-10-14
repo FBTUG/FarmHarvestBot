@@ -1,0 +1,57 @@
+[rospy.client][INFO] 2018-10-14 07:39:20,229: init_node, name[/knightcar/inverse_kinematics_node], pid[1965]
+[xmlrpc][INFO] 2018-10-14 07:39:20,231: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 07:39:20,232: Started XML-RPC server [http://knightcar.local:41998/]
+[rospy.init][INFO] 2018-10-14 07:39:20,233: ROS Slave URI: [http://knightcar.local:41998/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:39:20,234: _ready: http://knightcar.local:41998/
+[rospy.registration][INFO] 2018-10-14 07:39:20,242: Registering with master node http://knightcar.local:11311/
+[xmlrpc][INFO] 2018-10-14 07:39:20,244: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-14 07:39:20,337: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:39:20,338: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 07:39:20,350: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:39:20,364: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-14 07:39:20,563: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-14 07:39:20,678: [/knightcar/inverse_kinematics_node] ~gain = 2.0 
+[rosout][INFO] 2018-10-14 07:39:20,692: [/knightcar/inverse_kinematics_node] ~trim = -0.0799999982119 
+[rosout][INFO] 2018-10-14 07:39:20,707: [/knightcar/inverse_kinematics_node] ~baseline = 0.1 
+[rosout][INFO] 2018-10-14 07:39:20,722: [/knightcar/inverse_kinematics_node] ~radius = 0.0318 
+[rosout][INFO] 2018-10-14 07:39:20,736: [/knightcar/inverse_kinematics_node] ~k = 27.0 
+[rosout][INFO] 2018-10-14 07:39:20,752: [/knightcar/inverse_kinematics_node] ~limit = 1.0 
+[rosout][INFO] 2018-10-14 07:39:20,828: [/knightcar/inverse_kinematics_node] Initialized.
+[rosout][INFO] 2018-10-14 07:39:20,830: [/knightcar/inverse_kinematics_node] gain: 2.0 trim: -0.0799999982119 baseline: 0.1 radius: 0.0318 k: 27.0 limit: 1.0
+[rospy.internal][INFO] 2018-10-14 07:39:20,867: topic[/knightcar/joy_mapper_node/car_cmd] adding connection to [http://knightcar.local:38671/], count 0
+[rospy.internal][INFO] 2018-10-14 07:39:20,881: topic[/knightcar/wheels_driver_node/wheels_cmd] adding connection to [/knightcar/wheels_driver_node], count 0
+[rospy.impl.masterslave][INFO] 2018-10-14 07:41:34,976: external shutdown request from [/rosnode]: user request
+[rospy.core][INFO] 2018-10-14 07:41:34,977: signal_shutdown [external shutdown request from [/rosnode]: [user request]]
+[rospy.internal][INFO] 2018-10-14 07:41:35,062: topic[/knightcar/wheels_driver_node/wheels_cmd] removing connection to /knightcar/wheels_driver_node
+[rospy.internal][INFO] 2018-10-14 07:41:35,064: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-14 07:41:35,066: topic[/knightcar/joy_mapper_node/car_cmd] removing connection to http://knightcar.local:38671/
+[rospy.core][INFO] 2018-10-14 07:41:35,261: signal_shutdown [signal-2]
+[rospy.core][INFO] 2018-10-14 07:41:35,262: signal_shutdown [atexit]
+[rospy.client][INFO] 2018-10-14 07:43:03,868: init_node, name[/knightcar/inverse_kinematics_node], pid[2503]
+[xmlrpc][INFO] 2018-10-14 07:43:03,892: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 07:43:03,894: Started XML-RPC server [http://knightcar.local:44841/]
+[rospy.init][INFO] 2018-10-14 07:43:03,895: ROS Slave URI: [http://knightcar.local:44841/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:43:03,896: _ready: http://knightcar.local:44841/
+[rospy.registration][INFO] 2018-10-14 07:43:03,910: Registering with master node http://knightcar.local:11311/
+[xmlrpc][INFO] 2018-10-14 07:43:03,911: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-14 07:43:03,997: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:43:03,998: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 07:43:04,021: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:43:04,042: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-14 07:43:04,196: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-14 07:43:05,182: [/knightcar/inverse_kinematics_node] ~gain = 2.0 
+[rosout][INFO] 2018-10-14 07:43:05,230: [/knightcar/inverse_kinematics_node] ~trim = -0.0799999982119 
+[rosout][INFO] 2018-10-14 07:43:05,266: [/knightcar/inverse_kinematics_node] ~baseline = 0.1 
+[rosout][INFO] 2018-10-14 07:43:05,292: [/knightcar/inverse_kinematics_node] ~radius = 0.0318 
+[rosout][INFO] 2018-10-14 07:43:05,326: [/knightcar/inverse_kinematics_node] ~k = 27.0 
+[rosout][INFO] 2018-10-14 07:43:05,357: [/knightcar/inverse_kinematics_node] ~limit = 1.0 
+[rosout][INFO] 2018-10-14 07:43:05,517: [/knightcar/inverse_kinematics_node] Initialized.
+[rosout][INFO] 2018-10-14 07:43:05,520: [/knightcar/inverse_kinematics_node] gain: 2.0 trim: -0.0799999982119 baseline: 0.1 radius: 0.0318 k: 27.0 limit: 1.0
+[rospy.internal][INFO] 2018-10-14 07:43:05,577: topic[/knightcar/car_cmd_switch_node/cmd] adding connection to [http://knightcar.local:46193/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:05,591: topic[/knightcar/wheels_driver_node/wheels_cmd] adding connection to [/knightcar/wheels_driver_node], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:37,194: topic[/rosout] adding connection to [/rostopic_6366_1539474756708], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:37,540: topic[/rosout] removing connection to /rostopic_6366_1539474756708
+[rospy.internal][INFO] 2018-10-14 07:52:47,612: topic[/rosout] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:48,530: topic[/knightcar/wheels_driver_node/wheels_cmd] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:53,555: topic[/knightcar/wheels_driver_node/wheels_cmd] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,557: topic[/rosout] removing connection to /record_1539474762243845096

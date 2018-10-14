@@ -1,0 +1,34 @@
+[rospy.client][INFO] 2018-10-14 07:43:03,991: init_node, name[/knightcar/car_cmd_switch_node], pid[2521]
+[xmlrpc][INFO] 2018-10-14 07:43:04,009: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 07:43:04,012: Started XML-RPC server [http://knightcar.local:46193/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:43:04,013: _ready: http://knightcar.local:46193/
+[rospy.registration][INFO] 2018-10-14 07:43:04,017: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-14 07:43:04,025: ROS Slave URI: [http://knightcar.local:46193/]
+[xmlrpc][INFO] 2018-10-14 07:43:04,039: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-14 07:43:04,133: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:43:04,134: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 07:43:04,150: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:43:04,165: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-14 07:43:04,464: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:04,596: topic[/knightcar/fsm_node/mode] adding connection to [http://knightcar.local:43353/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:04,849: topic[/knightcar/joy_mapper_node/car_cmd] adding connection to [http://knightcar.local:34891/], count 0
+[rosout][INFO] 2018-10-14 07:43:04,921: [/knightcar/car_cmd_switch_node] Initialized. 
+[rospy.internal][INFO] 2018-10-14 07:43:05,382: topic[/knightcar/lane_controller_node/car_cmd] adding connection to [http://knightcar.local:43192/], count 0
+[rosout][INFO] 2018-10-14 07:43:05,575: [/knightcar/car_cmd_switch_node] Car cmd switched to joystick in state JOYSTICK_CONTROL.
+[rospy.internal][INFO] 2018-10-14 07:43:05,598: topic[/knightcar/car_cmd_switch_node/cmd] adding connection to [/knightcar/inverse_kinematics_node], count 0
+[rosout][INFO] 2018-10-14 07:44:33,310: [/knightcar/car_cmd_switch_node] Car cmd switched to lane in state LANE_FOLLOWING.
+[rospy.internal][INFO] 2018-10-14 07:52:37,206: topic[/rosout] adding connection to [/rostopic_6366_1539474756708], count 1
+[rosout][WARNING] 2018-10-14 07:52:37,491: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-14 07:52:37,495: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-14 07:52:37,533: topic[/rosout] removing connection to /rostopic_6366_1539474756708
+[rospy.internal][INFO] 2018-10-14 07:52:47,134: topic[/knightcar/car_cmd_switch_node/cmd] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:47,622: topic[/rosout] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:53,553: topic[/knightcar/car_cmd_switch_node/cmd] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,554: topic[/rosout] removing connection to /record_1539474762243845096

@@ -1,0 +1,59 @@
+[rospy.client][INFO] 2018-10-14 10:30:16,701: init_node, name[/knightcar/cam_info_reader_node], pid[2031]
+[xmlrpc][INFO] 2018-10-14 10:30:16,703: XML-RPC server binding to 0.0.0.0:0
+[rospy.init][INFO] 2018-10-14 10:30:16,705: ROS Slave URI: [http://knightcar.local:43823/]
+[xmlrpc][INFO] 2018-10-14 10:30:16,710: Started XML-RPC server [http://knightcar.local:43823/]
+[rospy.impl.masterslave][INFO] 2018-10-14 10:30:16,711: _ready: http://knightcar.local:43823/
+[xmlrpc][INFO] 2018-10-14 10:30:16,713: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-10-14 10:30:16,716: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-14 10:30:16,812: registered with master
+[rospy.rosout][INFO] 2018-10-14 10:30:16,813: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 10:30:16,826: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 10:30:16,847: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 10:30:16,942: [/knightcar/cam_info_reader_node] ~config = baseline 
+[rosout][INFO] 2018-10-14 10:30:16,998: [/knightcar/cam_info_reader_node] ~cali_file_name = knightcar 
+[rosout][INFO] 2018-10-14 10:30:17,067: [/knightcar/cam_info_reader_node] ~image_type = compressed 
+[rospy.internal][INFO] 2018-10-14 10:30:17,150: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:17,371: topic[/knightcar/camera_node/camera_info] adding connection to [/knightcar/ground_projection], count 0
+[rosout][INFO] 2018-10-14 10:30:17,606: [/knightcar/cam_info_reader_node] Using calibration file: /home/ubuntu/Knight_car/catkin_ws/src/duckietown/config/baseline/calibration/camera_intrinsic/knightcar.yaml
+[rosout][INFO] 2018-10-14 10:30:17,825: [/knightcar/cam_info_reader_node] CameraInfo: header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: "/knightcar/camera_optical_frame"
+height: 480
+width: 640
+distortion_model: "plumb_bob"
+D: [-0.31411690459737446, 0.065800642164674, -0.006621488228111864, 0.005244302638413317, 0.0]
+K: [287.6302869006445, 0.0, 339.55581660256655, 0.0, 287.5215053153045, 216.27854252117933, 0.0, 0.0, 1.0]
+R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+P: [197.84805297851562, 0.0, 341.0231508225115, 0.0, 0.0, 206.49717712402344, 198.04476088621868, 0.0, 0.0, 0.0, 1.0, 0.0]
+binning_x: 0
+binning_y: 0
+roi: 
+  x_offset: 0
+  y_offset: 0
+  height: 0
+  width: 0
+  do_rectify: False
+[rosout][WARNING] 2018-10-14 10:30:17,837: [/knightcar/cam_info_reader_node] ==============CompressedImage
+[rospy.internal][INFO] 2018-10-14 10:30:19,922: topic[/knightcar/camera_node/image/compressed] adding connection to [http://knightcar.local:35696/], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:20,035: topic[/knightcar/camera_node/camera_info] removing connection to /knightcar/ground_projection
+[rospy.impl.masterslave][INFO] 2018-10-14 10:41:59,014: external shutdown request from [/rosnode]: user request
+[rospy.core][INFO] 2018-10-14 10:41:59,015: signal_shutdown [external shutdown request from [/rosnode]: [user request]]
+[rosout][INFO] 2018-10-14 10:41:59,015: [/knightcar/cam_info_reader_node] Shutdown.
+[rospy.internal][INFO] 2018-10-14 10:41:59,032: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-14 10:41:59,035: topic[/knightcar/camera_node/image/compressed] removing connection to http://knightcar.local:35696/
+[rosout][ERROR] 2018-10-14 10:41:59,043: bad callback: <bound method CamInfoReader.cbCompressedImage of <__main__.CamInfoReader object at 0x763b5c10>>
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/home/ubuntu/Knight_car/catkin_ws/src/pi_camera/src/cam_info_reader_node.py", line 48, in cbCompressedImage
+    self.pub_camera_info.publish(self.camera_info_msg)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 882, in publish
+    self.impl.publish(data)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 1041, in publish
+    raise ROSException("publish() to a closed topic")
+ROSException: publish() to a closed topic
+
+[rospy.core][INFO] 2018-10-14 10:41:59,290: signal_shutdown [atexit]

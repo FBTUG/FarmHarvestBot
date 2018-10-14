@@ -1,0 +1,41 @@
+[rospy.client][INFO] 2018-10-14 07:43:06,680: init_node, name[/knightcar/lane_filter_node], pid[2534]
+[xmlrpc][INFO] 2018-10-14 07:43:06,682: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 07:43:06,683: Started XML-RPC server [http://knightcar.local:44191/]
+[rospy.init][INFO] 2018-10-14 07:43:06,684: ROS Slave URI: [http://knightcar.local:44191/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:43:06,685: _ready: http://knightcar.local:44191/
+[xmlrpc][INFO] 2018-10-14 07:43:06,689: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-10-14 07:43:06,692: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-14 07:43:06,786: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:43:06,787: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 07:43:06,800: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:43:06,807: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-14 07:43:06,980: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:07,207: topic[/knightcar/ground_projection/lineseglist_out] adding connection to [http://knightcar.local:36188/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:07,253: topic[/knightcar/lane_filter_node/switch] adding connection to [http://knightcar.local:43353/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:07,264: topic[/knightcar/lane_filter_node/lane_pose] adding connection to [/knightcar/lane_controller_node], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:07,834: topic[/knightcar/lane_filter_node/lane_pose] adding connection to [/knightcar/lane_pose_visualizer_node], count 1
+[rospy.internal][INFO] 2018-10-14 07:51:28,807: topic[/knightcar/lane_filter_node/belief_img] adding connection to [/rostopic_5851_1539474688464], count 0
+[rospy.internal][INFO] 2018-10-14 07:51:29,839: topic[/knightcar/lane_filter_node/belief_img] removing connection to /rostopic_5851_1539474688464
+[rospy.internal][INFO] 2018-10-14 07:51:31,057: topic[/knightcar/lane_filter_node/entropy] adding connection to [/rostopic_5869_1539474690652], count 0
+[rospy.internal][INFO] 2018-10-14 07:51:31,843: topic[/knightcar/lane_filter_node/entropy] removing connection to /rostopic_5869_1539474690652
+[rospy.internal][INFO] 2018-10-14 07:52:37,217: topic[/rosout] adding connection to [/rostopic_6366_1539474756708], count 1
+[rosout][WARNING] 2018-10-14 07:52:37,500: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-14 07:52:37,505: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-14 07:52:37,947: topic[/rosout] removing connection to /rostopic_6366_1539474756708
+[rospy.internal][INFO] 2018-10-14 07:52:42,757: topic[/knightcar/lane_filter_node/lane_pose] adding connection to [/record_1539474762243845096], count 2
+[rospy.internal][INFO] 2018-10-14 07:52:42,865: topic[/knightcar/lane_filter_node/entropy] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:43,803: topic[/knightcar/lane_filter_node/in_lane] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:47,624: topic[/rosout] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:48,796: topic[/knightcar/lane_filter_node/belief_img] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:52,463: topic[/knightcar/lane_filter_node/lane_pose] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:52,464: topic[/knightcar/lane_filter_node/entropy] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:52,967: topic[/knightcar/lane_filter_node/in_lane] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,471: topic[/knightcar/lane_filter_node/belief_img] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,473: topic[/rosout] removing connection to /record_1539474762243845096

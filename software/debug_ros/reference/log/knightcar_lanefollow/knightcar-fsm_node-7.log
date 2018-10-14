@@ -1,0 +1,70 @@
+[rospy.client][INFO] 2018-10-14 07:43:04,144: init_node, name[/knightcar/fsm_node], pid[2512]
+[xmlrpc][INFO] 2018-10-14 07:43:04,154: XML-RPC server binding to 0.0.0.0:0
+[rospy.init][INFO] 2018-10-14 07:43:04,157: ROS Slave URI: [http://knightcar.local:43353/]
+[xmlrpc][INFO] 2018-10-14 07:43:04,156: Started XML-RPC server [http://knightcar.local:43353/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:43:04,165: _ready: http://knightcar.local:43353/
+[xmlrpc][INFO] 2018-10-14 07:43:04,167: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-10-14 07:43:04,175: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-14 07:43:04,258: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:43:04,259: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 07:43:04,275: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:43:04,283: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-14 07:43:04,578: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:04,633: topic[/knightcar/fsm_node/mode] adding connection to [/knightcar/car_cmd_switch_node], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:05,137: topic[/knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy] adding connection to [http://knightcar.local:38278/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:05,255: topic[/knightcar/joy_mapper_node/start_avoidance] adding connection to [http://knightcar.local:34891/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:05,412: topic[/knightcar/joy_mapper_node/joystick_override] adding connection to [http://knightcar.local:34891/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:05,453: topic[/knightcar/joy_mapper_node/parallel_autonomy] adding connection to [http://knightcar.local:34891/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:05,478: topic[/knightcar/logic_gate_node/intersection_done_and_parallel_autonomy] adding connection to [http://knightcar.local:38278/], count 0
+[rosout][INFO] 2018-10-14 07:43:05,536: [/knightcar/fsm_node] Initialized.
+[rosout][INFO] 2018-10-14 07:43:05,538: [/knightcar/fsm_node] Node vehicle_detector_node is OFF in JOYSTICK_CONTROL
+[rosout][INFO] 2018-10-14 07:43:05,541: [/knightcar/fsm_node] Node framerate_high is ON in JOYSTICK_CONTROL
+[rosout][INFO] 2018-10-14 07:43:05,544: [/knightcar/fsm_node] Node decoder_node is ON in JOYSTICK_CONTROL
+[rosout][INFO] 2018-10-14 07:43:05,550: [/knightcar/fsm_node] Node stop_line_filter_node is ON in JOYSTICK_CONTROL
+[rosout][INFO] 2018-10-14 07:43:05,555: [/knightcar/fsm_node] Node lane_filter_node is ON in JOYSTICK_CONTROL
+[rosout][INFO] 2018-10-14 07:43:05,558: [/knightcar/fsm_node] Node led_detector_node is OFF in JOYSTICK_CONTROL
+[rosout][INFO] 2018-10-14 07:43:05,561: [/knightcar/fsm_node] Node static_object_detector_node is OFF in JOYSTICK_CONTROL
+[rosout][INFO] 2018-10-14 07:43:05,564: [/knightcar/fsm_node] Node led_emitter_node is OFF in JOYSTICK_CONTROL
+[rosout][INFO] 2018-10-14 07:43:05,566: [/knightcar/fsm_node] Node line_detector_node is ON in JOYSTICK_CONTROL
+[rosout][INFO] 2018-10-14 07:43:05,569: [/knightcar/fsm_node] Node apriltag_node is ON in JOYSTICK_CONTROL
+[rosout][INFO] 2018-10-14 07:43:05,572: [/knightcar/fsm_node] FSMState: JOYSTICK_CONTROL
+[rospy.internal][INFO] 2018-10-14 07:43:06,953: topic[/knightcar/camera_node/framerate_high_switch] adding connection to [/knightcar/camera_node], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:07,264: topic[/knightcar/lane_filter_node/switch] adding connection to [/knightcar/lane_filter_node], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:08,502: topic[/knightcar/line_detector_node/switch] adding connection to [/knightcar/line_detector_node], count 0
+[rosout][INFO] 2018-10-14 07:44:33,281: [/knightcar/fsm_node] Node vehicle_detector_node is OFF in LANE_FOLLOWING
+[rosout][INFO] 2018-10-14 07:44:33,283: [/knightcar/fsm_node] Node framerate_high is OFF in LANE_FOLLOWING
+[rosout][INFO] 2018-10-14 07:44:33,286: [/knightcar/fsm_node] Node decoder_node is OFF in LANE_FOLLOWING
+[rosout][INFO] 2018-10-14 07:44:33,289: [/knightcar/fsm_node] Node stop_line_filter_node is ON in LANE_FOLLOWING
+[rosout][INFO] 2018-10-14 07:44:33,293: [/knightcar/fsm_node] Node lane_filter_node is ON in LANE_FOLLOWING
+[rosout][INFO] 2018-10-14 07:44:33,295: [/knightcar/fsm_node] Node led_detector_node is OFF in LANE_FOLLOWING
+[rosout][INFO] 2018-10-14 07:44:33,298: [/knightcar/fsm_node] Node static_object_detector_node is OFF in LANE_FOLLOWING
+[rosout][INFO] 2018-10-14 07:44:33,301: [/knightcar/fsm_node] Node led_emitter_node is OFF in LANE_FOLLOWING
+[rosout][INFO] 2018-10-14 07:44:33,304: [/knightcar/fsm_node] Node line_detector_node is ON in LANE_FOLLOWING
+[rosout][INFO] 2018-10-14 07:44:33,307: [/knightcar/fsm_node] Node apriltag_node is OFF in LANE_FOLLOWING
+[rosout][INFO] 2018-10-14 07:44:33,309: [/knightcar/fsm_node] FSMState: LANE_FOLLOWING
+[rospy.internal][INFO] 2018-10-14 07:52:37,216: topic[/rosout] adding connection to [/rostopic_6366_1539474756708], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:37,888: topic[/rosout] removing connection to /rostopic_6366_1539474756708
+[rospy.internal][INFO] 2018-10-14 07:52:44,474: topic[/knightcar/decoder_node/switch] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:44,783: topic[/knightcar/vehicle_detection_node/switch] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:45,024: topic[/knightcar/LED_detector_node/switch] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:45,237: topic[/knightcar/stop_line_filter_node/switch] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:45,938: topic[/knightcar/apriltag_detector_node/switch] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:47,341: topic[/knightcar/fsm_node/mode] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:47,611: topic[/rosout] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:47,884: topic[/knightcar/line_detector_node/switch] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:48,313: topic[/knightcar/camera_node/framerate_high_switch] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:49,440: topic[/knightcar/static_object_detector_node/switch] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:49,996: topic[/knightcar/led_emitter_node/switch] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:50,230: topic[/knightcar/lane_filter_node/switch] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:53,415: topic[/knightcar/decoder_node/switch] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,417: topic[/knightcar/vehicle_detection_node/switch] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,419: topic[/knightcar/fsm_node/mode] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,420: topic[/rosout] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,422: topic[/knightcar/stop_line_filter_node/switch] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,424: topic[/knightcar/apriltag_detector_node/switch] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,425: topic[/knightcar/line_detector_node/switch] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,427: topic[/knightcar/camera_node/framerate_high_switch] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,428: topic[/knightcar/LED_detector_node/switch] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,930: topic[/knightcar/static_object_detector_node/switch] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,931: topic[/knightcar/led_emitter_node/switch] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,932: topic[/knightcar/lane_filter_node/switch] removing connection to /record_1539474762243845096

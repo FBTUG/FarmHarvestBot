@@ -1,0 +1,70 @@
+[roslaunch][INFO] 2018-10-14 10:29:43,361: Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2018-10-14 10:29:43,566: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2018-10-14 10:29:43,567: roslaunch starting with args ['roscore', '--core']
+[roslaunch][INFO] 2018-10-14 10:29:43,568: roslaunch env is {'LC_NUMERIC': 'lzh_TW', 'ROS_DISTRO': 'kinetic', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'ROS_HOSTNAME': 'knightcar.local', 'SSH_CLIENT': '192.168.0.14 53627 22', 'LOGNAME': 'ubuntu', 'USER': 'ubuntu', 'HOME': '/home/ubuntu', 'LC_PAPER': 'lzh_TW', 'PATH': '/home/ubuntu/bin:/home/ubuntu/.local/bin:/opt/ros/kinetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'CMAKE_PREFIX_PATH': '/home/ubuntu/Knight_car/catkin_ws/devel:/opt/ros/kinetic', 'LD_LIBRARY_PATH': '/home/ubuntu/Knight_car/catkin_ws/devel/lib:/opt/ros/kinetic/lib', 'SSH_CONNECTION': '192.168.0.14 53627 192.168.0.28 22', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'LC_MONETARY': 'lzh_TW', 'ROS_LOG_FILENAME': '/home/ubuntu/.ros/log/01fa1220-cf59-11e8-aac1-b827eb3fef1b/roslaunch-knightcar-1928.log', 'ROS_ETC_DIR': '/opt/ros/kinetic/etc/ros', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_ADDRESS': 'lzh_TW', 'PYTHONPATH': '/home/ubuntu/Knight_car/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/kinetic/lib/python2.7/dist-packages:/home/ubuntu/Knight_car/catkin_ws/src', 'SHLVL': '2', 'ROS_ROOT': '/opt/ros/kinetic/share/ros', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PKG_CONFIG_PATH': '/home/ubuntu/Knight_car/catkin_ws/devel/lib/pkgconfig:/opt/ros/kinetic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ubuntu/Knight_car/catkin_ws/src:/opt/ros/kinetic/share', 'XDG_SESSION_ID': 'c2', '_': '/opt/ros/kinetic/bin/roscore', 'LC_IDENTIFICATION': 'lzh_TW', 'DUCKIETOWN_ROOT': '/home/ubuntu/Knight_car', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_MODULES': 'gail:atk-bridge', 'SSH_TTY': '/dev/pts/1', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ubuntu/Knight_car/catkin_ws/devel/share/common-lisp', 'LC_TELEPHONE': 'lzh_TW', 'LC_MEASUREMENT': 'lzh_TW', 'PWD': '/home/ubuntu', 'ROS_MASTER_URI': 'http://knightcar.local:11311/', 'VEHICLE_NAME': 'knightcar', 'LC_NAME': 'lzh_TW', 'MAIL': '/var/mail/ubuntu', 'LC_TIME': 'lzh_TW', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'}
+[roslaunch][INFO] 2018-10-14 10:29:43,568: starting in server mode
+[roslaunch.parent][INFO] 2018-10-14 10:29:43,569: starting roslaunch parent run
+[roslaunch][INFO] 2018-10-14 10:29:43,571: loading roscore config file /opt/ros/kinetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2018-10-14 10:29:44,135: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.pmon][INFO] 2018-10-14 10:29:44,136: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2018-10-14 10:29:44,136: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2018-10-14 10:29:44,137: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2018-10-14 10:29:44,138: starting parent XML-RPC server
+[roslaunch.server][INFO] 2018-10-14 10:29:44,138: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2018-10-14 10:29:44,139: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2018-10-14 10:29:44,142: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 10:29:44,143: Started XML-RPC server [http://knightcar.local:33678/]
+[xmlrpc][INFO] 2018-10-14 10:29:44,144: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2018-10-14 10:29:44,154: started roslaunch server http://knightcar.local:33678/
+[roslaunch.parent][INFO] 2018-10-14 10:29:44,155: ... parent XML-RPC server started
+[roslaunch][INFO] 2018-10-14 10:29:44,156: master.is_running[http://knightcar.local:11311/]
+[roslaunch][INFO] 2018-10-14 10:29:44,166: auto-starting new master
+[roslaunch][INFO] 2018-10-14 10:29:44,167: create_master_process: rosmaster, /opt/ros/kinetic/share/ros, 11311, 3, None
+[roslaunch][INFO] 2018-10-14 10:29:44,167: process[master]: launching with args [['rosmaster', '--core', '-p', '11311', '-w', '3']]
+[roslaunch.pmon][INFO] 2018-10-14 10:29:44,168: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2018-10-14 10:29:44,168: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2018-10-14 10:29:44,169: process[master]: starting os process
+[roslaunch][INFO] 2018-10-14 10:29:44,169: process[master]: start w/ args [['rosmaster', '--core', '-p', '11311', '-w', '3', '__log:=/home/ubuntu/.ros/log/01fa1220-cf59-11e8-aac1-b827eb3fef1b/master.log']]
+[roslaunch][INFO] 2018-10-14 10:29:44,170: process[master]: cwd will be [/home/ubuntu/.ros]
+[roslaunch][INFO] 2018-10-14 10:29:44,181: process[master]: started with pid [1950]
+[roslaunch][INFO] 2018-10-14 10:29:44,182: master.is_running[http://knightcar.local:11311/]
+[roslaunch][INFO] 2018-10-14 10:29:44,285: master.is_running[http://knightcar.local:11311/]
+[roslaunch][INFO] 2018-10-14 10:29:44,388: master.is_running[http://knightcar.local:11311/]
+[roslaunch][INFO] 2018-10-14 10:29:44,490: master.is_running[http://knightcar.local:11311/]
+[roslaunch][INFO] 2018-10-14 10:29:44,593: master.is_running[http://knightcar.local:11311/]
+[roslaunch][INFO] 2018-10-14 10:29:44,695: master.is_running[http://knightcar.local:11311/]
+[roslaunch][INFO] 2018-10-14 10:29:44,798: master.is_running[http://knightcar.local:11311/]
+[roslaunch][INFO] 2018-10-14 10:29:44,900: master.is_running[http://knightcar.local:11311/]
+[roslaunch][INFO] 2018-10-14 10:29:45,002: master.is_running[http://knightcar.local:11311/]
+[roslaunch][INFO] 2018-10-14 10:29:45,009: master.is_running[http://knightcar.local:11311/]
+[roslaunch][INFO] 2018-10-14 10:29:45,014: ROS_MASTER_URI=http://knightcar.local:11311/
+[roslaunch][INFO] 2018-10-14 10:29:45,020: setting /run_id to 01fa1220-cf59-11e8-aac1-b827eb3fef1b
+[roslaunch][INFO] 2018-10-14 10:29:45,027: setting /roslaunch/uris/host_knightcar_local__33678' to http://knightcar.local:33678/
+[roslaunch][INFO] 2018-10-14 10:29:45,038: ... preparing to launch node of type [rosout/rosout]
+[roslaunch][INFO] 2018-10-14 10:29:45,038: create_node_process: package[rosout] type[rosout] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://knightcar.local:11311/]
+[roslaunch][INFO] 2018-10-14 10:29:45,039: process[rosout-1]: env[{'LC_NUMERIC': 'lzh_TW', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DISTRO': 'kinetic', 'LC_MEASUREMENT': 'lzh_TW', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'ROS_HOSTNAME': 'knightcar.local', 'SSH_CLIENT': '192.168.0.14 53627 22', 'LOGNAME': 'ubuntu', 'USER': 'ubuntu', 'HOME': '/home/ubuntu', 'LC_PAPER': 'lzh_TW', 'PATH': '/home/ubuntu/bin:/home/ubuntu/.local/bin:/opt/ros/kinetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'CMAKE_PREFIX_PATH': '/home/ubuntu/Knight_car/catkin_ws/devel:/opt/ros/kinetic', 'ROS_LOG_FILENAME': '/home/ubuntu/.ros/log/01fa1220-cf59-11e8-aac1-b827eb3fef1b/roslaunch-knightcar-1928.log', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'LC_MONETARY': 'lzh_TW', 'LD_LIBRARY_PATH': '/home/ubuntu/Knight_car/catkin_ws/devel/lib:/opt/ros/kinetic/lib', 'ROS_MASTER_URI': 'http://knightcar.local:11311/', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_ADDRESS': 'lzh_TW', 'PYTHONPATH': '/home/ubuntu/Knight_car/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/kinetic/lib/python2.7/dist-packages:/home/ubuntu/Knight_car/catkin_ws/src', 'ROS_ROOT': '/opt/ros/kinetic/share/ros', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PKG_CONFIG_PATH': '/home/ubuntu/Knight_car/catkin_ws/devel/lib/pkgconfig:/opt/ros/kinetic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/ubuntu/Knight_car/catkin_ws/src:/opt/ros/kinetic/share', 'XDG_SESSION_ID': 'c2', '_': '/opt/ros/kinetic/bin/roscore', 'LC_IDENTIFICATION': 'lzh_TW', 'DUCKIETOWN_ROOT': '/home/ubuntu/Knight_car', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_MODULES': 'gail:atk-bridge', 'SSH_TTY': '/dev/pts/1', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ubuntu/Knight_car/catkin_ws/devel/share/common-lisp', 'LC_TELEPHONE': 'lzh_TW', 'SHLVL': '2', 'PWD': '/home/ubuntu', 'ROS_ETC_DIR': '/opt/ros/kinetic/etc/ros', 'VEHICLE_NAME': 'knightcar', 'LC_NAME': 'lzh_TW', 'MAIL': '/var/mail/ubuntu', 'LC_TIME': 'lzh_TW', 'SSH_CONNECTION': '192.168.0.14 53627 192.168.0.28 22'}]
+[roslaunch][INFO] 2018-10-14 10:29:45,486: process[rosout-1]: args[[u'/opt/ros/kinetic/lib/rosout/rosout', u'__name:=rosout']]
+[roslaunch][INFO] 2018-10-14 10:29:45,486: ... created process [rosout-1]
+[roslaunch.pmon][INFO] 2018-10-14 10:29:45,487: ProcessMonitor.register[rosout-1]
+[roslaunch.pmon][INFO] 2018-10-14 10:29:45,487: ProcessMonitor.register[rosout-1] complete
+[roslaunch][INFO] 2018-10-14 10:29:45,488: ... registered process [rosout-1]
+[roslaunch][INFO] 2018-10-14 10:29:45,488: process[rosout-1]: starting os process
+[roslaunch][INFO] 2018-10-14 10:29:45,489: process[rosout-1]: start w/ args [[u'/opt/ros/kinetic/lib/rosout/rosout', u'__name:=rosout', u'__log:=/home/ubuntu/.ros/log/01fa1220-cf59-11e8-aac1-b827eb3fef1b/rosout-1.log']]
+[roslaunch][INFO] 2018-10-14 10:29:45,489: process[rosout-1]: cwd will be [/home/ubuntu/.ros]
+[roslaunch][INFO] 2018-10-14 10:29:45,504: process[rosout-1]: started with pid [1964]
+[roslaunch][INFO] 2018-10-14 10:29:45,505: ... successfully launched [rosout-1]
+[roslaunch][INFO] 2018-10-14 10:29:45,506: load_parameters starting ...
+[roslaunch][INFO] 2018-10-14 10:29:45,520: ... load_parameters complete
+[roslaunch][INFO] 2018-10-14 10:29:45,521: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2018-10-14 10:29:45,521: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2018-10-14 10:29:45,521: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 1982383216)>
+[roslaunch.parent][INFO] 2018-10-14 10:29:45,522: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2018-10-14 10:29:45,522: spin
+[roslaunch][INFO] 2018-10-14 10:42:00,964: [rosout-1] process has finished cleanly
+log file: /home/ubuntu/.ros/log/01fa1220-cf59-11e8-aac1-b827eb3fef1b/rosout-1*.log
+[roslaunch][INFO] 2018-10-14 10:42:00,965: [rosout-1] restarting process
+[roslaunch][INFO] 2018-10-14 10:42:00,965: process[rosout-1]: restarting os process
+[roslaunch][INFO] 2018-10-14 10:42:00,966: process[rosout-1]: start w/ args [[u'/opt/ros/kinetic/lib/rosout/rosout', u'__name:=rosout', u'__log:=/home/ubuntu/.ros/log/01fa1220-cf59-11e8-aac1-b827eb3fef1b/rosout-1.log']]
+[roslaunch][INFO] 2018-10-14 10:42:00,966: process[rosout-1]: cwd will be [/home/ubuntu/.ros]
+[roslaunch][INFO] 2018-10-14 10:42:00,974: process[rosout-1]: started with pid [18430]

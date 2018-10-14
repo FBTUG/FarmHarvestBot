@@ -1,0 +1,23 @@
+[rospy.client][INFO] 2018-10-14 07:43:04,614: init_node, name[/knightcar/logic_gate_node], pid[2529]
+[xmlrpc][INFO] 2018-10-14 07:43:04,621: XML-RPC server binding to 0.0.0.0:0
+[rospy.init][INFO] 2018-10-14 07:43:04,625: ROS Slave URI: [http://knightcar.local:38278/]
+[xmlrpc][INFO] 2018-10-14 07:43:04,626: Started XML-RPC server [http://knightcar.local:38278/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:43:04,629: _ready: http://knightcar.local:38278/
+[xmlrpc][INFO] 2018-10-14 07:43:04,630: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-10-14 07:43:04,637: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-14 07:43:04,726: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:43:04,727: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 07:43:04,748: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:43:04,783: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-14 07:43:04,885: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:05,137: topic[/knightcar/joy_mapper_node/parallel_autonomy] adding connection to [http://knightcar.local:34891/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:05,167: topic[/knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy] adding connection to [/knightcar/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:05,486: topic[/knightcar/logic_gate_node/intersection_done_and_parallel_autonomy] adding connection to [/knightcar/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:37,210: topic[/rosout] adding connection to [/rostopic_6366_1539474756708], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:37,630: topic[/rosout] removing connection to /rostopic_6366_1539474756708
+[rospy.internal][INFO] 2018-10-14 07:52:43,429: topic[/knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:43,544: topic[/knightcar/logic_gate_node/intersection_done_and_parallel_autonomy] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:47,620: topic[/rosout] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:53,155: topic[/knightcar/logic_gate_node/intersection_done_and_parallel_autonomy] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,157: topic[/knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,658: topic[/rosout] removing connection to /record_1539474762243845096

@@ -1,0 +1,28 @@
+[rospy.client][INFO] 2018-10-14 07:39:20,202: init_node, name[/knightcar/velocity_to_pose_node], pid[1978]
+[xmlrpc][INFO] 2018-10-14 07:39:20,205: XML-RPC server binding to 0.0.0.0:0
+[rospy.init][INFO] 2018-10-14 07:39:20,207: ROS Slave URI: [http://knightcar.local:35729/]
+[xmlrpc][INFO] 2018-10-14 07:39:20,208: Started XML-RPC server [http://knightcar.local:35729/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:39:20,209: _ready: http://knightcar.local:35729/
+[xmlrpc][INFO] 2018-10-14 07:39:20,210: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-10-14 07:39:20,214: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-14 07:39:20,308: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:39:20,310: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 07:39:20,319: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:39:20,325: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 07:39:20,375: [/knightcar/velocity_to_pose_node] Initialized.
+[rospy.internal][INFO] 2018-10-14 07:39:20,448: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 07:39:20,818: topic[/knightcar/forward_kinematics_node/velocity] adding connection to [http://knightcar.local:37705/], count 0
+[rospy.internal][ERROR] 2018-10-14 07:41:34,846: Unable to initiate TCP/IP socket to knightcar.local:36928 (http://knightcar.local:37705/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.core][INFO] 2018-10-14 07:41:35,247: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2018-10-14 07:41:35,266: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-14 07:41:35,267: topic[/knightcar/forward_kinematics_node/velocity] removing connection to http://knightcar.local:37705/
+[rospy.impl.masterslave][INFO] 2018-10-14 07:41:35,268: signal-2
+[rospy.core][INFO] 2018-10-14 07:41:35,887: signal_shutdown [atexit]

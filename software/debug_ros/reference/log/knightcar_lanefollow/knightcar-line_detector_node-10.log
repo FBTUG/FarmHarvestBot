@@ -1,0 +1,1757 @@
+[rospy.client][INFO] 2018-10-14 07:43:08,196: init_node, name[/knightcar/line_detector_node], pid[2531]
+[xmlrpc][INFO] 2018-10-14 07:43:08,201: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 07:43:08,202: Started XML-RPC server [http://knightcar.local:36168/]
+[rospy.init][INFO] 2018-10-14 07:43:08,203: ROS Slave URI: [http://knightcar.local:36168/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:43:08,203: _ready: http://knightcar.local:36168/
+[rospy.registration][INFO] 2018-10-14 07:43:08,206: Registering with master node http://knightcar.local:11311/
+[xmlrpc][INFO] 2018-10-14 07:43:08,207: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-14 07:43:08,304: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:43:08,305: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 07:43:08,319: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:43:08,326: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 07:43:08,350: [LineDetectorNode] Verbose is now True
+[rosout][INFO] 2018-10-14 07:43:08,386: [LineDetectorNode] new detector config: ['line_detector.LineDetectorHSV', {'configuration': {'hough_max_line_gap': 1, 'dilation_kernel_size': 3, 'hsv_yellow1': [25, 50, 50], 'hsv_yellow2': [45, 255, 255], 'hsv_white1': [0, 0, 150], 'hsv_white2': [180, 100, 255], 'hough_min_line_length': 3, 'hough_threshold': 20, 'canny_thresholds': [60, 150], 'hsv_red4': [180, 255, 255], 'hsv_red1': [0, 100, 100], 'hsv_red3': [165, 100, 100], 'hsv_red2': [15, 255, 255]}}]
+[rosout][INFO] 2018-10-14 07:43:08,471: [LineDetectorNode] Initialized (verbose = True).
+[rospy.internal][INFO] 2018-10-14 07:43:08,483: topic[/knightcar/line_detector_node/switch] adding connection to [http://knightcar.local:43353/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:08,486: topic[/knightcar/camera_node/image/compressed] adding connection to [http://knightcar.local:46802/], count 0
+[rosout][INFO] 2018-10-14 07:43:08,529: line_detector_node received first image.
+[rosout][INFO] 2018-10-14 07:43:08,531: line_detector_node processing first image.
+[rospy.internal][INFO] 2018-10-14 07:43:08,609: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-14 07:43:08,650: [LineDetectorNode]   1:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:43:08,667: [LineDetectorNode]   1:
+Latencies:
+               acquired | total latency      5.3ms | delta wall     None clock     None
+                decoded | total latency     31.2ms | delta wall   25.9ms clock   16.8ms
+                resized | total latency     55.9ms | delta wall   24.7ms clock    4.9ms
+              corrected | total latency     62.2ms | delta wall    6.3ms clock    2.7ms
+               detected | total latency    122.6ms | delta wall   60.5ms clock   20.7ms
+               prepared | total latency    125.1ms | delta wall    2.5ms clock    2.3ms
+          --pub_lines-- | total latency    125.3ms | delta wall    0.2ms clock    0.2ms
+                  drawn | total latency    125.5ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency    126.1ms | delta wall    0.6ms clock    0.6ms
+   pub_edge/pub_segment | total latency    140.6ms | delta wall   14.5ms clock   13.9ms
+
+[rosout][INFO] 2018-10-14 07:43:08,695: [LineDetectorNode]   1:In the last 0.4 s: received 6 (17.1 fps) processed 2 (5.7 fps) skipped 4 (11.4 fps) (67%)
+[rospy.internal][INFO] 2018-10-14 07:43:08,702: topic[/knightcar/line_detector_node/segment_list] adding connection to [/knightcar/ground_projection], count 0
+[rosout][INFO] 2018-10-14 07:43:15,257: [LineDetectorNode] 101:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:43:15,275: [LineDetectorNode] 101:
+Latencies:
+               acquired | total latency      2.9ms | delta wall     None clock     None
+                decoded | total latency     18.8ms | delta wall   15.9ms clock   15.7ms
+                resized | total latency     19.7ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     22.1ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     30.8ms | delta wall    8.6ms clock    9.5ms
+               prepared | total latency     33.5ms | delta wall    2.8ms clock    2.9ms
+          --pub_lines-- | total latency     34.2ms | delta wall    0.7ms clock    0.5ms
+                  drawn | total latency     36.0ms | delta wall    1.8ms clock    2.2ms
+              pub_image | total latency     36.4ms | delta wall    0.5ms clock    0.4ms
+   pub_edge/pub_segment | total latency     49.5ms | delta wall   13.0ms clock   12.9ms
+
+[rosout][INFO] 2018-10-14 07:43:15,293: [LineDetectorNode] 101:In the last 6.6 s: received 198 (30.0 fps) processed 100 (15.2 fps) skipped 98 (14.9 fps) (49%)
+[rosout][INFO] 2018-10-14 07:43:21,481: [LineDetectorNode] 201:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:43:21,518: [LineDetectorNode] 201:
+Latencies:
+               acquired | total latency      2.4ms | delta wall     None clock     None
+                decoded | total latency     33.9ms | delta wall   31.5ms clock   30.3ms
+                resized | total latency     35.3ms | delta wall    1.4ms clock    1.4ms
+              corrected | total latency     44.7ms | delta wall    9.4ms clock    7.2ms
+               detected | total latency     57.9ms | delta wall   13.1ms clock   15.6ms
+               prepared | total latency     61.5ms | delta wall    3.7ms clock    3.7ms
+          --pub_lines-- | total latency     62.7ms | delta wall    1.1ms clock    1.1ms
+                  drawn | total latency     63.1ms | delta wall    0.4ms clock    0.4ms
+              pub_image | total latency     64.8ms | delta wall    1.7ms clock    0.7ms
+   pub_edge/pub_segment | total latency     95.2ms | delta wall   30.5ms clock   29.8ms
+
+[rosout][INFO] 2018-10-14 07:43:21,529: [LineDetectorNode] 201:In the last 6.2 s: received 187 (30.0 fps) processed 100 (16.0 fps) skipped 87 (14.0 fps) (47%)
+[rosout][INFO] 2018-10-14 07:43:27,784: [LineDetectorNode] 301:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:43:27,800: [LineDetectorNode] 301:
+Latencies:
+               acquired | total latency      2.5ms | delta wall     None clock     None
+                decoded | total latency     18.2ms | delta wall   15.7ms clock   16.0ms
+                resized | total latency     19.1ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     21.4ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     29.4ms | delta wall    8.0ms clock    8.0ms
+               prepared | total latency     31.7ms | delta wall    2.3ms clock    2.2ms
+          --pub_lines-- | total latency     32.1ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     32.3ms | delta wall    0.2ms clock    0.3ms
+              pub_image | total latency     32.8ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     45.9ms | delta wall   13.1ms clock   13.5ms
+
+[rosout][INFO] 2018-10-14 07:43:27,823: [LineDetectorNode] 301:In the last 6.3 s: received 189 (30.0 fps) processed 100 (15.9 fps) skipped 89 (14.1 fps) (47%)
+[rosout][INFO] 2018-10-14 07:43:34,352: [LineDetectorNode] 401:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:43:34,371: [LineDetectorNode] 401:
+Latencies:
+               acquired | total latency      2.5ms | delta wall     None clock     None
+                decoded | total latency     19.2ms | delta wall   16.7ms clock   16.3ms
+                resized | total latency     20.1ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     22.9ms | delta wall    2.8ms clock    2.8ms
+               detected | total latency     31.3ms | delta wall    8.4ms clock    9.5ms
+               prepared | total latency     36.5ms | delta wall    5.3ms clock    4.0ms
+          --pub_lines-- | total latency     37.1ms | delta wall    0.5ms clock    0.7ms
+                  drawn | total latency     37.5ms | delta wall    0.5ms clock    0.5ms
+              pub_image | total latency     38.0ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     50.5ms | delta wall   12.5ms clock   12.4ms
+
+[rosout][INFO] 2018-10-14 07:43:34,391: [LineDetectorNode] 401:In the last 6.6 s: received 197 (30.0 fps) processed 100 (15.2 fps) skipped 97 (14.8 fps) (49%)
+[rosout][INFO] 2018-10-14 07:43:40,615: [LineDetectorNode] 501:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:43:40,631: [LineDetectorNode] 501:
+Latencies:
+               acquired | total latency      2.8ms | delta wall     None clock     None
+                decoded | total latency     18.4ms | delta wall   15.6ms clock   15.7ms
+                resized | total latency     19.4ms | delta wall    1.0ms clock    0.8ms
+              corrected | total latency     21.7ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     28.9ms | delta wall    7.2ms clock    8.5ms
+               prepared | total latency     31.2ms | delta wall    2.3ms clock    2.1ms
+          --pub_lines-- | total latency     31.5ms | delta wall    0.4ms clock    0.3ms
+                  drawn | total latency     31.8ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     32.2ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     45.8ms | delta wall   13.6ms clock   13.9ms
+
+[rosout][INFO] 2018-10-14 07:43:40,654: [LineDetectorNode] 501:In the last 6.3 s: received 188 (30.0 fps) processed 100 (16.0 fps) skipped 88 (14.1 fps) (47%)
+[rosout][INFO] 2018-10-14 07:43:47,024: [LineDetectorNode] 601:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:43:47,041: [LineDetectorNode] 601:
+Latencies:
+               acquired | total latency     10.1ms | delta wall     None clock     None
+                decoded | total latency     26.3ms | delta wall   16.1ms clock   16.1ms
+                resized | total latency     27.2ms | delta wall    1.0ms clock    0.9ms
+              corrected | total latency     29.6ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     38.7ms | delta wall    9.1ms clock   10.4ms
+               prepared | total latency     41.1ms | delta wall    2.4ms clock    2.5ms
+          --pub_lines-- | total latency     41.5ms | delta wall    0.3ms clock    0.3ms
+                  drawn | total latency     41.7ms | delta wall    0.2ms clock    0.3ms
+              pub_image | total latency     42.1ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     55.8ms | delta wall   13.7ms clock   12.9ms
+
+[rosout][INFO] 2018-10-14 07:43:47,055: [LineDetectorNode] 601:In the last 6.4 s: received 192 (30.0 fps) processed 100 (15.6 fps) skipped 92 (14.4 fps) (48%)
+[rosout][INFO] 2018-10-14 07:43:53,523: [LineDetectorNode] 701:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:43:53,540: [LineDetectorNode] 701:
+Latencies:
+               acquired | total latency     11.1ms | delta wall     None clock     None
+                decoded | total latency     26.6ms | delta wall   15.6ms clock   15.8ms
+                resized | total latency     27.5ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     29.9ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     39.7ms | delta wall    9.8ms clock   10.2ms
+               prepared | total latency     42.1ms | delta wall    2.4ms clock    2.2ms
+          --pub_lines-- | total latency     42.4ms | delta wall    0.4ms clock    0.3ms
+                  drawn | total latency     42.6ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     44.4ms | delta wall    1.8ms clock    0.5ms
+   pub_edge/pub_segment | total latency     56.4ms | delta wall   11.9ms clock   11.8ms
+
+[rosout][INFO] 2018-10-14 07:43:53,553: [LineDetectorNode] 701:In the last 6.5 s: received 195 (30.0 fps) processed 100 (15.4 fps) skipped 95 (14.6 fps) (49%)
+[rosout][INFO] 2018-10-14 07:44:00,080: [LineDetectorNode] 801:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:44:00,100: [LineDetectorNode] 801:
+Latencies:
+               acquired | total latency      2.6ms | delta wall     None clock     None
+                decoded | total latency     18.2ms | delta wall   15.6ms clock   15.7ms
+                resized | total latency     19.0ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     21.4ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     29.8ms | delta wall    8.4ms clock    8.7ms
+               prepared | total latency     35.3ms | delta wall    5.4ms clock    2.2ms
+          --pub_lines-- | total latency     35.7ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     36.0ms | delta wall    0.3ms clock    0.5ms
+              pub_image | total latency     36.6ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     50.2ms | delta wall   13.7ms clock   13.6ms
+
+[rosout][INFO] 2018-10-14 07:44:00,118: [LineDetectorNode] 801:In the last 6.6 s: received 197 (30.0 fps) processed 100 (15.2 fps) skipped 97 (14.8 fps) (49%)
+[rosout][INFO] 2018-10-14 07:44:06,642: [LineDetectorNode] 901:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:44:06,659: [LineDetectorNode] 901:
+Latencies:
+               acquired | total latency      2.4ms | delta wall     None clock     None
+                decoded | total latency     18.2ms | delta wall   15.9ms clock   15.7ms
+                resized | total latency     19.1ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.4ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     28.4ms | delta wall    6.9ms clock    8.2ms
+               prepared | total latency     30.4ms | delta wall    2.1ms clock    2.1ms
+          --pub_lines-- | total latency     30.9ms | delta wall    0.5ms clock    0.4ms
+                  drawn | total latency     31.2ms | delta wall    0.3ms clock    0.4ms
+              pub_image | total latency     31.7ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     45.3ms | delta wall   13.6ms clock   13.3ms
+
+[rosout][INFO] 2018-10-14 07:44:06,683: [LineDetectorNode] 901:In the last 6.6 s: received 197 (30.0 fps) processed 100 (15.2 fps) skipped 97 (14.8 fps) (49%)
+[rosout][INFO] 2018-10-14 07:44:13,008: [LineDetectorNode] 1001:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:44:13,027: [LineDetectorNode] 1001:
+Latencies:
+               acquired | total latency      2.1ms | delta wall     None clock     None
+                decoded | total latency     17.7ms | delta wall   15.6ms clock   15.7ms
+                resized | total latency     18.7ms | delta wall    1.0ms clock    0.7ms
+              corrected | total latency     21.0ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     28.4ms | delta wall    7.4ms clock    9.4ms
+               prepared | total latency     30.4ms | delta wall    2.0ms clock    2.1ms
+          --pub_lines-- | total latency     30.8ms | delta wall    0.4ms clock    0.7ms
+                  drawn | total latency     31.2ms | delta wall    0.4ms clock    0.2ms
+              pub_image | total latency     32.3ms | delta wall    1.1ms clock    0.5ms
+   pub_edge/pub_segment | total latency     47.8ms | delta wall   15.5ms clock   16.2ms
+
+[rosout][INFO] 2018-10-14 07:44:13,049: [LineDetectorNode] 1001:In the last 6.4 s: received 191 (30.0 fps) processed 100 (15.7 fps) skipped 91 (14.3 fps) (48%)
+[rosout][INFO] 2018-10-14 07:44:19,443: [LineDetectorNode] 1101:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:44:19,470: [LineDetectorNode] 1101:
+Latencies:
+               acquired | total latency      4.6ms | delta wall     None clock     None
+                decoded | total latency     31.6ms | delta wall   27.0ms clock   17.0ms
+                resized | total latency     32.7ms | delta wall    1.1ms clock    1.1ms
+              corrected | total latency     44.4ms | delta wall   11.7ms clock    6.2ms
+               detected | total latency     61.0ms | delta wall   16.6ms clock   10.8ms
+               prepared | total latency     63.7ms | delta wall    2.7ms clock    2.9ms
+          --pub_lines-- | total latency     64.3ms | delta wall    0.6ms clock    0.5ms
+                  drawn | total latency     64.7ms | delta wall    0.4ms clock    0.3ms
+              pub_image | total latency     66.2ms | delta wall    1.5ms clock    0.9ms
+   pub_edge/pub_segment | total latency     89.1ms | delta wall   22.9ms clock   21.0ms
+
+[rosout][INFO] 2018-10-14 07:44:19,481: [LineDetectorNode] 1101:In the last 6.4 s: received 193 (30.0 fps) processed 100 (15.6 fps) skipped 93 (14.5 fps) (48%)
+[rosout][INFO] 2018-10-14 07:44:25,908: [LineDetectorNode] 1201:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:44:25,926: [LineDetectorNode] 1201:
+Latencies:
+               acquired | total latency      2.5ms | delta wall     None clock     None
+                decoded | total latency     18.6ms | delta wall   16.1ms clock   15.8ms
+                resized | total latency     19.4ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.9ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     29.2ms | delta wall    7.3ms clock    8.6ms
+               prepared | total latency     32.2ms | delta wall    3.0ms clock    2.4ms
+          --pub_lines-- | total latency     32.8ms | delta wall    0.6ms clock    0.7ms
+                  drawn | total latency     33.7ms | delta wall    0.9ms clock    0.5ms
+              pub_image | total latency     34.9ms | delta wall    1.3ms clock    0.9ms
+   pub_edge/pub_segment | total latency     47.9ms | delta wall   13.0ms clock   12.7ms
+
+[rosout][INFO] 2018-10-14 07:44:25,946: [LineDetectorNode] 1201:In the last 6.5 s: received 194 (30.0 fps) processed 100 (15.5 fps) skipped 94 (14.5 fps) (48%)
+[rosout][INFO] 2018-10-14 07:44:32,539: [LineDetectorNode] 1301:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:44:32,560: [LineDetectorNode] 1301:
+Latencies:
+               acquired | total latency      2.6ms | delta wall     None clock     None
+                decoded | total latency     18.0ms | delta wall   15.5ms clock   15.6ms
+                resized | total latency     18.9ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.2ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     28.5ms | delta wall    7.3ms clock    8.8ms
+               prepared | total latency     30.4ms | delta wall    1.9ms clock    2.2ms
+          --pub_lines-- | total latency     31.1ms | delta wall    0.7ms clock    0.8ms
+                  drawn | total latency     31.5ms | delta wall    0.4ms clock    0.3ms
+              pub_image | total latency     32.0ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     50.4ms | delta wall   18.4ms clock   18.3ms
+
+[rosout][INFO] 2018-10-14 07:44:32,579: [LineDetectorNode] 1301:In the last 6.6 s: received 199 (30.0 fps) processed 100 (15.1 fps) skipped 99 (14.9 fps) (50%)
+[rosout][INFO] 2018-10-14 07:44:39,689: [LineDetectorNode] 1401:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:44:39,704: [LineDetectorNode] 1401:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.7ms | delta wall   15.4ms clock   15.3ms
+                resized | total latency     18.6ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     20.9ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     28.7ms | delta wall    7.8ms clock    8.3ms
+               prepared | total latency     31.0ms | delta wall    2.3ms clock    2.0ms
+          --pub_lines-- | total latency     31.5ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     31.7ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     32.2ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     44.2ms | delta wall   12.1ms clock   11.3ms
+
+[rosout][INFO] 2018-10-14 07:44:39,729: [LineDetectorNode] 1401:In the last 7.1 s: received 111 (15.5 fps) processed 100 (14.0 fps) skipped 11 (1.5 fps) (10%)
+[rosout][INFO] 2018-10-14 07:44:46,526: [LineDetectorNode] 1501:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:44:46,546: [LineDetectorNode] 1501:
+Latencies:
+               acquired | total latency      3.9ms | delta wall     None clock     None
+                decoded | total latency     36.2ms | delta wall   32.3ms clock   36.6ms
+                resized | total latency     42.1ms | delta wall    6.0ms clock    5.8ms
+              corrected | total latency     47.2ms | delta wall    5.0ms clock    5.8ms
+               detected | total latency     63.1ms | delta wall   15.9ms clock   18.8ms
+               prepared | total latency     66.3ms | delta wall    3.2ms clock    2.7ms
+          --pub_lines-- | total latency     66.7ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     66.9ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     67.4ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     83.6ms | delta wall   16.3ms clock   15.6ms
+
+[rosout][INFO] 2018-10-14 07:44:46,595: [LineDetectorNode] 1501:In the last 6.9 s: received 103 (15.0 fps) processed 100 (14.6 fps) skipped 3 (0.4 fps) (3%)
+[rosout][INFO] 2018-10-14 07:44:53,354: [LineDetectorNode] 1601:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:44:53,372: [LineDetectorNode] 1601:
+Latencies:
+               acquired | total latency      2.9ms | delta wall     None clock     None
+                decoded | total latency     18.6ms | delta wall   15.7ms clock   15.7ms
+                resized | total latency     19.5ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     22.2ms | delta wall    2.7ms clock    2.7ms
+               detected | total latency     29.0ms | delta wall    6.8ms clock    8.9ms
+               prepared | total latency     31.2ms | delta wall    2.2ms clock    2.3ms
+          --pub_lines-- | total latency     32.1ms | delta wall    0.9ms clock    0.6ms
+                  drawn | total latency     32.4ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     32.9ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     47.4ms | delta wall   14.6ms clock   14.6ms
+
+[rosout][INFO] 2018-10-14 07:44:53,395: [LineDetectorNode] 1601:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:45:00,087: [LineDetectorNode] 1701:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:45:00,103: [LineDetectorNode] 1701:
+Latencies:
+               acquired | total latency      2.5ms | delta wall     None clock     None
+                decoded | total latency     18.5ms | delta wall   16.0ms clock   16.0ms
+                resized | total latency     19.4ms | delta wall    1.0ms clock    1.0ms
+              corrected | total latency     22.0ms | delta wall    2.6ms clock    2.6ms
+               detected | total latency     30.3ms | delta wall    8.3ms clock    9.1ms
+               prepared | total latency     32.1ms | delta wall    1.9ms clock    2.0ms
+          --pub_lines-- | total latency     32.7ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     32.9ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     33.4ms | delta wall    0.5ms clock    0.6ms
+   pub_edge/pub_segment | total latency     46.2ms | delta wall   12.7ms clock   12.5ms
+
+[rosout][INFO] 2018-10-14 07:45:00,125: [LineDetectorNode] 1701:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:45:06,885: [LineDetectorNode] 1801:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:45:06,902: [LineDetectorNode] 1801:
+Latencies:
+               acquired | total latency      2.4ms | delta wall     None clock     None
+                decoded | total latency     17.6ms | delta wall   15.2ms clock   15.2ms
+                resized | total latency     18.6ms | delta wall    1.0ms clock    0.9ms
+              corrected | total latency     20.9ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     27.7ms | delta wall    6.8ms clock    8.3ms
+               prepared | total latency     29.9ms | delta wall    2.1ms clock    2.1ms
+          --pub_lines-- | total latency     30.2ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     30.4ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     30.8ms | delta wall    0.3ms clock    0.4ms
+   pub_edge/pub_segment | total latency     45.1ms | delta wall   14.3ms clock   14.4ms
+
+[rosout][INFO] 2018-10-14 07:45:06,925: [LineDetectorNode] 1801:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:45:13,615: [LineDetectorNode] 1901:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:45:13,630: [LineDetectorNode] 1901:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.4ms | delta wall   15.2ms clock   15.2ms
+                resized | total latency     18.2ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.4ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     27.5ms | delta wall    7.0ms clock    8.2ms
+               prepared | total latency     29.4ms | delta wall    1.9ms clock    2.0ms
+          --pub_lines-- | total latency     29.7ms | delta wall    0.4ms clock    0.6ms
+                  drawn | total latency     31.1ms | delta wall    1.4ms clock    0.4ms
+              pub_image | total latency     31.5ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     42.3ms | delta wall   10.8ms clock   10.8ms
+
+[rosout][INFO] 2018-10-14 07:45:13,656: [LineDetectorNode] 1901:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:45:20,350: [LineDetectorNode] 2001:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:45:20,368: [LineDetectorNode] 2001:
+Latencies:
+               acquired | total latency      3.1ms | delta wall     None clock     None
+                decoded | total latency     18.5ms | delta wall   15.5ms clock   15.6ms
+                resized | total latency     19.4ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     21.8ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     29.7ms | delta wall    7.9ms clock    8.9ms
+               prepared | total latency     31.8ms | delta wall    2.1ms clock    2.2ms
+          --pub_lines-- | total latency     32.1ms | delta wall    0.4ms clock    0.3ms
+                  drawn | total latency     32.4ms | delta wall    0.3ms clock    0.4ms
+              pub_image | total latency     34.4ms | delta wall    2.0ms clock    0.7ms
+   pub_edge/pub_segment | total latency     47.6ms | delta wall   13.3ms clock   12.6ms
+
+[rosout][INFO] 2018-10-14 07:45:20,389: [LineDetectorNode] 2001:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:45:27,347: [LineDetectorNode] 2101:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:45:27,366: [LineDetectorNode] 2101:
+Latencies:
+               acquired | total latency      2.6ms | delta wall     None clock     None
+                decoded | total latency     17.9ms | delta wall   15.3ms clock   15.4ms
+                resized | total latency     18.8ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     21.3ms | delta wall    2.5ms clock    2.5ms
+               detected | total latency     28.4ms | delta wall    7.1ms clock    9.2ms
+               prepared | total latency     31.0ms | delta wall    2.6ms clock    2.1ms
+          --pub_lines-- | total latency     31.5ms | delta wall    0.5ms clock    0.6ms
+                  drawn | total latency     31.7ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     32.2ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     47.9ms | delta wall   15.7ms clock   15.6ms
+
+[rosout][INFO] 2018-10-14 07:45:27,388: [LineDetectorNode] 2101:In the last 7.0 s: received 105 (15.0 fps) processed 100 (14.3 fps) skipped 5 (0.7 fps) (5%)
+[rosout][INFO] 2018-10-14 07:45:34,082: [LineDetectorNode] 2201:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:45:34,100: [LineDetectorNode] 2201:
+Latencies:
+               acquired | total latency      2.0ms | delta wall     None clock     None
+                decoded | total latency     17.8ms | delta wall   15.8ms clock   15.1ms
+                resized | total latency     18.6ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.8ms | delta wall    2.2ms clock    2.3ms
+               detected | total latency     31.8ms | delta wall   10.9ms clock    9.1ms
+               prepared | total latency     33.9ms | delta wall    2.2ms clock    2.1ms
+          --pub_lines-- | total latency     34.4ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     34.7ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     35.1ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     49.3ms | delta wall   14.1ms clock   13.8ms
+
+[rosout][INFO] 2018-10-14 07:45:34,119: [LineDetectorNode] 2201:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:45:40,810: [LineDetectorNode] 2301:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:45:40,828: [LineDetectorNode] 2301:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.8ms | delta wall   15.4ms clock   15.2ms
+                resized | total latency     18.6ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.9ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     27.6ms | delta wall    6.8ms clock    8.1ms
+               prepared | total latency     30.1ms | delta wall    2.5ms clock    1.9ms
+          --pub_lines-- | total latency     30.6ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     30.9ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     31.3ms | delta wall    0.4ms clock    0.5ms
+   pub_edge/pub_segment | total latency     45.1ms | delta wall   13.8ms clock   13.7ms
+
+[rosout][INFO] 2018-10-14 07:45:40,853: [LineDetectorNode] 2301:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:45:47,611: [LineDetectorNode] 2401:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:45:47,626: [LineDetectorNode] 2401:
+Latencies:
+               acquired | total latency      2.6ms | delta wall     None clock     None
+                decoded | total latency     17.9ms | delta wall   15.2ms clock   15.2ms
+                resized | total latency     18.7ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.9ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     29.1ms | delta wall    8.2ms clock    8.2ms
+               prepared | total latency     31.2ms | delta wall    2.1ms clock    2.1ms
+          --pub_lines-- | total latency     31.6ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     31.8ms | delta wall    0.2ms clock    0.3ms
+              pub_image | total latency     33.1ms | delta wall    1.2ms clock    0.6ms
+   pub_edge/pub_segment | total latency     44.4ms | delta wall   11.3ms clock   11.0ms
+
+[rosout][INFO] 2018-10-14 07:45:47,650: [LineDetectorNode] 2401:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:45:54,344: [LineDetectorNode] 2501:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:45:54,361: [LineDetectorNode] 2501:
+Latencies:
+               acquired | total latency      2.1ms | delta wall     None clock     None
+                decoded | total latency     18.7ms | delta wall   16.6ms clock   15.6ms
+                resized | total latency     19.6ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     22.1ms | delta wall    2.5ms clock    2.5ms
+               detected | total latency     30.0ms | delta wall    7.9ms clock    8.9ms
+               prepared | total latency     32.8ms | delta wall    2.8ms clock    2.4ms
+          --pub_lines-- | total latency     33.3ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     33.5ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     34.0ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     47.5ms | delta wall   13.5ms clock   12.4ms
+
+[rosout][INFO] 2018-10-14 07:45:54,385: [LineDetectorNode] 2501:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:46:01,074: [LineDetectorNode] 2601:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:46:01,093: [LineDetectorNode] 2601:
+Latencies:
+               acquired | total latency      2.4ms | delta wall     None clock     None
+                decoded | total latency     17.7ms | delta wall   15.3ms clock   15.0ms
+                resized | total latency     18.6ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     20.8ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     27.8ms | delta wall    7.0ms clock    8.2ms
+               prepared | total latency     29.8ms | delta wall    2.1ms clock    2.2ms
+          --pub_lines-- | total latency     30.3ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     30.6ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     31.0ms | delta wall    0.4ms clock    0.5ms
+   pub_edge/pub_segment | total latency     46.5ms | delta wall   15.5ms clock   14.5ms
+
+[rosout][INFO] 2018-10-14 07:46:01,114: [LineDetectorNode] 2601:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:46:07,874: [LineDetectorNode] 2701:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:46:07,888: [LineDetectorNode] 2701:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.2ms | delta wall   15.0ms clock   15.2ms
+                resized | total latency     18.1ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     20.3ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     27.0ms | delta wall    6.7ms clock    8.1ms
+               prepared | total latency     29.0ms | delta wall    1.9ms clock    2.0ms
+          --pub_lines-- | total latency     29.4ms | delta wall    0.4ms clock    0.6ms
+                  drawn | total latency     29.8ms | delta wall    0.4ms clock    0.2ms
+              pub_image | total latency     30.2ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     41.4ms | delta wall   11.3ms clock   11.2ms
+
+[rosout][INFO] 2018-10-14 07:46:07,913: [LineDetectorNode] 2701:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:46:14,603: [LineDetectorNode] 2801:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:46:14,617: [LineDetectorNode] 2801:
+Latencies:
+               acquired | total latency      1.9ms | delta wall     None clock     None
+                decoded | total latency     16.9ms | delta wall   15.0ms clock   15.0ms
+                resized | total latency     17.7ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.1ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     26.6ms | delta wall    6.4ms clock    8.5ms
+               prepared | total latency     28.5ms | delta wall    1.9ms clock    2.2ms
+          --pub_lines-- | total latency     29.0ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     29.3ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     29.7ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     41.2ms | delta wall   11.5ms clock   11.5ms
+
+[rosout][INFO] 2018-10-14 07:46:14,645: [LineDetectorNode] 2801:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:46:21,406: [LineDetectorNode] 2901:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:46:21,423: [LineDetectorNode] 2901:
+Latencies:
+               acquired | total latency      2.7ms | delta wall     None clock     None
+                decoded | total latency     19.2ms | delta wall   16.5ms clock   16.3ms
+                resized | total latency     20.2ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     22.6ms | delta wall    2.5ms clock    2.5ms
+               detected | total latency     30.4ms | delta wall    7.8ms clock    9.0ms
+               prepared | total latency     33.3ms | delta wall    2.9ms clock    2.2ms
+          --pub_lines-- | total latency     33.8ms | delta wall    0.6ms clock    0.6ms
+                  drawn | total latency     34.1ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     35.3ms | delta wall    1.2ms clock    0.5ms
+   pub_edge/pub_segment | total latency     48.1ms | delta wall   12.9ms clock   12.8ms
+
+[rosout][INFO] 2018-10-14 07:46:21,449: [LineDetectorNode] 2901:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:46:28,203: [LineDetectorNode] 3001:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:46:28,218: [LineDetectorNode] 3001:
+Latencies:
+               acquired | total latency      2.1ms | delta wall     None clock     None
+                decoded | total latency     17.0ms | delta wall   15.0ms clock   15.1ms
+                resized | total latency     17.9ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.2ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     28.1ms | delta wall    7.9ms clock    7.9ms
+               prepared | total latency     30.0ms | delta wall    1.9ms clock    2.0ms
+          --pub_lines-- | total latency     30.4ms | delta wall    0.4ms clock    0.6ms
+                  drawn | total latency     30.8ms | delta wall    0.4ms clock    0.2ms
+              pub_image | total latency     31.2ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     43.4ms | delta wall   12.2ms clock   12.3ms
+
+[rosout][INFO] 2018-10-14 07:46:28,245: [LineDetectorNode] 3001:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:46:34,932: [LineDetectorNode] 3101:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:46:34,947: [LineDetectorNode] 3101:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.3ms | delta wall   15.1ms clock   15.1ms
+                resized | total latency     18.2ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.6ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     27.3ms | delta wall    6.7ms clock    8.1ms
+               prepared | total latency     29.2ms | delta wall    1.9ms clock    2.2ms
+          --pub_lines-- | total latency     29.7ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     30.0ms | delta wall    0.4ms clock    0.5ms
+              pub_image | total latency     31.1ms | delta wall    1.1ms clock    0.5ms
+   pub_edge/pub_segment | total latency     42.5ms | delta wall   11.4ms clock   11.4ms
+
+[rosout][INFO] 2018-10-14 07:46:34,975: [LineDetectorNode] 3101:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:46:41,867: [LineDetectorNode] 3201:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:46:41,882: [LineDetectorNode] 3201:
+Latencies:
+               acquired | total latency      2.4ms | delta wall     None clock     None
+                decoded | total latency     17.8ms | delta wall   15.4ms clock   15.5ms
+                resized | total latency     18.8ms | delta wall    1.0ms clock    0.8ms
+              corrected | total latency     21.0ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     28.0ms | delta wall    6.9ms clock    8.3ms
+               prepared | total latency     30.2ms | delta wall    2.2ms clock    2.0ms
+          --pub_lines-- | total latency     30.7ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     31.1ms | delta wall    0.4ms clock    0.3ms
+              pub_image | total latency     31.5ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     43.3ms | delta wall   11.8ms clock   11.8ms
+
+[rosout][INFO] 2018-10-14 07:46:41,906: [LineDetectorNode] 3201:In the last 6.9 s: received 104 (15.0 fps) processed 100 (14.4 fps) skipped 4 (0.6 fps) (4%)
+[rosout][INFO] 2018-10-14 07:46:48,597: [LineDetectorNode] 3301:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:46:48,613: [LineDetectorNode] 3301:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.3ms | delta wall   15.2ms clock   15.3ms
+                resized | total latency     18.2ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.6ms | delta wall    2.5ms clock    2.3ms
+               detected | total latency     27.8ms | delta wall    7.2ms clock    8.4ms
+               prepared | total latency     30.0ms | delta wall    2.2ms clock    2.0ms
+          --pub_lines-- | total latency     30.4ms | delta wall    0.4ms clock    0.3ms
+                  drawn | total latency     30.6ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     32.1ms | delta wall    1.4ms clock    0.6ms
+   pub_edge/pub_segment | total latency     43.6ms | delta wall   11.5ms clock   11.4ms
+
+[rosout][INFO] 2018-10-14 07:46:48,639: [LineDetectorNode] 3301:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:46:55,403: [LineDetectorNode] 3401:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:46:55,420: [LineDetectorNode] 3401:
+Latencies:
+               acquired | total latency      5.7ms | delta wall     None clock     None
+                decoded | total latency     22.2ms | delta wall   16.5ms clock   16.0ms
+                resized | total latency     23.8ms | delta wall    1.6ms clock    0.9ms
+              corrected | total latency     27.0ms | delta wall    3.2ms clock    2.9ms
+               detected | total latency     34.9ms | delta wall    7.9ms clock    9.0ms
+               prepared | total latency     37.4ms | delta wall    2.5ms clock    2.4ms
+          --pub_lines-- | total latency     37.8ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     38.2ms | delta wall    0.4ms clock    0.6ms
+              pub_image | total latency     38.9ms | delta wall    0.6ms clock    0.6ms
+   pub_edge/pub_segment | total latency     52.7ms | delta wall   13.8ms clock   12.9ms
+
+[rosout][INFO] 2018-10-14 07:46:55,437: [LineDetectorNode] 3401:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:47:02,195: [LineDetectorNode] 3501:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:47:02,211: [LineDetectorNode] 3501:
+Latencies:
+               acquired | total latency      2.6ms | delta wall     None clock     None
+                decoded | total latency     17.8ms | delta wall   15.1ms clock   15.2ms
+                resized | total latency     18.7ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     20.9ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     27.6ms | delta wall    6.7ms clock    8.2ms
+               prepared | total latency     29.5ms | delta wall    1.9ms clock    2.1ms
+          --pub_lines-- | total latency     29.9ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     30.2ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     31.2ms | delta wall    1.0ms clock    0.5ms
+   pub_edge/pub_segment | total latency     43.0ms | delta wall   11.8ms clock   11.5ms
+
+[rosout][INFO] 2018-10-14 07:47:02,236: [LineDetectorNode] 3501:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:47:08,926: [LineDetectorNode] 3601:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:47:08,941: [LineDetectorNode] 3601:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     18.1ms | delta wall   15.8ms clock   15.1ms
+                resized | total latency     18.9ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.3ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     28.4ms | delta wall    7.1ms clock    8.4ms
+               prepared | total latency     30.8ms | delta wall    2.4ms clock    2.1ms
+          --pub_lines-- | total latency     31.3ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     31.5ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     32.0ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     43.1ms | delta wall   11.0ms clock   10.9ms
+
+[rosout][INFO] 2018-10-14 07:47:08,967: [LineDetectorNode] 3601:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:47:15,658: [LineDetectorNode] 3701:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:47:15,672: [LineDetectorNode] 3701:
+Latencies:
+               acquired | total latency      2.6ms | delta wall     None clock     None
+                decoded | total latency     17.8ms | delta wall   15.1ms clock   15.3ms
+                resized | total latency     18.6ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.8ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     27.8ms | delta wall    7.0ms clock    8.3ms
+               prepared | total latency     30.0ms | delta wall    2.2ms clock    2.1ms
+          --pub_lines-- | total latency     30.4ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     31.2ms | delta wall    0.8ms clock    0.5ms
+              pub_image | total latency     31.7ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     42.8ms | delta wall   11.1ms clock   11.0ms
+
+[rosout][INFO] 2018-10-14 07:47:15,698: [LineDetectorNode] 3701:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:47:22,394: [LineDetectorNode] 3801:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:47:22,412: [LineDetectorNode] 3801:
+Latencies:
+               acquired | total latency      2.8ms | delta wall     None clock     None
+                decoded | total latency     18.6ms | delta wall   15.8ms clock   15.6ms
+                resized | total latency     19.7ms | delta wall    1.0ms clock    1.0ms
+              corrected | total latency     22.3ms | delta wall    2.7ms clock    2.7ms
+               detected | total latency     31.3ms | delta wall    9.0ms clock    9.0ms
+               prepared | total latency     33.7ms | delta wall    2.4ms clock    2.4ms
+          --pub_lines-- | total latency     35.3ms | delta wall    1.6ms clock    0.7ms
+                  drawn | total latency     35.7ms | delta wall    0.5ms clock    0.4ms
+              pub_image | total latency     36.1ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     50.0ms | delta wall   13.8ms clock   13.6ms
+
+[rosout][INFO] 2018-10-14 07:47:22,431: [LineDetectorNode] 3801:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:47:29,122: [LineDetectorNode] 3901:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:47:29,137: [LineDetectorNode] 3901:
+Latencies:
+               acquired | total latency      2.7ms | delta wall     None clock     None
+                decoded | total latency     17.5ms | delta wall   14.9ms clock   15.0ms
+                resized | total latency     18.4ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.6ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     28.2ms | delta wall    7.7ms clock    8.6ms
+               prepared | total latency     30.3ms | delta wall    2.1ms clock    2.1ms
+          --pub_lines-- | total latency     30.8ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     31.1ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     32.2ms | delta wall    1.1ms clock    0.5ms
+   pub_edge/pub_segment | total latency     43.6ms | delta wall   11.4ms clock   11.2ms
+
+[rosout][INFO] 2018-10-14 07:47:29,165: [LineDetectorNode] 3901:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:47:36,052: [LineDetectorNode] 4001:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:47:36,067: [LineDetectorNode] 4001:
+Latencies:
+               acquired | total latency      2.0ms | delta wall     None clock     None
+                decoded | total latency     17.0ms | delta wall   15.0ms clock   15.0ms
+                resized | total latency     17.8ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.1ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     26.6ms | delta wall    6.5ms clock    8.7ms
+               prepared | total latency     29.3ms | delta wall    2.7ms clock    2.2ms
+          --pub_lines-- | total latency     29.7ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     29.9ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     30.3ms | delta wall    0.4ms clock    0.5ms
+   pub_edge/pub_segment | total latency     41.7ms | delta wall   11.4ms clock   11.5ms
+
+[rosout][INFO] 2018-10-14 07:47:36,094: [LineDetectorNode] 4001:In the last 6.9 s: received 104 (15.0 fps) processed 100 (14.4 fps) skipped 4 (0.6 fps) (4%)
+[rosout][INFO] 2018-10-14 07:47:42,786: [LineDetectorNode] 4101:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:47:42,801: [LineDetectorNode] 4101:
+Latencies:
+               acquired | total latency      2.0ms | delta wall     None clock     None
+                decoded | total latency     17.5ms | delta wall   15.5ms clock   15.6ms
+                resized | total latency     18.4ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     20.6ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     27.8ms | delta wall    7.2ms clock    8.5ms
+               prepared | total latency     29.8ms | delta wall    2.0ms clock    1.9ms
+          --pub_lines-- | total latency     30.1ms | delta wall    0.3ms clock    0.3ms
+                  drawn | total latency     30.4ms | delta wall    0.3ms clock    0.4ms
+              pub_image | total latency     30.8ms | delta wall    0.4ms clock    0.5ms
+   pub_edge/pub_segment | total latency     43.4ms | delta wall   12.6ms clock   12.6ms
+
+[rosout][INFO] 2018-10-14 07:47:42,827: [LineDetectorNode] 4101:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:47:49,519: [LineDetectorNode] 4201:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:47:49,533: [LineDetectorNode] 4201:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.1ms | delta wall   14.9ms clock   15.0ms
+                resized | total latency     18.0ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.3ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     27.6ms | delta wall    7.2ms clock    8.7ms
+               prepared | total latency     29.7ms | delta wall    2.2ms clock    2.1ms
+          --pub_lines-- | total latency     30.1ms | delta wall    0.4ms clock    0.6ms
+                  drawn | total latency     30.5ms | delta wall    0.4ms clock    0.2ms
+              pub_image | total latency     30.9ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     42.6ms | delta wall   11.6ms clock   11.5ms
+
+[rosout][INFO] 2018-10-14 07:47:49,559: [LineDetectorNode] 4201:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:47:56,390: [LineDetectorNode] 4301:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:47:56,409: [LineDetectorNode] 4301:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     21.6ms | delta wall   19.4ms clock   16.0ms
+                resized | total latency     23.3ms | delta wall    1.7ms clock    1.0ms
+              corrected | total latency     26.8ms | delta wall    3.5ms clock    2.8ms
+               detected | total latency     34.7ms | delta wall    7.9ms clock    9.2ms
+               prepared | total latency     36.9ms | delta wall    2.2ms clock    2.4ms
+          --pub_lines-- | total latency     37.4ms | delta wall    0.5ms clock    0.7ms
+                  drawn | total latency     37.9ms | delta wall    0.5ms clock    0.5ms
+              pub_image | total latency     38.4ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     53.7ms | delta wall   15.3ms clock   15.3ms
+
+[rosout][INFO] 2018-10-14 07:47:56,424: [LineDetectorNode] 4301:In the last 6.9 s: received 103 (15.0 fps) processed 100 (14.6 fps) skipped 3 (0.4 fps) (3%)
+[rosout][INFO] 2018-10-14 07:48:03,250: [LineDetectorNode] 4401:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:48:03,270: [LineDetectorNode] 4401:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.3ms | delta wall   15.0ms clock   15.3ms
+                resized | total latency     18.2ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.5ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     30.2ms | delta wall    9.7ms clock    8.8ms
+               prepared | total latency     33.4ms | delta wall    3.2ms clock    2.3ms
+          --pub_lines-- | total latency     33.9ms | delta wall    0.5ms clock    0.3ms
+                  drawn | total latency     34.1ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     34.6ms | delta wall    0.5ms clock    0.4ms
+   pub_edge/pub_segment | total latency     50.2ms | delta wall   15.6ms clock   13.3ms
+
+[rosout][INFO] 2018-10-14 07:48:03,289: [LineDetectorNode] 4401:In the last 6.9 s: received 103 (15.0 fps) processed 100 (14.6 fps) skipped 3 (0.4 fps) (3%)
+[rosout][INFO] 2018-10-14 07:48:09,980: [LineDetectorNode] 4501:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:48:09,995: [LineDetectorNode] 4501:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.6ms | delta wall   15.4ms clock   15.2ms
+                resized | total latency     18.5ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.8ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     27.9ms | delta wall    7.1ms clock    8.5ms
+               prepared | total latency     29.9ms | delta wall    2.0ms clock    2.0ms
+          --pub_lines-- | total latency     30.5ms | delta wall    0.5ms clock    0.6ms
+                  drawn | total latency     30.7ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     31.1ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     42.9ms | delta wall   11.8ms clock   11.7ms
+
+[rosout][INFO] 2018-10-14 07:48:10,020: [LineDetectorNode] 4501:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:48:16,712: [LineDetectorNode] 4601:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:48:16,729: [LineDetectorNode] 4601:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.1ms | delta wall   14.8ms clock   15.0ms
+                resized | total latency     17.9ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.3ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     27.4ms | delta wall    7.1ms clock    8.6ms
+               prepared | total latency     29.2ms | delta wall    1.8ms clock    1.9ms
+          --pub_lines-- | total latency     29.7ms | delta wall    0.4ms clock    0.6ms
+                  drawn | total latency     31.1ms | delta wall    1.5ms clock    0.4ms
+              pub_image | total latency     31.5ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     44.9ms | delta wall   13.3ms clock   12.9ms
+
+[rosout][INFO] 2018-10-14 07:48:16,753: [LineDetectorNode] 4601:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:48:23,397: [LineDetectorNode] 4701:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:48:23,420: [LineDetectorNode] 4701:
+Latencies:
+               acquired | total latency      2.7ms | delta wall     None clock     None
+                decoded | total latency     22.7ms | delta wall   20.0ms clock   16.1ms
+                resized | total latency     23.7ms | delta wall    1.0ms clock    0.8ms
+              corrected | total latency     30.4ms | delta wall    6.7ms clock    2.9ms
+               detected | total latency     46.5ms | delta wall   16.1ms clock    9.9ms
+               prepared | total latency     50.1ms | delta wall    3.6ms clock    2.6ms
+          --pub_lines-- | total latency     50.9ms | delta wall    0.8ms clock    0.9ms
+                  drawn | total latency     51.4ms | delta wall    0.5ms clock    0.2ms
+              pub_image | total latency     52.1ms | delta wall    0.7ms clock    0.6ms
+   pub_edge/pub_segment | total latency     69.8ms | delta wall   17.7ms clock   15.5ms
+
+[rosout][INFO] 2018-10-14 07:48:23,486: [LineDetectorNode] 4701:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:48:30,178: [LineDetectorNode] 4801:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:48:30,194: [LineDetectorNode] 4801:
+Latencies:
+               acquired | total latency      2.1ms | delta wall     None clock     None
+                decoded | total latency     17.7ms | delta wall   15.6ms clock   15.2ms
+                resized | total latency     18.6ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.9ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     28.1ms | delta wall    7.1ms clock    8.6ms
+               prepared | total latency     30.0ms | delta wall    1.9ms clock    1.9ms
+          --pub_lines-- | total latency     30.4ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     30.7ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     31.0ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     44.1ms | delta wall   13.0ms clock   12.1ms
+
+[rosout][INFO] 2018-10-14 07:48:30,217: [LineDetectorNode] 4801:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:48:37,042: [LineDetectorNode] 4901:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:48:37,057: [LineDetectorNode] 4901:
+Latencies:
+               acquired | total latency      2.5ms | delta wall     None clock     None
+                decoded | total latency     17.3ms | delta wall   14.8ms clock   14.9ms
+                resized | total latency     18.1ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.3ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     27.4ms | delta wall    7.1ms clock    8.5ms
+               prepared | total latency     29.5ms | delta wall    2.0ms clock    2.0ms
+          --pub_lines-- | total latency     29.9ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     30.3ms | delta wall    0.4ms clock    0.4ms
+              pub_image | total latency     30.8ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     42.4ms | delta wall   11.6ms clock   11.4ms
+
+[rosout][INFO] 2018-10-14 07:48:37,084: [LineDetectorNode] 4901:In the last 6.9 s: received 103 (15.0 fps) processed 100 (14.6 fps) skipped 3 (0.4 fps) (3%)
+[rosout][INFO] 2018-10-14 07:48:43,773: [LineDetectorNode] 5001:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:48:43,787: [LineDetectorNode] 5001:
+Latencies:
+               acquired | total latency      2.0ms | delta wall     None clock     None
+                decoded | total latency     17.0ms | delta wall   15.0ms clock   15.1ms
+                resized | total latency     17.8ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.1ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     27.0ms | delta wall    6.9ms clock    8.4ms
+               prepared | total latency     28.9ms | delta wall    1.9ms clock    2.0ms
+          --pub_lines-- | total latency     29.4ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     29.6ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     30.0ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     41.3ms | delta wall   11.3ms clock   11.4ms
+
+[rosout][INFO] 2018-10-14 07:48:43,816: [LineDetectorNode] 5001:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:48:50,510: [LineDetectorNode] 5101:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:48:50,525: [LineDetectorNode] 5101:
+Latencies:
+               acquired | total latency      3.4ms | delta wall     None clock     None
+                decoded | total latency     19.4ms | delta wall   15.9ms clock   23.6ms
+                resized | total latency     20.1ms | delta wall    0.7ms clock    0.7ms
+              corrected | total latency     22.3ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     30.8ms | delta wall    8.5ms clock    8.6ms
+               prepared | total latency     33.1ms | delta wall    2.3ms clock    2.2ms
+          --pub_lines-- | total latency     33.5ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     33.8ms | delta wall    0.2ms clock    0.3ms
+              pub_image | total latency     34.4ms | delta wall    0.6ms clock    0.5ms
+   pub_edge/pub_segment | total latency     46.3ms | delta wall   11.9ms clock   11.5ms
+
+[rosout][INFO] 2018-10-14 07:48:50,547: [LineDetectorNode] 5101:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:48:57,239: [LineDetectorNode] 5201:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:48:57,255: [LineDetectorNode] 5201:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.5ms | delta wall   15.3ms clock   15.0ms
+                resized | total latency     18.4ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     20.6ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     29.0ms | delta wall    8.4ms clock    8.3ms
+               prepared | total latency     31.1ms | delta wall    2.1ms clock    2.1ms
+          --pub_lines-- | total latency     31.6ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     31.9ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     33.0ms | delta wall    1.1ms clock    0.5ms
+   pub_edge/pub_segment | total latency     45.6ms | delta wall   12.7ms clock   12.5ms
+
+[rosout][INFO] 2018-10-14 07:48:57,279: [LineDetectorNode] 5201:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:49:03,971: [LineDetectorNode] 5301:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:49:03,986: [LineDetectorNode] 5301:
+Latencies:
+               acquired | total latency      2.0ms | delta wall     None clock     None
+                decoded | total latency     17.4ms | delta wall   15.4ms clock   15.2ms
+                resized | total latency     18.3ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.6ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     28.9ms | delta wall    8.3ms clock    8.3ms
+               prepared | total latency     31.0ms | delta wall    2.1ms clock    2.1ms
+          --pub_lines-- | total latency     31.4ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     31.7ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     32.2ms | delta wall    0.5ms clock    0.6ms
+   pub_edge/pub_segment | total latency     44.1ms | delta wall   11.9ms clock   11.9ms
+
+[rosout][INFO] 2018-10-14 07:49:04,010: [LineDetectorNode] 5301:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:49:10,636: [LineDetectorNode] 5401:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:49:10,651: [LineDetectorNode] 5401:
+Latencies:
+               acquired | total latency      2.5ms | delta wall     None clock     None
+                decoded | total latency     17.5ms | delta wall   15.0ms clock   15.1ms
+                resized | total latency     18.5ms | delta wall    1.0ms clock    0.8ms
+              corrected | total latency     20.7ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     28.3ms | delta wall    7.5ms clock    8.8ms
+               prepared | total latency     30.4ms | delta wall    2.1ms clock    2.0ms
+          --pub_lines-- | total latency     32.0ms | delta wall    1.6ms clock    0.8ms
+                  drawn | total latency     32.2ms | delta wall    0.3ms clock    0.2ms
+              pub_image | total latency     32.6ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     43.6ms | delta wall   11.0ms clock   10.9ms
+
+[rosout][INFO] 2018-10-14 07:49:10,676: [LineDetectorNode] 5401:In the last 6.7 s: received 100 (15.0 fps) processed 100 (15.0 fps) skipped 0 (0.0 fps) (0%)
+[rosout][INFO] 2018-10-14 07:49:17,436: [LineDetectorNode] 5501:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:49:17,451: [LineDetectorNode] 5501:
+Latencies:
+               acquired | total latency      2.5ms | delta wall     None clock     None
+                decoded | total latency     17.7ms | delta wall   15.2ms clock   15.3ms
+                resized | total latency     18.5ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     20.8ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     29.4ms | delta wall    8.6ms clock    9.0ms
+               prepared | total latency     31.6ms | delta wall    2.2ms clock    2.2ms
+          --pub_lines-- | total latency     32.0ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     32.2ms | delta wall    0.2ms clock    0.3ms
+              pub_image | total latency     32.7ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     44.4ms | delta wall   11.7ms clock   11.8ms
+
+[rosout][INFO] 2018-10-14 07:49:17,476: [LineDetectorNode] 5501:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:49:24,167: [LineDetectorNode] 5601:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:49:24,183: [LineDetectorNode] 5601:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.5ms | delta wall   15.3ms clock   15.2ms
+                resized | total latency     18.3ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.6ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     27.9ms | delta wall    7.3ms clock    8.8ms
+               prepared | total latency     29.9ms | delta wall    2.0ms clock    2.1ms
+          --pub_lines-- | total latency     31.2ms | delta wall    1.3ms clock    0.4ms
+                  drawn | total latency     31.5ms | delta wall    0.3ms clock    0.4ms
+              pub_image | total latency     31.9ms | delta wall    0.4ms clock    0.5ms
+   pub_edge/pub_segment | total latency     44.0ms | delta wall   12.0ms clock   11.8ms
+
+[rosout][INFO] 2018-10-14 07:49:24,208: [LineDetectorNode] 5601:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:49:30,832: [LineDetectorNode] 5701:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:49:30,846: [LineDetectorNode] 5701:
+Latencies:
+               acquired | total latency      2.1ms | delta wall     None clock     None
+                decoded | total latency     17.2ms | delta wall   15.1ms clock   15.3ms
+                resized | total latency     18.2ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     20.6ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     27.5ms | delta wall    6.9ms clock    8.1ms
+               prepared | total latency     29.6ms | delta wall    2.1ms clock    2.1ms
+          --pub_lines-- | total latency     30.0ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     30.2ms | delta wall    0.2ms clock    0.3ms
+              pub_image | total latency     30.7ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     41.8ms | delta wall   11.1ms clock   11.0ms
+
+[rosout][INFO] 2018-10-14 07:49:30,871: [LineDetectorNode] 5701:In the last 6.7 s: received 100 (15.0 fps) processed 100 (15.0 fps) skipped 0 (0.0 fps) (0%)
+[rosout][INFO] 2018-10-14 07:49:37,630: [LineDetectorNode] 5801:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:49:37,644: [LineDetectorNode] 5801:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     18.1ms | delta wall   15.9ms clock   14.7ms
+                resized | total latency     18.9ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.4ms | delta wall    2.5ms clock    2.5ms
+               detected | total latency     28.1ms | delta wall    6.7ms clock    8.9ms
+               prepared | total latency     30.1ms | delta wall    2.0ms clock    2.0ms
+          --pub_lines-- | total latency     30.6ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     30.8ms | delta wall    0.2ms clock    0.3ms
+              pub_image | total latency     31.3ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     42.8ms | delta wall   11.5ms clock   11.5ms
+
+[rosout][INFO] 2018-10-14 07:49:37,671: [LineDetectorNode] 5801:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:49:44,367: [LineDetectorNode] 5901:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:49:44,386: [LineDetectorNode] 5901:
+Latencies:
+               acquired | total latency      5.1ms | delta wall     None clock     None
+                decoded | total latency     20.4ms | delta wall   15.3ms clock   15.2ms
+                resized | total latency     21.3ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     23.9ms | delta wall    2.7ms clock    2.6ms
+               detected | total latency     32.9ms | delta wall    8.9ms clock    8.9ms
+               prepared | total latency     35.1ms | delta wall    2.2ms clock    2.2ms
+          --pub_lines-- | total latency     35.6ms | delta wall    0.5ms clock    0.7ms
+                  drawn | total latency     35.9ms | delta wall    0.3ms clock    0.4ms
+              pub_image | total latency     36.4ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     51.2ms | delta wall   14.8ms clock   14.8ms
+
+[rosout][INFO] 2018-10-14 07:49:44,404: [LineDetectorNode] 5901:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:49:51,099: [LineDetectorNode] 6001:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:49:51,114: [LineDetectorNode] 6001:
+Latencies:
+               acquired | total latency      2.1ms | delta wall     None clock     None
+                decoded | total latency     23.5ms | delta wall   21.4ms clock   15.9ms
+                resized | total latency     24.3ms | delta wall    0.8ms clock    0.7ms
+              corrected | total latency     26.5ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     33.0ms | delta wall    6.5ms clock    8.7ms
+               prepared | total latency     35.2ms | delta wall    2.2ms clock    2.0ms
+          --pub_lines-- | total latency     35.6ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     35.8ms | delta wall    0.2ms clock    0.3ms
+              pub_image | total latency     36.2ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     48.0ms | delta wall   11.8ms clock   11.7ms
+
+[rosout][INFO] 2018-10-14 07:49:51,136: [LineDetectorNode] 6001:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:49:57,892: [LineDetectorNode] 6101:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:49:57,907: [LineDetectorNode] 6101:
+Latencies:
+               acquired | total latency      2.4ms | delta wall     None clock     None
+                decoded | total latency     17.2ms | delta wall   14.9ms clock   15.0ms
+                resized | total latency     18.0ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.3ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     27.2ms | delta wall    6.9ms clock    8.3ms
+               prepared | total latency     29.3ms | delta wall    2.1ms clock    2.3ms
+          --pub_lines-- | total latency     29.7ms | delta wall    0.3ms clock    0.3ms
+                  drawn | total latency     29.9ms | delta wall    0.3ms clock    0.5ms
+              pub_image | total latency     30.8ms | delta wall    0.8ms clock    0.5ms
+   pub_edge/pub_segment | total latency     42.3ms | delta wall   11.5ms clock   11.1ms
+
+[rosout][INFO] 2018-10-14 07:49:57,933: [LineDetectorNode] 6101:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:50:04,692: [LineDetectorNode] 6201:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:50:04,708: [LineDetectorNode] 6201:
+Latencies:
+               acquired | total latency      2.1ms | delta wall     None clock     None
+                decoded | total latency     18.2ms | delta wall   16.1ms clock   15.3ms
+                resized | total latency     19.0ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.5ms | delta wall    2.5ms clock    2.4ms
+               detected | total latency     28.6ms | delta wall    7.1ms clock    8.7ms
+               prepared | total latency     30.9ms | delta wall    2.2ms clock    2.0ms
+          --pub_lines-- | total latency     31.4ms | delta wall    0.5ms clock    0.7ms
+                  drawn | total latency     32.3ms | delta wall    0.9ms clock    0.6ms
+              pub_image | total latency     33.0ms | delta wall    0.6ms clock    0.4ms
+   pub_edge/pub_segment | total latency     44.3ms | delta wall   11.4ms clock   11.4ms
+
+[rosout][INFO] 2018-10-14 07:50:04,733: [LineDetectorNode] 6201:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:50:11,426: [LineDetectorNode] 6301:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:50:11,453: [LineDetectorNode] 6301:
+Latencies:
+               acquired | total latency      1.9ms | delta wall     None clock     None
+                decoded | total latency     17.1ms | delta wall   15.2ms clock   15.4ms
+                resized | total latency     18.0ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     20.4ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     29.5ms | delta wall    9.1ms clock    8.8ms
+               prepared | total latency     32.6ms | delta wall    3.1ms clock    3.3ms
+          --pub_lines-- | total latency     33.2ms | delta wall    0.6ms clock    1.1ms
+                  drawn | total latency     33.9ms | delta wall    0.6ms clock    0.3ms
+              pub_image | total latency     34.6ms | delta wall    0.7ms clock    0.7ms
+   pub_edge/pub_segment | total latency     55.8ms | delta wall   21.2ms clock   21.1ms
+
+[rosout][INFO] 2018-10-14 07:50:11,473: [LineDetectorNode] 6301:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.8 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:50:18,223: [LineDetectorNode] 6401:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:50:18,239: [LineDetectorNode] 6401:
+Latencies:
+               acquired | total latency      2.5ms | delta wall     None clock     None
+                decoded | total latency     17.4ms | delta wall   14.9ms clock   14.9ms
+                resized | total latency     18.5ms | delta wall    1.1ms clock    0.8ms
+              corrected | total latency     20.8ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     27.6ms | delta wall    6.8ms clock    8.1ms
+               prepared | total latency     30.4ms | delta wall    2.8ms clock    2.1ms
+          --pub_lines-- | total latency     30.7ms | delta wall    0.3ms clock    0.3ms
+                  drawn | total latency     31.0ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     32.2ms | delta wall    1.2ms clock    0.6ms
+   pub_edge/pub_segment | total latency     44.2ms | delta wall   12.0ms clock   11.4ms
+
+[rosout][INFO] 2018-10-14 07:50:18,264: [LineDetectorNode] 6401:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:50:24,955: [LineDetectorNode] 6501:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:50:24,969: [LineDetectorNode] 6501:
+Latencies:
+               acquired | total latency      2.1ms | delta wall     None clock     None
+                decoded | total latency     17.2ms | delta wall   15.2ms clock   15.1ms
+                resized | total latency     18.4ms | delta wall    1.2ms clock    0.8ms
+              corrected | total latency     20.6ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     28.7ms | delta wall    8.0ms clock    8.0ms
+               prepared | total latency     30.6ms | delta wall    2.0ms clock    2.1ms
+          --pub_lines-- | total latency     31.1ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     31.4ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     32.4ms | delta wall    1.0ms clock    0.4ms
+   pub_edge/pub_segment | total latency     43.2ms | delta wall   10.8ms clock   10.8ms
+
+[rosout][INFO] 2018-10-14 07:50:24,996: [LineDetectorNode] 6501:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:50:31,822: [LineDetectorNode] 6601:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:50:31,837: [LineDetectorNode] 6601:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.6ms | delta wall   15.3ms clock   15.1ms
+                resized | total latency     18.5ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     20.9ms | delta wall    2.3ms clock    2.4ms
+               detected | total latency     27.9ms | delta wall    7.0ms clock    8.4ms
+               prepared | total latency     30.3ms | delta wall    2.4ms clock    2.1ms
+          --pub_lines-- | total latency     30.7ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     31.0ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     31.3ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     43.4ms | delta wall   12.0ms clock   11.4ms
+
+[rosout][INFO] 2018-10-14 07:50:31,860: [LineDetectorNode] 6601:In the last 6.9 s: received 103 (15.0 fps) processed 100 (14.6 fps) skipped 3 (0.4 fps) (3%)
+[rosout][INFO] 2018-10-14 07:50:38,553: [LineDetectorNode] 6701:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:50:38,570: [LineDetectorNode] 6701:
+Latencies:
+               acquired | total latency      2.4ms | delta wall     None clock     None
+                decoded | total latency     17.8ms | delta wall   15.5ms clock   15.7ms
+                resized | total latency     18.7ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     21.1ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     29.4ms | delta wall    8.2ms clock    8.9ms
+               prepared | total latency     31.6ms | delta wall    2.3ms clock    2.1ms
+          --pub_lines-- | total latency     32.2ms | delta wall    0.6ms clock    0.5ms
+                  drawn | total latency     32.4ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     33.5ms | delta wall    1.1ms clock    0.5ms
+   pub_edge/pub_segment | total latency     46.1ms | delta wall   12.5ms clock   12.2ms
+
+[rosout][INFO] 2018-10-14 07:50:38,594: [LineDetectorNode] 6701:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:50:45,288: [LineDetectorNode] 6801:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:50:45,307: [LineDetectorNode] 6801:
+Latencies:
+               acquired | total latency      2.6ms | delta wall     None clock     None
+                decoded | total latency     18.4ms | delta wall   15.9ms clock   15.6ms
+                resized | total latency     19.3ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     21.8ms | delta wall    2.5ms clock    2.6ms
+               detected | total latency     31.4ms | delta wall    9.6ms clock    9.2ms
+               prepared | total latency     34.0ms | delta wall    2.5ms clock    2.2ms
+          --pub_lines-- | total latency     34.4ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     34.6ms | delta wall    0.3ms clock    0.4ms
+              pub_image | total latency     36.2ms | delta wall    1.5ms clock    0.6ms
+   pub_edge/pub_segment | total latency     50.6ms | delta wall   14.4ms clock   14.0ms
+
+[rosout][INFO] 2018-10-14 07:50:45,325: [LineDetectorNode] 6801:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:50:52,017: [LineDetectorNode] 6901:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:50:52,031: [LineDetectorNode] 6901:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.7ms | delta wall   15.5ms clock   15.3ms
+                resized | total latency     18.5ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.8ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     29.0ms | delta wall    8.2ms clock    8.2ms
+               prepared | total latency     31.0ms | delta wall    2.1ms clock    2.0ms
+          --pub_lines-- | total latency     31.5ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     31.7ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     32.1ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     43.1ms | delta wall   10.9ms clock   11.0ms
+
+[rosout][INFO] 2018-10-14 07:50:52,057: [LineDetectorNode] 6901:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:50:58,748: [LineDetectorNode] 7001:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:50:58,763: [LineDetectorNode] 7001:
+Latencies:
+               acquired | total latency      2.6ms | delta wall     None clock     None
+                decoded | total latency     17.8ms | delta wall   15.2ms clock   15.1ms
+                resized | total latency     18.6ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.8ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     27.6ms | delta wall    6.8ms clock    8.4ms
+               prepared | total latency     29.7ms | delta wall    2.1ms clock    2.0ms
+          --pub_lines-- | total latency     30.1ms | delta wall    0.4ms clock    0.6ms
+                  drawn | total latency     30.5ms | delta wall    0.4ms clock    0.2ms
+              pub_image | total latency     31.5ms | delta wall    1.1ms clock    0.5ms
+   pub_edge/pub_segment | total latency     42.7ms | delta wall   11.2ms clock   11.1ms
+
+[rosout][INFO] 2018-10-14 07:50:58,790: [LineDetectorNode] 7001:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:51:05,481: [LineDetectorNode] 7101:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:51:05,496: [LineDetectorNode] 7101:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.8ms | delta wall   15.5ms clock   15.6ms
+                resized | total latency     18.6ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.0ms | delta wall    2.3ms clock    2.4ms
+               detected | total latency     27.9ms | delta wall    6.9ms clock    8.3ms
+               prepared | total latency     29.8ms | delta wall    1.9ms clock    2.0ms
+          --pub_lines-- | total latency     30.2ms | delta wall    0.4ms clock    0.6ms
+                  drawn | total latency     30.5ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     31.7ms | delta wall    1.2ms clock    0.5ms
+   pub_edge/pub_segment | total latency     42.9ms | delta wall   11.2ms clock   11.3ms
+
+[rosout][INFO] 2018-10-14 07:51:05,521: [LineDetectorNode] 7101:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:51:12,280: [LineDetectorNode] 7201:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:51:12,297: [LineDetectorNode] 7201:
+Latencies:
+               acquired | total latency      3.0ms | delta wall     None clock     None
+                decoded | total latency     18.2ms | delta wall   15.3ms clock   15.4ms
+                resized | total latency     19.2ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     21.6ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     29.0ms | delta wall    7.4ms clock    8.7ms
+               prepared | total latency     31.4ms | delta wall    2.4ms clock    2.3ms
+          --pub_lines-- | total latency     32.0ms | delta wall    0.6ms clock    0.7ms
+                  drawn | total latency     32.3ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     33.4ms | delta wall    1.1ms clock    0.6ms
+   pub_edge/pub_segment | total latency     46.0ms | delta wall   12.6ms clock   12.5ms
+
+[rosout][INFO] 2018-10-14 07:51:12,320: [LineDetectorNode] 7201:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:51:19,011: [LineDetectorNode] 7301:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:51:19,027: [LineDetectorNode] 7301:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.9ms | delta wall   15.6ms clock   15.6ms
+                resized | total latency     18.8ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.1ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     27.7ms | delta wall    6.6ms clock    8.6ms
+               prepared | total latency     30.2ms | delta wall    2.5ms clock    2.0ms
+          --pub_lines-- | total latency     30.6ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     30.8ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     31.9ms | delta wall    1.1ms clock    0.6ms
+   pub_edge/pub_segment | total latency     44.1ms | delta wall   12.2ms clock   11.9ms
+
+[rosout][INFO] 2018-10-14 07:51:19,051: [LineDetectorNode] 7301:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:51:25,743: [LineDetectorNode] 7401:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:51:25,759: [LineDetectorNode] 7401:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.8ms | delta wall   15.5ms clock   15.5ms
+                resized | total latency     18.6ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     21.1ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     28.2ms | delta wall    7.1ms clock    8.3ms
+               prepared | total latency     30.2ms | delta wall    2.0ms clock    2.2ms
+          --pub_lines-- | total latency     30.7ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     31.6ms | delta wall    0.9ms clock    0.3ms
+              pub_image | total latency     32.2ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     43.8ms | delta wall   11.6ms clock   11.5ms
+
+[rosout][INFO] 2018-10-14 07:51:25,786: [LineDetectorNode] 7401:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:51:32,610: [LineDetectorNode] 7501:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:51:32,626: [LineDetectorNode] 7501:
+Latencies:
+               acquired | total latency      2.9ms | delta wall     None clock     None
+                decoded | total latency     18.2ms | delta wall   15.3ms clock   15.9ms
+                resized | total latency     19.0ms | delta wall    0.8ms clock    0.9ms
+              corrected | total latency     21.6ms | delta wall    2.5ms clock    2.4ms
+               detected | total latency     28.8ms | delta wall    7.2ms clock    8.7ms
+               prepared | total latency     31.3ms | delta wall    2.5ms clock    2.0ms
+          --pub_lines-- | total latency     31.8ms | delta wall    0.6ms clock    0.5ms
+                  drawn | total latency     32.1ms | delta wall    0.3ms clock    0.2ms
+              pub_image | total latency     32.5ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     44.9ms | delta wall   12.4ms clock   11.9ms
+
+[rosout][INFO] 2018-10-14 07:51:32,649: [LineDetectorNode] 7501:In the last 6.9 s: received 103 (15.0 fps) processed 100 (14.6 fps) skipped 3 (0.4 fps) (3%)
+[rosout][INFO] 2018-10-14 07:51:39,344: [LineDetectorNode] 7601:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:51:39,362: [LineDetectorNode] 7601:
+Latencies:
+               acquired | total latency      2.8ms | delta wall     None clock     None
+                decoded | total latency     18.4ms | delta wall   15.6ms clock   15.5ms
+                resized | total latency     19.4ms | delta wall    1.0ms clock    0.9ms
+              corrected | total latency     22.0ms | delta wall    2.6ms clock    2.5ms
+               detected | total latency     30.9ms | delta wall    8.9ms clock    8.9ms
+               prepared | total latency     33.3ms | delta wall    2.4ms clock    2.3ms
+          --pub_lines-- | total latency     33.7ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     33.9ms | delta wall    0.3ms clock    0.4ms
+              pub_image | total latency     35.5ms | delta wall    1.6ms clock    0.5ms
+   pub_edge/pub_segment | total latency     49.3ms | delta wall   13.7ms clock   13.3ms
+
+[rosout][INFO] 2018-10-14 07:51:39,382: [LineDetectorNode] 7601:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:51:46,073: [LineDetectorNode] 7701:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:51:46,090: [LineDetectorNode] 7701:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.9ms | delta wall   15.6ms clock   15.5ms
+                resized | total latency     18.7ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.0ms | delta wall    2.3ms clock    2.4ms
+               detected | total latency     28.3ms | delta wall    7.2ms clock    8.4ms
+               prepared | total latency     30.8ms | delta wall    2.5ms clock    2.4ms
+          --pub_lines-- | total latency     31.1ms | delta wall    0.4ms clock    0.3ms
+                  drawn | total latency     31.4ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     31.8ms | delta wall    0.4ms clock    0.5ms
+   pub_edge/pub_segment | total latency     45.0ms | delta wall   13.2ms clock   12.9ms
+
+[rosout][INFO] 2018-10-14 07:51:46,115: [LineDetectorNode] 7701:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rospy.internal][INFO] 2018-10-14 07:51:47,806: topic[/knightcar/line_detector_node/colorSegment] adding connection to [/rostopic_6006_1539474707453], count 0
+[rospy.internal][INFO] 2018-10-14 07:51:48,356: topic[/knightcar/line_detector_node/colorSegment] removing connection to /rostopic_6006_1539474707453
+[rospy.internal][INFO] 2018-10-14 07:51:50,789: topic[/knightcar/line_detector_node/edge] adding connection to [/rostopic_6024_1539474710369], count 0
+[rospy.internal][INFO] 2018-10-14 07:51:51,318: topic[/knightcar/line_detector_node/edge] removing connection to /rostopic_6024_1539474710369
+[rosout][INFO] 2018-10-14 07:51:52,937: [LineDetectorNode] 7801:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:51:52,953: [LineDetectorNode] 7801:
+Latencies:
+               acquired | total latency      2.5ms | delta wall     None clock     None
+                decoded | total latency     17.4ms | delta wall   14.9ms clock   15.2ms
+                resized | total latency     18.2ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.7ms | delta wall    2.5ms clock    2.3ms
+               detected | total latency     27.2ms | delta wall    6.5ms clock    8.7ms
+               prepared | total latency     29.6ms | delta wall    2.4ms clock    2.1ms
+          --pub_lines-- | total latency     30.0ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     30.3ms | delta wall    0.3ms clock    0.4ms
+              pub_image | total latency     31.5ms | delta wall    1.2ms clock    0.6ms
+   pub_edge/pub_segment | total latency     43.2ms | delta wall   11.7ms clock   11.5ms
+
+[rosout][INFO] 2018-10-14 07:51:52,980: [LineDetectorNode] 7801:In the last 6.9 s: received 103 (15.0 fps) processed 100 (14.6 fps) skipped 3 (0.4 fps) (3%)
+[rospy.internal][INFO] 2018-10-14 07:51:53,232: topic[/knightcar/line_detector_node/image_with_lines] adding connection to [/rostopic_6042_1539474712818], count 0
+[rospy.internal][INFO] 2018-10-14 07:51:53,740: topic[/knightcar/line_detector_node/image_with_lines] removing connection to /rostopic_6042_1539474712818
+[rosout][INFO] 2018-10-14 07:51:59,740: [LineDetectorNode] 7901:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:51:59,757: [LineDetectorNode] 7901:
+Latencies:
+               acquired | total latency      2.0ms | delta wall     None clock     None
+                decoded | total latency     19.3ms | delta wall   17.3ms clock   16.7ms
+                resized | total latency     20.3ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     22.9ms | delta wall    2.6ms clock    2.6ms
+               detected | total latency     31.2ms | delta wall    8.3ms clock    9.6ms
+               prepared | total latency     33.1ms | delta wall    1.9ms clock    2.0ms
+          --pub_lines-- | total latency     33.4ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     33.8ms | delta wall    0.4ms clock    0.5ms
+              pub_image | total latency     34.3ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     48.3ms | delta wall   14.0ms clock   13.9ms
+
+[rosout][INFO] 2018-10-14 07:51:59,780: [LineDetectorNode] 7901:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:52:06,602: [LineDetectorNode] 8001:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:52:06,618: [LineDetectorNode] 8001:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.5ms | delta wall   15.1ms clock   15.2ms
+                resized | total latency     18.3ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.6ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     27.7ms | delta wall    7.0ms clock    8.4ms
+               prepared | total latency     30.3ms | delta wall    2.6ms clock    2.2ms
+          --pub_lines-- | total latency     30.8ms | delta wall    0.4ms clock    0.6ms
+                  drawn | total latency     31.0ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     32.2ms | delta wall    1.2ms clock    0.6ms
+   pub_edge/pub_segment | total latency     43.4ms | delta wall   11.2ms clock   11.1ms
+
+[rosout][INFO] 2018-10-14 07:52:06,643: [LineDetectorNode] 8001:In the last 6.9 s: received 103 (15.0 fps) processed 100 (14.6 fps) skipped 3 (0.4 fps) (3%)
+[rosout][INFO] 2018-10-14 07:52:13,338: [LineDetectorNode] 8101:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:52:13,355: [LineDetectorNode] 8101:
+Latencies:
+               acquired | total latency      2.6ms | delta wall     None clock     None
+                decoded | total latency     19.9ms | delta wall   17.3ms clock   15.5ms
+                resized | total latency     21.0ms | delta wall    1.0ms clock    1.0ms
+              corrected | total latency     23.8ms | delta wall    2.8ms clock    2.6ms
+               detected | total latency     31.3ms | delta wall    7.5ms clock    9.0ms
+               prepared | total latency     33.4ms | delta wall    2.1ms clock    2.2ms
+          --pub_lines-- | total latency     33.8ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     34.0ms | delta wall    0.3ms clock    0.4ms
+              pub_image | total latency     34.4ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     48.3ms | delta wall   13.8ms clock   13.3ms
+
+[rosout][INFO] 2018-10-14 07:52:13,376: [LineDetectorNode] 8101:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:52:20,066: [LineDetectorNode] 8201:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:52:20,085: [LineDetectorNode] 8201:
+Latencies:
+               acquired | total latency      2.7ms | delta wall     None clock     None
+                decoded | total latency     18.0ms | delta wall   15.4ms clock   15.5ms
+                resized | total latency     18.9ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.4ms | delta wall    2.5ms clock    2.5ms
+               detected | total latency     28.4ms | delta wall    7.1ms clock    8.6ms
+               prepared | total latency     30.6ms | delta wall    2.2ms clock    2.1ms
+          --pub_lines-- | total latency     31.2ms | delta wall    0.6ms clock    0.7ms
+                  drawn | total latency     31.5ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     32.0ms | delta wall    0.5ms clock    0.4ms
+   pub_edge/pub_segment | total latency     47.6ms | delta wall   15.6ms clock   15.5ms
+
+[rosout][INFO] 2018-10-14 07:52:20,108: [LineDetectorNode] 8201:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:52:26,865: [LineDetectorNode] 8301:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:52:26,879: [LineDetectorNode] 8301:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     18.0ms | delta wall   15.6ms clock   15.1ms
+                resized | total latency     18.8ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.1ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     28.4ms | delta wall    7.3ms clock    8.6ms
+               prepared | total latency     30.2ms | delta wall    1.8ms clock    2.0ms
+          --pub_lines-- | total latency     30.6ms | delta wall    0.4ms clock    0.6ms
+                  drawn | total latency     31.0ms | delta wall    0.4ms clock    0.2ms
+              pub_image | total latency     31.5ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     42.8ms | delta wall   11.4ms clock   11.3ms
+
+[rosout][INFO] 2018-10-14 07:52:26,906: [LineDetectorNode] 8301:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:52:33,596: [LineDetectorNode] 8401:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:52:33,610: [LineDetectorNode] 8401:
+Latencies:
+               acquired | total latency      1.9ms | delta wall     None clock     None
+                decoded | total latency     16.8ms | delta wall   14.8ms clock   14.9ms
+                resized | total latency     17.6ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     19.9ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     27.1ms | delta wall    7.3ms clock    8.5ms
+               prepared | total latency     29.1ms | delta wall    2.0ms clock    2.0ms
+          --pub_lines-- | total latency     29.7ms | delta wall    0.6ms clock    0.6ms
+                  drawn | total latency     30.0ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     30.4ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     41.6ms | delta wall   11.2ms clock   11.1ms
+
+[rosout][INFO] 2018-10-14 07:52:33,637: [LineDetectorNode] 8401:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rospy.internal][INFO] 2018-10-14 07:52:37,218: topic[/rosout] adding connection to [/rostopic_6366_1539474756708], count 1
+[rosout][WARNING] 2018-10-14 07:52:37,499: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-14 07:52:37,507: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-14 07:52:37,660: topic[/rosout] removing connection to /rostopic_6366_1539474756708
+[rosout][INFO] 2018-10-14 07:52:40,401: [LineDetectorNode] 8501:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:52:40,418: [LineDetectorNode] 8501:
+Latencies:
+               acquired | total latency      3.8ms | delta wall     None clock     None
+                decoded | total latency     20.4ms | delta wall   16.6ms clock   15.9ms
+                resized | total latency     21.4ms | delta wall    1.0ms clock    0.9ms
+              corrected | total latency     23.9ms | delta wall    2.5ms clock    2.5ms
+               detected | total latency     32.6ms | delta wall    8.8ms clock    9.4ms
+               prepared | total latency     35.1ms | delta wall    2.5ms clock    2.4ms
+          --pub_lines-- | total latency     35.5ms | delta wall    0.4ms clock    0.3ms
+                  drawn | total latency     35.7ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     36.2ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     50.6ms | delta wall   14.5ms clock   14.3ms
+
+[rosout][INFO] 2018-10-14 07:52:40,438: [LineDetectorNode] 8501:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rospy.internal][INFO] 2018-10-14 07:52:43,700: topic[/knightcar/line_detector_node/edge] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:44,149: topic[/knightcar/line_detector_node/image_with_lines] adding connection to [/record_1539474762243845096], count 0
+[rosout][INFO] 2018-10-14 07:52:47,403: [LineDetectorNode] 8601:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:52:47,430: [LineDetectorNode] 8601:
+Latencies:
+               acquired | total latency      3.3ms | delta wall     None clock     None
+                decoded | total latency     22.9ms | delta wall   19.6ms clock   18.8ms
+                resized | total latency     24.0ms | delta wall    1.1ms clock    1.0ms
+              corrected | total latency     27.5ms | delta wall    3.5ms clock    3.3ms
+               detected | total latency     35.5ms | delta wall    7.9ms clock    9.2ms
+               prepared | total latency     38.8ms | delta wall    3.3ms clock    2.8ms
+          --pub_lines-- | total latency     40.6ms | delta wall    1.8ms clock    0.8ms
+                  drawn | total latency     41.0ms | delta wall    0.4ms clock    0.4ms
+              pub_image | total latency     42.1ms | delta wall    1.1ms clock    1.3ms
+   pub_edge/pub_segment | total latency     62.6ms | delta wall   20.5ms clock   17.4ms
+
+[rosout][INFO] 2018-10-14 07:52:47,502: [LineDetectorNode] 8601:In the last 7.1 s: received 106 (15.0 fps) processed 100 (14.2 fps) skipped 6 (0.8 fps) (6%)
+[rospy.internal][INFO] 2018-10-14 07:52:47,663: topic[/rosout] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:49,644: topic[/knightcar/line_detector_node/segment_list] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:50,777: topic[/knightcar/line_detector_node/colorSegment] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:52,949: topic[/knightcar/line_detector_node/edge] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,067: topic[/knightcar/line_detector_node/image_with_lines] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,596: topic[/knightcar/line_detector_node/segment_list] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,607: topic[/knightcar/line_detector_node/colorSegment] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,679: topic[/rosout] removing connection to /record_1539474762243845096
+[rosout][INFO] 2018-10-14 07:52:54,193: [LineDetectorNode] 8701:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:52:54,209: [LineDetectorNode] 8701:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.4ms | delta wall   15.1ms clock   15.6ms
+                resized | total latency     18.4ms | delta wall    1.0ms clock    0.9ms
+              corrected | total latency     20.8ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     27.5ms | delta wall    6.7ms clock    8.0ms
+               prepared | total latency     29.8ms | delta wall    2.3ms clock    2.2ms
+          --pub_lines-- | total latency     30.3ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     30.6ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     31.7ms | delta wall    1.1ms clock    0.6ms
+   pub_edge/pub_segment | total latency     42.9ms | delta wall   11.2ms clock   11.3ms
+
+[rosout][INFO] 2018-10-14 07:52:54,234: [LineDetectorNode] 8701:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:53:00,927: [LineDetectorNode] 8801:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:53:00,942: [LineDetectorNode] 8801:
+Latencies:
+               acquired | total latency      2.5ms | delta wall     None clock     None
+                decoded | total latency     17.6ms | delta wall   15.1ms clock   15.3ms
+                resized | total latency     18.4ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.8ms | delta wall    2.4ms clock    2.3ms
+               detected | total latency     29.3ms | delta wall    8.5ms clock    8.5ms
+               prepared | total latency     31.8ms | delta wall    2.4ms clock    2.2ms
+          --pub_lines-- | total latency     32.2ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     32.9ms | delta wall    0.7ms clock    0.2ms
+              pub_image | total latency     33.4ms | delta wall    0.5ms clock    0.6ms
+   pub_edge/pub_segment | total latency     45.0ms | delta wall   11.7ms clock   11.4ms
+
+[rosout][INFO] 2018-10-14 07:53:00,966: [LineDetectorNode] 8801:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:53:07,724: [LineDetectorNode] 8901:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:53:07,738: [LineDetectorNode] 8901:
+Latencies:
+               acquired | total latency      2.0ms | delta wall     None clock     None
+                decoded | total latency     16.9ms | delta wall   14.9ms clock   15.1ms
+                resized | total latency     17.8ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.2ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     27.1ms | delta wall    6.9ms clock    8.2ms
+               prepared | total latency     29.3ms | delta wall    2.2ms clock    2.2ms
+          --pub_lines-- | total latency     29.7ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     30.0ms | delta wall    0.2ms clock    0.3ms
+              pub_image | total latency     30.5ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     41.9ms | delta wall   11.4ms clock   11.3ms
+
+[rosout][INFO] 2018-10-14 07:53:07,767: [LineDetectorNode] 8901:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:53:14,457: [LineDetectorNode] 9001:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:53:14,471: [LineDetectorNode] 9001:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.1ms | delta wall   14.9ms clock   14.9ms
+                resized | total latency     17.9ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.2ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     27.3ms | delta wall    7.1ms clock    8.4ms
+               prepared | total latency     29.1ms | delta wall    1.8ms clock    2.0ms
+          --pub_lines-- | total latency     29.8ms | delta wall    0.7ms clock    0.6ms
+                  drawn | total latency     30.0ms | delta wall    0.2ms clock    0.3ms
+              pub_image | total latency     30.4ms | delta wall    0.4ms clock    0.5ms
+   pub_edge/pub_segment | total latency     42.1ms | delta wall   11.7ms clock   11.7ms
+
+[rosout][INFO] 2018-10-14 07:53:14,497: [LineDetectorNode] 9001:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:53:21,187: [LineDetectorNode] 9101:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:53:21,201: [LineDetectorNode] 9101:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.1ms | delta wall   14.9ms clock   14.9ms
+                resized | total latency     17.9ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.1ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     27.2ms | delta wall    7.1ms clock    8.6ms
+               prepared | total latency     29.3ms | delta wall    2.1ms clock    2.1ms
+          --pub_lines-- | total latency     29.7ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     30.0ms | delta wall    0.2ms clock    0.3ms
+              pub_image | total latency     30.5ms | delta wall    0.5ms clock    0.4ms
+   pub_edge/pub_segment | total latency     41.3ms | delta wall   10.9ms clock   10.8ms
+
+[rosout][INFO] 2018-10-14 07:53:21,228: [LineDetectorNode] 9101:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:53:27,987: [LineDetectorNode] 9201:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:53:28,002: [LineDetectorNode] 9201:
+Latencies:
+               acquired | total latency      2.8ms | delta wall     None clock     None
+                decoded | total latency     18.1ms | delta wall   15.4ms clock   15.2ms
+                resized | total latency     19.0ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.3ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     27.9ms | delta wall    6.6ms clock    8.8ms
+               prepared | total latency     30.1ms | delta wall    2.2ms clock    2.1ms
+          --pub_lines-- | total latency     30.6ms | delta wall    0.5ms clock    0.6ms
+                  drawn | total latency     30.9ms | delta wall    0.3ms clock    0.3ms
+              pub_image | total latency     31.9ms | delta wall    1.1ms clock    0.5ms
+   pub_edge/pub_segment | total latency     43.1ms | delta wall   11.2ms clock   11.2ms
+
+[rosout][INFO] 2018-10-14 07:53:28,027: [LineDetectorNode] 9201:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:53:34,721: [LineDetectorNode] 9301:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:53:34,737: [LineDetectorNode] 9301:
+Latencies:
+               acquired | total latency      2.8ms | delta wall     None clock     None
+                decoded | total latency     17.8ms | delta wall   15.0ms clock   15.1ms
+                resized | total latency     18.8ms | delta wall    1.0ms clock    0.9ms
+              corrected | total latency     21.4ms | delta wall    2.6ms clock    2.5ms
+               detected | total latency     29.7ms | delta wall    8.3ms clock    8.3ms
+               prepared | total latency     31.8ms | delta wall    2.1ms clock    2.1ms
+          --pub_lines-- | total latency     32.6ms | delta wall    0.8ms clock    0.8ms
+                  drawn | total latency     32.8ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     34.3ms | delta wall    1.5ms clock    0.6ms
+   pub_edge/pub_segment | total latency     45.9ms | delta wall   11.6ms clock   11.8ms
+
+[rosout][INFO] 2018-10-14 07:53:34,761: [LineDetectorNode] 9301:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:53:41,476: [LineDetectorNode] 9401:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:53:41,510: [LineDetectorNode] 9401:
+Latencies:
+               acquired | total latency      3.5ms | delta wall     None clock     None
+                decoded | total latency     32.6ms | delta wall   29.1ms clock   28.9ms
+                resized | total latency     34.0ms | delta wall    1.4ms clock    1.4ms
+              corrected | total latency     38.3ms | delta wall    4.3ms clock    4.3ms
+               detected | total latency     51.4ms | delta wall   13.1ms clock   16.0ms
+               prepared | total latency     54.8ms | delta wall    3.4ms clock    3.5ms
+          --pub_lines-- | total latency     57.4ms | delta wall    2.7ms clock    1.3ms
+                  drawn | total latency     57.8ms | delta wall    0.4ms clock    0.3ms
+              pub_image | total latency     58.5ms | delta wall    0.7ms clock    0.7ms
+   pub_edge/pub_segment | total latency     86.0ms | delta wall   27.5ms clock   27.1ms
+
+[rosout][INFO] 2018-10-14 07:53:41,558: [LineDetectorNode] 9401:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:53:48,254: [LineDetectorNode] 9501:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:53:48,277: [LineDetectorNode] 9501:
+Latencies:
+               acquired | total latency      2.5ms | delta wall     None clock     None
+                decoded | total latency     17.5ms | delta wall   14.9ms clock   15.6ms
+                resized | total latency     18.3ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     21.2ms | delta wall    2.9ms clock    2.6ms
+               detected | total latency     32.4ms | delta wall   11.2ms clock    9.2ms
+               prepared | total latency     34.5ms | delta wall    2.1ms clock    2.1ms
+          --pub_lines-- | total latency     34.9ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     35.3ms | delta wall    0.4ms clock    0.7ms
+              pub_image | total latency     35.9ms | delta wall    0.6ms clock    0.5ms
+   pub_edge/pub_segment | total latency     55.3ms | delta wall   19.4ms clock   16.6ms
+
+[rosout][INFO] 2018-10-14 07:53:48,293: [LineDetectorNode] 9501:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:53:54,982: [LineDetectorNode] 9601:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:53:54,999: [LineDetectorNode] 9601:
+Latencies:
+               acquired | total latency      2.1ms | delta wall     None clock     None
+                decoded | total latency     17.3ms | delta wall   15.2ms clock   15.1ms
+                resized | total latency     18.2ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.5ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     27.2ms | delta wall    6.7ms clock    8.8ms
+               prepared | total latency     29.4ms | delta wall    2.2ms clock    2.0ms
+          --pub_lines-- | total latency     29.7ms | delta wall    0.3ms clock    0.3ms
+                  drawn | total latency     30.0ms | delta wall    0.3ms clock    0.4ms
+              pub_image | total latency     30.4ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     44.1ms | delta wall   13.7ms clock   12.9ms
+
+[rosout][INFO] 2018-10-14 07:53:55,022: [LineDetectorNode] 9601:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:54:01,913: [LineDetectorNode] 9701:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:54:01,927: [LineDetectorNode] 9701:
+Latencies:
+               acquired | total latency      2.4ms | delta wall     None clock     None
+                decoded | total latency     17.2ms | delta wall   14.8ms clock   14.9ms
+                resized | total latency     18.0ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     20.3ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     26.6ms | delta wall    6.3ms clock    8.4ms
+               prepared | total latency     29.0ms | delta wall    2.4ms clock    2.0ms
+          --pub_lines-- | total latency     29.4ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     29.7ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     30.1ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     41.6ms | delta wall   11.6ms clock   11.1ms
+
+[rosout][INFO] 2018-10-14 07:54:01,954: [LineDetectorNode] 9701:In the last 6.9 s: received 104 (15.0 fps) processed 100 (14.4 fps) skipped 4 (0.6 fps) (4%)
+[rosout][INFO] 2018-10-14 07:54:08,645: [LineDetectorNode] 9801:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:54:08,662: [LineDetectorNode] 9801:
+Latencies:
+               acquired | total latency      2.4ms | delta wall     None clock     None
+                decoded | total latency     17.9ms | delta wall   15.4ms clock   15.2ms
+                resized | total latency     18.8ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     21.0ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     27.5ms | delta wall    6.5ms clock    8.7ms
+               prepared | total latency     29.7ms | delta wall    2.2ms clock    2.1ms
+          --pub_lines-- | total latency     30.2ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     30.4ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     30.9ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     44.7ms | delta wall   13.8ms clock   13.2ms
+
+[rosout][INFO] 2018-10-14 07:54:08,688: [LineDetectorNode] 9801:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:54:15,512: [LineDetectorNode] 9901:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:54:15,527: [LineDetectorNode] 9901:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.8ms | delta wall   15.5ms clock   15.2ms
+                resized | total latency     18.6ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     20.8ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     28.1ms | delta wall    7.3ms clock    8.4ms
+               prepared | total latency     30.1ms | delta wall    2.0ms clock    2.0ms
+          --pub_lines-- | total latency     30.5ms | delta wall    0.4ms clock    0.3ms
+                  drawn | total latency     30.7ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     31.2ms | delta wall    0.5ms clock    0.6ms
+   pub_edge/pub_segment | total latency     43.4ms | delta wall   12.2ms clock   11.4ms
+
+[rosout][INFO] 2018-10-14 07:54:15,552: [LineDetectorNode] 9901:In the last 6.9 s: received 103 (15.0 fps) processed 100 (14.6 fps) skipped 3 (0.4 fps) (3%)
+[rosout][INFO] 2018-10-14 07:54:22,387: [LineDetectorNode] 10001:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:54:22,423: [LineDetectorNode] 10001:
+Latencies:
+               acquired | total latency      4.4ms | delta wall     None clock     None
+                decoded | total latency     19.9ms | delta wall   15.5ms clock   15.6ms
+                resized | total latency     20.8ms | delta wall    1.0ms clock    0.9ms
+              corrected | total latency     25.3ms | delta wall    4.5ms clock    2.8ms
+               detected | total latency     38.4ms | delta wall   13.1ms clock    9.1ms
+               prepared | total latency     44.3ms | delta wall    5.9ms clock    2.7ms
+          --pub_lines-- | total latency     44.8ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     45.0ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     45.5ms | delta wall    0.5ms clock    0.6ms
+   pub_edge/pub_segment | total latency     74.3ms | delta wall   28.8ms clock   17.8ms
+
+[rosout][INFO] 2018-10-14 07:54:22,488: [LineDetectorNode] 10001:In the last 6.9 s: received 104 (15.0 fps) processed 100 (14.4 fps) skipped 4 (0.6 fps) (4%)
+[rosout][INFO] 2018-10-14 07:54:29,378: [LineDetectorNode] 10101:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:54:29,400: [LineDetectorNode] 10101:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     18.0ms | delta wall   15.7ms clock   15.4ms
+                resized | total latency     19.0ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     21.3ms | delta wall    2.4ms clock    2.4ms
+               detected | total latency     29.4ms | delta wall    8.0ms clock    8.9ms
+               prepared | total latency     32.1ms | delta wall    2.8ms clock    2.6ms
+          --pub_lines-- | total latency     32.5ms | delta wall    0.4ms clock    0.4ms
+                  drawn | total latency     32.8ms | delta wall    0.3ms clock    0.4ms
+              pub_image | total latency     34.0ms | delta wall    1.2ms clock    0.5ms
+   pub_edge/pub_segment | total latency     50.8ms | delta wall   16.8ms clock   16.6ms
+
+[rosout][INFO] 2018-10-14 07:54:29,418: [LineDetectorNode] 10101:In the last 6.9 s: received 104 (15.0 fps) processed 100 (14.4 fps) skipped 4 (0.6 fps) (4%)
+[rosout][INFO] 2018-10-14 07:54:36,309: [LineDetectorNode] 10201:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:54:36,330: [LineDetectorNode] 10201:
+Latencies:
+               acquired | total latency      2.4ms | delta wall     None clock     None
+                decoded | total latency     18.2ms | delta wall   15.8ms clock   15.5ms
+                resized | total latency     19.1ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     21.6ms | delta wall    2.5ms clock    2.5ms
+               detected | total latency     29.4ms | delta wall    7.9ms clock    9.5ms
+               prepared | total latency     31.5ms | delta wall    2.0ms clock    2.1ms
+          --pub_lines-- | total latency     32.2ms | delta wall    0.8ms clock    0.8ms
+                  drawn | total latency     33.3ms | delta wall    1.1ms clock    0.2ms
+              pub_image | total latency     33.7ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     50.2ms | delta wall   16.4ms clock   16.3ms
+
+[rosout][INFO] 2018-10-14 07:54:36,348: [LineDetectorNode] 10201:In the last 6.9 s: received 104 (15.0 fps) processed 100 (14.4 fps) skipped 4 (0.6 fps) (4%)
+[rosout][INFO] 2018-10-14 07:54:42,973: [LineDetectorNode] 10301:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:54:42,990: [LineDetectorNode] 10301:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.3ms | delta wall   15.2ms clock   15.3ms
+                resized | total latency     18.2ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.5ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     27.4ms | delta wall    6.9ms clock    8.4ms
+               prepared | total latency     29.6ms | delta wall    2.2ms clock    2.5ms
+          --pub_lines-- | total latency     30.1ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     30.3ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     30.7ms | delta wall    0.4ms clock    0.4ms
+   pub_edge/pub_segment | total latency     45.0ms | delta wall   14.3ms clock   14.2ms
+
+[rosout][INFO] 2018-10-14 07:54:43,014: [LineDetectorNode] 10301:In the last 6.7 s: received 100 (15.0 fps) processed 100 (15.0 fps) skipped 0 (0.0 fps) (0%)
+[rosout][INFO] 2018-10-14 07:54:49,705: [LineDetectorNode] 10401:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:54:49,720: [LineDetectorNode] 10401:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     18.0ms | delta wall   15.7ms clock   15.3ms
+                resized | total latency     18.9ms | delta wall    1.0ms clock    0.9ms
+              corrected | total latency     21.2ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     28.1ms | delta wall    6.9ms clock    8.2ms
+               prepared | total latency     30.2ms | delta wall    2.1ms clock    2.0ms
+          --pub_lines-- | total latency     30.5ms | delta wall    0.3ms clock    0.3ms
+                  drawn | total latency     30.7ms | delta wall    0.2ms clock    0.3ms
+              pub_image | total latency     31.1ms | delta wall    0.4ms clock    0.5ms
+   pub_edge/pub_segment | total latency     43.4ms | delta wall   12.3ms clock   11.5ms
+
+[rosout][INFO] 2018-10-14 07:54:49,747: [LineDetectorNode] 10401:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:54:56,451: [LineDetectorNode] 10501:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:54:56,479: [LineDetectorNode] 10501:
+Latencies:
+               acquired | total latency      2.4ms | delta wall     None clock     None
+                decoded | total latency     20.9ms | delta wall   18.6ms clock   18.2ms
+                resized | total latency     22.4ms | delta wall    1.5ms clock    1.5ms
+              corrected | total latency     27.2ms | delta wall    4.8ms clock    4.7ms
+               detected | total latency     40.8ms | delta wall   13.6ms clock   16.2ms
+               prepared | total latency     43.9ms | delta wall    3.1ms clock    3.3ms
+          --pub_lines-- | total latency     44.9ms | delta wall    1.0ms clock    1.3ms
+                  drawn | total latency     45.3ms | delta wall    0.4ms clock    0.4ms
+              pub_image | total latency     47.2ms | delta wall    1.9ms clock    0.8ms
+   pub_edge/pub_segment | total latency     68.7ms | delta wall   21.5ms clock   21.2ms
+
+[rosout][INFO] 2018-10-14 07:54:56,544: [LineDetectorNode] 10501:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:55:03,437: [LineDetectorNode] 10601:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:55:03,453: [LineDetectorNode] 10601:
+Latencies:
+               acquired | total latency      2.9ms | delta wall     None clock     None
+                decoded | total latency     18.5ms | delta wall   15.6ms clock   15.4ms
+                resized | total latency     19.4ms | delta wall    0.9ms clock    0.9ms
+              corrected | total latency     21.6ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     28.8ms | delta wall    7.2ms clock    8.4ms
+               prepared | total latency     31.0ms | delta wall    2.2ms clock    2.0ms
+          --pub_lines-- | total latency     31.4ms | delta wall    0.4ms clock    0.3ms
+                  drawn | total latency     31.6ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     32.6ms | delta wall    1.0ms clock    0.5ms
+   pub_edge/pub_segment | total latency     44.2ms | delta wall   11.6ms clock   11.6ms
+
+[rosout][INFO] 2018-10-14 07:55:03,475: [LineDetectorNode] 10601:In the last 6.9 s: received 104 (15.0 fps) processed 100 (14.4 fps) skipped 4 (0.6 fps) (4%)
+[rosout][INFO] 2018-10-14 07:55:10,167: [LineDetectorNode] 10701:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:55:10,185: [LineDetectorNode] 10701:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.3ms | delta wall   15.0ms clock   15.3ms
+                resized | total latency     18.2ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.4ms | delta wall    2.2ms clock    2.3ms
+               detected | total latency     27.9ms | delta wall    7.5ms clock    8.8ms
+               prepared | total latency     30.0ms | delta wall    2.1ms clock    2.2ms
+          --pub_lines-- | total latency     30.4ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     31.5ms | delta wall    1.1ms clock    0.4ms
+              pub_image | total latency     32.0ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     45.9ms | delta wall   13.9ms clock   13.6ms
+
+[rosout][INFO] 2018-10-14 07:55:10,208: [LineDetectorNode] 10701:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:55:16,898: [LineDetectorNode] 10801:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:55:16,912: [LineDetectorNode] 10801:
+Latencies:
+               acquired | total latency      2.2ms | delta wall     None clock     None
+                decoded | total latency     17.7ms | delta wall   15.5ms clock   15.6ms
+                resized | total latency     18.6ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     20.8ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     27.7ms | delta wall    6.8ms clock    8.2ms
+               prepared | total latency     29.5ms | delta wall    1.9ms clock    2.0ms
+          --pub_lines-- | total latency     29.9ms | delta wall    0.4ms clock    0.5ms
+                  drawn | total latency     30.1ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     30.5ms | delta wall    0.4ms clock    0.5ms
+   pub_edge/pub_segment | total latency     42.1ms | delta wall   11.6ms clock   11.7ms
+
+[rosout][INFO] 2018-10-14 07:55:16,940: [LineDetectorNode] 10801:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:55:23,630: [LineDetectorNode] 10901:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:55:23,646: [LineDetectorNode] 10901:
+Latencies:
+               acquired | total latency      2.8ms | delta wall     None clock     None
+                decoded | total latency     18.1ms | delta wall   15.3ms clock   15.3ms
+                resized | total latency     19.0ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     21.2ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     28.1ms | delta wall    6.9ms clock    8.3ms
+               prepared | total latency     30.8ms | delta wall    2.7ms clock    2.2ms
+          --pub_lines-- | total latency     31.1ms | delta wall    0.3ms clock    0.3ms
+                  drawn | total latency     31.3ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     31.7ms | delta wall    0.3ms clock    0.4ms
+   pub_edge/pub_segment | total latency     44.0ms | delta wall   12.3ms clock   12.3ms
+
+[rosout][INFO] 2018-10-14 07:55:23,671: [LineDetectorNode] 10901:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:55:30,364: [LineDetectorNode] 11001:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:55:30,385: [LineDetectorNode] 11001:
+Latencies:
+               acquired | total latency      3.0ms | delta wall     None clock     None
+                decoded | total latency     19.2ms | delta wall   16.2ms clock   15.9ms
+                resized | total latency     20.0ms | delta wall    0.9ms clock    0.8ms
+              corrected | total latency     22.6ms | delta wall    2.6ms clock    2.7ms
+               detected | total latency     29.6ms | delta wall    7.0ms clock    9.1ms
+               prepared | total latency     31.9ms | delta wall    2.3ms clock    2.4ms
+          --pub_lines-- | total latency     32.4ms | delta wall    0.5ms clock    1.2ms
+                  drawn | total latency     33.8ms | delta wall    1.4ms clock    0.3ms
+              pub_image | total latency     34.3ms | delta wall    0.5ms clock    0.5ms
+   pub_edge/pub_segment | total latency     51.4ms | delta wall   17.1ms clock   15.3ms
+
+[rosout][INFO] 2018-10-14 07:55:30,406: [LineDetectorNode] 11001:In the last 6.7 s: received 101 (15.0 fps) processed 100 (14.9 fps) skipped 1 (0.1 fps) (1%)
+[rosout][INFO] 2018-10-14 07:55:37,160: [LineDetectorNode] 11101:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:55:37,175: [LineDetectorNode] 11101:
+Latencies:
+               acquired | total latency      2.1ms | delta wall     None clock     None
+                decoded | total latency     17.2ms | delta wall   15.0ms clock   15.1ms
+                resized | total latency     18.1ms | delta wall    1.0ms clock    0.9ms
+              corrected | total latency     20.4ms | delta wall    2.3ms clock    2.3ms
+               detected | total latency     27.3ms | delta wall    6.9ms clock    8.2ms
+               prepared | total latency     29.5ms | delta wall    2.2ms clock    2.1ms
+          --pub_lines-- | total latency     29.8ms | delta wall    0.3ms clock    0.3ms
+                  drawn | total latency     30.1ms | delta wall    0.2ms clock    0.4ms
+              pub_image | total latency     31.8ms | delta wall    1.7ms clock    0.7ms
+   pub_edge/pub_segment | total latency     43.1ms | delta wall   11.3ms clock   11.3ms
+
+[rosout][INFO] 2018-10-14 07:55:37,201: [LineDetectorNode] 11101:In the last 6.8 s: received 102 (15.0 fps) processed 100 (14.7 fps) skipped 2 (0.3 fps) (2%)
+[rosout][INFO] 2018-10-14 07:55:43,825: [LineDetectorNode] 11201:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:55:43,839: [LineDetectorNode] 11201:
+Latencies:
+               acquired | total latency      2.3ms | delta wall     None clock     None
+                decoded | total latency     17.5ms | delta wall   15.3ms clock   15.5ms
+                resized | total latency     18.3ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.6ms | delta wall    2.2ms clock    2.2ms
+               detected | total latency     26.8ms | delta wall    6.2ms clock    8.5ms
+               prepared | total latency     28.8ms | delta wall    2.0ms clock    2.0ms
+          --pub_lines-- | total latency     29.3ms | delta wall    0.5ms clock    0.5ms
+                  drawn | total latency     29.5ms | delta wall    0.2ms clock    0.2ms
+              pub_image | total latency     30.6ms | delta wall    1.0ms clock    0.5ms
+   pub_edge/pub_segment | total latency     41.6ms | delta wall   11.0ms clock   11.0ms
+
+[rosout][INFO] 2018-10-14 07:55:43,867: [LineDetectorNode] 11201:In the last 6.7 s: received 100 (15.0 fps) processed 100 (15.0 fps) skipped 0 (0.0 fps) (0%)
+[rosout][INFO] 2018-10-14 07:55:50,758: [LineDetectorNode] 11301:# segments: white   0 yellow   0 red   0
+[rosout][INFO] 2018-10-14 07:55:50,774: [LineDetectorNode] 11301:
+Latencies:
+               acquired | total latency      2.0ms | delta wall     None clock     None
+                decoded | total latency     17.1ms | delta wall   15.1ms clock   15.0ms
+                resized | total latency     17.9ms | delta wall    0.8ms clock    0.8ms
+              corrected | total latency     20.1ms | delta wall    2.2ms clock    2.3ms
+               detected | total latency     27.3ms | delta wall    7.2ms clock    8.3ms
+               prepared | total latency     29.5ms | delta wall    2.2ms clock    2.0ms
+          --pub_lines-- | total latency     29.8ms | delta wall    0.3ms clock    0.3ms
+                  drawn | total latency     30.0ms | delta wall    0.2ms clock    0.5ms
+              pub_image | total latency     31.8ms | delta wall    1.8ms clock    0.6ms
+   pub_edge/pub_segment | total latency     43.7ms | delta wall   11.9ms clock   11.6ms
+
+[rosout][INFO] 2018-10-14 07:55:50,798: [LineDetectorNode] 11301:In the last 6.9 s: received 104 (15.0 fps) processed 100 (14.4 fps) skipped 4 (0.6 fps) (4%)

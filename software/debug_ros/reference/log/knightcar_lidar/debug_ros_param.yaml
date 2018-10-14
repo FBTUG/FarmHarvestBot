@@ -1,0 +1,12 @@
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_knightcar_local__34588: 'http://knightcar.local:34588/', host_knightcar_local__35057: 'http://knightcar.local:35057/'}
+rosversion: '1.12.12
+
+  '
+run_id: 4f7105c0-cf74-11e8-b4b4-b827eb3fef1b
+ydlidar_node: {angle_fixed: true, angle_max: 180.0, angle_min: -180.0, baudrate: 115200,
+  frame_id: laser_frame, frequency: 7.0, heartbeat: false, ignore_array: '', low_exposure: false,
+  port: /dev/ydlidar, range_max: 16.0, range_min: 0.08, resolution_fixed: true, samp_rate: 9}

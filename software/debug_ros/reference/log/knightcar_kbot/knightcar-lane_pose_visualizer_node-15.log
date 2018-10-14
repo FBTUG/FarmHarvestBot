@@ -1,0 +1,36 @@
+[rospy.client][INFO] 2018-10-14 10:30:20,808: init_node, name[/knightcar/lane_pose_visualizer_node], pid[2065]
+[xmlrpc][INFO] 2018-10-14 10:30:20,809: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 10:30:20,811: Started XML-RPC server [http://knightcar.local:44361/]
+[rospy.init][INFO] 2018-10-14 10:30:20,812: ROS Slave URI: [http://knightcar.local:44361/]
+[rospy.impl.masterslave][INFO] 2018-10-14 10:30:20,812: _ready: http://knightcar.local:44361/
+[rospy.registration][INFO] 2018-10-14 10:30:20,815: Registering with master node http://knightcar.local:11311/
+[xmlrpc][INFO] 2018-10-14 10:30:20,816: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-14 10:30:20,913: registered with master
+[rospy.rosout][INFO] 2018-10-14 10:30:20,914: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 10:30:20,923: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 10:30:20,934: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 10:30:20,951: [/knightcar/lane_pose_visualizer_node] Initialzing.
+[rosout][INFO] 2018-10-14 10:30:20,955: [/knightcar/lane_pose_visualizer_node] Vehicle name: knightcar
+[rosout][INFO] 2018-10-14 10:30:20,977: [/knightcar/lane_pose_visualizer_node] Initialzed.
+[rospy.internal][INFO] 2018-10-14 10:30:20,988: topic[/knightcar/lane_filter_node/lane_pose] adding connection to [http://knightcar.local:36726/], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:21,159: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2018-10-14 10:41:59,532: signal_shutdown [signal-2]
+[rosout][INFO] 2018-10-14 10:41:59,534: [/knightcar/lane_pose_visualizer_node] Shutting down.
+[rospy.internal][INFO] 2018-10-14 10:41:59,575: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-14 10:41:59,592: topic[/knightcar/lane_filter_node/lane_pose] removing connection to http://knightcar.local:36726/
+[rospy.topics][ERROR] 2018-10-14 10:41:59,600: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 838, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.impl.masterslave][INFO] 2018-10-14 10:41:59,602: signal-2
+[rospy.internal][WARNING] 2018-10-14 10:41:59,608: Unknown error initiating TCP/IP socket to knightcar.local:33495 (http://knightcar.local:36726/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.core][INFO] 2018-10-14 10:42:00,173: signal_shutdown [atexit]

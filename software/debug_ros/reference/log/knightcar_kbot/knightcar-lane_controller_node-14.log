@@ -1,0 +1,30 @@
+[rospy.client][INFO] 2018-10-14 10:30:17,547: init_node, name[/knightcar/lane_controller_node], pid[2064]
+[xmlrpc][INFO] 2018-10-14 10:30:17,550: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 10:30:17,551: Started XML-RPC server [http://knightcar.local:46026/]
+[rospy.impl.masterslave][INFO] 2018-10-14 10:30:17,552: _ready: http://knightcar.local:46026/
+[xmlrpc][INFO] 2018-10-14 10:30:17,554: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-10-14 10:30:17,564: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-14 10:30:17,566: ROS Slave URI: [http://knightcar.local:46026/]
+[rospy.init][INFO] 2018-10-14 10:30:17,567: registered with master
+[rospy.rosout][INFO] 2018-10-14 10:30:17,568: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 10:30:17,617: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 10:30:17,669: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 10:30:17,866: [/knightcar/lane_controller_node] ~v_bar = 0.3864 
+[rospy.internal][INFO] 2018-10-14 10:30:17,892: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-14 10:30:17,940: [/knightcar/lane_controller_node] ~k_d = -10.3 
+[rosout][INFO] 2018-10-14 10:30:18,014: [/knightcar/lane_controller_node] ~k_theta = -5.15 
+[rosout][INFO] 2018-10-14 10:30:18,083: [/knightcar/lane_controller_node] ~d_thres = 0.2615 
+[rosout][INFO] 2018-10-14 10:30:18,131: [/knightcar/lane_controller_node] ~theta_thres = 0.523 
+[rosout][INFO] 2018-10-14 10:30:18,203: [/knightcar/lane_controller_node] ~d_offset = 0.0 
+[rosout][INFO] 2018-10-14 10:30:18,278: [/knightcar/lane_controller_node] Initialized 
+[rospy.internal][INFO] 2018-10-14 10:30:18,300: topic[/knightcar/lane_controller_node/car_cmd] adding connection to [/knightcar/car_cmd_switch_node], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:20,557: topic[/knightcar/lane_filter_node/lane_pose] adding connection to [http://knightcar.local:36726/], count 0
+[rospy.core][INFO] 2018-10-14 10:41:59,552: signal_shutdown [signal-2]
+[rosout][INFO] 2018-10-14 10:41:59,553: [/knightcar/lane_controller_node] Shutting down...
+[rospy.internal][INFO] 2018-10-14 10:41:59,557: topic impl's ref count is zero, deleting topic /knightcar/lane_filter_node/lane_pose...
+[rospy.internal][INFO] 2018-10-14 10:41:59,560: topic[/knightcar/lane_filter_node/lane_pose] removing connection to http://knightcar.local:36726/
+[rospy.internal][INFO] 2018-10-14 10:41:59,715: topic[/knightcar/lane_controller_node/car_cmd] removing connection to /knightcar/car_cmd_switch_node
+[rosout][INFO] 2018-10-14 10:42:00,083: [/knightcar/lane_controller_node] Shutdown
+[rospy.internal][INFO] 2018-10-14 10:42:00,096: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2018-10-14 10:42:00,097: signal-2
+[rospy.core][INFO] 2018-10-14 10:42:00,262: signal_shutdown [atexit]

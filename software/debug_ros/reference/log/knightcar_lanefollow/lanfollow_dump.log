@@ -1,0 +1,1673 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[NODE_LIST]$rosnode list =====>
+/knightcar/cam_info_reader_node
+/knightcar/camera_node
+/knightcar/car_cmd_switch_node
+/knightcar/duckiebot_visualizer
+/knightcar/fsm_node
+/knightcar/ground_projection
+/knightcar/inverse_kinematics_node
+/knightcar/joy_mapper_node
+/knightcar/joy_node
+/knightcar/lane_controller_node
+/knightcar/lane_filter_node
+/knightcar/lane_pose_visualizer_node
+/knightcar/line_detector_node
+/knightcar/logic_gate_node
+/knightcar/wheels_driver_node
+/rosout
+[NODE=/knightcar/cam_info_reader_node]$rosnode info /knightcar/cam_info_reader_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/cam_info_reader_node]
+Publications: 
+ * /knightcar/camera_node/camera_info [sensor_msgs/CameraInfo]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/camera_node/image/compressed [sensor_msgs/CompressedImage]
+
+Services: 
+ * /knightcar/cam_info_reader_node/get_loggers
+ * /knightcar/cam_info_reader_node/set_logger_level
+
+
+contacting node http://knightcar.local:33135/ ...
+Pid: 2502
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/camera_node/image/compressed
+    * to: /knightcar/camera_node (http://knightcar.local:46802/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/camera_node]$rosnode info /knightcar/camera_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/camera_node]
+Publications: 
+ * /knightcar/camera_node/image/compressed [sensor_msgs/CompressedImage]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/camera_node/framerate_high_switch [duckietown_msgs/BoolStamped]
+
+Services: 
+ * /knightcar/camera_node/get_loggers
+ * /knightcar/camera_node/set_camera_info
+ * /knightcar/camera_node/set_logger_level
+
+
+contacting node http://knightcar.local:46802/ ...
+Pid: 2501
+Connections:
+ * topic: /knightcar/camera_node/image/compressed
+    * to: /knightcar/cam_info_reader_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/camera_node/image/compressed
+    * to: /knightcar/line_detector_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/camera_node/framerate_high_switch
+    * to: /knightcar/fsm_node (http://knightcar.local:43353/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/car_cmd_switch_node]$rosnode info /knightcar/car_cmd_switch_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/car_cmd_switch_node]
+Publications: 
+ * /knightcar/car_cmd_switch_node/cmd [duckietown_msgs/Twist2DStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/fsm_node/mode [duckietown_msgs/FSMState]
+ * /knightcar/joy_mapper_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /knightcar/lane_controller_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /knightcar/lane_recovery_node/car_cmd [unknown type]
+ * /knightcar/lane_supervisor_node/car_cmd [unknown type]
+ * /knightcar/open_loop_intersection_control_node/car_cmd [unknown type]
+ * /knightcar/simple_coordinator_node/car_cmd [unknown type]
+ * /knightcar/simple_stop_controller_node/car_cmd [unknown type]
+ * /knightcar/vehicle_avoidance_control_node/car_cmd [unknown type]
+
+Services: 
+ * /knightcar/car_cmd_switch_node/get_loggers
+ * /knightcar/car_cmd_switch_node/set_logger_level
+
+
+contacting node http://knightcar.local:46193/ ...
+Pid: 2521
+Connections:
+ * topic: /knightcar/car_cmd_switch_node/cmd
+    * to: /knightcar/inverse_kinematics_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/car_cmd
+    * to: /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /knightcar/lane_controller_node/car_cmd
+    * to: /knightcar/lane_controller_node (http://knightcar.local:43192/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /knightcar/fsm_node/mode
+    * to: /knightcar/fsm_node (http://knightcar.local:43353/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/duckiebot_visualizer]$rosnode info /knightcar/duckiebot_visualizer =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/duckiebot_visualizer]
+Publications: 
+ * /knightcar/duckiebot_visualizer/segment_list_markers [visualization_msgs/MarkerArray]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/ground_projection/lineseglist_out [duckietown_msgs/SegmentList]
+
+Services: 
+ * /knightcar/duckiebot_visualizer/get_loggers
+ * /knightcar/duckiebot_visualizer/set_logger_level
+
+
+contacting node http://knightcar.local:43709/ ...
+Pid: 2533
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/ground_projection/lineseglist_out
+    * to: /knightcar/ground_projection (http://knightcar.local:36188/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/fsm_node]$rosnode info /knightcar/fsm_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/fsm_node]
+Publications: 
+ * /knightcar/LED_detector_node/switch [duckietown_msgs/BoolStamped]
+ * /knightcar/apriltag_detector_node/switch [duckietown_msgs/BoolStamped]
+ * /knightcar/camera_node/framerate_high_switch [duckietown_msgs/BoolStamped]
+ * /knightcar/decoder_node/switch [duckietown_msgs/BoolStamped]
+ * /knightcar/fsm_node/mode [duckietown_msgs/FSMState]
+ * /knightcar/lane_filter_node/switch [duckietown_msgs/BoolStamped]
+ * /knightcar/led_emitter_node/switch [duckietown_msgs/BoolStamped]
+ * /knightcar/line_detector_node/switch [duckietown_msgs/BoolStamped]
+ * /knightcar/static_object_detector_node/switch [duckietown_msgs/BoolStamped]
+ * /knightcar/stop_line_filter_node/switch [duckietown_msgs/BoolStamped]
+ * /knightcar/vehicle_detection_node/switch [duckietown_msgs/BoolStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/joy_mapper_node/joystick_override [duckietown_msgs/BoolStamped]
+ * /knightcar/joy_mapper_node/parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /knightcar/joy_mapper_node/start_avoidance [duckietown_msgs/BoolStamped]
+ * /knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /knightcar/logic_gate_node/intersection_done_and_parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /knightcar/obstacle_safety_node/object_too_close [unknown type]
+ * /knightcar/open_loop_intersection_control_node/intersection_done [unknown type]
+ * /knightcar/simple_coordinator_node/intersection_go [unknown type]
+ * /knightcar/stop_line_filter_node/at_stop_line [unknown type]
+ * /knightcar/vehicle_avoidance_control_node/vehicle_detected [unknown type]
+
+Services: 
+ * /knightcar/fsm_node/get_loggers
+ * /knightcar/fsm_node/set_logger_level
+ * /knightcar/fsm_node/set_state
+
+
+contacting node http://knightcar.local:43353/ ...
+Pid: 2512
+Connections:
+ * topic: /knightcar/fsm_node/mode
+    * to: /knightcar/car_cmd_switch_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/line_detector_node/switch
+    * to: /knightcar/line_detector_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/lane_filter_node/switch
+    * to: /knightcar/lane_filter_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/camera_node/framerate_high_switch
+    * to: /knightcar/camera_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/start_avoidance
+    * to: /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/joystick_override
+    * to: /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy
+    * to: /knightcar/logic_gate_node (http://knightcar.local:38278/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /knightcar/logic_gate_node/intersection_done_and_parallel_autonomy
+    * to: /knightcar/logic_gate_node (http://knightcar.local:38278/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/parallel_autonomy
+    * to: /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/ground_projection]$rosnode info /knightcar/ground_projection =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/ground_projection]
+Publications: 
+ * /knightcar/ground_projection/lineseglist_out [duckietown_msgs/SegmentList]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/line_detector_node/segment_list [duckietown_msgs/SegmentList]
+
+Services: 
+ * /knightcar/ground_projection/estimate_homography
+ * /knightcar/ground_projection/get_ground_coordinate
+ * /knightcar/ground_projection/get_image_coordinate
+ * /knightcar/ground_projection/get_loggers
+ * /knightcar/ground_projection/set_logger_level
+
+
+contacting node http://knightcar.local:36188/ ...
+Pid: 2532
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/ground_projection/lineseglist_out
+    * to: /knightcar/duckiebot_visualizer
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/ground_projection/lineseglist_out
+    * to: /knightcar/lane_filter_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/line_detector_node/segment_list
+    * to: /knightcar/line_detector_node (http://knightcar.local:36168/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/inverse_kinematics_node]$rosnode info /knightcar/inverse_kinematics_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/inverse_kinematics_node]
+Publications: 
+ * /knightcar/wheels_driver_node/wheels_cmd [duckietown_msgs/WheelsCmdStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/car_cmd_switch_node/cmd [duckietown_msgs/Twist2DStamped]
+
+Services: 
+ * /knightcar/inverse_kinematics_node/get_loggers
+ * /knightcar/inverse_kinematics_node/save_calibration
+ * /knightcar/inverse_kinematics_node/set_baseline
+ * /knightcar/inverse_kinematics_node/set_gain
+ * /knightcar/inverse_kinematics_node/set_k
+ * /knightcar/inverse_kinematics_node/set_limit
+ * /knightcar/inverse_kinematics_node/set_logger_level
+ * /knightcar/inverse_kinematics_node/set_radius
+ * /knightcar/inverse_kinematics_node/set_trim
+
+
+contacting node http://knightcar.local:44841/ ...
+Pid: 2503
+Connections:
+ * topic: /knightcar/wheels_driver_node/wheels_cmd
+    * to: /knightcar/wheels_driver_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/car_cmd_switch_node/cmd
+    * to: /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/joy_mapper_node]$rosnode info /knightcar/joy_mapper_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/joy_mapper_node]
+Publications: 
+ * /knightcar/anti_instagram_node/click [duckietown_msgs/BoolStamped]
+ * /knightcar/joy_mapper_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /knightcar/joy_mapper_node/joystick_override [duckietown_msgs/BoolStamped]
+ * /knightcar/joy_mapper_node/parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /knightcar/joy_mapper_node/start_avoidance [duckietown_msgs/BoolStamped]
+ * /knightcar/wheels_driver_node/emergency_stop [duckietown_msgs/BoolStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/joy [sensor_msgs/Joy]
+
+Services: 
+ * /knightcar/joy_mapper_node/get_loggers
+ * /knightcar/joy_mapper_node/set_logger_level
+
+
+contacting node http://knightcar.local:34891/ ...
+Pid: 2506
+Connections:
+ * topic: /knightcar/joy_mapper_node/start_avoidance
+    * to: /knightcar/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/joystick_override
+    * to: /knightcar/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/wheels_driver_node/emergency_stop
+    * to: /knightcar/wheels_driver_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/car_cmd
+    * to: /knightcar/car_cmd_switch_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/parallel_autonomy
+    * to: /knightcar/logic_gate_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/parallel_autonomy
+    * to: /knightcar/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy
+    * to: /knightcar/joy_node (http://knightcar.local:40269/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/joy_node]$rosnode info /knightcar/joy_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/joy_node]
+Publications: 
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /knightcar/joy [sensor_msgs/Joy]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: None
+
+Services: 
+ * /knightcar/joy_node/get_loggers
+ * /knightcar/joy_node/set_logger_level
+
+
+contacting node http://knightcar.local:40269/ ...
+Pid: 2505
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy
+    * to: /knightcar/joy_mapper_node
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/knightcar/lane_controller_node]$rosnode info /knightcar/lane_controller_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/lane_controller_node]
+Publications: 
+ * /knightcar/lane_controller_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/lane_filter_node/lane_pose [duckietown_msgs/LanePose]
+
+Services: 
+ * /knightcar/lane_controller_node/get_loggers
+ * /knightcar/lane_controller_node/set_logger_level
+
+
+contacting node http://knightcar.local:43192/ ...
+Pid: 2535
+Connections:
+ * topic: /knightcar/lane_controller_node/car_cmd
+    * to: /knightcar/car_cmd_switch_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/lane_filter_node/lane_pose
+    * to: /knightcar/lane_filter_node (http://knightcar.local:44191/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/lane_filter_node]$rosnode info /knightcar/lane_filter_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/lane_filter_node]
+Publications: 
+ * /knightcar/lane_filter_node/belief_img [sensor_msgs/Image]
+ * /knightcar/lane_filter_node/entropy [std_msgs/Float32]
+ * /knightcar/lane_filter_node/in_lane [duckietown_msgs/BoolStamped]
+ * /knightcar/lane_filter_node/lane_pose [duckietown_msgs/LanePose]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/ground_projection/lineseglist_out [duckietown_msgs/SegmentList]
+ * /knightcar/lane_filter_node/switch [duckietown_msgs/BoolStamped]
+
+Services: 
+ * /knightcar/lane_filter_node/get_loggers
+ * /knightcar/lane_filter_node/set_logger_level
+
+
+contacting node http://knightcar.local:44191/ ...
+Pid: 2534
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/lane_filter_node/lane_pose
+    * to: /knightcar/lane_controller_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/lane_filter_node/lane_pose
+    * to: /knightcar/lane_pose_visualizer_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/lane_filter_node/switch
+    * to: /knightcar/fsm_node (http://knightcar.local:43353/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /knightcar/ground_projection/lineseglist_out
+    * to: /knightcar/ground_projection (http://knightcar.local:36188/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/lane_pose_visualizer_node]$rosnode info /knightcar/lane_pose_visualizer_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/lane_pose_visualizer_node]
+Publications: 
+ * /knightcar/lane_pose_visualizer_node/lane_pose_markers [visualization_msgs/MarkerArray]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/lane_filter_node/lane_pose [duckietown_msgs/LanePose]
+
+Services: 
+ * /knightcar/lane_pose_visualizer_node/get_loggers
+ * /knightcar/lane_pose_visualizer_node/set_logger_level
+
+
+contacting node http://knightcar.local:34434/ ...
+Pid: 2536
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/lane_filter_node/lane_pose
+    * to: /knightcar/lane_filter_node (http://knightcar.local:44191/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/line_detector_node]$rosnode info /knightcar/line_detector_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/line_detector_node]
+Publications: 
+ * /knightcar/line_detector_node/colorSegment [sensor_msgs/Image]
+ * /knightcar/line_detector_node/edge [sensor_msgs/Image]
+ * /knightcar/line_detector_node/image_with_lines [sensor_msgs/Image]
+ * /knightcar/line_detector_node/segment_list [duckietown_msgs/SegmentList]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/anti_instagram_node/transform [unknown type]
+ * /knightcar/camera_node/image/compressed [sensor_msgs/CompressedImage]
+ * /knightcar/line_detector_node/switch [duckietown_msgs/BoolStamped]
+
+Services: 
+ * /knightcar/line_detector_node/get_loggers
+ * /knightcar/line_detector_node/set_logger_level
+
+
+contacting node http://knightcar.local:36168/ ...
+Pid: 2531
+Connections:
+ * topic: /knightcar/line_detector_node/segment_list
+    * to: /knightcar/ground_projection
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/camera_node/image/compressed
+    * to: /knightcar/camera_node (http://knightcar.local:46802/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /knightcar/line_detector_node/switch
+    * to: /knightcar/fsm_node (http://knightcar.local:43353/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/logic_gate_node]$rosnode info /knightcar/logic_gate_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/logic_gate_node]
+Publications: 
+ * /knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /knightcar/logic_gate_node/intersection_done_and_parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/joy_mapper_node/parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /knightcar/open_loop_intersection_control_node/intersection_done [unknown type]
+
+Services: 
+ * /knightcar/logic_gate_node/get_loggers
+ * /knightcar/logic_gate_node/set_logger_level
+
+
+contacting node http://knightcar.local:38278/ ...
+Pid: 2529
+Connections:
+ * topic: /knightcar/logic_gate_node/intersection_done_and_parallel_autonomy
+    * to: /knightcar/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy
+    * to: /knightcar/fsm_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/parallel_autonomy
+    * to: /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/wheels_driver_node]$rosnode info /knightcar/wheels_driver_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/wheels_driver_node]
+Publications: 
+ * /knightcar/wheels_driver_node/wheels_cmd_executed [duckietown_msgs/WheelsCmdStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/wheels_driver_node/emergency_stop [duckietown_msgs/BoolStamped]
+ * /knightcar/wheels_driver_node/wheels_cmd [duckietown_msgs/WheelsCmdStamped]
+
+Services: 
+ * /knightcar/wheels_driver_node/get_loggers
+ * /knightcar/wheels_driver_node/set_logger_level
+
+
+contacting node http://knightcar.local:35668/ ...
+Pid: 2504
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/wheels_driver_node/wheels_cmd
+    * to: /knightcar/inverse_kinematics_node (http://knightcar.local:44841/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /knightcar/wheels_driver_node/emergency_stop
+    * to: /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://knightcar.local:37820/ ...
+Pid: 2446
+Connections:
+ * topic: /rosout
+    * to: /knightcar/joy_node (http://knightcar.local:40269/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/ground_projection (http://knightcar.local:36188/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/cam_info_reader_node (http://knightcar.local:33135/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/wheels_driver_node (http://knightcar.local:35668/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/inverse_kinematics_node (http://knightcar.local:44841/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/duckiebot_visualizer (http://knightcar.local:43709/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/fsm_node (http://knightcar.local:43353/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/logic_gate_node (http://knightcar.local:38278/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/lane_controller_node (http://knightcar.local:43192/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/camera_node (http://knightcar.local:46802/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/lane_filter_node (http://knightcar.local:44191/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/lane_pose_visualizer_node (http://knightcar.local:34434/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/line_detector_node (http://knightcar.local:36168/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://knightcar.local:43561/
+    * direction: inbound
+    * transport: TCPROS
+
+[TOPIC_LIST]$rostopic list =====>
+/diagnostics
+/knightcar/LED_detector_node/switch
+/knightcar/anti_instagram_node/click
+/knightcar/anti_instagram_node/transform
+/knightcar/apriltag_detector_node/switch
+/knightcar/camera_node/camera_info
+/knightcar/camera_node/framerate_high_switch
+/knightcar/camera_node/image/compressed
+/knightcar/car_cmd_switch_node/cmd
+/knightcar/decoder_node/switch
+/knightcar/duckiebot_visualizer/segment_list_markers
+/knightcar/fsm_node/mode
+/knightcar/ground_projection/lineseglist_out
+/knightcar/joy
+/knightcar/joy_mapper_node/car_cmd
+/knightcar/joy_mapper_node/joystick_override
+/knightcar/joy_mapper_node/parallel_autonomy
+/knightcar/joy_mapper_node/start_avoidance
+/knightcar/lane_controller_node/car_cmd
+/knightcar/lane_filter_node/belief_img
+/knightcar/lane_filter_node/entropy
+/knightcar/lane_filter_node/in_lane
+/knightcar/lane_filter_node/lane_pose
+/knightcar/lane_filter_node/switch
+/knightcar/lane_pose_visualizer_node/lane_pose_markers
+/knightcar/lane_recovery_node/car_cmd
+/knightcar/lane_supervisor_node/car_cmd
+/knightcar/led_emitter_node/switch
+/knightcar/line_detector_node/colorSegment
+/knightcar/line_detector_node/edge
+/knightcar/line_detector_node/image_with_lines
+/knightcar/line_detector_node/segment_list
+/knightcar/line_detector_node/switch
+/knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy
+/knightcar/logic_gate_node/intersection_done_and_parallel_autonomy
+/knightcar/obstacle_safety_node/object_too_close
+/knightcar/open_loop_intersection_control_node/car_cmd
+/knightcar/open_loop_intersection_control_node/intersection_done
+/knightcar/simple_coordinator_node/car_cmd
+/knightcar/simple_coordinator_node/intersection_go
+/knightcar/simple_stop_controller_node/car_cmd
+/knightcar/static_object_detector_node/switch
+/knightcar/stop_line_filter_node/at_stop_line
+/knightcar/stop_line_filter_node/switch
+/knightcar/vehicle_avoidance_control_node/car_cmd
+/knightcar/vehicle_avoidance_control_node/vehicle_detected
+/knightcar/vehicle_detection_node/switch
+/knightcar/wheels_driver_node/emergency_stop
+/knightcar/wheels_driver_node/wheels_cmd
+/knightcar/wheels_driver_node/wheels_cmd_executed
+/rosout
+/rosout_agg
+[TOPIC=/diagnostics]$rostopic info /diagnostics =====>
+Type: diagnostic_msgs/DiagnosticArray
+
+Publishers: 
+ * /knightcar/joy_node (http://knightcar.local:40269/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/diagnostics]$timeout 1 rostopic hz /diagnostics =====>
+subscribed to [/diagnostics]
+no new messages
+[TOPIC_TYPE=diagnostic_msgs/DiagnosticArray]$rosmsg show diagnostic_msgs/DiagnosticArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+diagnostic_msgs/DiagnosticStatus[] status
+  byte OK=0
+  byte WARN=1
+  byte ERROR=2
+  byte STALE=3
+  byte level
+  string name
+  string message
+  string hardware_id
+  diagnostic_msgs/KeyValue[] values
+    string key
+    string value
+
+[TOPIC=/knightcar/LED_detector_node/switch]$rostopic info /knightcar/LED_detector_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/LED_detector_node/switch]$timeout 1 rostopic hz /knightcar/LED_detector_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/anti_instagram_node/click]$rostopic info /knightcar/anti_instagram_node/click =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/anti_instagram_node/click]$timeout 1 rostopic hz /knightcar/anti_instagram_node/click =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/anti_instagram_node/transform]$rostopic info /knightcar/anti_instagram_node/transform =====>
+Type: duckietown_msgs/AntiInstagramTransform
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/line_detector_node (http://knightcar.local:36168/)
+
+
+[TOPIC_HZ=/knightcar/anti_instagram_node/transform]$timeout 1 rostopic hz /knightcar/anti_instagram_node/transform =====>
+[TOPIC_TYPE=duckietown_msgs/AntiInstagramTransform]$rosmsg show duckietown_msgs/AntiInstagramTransform =====>
+[TOPIC=/knightcar/apriltag_detector_node/switch]$rostopic info /knightcar/apriltag_detector_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/apriltag_detector_node/switch]$timeout 1 rostopic hz /knightcar/apriltag_detector_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/camera_node/camera_info]$rostopic info /knightcar/camera_node/camera_info =====>
+Type: sensor_msgs/CameraInfo
+
+Publishers: 
+ * /knightcar/cam_info_reader_node (http://knightcar.local:33135/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/camera_node/camera_info]$timeout 1 rostopic hz /knightcar/camera_node/camera_info =====>
+subscribed to [/knightcar/camera_node/camera_info]
+average rate: 15.422
+	min: 0.061s max: 0.069s std dev: 0.00259s window: 5
+[TOPIC_TYPE=sensor_msgs/CameraInfo]$rosmsg show sensor_msgs/CameraInfo =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string distortion_model
+float64[] D
+float64[9] K
+float64[9] R
+float64[12] P
+uint32 binning_x
+uint32 binning_y
+sensor_msgs/RegionOfInterest roi
+  uint32 x_offset
+  uint32 y_offset
+  uint32 height
+  uint32 width
+  bool do_rectify
+
+[TOPIC=/knightcar/camera_node/framerate_high_switch]$rostopic info /knightcar/camera_node/framerate_high_switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+Subscribers: 
+ * /knightcar/camera_node (http://knightcar.local:46802/)
+
+
+[TOPIC_HZ=/knightcar/camera_node/framerate_high_switch]$timeout 1 rostopic hz /knightcar/camera_node/framerate_high_switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/camera_node/image/compressed]$rostopic info /knightcar/camera_node/image/compressed =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /knightcar/camera_node (http://knightcar.local:46802/)
+
+Subscribers: 
+ * /knightcar/cam_info_reader_node (http://knightcar.local:33135/)
+ * /knightcar/line_detector_node (http://knightcar.local:36168/)
+
+
+[TOPIC_HZ=/knightcar/camera_node/image/compressed]$timeout 1 rostopic hz /knightcar/camera_node/image/compressed =====>
+subscribed to [/knightcar/camera_node/image/compressed]
+average rate: 15.321
+	min: 0.022s max: 0.286s std dev: 0.09023s window: 8
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/knightcar/car_cmd_switch_node/cmd]$rostopic info /knightcar/car_cmd_switch_node/cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+
+Subscribers: 
+ * /knightcar/inverse_kinematics_node (http://knightcar.local:44841/)
+
+
+[TOPIC_HZ=/knightcar/car_cmd_switch_node/cmd]$timeout 1 rostopic hz /knightcar/car_cmd_switch_node/cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/decoder_node/switch]$rostopic info /knightcar/decoder_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/decoder_node/switch]$timeout 1 rostopic hz /knightcar/decoder_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/duckiebot_visualizer/segment_list_markers]$rostopic info /knightcar/duckiebot_visualizer/segment_list_markers =====>
+Type: visualization_msgs/MarkerArray
+
+Publishers: 
+ * /knightcar/duckiebot_visualizer (http://knightcar.local:43709/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/duckiebot_visualizer/segment_list_markers]$timeout 1 rostopic hz /knightcar/duckiebot_visualizer/segment_list_markers =====>
+subscribed to [/knightcar/duckiebot_visualizer/segment_list_markers]
+average rate: 14.990
+	min: 0.064s max: 0.072s std dev: 0.00292s window: 5
+[TOPIC_TYPE=visualization_msgs/MarkerArray]$rosmsg show visualization_msgs/MarkerArray =====>
+visualization_msgs/Marker[] markers
+  uint8 ARROW=0
+  uint8 CUBE=1
+  uint8 SPHERE=2
+  uint8 CYLINDER=3
+  uint8 LINE_STRIP=4
+  uint8 LINE_LIST=5
+  uint8 CUBE_LIST=6
+  uint8 SPHERE_LIST=7
+  uint8 POINTS=8
+  uint8 TEXT_VIEW_FACING=9
+  uint8 MESH_RESOURCE=10
+  uint8 TRIANGLE_LIST=11
+  uint8 ADD=0
+  uint8 MODIFY=0
+  uint8 DELETE=2
+  uint8 DELETEALL=3
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string ns
+  int32 id
+  int32 type
+  int32 action
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  geometry_msgs/Vector3 scale
+    float64 x
+    float64 y
+    float64 z
+  std_msgs/ColorRGBA color
+    float32 r
+    float32 g
+    float32 b
+    float32 a
+  duration lifetime
+  bool frame_locked
+  geometry_msgs/Point[] points
+    float64 x
+    float64 y
+    float64 z
+  std_msgs/ColorRGBA[] colors
+    float32 r
+    float32 g
+    float32 b
+    float32 a
+  string text
+  string mesh_resource
+  bool mesh_use_embedded_materials
+
+[TOPIC=/knightcar/fsm_node/mode]$rostopic info /knightcar/fsm_node/mode =====>
+Type: duckietown_msgs/FSMState
+
+Publishers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+Subscribers: 
+ * /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+
+
+[TOPIC_HZ=/knightcar/fsm_node/mode]$timeout 1 rostopic hz /knightcar/fsm_node/mode =====>
+[TOPIC_TYPE=duckietown_msgs/FSMState]$rosmsg show duckietown_msgs/FSMState =====>
+[TOPIC=/knightcar/ground_projection/lineseglist_out]$rostopic info /knightcar/ground_projection/lineseglist_out =====>
+Type: duckietown_msgs/SegmentList
+
+Publishers: 
+ * /knightcar/ground_projection (http://knightcar.local:36188/)
+
+Subscribers: 
+ * /knightcar/duckiebot_visualizer (http://knightcar.local:43709/)
+ * /knightcar/lane_filter_node (http://knightcar.local:44191/)
+
+
+[TOPIC_HZ=/knightcar/ground_projection/lineseglist_out]$timeout 1 rostopic hz /knightcar/ground_projection/lineseglist_out =====>
+[TOPIC_TYPE=duckietown_msgs/SegmentList]$rosmsg show duckietown_msgs/SegmentList =====>
+[TOPIC=/knightcar/joy]$rostopic info /knightcar/joy =====>
+Type: sensor_msgs/Joy
+
+Publishers: 
+ * /knightcar/joy_node (http://knightcar.local:40269/)
+
+Subscribers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+
+
+[TOPIC_HZ=/knightcar/joy]$timeout 1 rostopic hz /knightcar/joy =====>
+subscribed to [/knightcar/joy]
+no new messages
+[TOPIC_TYPE=sensor_msgs/Joy]$rosmsg show sensor_msgs/Joy =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32[] axes
+int32[] buttons
+
+[TOPIC=/knightcar/joy_mapper_node/car_cmd]$rostopic info /knightcar/joy_mapper_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+
+Subscribers: 
+ * /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/car_cmd]$timeout 1 rostopic hz /knightcar/joy_mapper_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/joy_mapper_node/joystick_override]$rostopic info /knightcar/joy_mapper_node/joystick_override =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+
+Subscribers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/joystick_override]$timeout 1 rostopic hz /knightcar/joy_mapper_node/joystick_override =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/joy_mapper_node/parallel_autonomy]$rostopic info /knightcar/joy_mapper_node/parallel_autonomy =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+
+Subscribers: 
+ * /knightcar/logic_gate_node (http://knightcar.local:38278/)
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/parallel_autonomy]$timeout 1 rostopic hz /knightcar/joy_mapper_node/parallel_autonomy =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/joy_mapper_node/start_avoidance]$rostopic info /knightcar/joy_mapper_node/start_avoidance =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+
+Subscribers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/start_avoidance]$timeout 1 rostopic hz /knightcar/joy_mapper_node/start_avoidance =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/lane_controller_node/car_cmd]$rostopic info /knightcar/lane_controller_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /knightcar/lane_controller_node (http://knightcar.local:43192/)
+
+Subscribers: 
+ * /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+
+
+[TOPIC_HZ=/knightcar/lane_controller_node/car_cmd]$timeout 1 rostopic hz /knightcar/lane_controller_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/lane_filter_node/belief_img]$rostopic info /knightcar/lane_filter_node/belief_img =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /knightcar/lane_filter_node (http://knightcar.local:44191/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/lane_filter_node/belief_img]$timeout 1 rostopic hz /knightcar/lane_filter_node/belief_img =====>
+subscribed to [/knightcar/lane_filter_node/belief_img]
+no new messages
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/knightcar/lane_filter_node/entropy]$rostopic info /knightcar/lane_filter_node/entropy =====>
+Type: std_msgs/Float32
+
+Publishers: 
+ * /knightcar/lane_filter_node (http://knightcar.local:44191/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/lane_filter_node/entropy]$timeout 1 rostopic hz /knightcar/lane_filter_node/entropy =====>
+subscribed to [/knightcar/lane_filter_node/entropy]
+no new messages
+[TOPIC_TYPE=std_msgs/Float32]$rosmsg show std_msgs/Float32 =====>
+float32 data
+
+[TOPIC=/knightcar/lane_filter_node/in_lane]$rostopic info /knightcar/lane_filter_node/in_lane =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/lane_filter_node (http://knightcar.local:44191/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/lane_filter_node/in_lane]$timeout 1 rostopic hz /knightcar/lane_filter_node/in_lane =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/lane_filter_node/lane_pose]$rostopic info /knightcar/lane_filter_node/lane_pose =====>
+Type: duckietown_msgs/LanePose
+
+Publishers: 
+ * /knightcar/lane_filter_node (http://knightcar.local:44191/)
+
+Subscribers: 
+ * /knightcar/lane_controller_node (http://knightcar.local:43192/)
+ * /knightcar/lane_pose_visualizer_node (http://knightcar.local:34434/)
+
+
+[TOPIC_HZ=/knightcar/lane_filter_node/lane_pose]$timeout 1 rostopic hz /knightcar/lane_filter_node/lane_pose =====>
+[TOPIC_TYPE=duckietown_msgs/LanePose]$rosmsg show duckietown_msgs/LanePose =====>
+[TOPIC=/knightcar/lane_filter_node/switch]$rostopic info /knightcar/lane_filter_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+Subscribers: 
+ * /knightcar/lane_filter_node (http://knightcar.local:44191/)
+
+
+[TOPIC_HZ=/knightcar/lane_filter_node/switch]$timeout 1 rostopic hz /knightcar/lane_filter_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/lane_pose_visualizer_node/lane_pose_markers]$rostopic info /knightcar/lane_pose_visualizer_node/lane_pose_markers =====>
+Type: visualization_msgs/MarkerArray
+
+Publishers: 
+ * /knightcar/lane_pose_visualizer_node (http://knightcar.local:34434/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/lane_pose_visualizer_node/lane_pose_markers]$timeout 1 rostopic hz /knightcar/lane_pose_visualizer_node/lane_pose_markers =====>
+subscribed to [/knightcar/lane_pose_visualizer_node/lane_pose_markers]
+no new messages
+[TOPIC_TYPE=visualization_msgs/MarkerArray]$rosmsg show visualization_msgs/MarkerArray =====>
+visualization_msgs/Marker[] markers
+  uint8 ARROW=0
+  uint8 CUBE=1
+  uint8 SPHERE=2
+  uint8 CYLINDER=3
+  uint8 LINE_STRIP=4
+  uint8 LINE_LIST=5
+  uint8 CUBE_LIST=6
+  uint8 SPHERE_LIST=7
+  uint8 POINTS=8
+  uint8 TEXT_VIEW_FACING=9
+  uint8 MESH_RESOURCE=10
+  uint8 TRIANGLE_LIST=11
+  uint8 ADD=0
+  uint8 MODIFY=0
+  uint8 DELETE=2
+  uint8 DELETEALL=3
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string ns
+  int32 id
+  int32 type
+  int32 action
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  geometry_msgs/Vector3 scale
+    float64 x
+    float64 y
+    float64 z
+  std_msgs/ColorRGBA color
+    float32 r
+    float32 g
+    float32 b
+    float32 a
+  duration lifetime
+  bool frame_locked
+  geometry_msgs/Point[] points
+    float64 x
+    float64 y
+    float64 z
+  std_msgs/ColorRGBA[] colors
+    float32 r
+    float32 g
+    float32 b
+    float32 a
+  string text
+  string mesh_resource
+  bool mesh_use_embedded_materials
+
+[TOPIC=/knightcar/lane_recovery_node/car_cmd]$rostopic info /knightcar/lane_recovery_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+
+
+[TOPIC_HZ=/knightcar/lane_recovery_node/car_cmd]$timeout 1 rostopic hz /knightcar/lane_recovery_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/lane_supervisor_node/car_cmd]$rostopic info /knightcar/lane_supervisor_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+
+
+[TOPIC_HZ=/knightcar/lane_supervisor_node/car_cmd]$timeout 1 rostopic hz /knightcar/lane_supervisor_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/led_emitter_node/switch]$rostopic info /knightcar/led_emitter_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/led_emitter_node/switch]$timeout 1 rostopic hz /knightcar/led_emitter_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/line_detector_node/colorSegment]$rostopic info /knightcar/line_detector_node/colorSegment =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /knightcar/line_detector_node (http://knightcar.local:36168/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/line_detector_node/colorSegment]$timeout 1 rostopic hz /knightcar/line_detector_node/colorSegment =====>
+subscribed to [/knightcar/line_detector_node/colorSegment]
+average rate: 15.436
+	min: 0.052s max: 0.084s std dev: 0.01059s window: 7
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/knightcar/line_detector_node/edge]$rostopic info /knightcar/line_detector_node/edge =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /knightcar/line_detector_node (http://knightcar.local:36168/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/line_detector_node/edge]$timeout 1 rostopic hz /knightcar/line_detector_node/edge =====>
+subscribed to [/knightcar/line_detector_node/edge]
+average rate: 15.958
+	min: 0.051s max: 0.072s std dev: 0.00700s window: 6
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/knightcar/line_detector_node/image_with_lines]$rostopic info /knightcar/line_detector_node/image_with_lines =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /knightcar/line_detector_node (http://knightcar.local:36168/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/line_detector_node/image_with_lines]$timeout 1 rostopic hz /knightcar/line_detector_node/image_with_lines =====>
+subscribed to [/knightcar/line_detector_node/image_with_lines]
+average rate: 16.333
+	min: 0.051s max: 0.070s std dev: 0.00756s window: 6
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/knightcar/line_detector_node/segment_list]$rostopic info /knightcar/line_detector_node/segment_list =====>
+Type: duckietown_msgs/SegmentList
+
+Publishers: 
+ * /knightcar/line_detector_node (http://knightcar.local:36168/)
+
+Subscribers: 
+ * /knightcar/ground_projection (http://knightcar.local:36188/)
+
+
+[TOPIC_HZ=/knightcar/line_detector_node/segment_list]$timeout 1 rostopic hz /knightcar/line_detector_node/segment_list =====>
+[TOPIC_TYPE=duckietown_msgs/SegmentList]$rosmsg show duckietown_msgs/SegmentList =====>
+[TOPIC=/knightcar/line_detector_node/switch]$rostopic info /knightcar/line_detector_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+Subscribers: 
+ * /knightcar/line_detector_node (http://knightcar.local:36168/)
+
+
+[TOPIC_HZ=/knightcar/line_detector_node/switch]$timeout 1 rostopic hz /knightcar/line_detector_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy]$rostopic info /knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/logic_gate_node (http://knightcar.local:38278/)
+
+Subscribers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+
+[TOPIC_HZ=/knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy]$timeout 1 rostopic hz /knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/logic_gate_node/intersection_done_and_parallel_autonomy]$rostopic info /knightcar/logic_gate_node/intersection_done_and_parallel_autonomy =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/logic_gate_node (http://knightcar.local:38278/)
+
+Subscribers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+
+[TOPIC_HZ=/knightcar/logic_gate_node/intersection_done_and_parallel_autonomy]$timeout 1 rostopic hz /knightcar/logic_gate_node/intersection_done_and_parallel_autonomy =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/obstacle_safety_node/object_too_close]$rostopic info /knightcar/obstacle_safety_node/object_too_close =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+
+[TOPIC_HZ=/knightcar/obstacle_safety_node/object_too_close]$timeout 1 rostopic hz /knightcar/obstacle_safety_node/object_too_close =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/open_loop_intersection_control_node/car_cmd]$rostopic info /knightcar/open_loop_intersection_control_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+
+
+[TOPIC_HZ=/knightcar/open_loop_intersection_control_node/car_cmd]$timeout 1 rostopic hz /knightcar/open_loop_intersection_control_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/open_loop_intersection_control_node/intersection_done]$rostopic info /knightcar/open_loop_intersection_control_node/intersection_done =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+ * /knightcar/logic_gate_node (http://knightcar.local:38278/)
+
+
+[TOPIC_HZ=/knightcar/open_loop_intersection_control_node/intersection_done]$timeout 1 rostopic hz /knightcar/open_loop_intersection_control_node/intersection_done =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/simple_coordinator_node/car_cmd]$rostopic info /knightcar/simple_coordinator_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+
+
+[TOPIC_HZ=/knightcar/simple_coordinator_node/car_cmd]$timeout 1 rostopic hz /knightcar/simple_coordinator_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/simple_coordinator_node/intersection_go]$rostopic info /knightcar/simple_coordinator_node/intersection_go =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+
+[TOPIC_HZ=/knightcar/simple_coordinator_node/intersection_go]$timeout 1 rostopic hz /knightcar/simple_coordinator_node/intersection_go =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/simple_stop_controller_node/car_cmd]$rostopic info /knightcar/simple_stop_controller_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+
+
+[TOPIC_HZ=/knightcar/simple_stop_controller_node/car_cmd]$timeout 1 rostopic hz /knightcar/simple_stop_controller_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/static_object_detector_node/switch]$rostopic info /knightcar/static_object_detector_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/static_object_detector_node/switch]$timeout 1 rostopic hz /knightcar/static_object_detector_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/stop_line_filter_node/at_stop_line]$rostopic info /knightcar/stop_line_filter_node/at_stop_line =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+
+[TOPIC_HZ=/knightcar/stop_line_filter_node/at_stop_line]$timeout 1 rostopic hz /knightcar/stop_line_filter_node/at_stop_line =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/stop_line_filter_node/switch]$rostopic info /knightcar/stop_line_filter_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/stop_line_filter_node/switch]$timeout 1 rostopic hz /knightcar/stop_line_filter_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/vehicle_avoidance_control_node/car_cmd]$rostopic info /knightcar/vehicle_avoidance_control_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+
+
+[TOPIC_HZ=/knightcar/vehicle_avoidance_control_node/car_cmd]$timeout 1 rostopic hz /knightcar/vehicle_avoidance_control_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/vehicle_avoidance_control_node/vehicle_detected]$rostopic info /knightcar/vehicle_avoidance_control_node/vehicle_detected =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+
+[TOPIC_HZ=/knightcar/vehicle_avoidance_control_node/vehicle_detected]$timeout 1 rostopic hz /knightcar/vehicle_avoidance_control_node/vehicle_detected =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/vehicle_detection_node/switch]$rostopic info /knightcar/vehicle_detection_node/switch =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/vehicle_detection_node/switch]$timeout 1 rostopic hz /knightcar/vehicle_detection_node/switch =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/wheels_driver_node/emergency_stop]$rostopic info /knightcar/wheels_driver_node/emergency_stop =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+
+Subscribers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:35668/)
+
+
+[TOPIC_HZ=/knightcar/wheels_driver_node/emergency_stop]$timeout 1 rostopic hz /knightcar/wheels_driver_node/emergency_stop =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/wheels_driver_node/wheels_cmd]$rostopic info /knightcar/wheels_driver_node/wheels_cmd =====>
+Type: duckietown_msgs/WheelsCmdStamped
+
+Publishers: 
+ * /knightcar/inverse_kinematics_node (http://knightcar.local:44841/)
+
+Subscribers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:35668/)
+
+
+[TOPIC_HZ=/knightcar/wheels_driver_node/wheels_cmd]$timeout 1 rostopic hz /knightcar/wheels_driver_node/wheels_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/WheelsCmdStamped]$rosmsg show duckietown_msgs/WheelsCmdStamped =====>
+[TOPIC=/knightcar/wheels_driver_node/wheels_cmd_executed]$rostopic info /knightcar/wheels_driver_node/wheels_cmd_executed =====>
+Type: duckietown_msgs/WheelsCmdStamped
+
+Publishers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:35668/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/wheels_driver_node/wheels_cmd_executed]$timeout 1 rostopic hz /knightcar/wheels_driver_node/wheels_cmd_executed =====>
+[TOPIC_TYPE=duckietown_msgs/WheelsCmdStamped]$rosmsg show duckietown_msgs/WheelsCmdStamped =====>
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /knightcar/joy_node (http://knightcar.local:40269/)
+ * /knightcar/ground_projection (http://knightcar.local:36188/)
+ * /knightcar/cam_info_reader_node (http://knightcar.local:33135/)
+ * /knightcar/wheels_driver_node (http://knightcar.local:35668/)
+ * /knightcar/inverse_kinematics_node (http://knightcar.local:44841/)
+ * /knightcar/car_cmd_switch_node (http://knightcar.local:46193/)
+ * /knightcar/fsm_node (http://knightcar.local:43353/)
+ * /knightcar/joy_mapper_node (http://knightcar.local:34891/)
+ * /knightcar/duckiebot_visualizer (http://knightcar.local:43709/)
+ * /knightcar/logic_gate_node (http://knightcar.local:38278/)
+ * /knightcar/lane_controller_node (http://knightcar.local:43192/)
+ * /knightcar/camera_node (http://knightcar.local:46802/)
+ * /knightcar/lane_filter_node (http://knightcar.local:44191/)
+ * /knightcar/lane_pose_visualizer_node (http://knightcar.local:34434/)
+ * /knightcar/line_detector_node (http://knightcar.local:36168/)
+
+Subscribers: 
+ * /rosout (http://knightcar.local:37820/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+average rate: 720.196
+	min: 0.000s max: 0.006s std dev: 0.00169s window: 13
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://knightcar.local:37820/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+subscribed to [/rosout_agg]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>
+[0m[ INFO] [1539474762.391150300]: Recording to 2018-10-13-19-52-42.bag.[0m
+[0m[ INFO] [1539474762.412953662]: Subscribing to /knightcar/lane_filter_node/lane_pose[0m
+[0m[ INFO] [1539474762.565215285]: Subscribing to /knightcar/lane_filter_node/entropy[0m
+[0m[ INFO] [1539474762.677462274]: Subscribing to /knightcar/lane_controller_node/car_cmd[0m
+[0m[ INFO] [1539474762.790388117]: Subscribing to /knightcar/joy_mapper_node/joystick_override[0m
+[0m[ INFO] [1539474762.956076596]: Subscribing to /rosout_agg[0m
+[0m[ INFO] [1539474763.058540802]: Subscribing to /knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy[0m
+[0m[ INFO] [1539474763.177987556]: Subscribing to /knightcar/logic_gate_node/intersection_done_and_parallel_autonomy[0m
+[0m[ INFO] [1539474763.303791507]: Subscribing to /knightcar/line_detector_node/edge[0m
+[0m[ INFO] [1539474763.445215645]: Subscribing to /knightcar/lane_filter_node/in_lane[0m
+[0m[ INFO] [1539474763.561900578]: Subscribing to /knightcar/camera_node/image/compressed[0m
+[0m[ INFO] [1539474763.772464060]: Subscribing to /knightcar/line_detector_node/image_with_lines[0m
+[0m[ INFO] [1539474763.892274368]: Subscribing to /knightcar/joy_mapper_node/start_avoidance[0m
+[0m[ INFO] [1539474764.027365403]: Subscribing to /knightcar/decoder_node/switch[0m
+[0m[ INFO] [1539474764.196784894]: Subscribing to /knightcar/vehicle_detection_node/switch[0m
+[0m[ INFO] [1539474764.518275417]: Subscribing to /knightcar/LED_detector_node/switch[0m
+[0m[ INFO] [1539474764.764367475]: Subscribing to /knightcar/stop_line_filter_node/switch[0m
+[0m[ INFO] [1539474765.028433635]: Subscribing to /knightcar/wheels_driver_node/emergency_stop[0m
+[0m[ INFO] [1539474765.269339866]: Subscribing to /knightcar/joy_mapper_node/car_cmd[0m
+[0m[ INFO] [1539474765.540394533]: Subscribing to /knightcar/apriltag_detector_node/switch[0m
+[0m[ INFO] [1539474765.702776613]: Subscribing to /diagnostics[0m
+[0m[ INFO] [1539474765.998748414]: Subscribing to /knightcar/lane_pose_visualizer_node/lane_pose_markers[0m
+[0m[ INFO] [1539474766.234946687]: Subscribing to /knightcar/camera_node/camera_info[0m
+[0m[ INFO] [1539474766.658628958]: Subscribing to /knightcar/car_cmd_switch_node/cmd[0m
+[0m[ INFO] [1539474766.899496266]: Subscribing to /knightcar/fsm_node/mode[0m
+[0m[ INFO] [1539474767.100583812]: Subscribing to /rosout[0m
+[0m[ INFO] [1539474767.304394652]: Subscribing to /knightcar/line_detector_node/switch[0m
+[0m[ INFO] [1539474767.635881127]: Subscribing to /knightcar/duckiebot_visualizer/segment_list_markers[0m
+[0m[ INFO] [1539474767.856245705]: Subscribing to /knightcar/camera_node/framerate_high_switch[0m
+[0m[ INFO] [1539474768.028873491]: Subscribing to /knightcar/wheels_driver_node/wheels_cmd[0m
+[0m[ INFO] [1539474768.257920892]: Subscribing to /knightcar/lane_filter_node/belief_img[0m
+[0m[ INFO] [1539474768.524734969]: Subscribing to /knightcar/joy[0m
+[0m[ INFO] [1539474768.893787637]: Subscribing to /knightcar/static_object_detector_node/switch[0m
+[0m[ INFO] [1539474769.141188846]: Subscribing to /knightcar/line_detector_node/segment_list[0m
+[0m[ INFO] [1539474769.426192839]: Subscribing to /knightcar/anti_instagram_node/click[0m
+[0m[ INFO] [1539474769.614800422]: Subscribing to /knightcar/led_emitter_node/switch[0m
+[0m[ INFO] [1539474769.787998955]: Subscribing to /knightcar/lane_filter_node/switch[0m
+[0m[ INFO] [1539474769.991875101]: Subscribing to /knightcar/joy_mapper_node/parallel_autonomy[0m
+[0m[ INFO] [1539474770.250392961]: Subscribing to /knightcar/line_detector_node/colorSegment[0m
+[0m[ INFO] [1539474770.514276713]: Subscribing to /knightcar/ground_projection/lineseglist_out[0m
+[0m[ INFO] [1539474770.693074040]: Subscribing to /knightcar/wheels_driver_node/wheels_cmd_executed[0m

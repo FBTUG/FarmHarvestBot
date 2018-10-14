@@ -1,0 +1,46 @@
+[rospy.client][INFO] 2018-10-14 10:30:16,725: init_node, name[/knightcar/car_cmd_switch_node], pid[2042]
+[xmlrpc][INFO] 2018-10-14 10:30:16,727: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 10:30:16,729: Started XML-RPC server [http://knightcar.local:43482/]
+[rospy.impl.masterslave][INFO] 2018-10-14 10:30:16,730: _ready: http://knightcar.local:43482/
+[rospy.registration][INFO] 2018-10-14 10:30:16,736: Registering with master node http://knightcar.local:11311/
+[xmlrpc][INFO] 2018-10-14 10:30:16,756: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-14 10:30:16,757: ROS Slave URI: [http://knightcar.local:43482/]
+[rospy.init][INFO] 2018-10-14 10:30:16,867: registered with master
+[rospy.rosout][INFO] 2018-10-14 10:30:16,868: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 10:30:16,935: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 10:30:16,963: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-14 10:30:17,148: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:17,386: topic[/knightcar/fsm_node/mode] adding connection to [http://knightcar.local:44083/], count 0
+[rosout][INFO] 2018-10-14 10:30:18,046: [/knightcar/car_cmd_switch_node] Initialized. 
+[rospy.internal][INFO] 2018-10-14 10:30:18,058: topic[/knightcar/joy_mapper_node/car_cmd] adding connection to [http://knightcar.local:42974/], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:18,294: topic[/knightcar/lane_controller_node/car_cmd] adding connection to [http://knightcar.local:46026/], count 0
+[rosout][INFO] 2018-10-14 10:30:18,427: [/knightcar/car_cmd_switch_node] Car cmd switched to joystick in state JOYSTICK_CONTROL.
+[rospy.internal][INFO] 2018-10-14 10:30:18,482: topic[/knightcar/car_cmd_switch_node/cmd] adding connection to [/knightcar/inverse_kinematics_node], count 0
+[rospy.impl.masterslave][INFO] 2018-10-14 10:41:59,334: external shutdown request from [/rosnode]: user request
+[rospy.core][INFO] 2018-10-14 10:41:59,337: signal_shutdown [external shutdown request from [/rosnode]: [user request]]
+[rosout][INFO] 2018-10-14 10:41:59,338: [/knightcar/car_cmd_switch_node] Shutting down.
+[rospy.internal][INFO] 2018-10-14 10:41:59,378: topic[/knightcar/car_cmd_switch_node/cmd] removing connection to /knightcar/inverse_kinematics_node
+[rospy.internal][INFO] 2018-10-14 10:41:59,379: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-14 10:41:59,380: topic[/knightcar/joy_mapper_node/car_cmd] removing connection to http://knightcar.local:42974/
+[rospy.internal][INFO] 2018-10-14 10:41:59,382: topic[/knightcar/lane_controller_node/car_cmd] removing connection to http://knightcar.local:46026/
+[rospy.internal][WARNING] 2018-10-14 10:41:59,385: Unknown error initiating TCP/IP socket to knightcar.local:35811 (http://knightcar.local:46026/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.topics][ERROR] 2018-10-14 10:41:59,386: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 838, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2018-10-14 10:41:59,389: topic[/knightcar/fsm_node/mode] removing connection to http://knightcar.local:44083/
+[rospy.internal][WARNING] 2018-10-14 10:41:59,421: Unknown error initiating TCP/IP socket to knightcar.local:40989 (http://knightcar.local:44083/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.core][INFO] 2018-10-14 10:41:59,492: signal_shutdown [atexit]

@@ -1,0 +1,16 @@
+knightcar:
+  forward_kinematics_node: {baseline: 0.1, gain: 2.0, k: 27.0, radius: 0.0318, trim: -0.07999999821186066}
+  inverse_kinematics_node: {baseline: 0.1, gain: 2.0, k: 27.0, limit: 1.0, radius: 0.0318,
+    trim: -0.07999999821186066}
+  joy: {autorepeat_rate: 2.0, coalesce_interval: 0.02, deadzone: 0.01, dev: /dev/input/js0}
+  joy_mapper_node: {bicycle_kinematics: 0.0, simulated_vehicle_length: 0.18, speed_gain: 0.41,
+    steer_angle_gain: 1.04, steer_gain: 8.3}
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_knightcar_local__33082: 'http://knightcar.local:33082/', host_knightcar_local__36954: 'http://knightcar.local:36954/'}
+rosversion: '1.12.12
+
+  '
+run_id: 227d3526-cf41-11e8-b077-b827eb3fef1b

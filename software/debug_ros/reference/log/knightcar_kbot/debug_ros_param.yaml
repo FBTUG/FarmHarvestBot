@@ -1,0 +1,257 @@
+amcl: {base_frame_id: /base_footprint, beam_skip_distance: 0.5, beam_skip_threshold: 0.3,
+  do_beamskip: false, first_map_only: true, global_frame_id: /map, gui_publish_rate: 10.0,
+  initial_cov_aa: 1.03139876345037, initial_cov_xx: 0.35969839916597957, initial_cov_yy: 0.6648597902879186,
+  initial_pose_a: 0.13026373851996345, initial_pose_x: 0.628144899756619, initial_pose_y: -0.6721203344729836,
+  kld_err: 0.05, kld_z: 0.99, laser_lambda_short: 0.1, laser_likelihood_max_dist: 2.0,
+  laser_max_beams: 50, laser_max_range: -1.0, laser_min_range: -1.0, laser_model_type: likelihood_field,
+  laser_sigma_hit: 0.2, laser_z_hit: 0.5, laser_z_max: 0.05, laser_z_rand: 0.5, laser_z_short: 0.05,
+  max_particles: 1000, min_particles: 500, odom_alpha1: 0.2, odom_alpha2: 0.2, odom_alpha3: 0.8,
+  odom_alpha4: 0.2, odom_alpha5: 0.2, odom_frame_id: /odom, odom_model_type: diff,
+  recovery_alpha_fast: 0.1, recovery_alpha_slow: 0.0, resample_interval: 1, restore_defaults: false,
+  save_pose_rate: 0.5, tf_broadcast: true, transform_tolerance: 0.1, update_min_a: 0.01,
+  update_min_d: 0.01, use_map_topic: true}
+enable_statistics: false
+knightcar:
+  cam_info_reader_node: {cali_file_name: knightcar, config: baseline, image_type: compressed,
+    pub_freq: 1.0}
+  camera_node: {config: baseline, framerate_high: 30, framerate_low: 15, res_h: 480,
+    res_w: 640}
+  car_cmd_switch_node:
+    mappings: {AVOID_OBSTACLE: obstacle, AVOID_VEHICLE: vehicle, COORDINATION: coordination,
+      INTERSECTION_CONTROL: intersection, INTERSECTION_RECOVERY: recovery, JOYSTICK_CONTROL: joystick,
+      LANE_FOLLOWING: lane, LANE_FOLLOWING_AVOID: lane, LANE_RECOVERY: recovery, LOCALIZATION: stop,
+      PARALLEL_AUTONOMY: parallel_autonomy}
+    mode_topic: fsm_node/mode
+    source_topics: {coordination: simple_coordinator_node/car_cmd, intersection: open_loop_intersection_control_node/car_cmd,
+      joystick: joy_mapper_node/car_cmd, lane: lane_controller_node/car_cmd, obstacle: simple_stop_controller_node/car_cmd,
+      parallel_autonomy: lane_supervisor_node/car_cmd, recovery: lane_recovery_node/car_cmd,
+      vehicle: vehicle_avoidance_control_node/car_cmd}
+  duckiebot_visualizer: {veh_name: knightcar}
+  fsm_node:
+    events:
+      at_stop_line: {msg_type: BoolStamped, topic: stop_line_filter_node/at_stop_line,
+        trigger: true}
+      intersection_done: {msg_type: BoolStamped, topic: open_loop_intersection_control_node/intersection_done,
+        trigger: true}
+      intersection_done_and_not_parallel_autonomy: {msg_type: BoolStamped, topic: logic_gate_node/intersection_done_and_not_parallel_autonomy,
+        trigger: true}
+      intersection_done_and_parallel_autonomy: {msg_type: BoolStamped, topic: logic_gate_node/intersection_done_and_parallel_autonomy,
+        trigger: true}
+      intersection_go: {msg_type: BoolStamped, topic: simple_coordinator_node/intersection_go,
+        trigger: true}
+      joystick_override_off: {msg_type: BoolStamped, topic: joy_mapper_node/joystick_override,
+        trigger: false}
+      joystick_override_on: {msg_type: BoolStamped, topic: joy_mapper_node/joystick_override,
+        trigger: true}
+      obstacle_cleared: {msg_type: BoolStamped, topic: obstacle_safety_node/object_too_close,
+        trigger: false}
+      obstacle_detection: {msg_type: BoolStamped, topic: obstacle_safety_node/object_too_close,
+        trigger: true}
+      parallel_autonomy_off: {msg_type: BoolStamped, topic: joy_mapper_node/parallel_autonomy,
+        trigger: false}
+      parallel_autonomy_on: {msg_type: BoolStamped, topic: joy_mapper_node/parallel_autonomy,
+        trigger: true}
+      start_avoidance: {msg_type: BoolStamped, topic: joy_mapper_node/start_avoidance,
+        trigger: true}
+      vehicle_cleared: {msg_type: BoolStamped, topic: vehicle_avoidance_control_node/vehicle_detected,
+        trigger: false}
+      vehicle_detection: {msg_type: BoolStamped, topic: vehicle_avoidance_control_node/vehicle_detected,
+        trigger: true}
+    global_transitions: {joystick_override_on: JOYSTICK_CONTROL, parallel_autonomy_off: JOYSTICK_CONTROL,
+      parallel_autonomy_on: PARALLEL_AUTONOMY}
+    initial_state: JOYSTICK_CONTROL
+    nodes: {apriltag_node: apriltag_detector_node/switch, decoder_node: decoder_node/switch,
+      framerate_high: camera_node/framerate_high_switch, lane_filter_node: lane_filter_node/switch,
+      led_detector_node: LED_detector_node/switch, led_emitter_node: led_emitter_node/switch,
+      line_detector_node: line_detector_node/switch, static_object_detector_node: static_object_detector_node/switch,
+      stop_line_filter_node: stop_line_filter_node/switch, vehicle_detector_node: vehicle_detection_node/switch}
+    states:
+      AVOID_OBSTACLE:
+        active_nodes: [static_object_detector_node, decoder_node]
+        lights: [avoid_obstacle]
+        transitions: {obstacle_cleared: LANE_FOLLOWING_AVOID}
+      AVOID_VEHICLE:
+        active_nodes: [vehicle_detector_node, decoder_node]
+        lights: [avoid_vehicle]
+        transitions: {vehicle_cleared: PARALLEL_AUTONOMY}
+      COORDINATION:
+        active_nodes: [apriltag_node, led_detector_node, led_emitter_node, decoder_node,
+          framerate_high]
+        lights: [coordination]
+        transitions: {intersection_go: INTERSECTION_CONTROL}
+      INTERSECTION_CONTROL:
+        active_nodes: [line_detector_node, lane_filter_node, apriltag_node, decoder_node,
+          led_emitter_node]
+        transitions: {intersection_done_and_not_parallel_autonomy: LANE_FOLLOWING,
+          intersection_done_and_parallel_autonomy: PARALLEL_AUTONOMY}
+      INTERSECTION_RECOVERY:
+        active_nodes: [lane_filter_node, line_detector_node]
+        transitions: {found_lane: LANE_FOLLOWING, intersection_recovery_timeout_reached: JOYSTICK_CONTROL}
+      JOYSTICK_CONTROL:
+        active_nodes: [lane_filter_node, line_detector_node, stop_line_filter_node,
+          framerate_high, decoder_node, apriltag_node]
+        lights: [joystick]
+        transitions: {joystick_override_off: LANE_FOLLOWING, start_avoidance: LANE_FOLLOWING_AVOID}
+      LANE_FOLLOWING:
+        active_nodes: [lane_filter_node, line_detector_node, stop_line_filter_node]
+        lights: [lane_following]
+        transitions: {at_stop_line: COORDINATION}
+      LANE_FOLLOWING_AVOID:
+        active_nodes: [vehicle_detector_node, static_object_detector_node, lane_filter_node,
+          line_detector_node, stop_line_filter_node, decoder_node]
+        lights: [lane_following]
+        transitions: {at_stop_line: COORDINATION, obstacle_detection: AVOID_OBSTACLE,
+          vehicle_detection: AVOID_VEHICLE}
+      LANE_RECOVERY:
+        active_nodes: [lane_filter_node, line_detector_node]
+        transitions: {found_lane: LANE_FOLLOWING, lane_recovery_timeout_reached: JOYSTICK_CONTROL}
+      PARALLEL_AUTONOMY:
+        active_nodes: [vehicle_detector_node, static_object_detector_node, lane_filter_node,
+          line_detector_node, stop_line_filter_node, decoder_node]
+        lights: [parallel_autonomy]
+        transitions: {at_stop_line: COORDINATION, vehicle_detection: AVOID_VEHICLE}
+  ground_projection: {config: baseline, config_file_name: knightcar}
+  inverse_kinematics_node: {baseline: 0.1, gain: 2.0, k: 27.0, limit: 1.0, radius: 0.0318,
+    trim: -0.07999999821186066}
+  joy_mapper_node: {bicycle_kinematics: 0.0, simulated_vehicle_length: 0.18, speed_gain: 0.41,
+    steer_angle_gain: 1.04, steer_gain: 8.3}
+  joy_node: {autorepeat_rate: 2.0, coalesce_interval: 0.02, deadzone: 0.01, dev: /dev/input/js0}
+  lane_controller_node: {d_offset: 0.0, d_thres: 0.2615, k_d: -10.3, k_theta: -5.15,
+    theta_thres: 0.523, v_bar: 0.3864}
+  lane_filter_node: {cov_v: 0.5, d_max: 0.3, d_min: -0.15, delta_d: 0.02, delta_phi: 0.05,
+    l_max: 2, l_peak: 1, lanewidth: 0.2, linewidth_white: 0.05, linewidth_yellow: 0.025,
+    max_segment_dist: 0.3, mean_d_0: 0, mean_phi_0: 0, min_max: 0.1, min_segs: 10,
+    peak_val: 10, phi_max: 1.5, phi_min: -1.5, sigma_d_0: 0.1, sigma_d_mask: 0.05,
+    sigma_phi_0: 0.1, sigma_phi_mask: 0.05, use_distance_weighting: false, use_maximum_segment_dist: false,
+    use_min_segs: false, use_propagation: false, zero_val: 1}
+  line_detector_node:
+    detector:
+    - line_detector.LineDetectorHSV
+    - configuration:
+        canny_thresholds: [60, 150]
+        dilation_kernel_size: 3
+        hough_max_line_gap: 1
+        hough_min_line_length: 3
+        hough_threshold: 20
+        hsv_red1: [0, 100, 100]
+        hsv_red2: [15, 255, 255]
+        hsv_red3: [165, 100, 100]
+        hsv_red4: [180, 255, 255]
+        hsv_white1: [0, 0, 150]
+        hsv_white2: [180, 100, 255]
+        hsv_yellow1: [25, 50, 50]
+        hsv_yellow2: [45, 255, 255]
+    img_size: [120, 160]
+    top_cutoff: 40
+    verbose: true
+  logic_gate_node:
+    events:
+      intersection_done: {topic: open_loop_intersection_control_node/intersection_done,
+        trigger: true}
+      parallel_autonomy_off: {topic: joy_mapper_node/parallel_autonomy, trigger: false}
+      parallel_autonomy_on: {topic: joy_mapper_node/parallel_autonomy, trigger: true}
+    gates:
+      intersection_done_and_parallel_autonomy_off:
+        gate_type: AND
+        inputs: [intersection_done, parallel_autonomy_off]
+        output_topic: ~intersection_done_and_not_parallel_autonomy
+      intersection_done_and_parallel_autonomy_on:
+        gate_type: AND
+        inputs: [intersection_done, parallel_autonomy_on]
+        output_topic: ~intersection_done_and_parallel_autonomy
+move_base:
+  DWAPlannerROS: {acc_lim_th: 0.2, acc_lim_theta: 3.2, acc_lim_x: 1.0, acc_lim_y: 0.0,
+    acc_limit_trans: 0.1, angular_sim_granularity: 0.1, forward_point_distance: 0.5,
+    goal_distance_bias: 32.0, max_rot_vel: 0.3, max_scaling_factor: 0.2, max_trans_vel: 3.0,
+    max_vel_x: 3.0, max_vel_y: 0.0, min_rot_vel: 0.06, min_trans_vel: 0.0, min_vel_x: -1.0,
+    min_vel_y: 0.0, occdist_scale: 0.01, oscillation_reset_angle: 0.2, oscillation_reset_dist: 0.05,
+    path_distance_bias: 24.0, prune_plan: false, restore_defaults: false, rot_stopped_vel: 0.01,
+    scaling_speed: 1.0, sim_granularity: 0.05, sim_time: 1.5, stop_time_buffer: 0.2,
+    trans_stopped_vel: 0.01, twirling_scale: 0.0, use_dwa: true, vth_samples: 20,
+    vtheta_samples: 10, vx_samples: 20, vy_samples: 1, xy_goal_tolerance: 0.2, yaw_goal_tolerance: 0.8}
+  aggressive_reset: {reset_distance: 1.84}
+  base_global_planner: navfn/NavfnROS
+  base_local_planner: dwa_local_planner/DWAPlannerROS
+  clearing_rotation_allowed: false
+  conservative_reset: {reset_distance: 3.0}
+  conservative_reset_dist: 3.0
+  controller_frequency: 10.0
+  controller_patience: 3.0
+  global_costmap:
+    footprint: '[[-0.305,-0.18],[-0.305,0.18],[0.305,0.18],[0.305,-0.18]]'
+    footprint_padding: 0.01
+    global_frame: map
+    height: 10
+    inflation: {cost_scaling_factor: 6.0, enabled: true, inflate_unknown: false, inflation_radius: 2.5}
+    origin_x: 0.0
+    origin_y: 0.0
+    plugins:
+    - {name: static, type: 'costmap_2d::StaticLayer'}
+    - {name: sensor, type: 'costmap_2d::ObstacleLayer'}
+    - {name: inflation, type: 'costmap_2d::InflationLayer'}
+    publish_frequency: 5.0
+    resolution: 0.05
+    robot_base_frame: base_footprint
+    robot_radius: 0.46
+    rolling_window: false
+    sensor:
+      combination_method: 1
+      enabled: true
+      footprint_clearing_enabled: true
+      laser_scan_sensor: {clearing: true, data_type: LaserScan, marking: true, sensor_frame: laser,
+        topic: scan}
+      max_obstacle_height: 2.0
+      observation_sources: laser_scan_sensor
+    static: {enabled: true, map_topic: /map, subscribe_to_updates: true}
+    track_unknown_space: true
+    transform_tolerance: 1.0
+    update_frequency: 5.0
+    width: 10
+  local_costmap:
+    footprint: '[[-0.305,-0.18],[-0.305,0.18],[0.305,0.18],[0.305,-0.18]]'
+    footprint_padding: 0.01
+    global_frame: /odom
+    height: 2
+    inflation: {cost_scaling_factor: 8.0, enabled: true, inflate_unknown: false, inflation_radius: 2.5}
+    origin_x: 0.0
+    origin_y: 0.0
+    plugins:
+    - {name: sensor, type: 'costmap_2d::ObstacleLayer'}
+    - {name: inflation, type: 'costmap_2d::InflationLayer'}
+    publish_frequency: 10.0
+    resolution: 0.1
+    robot_base_frame: /base_footprint
+    robot_radius: 0.46
+    rolling_window: true
+    sensor:
+      combination_method: 1
+      enabled: true
+      footprint_clearing_enabled: true
+      laser_scan_sensor: {clearing: true, data_type: LaserScan, marking: true, sensor_frame: laser,
+        topic: scan}
+      max_obstacle_height: 2.0
+      observation_sources: laser_scan_sensor
+    static_map: false
+    transform_tolerance: 1.0
+    update_frequency: 10.0
+    width: 2
+  max_planning_retries: -1
+  oscillation_distance: 0.2
+  oscillation_timeout: 10.0
+  planner_frequency: 10.0
+  planner_patience: 5.0
+  recovery_behavior_enabled: true
+  restore_defaults: false
+  shutdown_costmaps: false
+rf2o_laser_odometry: {base_frame_id: base_footprint, freq: 10.0, laser_scan_topic: scan,
+  odom_frame_id: odom}
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_knightcar_local__33678: 'http://knightcar.local:33678/', host_knightcar_local__43079: 'http://knightcar.local:43079/',
+    host_knightcar_local__44700: 'http://knightcar.local:44700/'}
+rosversion: '1.12.12
+
+  '
+run_id: 01fa1220-cf59-11e8-aac1-b827eb3fef1b

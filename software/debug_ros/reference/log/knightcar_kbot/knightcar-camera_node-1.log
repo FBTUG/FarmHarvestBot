@@ -1,0 +1,47 @@
+[rospy.client][INFO] 2018-10-14 10:30:18,788: init_node, name[/knightcar/camera_node], pid[2030]
+[xmlrpc][INFO] 2018-10-14 10:30:18,790: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 10:30:18,791: Started XML-RPC server [http://knightcar.local:35696/]
+[rospy.init][INFO] 2018-10-14 10:30:18,792: ROS Slave URI: [http://knightcar.local:35696/]
+[rospy.impl.masterslave][INFO] 2018-10-14 10:30:18,793: _ready: http://knightcar.local:35696/
+[rospy.registration][INFO] 2018-10-14 10:30:18,796: Registering with master node http://knightcar.local:11311/
+[xmlrpc][INFO] 2018-10-14 10:30:18,796: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-14 10:30:18,893: registered with master
+[rospy.rosout][INFO] 2018-10-14 10:30:18,894: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 10:30:18,908: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 10:30:18,917: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 10:30:18,934: [/knightcar/camera_node] Initializing......
+[rosout][INFO] 2018-10-14 10:30:18,957: [/knightcar/camera_node] ~framerate_high = 30 
+[rosout][INFO] 2018-10-14 10:30:18,971: [/knightcar/camera_node] ~framerate_low = 15 
+[rosout][INFO] 2018-10-14 10:30:18,988: [/knightcar/camera_node] ~res_w = 640 
+[rosout][INFO] 2018-10-14 10:30:19,008: [/knightcar/camera_node] ~res_h = 480 
+[rospy.internal][INFO] 2018-10-14 10:30:19,117: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-14 10:30:19,597: [/knightcar/camera_node] ~config = baseline 
+[rosout][INFO] 2018-10-14 10:30:19,854: [/knightcar/camera_node] Initialized.
+[rosout][INFO] 2018-10-14 10:30:19,862: [/knightcar/camera_node] Start capturing.
+[rospy.internal][INFO] 2018-10-14 10:30:19,874: topic[/knightcar/camera_node/framerate_high_switch] adding connection to [http://knightcar.local:44083/], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:19,934: topic[/knightcar/camera_node/image/compressed] adding connection to [/knightcar/cam_info_reader_node], count 0
+[rosout][INFO] 2018-10-14 10:30:19,967: [/knightcar/camera_node] Published the first image.
+[rospy.internal][INFO] 2018-10-14 10:30:21,857: topic[/knightcar/camera_node/image/compressed] adding connection to [/knightcar/line_detector_node], count 1
+[rospy.internal][INFO] 2018-10-14 10:41:59,064: topic[/knightcar/camera_node/image/compressed] removing connection to /knightcar/cam_info_reader_node
+[rospy.impl.masterslave][INFO] 2018-10-14 10:41:59,152: external shutdown request from [/rosnode]: user request
+[rospy.core][INFO] 2018-10-14 10:41:59,153: signal_shutdown [external shutdown request from [/rosnode]: [user request]]
+[rosout][INFO] 2018-10-14 10:41:59,153: [/knightcar/camera_node] Closing camera.
+[rosout][INFO] 2018-10-14 10:41:59,155: [/knightcar/camera_node] Shutdown.
+[rospy.internal][INFO] 2018-10-14 10:41:59,179: topic[/knightcar/camera_node/image/compressed] removing connection to /knightcar/line_detector_node
+[rospy.internal][INFO] 2018-10-14 10:41:59,180: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-14 10:41:59,182: topic[/knightcar/camera_node/framerate_high_switch] removing connection to http://knightcar.local:44083/
+[rospy.topics][ERROR] 2018-10-14 10:41:59,192: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 838, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][WARNING] 2018-10-14 10:41:59,193: Unknown error initiating TCP/IP socket to knightcar.local:40989 (http://knightcar.local:44083/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.core][INFO] 2018-10-14 10:41:59,297: signal_shutdown [atexit]

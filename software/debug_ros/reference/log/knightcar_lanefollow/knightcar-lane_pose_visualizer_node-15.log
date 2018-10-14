@@ -1,0 +1,24 @@
+[rospy.client][INFO] 2018-10-14 07:43:07,637: init_node, name[/knightcar/lane_pose_visualizer_node], pid[2536]
+[xmlrpc][INFO] 2018-10-14 07:43:07,638: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 07:43:07,640: Started XML-RPC server [http://knightcar.local:34434/]
+[rospy.init][INFO] 2018-10-14 07:43:07,641: ROS Slave URI: [http://knightcar.local:34434/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:43:07,641: _ready: http://knightcar.local:34434/
+[rospy.registration][INFO] 2018-10-14 07:43:07,644: Registering with master node http://knightcar.local:11311/
+[xmlrpc][INFO] 2018-10-14 07:43:07,645: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-14 07:43:07,742: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:43:07,743: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 07:43:07,759: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:43:07,766: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 07:43:07,781: [/knightcar/lane_pose_visualizer_node] Initialzing.
+[rosout][INFO] 2018-10-14 07:43:07,782: [/knightcar/lane_pose_visualizer_node] Vehicle name: knightcar
+[rosout][INFO] 2018-10-14 07:43:07,807: [/knightcar/lane_pose_visualizer_node] Initialzed.
+[rospy.internal][INFO] 2018-10-14 07:43:07,819: topic[/knightcar/lane_filter_node/lane_pose] adding connection to [http://knightcar.local:44191/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:07,999: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 07:51:38,962: topic[/knightcar/lane_pose_visualizer_node/lane_pose_markers] adding connection to [/rostopic_5940_1539474698619], count 0
+[rospy.internal][INFO] 2018-10-14 07:51:39,744: topic[/knightcar/lane_pose_visualizer_node/lane_pose_markers] removing connection to /rostopic_5940_1539474698619
+[rospy.internal][INFO] 2018-10-14 07:52:37,214: topic[/rosout] adding connection to [/rostopic_6366_1539474756708], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:37,795: topic[/rosout] removing connection to /rostopic_6366_1539474756708
+[rospy.internal][INFO] 2018-10-14 07:52:46,553: topic[/knightcar/lane_pose_visualizer_node/lane_pose_markers] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:47,658: topic[/rosout] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:53,312: topic[/knightcar/lane_pose_visualizer_node/lane_pose_markers] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,313: topic[/rosout] removing connection to /record_1539474762243845096

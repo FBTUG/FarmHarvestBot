@@ -1,0 +1,31 @@
+[0m[ INFO] [1539484939.042552043]: Using plugin "static"[0m
+[0m[ INFO] [1539484939.221977156]: Requesting the map...[0m
+[0m[ INFO] [1539484939.498886943]: Resizing costmap to 1984 X 1984 at 0.050000 m/pix[0m
+[0m[ INFO] [1539484939.686165139]: Received a 1984 X 1984 map at 0.050000 m/pix[0m
+[0m[ INFO] [1539484939.686342849]: Subscribing to updates[0m
+[0m[ INFO] [1539484939.785610246]: Using plugin "sensor"[0m
+[0m[ INFO] [1539484939.825608530]:     Subscribed to Topics: laser_scan_sensor[0m
+[0m[ INFO] [1539484940.126654863]: Using plugin "inflation"[0m
+[0m[ INFO] [1539484940.856098431]: Using plugin "sensor"[0m
+[0m[ INFO] [1539484940.891194958]:     Subscribed to Topics: laser_scan_sensor[0m
+[33m[ WARN] [1539484940.911522931]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.3464 seconds[0m
+[0m[ INFO] [1539484941.095568967]: Using plugin "inflation"[0m
+[0m[ INFO] [1539484941.444253127]: Created local_planner dwa_local_planner/DWAPlannerROS[0m
+[0m[ INFO] [1539484941.465432305]: Sim period is set to 0.10[0m
+[0m[ INFO] [1539484942.089044939]: Recovery behavior will clear layer obstacles[0m
+[0m[ INFO] [1539484942.111770431]: Recovery behavior will clear layer obstacles[0m
+[0m[ INFO] [1539484942.430576857]: odom received![0m
+[33m[ WARN] [1539484957.429659938]: MessageFilter [target=map laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539484957.436843381]: MessageFilter [target=odom laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539485017.431355854]: MessageFilter [target=map laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539485017.445246646]: MessageFilter [target=odom laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539485077.431743625]: MessageFilter [target=map laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539485077.456666908]: MessageFilter [target=odom laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539485111.366018804]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.2008 seconds[0m
+[33m[ WARN] [1539485137.433799840]: MessageFilter [target=map laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539485137.459250715]: MessageFilter [target=odom laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539485197.435022908]: MessageFilter [target=map laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539485197.464548354]: MessageFilter [target=odom laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539485257.442339632]: MessageFilter [target=map laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539485257.465950372]: MessageFilter [target=odom laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539485317.452581676]: MessageFilter [target=map laser ]: Dropped 100.00% of messages so far. Please turn t

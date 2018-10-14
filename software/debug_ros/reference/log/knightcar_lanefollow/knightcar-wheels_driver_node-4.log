@@ -1,0 +1,21 @@
+[rospy.client][INFO] 2018-10-14 07:43:03,866: init_node, name[/knightcar/wheels_driver_node], pid[2504]
+[xmlrpc][INFO] 2018-10-14 07:43:03,876: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 07:43:03,878: Started XML-RPC server [http://knightcar.local:35668/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:43:03,879: _ready: http://knightcar.local:35668/
+[rospy.registration][INFO] 2018-10-14 07:43:03,885: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-14 07:43:03,886: ROS Slave URI: [http://knightcar.local:35668/]
+[rospy.init][INFO] 2018-10-14 07:43:03,903: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:43:03,905: initializing /rosout core topic
+[xmlrpc][INFO] 2018-10-14 07:43:03,900: xml rpc node: starting XML-RPC server
+[rospy.rosout][INFO] 2018-10-14 07:43:03,936: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:43:03,968: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 07:43:04,011: [/knightcar/wheels_driver_node] Initializing 
+[rospy.internal][INFO] 2018-10-14 07:43:04,172: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:05,089: topic[/knightcar/wheels_driver_node/emergency_stop] adding connection to [http://knightcar.local:34891/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:05,585: topic[/knightcar/wheels_driver_node/wheels_cmd] adding connection to [http://knightcar.local:44841/], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:37,189: topic[/rosout] adding connection to [/rostopic_6366_1539474756708], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:37,589: topic[/rosout] removing connection to /rostopic_6366_1539474756708
+[rospy.internal][INFO] 2018-10-14 07:52:47,619: topic[/rosout] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:51,342: topic[/knightcar/wheels_driver_node/wheels_cmd_executed] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:53,606: topic[/rosout] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:54,107: topic[/knightcar/wheels_driver_node/wheels_cmd_executed] removing connection to /record_1539474762243845096

@@ -1,0 +1,58 @@
+[rospy.client][INFO] 2018-10-14 07:43:03,269: init_node, name[/knightcar/cam_info_reader_node], pid[2502]
+[xmlrpc][INFO] 2018-10-14 07:43:03,295: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 07:43:03,296: Started XML-RPC server [http://knightcar.local:33135/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:43:03,297: _ready: http://knightcar.local:33135/
+[rospy.init][INFO] 2018-10-14 07:43:03,298: ROS Slave URI: [http://knightcar.local:33135/]
+[rospy.registration][INFO] 2018-10-14 07:43:03,302: Registering with master node http://knightcar.local:11311/
+[xmlrpc][INFO] 2018-10-14 07:43:03,303: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-14 07:43:03,399: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:43:03,400: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 07:43:03,413: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:43:03,431: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 07:43:03,509: [/knightcar/cam_info_reader_node] ~config = baseline 
+[rosout][INFO] 2018-10-14 07:43:03,542: [/knightcar/cam_info_reader_node] ~cali_file_name = knightcar 
+[rosout][INFO] 2018-10-14 07:43:03,581: [/knightcar/cam_info_reader_node] ~image_type = compressed 
+[rospy.internal][INFO] 2018-10-14 07:43:03,626: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:03,865: topic[/knightcar/camera_node/camera_info] adding connection to [/knightcar/ground_projection], count 0
+[rosout][INFO] 2018-10-14 07:43:04,476: [/knightcar/cam_info_reader_node] Using calibration file: /home/ubuntu/Knight_car/catkin_ws/src/duckietown/config/baseline/calibration/camera_intrinsic/knightcar.yaml
+[rosout][INFO] 2018-10-14 07:43:04,716: [/knightcar/cam_info_reader_node] CameraInfo: header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: "/knightcar/camera_optical_frame"
+height: 480
+width: 640
+distortion_model: "plumb_bob"
+D: [-0.31411690459737446, 0.065800642164674, -0.006621488228111864, 0.005244302638413317, 0.0]
+K: [287.6302869006445, 0.0, 339.55581660256655, 0.0, 287.5215053153045, 216.27854252117933, 0.0, 0.0, 1.0]
+R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+P: [197.84805297851562, 0.0, 341.0231508225115, 0.0, 0.0, 206.49717712402344, 198.04476088621868, 0.0, 0.0, 0.0, 1.0, 0.0]
+binning_x: 0
+binning_y: 0
+roi: 
+  x_offset: 0
+  y_offset: 0
+  height: 0
+  width: 0
+  do_rectify: False
+[rosout][WARNING] 2018-10-14 07:43:04,718: [/knightcar/cam_info_reader_node] ==============CompressedImage
+[rospy.internal][INFO] 2018-10-14 07:43:07,019: topic[/knightcar/camera_node/image/compressed] adding connection to [http://knightcar.local:46802/], count 0
+[rospy.internal][INFO] 2018-10-14 07:43:07,135: topic[/knightcar/camera_node/camera_info] removing connection to /knightcar/ground_projection
+[rospy.internal][INFO] 2018-10-14 07:50:59,229: topic[/knightcar/camera_node/camera_info] adding connection to [/rostopic_5582_1539474658829], count 0
+[rospy.internal][INFO] 2018-10-14 07:50:59,722: topic[/knightcar/camera_node/camera_info] removing connection to /rostopic_5582_1539474658829
+[rospy.internal][INFO] 2018-10-14 07:52:37,194: topic[/rosout] adding connection to [/rostopic_6366_1539474756708], count 1
+[rosout][WARNING] 2018-10-14 07:52:37,478: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-14 07:52:37,483: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-14 07:52:37,504: topic[/rosout] removing connection to /rostopic_6366_1539474756708
+[rospy.internal][INFO] 2018-10-14 07:52:46,956: topic[/knightcar/camera_node/camera_info] adding connection to [/record_1539474762243845096], count 0
+[rospy.internal][INFO] 2018-10-14 07:52:47,622: topic[/rosout] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:53,301: topic[/knightcar/camera_node/camera_info] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,521: topic[/rosout] removing connection to /record_1539474762243845096

@@ -1,0 +1,523 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[PARAM_DUMP]$rosparam dump debug_ros_param.yaml =====>
+[NODE_LIST]$rosnode list =====>
+/base_link_to_laser4
+/rosout
+/rviz_1539495994097219409
+/ydlidar_node
+[SRV_LIST]$rossrv list =====>
+app_manager/GetAppDetails
+app_manager/GetInstallationState
+app_manager/InstallApp
+app_manager/ListApps
+app_manager/StartApp
+app_manager/StopApp
+app_manager/UninstallApp
+astra_camera/GetSerial
+capabilities/EstablishBond
+capabilities/FreeCapability
+capabilities/GetCapabilitySpec
+capabilities/GetCapabilitySpecs
+capabilities/GetInterfaces
+capabilities/GetNodeletManagerName
+capabilities/GetProviders
+capabilities/GetRemappings
+capabilities/GetRunningCapabilities
+capabilities/GetSemanticInterfaces
+capabilities/StartCapability
+capabilities/StopCapability
+capabilities/UseCapability
+control_msgs/QueryCalibrationState
+control_msgs/QueryTrajectoryState
+control_toolbox/SetPidGains
+controller_manager_msgs/ListControllerTypes
+controller_manager_msgs/ListControllers
+controller_manager_msgs/LoadController
+controller_manager_msgs/ReloadControllerLibraries
+controller_manager_msgs/SwitchController
+controller_manager_msgs/UnloadController
+create_node/SetDigitalOutputs
+create_node/SetTurtlebotMode
+diagnostic_msgs/AddDiagnostics
+diagnostic_msgs/SelfTest
+duckietown_msgs/SetFSMState
+duckietown_msgs/SetValue
+dynamic_reconfigure/Reconfigure
+ethercat_hardware/SoftProcessorFirmwareRead
+ethercat_hardware/SoftProcessorFirmwareWrite
+ethercat_hardware/SoftProcessorReset
+ethercat_trigger_controllers/SetMultiWaveform
+ethercat_trigger_controllers/SetWaveform
+gateway_msgs/Advertise
+gateway_msgs/AdvertiseAll
+gateway_msgs/ConnectHub
+gateway_msgs/Remote
+gateway_msgs/RemoteAll
+gateway_msgs/RemoteGatewayInfo
+gateway_msgs/SetWatcherPeriod
+gazebo_msgs/ApplyBodyWrench
+gazebo_msgs/ApplyJointEffort
+gazebo_msgs/BodyRequest
+gazebo_msgs/DeleteLight
+gazebo_msgs/DeleteModel
+gazebo_msgs/GetJointProperties
+gazebo_msgs/GetLightProperties
+gazebo_msgs/GetLinkProperties
+gazebo_msgs/GetLinkState
+gazebo_msgs/GetModelProperties
+gazebo_msgs/GetModelState
+gazebo_msgs/GetPhysicsProperties
+gazebo_msgs/GetWorldProperties
+gazebo_msgs/JointRequest
+gazebo_msgs/SetJointProperties
+gazebo_msgs/SetJointTrajectory
+gazebo_msgs/SetLightProperties
+gazebo_msgs/SetLinkProperties
+gazebo_msgs/SetLinkState
+gazebo_msgs/SetModelConfiguration
+gazebo_msgs/SetModelState
+gazebo_msgs/SetPhysicsProperties
+gazebo_msgs/SpawnModel
+ground_projection/EstimateHomography
+ground_projection/GetGroundCoord
+ground_projection/GetImageCoord
+laser_assembler/AssembleScans
+laser_assembler/AssembleScans2
+map_msgs/GetMapROI
+map_msgs/GetPointMap
+map_msgs/GetPointMapROI
+map_msgs/ProjectedMapsInfo
+map_msgs/SaveMap
+map_msgs/SetMapProjections
+microstrain_3dmgx2_imu/AddOffset
+moveit_msgs/ApplyPlanningScene
+moveit_msgs/CheckIfRobotStateExistsInWarehouse
+moveit_msgs/DeleteRobotStateFromWarehouse
+moveit_msgs/ExecuteKnownTrajectory
+moveit_msgs/GetCartesianPath
+moveit_msgs/GetMotionPlan
+moveit_msgs/GetPlannerParams
+moveit_msgs/GetPlanningScene
+moveit_msgs/GetPositionFK
+moveit_msgs/GetPositionIK
+moveit_msgs/GetRobotStateFromWarehouse
+moveit_msgs/GetStateValidity
+moveit_msgs/GraspPlanning
+moveit_msgs/ListRobotStatesInWarehouse
+moveit_msgs/LoadMap
+moveit_msgs/QueryPlannerInterfaces
+moveit_msgs/RenameRobotStateInWarehouse
+moveit_msgs/SaveMap
+moveit_msgs/SaveRobotStateToWarehouse
+moveit_msgs/SetPlannerParams
+nav_msgs/GetMap
+nav_msgs/GetPlan
+nav_msgs/SetMap
+navfn/MakeNavPlan
+navfn/SetCostmap
+nodelet/NodeletList
+nodelet/NodeletLoad
+nodelet/NodeletUnload
+object_recognition_msgs/GetObjectInformation
+octomap_msgs/BoundingBoxQuery
+octomap_msgs/GetOctomap
+openni2_camera/GetSerial
+polled_camera/GetPolledImage
+pr2_calibration_launch/FkTest
+pr2_controllers_msgs/QueryCalibrationState
+pr2_controllers_msgs/QueryTrajectoryState
+pr2_gazebo_plugins/SetModelsJointsStates
+pr2_mechanism_controllers/SetProfile
+pr2_mechanism_msgs/ListControllerTypes
+pr2_mechanism_msgs/ListControllers
+pr2_mechanism_msgs/LoadController
+pr2_mechanism_msgs/ReloadControllerLibraries
+pr2_mechanism_msgs/SwitchController
+pr2_mechanism_msgs/UnloadController
+pr2_msgs/SetLaserTrajCmd
+pr2_msgs/SetPeriodicCmd
+pr2_power_board/PowerBoardCommand
+pr2_power_board/PowerBoardCommand2
+realsense_camera/CameraConfiguration
+realsense_camera/ForcePower
+realsense_camera/GetIMUInfo
+realsense_camera/IsPowered
+realsense_camera/SetPower
+robot_pose_ekf/GetStatus
+rocon_app_manager_msgs/GetRappList
+rocon_app_manager_msgs/Init
+rocon_app_manager_msgs/Invite
+rocon_app_manager_msgs/StartRapp
+rocon_app_manager_msgs/StopRapp
+rocon_interaction_msgs/GetInteraction
+rocon_interaction_msgs/GetInteractions
+rocon_interaction_msgs/GetPairings
+rocon_interaction_msgs/RequestInteraction
+rocon_interaction_msgs/SetInteractions
+rocon_interaction_msgs/StartPairing
+rocon_interaction_msgs/StopPairing
+rocon_std_msgs/EmptyString
+roscpp/Empty
+roscpp/GetLoggers
+roscpp/SetLoggerLevel
+roscpp_tutorials/TwoInts
+rospy_tutorials/AddTwoInts
+rospy_tutorials/BadTwoInts
+rosserial_arduino/Test
+rosserial_msgs/RequestMessageInfo
+rosserial_msgs/RequestParam
+rosserial_msgs/RequestServiceInfo
+sensor_msgs/SetCameraInfo
+std_srvs/Empty
+std_srvs/SetBool
+std_srvs/Trigger
+tf/FrameGraph
+tf2_msgs/FrameGraph
+topic_tools/DemuxAdd
+topic_tools/DemuxDelete
+topic_tools/DemuxList
+topic_tools/DemuxSelect
+topic_tools/MuxAdd
+topic_tools/MuxDelete
+topic_tools/MuxList
+topic_tools/MuxSelect
+turtlesim/Kill
+turtlesim/SetPen
+turtlesim/Spawn
+turtlesim/TeleportAbsolute
+turtlesim/TeleportRelative
+wge100_camera/BoardConfig
+zeroconf_msgs/AddListener
+zeroconf_msgs/AddService
+zeroconf_msgs/ListDiscoveredServices
+zeroconf_msgs/ListPublishedServices
+zeroconf_msgs/RemoveListener
+zeroconf_msgs/RemoveService
+[NODE=/base_link_to_laser4]$rosnode info /base_link_to_laser4 =====>
+--------------------------------------------------------------------------------
+Node [/base_link_to_laser4]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /tf [tf2_msgs/TFMessage]
+
+Subscriptions: None
+
+Services: 
+ * /base_link_to_laser4/get_loggers
+ * /base_link_to_laser4/set_logger_level
+
+
+contacting node http://knightcar.local:37630/ ...
+Pid: 1974
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rviz_1539495994097219409
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://knightcar.local:39720/ ...
+Pid: 1938
+Connections:
+ * topic: /rosout
+    * to: /base_link_to_laser4 (http://knightcar.local:37630/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /ydlidar_node (http://knightcar.local:33363/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/rviz_1539495994097219409]$rosnode info /rviz_1539495994097219409 =====>
+--------------------------------------------------------------------------------
+Node [/rviz_1539495994097219409]
+Publications: 
+ * /initialpose [geometry_msgs/PoseWithCovarianceStamped]
+ * /move_base_simple/goal [geometry_msgs/PoseStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /scan [sensor_msgs/LaserScan]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [unknown type]
+
+Services: 
+ * /rviz_1539495994097219409/get_loggers
+ * /rviz_1539495994097219409/reload_shaders
+ * /rviz_1539495994097219409/set_logger_level
+
+
+contacting node http://osboxes:42185/ ...
+Pid: 15310
+Connections:
+ * topic: /tf
+    * to: /base_link_to_laser4 (http://knightcar.local:37630/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /scan
+    * to: /ydlidar_node (http://knightcar.local:33363/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/ydlidar_node]$rosnode info /ydlidar_node =====>
+--------------------------------------------------------------------------------
+Node [/ydlidar_node]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /scan [sensor_msgs/LaserScan]
+
+Subscriptions: None
+
+Services: 
+ * /ydlidar_node/get_loggers
+ * /ydlidar_node/set_logger_level
+
+
+contacting node http://knightcar.local:33363/ ...
+Pid: 1973
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /scan
+    * to: /rviz_1539495994097219409
+    * direction: outbound
+    * transport: TCPROS
+
+[TOPIC_LIST]$rostopic list =====>
+/initialpose
+/move_base_simple/goal
+/rosout
+/rosout_agg
+/scan
+/tf
+/tf_static
+[TOPIC=/initialpose]$rostopic info /initialpose =====>
+Type: geometry_msgs/PoseWithCovarianceStamped
+
+Publishers: 
+ * /rviz_1539495994097219409 (http://osboxes:42185/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/initialpose]$timeout 1 rostopic hz /initialpose =====>
+subscribed to [/initialpose]
+[TOPIC_TYPE=geometry_msgs/PoseWithCovarianceStamped]$rosmsg show geometry_msgs/PoseWithCovarianceStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/PoseWithCovariance pose
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  float64[36] covariance
+
+[TOPIC=/move_base_simple/goal]$rostopic info /move_base_simple/goal =====>
+Type: geometry_msgs/PoseStamped
+
+Publishers: 
+ * /rviz_1539495994097219409 (http://osboxes:42185/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base_simple/goal]$timeout 1 rostopic hz /move_base_simple/goal =====>
+[TOPIC_TYPE=geometry_msgs/PoseStamped]$rosmsg show geometry_msgs/PoseStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Pose pose
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /ydlidar_node (http://knightcar.local:33363/)
+ * /base_link_to_laser4 (http://knightcar.local:37630/)
+ * /rviz_1539495994097219409 (http://osboxes:42185/)
+
+Subscribers: 
+ * /rosout (http://knightcar.local:39720/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://knightcar.local:39720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/scan]$rostopic info /scan =====>
+Type: sensor_msgs/LaserScan
+
+Publishers: 
+ * /ydlidar_node (http://knightcar.local:33363/)
+
+Subscribers: 
+ * /rviz_1539495994097219409 (http://osboxes:42185/)
+
+
+[TOPIC_HZ=/scan]$timeout 1 rostopic hz /scan =====>
+subscribed to [/scan]
+[TOPIC_TYPE=sensor_msgs/LaserScan]$rosmsg show sensor_msgs/LaserScan =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 angle_min
+float32 angle_max
+float32 angle_increment
+float32 time_increment
+float32 scan_time
+float32 range_min
+float32 range_max
+float32[] ranges
+float32[] intensities
+
+[TOPIC=/tf]$rostopic info /tf =====>
+Type: tf2_msgs/TFMessage
+
+Publishers: 
+ * /base_link_to_laser4 (http://knightcar.local:37630/)
+
+Subscribers: 
+ * /rviz_1539495994097219409 (http://osboxes:42185/)
+
+
+[TOPIC_HZ=/tf]$timeout 1 rostopic hz /tf =====>
+subscribed to [/tf]
+no new messages
+[TOPIC_TYPE=tf2_msgs/TFMessage]$rosmsg show tf2_msgs/TFMessage =====>
+geometry_msgs/TransformStamped[] transforms
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string child_frame_id
+  geometry_msgs/Transform transform
+    geometry_msgs/Vector3 translation
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion rotation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[TOPIC=/tf_static]$rostopic info /tf_static =====>
+Type: tf2_msgs/TFMessage
+
+Publishers: None
+
+Subscribers: 
+ * /rviz_1539495994097219409 (http://osboxes:42185/)
+
+
+[TOPIC_HZ=/tf_static]$timeout 1 rostopic hz /tf_static =====>
+subscribed to [/tf_static]
+[TOPIC_TYPE=tf2_msgs/TFMessage]$rosmsg show tf2_msgs/TFMessage =====>
+geometry_msgs/TransformStamped[] transforms
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string child_frame_id
+  geometry_msgs/Transform transform
+    geometry_msgs/Vector3 translation
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion rotation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>
+[0m[ INFO] [1539496157.368395214]: Recording to 2018-10-14-01-49-17.bag.[0m
+[0m[ INFO] [1539496157.382356411]: Subscribing to /move_base_simple/goal[0m
+[0m[ INFO] [1539496157.467085498]: Subscribing to /rosout[0m
+[0m[ INFO] [1539496157.562444155]: Subscribing to /tf[0m
+[0m[ INFO] [1539496157.647531863]: Subscribing to /initialpose[0m
+[0m[ INFO] [1539496157.755995715]: Subscribing to /scan[0m
+[0m[ INFO] [1539496157.850713077]: Subscribing to /rosout_agg[0m

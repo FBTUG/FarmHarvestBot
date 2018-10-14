@@ -1,0 +1,41 @@
+[rospy.client][INFO] 2018-10-14 07:43:05,911: init_node, name[/knightcar/camera_node], pid[2501]
+[xmlrpc][INFO] 2018-10-14 07:43:05,913: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 07:43:05,915: Started XML-RPC server [http://knightcar.local:46802/]
+[rospy.init][INFO] 2018-10-14 07:43:05,916: ROS Slave URI: [http://knightcar.local:46802/]
+[rospy.impl.masterslave][INFO] 2018-10-14 07:43:05,917: _ready: http://knightcar.local:46802/
+[rospy.registration][INFO] 2018-10-14 07:43:05,920: Registering with master node http://knightcar.local:11311/
+[xmlrpc][INFO] 2018-10-14 07:43:05,922: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-14 07:43:06,018: registered with master
+[rospy.rosout][INFO] 2018-10-14 07:43:06,018: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 07:43:06,030: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 07:43:06,037: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 07:43:06,054: [/knightcar/camera_node] Initializing......
+[rosout][INFO] 2018-10-14 07:43:06,072: [/knightcar/camera_node] ~framerate_high = 30 
+[rosout][INFO] 2018-10-14 07:43:06,093: [/knightcar/camera_node] ~framerate_low = 15 
+[rosout][INFO] 2018-10-14 07:43:06,107: [/knightcar/camera_node] ~res_w = 640 
+[rosout][INFO] 2018-10-14 07:43:06,121: [/knightcar/camera_node] ~res_h = 480 
+[rospy.internal][INFO] 2018-10-14 07:43:06,264: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-14 07:43:06,697: [/knightcar/camera_node] ~config = baseline 
+[rospy.internal][INFO] 2018-10-14 07:43:06,936: topic[/knightcar/camera_node/framerate_high_switch] adding connection to [http://knightcar.local:43353/], count 0
+[rosout][INFO] 2018-10-14 07:43:06,942: [/knightcar/camera_node] Initialized.
+[rosout][INFO] 2018-10-14 07:43:06,952: [/knightcar/camera_node] Start capturing.
+[rospy.internal][INFO] 2018-10-14 07:43:07,032: topic[/knightcar/camera_node/image/compressed] adding connection to [/knightcar/cam_info_reader_node], count 0
+[rosout][INFO] 2018-10-14 07:43:07,063: [/knightcar/camera_node] Published the first image.
+[rospy.internal][INFO] 2018-10-14 07:43:08,499: topic[/knightcar/camera_node/image/compressed] adding connection to [/knightcar/line_detector_node], count 1
+[rospy.internal][INFO] 2018-10-14 07:51:04,116: topic[/knightcar/camera_node/image/compressed] adding connection to [/rostopic_5649_1539474663691], count 2
+[rospy.internal][INFO] 2018-10-14 07:51:04,720: topic[/knightcar/camera_node/image/compressed] removing connection to /rostopic_5649_1539474663691
+[rospy.internal][INFO] 2018-10-14 07:52:37,216: topic[/rosout] adding connection to [/rostopic_6366_1539474756708], count 1
+[rosout][WARNING] 2018-10-14 07:52:37,493: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-14 07:52:37,501: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-14 07:52:37,949: topic[/rosout] removing connection to /rostopic_6366_1539474756708
+[rospy.internal][INFO] 2018-10-14 07:52:44,014: topic[/knightcar/camera_node/image/compressed] adding connection to [/record_1539474762243845096], count 2
+[rospy.internal][INFO] 2018-10-14 07:52:47,626: topic[/rosout] adding connection to [/record_1539474762243845096], count 1
+[rospy.internal][INFO] 2018-10-14 07:52:52,965: topic[/knightcar/camera_node/image/compressed] removing connection to /record_1539474762243845096
+[rospy.internal][INFO] 2018-10-14 07:52:53,475: topic[/rosout] removing connection to /record_1539474762243845096

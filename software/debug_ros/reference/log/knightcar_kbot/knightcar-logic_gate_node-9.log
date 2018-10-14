@@ -1,0 +1,28 @@
+[rospy.client][INFO] 2018-10-14 10:30:17,312: init_node, name[/knightcar/logic_gate_node], pid[2048]
+[xmlrpc][INFO] 2018-10-14 10:30:17,318: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 10:30:17,322: Started XML-RPC server [http://knightcar.local:35908/]
+[rospy.init][INFO] 2018-10-14 10:30:17,323: ROS Slave URI: [http://knightcar.local:35908/]
+[rospy.impl.masterslave][INFO] 2018-10-14 10:30:17,324: _ready: http://knightcar.local:35908/
+[rospy.registration][INFO] 2018-10-14 10:30:17,338: Registering with master node http://knightcar.local:11311/
+[xmlrpc][INFO] 2018-10-14 10:30:17,341: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-14 10:30:17,425: registered with master
+[rospy.rosout][INFO] 2018-10-14 10:30:17,426: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 10:30:17,474: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 10:30:17,528: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-14 10:30:17,789: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:17,874: topic[/knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy] adding connection to [/knightcar/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:18,148: topic[/knightcar/logic_gate_node/intersection_done_and_parallel_autonomy] adding connection to [/knightcar/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:18,166: topic[/knightcar/joy_mapper_node/parallel_autonomy] adding connection to [http://knightcar.local:42974/], count 0
+[rospy.core][INFO] 2018-10-14 10:41:59,624: signal_shutdown [signal-2]
+[rosout][INFO] 2018-10-14 10:41:59,625: [/knightcar/logic_gate_node] Shutting down.
+[rospy.internal][INFO] 2018-10-14 10:41:59,754: topic[/knightcar/logic_gate_node/intersection_done_and_parallel_autonomy] removing connection to /knightcar/fsm_node
+[rospy.internal][INFO] 2018-10-14 10:41:59,759: topic[/knightcar/logic_gate_node/intersection_done_and_not_parallel_autonomy] removing connection to /knightcar/fsm_node
+[rospy.internal][INFO] 2018-10-14 10:41:59,761: topic[/rosout] removing connection to /rosout
+[rospy.internal][WARNING] 2018-10-14 10:41:59,767: Unknown error initiating TCP/IP socket to knightcar.local:40422 (http://knightcar.local:42974/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.internal][INFO] 2018-10-14 10:41:59,765: topic[/knightcar/joy_mapper_node/parallel_autonomy] removing connection to http://knightcar.local:42974/
+[rospy.impl.masterslave][INFO] 2018-10-14 10:41:59,768: signal-2
+[rospy.core][INFO] 2018-10-14 10:42:00,285: signal_shutdown [atexit]

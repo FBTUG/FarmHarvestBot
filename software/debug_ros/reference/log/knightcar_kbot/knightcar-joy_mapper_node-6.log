@@ -1,0 +1,36 @@
+[rospy.client][INFO] 2018-10-14 10:30:17,325: init_node, name[/knightcar/joy_mapper_node], pid[2035]
+[xmlrpc][INFO] 2018-10-14 10:30:17,328: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 10:30:17,329: Started XML-RPC server [http://knightcar.local:42974/]
+[rospy.impl.masterslave][INFO] 2018-10-14 10:30:17,331: _ready: http://knightcar.local:42974/
+[rospy.registration][INFO] 2018-10-14 10:30:17,340: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-14 10:30:17,341: ROS Slave URI: [http://knightcar.local:42974/]
+[rospy.init][INFO] 2018-10-14 10:30:17,343: registered with master
+[rospy.rosout][INFO] 2018-10-14 10:30:17,344: initializing /rosout core topic
+[xmlrpc][INFO] 2018-10-14 10:30:17,351: xml rpc node: starting XML-RPC server
+[rospy.rosout][INFO] 2018-10-14 10:30:17,400: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 10:30:17,454: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 10:30:17,554: [/knightcar/joy_mapper_node] Initializing 
+[rosout][INFO] 2018-10-14 10:30:17,639: [/knightcar/joy_mapper_node] ~speed_gain = 0.41 
+[rospy.internal][INFO] 2018-10-14 10:30:17,681: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-14 10:30:17,713: [/knightcar/joy_mapper_node] ~steer_gain = 8.3 
+[rosout][INFO] 2018-10-14 10:30:17,811: [/knightcar/joy_mapper_node] ~bicycle_kinematics = 0.0 
+[rosout][INFO] 2018-10-14 10:30:17,889: [/knightcar/joy_mapper_node] ~steer_angle_gain = 1.04 
+[rosout][INFO] 2018-10-14 10:30:17,960: [/knightcar/joy_mapper_node] ~simulated_vehicle_length = 0.18 
+[rospy.internal][INFO] 2018-10-14 10:30:18,067: topic[/knightcar/joy_mapper_node/car_cmd] adding connection to [/knightcar/car_cmd_switch_node], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:18,204: topic[/knightcar/joy_mapper_node/parallel_autonomy] adding connection to [/knightcar/logic_gate_node], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:18,256: topic[/knightcar/joy_mapper_node/joystick_override] adding connection to [/knightcar/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:18,267: topic[/knightcar/wheels_driver_node/emergency_stop] adding connection to [/knightcar/wheels_driver_node], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:18,276: topic[/knightcar/joy] adding connection to [http://knightcar.local:45230/], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:18,295: topic[/knightcar/joy_mapper_node/start_avoidance] adding connection to [/knightcar/fsm_node], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:18,317: topic[/knightcar/joy_mapper_node/parallel_autonomy] adding connection to [/knightcar/fsm_node], count 1
+[rospy.internal][INFO] 2018-10-14 10:41:59,555: topic[/knightcar/joy_mapper_node/car_cmd] removing connection to /knightcar/car_cmd_switch_node
+[rospy.core][INFO] 2018-10-14 10:41:59,629: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2018-10-14 10:41:59,890: topic[/knightcar/joy_mapper_node/start_avoidance] removing connection to /knightcar/fsm_node
+[rospy.internal][INFO] 2018-10-14 10:41:59,892: topic[/knightcar/joy_mapper_node/joystick_override] removing connection to /knightcar/fsm_node
+[rospy.internal][INFO] 2018-10-14 10:41:59,894: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-14 10:41:59,896: topic[/knightcar/wheels_driver_node/emergency_stop] removing connection to /knightcar/wheels_driver_node
+[rospy.internal][INFO] 2018-10-14 10:41:59,898: topic[/knightcar/joy_mapper_node/parallel_autonomy] removing connection to /knightcar/logic_gate_node
+[rospy.internal][INFO] 2018-10-14 10:41:59,899: topic[/knightcar/joy_mapper_node/parallel_autonomy] removing connection to /knightcar/fsm_node
+[rospy.internal][INFO] 2018-10-14 10:41:59,901: topic[/knightcar/joy] removing connection to http://knightcar.local:45230/
+[rospy.impl.masterslave][INFO] 2018-10-14 10:41:59,903: signal-2
+[rospy.core][INFO] 2018-10-14 10:42:00,321: signal_shutdown [atexit]

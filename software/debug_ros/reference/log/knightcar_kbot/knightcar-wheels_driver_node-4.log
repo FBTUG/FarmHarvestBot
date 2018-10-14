@@ -1,0 +1,40 @@
+[rospy.client][INFO] 2018-10-14 10:30:16,974: init_node, name[/knightcar/wheels_driver_node], pid[2033]
+[xmlrpc][INFO] 2018-10-14 10:30:16,986: XML-RPC server binding to 0.0.0.0:0
+[rospy.init][INFO] 2018-10-14 10:30:16,990: ROS Slave URI: [http://knightcar.local:39774/]
+[xmlrpc][INFO] 2018-10-14 10:30:16,992: Started XML-RPC server [http://knightcar.local:39774/]
+[rospy.impl.masterslave][INFO] 2018-10-14 10:30:16,993: _ready: http://knightcar.local:39774/
+[xmlrpc][INFO] 2018-10-14 10:30:17,023: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-10-14 10:30:17,026: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-14 10:30:17,092: registered with master
+[rospy.rosout][INFO] 2018-10-14 10:30:17,093: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-14 10:30:17,136: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 10:30:17,168: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 10:30:17,240: [/knightcar/wheels_driver_node] Initializing 
+[rospy.internal][INFO] 2018-10-14 10:30:17,416: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:18,220: topic[/knightcar/wheels_driver_node/emergency_stop] adding connection to [http://knightcar.local:42974/], count 0
+[rospy.internal][INFO] 2018-10-14 10:30:18,542: topic[/knightcar/wheels_driver_node/wheels_cmd] adding connection to [http://knightcar.local:39379/], count 0
+[rospy.internal][ERROR] 2018-10-14 10:41:59,869: Unable to initiate TCP/IP socket to knightcar.local:40662 (http://knightcar.local:39379/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2018-10-14 10:41:59,899: Unable to initiate TCP/IP socket to knightcar.local:40422 (http://knightcar.local:42974/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.core][INFO] 2018-10-14 10:42:00,026: signal_shutdown [signal-2]
+[rosout][INFO] 2018-10-14 10:42:00,034: [/knightcar/wheels_driver_node] Shutting down.
+[rospy.internal][INFO] 2018-10-14 10:42:00,052: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-14 10:42:00,053: topic[/knightcar/wheels_driver_node/wheels_cmd] removing connection to http://knightcar.local:39379/
+[rospy.internal][INFO] 2018-10-14 10:42:00,054: topic[/knightcar/wheels_driver_node/emergency_stop] removing connection to http://knightcar.local:42974/
+[rospy.impl.masterslave][INFO] 2018-10-14 10:42:00,054: signal-2
+[rospy.core][INFO] 2018-10-14 10:42:00,163: signal_shutdown [atexit]

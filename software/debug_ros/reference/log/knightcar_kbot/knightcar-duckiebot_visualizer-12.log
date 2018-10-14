@@ -1,0 +1,23 @@
+[rospy.client][INFO] 2018-10-14 10:30:17,206: init_node, name[/knightcar/duckiebot_visualizer], pid[2062]
+[xmlrpc][INFO] 2018-10-14 10:30:17,211: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-14 10:30:17,214: Started XML-RPC server [http://knightcar.local:44100/]
+[rospy.impl.masterslave][INFO] 2018-10-14 10:30:17,215: _ready: http://knightcar.local:44100/
+[rospy.registration][INFO] 2018-10-14 10:30:17,219: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-14 10:30:17,219: ROS Slave URI: [http://knightcar.local:44100/]
+[rospy.init][INFO] 2018-10-14 10:30:17,221: registered with master
+[rospy.rosout][INFO] 2018-10-14 10:30:17,222: initializing /rosout core topic
+[xmlrpc][INFO] 2018-10-14 10:30:17,249: xml rpc node: starting XML-RPC server
+[rospy.rosout][INFO] 2018-10-14 10:30:17,301: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-14 10:30:17,352: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-14 10:30:17,459: [/knightcar/duckiebot_visualizer] Initialzing.
+[rosout][INFO] 2018-10-14 10:30:17,564: [/knightcar/duckiebot_visualizer] ~veh_name = knightcar 
+[rospy.internal][INFO] 2018-10-14 10:30:17,670: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-14 10:30:17,720: [/knightcar/duckiebot_visualizer] Initialzed.
+[rospy.internal][INFO] 2018-10-14 10:30:20,045: topic[/knightcar/ground_projection/lineseglist_out] adding connection to [http://knightcar.local:40085/], count 0
+[rospy.core][INFO] 2018-10-14 10:41:59,577: signal_shutdown [signal-2]
+[rosout][INFO] 2018-10-14 10:41:59,578: [/knightcar/duckiebot_visualizer] Shutting down.
+[rospy.impl.masterslave][INFO] 2018-10-14 10:41:59,643: external shutdown request from [/rosnode]: user request
+[rospy.core][INFO] 2018-10-14 10:41:59,644: signal_shutdown [external shutdown request from [/rosnode]: [user request]]
+[rospy.internal][INFO] 2018-10-14 10:41:59,810: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-10-14 10:41:59,811: topic[/knightcar/ground_projection/lineseglist_out] removing connection to http://knightcar.local:40085/
+[rospy.core][INFO] 2018-10-14 10:42:00,227: signal_shutdown [atexit]

@@ -1,0 +1,379 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[NODE_LIST]$rosnode list =====>
+/knightcar/forward_kinematics_node
+/knightcar/inverse_kinematics_node
+/knightcar/joy
+/knightcar/joy_mapper_node
+/knightcar/velocity_to_pose_node
+/knightcar/wheels_driver_node
+/rosout
+[NODE=/knightcar/forward_kinematics_node]$rosnode info /knightcar/forward_kinematics_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/forward_kinematics_node]
+Publications: 
+ * /knightcar/forward_kinematics_node/velocity [duckietown_msgs/Twist2DStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/wheels_driver_node/wheels_cmd_executed [duckietown_msgs/WheelsCmdStamped]
+
+Services: 
+ * /knightcar/forward_kinematics_node/get_loggers
+ * /knightcar/forward_kinematics_node/set_logger_level
+
+
+contacting node http://knightcar.local:33816/ ...
+[NODE=/knightcar/inverse_kinematics_node]$rosnode info /knightcar/inverse_kinematics_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/inverse_kinematics_node]
+Publications: 
+ * /knightcar/wheels_driver_node/wheels_cmd [duckietown_msgs/WheelsCmdStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/joy_mapper_node/car_cmd [duckietown_msgs/Twist2DStamped]
+
+Services: 
+ * /knightcar/inverse_kinematics_node/get_loggers
+ * /knightcar/inverse_kinematics_node/save_calibration
+ * /knightcar/inverse_kinematics_node/set_baseline
+ * /knightcar/inverse_kinematics_node/set_gain
+ * /knightcar/inverse_kinematics_node/set_k
+ * /knightcar/inverse_kinematics_node/set_limit
+ * /knightcar/inverse_kinematics_node/set_logger_level
+ * /knightcar/inverse_kinematics_node/set_radius
+ * /knightcar/inverse_kinematics_node/set_trim
+
+
+contacting node http://knightcar.local:40342/ ...
+[NODE=/knightcar/joy]$rosnode info /knightcar/joy =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/joy]
+Publications: 
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /knightcar/joy [sensor_msgs/Joy]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: None
+
+Services: 
+ * /knightcar/joy/get_loggers
+ * /knightcar/joy/set_logger_level
+
+
+contacting node http://knightcar.local:44383/ ...
+[NODE=/knightcar/joy_mapper_node]$rosnode info /knightcar/joy_mapper_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/joy_mapper_node]
+Publications: 
+ * /knightcar/anti_instagram_node/click [duckietown_msgs/BoolStamped]
+ * /knightcar/joy_mapper_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /knightcar/joy_mapper_node/joystick_override [duckietown_msgs/BoolStamped]
+ * /knightcar/joy_mapper_node/parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /knightcar/joy_mapper_node/start_avoidance [duckietown_msgs/BoolStamped]
+ * /knightcar/wheels_driver_node/emergency_stop [duckietown_msgs/BoolStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/joy [sensor_msgs/Joy]
+
+Services: 
+ * /knightcar/joy_mapper_node/get_loggers
+ * /knightcar/joy_mapper_node/set_logger_level
+
+
+contacting node http://knightcar.local:32837/ ...
+[NODE=/knightcar/velocity_to_pose_node]$rosnode info /knightcar/velocity_to_pose_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/velocity_to_pose_node]
+Publications: 
+ * /knightcar/velocity_to_pose_node/pose [duckietown_msgs/Pose2DStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/forward_kinematics_node/velocity [duckietown_msgs/Twist2DStamped]
+
+Services: 
+ * /knightcar/velocity_to_pose_node/get_loggers
+ * /knightcar/velocity_to_pose_node/set_logger_level
+
+
+contacting node http://knightcar.local:45161/ ...
+[NODE=/knightcar/wheels_driver_node]$rosnode info /knightcar/wheels_driver_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/wheels_driver_node]
+Publications: 
+ * /knightcar/wheels_driver_node/wheels_cmd_executed [duckietown_msgs/WheelsCmdStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/wheels_driver_node/emergency_stop [duckietown_msgs/BoolStamped]
+ * /knightcar/wheels_driver_node/wheels_cmd [duckietown_msgs/WheelsCmdStamped]
+
+Services: 
+ * /knightcar/wheels_driver_node/get_loggers
+ * /knightcar/wheels_driver_node/set_logger_level
+
+
+contacting node http://knightcar.local:43567/ ...
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://knightcar.local:38628/ ...
+[TOPIC_LIST]$rostopic list =====>
+/diagnostics
+/knightcar/anti_instagram_node/click
+/knightcar/forward_kinematics_node/velocity
+/knightcar/joy
+/knightcar/joy_mapper_node/car_cmd
+/knightcar/joy_mapper_node/joystick_override
+/knightcar/joy_mapper_node/parallel_autonomy
+/knightcar/joy_mapper_node/start_avoidance
+/knightcar/velocity_to_pose_node/pose
+/knightcar/wheels_driver_node/emergency_stop
+/knightcar/wheels_driver_node/wheels_cmd
+/knightcar/wheels_driver_node/wheels_cmd_executed
+/rosout
+/rosout_agg
+[TOPIC=/diagnostics]$rostopic info /diagnostics =====>
+Type: diagnostic_msgs/DiagnosticArray
+
+Publishers: 
+ * /knightcar/joy (http://knightcar.local:44383/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/diagnostics]$timeout 1 rostopic hz /diagnostics =====>
+[TOPIC_TYPE=diagnostic_msgs/DiagnosticArray]$rosmsg show diagnostic_msgs/DiagnosticArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+diagnostic_msgs/DiagnosticStatus[] status
+  byte OK=0
+  byte WARN=1
+  byte ERROR=2
+  byte STALE=3
+  byte level
+  string name
+  string message
+  string hardware_id
+  diagnostic_msgs/KeyValue[] values
+    string key
+    string value
+
+[TOPIC=/knightcar/anti_instagram_node/click]$rostopic info /knightcar/anti_instagram_node/click =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:32837/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/anti_instagram_node/click]$timeout 1 rostopic hz /knightcar/anti_instagram_node/click =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/forward_kinematics_node/velocity]$rostopic info /knightcar/forward_kinematics_node/velocity =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /knightcar/forward_kinematics_node (http://knightcar.local:33816/)
+
+Subscribers: 
+ * /knightcar/velocity_to_pose_node (http://knightcar.local:45161/)
+
+
+[TOPIC_HZ=/knightcar/forward_kinematics_node/velocity]$timeout 1 rostopic hz /knightcar/forward_kinematics_node/velocity =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/joy]$rostopic info /knightcar/joy =====>
+Type: sensor_msgs/Joy
+
+Publishers: 
+ * /knightcar/joy (http://knightcar.local:44383/)
+
+Subscribers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:32837/)
+
+
+[TOPIC_HZ=/knightcar/joy]$timeout 1 rostopic hz /knightcar/joy =====>
+subscribed to [/knightcar/joy]
+no new messages
+[TOPIC_TYPE=sensor_msgs/Joy]$rosmsg show sensor_msgs/Joy =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32[] axes
+int32[] buttons
+
+[TOPIC=/knightcar/joy_mapper_node/car_cmd]$rostopic info /knightcar/joy_mapper_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:32837/)
+
+Subscribers: 
+ * /knightcar/inverse_kinematics_node (http://knightcar.local:40342/)
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/car_cmd]$timeout 1 rostopic hz /knightcar/joy_mapper_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/joy_mapper_node/joystick_override]$rostopic info /knightcar/joy_mapper_node/joystick_override =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:32837/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/joystick_override]$timeout 1 rostopic hz /knightcar/joy_mapper_node/joystick_override =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/joy_mapper_node/parallel_autonomy]$rostopic info /knightcar/joy_mapper_node/parallel_autonomy =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:32837/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/parallel_autonomy]$timeout 1 rostopic hz /knightcar/joy_mapper_node/parallel_autonomy =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/joy_mapper_node/start_avoidance]$rostopic info /knightcar/joy_mapper_node/start_avoidance =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:32837/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/start_avoidance]$timeout 1 rostopic hz /knightcar/joy_mapper_node/start_avoidance =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/velocity_to_pose_node/pose]$rostopic info /knightcar/velocity_to_pose_node/pose =====>
+Type: duckietown_msgs/Pose2DStamped
+
+Publishers: 
+ * /knightcar/velocity_to_pose_node (http://knightcar.local:45161/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/velocity_to_pose_node/pose]$timeout 1 rostopic hz /knightcar/velocity_to_pose_node/pose =====>
+[TOPIC_TYPE=duckietown_msgs/Pose2DStamped]$rosmsg show duckietown_msgs/Pose2DStamped =====>
+[TOPIC=/knightcar/wheels_driver_node/emergency_stop]$rostopic info /knightcar/wheels_driver_node/emergency_stop =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:32837/)
+
+Subscribers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:43567/)
+
+
+[TOPIC_HZ=/knightcar/wheels_driver_node/emergency_stop]$timeout 1 rostopic hz /knightcar/wheels_driver_node/emergency_stop =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/wheels_driver_node/wheels_cmd]$rostopic info /knightcar/wheels_driver_node/wheels_cmd =====>
+Type: duckietown_msgs/WheelsCmdStamped
+
+Publishers: 
+ * /knightcar/inverse_kinematics_node (http://knightcar.local:40342/)
+
+Subscribers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:43567/)
+
+
+[TOPIC_HZ=/knightcar/wheels_driver_node/wheels_cmd]$timeout 1 rostopic hz /knightcar/wheels_driver_node/wheels_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/WheelsCmdStamped]$rosmsg show duckietown_msgs/WheelsCmdStamped =====>
+[TOPIC=/knightcar/wheels_driver_node/wheels_cmd_executed]$rostopic info /knightcar/wheels_driver_node/wheels_cmd_executed =====>
+Type: duckietown_msgs/WheelsCmdStamped
+
+Publishers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:43567/)
+
+Subscribers: 
+ * /knightcar/forward_kinematics_node (http://knightcar.local:33816/)
+
+
+[TOPIC_HZ=/knightcar/wheels_driver_node/wheels_cmd_executed]$timeout 1 rostopic hz /knightcar/wheels_driver_node/wheels_cmd_executed =====>
+[TOPIC_TYPE=duckietown_msgs/WheelsCmdStamped]$rosmsg show duckietown_msgs/WheelsCmdStamped =====>
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /knightcar/joy (http://knightcar.local:44383/)
+ * /knightcar/wheels_driver_node (http://knightcar.local:43567/)
+ * /knightcar/velocity_to_pose_node (http://knightcar.local:45161/)
+ * /knightcar/forward_kinematics_node (http://knightcar.local:33816/)
+ * /knightcar/joy_mapper_node (http://knightcar.local:32837/)
+ * /knightcar/inverse_kinematics_node (http://knightcar.local:40342/)
+
+Subscribers: 
+ * /rosout (http://knightcar.local:38628/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://knightcar.local:38628/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+subscribed to [/rosout_agg]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>
