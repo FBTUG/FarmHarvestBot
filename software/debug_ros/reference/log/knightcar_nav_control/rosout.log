@@ -1,0 +1,22 @@
+
+
+1539745672.622036261  Node Startup
+1539745674.340570926 INFO [wheels_driver_node.py:9(__init__) [topics: /knightcar/wheels_driver_node/wheels_cmd, /knightcar/wheels_driver_node/emergency_stop, /rosout, /knightcar/wheels_driver_node/wheels_cmd_executed] [/knightcar/wheels_driver_node] Initializing 
+1539745674.938658952 INFO [velocity_to_pose_node.py:26(__init__) [topics: /knightcar/velocity_to_pose_node/pose, /rosout, /knightcar/forward_kinematics_node/velocity] [/knightcar/velocity_to_pose_node] Initialized.
+1539745675.095612049 INFO [forward_kinematics_node.py:102(setup_parameter) [topics: /rosout] [/knightcar/forward_kinematics_node] ~gain = 2.0 
+1539745675.111943006 INFO [forward_kinematics_node.py:102(setup_parameter) [topics: /rosout] [/knightcar/forward_kinematics_node] ~trim = -0.0799999982119 
+1539745675.130297899 INFO [forward_kinematics_node.py:102(setup_parameter) [topics: /rosout] [/knightcar/forward_kinematics_node] ~baseline = 0.1 
+1539745675.017246961 INFO [nav_cmd_mapper.py:36(setupParam) [topics: /rosout, /cmd_vel, /knightcar/joy_mapper_node/car_cmd] [/nav_cmd_mapper] ~steer_gain = 3.3 
+1539745675.152232885 INFO [forward_kinematics_node.py:102(setup_parameter) [topics: /rosout] [/knightcar/forward_kinematics_node] ~radius = 0.0318 
+1539745675.163109064 INFO [inverse_kinematics_node.py:183(setup_parameter) [topics: /rosout] [/knightcar/inverse_kinematics_node] ~gain = 2.0 
+1539745675.173635959 INFO [forward_kinematics_node.py:102(setup_parameter) [topics: /rosout] [/knightcar/forward_kinematics_node] ~k = 27.0 
+1539745675.177438020 INFO [inverse_kinematics_node.py:183(setup_parameter) [topics: /rosout] [/knightcar/inverse_kinematics_node] ~trim = -0.0799999982119 
+1539745675.196018934 INFO [inverse_kinematics_node.py:183(setup_parameter) [topics: /rosout] [/knightcar/inverse_kinematics_node] ~baseline = 0.1 
+1539745675.200190067 INFO [forward_kinematics_node.py:37(__init__) [topics: /rosout, /knightcar/forward_kinematics_node/velocity, /knightcar/wheels_driver_node/wheels_cmd_executed] [/knightcar/forward_kinematics_node] Initialized.
+1539745675.202210903 INFO [forward_kinematics_node.py:73(printValues) [topics: /rosout, /knightcar/forward_kinematics_node/velocity, /knightcar/wheels_driver_node/wheels_cmd_executed] [/knightcar/forward_kinematics_node] gain: 2.0 trim: -0.0799999982119 baseline: 0.1 radius: 0.0318 k: 27.0
+1539745675.209259033 INFO [inverse_kinematics_node.py:183(setup_parameter) [topics: /rosout] [/knightcar/inverse_kinematics_node] ~radius = 0.0318 
+1539745675.228909969 INFO [inverse_kinematics_node.py:183(setup_parameter) [topics: /rosout] [/knightcar/inverse_kinematics_node] ~k = 27.0 
+1539745675.251779079 INFO [inverse_kinematics_node.py:183(setup_parameter) [topics: /rosout] [/knightcar/inverse_kinematics_node] ~limit = 1.0 
+1539745675.315237045 INFO [inverse_kinematics_node.py:47(__init__) [topics: /knightcar/wheels_driver_node/wheels_cmd, /rosout, /knightcar/joy_mapper_node/car_cmd] [/knightcar/inverse_kinematics_node] Initialized.
+1539745675.316797018 INFO [inverse_kinematics_node.py:148(printValues) [topics: /knightcar/wheels_driver_node/wheels_cmd, /rosout, /knightcar/joy_mapper_node/car_cmd] [/knightcar/inverse_kinematics_node] gain: 2.0 trim: -0.0799999982119 baseline: 0.1 radius: 0.0318 k: 27.0 limit: 1.0
+1539745743.458195924 WARN [tcpros_base.py:351(_tcp_server_callback) [topics: /knightcar/wheels_driver_node/wheels_cmd, /knightcar/wheels_driver_node/emergency_stop, /rosout, /knightcar/wheels_driver_node/wheels_cmd_executed] Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.

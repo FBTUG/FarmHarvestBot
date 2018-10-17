@@ -1,0 +1,22 @@
+[rospy.client][INFO] 2018-10-17 11:07:54,858: init_node, name[/nav_cmd_mapper], pid[3804]
+[xmlrpc][INFO] 2018-10-17 11:07:54,860: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-17 11:07:54,865: Started XML-RPC server [http://knightcar.local:42884/]
+[rospy.impl.masterslave][INFO] 2018-10-17 11:07:54,865: _ready: http://knightcar.local:42884/
+[rospy.registration][INFO] 2018-10-17 11:07:54,869: Registering with master node http://knightcar.local:11311/
+[xmlrpc][INFO] 2018-10-17 11:07:54,875: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-17 11:07:54,883: ROS Slave URI: [http://knightcar.local:42884/]
+[rospy.init][INFO] 2018-10-17 11:07:54,893: registered with master
+[rospy.rosout][INFO] 2018-10-17 11:07:54,901: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-17 11:07:54,932: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-17 11:07:54,943: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-17 11:07:54,960: [/nav_cmd_mapper] Initializing 
+[rosout][INFO] 2018-10-17 11:07:55,003: [/nav_cmd_mapper] ~speed_gain = 1 
+[rosout][INFO] 2018-10-17 11:07:55,016: [/nav_cmd_mapper] ~steer_gain = 3.3 
+[rospy.internal][INFO] 2018-10-17 11:07:55,148: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-17 11:07:55,356: topic[/knightcar/joy_mapper_node/car_cmd] adding connection to [/knightcar/inverse_kinematics_node], count 0
+[rospy.internal][INFO] 2018-10-17 11:09:03,007: topic[/rosout] adding connection to [/rostopic_7316_1539745742584], count 1
+[rospy.internal][INFO] 2018-10-17 11:09:03,549: topic[/rosout] removing connection to /rostopic_7316_1539745742584
+[rospy.internal][INFO] 2018-10-17 11:09:08,065: topic[/rosout] adding connection to [/record_1539745747515425159], count 1
+[rospy.internal][INFO] 2018-10-17 11:09:08,307: topic[/knightcar/joy_mapper_node/car_cmd] adding connection to [/record_1539745747515425159], count 1
+[rospy.internal][INFO] 2018-10-17 11:09:17,561: topic[/rosout] removing connection to /record_1539745747515425159
+[rospy.internal][INFO] 2018-10-17 11:09:17,562: topic[/knightcar/joy_mapper_node/car_cmd] removing connection to /record_1539745747515425159

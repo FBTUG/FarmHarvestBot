@@ -1,0 +1,562 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[PARAM_DUMP]$rosparam dump debug_ros_param.yaml =====>
+[NODE_LIST]$rosnode list =====>
+/knightcar/forward_kinematics_node
+/knightcar/inverse_kinematics_node
+/knightcar/velocity_to_pose_node
+/knightcar/wheels_driver_node
+/nav_cmd_mapper
+/rosout
+[SRV_LIST]$rossrv list =====>
+app_manager/GetAppDetails
+app_manager/GetInstallationState
+app_manager/InstallApp
+app_manager/ListApps
+app_manager/StartApp
+app_manager/StopApp
+app_manager/UninstallApp
+astra_camera/GetSerial
+capabilities/EstablishBond
+capabilities/FreeCapability
+capabilities/GetCapabilitySpec
+capabilities/GetCapabilitySpecs
+capabilities/GetInterfaces
+capabilities/GetNodeletManagerName
+capabilities/GetProviders
+capabilities/GetRemappings
+capabilities/GetRunningCapabilities
+capabilities/GetSemanticInterfaces
+capabilities/StartCapability
+capabilities/StopCapability
+capabilities/UseCapability
+control_msgs/QueryCalibrationState
+control_msgs/QueryTrajectoryState
+control_toolbox/SetPidGains
+controller_manager_msgs/ListControllerTypes
+controller_manager_msgs/ListControllers
+controller_manager_msgs/LoadController
+controller_manager_msgs/ReloadControllerLibraries
+controller_manager_msgs/SwitchController
+controller_manager_msgs/UnloadController
+create_node/SetDigitalOutputs
+create_node/SetTurtlebotMode
+diagnostic_msgs/AddDiagnostics
+diagnostic_msgs/SelfTest
+dynamic_reconfigure/Reconfigure
+ethercat_hardware/SoftProcessorFirmwareRead
+ethercat_hardware/SoftProcessorFirmwareWrite
+ethercat_hardware/SoftProcessorReset
+ethercat_trigger_controllers/SetMultiWaveform
+ethercat_trigger_controllers/SetWaveform
+gateway_msgs/Advertise
+gateway_msgs/AdvertiseAll
+gateway_msgs/ConnectHub
+gateway_msgs/Remote
+gateway_msgs/RemoteAll
+gateway_msgs/RemoteGatewayInfo
+gateway_msgs/SetWatcherPeriod
+gazebo_msgs/ApplyBodyWrench
+gazebo_msgs/ApplyJointEffort
+gazebo_msgs/BodyRequest
+gazebo_msgs/DeleteLight
+gazebo_msgs/DeleteModel
+gazebo_msgs/GetJointProperties
+gazebo_msgs/GetLightProperties
+gazebo_msgs/GetLinkProperties
+gazebo_msgs/GetLinkState
+gazebo_msgs/GetModelProperties
+gazebo_msgs/GetModelState
+gazebo_msgs/GetPhysicsProperties
+gazebo_msgs/GetWorldProperties
+gazebo_msgs/JointRequest
+gazebo_msgs/SetJointProperties
+gazebo_msgs/SetJointTrajectory
+gazebo_msgs/SetLightProperties
+gazebo_msgs/SetLinkProperties
+gazebo_msgs/SetLinkState
+gazebo_msgs/SetModelConfiguration
+gazebo_msgs/SetModelState
+gazebo_msgs/SetPhysicsProperties
+gazebo_msgs/SpawnModel
+laser_assembler/AssembleScans
+laser_assembler/AssembleScans2
+map_msgs/GetMapROI
+map_msgs/GetPointMap
+map_msgs/GetPointMapROI
+map_msgs/ProjectedMapsInfo
+map_msgs/SaveMap
+map_msgs/SetMapProjections
+microstrain_3dmgx2_imu/AddOffset
+moveit_msgs/ApplyPlanningScene
+moveit_msgs/CheckIfRobotStateExistsInWarehouse
+moveit_msgs/DeleteRobotStateFromWarehouse
+moveit_msgs/ExecuteKnownTrajectory
+moveit_msgs/GetCartesianPath
+moveit_msgs/GetMotionPlan
+moveit_msgs/GetPlannerParams
+moveit_msgs/GetPlanningScene
+moveit_msgs/GetPositionFK
+moveit_msgs/GetPositionIK
+moveit_msgs/GetRobotStateFromWarehouse
+moveit_msgs/GetStateValidity
+moveit_msgs/GraspPlanning
+moveit_msgs/ListRobotStatesInWarehouse
+moveit_msgs/LoadMap
+moveit_msgs/QueryPlannerInterfaces
+moveit_msgs/RenameRobotStateInWarehouse
+moveit_msgs/SaveMap
+moveit_msgs/SaveRobotStateToWarehouse
+moveit_msgs/SetPlannerParams
+nav_msgs/GetMap
+nav_msgs/GetPlan
+nav_msgs/SetMap
+navfn/MakeNavPlan
+navfn/SetCostmap
+nodelet/NodeletList
+nodelet/NodeletLoad
+nodelet/NodeletUnload
+object_recognition_msgs/GetObjectInformation
+octomap_msgs/BoundingBoxQuery
+octomap_msgs/GetOctomap
+openni2_camera/GetSerial
+polled_camera/GetPolledImage
+pr2_calibration_launch/FkTest
+pr2_controllers_msgs/QueryCalibrationState
+pr2_controllers_msgs/QueryTrajectoryState
+pr2_gazebo_plugins/SetModelsJointsStates
+pr2_mechanism_controllers/SetProfile
+pr2_mechanism_msgs/ListControllerTypes
+pr2_mechanism_msgs/ListControllers
+pr2_mechanism_msgs/LoadController
+pr2_mechanism_msgs/ReloadControllerLibraries
+pr2_mechanism_msgs/SwitchController
+pr2_mechanism_msgs/UnloadController
+pr2_msgs/SetLaserTrajCmd
+pr2_msgs/SetPeriodicCmd
+pr2_power_board/PowerBoardCommand
+pr2_power_board/PowerBoardCommand2
+realsense_camera/CameraConfiguration
+realsense_camera/ForcePower
+realsense_camera/GetIMUInfo
+realsense_camera/IsPowered
+realsense_camera/SetPower
+robot_pose_ekf/GetStatus
+rocon_app_manager_msgs/GetRappList
+rocon_app_manager_msgs/Init
+rocon_app_manager_msgs/Invite
+rocon_app_manager_msgs/StartRapp
+rocon_app_manager_msgs/StopRapp
+rocon_interaction_msgs/GetInteraction
+rocon_interaction_msgs/GetInteractions
+rocon_interaction_msgs/GetPairings
+rocon_interaction_msgs/RequestInteraction
+rocon_interaction_msgs/SetInteractions
+rocon_interaction_msgs/StartPairing
+rocon_interaction_msgs/StopPairing
+rocon_std_msgs/EmptyString
+roscpp/Empty
+roscpp/GetLoggers
+roscpp/SetLoggerLevel
+roscpp_tutorials/TwoInts
+rospy_tutorials/AddTwoInts
+rospy_tutorials/BadTwoInts
+rosserial_arduino/Test
+rosserial_msgs/RequestMessageInfo
+rosserial_msgs/RequestParam
+rosserial_msgs/RequestServiceInfo
+sensor_msgs/SetCameraInfo
+std_srvs/Empty
+std_srvs/SetBool
+std_srvs/Trigger
+tf/FrameGraph
+tf2_msgs/FrameGraph
+topic_tools/DemuxAdd
+topic_tools/DemuxDelete
+topic_tools/DemuxList
+topic_tools/DemuxSelect
+topic_tools/MuxAdd
+topic_tools/MuxDelete
+topic_tools/MuxList
+topic_tools/MuxSelect
+turtlesim/Kill
+turtlesim/SetPen
+turtlesim/Spawn
+turtlesim/TeleportAbsolute
+turtlesim/TeleportRelative
+wge100_camera/BoardConfig
+zeroconf_msgs/AddListener
+zeroconf_msgs/AddService
+zeroconf_msgs/ListDiscoveredServices
+zeroconf_msgs/ListPublishedServices
+zeroconf_msgs/RemoveListener
+zeroconf_msgs/RemoveService
+[NODE=/knightcar/forward_kinematics_node]$rosnode info /knightcar/forward_kinematics_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/forward_kinematics_node]
+Publications: 
+ * /knightcar/forward_kinematics_node/velocity [duckietown_msgs/Twist2DStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/wheels_driver_node/wheels_cmd_executed [duckietown_msgs/WheelsCmdStamped]
+
+Services: 
+ * /knightcar/forward_kinematics_node/get_loggers
+ * /knightcar/forward_kinematics_node/set_logger_level
+
+
+contacting node http://knightcar.local:45420/ ...
+Pid: 3806
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/forward_kinematics_node/velocity
+    * to: /knightcar/velocity_to_pose_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/wheels_driver_node/wheels_cmd_executed
+    * to: /knightcar/wheels_driver_node (http://knightcar.local:38842/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/inverse_kinematics_node]$rosnode info /knightcar/inverse_kinematics_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/inverse_kinematics_node]
+Publications: 
+ * /knightcar/wheels_driver_node/wheels_cmd [duckietown_msgs/WheelsCmdStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/joy_mapper_node/car_cmd [duckietown_msgs/Twist2DStamped]
+
+Services: 
+ * /knightcar/inverse_kinematics_node/get_loggers
+ * /knightcar/inverse_kinematics_node/save_calibration
+ * /knightcar/inverse_kinematics_node/set_baseline
+ * /knightcar/inverse_kinematics_node/set_gain
+ * /knightcar/inverse_kinematics_node/set_k
+ * /knightcar/inverse_kinematics_node/set_limit
+ * /knightcar/inverse_kinematics_node/set_logger_level
+ * /knightcar/inverse_kinematics_node/set_radius
+ * /knightcar/inverse_kinematics_node/set_trim
+
+
+contacting node http://knightcar.local:46318/ ...
+Pid: 3805
+Connections:
+ * topic: /knightcar/wheels_driver_node/wheels_cmd
+    * to: /knightcar/wheels_driver_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/car_cmd
+    * to: /nav_cmd_mapper (http://knightcar.local:42884/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/velocity_to_pose_node]$rosnode info /knightcar/velocity_to_pose_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/velocity_to_pose_node]
+Publications: 
+ * /knightcar/velocity_to_pose_node/pose [duckietown_msgs/Pose2DStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/forward_kinematics_node/velocity [duckietown_msgs/Twist2DStamped]
+
+Services: 
+ * /knightcar/velocity_to_pose_node/get_loggers
+ * /knightcar/velocity_to_pose_node/set_logger_level
+
+
+contacting node http://knightcar.local:37247/ ...
+Pid: 3807
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/forward_kinematics_node/velocity
+    * to: /knightcar/forward_kinematics_node (http://knightcar.local:45420/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/wheels_driver_node]$rosnode info /knightcar/wheels_driver_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/wheels_driver_node]
+Publications: 
+ * /knightcar/wheels_driver_node/wheels_cmd_executed [duckietown_msgs/WheelsCmdStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/wheels_driver_node/emergency_stop [unknown type]
+ * /knightcar/wheels_driver_node/wheels_cmd [duckietown_msgs/WheelsCmdStamped]
+
+Services: 
+ * /knightcar/wheels_driver_node/get_loggers
+ * /knightcar/wheels_driver_node/set_logger_level
+
+
+contacting node http://knightcar.local:38842/ ...
+Pid: 3808
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/wheels_driver_node/wheels_cmd_executed
+    * to: /knightcar/forward_kinematics_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/wheels_driver_node/wheels_cmd
+    * to: /knightcar/inverse_kinematics_node (http://knightcar.local:46318/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/nav_cmd_mapper]$rosnode info /nav_cmd_mapper =====>
+--------------------------------------------------------------------------------
+Node [/nav_cmd_mapper]
+Publications: 
+ * /knightcar/joy_mapper_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /cmd_vel [unknown type]
+
+Services: 
+ * /nav_cmd_mapper/get_loggers
+ * /nav_cmd_mapper/set_logger_level
+
+
+contacting node http://knightcar.local:42884/ ...
+Pid: 3804
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/car_cmd
+    * to: /knightcar/inverse_kinematics_node
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://knightcar.local:38051/ ...
+Pid: 3782
+Connections:
+ * topic: /rosout
+    * to: /knightcar/wheels_driver_node (http://knightcar.local:38842/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/forward_kinematics_node (http://knightcar.local:45420/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/inverse_kinematics_node (http://knightcar.local:46318/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/velocity_to_pose_node (http://knightcar.local:37247/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /nav_cmd_mapper (http://knightcar.local:42884/)
+    * direction: inbound
+    * transport: TCPROS
+
+[TOPIC_LIST]$rostopic list =====>
+/cmd_vel
+/knightcar/forward_kinematics_node/velocity
+/knightcar/joy_mapper_node/car_cmd
+/knightcar/velocity_to_pose_node/pose
+/knightcar/wheels_driver_node/emergency_stop
+/knightcar/wheels_driver_node/wheels_cmd
+/knightcar/wheels_driver_node/wheels_cmd_executed
+/rosout
+/rosout_agg
+[TOPIC=/cmd_vel]$rostopic info /cmd_vel =====>
+Type: geometry_msgs/Twist
+
+Publishers: None
+
+Subscribers: 
+ * /nav_cmd_mapper (http://knightcar.local:42884/)
+
+
+[TOPIC_HZ=/cmd_vel]$timeout 1 rostopic hz /cmd_vel =====>
+subscribed to [/cmd_vel]
+no new messages
+[TOPIC_TYPE=geometry_msgs/Twist]$rosmsg show geometry_msgs/Twist =====>
+geometry_msgs/Vector3 linear
+  float64 x
+  float64 y
+  float64 z
+geometry_msgs/Vector3 angular
+  float64 x
+  float64 y
+  float64 z
+
+[TOPIC=/knightcar/forward_kinematics_node/velocity]$rostopic info /knightcar/forward_kinematics_node/velocity =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /knightcar/forward_kinematics_node (http://knightcar.local:45420/)
+
+Subscribers: 
+ * /knightcar/velocity_to_pose_node (http://knightcar.local:37247/)
+
+
+[TOPIC_HZ=/knightcar/forward_kinematics_node/velocity]$timeout 1 rostopic hz /knightcar/forward_kinematics_node/velocity =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/joy_mapper_node/car_cmd]$rostopic info /knightcar/joy_mapper_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /nav_cmd_mapper (http://knightcar.local:42884/)
+
+Subscribers: 
+ * /knightcar/inverse_kinematics_node (http://knightcar.local:46318/)
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/car_cmd]$timeout 1 rostopic hz /knightcar/joy_mapper_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/velocity_to_pose_node/pose]$rostopic info /knightcar/velocity_to_pose_node/pose =====>
+Type: duckietown_msgs/Pose2DStamped
+
+Publishers: 
+ * /knightcar/velocity_to_pose_node (http://knightcar.local:37247/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/velocity_to_pose_node/pose]$timeout 1 rostopic hz /knightcar/velocity_to_pose_node/pose =====>
+[TOPIC_TYPE=duckietown_msgs/Pose2DStamped]$rosmsg show duckietown_msgs/Pose2DStamped =====>
+[TOPIC=/knightcar/wheels_driver_node/emergency_stop]$rostopic info /knightcar/wheels_driver_node/emergency_stop =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: None
+
+Subscribers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:38842/)
+
+
+[TOPIC_HZ=/knightcar/wheels_driver_node/emergency_stop]$timeout 1 rostopic hz /knightcar/wheels_driver_node/emergency_stop =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/wheels_driver_node/wheels_cmd]$rostopic info /knightcar/wheels_driver_node/wheels_cmd =====>
+Type: duckietown_msgs/WheelsCmdStamped
+
+Publishers: 
+ * /knightcar/inverse_kinematics_node (http://knightcar.local:46318/)
+
+Subscribers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:38842/)
+
+
+[TOPIC_HZ=/knightcar/wheels_driver_node/wheels_cmd]$timeout 1 rostopic hz /knightcar/wheels_driver_node/wheels_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/WheelsCmdStamped]$rosmsg show duckietown_msgs/WheelsCmdStamped =====>
+[TOPIC=/knightcar/wheels_driver_node/wheels_cmd_executed]$rostopic info /knightcar/wheels_driver_node/wheels_cmd_executed =====>
+Type: duckietown_msgs/WheelsCmdStamped
+
+Publishers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:38842/)
+
+Subscribers: 
+ * /knightcar/forward_kinematics_node (http://knightcar.local:45420/)
+
+
+[TOPIC_HZ=/knightcar/wheels_driver_node/wheels_cmd_executed]$timeout 1 rostopic hz /knightcar/wheels_driver_node/wheels_cmd_executed =====>
+[TOPIC_TYPE=duckietown_msgs/WheelsCmdStamped]$rosmsg show duckietown_msgs/WheelsCmdStamped =====>
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:38842/)
+ * /knightcar/forward_kinematics_node (http://knightcar.local:45420/)
+ * /knightcar/inverse_kinematics_node (http://knightcar.local:46318/)
+ * /knightcar/velocity_to_pose_node (http://knightcar.local:37247/)
+ * /nav_cmd_mapper (http://knightcar.local:42884/)
+
+Subscribers: 
+ * /rosout (http://knightcar.local:38051/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+average rate: 510.598
+	min: 0.000s max: 0.004s std dev: 0.00150s window: 5
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://knightcar.local:38051/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+subscribed to [/rosout_agg]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>
+[0m[ INFO] [1539745747.575312341]: Recording to 2018-10-16-23-09-07.bag.[0m
+[0m[ INFO] [1539745747.584007518]: Subscribing to /knightcar/wheels_driver_node/wheels_cmd[0m
+[0m[ INFO] [1539745747.648835487]: Subscribing to /knightcar/forward_kinematics_node/velocity[0m
+[0m[ INFO] [1539745747.718482116]: Subscribing to /rosout[0m
+[0m[ INFO] [1539745747.784806781]: Subscribing to /rosout_agg[0m
+[0m[ INFO] [1539745747.863011968]: Subscribing to /knightcar/velocity_to_pose_node/pose[0m
+[0m[ INFO] [1539745747.929265477]: Subscribing to /knightcar/joy_mapper_node/car_cmd[0m
+[0m[ INFO] [1539745748.014084359]: Subscribing to /knightcar/wheels_driver_node/wheels_cmd_executed[0m

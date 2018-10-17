@@ -1,0 +1,20 @@
+[rospy.client][INFO] 2018-10-17 11:07:54,740: init_node, name[/knightcar/velocity_to_pose_node], pid[3807]
+[xmlrpc][INFO] 2018-10-17 11:07:54,742: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-17 11:07:54,743: Started XML-RPC server [http://knightcar.local:37247/]
+[rospy.init][INFO] 2018-10-17 11:07:54,744: ROS Slave URI: [http://knightcar.local:37247/]
+[rospy.impl.masterslave][INFO] 2018-10-17 11:07:54,745: _ready: http://knightcar.local:37247/
+[xmlrpc][INFO] 2018-10-17 11:07:54,746: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-10-17 11:07:54,749: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-17 11:07:54,846: registered with master
+[rospy.rosout][INFO] 2018-10-17 11:07:54,847: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-17 11:07:54,867: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-17 11:07:54,880: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-17 11:07:54,936: [/knightcar/velocity_to_pose_node] Initialized.
+[rospy.internal][INFO] 2018-10-17 11:07:55,046: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-17 11:07:55,242: topic[/knightcar/forward_kinematics_node/velocity] adding connection to [http://knightcar.local:45420/], count 0
+[rospy.internal][INFO] 2018-10-17 11:09:03,005: topic[/rosout] adding connection to [/rostopic_7316_1539745742584], count 1
+[rospy.internal][INFO] 2018-10-17 11:09:03,788: topic[/rosout] removing connection to /rostopic_7316_1539745742584
+[rospy.internal][INFO] 2018-10-17 11:09:08,066: topic[/rosout] adding connection to [/record_1539745747515425159], count 1
+[rospy.internal][INFO] 2018-10-17 11:09:08,190: topic[/knightcar/velocity_to_pose_node/pose] adding connection to [/record_1539745747515425159], count 0
+[rospy.internal][INFO] 2018-10-17 11:09:17,799: topic[/knightcar/velocity_to_pose_node/pose] removing connection to /record_1539745747515425159
+[rospy.internal][INFO] 2018-10-17 11:09:17,801: topic[/rosout] removing connection to /record_1539745747515425159

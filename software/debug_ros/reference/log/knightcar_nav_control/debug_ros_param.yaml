@@ -1,0 +1,14 @@
+knightcar:
+  forward_kinematics_node: {baseline: 0.1, gain: 2.0, k: 27.0, radius: 0.0318, trim: -0.07999999821186066}
+  inverse_kinematics_node: {baseline: 0.1, gain: 2.0, k: 27.0, limit: 1.0, radius: 0.0318,
+    trim: -0.07999999821186066}
+nav_cmd_mapper: {speed_gain: 1, steer_gain: 3.3}
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_knightcar_local__39510: 'http://knightcar.local:39510/'}
+rosversion: '1.12.12
+
+  '
+run_id: d476dd2a-d1b9-11e8-8c1d-b827eb3fef1b

@@ -1,0 +1,27 @@
+[rospy.client][INFO] 2018-10-17 11:07:54,645: init_node, name[/knightcar/forward_kinematics_node], pid[3806]
+[xmlrpc][INFO] 2018-10-17 11:07:54,647: XML-RPC server binding to 0.0.0.0:0
+[rospy.init][INFO] 2018-10-17 11:07:54,650: ROS Slave URI: [http://knightcar.local:45420/]
+[xmlrpc][INFO] 2018-10-17 11:07:54,651: Started XML-RPC server [http://knightcar.local:45420/]
+[rospy.impl.masterslave][INFO] 2018-10-17 11:07:54,651: _ready: http://knightcar.local:45420/
+[xmlrpc][INFO] 2018-10-17 11:07:54,653: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-10-17 11:07:54,655: Registering with master node http://knightcar.local:11311/
+[rospy.init][INFO] 2018-10-17 11:07:54,751: registered with master
+[rospy.rosout][INFO] 2018-10-17 11:07:54,752: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-17 11:07:54,762: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-17 11:07:54,773: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-10-17 11:07:55,047: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-17 11:07:55,094: [/knightcar/forward_kinematics_node] ~gain = 2.0 
+[rosout][INFO] 2018-10-17 11:07:55,111: [/knightcar/forward_kinematics_node] ~trim = -0.0799999982119 
+[rosout][INFO] 2018-10-17 11:07:55,129: [/knightcar/forward_kinematics_node] ~baseline = 0.1 
+[rosout][INFO] 2018-10-17 11:07:55,151: [/knightcar/forward_kinematics_node] ~radius = 0.0318 
+[rosout][INFO] 2018-10-17 11:07:55,173: [/knightcar/forward_kinematics_node] ~k = 27.0 
+[rosout][INFO] 2018-10-17 11:07:55,199: [/knightcar/forward_kinematics_node] Initialized.
+[rosout][INFO] 2018-10-17 11:07:55,201: [/knightcar/forward_kinematics_node] gain: 2.0 trim: -0.0799999982119 baseline: 0.1 radius: 0.0318 k: 27.0
+[rospy.internal][INFO] 2018-10-17 11:07:55,230: topic[/knightcar/wheels_driver_node/wheels_cmd_executed] adding connection to [http://knightcar.local:38842/], count 0
+[rospy.internal][INFO] 2018-10-17 11:07:55,256: topic[/knightcar/forward_kinematics_node/velocity] adding connection to [/knightcar/velocity_to_pose_node], count 0
+[rospy.internal][INFO] 2018-10-17 11:09:03,000: topic[/rosout] adding connection to [/rostopic_7316_1539745742584], count 1
+[rospy.internal][INFO] 2018-10-17 11:09:03,772: topic[/rosout] removing connection to /rostopic_7316_1539745742584
+[rospy.internal][INFO] 2018-10-17 11:09:07,947: topic[/knightcar/forward_kinematics_node/velocity] adding connection to [/record_1539745747515425159], count 1
+[rospy.internal][INFO] 2018-10-17 11:09:08,061: topic[/rosout] adding connection to [/record_1539745747515425159], count 1
+[rospy.internal][INFO] 2018-10-17 11:09:17,784: topic[/rosout] removing connection to /record_1539745747515425159
+[rospy.internal][INFO] 2018-10-17 11:09:17,785: topic[/knightcar/forward_kinematics_node/velocity] removing connection to /record_1539745747515425159
