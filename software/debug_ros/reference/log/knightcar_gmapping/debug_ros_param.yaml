@@ -1,0 +1,17 @@
+rf2o_laser_odometry: {base_frame_id: base_footprint, freq: 10.0, laser_scan_topic: scan,
+  odom_frame_id: odom}
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_knightcar_local__45884: 'http://knightcar.local:45884/'}
+rosversion: '1.12.12
+
+  '
+run_id: 8fbf08a2-d1b3-11e8-8c1d-b827eb3fef1b
+slam_gmapping: {angularUpdate: 0.25, astep: 0.05, base_frame: base_footprint, delta: 0.05,
+  iterations: 5, kernelSize: 1, lasamplerange: 0.005, lasamplestep: 0.005, linearUpdate: 0.1,
+  llsamplerange: 0.01, llsamplestep: 0.01, lsigma: 0.075, lskip: 0, lstep: 0.05, map_update_interval: 2.5,
+  maxUrange: 16.0, odom_frame: odom, ogain: 3.0, particles: 30, resampleThreshold: 0.25,
+  sigma: 0.05, srr: 0.1, srt: 0.2, str: 0.1, stt: 0.2, temporalUpdate: 1.0, xmax: 50.0,
+  xmin: -50.0, ymax: 50.0, ymin: -50.0}

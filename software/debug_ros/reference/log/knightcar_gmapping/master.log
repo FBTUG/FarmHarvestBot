@@ -1,0 +1,266 @@
+[rosmaster.main][INFO] 2018-10-17 10:22:59,996: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2018-10-17 10:22:59,997: Starting ROS Master Node
+[xmlrpc][INFO] 2018-10-17 10:23:00,001: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2018-10-17 10:23:00,003: Started XML-RPC server [http://knightcar.local:11311/]
+[rosmaster.master][INFO] 2018-10-17 10:23:00,003: Master initialized: port[11311], uri[http://knightcar.local:11311/]
+[xmlrpc][INFO] 2018-10-17 10:23:00,004: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2018-10-17 10:23:00,082: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,088: +PARAM [/roslaunch/uris/host_knightcar_local__45884] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,603: +PARAM [/slam_gmapping/llsamplestep] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,604: +PARAM [/slam_gmapping/resampleThreshold] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,604: +PARAM [/slam_gmapping/sigma] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,605: +PARAM [/slam_gmapping/maxUrange] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,606: +PARAM [/slam_gmapping/lasamplestep] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,606: +PARAM [/slam_gmapping/base_frame] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,607: +PARAM [/slam_gmapping/angularUpdate] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,607: +PARAM [/rf2o_laser_odometry/freq] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,608: +PARAM [/slam_gmapping/lskip] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,609: +PARAM [/slam_gmapping/llsamplerange] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,609: +PARAM [/slam_gmapping/iterations] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,610: +PARAM [/rf2o_laser_odometry/laser_scan_topic] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,610: +PARAM [/slam_gmapping/ogain] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,611: +PARAM [/slam_gmapping/astep] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,611: +PARAM [/slam_gmapping/lasamplerange] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,612: +PARAM [/rf2o_laser_odometry/base_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,613: +PARAM [/slam_gmapping/temporalUpdate] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,613: +PARAM [/slam_gmapping/linearUpdate] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,614: +PARAM [/slam_gmapping/xmax] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,615: +PARAM [/slam_gmapping/particles] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,615: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,616: +PARAM [/slam_gmapping/xmin] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,616: +PARAM [/slam_gmapping/delta] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,617: +PARAM [/slam_gmapping/kernelSize] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,617: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,618: +PARAM [/slam_gmapping/map_update_interval] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,618: +PARAM [/rf2o_laser_odometry/odom_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,619: +PARAM [/slam_gmapping/lsigma] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,619: +PARAM [/slam_gmapping/ymin] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,620: +PARAM [/slam_gmapping/stt] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,620: +PARAM [/slam_gmapping/ymax] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,621: +PARAM [/slam_gmapping/lstep] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,621: +PARAM [/slam_gmapping/str] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,622: +PARAM [/slam_gmapping/odom_frame] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,622: +PARAM [/slam_gmapping/srt] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,623: +PARAM [/slam_gmapping/srr] by /roslaunch
+[rosmaster.master][INFO] 2018-10-17 10:23:00,833: +SERVICE [/rosout/get_loggers] /rosout http://knightcar.local:45176/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,840: +SERVICE [/rosout/set_logger_level] /rosout http://knightcar.local:45176/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,855: +PUB [/rosout_agg] /rosout http://knightcar.local:45176/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,865: +PUB [/rosout] /base_link2laser_link http://knightcar.local:38985/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,871: +PUB [/rosout] /base_footprint2base_link http://knightcar.local:38890/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,887: +SERVICE [/base_link2laser_link/get_loggers] /base_link2laser_link http://knightcar.local:38985/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,897: +SERVICE [/base_footprint2base_link/get_loggers] /base_footprint2base_link http://knightcar.local:38890/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,911: +SERVICE [/base_link2laser_link/set_logger_level] /base_link2laser_link http://knightcar.local:38985/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,920: +SUB [/rosout] /rosout http://knightcar.local:45176/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,926: +PUB [/rosout] /ydlidar_node http://knightcar.local:37218/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,931: +SERVICE [/base_footprint2base_link/set_logger_level] /base_footprint2base_link http://knightcar.local:38890/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,934: +PUB [/tf] /base_link2laser_link http://knightcar.local:38985/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,938: +SERVICE [/ydlidar_node/get_loggers] /ydlidar_node http://knightcar.local:37218/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,945: +SERVICE [/ydlidar_node/set_logger_level] /ydlidar_node http://knightcar.local:37218/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,950: +PUB [/tf] /base_footprint2base_link http://knightcar.local:38890/
+[rosmaster.master][INFO] 2018-10-17 10:23:00,957: +PUB [/scan] /ydlidar_node http://knightcar.local:37218/
+[rosmaster.master][INFO] 2018-10-17 10:23:01,006: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/']
+[rosmaster.master][INFO] 2018-10-17 10:23:01,016: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:23:01,088: +PUB [/rosout] /slam_gmapping http://knightcar.local:46751/
+[rosmaster.master][INFO] 2018-10-17 10:23:01,092: +SERVICE [/slam_gmapping/get_loggers] /slam_gmapping http://knightcar.local:46751/
+[rosmaster.master][INFO] 2018-10-17 10:23:01,097: +SERVICE [/slam_gmapping/set_logger_level] /slam_gmapping http://knightcar.local:46751/
+[rosmaster.master][INFO] 2018-10-17 10:23:01,111: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/']
+[rosmaster.master][INFO] 2018-10-17 10:23:01,121: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:23:01,156: +SUB [/tf] /slam_gmapping http://knightcar.local:46751/
+[rosmaster.master][INFO] 2018-10-17 10:23:01,198: +SUB [/tf_static] /slam_gmapping http://knightcar.local:46751/
+[rosmaster.master][INFO] 2018-10-17 10:23:01,208: +PUB [/tf] /slam_gmapping http://knightcar.local:46751/
+[rosmaster.master][INFO] 2018-10-17 10:23:01,213: publisherUpdate[/tf] -> http://knightcar.local:46751/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:46751/']
+[rosmaster.master][INFO] 2018-10-17 10:23:01,225: publisherUpdate[/tf] -> http://knightcar.local:46751/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:46751/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:23:01,465: +PUB [/slam_gmapping/entropy] /slam_gmapping http://knightcar.local:46751/
+[rosmaster.master][INFO] 2018-10-17 10:23:01,473: +PUB [/map] /slam_gmapping http://knightcar.local:46751/
+[rosmaster.master][INFO] 2018-10-17 10:23:01,482: +PUB [/map_metadata] /slam_gmapping http://knightcar.local:46751/
+[rosmaster.master][INFO] 2018-10-17 10:23:01,491: +SERVICE [/dynamic_map] /slam_gmapping http://knightcar.local:46751/
+[rosmaster.master][INFO] 2018-10-17 10:23:01,539: +SUB [/scan] /slam_gmapping http://knightcar.local:46751/
+[rosmaster.master][INFO] 2018-10-17 10:23:02,745: +PUB [/rosout] /rf2o_laser_odometry http://knightcar.local:43171/
+[rosmaster.master][INFO] 2018-10-17 10:23:02,753: +SERVICE [/rf2o_laser_odometry/get_loggers] /rf2o_laser_odometry http://knightcar.local:43171/
+[rosmaster.master][INFO] 2018-10-17 10:23:02,760: +SERVICE [/rf2o_laser_odometry/set_logger_level] /rf2o_laser_odometry http://knightcar.local:43171/
+[rosmaster.master][INFO] 2018-10-17 10:23:02,806: +SUB [/tf] /rf2o_laser_odometry http://knightcar.local:43171/
+[rosmaster.master][INFO] 2018-10-17 10:23:02,825: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:23:02,834: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:23:02,857: +SUB [/tf_static] /rf2o_laser_odometry http://knightcar.local:43171/
+[rosmaster.master][INFO] 2018-10-17 10:23:02,866: +PUB [/tf] /rf2o_laser_odometry http://knightcar.local:43171/
+[rosmaster.master][INFO] 2018-10-17 10:23:02,936: +PUB [/rf2o_laser_odometry/odom] /rf2o_laser_odometry http://knightcar.local:43171/
+[rosmaster.master][INFO] 2018-10-17 10:23:02,937: publisherUpdate[/tf] -> http://knightcar.local:46751/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:23:02,940: publisherUpdate[/tf] -> http://knightcar.local:43171/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:23:02,949: publisherUpdate[/tf] -> http://knightcar.local:46751/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:23:02,985: +SUB [/scan] /rf2o_laser_odometry http://knightcar.local:43171/
+[rosmaster.master][INFO] 2018-10-17 10:23:02,992: publisherUpdate[/tf] -> http://knightcar.local:43171/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.05, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:28,440: +PUB [/rosout] /rostopic_6780_1539743128177 http://osboxes:43725/
+[rosmaster.master][INFO] 2018-10-17 10:25:28,448: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:43725/']
+[rosmaster.master][INFO] 2018-10-17 10:25:28,452: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:43725/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:28,473: +SERVICE [/rostopic_6780_1539743128177/get_loggers] /rostopic_6780_1539743128177 http://osboxes:43725/
+[rosmaster.master][INFO] 2018-10-17 10:25:28,489: +SERVICE [/rostopic_6780_1539743128177/set_logger_level] /rostopic_6780_1539743128177 http://osboxes:43725/
+[rosmaster.master][INFO] 2018-10-17 10:25:28,603: +SUB [/map] /rostopic_6780_1539743128177 http://osboxes:43725/
+[rosmaster.master][INFO] 2018-10-17 10:25:29,097: -SUB [/map] /rostopic_6780_1539743128177 http://osboxes:43725/
+[rosmaster.master][INFO] 2018-10-17 10:25:29,098: -PUB [/rosout] /rostopic_6780_1539743128177 http://osboxes:43725/
+[rosmaster.master][INFO] 2018-10-17 10:25:29,100: -SERVICE [/rostopic_6780_1539743128177/set_logger_level] /rostopic_6780_1539743128177 rosrpc://osboxes:46103
+[rosmaster.master][INFO] 2018-10-17 10:25:29,101: -SERVICE [/rostopic_6780_1539743128177/get_loggers] /rostopic_6780_1539743128177 rosrpc://osboxes:46103
+[rosmaster.master][INFO] 2018-10-17 10:25:29,114: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:25:29,120: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:31,668: +PUB [/rosout] /rostopic_6798_1539743131370 http://osboxes:39035/
+[rosmaster.master][INFO] 2018-10-17 10:25:31,678: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:39035/']
+[rosmaster.master][INFO] 2018-10-17 10:25:31,685: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:39035/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:31,704: +SERVICE [/rostopic_6798_1539743131370/get_loggers] /rostopic_6798_1539743131370 http://osboxes:39035/
+[rosmaster.master][INFO] 2018-10-17 10:25:31,719: +SERVICE [/rostopic_6798_1539743131370/set_logger_level] /rostopic_6798_1539743131370 http://osboxes:39035/
+[rosmaster.master][INFO] 2018-10-17 10:25:31,769: +SUB [/map_metadata] /rostopic_6798_1539743131370 http://osboxes:39035/
+[rosmaster.master][INFO] 2018-10-17 10:25:32,150: -SUB [/map_metadata] /rostopic_6798_1539743131370 http://osboxes:39035/
+[rosmaster.master][INFO] 2018-10-17 10:25:32,151: -PUB [/rosout] /rostopic_6798_1539743131370 http://osboxes:39035/
+[rosmaster.master][INFO] 2018-10-17 10:25:32,151: -SERVICE [/rostopic_6798_1539743131370/set_logger_level] /rostopic_6798_1539743131370 rosrpc://osboxes:43777
+[rosmaster.master][INFO] 2018-10-17 10:25:32,152: -SERVICE [/rostopic_6798_1539743131370/get_loggers] /rostopic_6798_1539743131370 rosrpc://osboxes:43777
+[rosmaster.master][INFO] 2018-10-17 10:25:32,161: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:25:32,164: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:35,073: +PUB [/rosout] /rostopic_6816_1539743134763 http://osboxes:35649/
+[rosmaster.master][INFO] 2018-10-17 10:25:35,096: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:35649/']
+[rosmaster.master][INFO] 2018-10-17 10:25:35,100: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:35649/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:35,109: +SERVICE [/rostopic_6816_1539743134763/get_loggers] /rostopic_6816_1539743134763 http://osboxes:35649/
+[rosmaster.master][INFO] 2018-10-17 10:25:35,121: +SERVICE [/rostopic_6816_1539743134763/set_logger_level] /rostopic_6816_1539743134763 http://osboxes:35649/
+[rosmaster.master][INFO] 2018-10-17 10:25:35,170: +SUB [/rf2o_laser_odometry/odom] /rostopic_6816_1539743134763 http://osboxes:35649/
+[rosmaster.master][INFO] 2018-10-17 10:25:35,412: -SUB [/rf2o_laser_odometry/odom] /rostopic_6816_1539743134763 http://osboxes:35649/
+[rosmaster.master][INFO] 2018-10-17 10:25:35,414: -PUB [/rosout] /rostopic_6816_1539743134763 http://osboxes:35649/
+[rosmaster.master][INFO] 2018-10-17 10:25:35,414: -SERVICE [/rostopic_6816_1539743134763/set_logger_level] /rostopic_6816_1539743134763 rosrpc://osboxes:42609
+[rosmaster.master][INFO] 2018-10-17 10:25:35,415: -SERVICE [/rostopic_6816_1539743134763/get_loggers] /rostopic_6816_1539743134763 rosrpc://osboxes:42609
+[rosmaster.master][INFO] 2018-10-17 10:25:35,435: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:25:35,438: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:38,002: +PUB [/rosout] /rostopic_6834_1539743137726 http://osboxes:42907/
+[rosmaster.master][INFO] 2018-10-17 10:25:38,008: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:42907/']
+[rosmaster.master][INFO] 2018-10-17 10:25:38,013: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:42907/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:38,033: +SERVICE [/rostopic_6834_1539743137726/get_loggers] /rostopic_6834_1539743137726 http://osboxes:42907/
+[rosmaster.master][INFO] 2018-10-17 10:25:38,046: +SERVICE [/rostopic_6834_1539743137726/set_logger_level] /rostopic_6834_1539743137726 http://osboxes:42907/
+[rosmaster.master][INFO] 2018-10-17 10:25:38,078: +SUB [/rosout] /rostopic_6834_1539743137726 http://osboxes:42907/
+[rosmaster.master][INFO] 2018-10-17 10:25:38,543: -SUB [/rosout] /rostopic_6834_1539743137726 http://osboxes:42907/
+[rosmaster.master][INFO] 2018-10-17 10:25:38,544: -PUB [/rosout] /rostopic_6834_1539743137726 http://osboxes:42907/
+[rosmaster.master][INFO] 2018-10-17 10:25:38,546: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:25:38,550: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:38,551: -SERVICE [/rostopic_6834_1539743137726/set_logger_level] /rostopic_6834_1539743137726 rosrpc://osboxes:46233
+[rosmaster.master][INFO] 2018-10-17 10:25:38,554: -SERVICE [/rostopic_6834_1539743137726/get_loggers] /rostopic_6834_1539743137726 rosrpc://osboxes:46233
+[rosmaster.master][INFO] 2018-10-17 10:25:40,879: +PUB [/rosout] /rostopic_6864_1539743140621 http://osboxes:46603/
+[rosmaster.master][INFO] 2018-10-17 10:25:40,884: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:46603/']
+[rosmaster.master][INFO] 2018-10-17 10:25:40,890: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:46603/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:40,910: +SERVICE [/rostopic_6864_1539743140621/get_loggers] /rostopic_6864_1539743140621 http://osboxes:46603/
+[rosmaster.master][INFO] 2018-10-17 10:25:40,923: +SERVICE [/rostopic_6864_1539743140621/set_logger_level] /rostopic_6864_1539743140621 http://osboxes:46603/
+[rosmaster.master][INFO] 2018-10-17 10:25:40,985: +SUB [/rosout_agg] /rostopic_6864_1539743140621 http://osboxes:46603/
+[rosmaster.master][INFO] 2018-10-17 10:25:41,495: -SUB [/rosout_agg] /rostopic_6864_1539743140621 http://osboxes:46603/
+[rosmaster.master][INFO] 2018-10-17 10:25:41,496: -PUB [/rosout] /rostopic_6864_1539743140621 http://osboxes:46603/
+[rosmaster.master][INFO] 2018-10-17 10:25:41,497: -SERVICE [/rostopic_6864_1539743140621/get_loggers] /rostopic_6864_1539743140621 rosrpc://osboxes:38049
+[rosmaster.master][INFO] 2018-10-17 10:25:41,497: -SERVICE [/rostopic_6864_1539743140621/set_logger_level] /rostopic_6864_1539743140621 rosrpc://osboxes:38049
+[rosmaster.master][INFO] 2018-10-17 10:25:41,521: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:25:41,524: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:43,847: +PUB [/rosout] /rostopic_6882_1539743143562 http://osboxes:43559/
+[rosmaster.master][INFO] 2018-10-17 10:25:43,865: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:43559/']
+[rosmaster.master][INFO] 2018-10-17 10:25:43,869: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:43559/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:43,874: +SERVICE [/rostopic_6882_1539743143562/get_loggers] /rostopic_6882_1539743143562 http://osboxes:43559/
+[rosmaster.master][INFO] 2018-10-17 10:25:43,886: +SERVICE [/rostopic_6882_1539743143562/set_logger_level] /rostopic_6882_1539743143562 http://osboxes:43559/
+[rosmaster.master][INFO] 2018-10-17 10:25:43,935: +SUB [/scan] /rostopic_6882_1539743143562 http://osboxes:43559/
+[rosmaster.master][INFO] 2018-10-17 10:25:44,443: -SUB [/scan] /rostopic_6882_1539743143562 http://osboxes:43559/
+[rosmaster.master][INFO] 2018-10-17 10:25:44,444: -PUB [/rosout] /rostopic_6882_1539743143562 http://osboxes:43559/
+[rosmaster.master][INFO] 2018-10-17 10:25:44,446: -SERVICE [/rostopic_6882_1539743143562/set_logger_level] /rostopic_6882_1539743143562 rosrpc://osboxes:41121
+[rosmaster.master][INFO] 2018-10-17 10:25:44,446: -SERVICE [/rostopic_6882_1539743143562/get_loggers] /rostopic_6882_1539743143562 rosrpc://osboxes:41121
+[rosmaster.master][INFO] 2018-10-17 10:25:44,472: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:25:44,475: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:46,606: +PUB [/rosout] /rostopic_6900_1539743146342 http://osboxes:37541/
+[rosmaster.master][INFO] 2018-10-17 10:25:46,636: +SERVICE [/rostopic_6900_1539743146342/get_loggers] /rostopic_6900_1539743146342 http://osboxes:37541/
+[rosmaster.master][INFO] 2018-10-17 10:25:46,636: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:37541/']
+[rosmaster.master][INFO] 2018-10-17 10:25:46,643: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:37541/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:46,658: +SERVICE [/rostopic_6900_1539743146342/set_logger_level] /rostopic_6900_1539743146342 http://osboxes:37541/
+[rosmaster.master][INFO] 2018-10-17 10:25:46,703: +SUB [/slam_gmapping/entropy] /rostopic_6900_1539743146342 http://osboxes:37541/
+[rosmaster.master][INFO] 2018-10-17 10:25:47,216: -SUB [/slam_gmapping/entropy] /rostopic_6900_1539743146342 http://osboxes:37541/
+[rosmaster.master][INFO] 2018-10-17 10:25:47,217: -PUB [/rosout] /rostopic_6900_1539743146342 http://osboxes:37541/
+[rosmaster.master][INFO] 2018-10-17 10:25:47,218: -SERVICE [/rostopic_6900_1539743146342/set_logger_level] /rostopic_6900_1539743146342 rosrpc://osboxes:33245
+[rosmaster.master][INFO] 2018-10-17 10:25:47,219: -SERVICE [/rostopic_6900_1539743146342/get_loggers] /rostopic_6900_1539743146342 rosrpc://osboxes:33245
+[rosmaster.master][INFO] 2018-10-17 10:25:47,245: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:25:47,248: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:49,543: +PUB [/rosout] /rostopic_6918_1539743149255 http://osboxes:40693/
+[rosmaster.master][INFO] 2018-10-17 10:25:49,554: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:40693/']
+[rosmaster.master][INFO] 2018-10-17 10:25:49,558: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:40693/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:49,580: +SERVICE [/rostopic_6918_1539743149255/get_loggers] /rostopic_6918_1539743149255 http://osboxes:40693/
+[rosmaster.master][INFO] 2018-10-17 10:25:49,598: +SERVICE [/rostopic_6918_1539743149255/set_logger_level] /rostopic_6918_1539743149255 http://osboxes:40693/
+[rosmaster.master][INFO] 2018-10-17 10:25:49,646: +SUB [/tf] /rostopic_6918_1539743149255 http://osboxes:40693/
+[rosmaster.master][INFO] 2018-10-17 10:25:50,120: -SUB [/tf] /rostopic_6918_1539743149255 http://osboxes:40693/
+[rosmaster.master][INFO] 2018-10-17 10:25:50,121: -PUB [/rosout] /rostopic_6918_1539743149255 http://osboxes:40693/
+[rosmaster.master][INFO] 2018-10-17 10:25:50,122: -SERVICE [/rostopic_6918_1539743149255/get_loggers] /rostopic_6918_1539743149255 rosrpc://osboxes:44833
+[rosmaster.master][INFO] 2018-10-17 10:25:50,122: -SERVICE [/rostopic_6918_1539743149255/set_logger_level] /rostopic_6918_1539743149255 rosrpc://osboxes:44833
+[rosmaster.master][INFO] 2018-10-17 10:25:50,162: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:25:50,165: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:52,099: +PUB [/rosout] /rostopic_6942_1539743151790 http://osboxes:42193/
+[rosmaster.master][INFO] 2018-10-17 10:25:52,117: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:42193/']
+[rosmaster.master][INFO] 2018-10-17 10:25:52,128: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:42193/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:52,135: +SERVICE [/rostopic_6942_1539743151790/get_loggers] /rostopic_6942_1539743151790 http://osboxes:42193/
+[rosmaster.master][INFO] 2018-10-17 10:25:52,150: +SERVICE [/rostopic_6942_1539743151790/set_logger_level] /rostopic_6942_1539743151790 http://osboxes:42193/
+[rosmaster.master][INFO] 2018-10-17 10:25:52,199: +SUB [/tf_static] /rostopic_6942_1539743151790 http://osboxes:42193/
+[rosmaster.master][INFO] 2018-10-17 10:25:52,523: -SUB [/tf_static] /rostopic_6942_1539743151790 http://osboxes:42193/
+[rosmaster.master][INFO] 2018-10-17 10:25:52,523: -PUB [/rosout] /rostopic_6942_1539743151790 http://osboxes:42193/
+[rosmaster.master][INFO] 2018-10-17 10:25:52,524: -SERVICE [/rostopic_6942_1539743151790/set_logger_level] /rostopic_6942_1539743151790 rosrpc://osboxes:34047
+[rosmaster.master][INFO] 2018-10-17 10:25:52,525: -SERVICE [/rostopic_6942_1539743151790/get_loggers] /rostopic_6942_1539743151790 rosrpc://osboxes:34047
+[rosmaster.master][INFO] 2018-10-17 10:25:52,530: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:25:52,534: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:53,855: +PUB [/rosout] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:25:53,867: +SERVICE [/record_1539743153736771647/get_loggers] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:25:53,874: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:32985/']
+[rosmaster.master][INFO] 2018-10-17 10:25:53,878: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:32985/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:25:53,883: +SERVICE [/record_1539743153736771647/set_logger_level] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:25:53,978: +SUB [/map_metadata] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:25:54,060: +SUB [/rosout] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:25:54,141: +SUB [/tf] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:25:54,238: +SUB [/rosout_agg] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:25:54,344: +SUB [/map] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:25:54,432: +SUB [/rf2o_laser_odometry/odom] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:25:54,575: +SUB [/slam_gmapping/entropy] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:25:54,831: +SUB [/scan] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:26:03,489: -PUB [/rosout] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:26:03,503: -SUB [/map_metadata] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:26:03,514: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:26:03,519: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:26:03,520: publisherUpdate[/rosout] -> http://osboxes:32985/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:26:03,525: publisherUpdate[/rosout] -> http://osboxes:32985/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.01, exception=[Errno 111] Connection refused
+[rosmaster.master][INFO] 2018-10-17 10:26:03,525: -SUB [/rosout] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:26:03,544: -SUB [/tf] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.threadpool][ERROR] 2018-10-17 10:26:03,554: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1053, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 897, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 859, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 836, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosmaster.master][INFO] 2018-10-17 10:26:03,560: -SUB [/rosout_agg] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:26:03,576: -SUB [/map] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:26:03,593: -SUB [/rf2o_laser_odometry/odom] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:26:03,611: -SUB [/slam_gmapping/entropy] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:26:03,627: -SUB [/scan] /record_1539743153736771647 http://osboxes:32985/
+[rosmaster.master][INFO] 2018-10-17 10:26:03,638: -SERVICE [/record_1539743153736771647/get_loggers] /record_1539743153736771647 rosrpc://osboxes:54409
+[rosmaster.master][INFO] 2018-10-17 10:26:03,652: -SERVICE [/record_1539743153736771647/set_logger_level] /record_1539743153736771647 rosrpc://osboxes:54409
+[rosmaster.master][INFO] 2018-10-17 10:26:38,827: +PUB [/rosout] /rqt_gui_py_node_6978 http://osboxes:45079/
+[rosmaster.master][INFO] 2018-10-17 10:26:38,851: +SERVICE [/rqt_gui_py_node_6978/get_loggers] /rqt_gui_py_node_6978 http://osboxes:45079/
+[rosmaster.master][INFO] 2018-10-17 10:26:38,866: +SERVICE [/rqt_gui_py_node_6978/set_logger_level] /rqt_gui_py_node_6978 http://osboxes:45079/
+[rosmaster.master][INFO] 2018-10-17 10:26:38,871: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:45079/']
+[rosmaster.master][INFO] 2018-10-17 10:26:38,876: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/', 'http://osboxes:45079/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-17 10:26:39,059: +SUB [/statistics] /rqt_gui_py_node_6978 http://osboxes:45079/
+[rosmaster.master][INFO] 2018-10-17 10:26:58,184: -SUB [/statistics] /rqt_gui_py_node_6978 http://osboxes:45079/
+[rosmaster.master][INFO] 2018-10-17 10:26:58,184: -PUB [/rosout] /rqt_gui_py_node_6978 http://osboxes:45079/
+[rosmaster.master][INFO] 2018-10-17 10:26:58,185: -SERVICE [/rqt_gui_py_node_6978/get_loggers] /rqt_gui_py_node_6978 rosrpc://osboxes:40679
+[rosmaster.master][INFO] 2018-10-17 10:26:58,186: -SERVICE [/rqt_gui_py_node_6978/set_logger_level] /rqt_gui_py_node_6978 rosrpc://osboxes:40679
+[rosmaster.master][INFO] 2018-10-17 10:26:58,234: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']
+[rosmaster.master][INFO] 2018-10-17 10:26:58,238: publisherUpdate[/rosout] -> http://knightcar.local:45176/ ['http://knightcar.local:38985/', 'http://knightcar.local:38890/', 'http://knightcar.local:37218/', 'http://knightcar.local:46751/', 'http://knightcar.local:43171/']: sec=0.00, result=[1, '', 0]
