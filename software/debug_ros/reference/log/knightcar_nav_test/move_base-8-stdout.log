@@ -1,0 +1,35 @@
+[0m[ INFO] [1539823365.690012244]: Using plugin "static"[0m
+[0m[ INFO] [1539823365.891519350]: Requesting the map...[0m
+[0m[ INFO] [1539823366.172419913]: Resizing costmap to 1984 X 1984 at 0.050000 m/pix[0m
+[0m[ INFO] [1539823366.397641581]: Received a 1984 X 1984 map at 0.050000 m/pix[0m
+[0m[ INFO] [1539823366.397815484]: Subscribing to updates[0m
+[0m[ INFO] [1539823366.516248830]: Using plugin "sensor"[0m
+[0m[ INFO] [1539823366.563176374]:     Subscribed to Topics: laser_scan_sensor[0m
+[0m[ INFO] [1539823366.926520401]: Using plugin "inflation"[0m
+[33m[ WARN] [1539823367.698418811]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.2058 seconds[0m
+[0m[ INFO] [1539823367.785374074]: Using plugin "sensor"[0m
+[0m[ INFO] [1539823367.804486277]:     Subscribed to Topics: laser_scan_sensor[0m
+[0m[ INFO] [1539823367.984644937]: Using plugin "inflation"[0m
+[0m[ INFO] [1539823368.390407037]: Created local_planner dwa_local_planner/DWAPlannerROS[0m
+[0m[ INFO] [1539823368.414635884]: Sim period is set to 0.10[0m
+[0m[ INFO] [1539823369.132070569]: Recovery behavior will clear layer obstacles[0m
+[0m[ INFO] [1539823369.156743945]: Recovery behavior will clear layer obstacles[0m
+[0m[ INFO] [1539823369.510883467]: odom received![0m
+[33m[ WARN] [1539823384.511745652]: MessageFilter [target=odom laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539823384.522620461]: MessageFilter [target=map laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539823403.510937989]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.2182 seconds[0m
+[33m[ WARN] [1539823403.699499608]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.2069 seconds[0m
+[33m[ WARN] [1539823403.919812925]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.2272 seconds[0m
+[33m[ WARN] [1539823404.121464314]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.2288 seconds[0m
+[33m[ WARN] [1539823404.349446220]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.2568 seconds[0m
+[33m[ WARN] [1539823404.554412063]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.2618 seconds[0m
+[33m[ WARN] [1539823404.826141797]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.3335 seconds[0m
+[33m[ WARN] [1539823405.097050975]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.4044 seconds[0m
+[33m[ WARN] [1539823405.469841782]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.3728 seconds[0m
+[33m[ WARN] [1539823405.784670476]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.4877 seconds[0m
+[33m[ WARN] [1539823406.050475511]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.2658 seconds[0m
+[33m[ WARN] [1539823444.512649176]: MessageFilter [target=odom laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539823444.526436367]: MessageFilter [target=map laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539823504.520030188]: MessageFilter [target=odom laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539823504.535444737]: MessageFilter [target=map laser ]: Dropped 100.00% of messages so far. Please turn the [ros.costmap_2d.message_notifier] rosconsole logger to DEBUG for more information.[0m
+[33m[ WARN] [1539823535.461918174]: Map update lo

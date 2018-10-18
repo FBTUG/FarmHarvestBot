@@ -1,0 +1,43 @@
+[rospy.client][INFO] 2018-10-18 08:43:26,104: init_node, name[/nav_cmd_mapper], pid[3822]
+[xmlrpc][INFO] 2018-10-18 08:43:26,114: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-18 08:43:26,119: Started XML-RPC server [http://knightcar.local:43884/]
+[rospy.impl.masterslave][INFO] 2018-10-18 08:43:26,124: _ready: http://knightcar.local:43884/
+[rospy.init][INFO] 2018-10-18 08:43:26,121: ROS Slave URI: [http://knightcar.local:43884/]
+[rospy.registration][INFO] 2018-10-18 08:43:26,131: Registering with master node http://knightcar.local:11311/
+[xmlrpc][INFO] 2018-10-18 08:43:26,132: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-18 08:43:26,231: registered with master
+[rospy.rosout][INFO] 2018-10-18 08:43:26,232: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-18 08:43:26,250: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-18 08:43:26,282: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-18 08:43:26,326: [/nav_cmd_mapper] Initializing 
+[rospy.internal][INFO] 2018-10-18 08:43:26,418: topic[/cmd_vel] adding connection to [http://knightcar.local:33015/], count 0
+[rosout][INFO] 2018-10-18 08:43:26,415: [/nav_cmd_mapper] ~speed_gain = 1 
+[rosout][INFO] 2018-10-18 08:43:26,446: [/nav_cmd_mapper] ~steer_gain = 3.3 
+[rospy.internal][INFO] 2018-10-18 08:43:26,518: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-10-18 08:43:27,205: topic[/knightcar/joy_mapper_node/car_cmd] adding connection to [/knightcar/inverse_kinematics_node], count 0
+[rospy.internal][INFO] 2018-10-18 08:44:45,331: topic[/knightcar/joy_mapper_node/car_cmd] adding connection to [/rostopic_12736_1539823484899], count 1
+[rosout][WARNING] 2018-10-18 08:44:45,765: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-18 08:44:45,777: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-18 08:44:45,979: topic[/knightcar/joy_mapper_node/car_cmd] removing connection to /rostopic_12736_1539823484899
+[rospy.internal][INFO] 2018-10-18 08:46:53,802: topic[/rosout] adding connection to [/rostopic_13561_1539823613383], count 1
+[rosout][WARNING] 2018-10-18 08:46:54,264: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-18 08:46:54,268: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-18 08:46:54,603: topic[/rosout] removing connection to /rostopic_13561_1539823613383
+[rospy.internal][INFO] 2018-10-18 08:47:11,678: topic[/knightcar/joy_mapper_node/car_cmd] adding connection to [/record_1539823628159564970], count 1
+[rospy.internal][INFO] 2018-10-18 08:47:12,360: topic[/rosout] adding connection to [/record_1539823628159564970], count 1
+[rospy.internal][INFO] 2018-10-18 08:47:18,128: topic[/rosout] removing connection to /record_1539823628159564970
+[rospy.internal][INFO] 2018-10-18 08:47:18,130: topic[/knightcar/joy_mapper_node/car_cmd] removing connection to /record_1539823628159564970
