@@ -1,0 +1,3578 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[PARAM_DUMP]$rosparam dump debug_ros_param.yaml =====>
+[NODE_LIST]$rosnode list =====>
+/amcl
+/base_footprint2base_link
+/base_link2laser_link
+/knightcar/forward_kinematics_node
+/knightcar/inverse_kinematics_node
+/knightcar/joy
+/knightcar/joy_mapper_node
+/knightcar/velocity_to_pose_node
+/knightcar/wheels_driver_node
+/map_server
+/move_base
+/rf2o_laser_odometry
+/rosout
+/rqt_gui_py_node_15789
+/rviz_1539833473436817672
+/ydlidar_node
+[SRV_LIST]$rossrv list =====>
+app_manager/GetAppDetails
+app_manager/GetInstallationState
+app_manager/InstallApp
+app_manager/ListApps
+app_manager/StartApp
+app_manager/StopApp
+app_manager/UninstallApp
+astra_camera/GetSerial
+capabilities/EstablishBond
+capabilities/FreeCapability
+capabilities/GetCapabilitySpec
+capabilities/GetCapabilitySpecs
+capabilities/GetInterfaces
+capabilities/GetNodeletManagerName
+capabilities/GetProviders
+capabilities/GetRemappings
+capabilities/GetRunningCapabilities
+capabilities/GetSemanticInterfaces
+capabilities/StartCapability
+capabilities/StopCapability
+capabilities/UseCapability
+control_msgs/QueryCalibrationState
+control_msgs/QueryTrajectoryState
+control_toolbox/SetPidGains
+controller_manager_msgs/ListControllerTypes
+controller_manager_msgs/ListControllers
+controller_manager_msgs/LoadController
+controller_manager_msgs/ReloadControllerLibraries
+controller_manager_msgs/SwitchController
+controller_manager_msgs/UnloadController
+create_node/SetDigitalOutputs
+create_node/SetTurtlebotMode
+diagnostic_msgs/AddDiagnostics
+diagnostic_msgs/SelfTest
+dynamic_reconfigure/Reconfigure
+ethercat_hardware/SoftProcessorFirmwareRead
+ethercat_hardware/SoftProcessorFirmwareWrite
+ethercat_hardware/SoftProcessorReset
+ethercat_trigger_controllers/SetMultiWaveform
+ethercat_trigger_controllers/SetWaveform
+gateway_msgs/Advertise
+gateway_msgs/AdvertiseAll
+gateway_msgs/ConnectHub
+gateway_msgs/Remote
+gateway_msgs/RemoteAll
+gateway_msgs/RemoteGatewayInfo
+gateway_msgs/SetWatcherPeriod
+gazebo_msgs/ApplyBodyWrench
+gazebo_msgs/ApplyJointEffort
+gazebo_msgs/BodyRequest
+gazebo_msgs/DeleteLight
+gazebo_msgs/DeleteModel
+gazebo_msgs/GetJointProperties
+gazebo_msgs/GetLightProperties
+gazebo_msgs/GetLinkProperties
+gazebo_msgs/GetLinkState
+gazebo_msgs/GetModelProperties
+gazebo_msgs/GetModelState
+gazebo_msgs/GetPhysicsProperties
+gazebo_msgs/GetWorldProperties
+gazebo_msgs/JointRequest
+gazebo_msgs/SetJointProperties
+gazebo_msgs/SetJointTrajectory
+gazebo_msgs/SetLightProperties
+gazebo_msgs/SetLinkProperties
+gazebo_msgs/SetLinkState
+gazebo_msgs/SetModelConfiguration
+gazebo_msgs/SetModelState
+gazebo_msgs/SetPhysicsProperties
+gazebo_msgs/SpawnModel
+laser_assembler/AssembleScans
+laser_assembler/AssembleScans2
+map_msgs/GetMapROI
+map_msgs/GetPointMap
+map_msgs/GetPointMapROI
+map_msgs/ProjectedMapsInfo
+map_msgs/SaveMap
+map_msgs/SetMapProjections
+microstrain_3dmgx2_imu/AddOffset
+moveit_msgs/ApplyPlanningScene
+moveit_msgs/CheckIfRobotStateExistsInWarehouse
+moveit_msgs/DeleteRobotStateFromWarehouse
+moveit_msgs/ExecuteKnownTrajectory
+moveit_msgs/GetCartesianPath
+moveit_msgs/GetMotionPlan
+moveit_msgs/GetPlannerParams
+moveit_msgs/GetPlanningScene
+moveit_msgs/GetPositionFK
+moveit_msgs/GetPositionIK
+moveit_msgs/GetRobotStateFromWarehouse
+moveit_msgs/GetStateValidity
+moveit_msgs/GraspPlanning
+moveit_msgs/ListRobotStatesInWarehouse
+moveit_msgs/LoadMap
+moveit_msgs/QueryPlannerInterfaces
+moveit_msgs/RenameRobotStateInWarehouse
+moveit_msgs/SaveMap
+moveit_msgs/SaveRobotStateToWarehouse
+moveit_msgs/SetPlannerParams
+nav_msgs/GetMap
+nav_msgs/GetPlan
+nav_msgs/SetMap
+navfn/MakeNavPlan
+navfn/SetCostmap
+nodelet/NodeletList
+nodelet/NodeletLoad
+nodelet/NodeletUnload
+object_recognition_msgs/GetObjectInformation
+octomap_msgs/BoundingBoxQuery
+octomap_msgs/GetOctomap
+openni2_camera/GetSerial
+polled_camera/GetPolledImage
+pr2_calibration_launch/FkTest
+pr2_controllers_msgs/QueryCalibrationState
+pr2_controllers_msgs/QueryTrajectoryState
+pr2_gazebo_plugins/SetModelsJointsStates
+pr2_mechanism_controllers/SetProfile
+pr2_mechanism_msgs/ListControllerTypes
+pr2_mechanism_msgs/ListControllers
+pr2_mechanism_msgs/LoadController
+pr2_mechanism_msgs/ReloadControllerLibraries
+pr2_mechanism_msgs/SwitchController
+pr2_mechanism_msgs/UnloadController
+pr2_msgs/SetLaserTrajCmd
+pr2_msgs/SetPeriodicCmd
+pr2_power_board/PowerBoardCommand
+pr2_power_board/PowerBoardCommand2
+realsense_camera/CameraConfiguration
+realsense_camera/ForcePower
+realsense_camera/GetIMUInfo
+realsense_camera/IsPowered
+realsense_camera/SetPower
+robot_pose_ekf/GetStatus
+rocon_app_manager_msgs/GetRappList
+rocon_app_manager_msgs/Init
+rocon_app_manager_msgs/Invite
+rocon_app_manager_msgs/StartRapp
+rocon_app_manager_msgs/StopRapp
+rocon_interaction_msgs/GetInteraction
+rocon_interaction_msgs/GetInteractions
+rocon_interaction_msgs/GetPairings
+rocon_interaction_msgs/RequestInteraction
+rocon_interaction_msgs/SetInteractions
+rocon_interaction_msgs/StartPairing
+rocon_interaction_msgs/StopPairing
+rocon_std_msgs/EmptyString
+roscpp/Empty
+roscpp/GetLoggers
+roscpp/SetLoggerLevel
+roscpp_tutorials/TwoInts
+rospy_tutorials/AddTwoInts
+rospy_tutorials/BadTwoInts
+rosserial_arduino/Test
+rosserial_msgs/RequestMessageInfo
+rosserial_msgs/RequestParam
+rosserial_msgs/RequestServiceInfo
+sensor_msgs/SetCameraInfo
+std_srvs/Empty
+std_srvs/SetBool
+std_srvs/Trigger
+tf/FrameGraph
+tf2_msgs/FrameGraph
+topic_tools/DemuxAdd
+topic_tools/DemuxDelete
+topic_tools/DemuxList
+topic_tools/DemuxSelect
+topic_tools/MuxAdd
+topic_tools/MuxDelete
+topic_tools/MuxList
+topic_tools/MuxSelect
+turtlesim/Kill
+turtlesim/SetPen
+turtlesim/Spawn
+turtlesim/TeleportAbsolute
+turtlesim/TeleportRelative
+wge100_camera/BoardConfig
+zeroconf_msgs/AddListener
+zeroconf_msgs/AddService
+zeroconf_msgs/ListDiscoveredServices
+zeroconf_msgs/ListPublishedServices
+zeroconf_msgs/RemoveListener
+zeroconf_msgs/RemoveService
+[NODE=/amcl]$rosnode info /amcl =====>
+--------------------------------------------------------------------------------
+Node [/amcl]
+Publications: 
+ * /amcl/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /amcl/parameter_updates [dynamic_reconfigure/Config]
+ * /amcl_pose [geometry_msgs/PoseWithCovarianceStamped]
+ * /particlecloud [geometry_msgs/PoseArray]
+ * /rosout [rosgraph_msgs/Log]
+ * /tf [tf2_msgs/TFMessage]
+
+Subscriptions: 
+ * /initialpose [geometry_msgs/PoseWithCovarianceStamped]
+ * /map [nav_msgs/OccupancyGrid]
+ * /scan [sensor_msgs/LaserScan]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [unknown type]
+
+Services: 
+ * /amcl/get_loggers
+ * /amcl/set_logger_level
+ * /amcl/set_parameters
+ * /global_localization
+ * /request_nomotion_update
+ * /set_map
+
+
+contacting node http://knightcar.local:38847/ ...
+Pid: 32051
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /amcl
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /tf
+    * to: /move_base
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rf2o_laser_odometry
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rviz_1539833473436817672
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /particlecloud
+    * to: /rviz_1539833473436817672
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /amcl (http://knightcar.local:38847/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /tf
+    * to: /base_footprint2base_link (http://knightcar.local:37729/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /base_link2laser_link (http://knightcar.local:38104/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rf2o_laser_odometry (http://knightcar.local:45963/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /scan
+    * to: /ydlidar_node (http://knightcar.local:34691/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /map
+    * to: /map_server (http://knightcar.local:35317/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/base_footprint2base_link]$rosnode info /base_footprint2base_link =====>
+--------------------------------------------------------------------------------
+Node [/base_footprint2base_link]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /tf [tf2_msgs/TFMessage]
+
+Subscriptions: None
+
+Services: 
+ * /base_footprint2base_link/get_loggers
+ * /base_footprint2base_link/set_logger_level
+
+
+contacting node http://knightcar.local:37729/ ...
+Pid: 32018
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /move_base
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rf2o_laser_odometry
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /amcl
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rviz_1539833473436817672
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/base_link2laser_link]$rosnode info /base_link2laser_link =====>
+--------------------------------------------------------------------------------
+Node [/base_link2laser_link]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /tf [tf2_msgs/TFMessage]
+
+Subscriptions: None
+
+Services: 
+ * /base_link2laser_link/get_loggers
+ * /base_link2laser_link/set_logger_level
+
+
+contacting node http://knightcar.local:38104/ ...
+Pid: 32019
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /move_base
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rf2o_laser_odometry
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /amcl
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rviz_1539833473436817672
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/knightcar/forward_kinematics_node]$rosnode info /knightcar/forward_kinematics_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/forward_kinematics_node]
+Publications: 
+ * /knightcar/forward_kinematics_node/velocity [duckietown_msgs/Twist2DStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/wheels_driver_node/wheels_cmd_executed [duckietown_msgs/WheelsCmdStamped]
+
+Services: 
+ * /knightcar/forward_kinematics_node/get_loggers
+ * /knightcar/forward_kinematics_node/set_logger_level
+
+
+contacting node http://knightcar.local:39072/ ...
+Pid: 1491
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/forward_kinematics_node/velocity
+    * to: /knightcar/velocity_to_pose_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/wheels_driver_node/wheels_cmd_executed
+    * to: /knightcar/wheels_driver_node (http://knightcar.local:44640/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/inverse_kinematics_node]$rosnode info /knightcar/inverse_kinematics_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/inverse_kinematics_node]
+Publications: 
+ * /knightcar/wheels_driver_node/wheels_cmd [duckietown_msgs/WheelsCmdStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/joy_mapper_node/car_cmd [duckietown_msgs/Twist2DStamped]
+
+Services: 
+ * /knightcar/inverse_kinematics_node/get_loggers
+ * /knightcar/inverse_kinematics_node/save_calibration
+ * /knightcar/inverse_kinematics_node/set_baseline
+ * /knightcar/inverse_kinematics_node/set_gain
+ * /knightcar/inverse_kinematics_node/set_k
+ * /knightcar/inverse_kinematics_node/set_limit
+ * /knightcar/inverse_kinematics_node/set_logger_level
+ * /knightcar/inverse_kinematics_node/set_radius
+ * /knightcar/inverse_kinematics_node/set_trim
+
+
+contacting node http://knightcar.local:33780/ ...
+Pid: 1482
+Connections:
+ * topic: /knightcar/wheels_driver_node/wheels_cmd
+    * to: /knightcar/wheels_driver_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/car_cmd
+    * to: /knightcar/joy_mapper_node (http://knightcar.local:45581/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/joy]$rosnode info /knightcar/joy =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/joy]
+Publications: 
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /knightcar/joy [sensor_msgs/Joy]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: None
+
+Services: 
+ * /knightcar/joy/get_loggers
+ * /knightcar/joy/set_logger_level
+
+
+contacting node http://knightcar.local:39233/ ...
+Pid: 1465
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy
+    * to: /knightcar/joy_mapper_node
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/knightcar/joy_mapper_node]$rosnode info /knightcar/joy_mapper_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/joy_mapper_node]
+Publications: 
+ * /knightcar/anti_instagram_node/click [duckietown_msgs/BoolStamped]
+ * /knightcar/joy_mapper_node/car_cmd [duckietown_msgs/Twist2DStamped]
+ * /knightcar/joy_mapper_node/joystick_override [duckietown_msgs/BoolStamped]
+ * /knightcar/joy_mapper_node/parallel_autonomy [duckietown_msgs/BoolStamped]
+ * /knightcar/joy_mapper_node/start_avoidance [duckietown_msgs/BoolStamped]
+ * /knightcar/wheels_driver_node/emergency_stop [duckietown_msgs/BoolStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/joy [sensor_msgs/Joy]
+
+Services: 
+ * /knightcar/joy_mapper_node/get_loggers
+ * /knightcar/joy_mapper_node/set_logger_level
+
+
+contacting node http://knightcar.local:45581/ ...
+Pid: 1466
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/wheels_driver_node/emergency_stop
+    * to: /knightcar/wheels_driver_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy_mapper_node/car_cmd
+    * to: /knightcar/inverse_kinematics_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/joy
+    * to: /knightcar/joy (http://knightcar.local:39233/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/velocity_to_pose_node]$rosnode info /knightcar/velocity_to_pose_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/velocity_to_pose_node]
+Publications: 
+ * /knightcar/velocity_to_pose_node/pose [duckietown_msgs/Pose2DStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/forward_kinematics_node/velocity [duckietown_msgs/Twist2DStamped]
+
+Services: 
+ * /knightcar/velocity_to_pose_node/get_loggers
+ * /knightcar/velocity_to_pose_node/set_logger_level
+
+
+contacting node http://knightcar.local:33162/ ...
+Pid: 1498
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/forward_kinematics_node/velocity
+    * to: /knightcar/forward_kinematics_node (http://knightcar.local:39072/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/knightcar/wheels_driver_node]$rosnode info /knightcar/wheels_driver_node =====>
+--------------------------------------------------------------------------------
+Node [/knightcar/wheels_driver_node]
+Publications: 
+ * /knightcar/wheels_driver_node/wheels_cmd_executed [duckietown_msgs/WheelsCmdStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /knightcar/wheels_driver_node/emergency_stop [duckietown_msgs/BoolStamped]
+ * /knightcar/wheels_driver_node/wheels_cmd [duckietown_msgs/WheelsCmdStamped]
+
+Services: 
+ * /knightcar/wheels_driver_node/get_loggers
+ * /knightcar/wheels_driver_node/set_logger_level
+
+
+contacting node http://knightcar.local:44640/ ...
+Pid: 1499
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/wheels_driver_node/wheels_cmd_executed
+    * to: /knightcar/forward_kinematics_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /knightcar/wheels_driver_node/wheels_cmd
+    * to: /knightcar/inverse_kinematics_node (http://knightcar.local:33780/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /knightcar/wheels_driver_node/emergency_stop
+    * to: /knightcar/joy_mapper_node (http://knightcar.local:45581/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/map_server]$rosnode info /map_server =====>
+--------------------------------------------------------------------------------
+Node [/map_server]
+Publications: 
+ * /map [nav_msgs/OccupancyGrid]
+ * /map_metadata [nav_msgs/MapMetaData]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: None
+
+Services: 
+ * /map_server/get_loggers
+ * /map_server/set_logger_level
+ * /static_map
+
+
+contacting node http://knightcar.local:35317/ ...
+Pid: 32016
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /map
+    * to: /amcl
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /map
+    * to: /move_base
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /map
+    * to: /rviz_1539833473436817672
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/move_base]$rosnode info /move_base =====>
+--------------------------------------------------------------------------------
+Node [/move_base]
+Publications: 
+ * /cmd_vel [geometry_msgs/Twist]
+ * /move_base/DWAPlannerROS/cost_cloud [sensor_msgs/PointCloud2]
+ * /move_base/DWAPlannerROS/global_plan [nav_msgs/Path]
+ * /move_base/DWAPlannerROS/local_plan [nav_msgs/Path]
+ * /move_base/DWAPlannerROS/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_base/DWAPlannerROS/parameter_updates [dynamic_reconfigure/Config]
+ * /move_base/DWAPlannerROS/trajectory_cloud [sensor_msgs/PointCloud2]
+ * /move_base/NavfnROS/plan [nav_msgs/Path]
+ * /move_base/current_goal [geometry_msgs/PoseStamped]
+ * /move_base/feedback [move_base_msgs/MoveBaseActionFeedback]
+ * /move_base/global_costmap/costmap [nav_msgs/OccupancyGrid]
+ * /move_base/global_costmap/costmap_updates [map_msgs/OccupancyGridUpdate]
+ * /move_base/global_costmap/footprint [geometry_msgs/PolygonStamped]
+ * /move_base/global_costmap/inflation/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_base/global_costmap/inflation/parameter_updates [dynamic_reconfigure/Config]
+ * /move_base/global_costmap/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_base/global_costmap/parameter_updates [dynamic_reconfigure/Config]
+ * /move_base/global_costmap/sensor/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_base/global_costmap/sensor/parameter_updates [dynamic_reconfigure/Config]
+ * /move_base/global_costmap/static/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_base/global_costmap/static/parameter_updates [dynamic_reconfigure/Config]
+ * /move_base/goal [move_base_msgs/MoveBaseActionGoal]
+ * /move_base/local_costmap/costmap [nav_msgs/OccupancyGrid]
+ * /move_base/local_costmap/costmap_updates [map_msgs/OccupancyGridUpdate]
+ * /move_base/local_costmap/footprint [geometry_msgs/PolygonStamped]
+ * /move_base/local_costmap/inflation/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_base/local_costmap/inflation/parameter_updates [dynamic_reconfigure/Config]
+ * /move_base/local_costmap/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_base/local_costmap/parameter_updates [dynamic_reconfigure/Config]
+ * /move_base/local_costmap/sensor/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_base/local_costmap/sensor/parameter_updates [dynamic_reconfigure/Config]
+ * /move_base/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_base/parameter_updates [dynamic_reconfigure/Config]
+ * /move_base/result [move_base_msgs/MoveBaseActionResult]
+ * /move_base/status [actionlib_msgs/GoalStatusArray]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /map [nav_msgs/OccupancyGrid]
+ * /map_updates [unknown type]
+ * /move_base/cancel [unknown type]
+ * /move_base/global_costmap/footprint [geometry_msgs/PolygonStamped]
+ * /move_base/goal [move_base_msgs/MoveBaseActionGoal]
+ * /move_base/local_costmap/footprint [geometry_msgs/PolygonStamped]
+ * /move_base_simple/goal [geometry_msgs/PoseStamped]
+ * /rf2o_laser_odometry/odom [nav_msgs/Odometry]
+ * /scan [sensor_msgs/LaserScan]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [unknown type]
+
+Services: 
+ * /move_base/DWAPlannerROS/set_parameters
+ * /move_base/NavfnROS/make_plan
+ * /move_base/clear_costmaps
+ * /move_base/get_loggers
+ * /move_base/global_costmap/inflation/set_parameters
+ * /move_base/global_costmap/sensor/set_parameters
+ * /move_base/global_costmap/set_parameters
+ * /move_base/global_costmap/static/set_parameters
+ * /move_base/local_costmap/inflation/set_parameters
+ * /move_base/local_costmap/sensor/set_parameters
+ * /move_base/local_costmap/set_parameters
+ * /move_base/make_plan
+ * /move_base/set_logger_level
+ * /move_base/set_parameters
+
+
+contacting node http://knightcar.local:38720/ ...
+Pid: 32058
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /move_base/current_goal
+    * to: /rviz_1539833473436817672
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /move_base/goal
+    * to: /move_base
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /move_base/NavfnROS/plan
+    * to: /rviz_1539833473436817672
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /move_base/local_costmap/footprint
+    * to: /rviz_1539833473436817672
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /move_base/DWAPlannerROS/global_plan
+    * to: /rviz_1539833473436817672
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /move_base/DWAPlannerROS/local_plan
+    * to: /rviz_1539833473436817672
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /base_footprint2base_link (http://knightcar.local:37729/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /base_link2laser_link (http://knightcar.local:38104/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rf2o_laser_odometry (http://knightcar.local:45963/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /amcl (http://knightcar.local:38847/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /map
+    * to: /map_server (http://knightcar.local:35317/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /scan
+    * to: /ydlidar_node (http://knightcar.local:34691/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rf2o_laser_odometry/odom
+    * to: /rf2o_laser_odometry (http://knightcar.local:45963/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /move_base/goal
+    * to: /move_base (http://knightcar.local:38720/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+
+[NODE=/rf2o_laser_odometry]$rosnode info /rf2o_laser_odometry =====>
+--------------------------------------------------------------------------------
+Node [/rf2o_laser_odometry]
+Publications: 
+ * /rf2o_laser_odometry/odom [nav_msgs/Odometry]
+ * /rosout [rosgraph_msgs/Log]
+ * /tf [tf2_msgs/TFMessage]
+
+Subscriptions: 
+ * /scan [sensor_msgs/LaserScan]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [unknown type]
+
+Services: 
+ * /rf2o_laser_odometry/get_loggers
+ * /rf2o_laser_odometry/set_logger_level
+
+
+contacting node http://knightcar.local:45963/ ...
+Pid: 32039
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rf2o_laser_odometry
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /tf
+    * to: /move_base
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /amcl
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rviz_1539833473436817672
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rf2o_laser_odometry/odom
+    * to: /move_base
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rf2o_laser_odometry (http://knightcar.local:45963/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /tf
+    * to: /base_footprint2base_link (http://knightcar.local:37729/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /base_link2laser_link (http://knightcar.local:38104/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /amcl (http://knightcar.local:38847/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /scan
+    * to: /ydlidar_node (http://knightcar.local:34691/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://knightcar.local:40850/ ...
+Pid: 31999
+Connections:
+ * topic: /rosout
+    * to: /base_footprint2base_link (http://knightcar.local:37729/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /map_server (http://knightcar.local:35317/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /base_link2laser_link (http://knightcar.local:38104/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /ydlidar_node (http://knightcar.local:34691/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /amcl (http://knightcar.local:38847/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /move_base (http://knightcar.local:38720/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rf2o_laser_odometry (http://knightcar.local:45963/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/joy (http://knightcar.local:39233/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/wheels_driver_node (http://knightcar.local:44640/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/forward_kinematics_node (http://knightcar.local:39072/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/inverse_kinematics_node (http://knightcar.local:33780/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/joy_mapper_node (http://knightcar.local:45581/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /knightcar/velocity_to_pose_node (http://knightcar.local:33162/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/rqt_gui_py_node_15789]$rosnode info /rqt_gui_py_node_15789 =====>
+--------------------------------------------------------------------------------
+Node [/rqt_gui_py_node_15789]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /statistics [unknown type]
+
+Services: 
+ * /rqt_gui_py_node_15789/get_loggers
+ * /rqt_gui_py_node_15789/set_logger_level
+
+
+contacting node http://osboxes:40365/ ...
+Pid: 15789
+
+[NODE=/rviz_1539833473436817672]$rosnode info /rviz_1539833473436817672 =====>
+--------------------------------------------------------------------------------
+Node [/rviz_1539833473436817672]
+Publications: 
+ * /clicked_point [geometry_msgs/PointStamped]
+ * /initialpose [geometry_msgs/PoseWithCovarianceStamped]
+ * /move_base_simple/goal [geometry_msgs/PoseStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /local_costmap/obstacles [unknown type]
+ * /map [nav_msgs/OccupancyGrid]
+ * /map_updates [unknown type]
+ * /move_base/DWAPlannerROS/global_plan [nav_msgs/Path]
+ * /move_base/DWAPlannerROS/local_plan [nav_msgs/Path]
+ * /move_base/NavfnROS/plan [nav_msgs/Path]
+ * /move_base/current_goal [geometry_msgs/PoseStamped]
+ * /move_base/local_costmap/footprint [geometry_msgs/PolygonStamped]
+ * /particlecloud [geometry_msgs/PoseArray]
+ * /scan [sensor_msgs/LaserScan]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [unknown type]
+ * /visualization_marker [unknown type]
+ * /visualization_marker_array [unknown type]
+
+Services: 
+ * /rviz_1539833473436817672/get_loggers
+ * /rviz_1539833473436817672/reload_shaders
+ * /rviz_1539833473436817672/set_logger_level
+
+
+contacting node http://osboxes:45153/ ...
+Pid: 15719
+Connections:
+ * topic: /tf
+    * to: /base_footprint2base_link (http://knightcar.local:37729/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /base_link2laser_link (http://knightcar.local:38104/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rf2o_laser_odometry (http://knightcar.local:45963/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /amcl (http://knightcar.local:38847/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /move_base/local_costmap/footprint
+    * to: /move_base (http://knightcar.local:38720/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /move_base/current_goal
+    * to: /move_base (http://knightcar.local:38720/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /scan
+    * to: /ydlidar_node (http://knightcar.local:34691/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /particlecloud
+    * to: /amcl (http://knightcar.local:38847/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /move_base/NavfnROS/plan
+    * to: /move_base (http://knightcar.local:38720/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /move_base/DWAPlannerROS/global_plan
+    * to: /move_base (http://knightcar.local:38720/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /move_base/DWAPlannerROS/local_plan
+    * to: /move_base (http://knightcar.local:38720/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /map
+    * to: /map_server (http://knightcar.local:35317/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/ydlidar_node]$rosnode info /ydlidar_node =====>
+--------------------------------------------------------------------------------
+Node [/ydlidar_node]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /scan [sensor_msgs/LaserScan]
+
+Subscriptions: None
+
+Services: 
+ * /ydlidar_node/get_loggers
+ * /ydlidar_node/set_logger_level
+
+
+contacting node http://knightcar.local:34691/ ...
+Pid: 32026
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /scan
+    * to: /rf2o_laser_odometry
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /scan
+    * to: /amcl
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /scan
+    * to: /move_base
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /scan
+    * to: /rviz_1539833473436817672
+    * direction: outbound
+    * transport: TCPROS
+
+[TOPIC_LIST]$rostopic list =====>
+/amcl/parameter_descriptions
+/amcl/parameter_updates
+/amcl_pose
+/clicked_point
+/cmd_vel
+/diagnostics
+/initialpose
+/knightcar/anti_instagram_node/click
+/knightcar/forward_kinematics_node/velocity
+/knightcar/joy
+/knightcar/joy_mapper_node/car_cmd
+/knightcar/joy_mapper_node/joystick_override
+/knightcar/joy_mapper_node/parallel_autonomy
+/knightcar/joy_mapper_node/start_avoidance
+/knightcar/velocity_to_pose_node/pose
+/knightcar/wheels_driver_node/emergency_stop
+/knightcar/wheels_driver_node/wheels_cmd
+/knightcar/wheels_driver_node/wheels_cmd_executed
+/local_costmap/obstacles
+/map
+/map_metadata
+/map_updates
+/move_base/DWAPlannerROS/cost_cloud
+/move_base/DWAPlannerROS/global_plan
+/move_base/DWAPlannerROS/local_plan
+/move_base/DWAPlannerROS/parameter_descriptions
+/move_base/DWAPlannerROS/parameter_updates
+/move_base/DWAPlannerROS/trajectory_cloud
+/move_base/NavfnROS/plan
+/move_base/cancel
+/move_base/current_goal
+/move_base/feedback
+/move_base/global_costmap/costmap
+/move_base/global_costmap/costmap_updates
+/move_base/global_costmap/footprint
+/move_base/global_costmap/inflation/parameter_descriptions
+/move_base/global_costmap/inflation/parameter_updates
+/move_base/global_costmap/parameter_descriptions
+/move_base/global_costmap/parameter_updates
+/move_base/global_costmap/sensor/parameter_descriptions
+/move_base/global_costmap/sensor/parameter_updates
+/move_base/global_costmap/static/parameter_descriptions
+/move_base/global_costmap/static/parameter_updates
+/move_base/goal
+/move_base/local_costmap/costmap
+/move_base/local_costmap/costmap_updates
+/move_base/local_costmap/footprint
+/move_base/local_costmap/inflation/parameter_descriptions
+/move_base/local_costmap/inflation/parameter_updates
+/move_base/local_costmap/parameter_descriptions
+/move_base/local_costmap/parameter_updates
+/move_base/local_costmap/sensor/parameter_descriptions
+/move_base/local_costmap/sensor/parameter_updates
+/move_base/parameter_descriptions
+/move_base/parameter_updates
+/move_base/result
+/move_base/status
+/move_base_simple/goal
+/particlecloud
+/rf2o_laser_odometry/odom
+/rosout
+/rosout_agg
+/scan
+/statistics
+/tf
+/tf_static
+/visualization_marker
+/visualization_marker_array
+[TOPIC=/amcl/parameter_descriptions]$rostopic info /amcl/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /amcl (http://knightcar.local:38847/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/amcl/parameter_descriptions]$timeout 1 rostopic hz /amcl/parameter_descriptions =====>
+subscribed to [/amcl/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/amcl/parameter_updates]$rostopic info /amcl/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /amcl (http://knightcar.local:38847/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/amcl/parameter_updates]$timeout 1 rostopic hz /amcl/parameter_updates =====>
+subscribed to [/amcl/parameter_updates]
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/amcl_pose]$rostopic info /amcl_pose =====>
+Type: geometry_msgs/PoseWithCovarianceStamped
+
+Publishers: 
+ * /amcl (http://knightcar.local:38847/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/amcl_pose]$timeout 1 rostopic hz /amcl_pose =====>
+subscribed to [/amcl_pose]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PoseWithCovarianceStamped]$rosmsg show geometry_msgs/PoseWithCovarianceStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/PoseWithCovariance pose
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  float64[36] covariance
+
+[TOPIC=/clicked_point]$rostopic info /clicked_point =====>
+Type: geometry_msgs/PointStamped
+
+Publishers: 
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/clicked_point]$timeout 1 rostopic hz /clicked_point =====>
+subscribed to [/clicked_point]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PointStamped]$rosmsg show geometry_msgs/PointStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Point point
+  float64 x
+  float64 y
+  float64 z
+
+[TOPIC=/cmd_vel]$rostopic info /cmd_vel =====>
+Type: geometry_msgs/Twist
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/cmd_vel]$timeout 1 rostopic hz /cmd_vel =====>
+subscribed to [/cmd_vel]
+no new messages
+[TOPIC_TYPE=geometry_msgs/Twist]$rosmsg show geometry_msgs/Twist =====>
+geometry_msgs/Vector3 linear
+  float64 x
+  float64 y
+  float64 z
+geometry_msgs/Vector3 angular
+  float64 x
+  float64 y
+  float64 z
+
+[TOPIC=/diagnostics]$rostopic info /diagnostics =====>
+Type: diagnostic_msgs/DiagnosticArray
+
+Publishers: 
+ * /knightcar/joy (http://knightcar.local:39233/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/diagnostics]$timeout 1 rostopic hz /diagnostics =====>
+subscribed to [/diagnostics]
+no new messages
+[TOPIC_TYPE=diagnostic_msgs/DiagnosticArray]$rosmsg show diagnostic_msgs/DiagnosticArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+diagnostic_msgs/DiagnosticStatus[] status
+  byte OK=0
+  byte WARN=1
+  byte ERROR=2
+  byte STALE=3
+  byte level
+  string name
+  string message
+  string hardware_id
+  diagnostic_msgs/KeyValue[] values
+    string key
+    string value
+
+[TOPIC=/initialpose]$rostopic info /initialpose =====>
+Type: geometry_msgs/PoseWithCovarianceStamped
+
+Publishers: 
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+Subscribers: 
+ * /amcl (http://knightcar.local:38847/)
+
+
+[TOPIC_HZ=/initialpose]$timeout 1 rostopic hz /initialpose =====>
+subscribed to [/initialpose]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PoseWithCovarianceStamped]$rosmsg show geometry_msgs/PoseWithCovarianceStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/PoseWithCovariance pose
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  float64[36] covariance
+
+[TOPIC=/knightcar/anti_instagram_node/click]$rostopic info /knightcar/anti_instagram_node/click =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:45581/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/anti_instagram_node/click]$timeout 1 rostopic hz /knightcar/anti_instagram_node/click =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/forward_kinematics_node/velocity]$rostopic info /knightcar/forward_kinematics_node/velocity =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /knightcar/forward_kinematics_node (http://knightcar.local:39072/)
+
+Subscribers: 
+ * /knightcar/velocity_to_pose_node (http://knightcar.local:33162/)
+
+
+[TOPIC_HZ=/knightcar/forward_kinematics_node/velocity]$timeout 1 rostopic hz /knightcar/forward_kinematics_node/velocity =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/joy]$rostopic info /knightcar/joy =====>
+Type: sensor_msgs/Joy
+
+Publishers: 
+ * /knightcar/joy (http://knightcar.local:39233/)
+
+Subscribers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:45581/)
+
+
+[TOPIC_HZ=/knightcar/joy]$timeout 1 rostopic hz /knightcar/joy =====>
+Unable to register with master node [http://knightcar.local:11311]: master may not be running yet. Will keep trying.
+subscribed to [/knightcar/joy]
+[TOPIC_TYPE=sensor_msgs/Joy]$rosmsg show sensor_msgs/Joy =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32[] axes
+int32[] buttons
+
+[TOPIC=/knightcar/joy_mapper_node/car_cmd]$rostopic info /knightcar/joy_mapper_node/car_cmd =====>
+Type: duckietown_msgs/Twist2DStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:45581/)
+
+Subscribers: 
+ * /knightcar/inverse_kinematics_node (http://knightcar.local:33780/)
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/car_cmd]$timeout 1 rostopic hz /knightcar/joy_mapper_node/car_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/Twist2DStamped]$rosmsg show duckietown_msgs/Twist2DStamped =====>
+[TOPIC=/knightcar/joy_mapper_node/joystick_override]$rostopic info /knightcar/joy_mapper_node/joystick_override =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:45581/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/joystick_override]$timeout 1 rostopic hz /knightcar/joy_mapper_node/joystick_override =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/joy_mapper_node/parallel_autonomy]$rostopic info /knightcar/joy_mapper_node/parallel_autonomy =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:45581/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/parallel_autonomy]$timeout 1 rostopic hz /knightcar/joy_mapper_node/parallel_autonomy =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/joy_mapper_node/start_avoidance]$rostopic info /knightcar/joy_mapper_node/start_avoidance =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:45581/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/joy_mapper_node/start_avoidance]$timeout 1 rostopic hz /knightcar/joy_mapper_node/start_avoidance =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/velocity_to_pose_node/pose]$rostopic info /knightcar/velocity_to_pose_node/pose =====>
+Type: duckietown_msgs/Pose2DStamped
+
+Publishers: 
+ * /knightcar/velocity_to_pose_node (http://knightcar.local:33162/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/knightcar/velocity_to_pose_node/pose]$timeout 1 rostopic hz /knightcar/velocity_to_pose_node/pose =====>
+[TOPIC_TYPE=duckietown_msgs/Pose2DStamped]$rosmsg show duckietown_msgs/Pose2DStamped =====>
+[TOPIC=/knightcar/wheels_driver_node/emergency_stop]$rostopic info /knightcar/wheels_driver_node/emergency_stop =====>
+Type: duckietown_msgs/BoolStamped
+
+Publishers: 
+ * /knightcar/joy_mapper_node (http://knightcar.local:45581/)
+
+Subscribers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:44640/)
+
+
+[TOPIC_HZ=/knightcar/wheels_driver_node/emergency_stop]$timeout 1 rostopic hz /knightcar/wheels_driver_node/emergency_stop =====>
+[TOPIC_TYPE=duckietown_msgs/BoolStamped]$rosmsg show duckietown_msgs/BoolStamped =====>
+[TOPIC=/knightcar/wheels_driver_node/wheels_cmd]$rostopic info /knightcar/wheels_driver_node/wheels_cmd =====>
+Type: duckietown_msgs/WheelsCmdStamped
+
+Publishers: 
+ * /knightcar/inverse_kinematics_node (http://knightcar.local:33780/)
+
+Subscribers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:44640/)
+
+
+[TOPIC_HZ=/knightcar/wheels_driver_node/wheels_cmd]$timeout 1 rostopic hz /knightcar/wheels_driver_node/wheels_cmd =====>
+[TOPIC_TYPE=duckietown_msgs/WheelsCmdStamped]$rosmsg show duckietown_msgs/WheelsCmdStamped =====>
+[TOPIC=/knightcar/wheels_driver_node/wheels_cmd_executed]$rostopic info /knightcar/wheels_driver_node/wheels_cmd_executed =====>
+Type: duckietown_msgs/WheelsCmdStamped
+
+Publishers: 
+ * /knightcar/wheels_driver_node (http://knightcar.local:44640/)
+
+Subscribers: 
+ * /knightcar/forward_kinematics_node (http://knightcar.local:39072/)
+
+
+[TOPIC_HZ=/knightcar/wheels_driver_node/wheels_cmd_executed]$timeout 1 rostopic hz /knightcar/wheels_driver_node/wheels_cmd_executed =====>
+[TOPIC_TYPE=duckietown_msgs/WheelsCmdStamped]$rosmsg show duckietown_msgs/WheelsCmdStamped =====>
+[TOPIC=/local_costmap/obstacles]$rostopic info /local_costmap/obstacles =====>
+Type: nav_msgs/GridCells
+
+Publishers: None
+
+Subscribers: 
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/local_costmap/obstacles]$timeout 1 rostopic hz /local_costmap/obstacles =====>
+[TOPIC_TYPE=nav_msgs/GridCells]$rosmsg show nav_msgs/GridCells =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 cell_width
+float32 cell_height
+geometry_msgs/Point[] cells
+  float64 x
+  float64 y
+  float64 z
+
+[TOPIC=/map]$rostopic info /map =====>
+Type: nav_msgs/OccupancyGrid
+
+Publishers: 
+ * /map_server (http://knightcar.local:35317/)
+
+Subscribers: 
+ * /amcl (http://knightcar.local:38847/)
+ * /move_base (http://knightcar.local:38720/)
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/map]$timeout 1 rostopic hz /map =====>
+subscribed to [/map]
+no new messages
+[TOPIC_TYPE=nav_msgs/OccupancyGrid]$rosmsg show nav_msgs/OccupancyGrid =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+nav_msgs/MapMetaData info
+  time map_load_time
+  float32 resolution
+  uint32 width
+  uint32 height
+  geometry_msgs/Pose origin
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+int8[] data
+
+[TOPIC=/map_metadata]$rostopic info /map_metadata =====>
+Type: nav_msgs/MapMetaData
+
+Publishers: 
+ * /map_server (http://knightcar.local:35317/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/map_metadata]$timeout 1 rostopic hz /map_metadata =====>
+subscribed to [/map_metadata]
+no new messages
+[TOPIC_TYPE=nav_msgs/MapMetaData]$rosmsg show nav_msgs/MapMetaData =====>
+time map_load_time
+float32 resolution
+uint32 width
+uint32 height
+geometry_msgs/Pose origin
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+
+[TOPIC=/map_updates]$rostopic info /map_updates =====>
+Type: map_msgs/OccupancyGridUpdate
+
+Publishers: None
+
+Subscribers: 
+ * /move_base (http://knightcar.local:38720/)
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/map_updates]$timeout 1 rostopic hz /map_updates =====>
+subscribed to [/map_updates]
+no new messages
+[TOPIC_TYPE=map_msgs/OccupancyGridUpdate]$rosmsg show map_msgs/OccupancyGridUpdate =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+int32 x
+int32 y
+uint32 width
+uint32 height
+int8[] data
+
+[TOPIC=/move_base/DWAPlannerROS/cost_cloud]$rostopic info /move_base/DWAPlannerROS/cost_cloud =====>
+Type: sensor_msgs/PointCloud2
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/DWAPlannerROS/cost_cloud]$timeout 1 rostopic hz /move_base/DWAPlannerROS/cost_cloud =====>
+subscribed to [/move_base/DWAPlannerROS/cost_cloud]
+no new messages
+[TOPIC_TYPE=sensor_msgs/PointCloud2]$rosmsg show sensor_msgs/PointCloud2 =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+sensor_msgs/PointField[] fields
+  uint8 INT8=1
+  uint8 UINT8=2
+  uint8 INT16=3
+  uint8 UINT16=4
+  uint8 INT32=5
+  uint8 UINT32=6
+  uint8 FLOAT32=7
+  uint8 FLOAT64=8
+  string name
+  uint32 offset
+  uint8 datatype
+  uint32 count
+bool is_bigendian
+uint32 point_step
+uint32 row_step
+uint8[] data
+bool is_dense
+
+[TOPIC=/move_base/DWAPlannerROS/global_plan]$rostopic info /move_base/DWAPlannerROS/global_plan =====>
+Type: nav_msgs/Path
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: 
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/move_base/DWAPlannerROS/global_plan]$timeout 1 rostopic hz /move_base/DWAPlannerROS/global_plan =====>
+subscribed to [/move_base/DWAPlannerROS/global_plan]
+no new messages
+[TOPIC_TYPE=nav_msgs/Path]$rosmsg show nav_msgs/Path =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/PoseStamped[] poses
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[TOPIC=/move_base/DWAPlannerROS/local_plan]$rostopic info /move_base/DWAPlannerROS/local_plan =====>
+Type: nav_msgs/Path
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: 
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/move_base/DWAPlannerROS/local_plan]$timeout 1 rostopic hz /move_base/DWAPlannerROS/local_plan =====>
+subscribed to [/move_base/DWAPlannerROS/local_plan]
+no new messages
+[TOPIC_TYPE=nav_msgs/Path]$rosmsg show nav_msgs/Path =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/PoseStamped[] poses
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[TOPIC=/move_base/DWAPlannerROS/parameter_descriptions]$rostopic info /move_base/DWAPlannerROS/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/DWAPlannerROS/parameter_descriptions]$timeout 1 rostopic hz /move_base/DWAPlannerROS/parameter_descriptions =====>
+subscribed to [/move_base/DWAPlannerROS/parameter_descriptions]
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/move_base/DWAPlannerROS/parameter_updates]$rostopic info /move_base/DWAPlannerROS/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/DWAPlannerROS/parameter_updates]$timeout 1 rostopic hz /move_base/DWAPlannerROS/parameter_updates =====>
+subscribed to [/move_base/DWAPlannerROS/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/move_base/DWAPlannerROS/trajectory_cloud]$rostopic info /move_base/DWAPlannerROS/trajectory_cloud =====>
+Type: sensor_msgs/PointCloud2
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/DWAPlannerROS/trajectory_cloud]$timeout 1 rostopic hz /move_base/DWAPlannerROS/trajectory_cloud =====>
+subscribed to [/move_base/DWAPlannerROS/trajectory_cloud]
+no new messages
+[TOPIC_TYPE=sensor_msgs/PointCloud2]$rosmsg show sensor_msgs/PointCloud2 =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+sensor_msgs/PointField[] fields
+  uint8 INT8=1
+  uint8 UINT8=2
+  uint8 INT16=3
+  uint8 UINT16=4
+  uint8 INT32=5
+  uint8 UINT32=6
+  uint8 FLOAT32=7
+  uint8 FLOAT64=8
+  string name
+  uint32 offset
+  uint8 datatype
+  uint32 count
+bool is_bigendian
+uint32 point_step
+uint32 row_step
+uint8[] data
+bool is_dense
+
+[TOPIC=/move_base/NavfnROS/plan]$rostopic info /move_base/NavfnROS/plan =====>
+Type: nav_msgs/Path
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: 
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/move_base/NavfnROS/plan]$timeout 1 rostopic hz /move_base/NavfnROS/plan =====>
+subscribed to [/move_base/NavfnROS/plan]
+no new messages
+[TOPIC_TYPE=nav_msgs/Path]$rosmsg show nav_msgs/Path =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/PoseStamped[] poses
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[TOPIC=/move_base/cancel]$rostopic info /move_base/cancel =====>
+Type: actionlib_msgs/GoalID
+
+Publishers: None
+
+Subscribers: 
+ * /move_base (http://knightcar.local:38720/)
+
+
+[TOPIC_HZ=/move_base/cancel]$timeout 1 rostopic hz /move_base/cancel =====>
+subscribed to [/move_base/cancel]
+no new messages
+[TOPIC_TYPE=actionlib_msgs/GoalID]$rosmsg show actionlib_msgs/GoalID =====>
+time stamp
+string id
+
+[TOPIC=/move_base/current_goal]$rostopic info /move_base/current_goal =====>
+Type: geometry_msgs/PoseStamped
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: 
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/move_base/current_goal]$timeout 1 rostopic hz /move_base/current_goal =====>
+[TOPIC_TYPE=geometry_msgs/PoseStamped]$rosmsg show geometry_msgs/PoseStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Pose pose
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+
+[TOPIC=/move_base/feedback]$rostopic info /move_base/feedback =====>
+Type: move_base_msgs/MoveBaseActionFeedback
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/feedback]$timeout 1 rostopic hz /move_base/feedback =====>
+[TOPIC_TYPE=move_base_msgs/MoveBaseActionFeedback]$rosmsg show move_base_msgs/MoveBaseActionFeedback =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus status
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+move_base_msgs/MoveBaseFeedback feedback
+  geometry_msgs/PoseStamped base_position
+    std_msgs/Header header
+      uint32 seq
+      time stamp
+      string frame_id
+    geometry_msgs/Pose pose
+      geometry_msgs/Point position
+        float64 x
+        float64 y
+        float64 z
+      geometry_msgs/Quaternion orientation
+        float64 x
+        float64 y
+        float64 z
+        float64 w
+
+[TOPIC=/move_base/global_costmap/costmap]$rostopic info /move_base/global_costmap/costmap =====>
+Type: nav_msgs/OccupancyGrid
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/global_costmap/costmap]$timeout 1 rostopic hz /move_base/global_costmap/costmap =====>
+[TOPIC_TYPE=nav_msgs/OccupancyGrid]$rosmsg show nav_msgs/OccupancyGrid =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+nav_msgs/MapMetaData info
+  time map_load_time
+  float32 resolution
+  uint32 width
+  uint32 height
+  geometry_msgs/Pose origin
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+int8[] data
+
+[TOPIC=/move_base/global_costmap/costmap_updates]$rostopic info /move_base/global_costmap/costmap_updates =====>
+Type: map_msgs/OccupancyGridUpdate
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/global_costmap/costmap_updates]$timeout 1 rostopic hz /move_base/global_costmap/costmap_updates =====>
+[TOPIC_TYPE=map_msgs/OccupancyGridUpdate]$rosmsg show map_msgs/OccupancyGridUpdate =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+int32 x
+int32 y
+uint32 width
+uint32 height
+int8[] data
+
+[TOPIC=/move_base/global_costmap/footprint]$rostopic info /move_base/global_costmap/footprint =====>
+Type: geometry_msgs/PolygonStamped
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: 
+ * /move_base (http://knightcar.local:38720/)
+
+
+[TOPIC_HZ=/move_base/global_costmap/footprint]$timeout 1 rostopic hz /move_base/global_costmap/footprint =====>
+subscribed to [/move_base/global_costmap/footprint]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PolygonStamped]$rosmsg show geometry_msgs/PolygonStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Polygon polygon
+  geometry_msgs/Point32[] points
+    float32 x
+    float32 y
+    float32 z
+
+[TOPIC=/move_base/global_costmap/inflation/parameter_descriptions]$rostopic info /move_base/global_costmap/inflation/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/global_costmap/inflation/parameter_descriptions]$timeout 1 rostopic hz /move_base/global_costmap/inflation/parameter_descriptions =====>
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/move_base/global_costmap/inflation/parameter_updates]$rostopic info /move_base/global_costmap/inflation/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/global_costmap/inflation/parameter_updates]$timeout 1 rostopic hz /move_base/global_costmap/inflation/parameter_updates =====>
+subscribed to [/move_base/global_costmap/inflation/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/move_base/global_costmap/parameter_descriptions]$rostopic info /move_base/global_costmap/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/global_costmap/parameter_descriptions]$timeout 1 rostopic hz /move_base/global_costmap/parameter_descriptions =====>
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/move_base/global_costmap/parameter_updates]$rostopic info /move_base/global_costmap/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/global_costmap/parameter_updates]$timeout 1 rostopic hz /move_base/global_costmap/parameter_updates =====>
+subscribed to [/move_base/global_costmap/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/move_base/global_costmap/sensor/parameter_descriptions]$rostopic info /move_base/global_costmap/sensor/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/global_costmap/sensor/parameter_descriptions]$timeout 1 rostopic hz /move_base/global_costmap/sensor/parameter_descriptions =====>
+subscribed to [/move_base/global_costmap/sensor/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/move_base/global_costmap/sensor/parameter_updates]$rostopic info /move_base/global_costmap/sensor/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/global_costmap/sensor/parameter_updates]$timeout 1 rostopic hz /move_base/global_costmap/sensor/parameter_updates =====>
+subscribed to [/move_base/global_costmap/sensor/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/move_base/global_costmap/static/parameter_descriptions]$rostopic info /move_base/global_costmap/static/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/global_costmap/static/parameter_descriptions]$timeout 1 rostopic hz /move_base/global_costmap/static/parameter_descriptions =====>
+subscribed to [/move_base/global_costmap/static/parameter_descriptions]
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/move_base/global_costmap/static/parameter_updates]$rostopic info /move_base/global_costmap/static/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/global_costmap/static/parameter_updates]$timeout 1 rostopic hz /move_base/global_costmap/static/parameter_updates =====>
+subscribed to [/move_base/global_costmap/static/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/move_base/goal]$rostopic info /move_base/goal =====>
+Type: move_base_msgs/MoveBaseActionGoal
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: 
+ * /move_base (http://knightcar.local:38720/)
+
+
+[TOPIC_HZ=/move_base/goal]$timeout 1 rostopic hz /move_base/goal =====>
+subscribed to [/move_base/goal]
+no new messages
+[TOPIC_TYPE=move_base_msgs/MoveBaseActionGoal]$rosmsg show move_base_msgs/MoveBaseActionGoal =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalID goal_id
+  time stamp
+  string id
+move_base_msgs/MoveBaseGoal goal
+  geometry_msgs/PoseStamped target_pose
+    std_msgs/Header header
+      uint32 seq
+      time stamp
+      string frame_id
+    geometry_msgs/Pose pose
+      geometry_msgs/Point position
+        float64 x
+        float64 y
+        float64 z
+      geometry_msgs/Quaternion orientation
+        float64 x
+        float64 y
+        float64 z
+        float64 w
+
+[TOPIC=/move_base/local_costmap/costmap]$rostopic info /move_base/local_costmap/costmap =====>
+Type: nav_msgs/OccupancyGrid
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/local_costmap/costmap]$timeout 1 rostopic hz /move_base/local_costmap/costmap =====>
+subscribed to [/move_base/local_costmap/costmap]
+no new messages
+[TOPIC_TYPE=nav_msgs/OccupancyGrid]$rosmsg show nav_msgs/OccupancyGrid =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+nav_msgs/MapMetaData info
+  time map_load_time
+  float32 resolution
+  uint32 width
+  uint32 height
+  geometry_msgs/Pose origin
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+int8[] data
+
+[TOPIC=/move_base/local_costmap/costmap_updates]$rostopic info /move_base/local_costmap/costmap_updates =====>
+Type: map_msgs/OccupancyGridUpdate
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/local_costmap/costmap_updates]$timeout 1 rostopic hz /move_base/local_costmap/costmap_updates =====>
+subscribed to [/move_base/local_costmap/costmap_updates]
+[TOPIC_TYPE=map_msgs/OccupancyGridUpdate]$rosmsg show map_msgs/OccupancyGridUpdate =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+int32 x
+int32 y
+uint32 width
+uint32 height
+int8[] data
+
+[TOPIC=/move_base/local_costmap/footprint]$rostopic info /move_base/local_costmap/footprint =====>
+Type: geometry_msgs/PolygonStamped
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: 
+ * /move_base (http://knightcar.local:38720/)
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/move_base/local_costmap/footprint]$timeout 1 rostopic hz /move_base/local_costmap/footprint =====>
+subscribed to [/move_base/local_costmap/footprint]
+average rate: 9.411
+	min: 0.106s max: 0.106s std dev: 0.00000s window: 2
+[TOPIC_TYPE=geometry_msgs/PolygonStamped]$rosmsg show geometry_msgs/PolygonStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Polygon polygon
+  geometry_msgs/Point32[] points
+    float32 x
+    float32 y
+    float32 z
+
+[TOPIC=/move_base/local_costmap/inflation/parameter_descriptions]$rostopic info /move_base/local_costmap/inflation/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/local_costmap/inflation/parameter_descriptions]$timeout 1 rostopic hz /move_base/local_costmap/inflation/parameter_descriptions =====>
+subscribed to [/move_base/local_costmap/inflation/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/move_base/local_costmap/inflation/parameter_updates]$rostopic info /move_base/local_costmap/inflation/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/local_costmap/inflation/parameter_updates]$timeout 1 rostopic hz /move_base/local_costmap/inflation/parameter_updates =====>
+subscribed to [/move_base/local_costmap/inflation/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/move_base/local_costmap/parameter_descriptions]$rostopic info /move_base/local_costmap/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/local_costmap/parameter_descriptions]$timeout 1 rostopic hz /move_base/local_costmap/parameter_descriptions =====>
+subscribed to [/move_base/local_costmap/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/move_base/local_costmap/parameter_updates]$rostopic info /move_base/local_costmap/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/local_costmap/parameter_updates]$timeout 1 rostopic hz /move_base/local_costmap/parameter_updates =====>
+subscribed to [/move_base/local_costmap/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/move_base/local_costmap/sensor/parameter_descriptions]$rostopic info /move_base/local_costmap/sensor/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/local_costmap/sensor/parameter_descriptions]$timeout 1 rostopic hz /move_base/local_costmap/sensor/parameter_descriptions =====>
+subscribed to [/move_base/local_costmap/sensor/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/move_base/local_costmap/sensor/parameter_updates]$rostopic info /move_base/local_costmap/sensor/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/local_costmap/sensor/parameter_updates]$timeout 1 rostopic hz /move_base/local_costmap/sensor/parameter_updates =====>
+subscribed to [/move_base/local_costmap/sensor/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/move_base/parameter_descriptions]$rostopic info /move_base/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/parameter_descriptions]$timeout 1 rostopic hz /move_base/parameter_descriptions =====>
+subscribed to [/move_base/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/move_base/parameter_updates]$rostopic info /move_base/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/parameter_updates]$timeout 1 rostopic hz /move_base/parameter_updates =====>
+subscribed to [/move_base/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/move_base/result]$rostopic info /move_base/result =====>
+Type: move_base_msgs/MoveBaseActionResult
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/result]$timeout 1 rostopic hz /move_base/result =====>
+subscribed to [/move_base/result]
+no new messages
+[TOPIC_TYPE=move_base_msgs/MoveBaseActionResult]$rosmsg show move_base_msgs/MoveBaseActionResult =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus status
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+move_base_msgs/MoveBaseResult result
+
+[TOPIC=/move_base/status]$rostopic info /move_base/status =====>
+Type: actionlib_msgs/GoalStatusArray
+
+Publishers: 
+ * /move_base (http://knightcar.local:38720/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base/status]$timeout 1 rostopic hz /move_base/status =====>
+subscribed to [/move_base/status]
+average rate: 28.422
+	min: 0.035s max: 0.035s std dev: 0.00000s window: 2
+[TOPIC_TYPE=actionlib_msgs/GoalStatusArray]$rosmsg show actionlib_msgs/GoalStatusArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus[] status_list
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+
+[TOPIC=/move_base_simple/goal]$rostopic info /move_base_simple/goal =====>
+Type: geometry_msgs/PoseStamped
+
+Publishers: 
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+Subscribers: 
+ * /move_base (http://knightcar.local:38720/)
+
+
+[TOPIC_HZ=/move_base_simple/goal]$timeout 1 rostopic hz /move_base_simple/goal =====>
+subscribed to [/move_base_simple/goal]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PoseStamped]$rosmsg show geometry_msgs/PoseStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Pose pose
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+
+[TOPIC=/particlecloud]$rostopic info /particlecloud =====>
+Type: geometry_msgs/PoseArray
+
+Publishers: 
+ * /amcl (http://knightcar.local:38847/)
+
+Subscribers: 
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/particlecloud]$timeout 1 rostopic hz /particlecloud =====>
+subscribed to [/particlecloud]
+[TOPIC_TYPE=geometry_msgs/PoseArray]$rosmsg show geometry_msgs/PoseArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Pose[] poses
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+
+[TOPIC=/rf2o_laser_odometry/odom]$rostopic info /rf2o_laser_odometry/odom =====>
+Type: nav_msgs/Odometry
+
+Publishers: 
+ * /rf2o_laser_odometry (http://knightcar.local:45963/)
+
+Subscribers: 
+ * /move_base (http://knightcar.local:38720/)
+
+
+[TOPIC_HZ=/rf2o_laser_odometry/odom]$timeout 1 rostopic hz /rf2o_laser_odometry/odom =====>
+subscribed to [/rf2o_laser_odometry/odom]
+[TOPIC_TYPE=nav_msgs/Odometry]$rosmsg show nav_msgs/Odometry =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string child_frame_id
+geometry_msgs/PoseWithCovariance pose
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  float64[36] covariance
+geometry_msgs/TwistWithCovariance twist
+  geometry_msgs/Twist twist
+    geometry_msgs/Vector3 linear
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Vector3 angular
+      float64 x
+      float64 y
+      float64 z
+  float64[36] covariance
+
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /map_server (http://knightcar.local:35317/)
+ * /base_footprint2base_link (http://knightcar.local:37729/)
+ * /base_link2laser_link (http://knightcar.local:38104/)
+ * /ydlidar_node (http://knightcar.local:34691/)
+ * /amcl (http://knightcar.local:38847/)
+ * /move_base (http://knightcar.local:38720/)
+ * /rf2o_laser_odometry (http://knightcar.local:45963/)
+ * /knightcar/joy (http://knightcar.local:39233/)
+ * /knightcar/wheels_driver_node (http://knightcar.local:44640/)
+ * /knightcar/forward_kinematics_node (http://knightcar.local:39072/)
+ * /knightcar/inverse_kinematics_node (http://knightcar.local:33780/)
+ * /knightcar/joy_mapper_node (http://knightcar.local:45581/)
+ * /knightcar/velocity_to_pose_node (http://knightcar.local:33162/)
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+ * /rqt_gui_py_node_15789 (http://osboxes:40365/)
+
+Subscribers: 
+ * /rosout (http://knightcar.local:40850/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://knightcar.local:40850/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/scan]$rostopic info /scan =====>
+Type: sensor_msgs/LaserScan
+
+Publishers: 
+ * /ydlidar_node (http://knightcar.local:34691/)
+
+Subscribers: 
+ * /rf2o_laser_odometry (http://knightcar.local:45963/)
+ * /amcl (http://knightcar.local:38847/)
+ * /move_base (http://knightcar.local:38720/)
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/scan]$timeout 1 rostopic hz /scan =====>
+[TOPIC_TYPE=sensor_msgs/LaserScan]$rosmsg show sensor_msgs/LaserScan =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 angle_min
+float32 angle_max
+float32 angle_increment
+float32 time_increment
+float32 scan_time
+float32 range_min
+float32 range_max
+float32[] ranges
+float32[] intensities
+
+[TOPIC=/statistics]$rostopic info /statistics =====>
+Type: rosgraph_msgs/TopicStatistics
+
+Publishers: None
+
+Subscribers: 
+ * /rqt_gui_py_node_15789 (http://osboxes:40365/)
+
+
+[TOPIC_HZ=/statistics]$timeout 1 rostopic hz /statistics =====>
+[TOPIC_TYPE=rosgraph_msgs/TopicStatistics]$rosmsg show rosgraph_msgs/TopicStatistics =====>
+string topic
+string node_pub
+string node_sub
+time window_start
+time window_stop
+int32 delivered_msgs
+int32 dropped_msgs
+int32 traffic
+duration period_mean
+duration period_stddev
+duration period_max
+duration stamp_age_mean
+duration stamp_age_stddev
+duration stamp_age_max
+
+[TOPIC=/tf]$rostopic info /tf =====>
+Type: tf2_msgs/TFMessage
+
+Publishers: 
+ * /base_footprint2base_link (http://knightcar.local:37729/)
+ * /base_link2laser_link (http://knightcar.local:38104/)
+ * /rf2o_laser_odometry (http://knightcar.local:45963/)
+ * /amcl (http://knightcar.local:38847/)
+
+Subscribers: 
+ * /move_base (http://knightcar.local:38720/)
+ * /rf2o_laser_odometry (http://knightcar.local:45963/)
+ * /amcl (http://knightcar.local:38847/)
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/tf]$timeout 1 rostopic hz /tf =====>
+[TOPIC_TYPE=tf2_msgs/TFMessage]$rosmsg show tf2_msgs/TFMessage =====>
+geometry_msgs/TransformStamped[] transforms
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string child_frame_id
+  geometry_msgs/Transform transform
+    geometry_msgs/Vector3 translation
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion rotation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[TOPIC=/tf_static]$rostopic info /tf_static =====>
+Type: tf2_msgs/TFMessage
+
+Publishers: None
+
+Subscribers: 
+ * /move_base (http://knightcar.local:38720/)
+ * /rf2o_laser_odometry (http://knightcar.local:45963/)
+ * /amcl (http://knightcar.local:38847/)
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/tf_static]$timeout 1 rostopic hz /tf_static =====>
+[TOPIC_TYPE=tf2_msgs/TFMessage]$rosmsg show tf2_msgs/TFMessage =====>
+geometry_msgs/TransformStamped[] transforms
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string child_frame_id
+  geometry_msgs/Transform transform
+    geometry_msgs/Vector3 translation
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion rotation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[TOPIC=/visualization_marker]$rostopic info /visualization_marker =====>
+Type: visualization_msgs/Marker
+
+Publishers: None
+
+Subscribers: 
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/visualization_marker]$timeout 1 rostopic hz /visualization_marker =====>
+[TOPIC_TYPE=visualization_msgs/Marker]$rosmsg show visualization_msgs/Marker =====>
+uint8 ARROW=0
+uint8 CUBE=1
+uint8 SPHERE=2
+uint8 CYLINDER=3
+uint8 LINE_STRIP=4
+uint8 LINE_LIST=5
+uint8 CUBE_LIST=6
+uint8 SPHERE_LIST=7
+uint8 POINTS=8
+uint8 TEXT_VIEW_FACING=9
+uint8 MESH_RESOURCE=10
+uint8 TRIANGLE_LIST=11
+uint8 ADD=0
+uint8 MODIFY=0
+uint8 DELETE=2
+uint8 DELETEALL=3
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string ns
+int32 id
+int32 type
+int32 action
+geometry_msgs/Pose pose
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+geometry_msgs/Vector3 scale
+  float64 x
+  float64 y
+  float64 z
+std_msgs/ColorRGBA color
+  float32 r
+  float32 g
+  float32 b
+  float32 a
+duration lifetime
+bool frame_locked
+geometry_msgs/Point[] points
+  float64 x
+  float64 y
+  float64 z
+std_msgs/ColorRGBA[] colors
+  float32 r
+  float32 g
+  float32 b
+  float32 a
+string text
+string mesh_resource
+bool mesh_use_embedded_materials
+
+[TOPIC=/visualization_marker_array]$rostopic info /visualization_marker_array =====>
+Type: visualization_msgs/MarkerArray
+
+Publishers: None
+
+Subscribers: 
+ * /rviz_1539833473436817672 (http://osboxes:45153/)
+
+
+[TOPIC_HZ=/visualization_marker_array]$timeout 1 rostopic hz /visualization_marker_array =====>
+subscribed to [/visualization_marker_array]
+[TOPIC_TYPE=visualization_msgs/MarkerArray]$rosmsg show visualization_msgs/MarkerArray =====>
+visualization_msgs/Marker[] markers
+  uint8 ARROW=0
+  uint8 CUBE=1
+  uint8 SPHERE=2
+  uint8 CYLINDER=3
+  uint8 LINE_STRIP=4
+  uint8 LINE_LIST=5
+  uint8 CUBE_LIST=6
+  uint8 SPHERE_LIST=7
+  uint8 POINTS=8
+  uint8 TEXT_VIEW_FACING=9
+  uint8 MESH_RESOURCE=10
+  uint8 TRIANGLE_LIST=11
+  uint8 ADD=0
+  uint8 MODIFY=0
+  uint8 DELETE=2
+  uint8 DELETEALL=3
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string ns
+  int32 id
+  int32 type
+  int32 action
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  geometry_msgs/Vector3 scale
+    float64 x
+    float64 y
+    float64 z
+  std_msgs/ColorRGBA color
+    float32 r
+    float32 g
+    float32 b
+    float32 a
+  duration lifetime
+  bool frame_locked
+  geometry_msgs/Point[] points
+    float64 x
+    float64 y
+    float64 z
+  std_msgs/ColorRGBA[] colors
+    float32 r
+    float32 g
+    float32 b
+    float32 a
+  string text
+  string mesh_resource
+  bool mesh_use_embedded_materials
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>
+[0m[ INFO] [1539834754.486401013]: Recording to 2018-10-17-23-52-34.bag.[0m
+[0m[ INFO] [1539834754.503510226]: Subscribing to /map_metadata[0m
+[0m[ INFO] [1539834754.598482802]: Subscribing to /move_base/global_costmap/costmap_updates[0m
+[0m[ INFO] [1539834754.690068590]: Subscribing to /amcl_pose[0m
+[0m[ INFO] [1539834754.795305758]: Subscribing to /move_base/current_goal[0m
+[0m[ INFO] [1539834754.938670689]: Subscribing to /move_base/parameter_descriptions[0m
+[0m[ INFO] [1539834755.089278061]: Subscribing to /move_base/local_costmap/footprint[0m
+[0m[ INFO] [1539834755.205960999]: Subscribing to /move_base/feedback[0m
+[0m[ INFO] [1539834755.320444441]: Subscribing to /knightcar/joy_mapper_node/joystick_override[0m
+[0m[ INFO] [1539834755.409217917]: Subscribing to /move_base/global_costmap/parameter_updates[0m
+[0m[ INFO] [1539834755.517320317]: Subscribing to /move_base/local_costmap/sensor/parameter_updates[0m
+[0m[ INFO] [1539834755.616182037]: Subscribing to /tf[0m
+[0m[ INFO] [1539834755.716613359]: Subscribing to /clicked_point[0m
+[0m[ INFO] [1539834755.846165781]: Subscribing to /move_base/local_costmap/costmap[0m
+[0m[ INFO] [1539834755.945902393]: Subscribing to /move_base/global_costmap/static/parameter_descriptions[0m
+[0m[ INFO] [1539834756.039967783]: Subscribing to /scan[0m
+[0m[ INFO] [1539834756.142014923]: Subscribing to /move_base/local_costmap/sensor/parameter_descriptions[0m
+[0m[ INFO] [1539834756.248663317]: Subscribing to /move_base/status[0m
+[0m[ INFO] [1539834756.350684997]: Subscribing to /move_base_simple/goal[0m
+[0m[ INFO] [1539834756.452522126]: Subscribing to /knightcar/joy_mapper_node/start_avoidance[0m
+[0m[ INFO] [1539834756.587972748]: Subscribing to /move_base/local_costmap/costmap_updates[0m
+[0m[ INFO] [1539834756.696868873]: Subscribing to /move_base/NavfnROS/plan[0m
+[0m[ INFO] [1539834756.785398206]: Subscribing to /amcl/parameter_updates[0m
+[0m[ INFO] [1539834756.906250991]: Subscribing to /move_base/local_costmap/parameter_descriptions[0m
+[0m[ INFO] [1539834757.039072690]: Subscribing to /move_base/DWAPlannerROS/parameter_descriptions[0m
+[0m[ INFO] [1539834757.137617108]: Subscribing to /move_base/DWAPlannerROS/trajectory_cloud[0m
+[0m[ INFO] [1539834757.246603164]: Subscribing to /move_base/parameter_updates[0m
+[0m[ INFO] [1539834757.346480755]: Subscribing to /move_base/local_costmap/inflation/parameter_descriptions[0m
+[0m[ INFO] [1539834757.461800201]: Subscribing to /particlecloud[0m
+[0m[ INFO] [1539834757.545088142]: Subscribing to /knightcar/joy_mapper_node/car_cmd[0m
+[0m[ INFO] [1539834757.655732508]: Subscribing to /map[0m
+[0m[ INFO] [1539834757.788037831]: Subscribing to /move_base/DWAPlannerROS/global_plan[0m
+[0m[ INFO] [1539834757.878342043]: Subscribing to /rf2o_laser_odometry/odom[0m
+[0m[ INFO] [1539834757.998731831]: Subscribing to /move_base/global_costmap/sensor/parameter_updates[0m
+[0m[ INFO] [1539834758.162031933]: Subscribing to /cmd_vel[0m
+[0m[ INFO] [1539834758.362511754]: Subscribing to /move_base/local_costmap/inflation/parameter_updates[0m
+[0m[ INFO] [1539834758.638477208]: Subscribing to /move_base/DWAPlannerROS/cost_cloud[0m
+[0m[ INFO] [1539834758.894532726]: Subscribing to /move_base/global_costmap/footprint[0m
+[0m[ INFO] [1539834759.295563075]: Subscribing to /move_base/local_costmap/parameter_updates[0m
+[0m[ INFO] [1539834759.581359627]: Subscribing to /rosout[0m
+[0m[ INFO] [1539834759.777354447]: Subscribing to /move_base/goal[0m
+[0m[ INFO] [1539834759.891019024]: Subscribing to /amcl/parameter_descriptions[0m
+[0m[ INFO] [1539834760.112494417]: Subscribing to /rosout_agg[0m
+[0m[ INFO] [1539834760.216208595]: Subscribing to /diagnostics[0m
+[0m[ INFO] [1539834760.340577195]: Subscribing to /move_base/global_costmap/inflation/parameter_updates[0m
+[0m[ INFO] [1539834760.474288419]: Subscribing to /knightcar/wheels_driver_node/wheels_cmd[0m
+[0m[ INFO] [1539834760.594820517]: Subscribing to /move_base/global_costmap/static/parameter_updates[0m
+[0m[ INFO] [1539834760.705749521]: Subscribing to /move_base/DWAPlannerROS/local_plan[0m
+[0m[ INFO] [1539834760.843982063]: Subscribing to /move_base/global_costmap/inflation/parameter_descriptions[0m
+[0m[ INFO] [1539834760.965384146]: Subscribing to /knightcar/forward_kinematics_node/velocity[0m
+[0m[ INFO] [1539834761.089742354]: Subscribing to /knightcar/joy[0m
+[0m[ INFO] [1539834761.201208567]: Subscribing to /knightcar/wheels_driver_node/emergency_stop[0m
+[0m[ INFO] [1539834761.320828797]: Subscribing to /initialpose[0m
+[0m[ INFO] [1539834761.432927601]: Subscribing to /move_base/result[0m
+[0m[ INFO] [1539834761.548126607]: Subscribing to /move_base/global_costmap/sensor/parameter_descriptions[0m
+[0m[ INFO] [1539834761.654711769]: Subscribing to /move_base/global_costmap/costmap[0m
+[0m[ INFO] [1539834761.758388498]: Subscribing to /knightcar/velocity_to_pose_node/pose[0m
+[0m[ INFO] [1539834761.887016764]: Subscribing to /knightcar/anti_instagram_node/click[0m
+[0m[ INFO] [1539834762.022216606]: Subscribing to /knightcar/joy_mapper_node/parallel_autonomy[0m
+[0m[ INFO] [1539834762.213475849]: Subscribing to /move_base/global_costmap/parameter_descriptions[0m
+[0m[ INFO] [1539834762.655043723]: Subscribing to /move_base/DWAPlannerROS/parameter_updates[0m
+[0m[ INFO] [1539834762.985383676]: Subscribing to /knightcar/wheels_driver_node/wheels_cmd_executed[0m
+invalid option [B[B[B1

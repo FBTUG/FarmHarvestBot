@@ -1,0 +1,117 @@
+amcl: {base_frame_id: /base_footprint, beam_skip_distance: 0.5, beam_skip_threshold: 0.3,
+  do_beamskip: false, first_map_only: true, global_frame_id: /map, gui_publish_rate: 10.0,
+  initial_cov_aa: 0.0008569276368175595, initial_cov_xx: 2.533366253379063e-05, initial_cov_yy: 0.00027703001931218135,
+  initial_pose_a: -0.43041509265354255, initial_pose_x: 0.07844151988031123, initial_pose_y: 0.047004496052115985,
+  kld_err: 0.05, kld_z: 0.99, laser_lambda_short: 0.1, laser_likelihood_max_dist: 2.0,
+  laser_max_beams: 50, laser_max_range: -1.0, laser_min_range: -1.0, laser_model_type: likelihood_field,
+  laser_sigma_hit: 0.2, laser_z_hit: 0.5, laser_z_max: 0.05, laser_z_rand: 0.5, laser_z_short: 0.05,
+  max_particles: 1000, min_particles: 500, odom_alpha1: 0.2, odom_alpha2: 0.2, odom_alpha3: 0.8,
+  odom_alpha4: 0.2, odom_alpha5: 0.2, odom_frame_id: /odom, odom_model_type: diff,
+  recovery_alpha_fast: 0.1, recovery_alpha_slow: 0.0, resample_interval: 1, restore_defaults: false,
+  save_pose_rate: 0.5, tf_broadcast: true, transform_tolerance: 0.1, update_min_a: 0.01,
+  update_min_d: 0.01, use_map_topic: true}
+knightcar:
+  forward_kinematics_node: {baseline: 0.1, gain: 2.0, k: 27.0, radius: 0.0318, trim: -0.07999999821186066}
+  inverse_kinematics_node: {baseline: 0.1, gain: 2.0, k: 27.0, limit: 1.0, radius: 0.0318,
+    trim: -0.07999999821186066}
+  joy: {autorepeat_rate: 2.0, coalesce_interval: 0.02, deadzone: 0.01, dev: /dev/input/js0}
+  joy_mapper_node: {bicycle_kinematics: 0.0, simulated_vehicle_length: 0.18, speed_gain: 0.41,
+    steer_angle_gain: 1.04, steer_gain: 8.3}
+move_base:
+  DWAPlannerROS: {acc_lim_th: 0.2, acc_lim_theta: 3.2, acc_lim_x: 1.0, acc_lim_y: 0.0,
+    acc_limit_trans: 0.1, angular_sim_granularity: 0.1, forward_point_distance: 0.5,
+    goal_distance_bias: 32.0, max_rot_vel: 0.3, max_scaling_factor: 0.2, max_trans_vel: 3.0,
+    max_vel_x: 3.0, max_vel_y: 0.0, min_rot_vel: 0.06, min_trans_vel: 0.0, min_vel_x: -1.0,
+    min_vel_y: 0.0, occdist_scale: 0.01, oscillation_reset_angle: 0.2, oscillation_reset_dist: 0.05,
+    path_distance_bias: 24.0, prune_plan: false, restore_defaults: false, rot_stopped_vel: 0.01,
+    scaling_speed: 1.0, sim_granularity: 0.05, sim_time: 1.5, stop_time_buffer: 0.2,
+    trans_stopped_vel: 0.01, twirling_scale: 0.0, use_dwa: true, vth_samples: 20,
+    vtheta_samples: 10, vx_samples: 20, vy_samples: 1, xy_goal_tolerance: 0.2, yaw_goal_tolerance: 0.8}
+  aggressive_reset: {reset_distance: 1.84}
+  base_global_planner: navfn/NavfnROS
+  base_local_planner: dwa_local_planner/DWAPlannerROS
+  clearing_rotation_allowed: false
+  conservative_reset: {reset_distance: 3.0}
+  conservative_reset_dist: 3.0
+  controller_frequency: 10.0
+  controller_patience: 3.0
+  global_costmap:
+    footprint: '[[-0.305,-0.18],[-0.305,0.18],[0.305,0.18],[0.305,-0.18]]'
+    footprint_padding: 0.01
+    global_frame: map
+    height: 10
+    inflation: {cost_scaling_factor: 6.0, enabled: true, inflate_unknown: false, inflation_radius: 2.5}
+    origin_x: 0.0
+    origin_y: 0.0
+    plugins:
+    - {name: static, type: 'costmap_2d::StaticLayer'}
+    - {name: sensor, type: 'costmap_2d::ObstacleLayer'}
+    - {name: inflation, type: 'costmap_2d::InflationLayer'}
+    publish_frequency: 5.0
+    resolution: 0.05
+    robot_base_frame: base_footprint
+    robot_radius: 0.46
+    rolling_window: false
+    sensor:
+      combination_method: 1
+      enabled: true
+      footprint_clearing_enabled: true
+      laser_scan_sensor: {clearing: true, data_type: LaserScan, marking: true, sensor_frame: laser,
+        topic: scan}
+      max_obstacle_height: 2.0
+      observation_sources: laser_scan_sensor
+    static: {enabled: true, map_topic: /map, subscribe_to_updates: true}
+    track_unknown_space: true
+    transform_tolerance: 1.0
+    update_frequency: 5.0
+    width: 10
+  local_costmap:
+    footprint: '[[-0.305,-0.18],[-0.305,0.18],[0.305,0.18],[0.305,-0.18]]'
+    footprint_padding: 0.01
+    global_frame: /odom
+    height: 2
+    inflation: {cost_scaling_factor: 8.0, enabled: true, inflate_unknown: false, inflation_radius: 2.5}
+    origin_x: 0.0
+    origin_y: 0.0
+    plugins:
+    - {name: sensor, type: 'costmap_2d::ObstacleLayer'}
+    - {name: inflation, type: 'costmap_2d::InflationLayer'}
+    publish_frequency: 10.0
+    resolution: 0.1
+    robot_base_frame: /base_footprint
+    robot_radius: 0.46
+    rolling_window: true
+    sensor:
+      combination_method: 1
+      enabled: true
+      footprint_clearing_enabled: true
+      laser_scan_sensor: {clearing: true, data_type: LaserScan, marking: true, sensor_frame: laser,
+        topic: scan}
+      max_obstacle_height: 2.0
+      observation_sources: laser_scan_sensor
+    static_map: false
+    transform_tolerance: 1.0
+    update_frequency: 10.0
+    width: 2
+  max_planning_retries: -1
+  oscillation_distance: 0.2
+  oscillation_timeout: 10.0
+  planner_frequency: 10.0
+  planner_patience: 5.0
+  recovery_behavior_enabled: true
+  restore_defaults: false
+  shutdown_costmaps: false
+nav_cmd_mapper: {speed_gain: 1, steer_gain: 3.3}
+rf2o_laser_odometry: {base_frame_id: base_footprint, freq: 10.0, laser_scan_topic: scan,
+  odom_frame_id: odom}
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_knightcar_local__33943: 'http://knightcar.local:33943/', host_knightcar_local__34455: 'http://knightcar.local:34455/',
+    host_knightcar_local__34771: 'http://knightcar.local:34771/', host_knightcar_local__37212: 'http://knightcar.local:37212/',
+    host_knightcar_local__43826: 'http://knightcar.local:43826/'}
+rosversion: '1.12.12
+
+  '
+run_id: 1eb24df8-d286-11e8-89fa-b827eb3fef1b

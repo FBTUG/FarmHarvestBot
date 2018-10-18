@@ -4,10 +4,8 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /Global Options1
         - /Status1
-        - /Map1
-        - /Robot Footprint1
-        - /Particle Cloud1
         - /Obstacles1
         - /Local Plan1
         - /Global Plan1
@@ -141,7 +139,7 @@ Visualization Manager:
       Radius: 0.0299999993
       Shaft Diameter: 0.100000001
       Shaft Length: 0.100000001
-      Topic: /move_base/DWAPlannerROS/global_plan
+      Topic: /move_base/NavfnROS/plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -164,14 +162,14 @@ Visualization Manager:
       Radius: 0.0299999993
       Shaft Diameter: 0.100000001
       Shaft Length: 0.100000001
-      Topic: /move_base/NavfnROS/plan
+      Topic: /move_base/DWAPlannerROS/local_plan
       Unreliable: false
       Value: true
     - Alpha: 1
       Axes Length: 1
       Axes Radius: 0.100000001
       Class: rviz/Pose
-      Color: 255; 25; 0
+      Color: 255; 170; 0
       Enabled: true
       Head Length: 0.300000012
       Head Radius: 0.100000001
@@ -216,7 +214,7 @@ Visualization Manager:
   Global Options:
     Background Color: 0; 255; 127
     Default Light: true
-    Fixed Frame: map
+    Fixed Frame: base_link
     Frame Rate: 1
   Name: root
   Tools:
@@ -238,7 +236,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: 0.37499997
+      Angle: 0.809999824
       Class: rviz/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
