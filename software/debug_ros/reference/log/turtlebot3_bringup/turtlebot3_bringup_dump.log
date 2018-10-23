@@ -1,0 +1,855 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[PARAM_DUMP]$rosparam dump debug_ros_param.yaml =====>
+[NODE_LIST]$rosnode list =====>
+/rosout
+/turtlebot3_core
+/turtlebot3_diagnostics
+[SRV_LIST]$rossrv list =====>
+app_manager/GetAppDetails
+app_manager/GetInstallationState
+app_manager/InstallApp
+app_manager/ListApps
+app_manager/StartApp
+app_manager/StopApp
+app_manager/UninstallApp
+astra_camera/GetSerial
+capabilities/EstablishBond
+capabilities/FreeCapability
+capabilities/GetCapabilitySpec
+capabilities/GetCapabilitySpecs
+capabilities/GetInterfaces
+capabilities/GetNodeletManagerName
+capabilities/GetProviders
+capabilities/GetRemappings
+capabilities/GetRunningCapabilities
+capabilities/GetSemanticInterfaces
+capabilities/StartCapability
+capabilities/StopCapability
+capabilities/UseCapability
+control_msgs/QueryCalibrationState
+control_msgs/QueryTrajectoryState
+control_toolbox/SetPidGains
+controller_manager_msgs/ListControllerTypes
+controller_manager_msgs/ListControllers
+controller_manager_msgs/LoadController
+controller_manager_msgs/ReloadControllerLibraries
+controller_manager_msgs/SwitchController
+controller_manager_msgs/UnloadController
+create_node/SetDigitalOutputs
+create_node/SetTurtlebotMode
+diagnostic_msgs/AddDiagnostics
+diagnostic_msgs/SelfTest
+dynamic_reconfigure/Reconfigure
+ethercat_hardware/SoftProcessorFirmwareRead
+ethercat_hardware/SoftProcessorFirmwareWrite
+ethercat_hardware/SoftProcessorReset
+ethercat_trigger_controllers/SetMultiWaveform
+ethercat_trigger_controllers/SetWaveform
+gateway_msgs/Advertise
+gateway_msgs/AdvertiseAll
+gateway_msgs/ConnectHub
+gateway_msgs/Remote
+gateway_msgs/RemoteAll
+gateway_msgs/RemoteGatewayInfo
+gateway_msgs/SetWatcherPeriod
+gazebo_msgs/ApplyBodyWrench
+gazebo_msgs/ApplyJointEffort
+gazebo_msgs/BodyRequest
+gazebo_msgs/DeleteLight
+gazebo_msgs/DeleteModel
+gazebo_msgs/GetJointProperties
+gazebo_msgs/GetLightProperties
+gazebo_msgs/GetLinkProperties
+gazebo_msgs/GetLinkState
+gazebo_msgs/GetModelProperties
+gazebo_msgs/GetModelState
+gazebo_msgs/GetPhysicsProperties
+gazebo_msgs/GetWorldProperties
+gazebo_msgs/JointRequest
+gazebo_msgs/SetJointProperties
+gazebo_msgs/SetJointTrajectory
+gazebo_msgs/SetLightProperties
+gazebo_msgs/SetLinkProperties
+gazebo_msgs/SetLinkState
+gazebo_msgs/SetModelConfiguration
+gazebo_msgs/SetModelState
+gazebo_msgs/SetPhysicsProperties
+gazebo_msgs/SpawnModel
+laser_assembler/AssembleScans
+laser_assembler/AssembleScans2
+map_msgs/GetMapROI
+map_msgs/GetPointMap
+map_msgs/GetPointMapROI
+map_msgs/ProjectedMapsInfo
+map_msgs/SaveMap
+map_msgs/SetMapProjections
+microstrain_3dmgx2_imu/AddOffset
+moveit_msgs/ApplyPlanningScene
+moveit_msgs/CheckIfRobotStateExistsInWarehouse
+moveit_msgs/DeleteRobotStateFromWarehouse
+moveit_msgs/ExecuteKnownTrajectory
+moveit_msgs/GetCartesianPath
+moveit_msgs/GetMotionPlan
+moveit_msgs/GetPlannerParams
+moveit_msgs/GetPlanningScene
+moveit_msgs/GetPositionFK
+moveit_msgs/GetPositionIK
+moveit_msgs/GetRobotStateFromWarehouse
+moveit_msgs/GetStateValidity
+moveit_msgs/GraspPlanning
+moveit_msgs/ListRobotStatesInWarehouse
+moveit_msgs/LoadMap
+moveit_msgs/QueryPlannerInterfaces
+moveit_msgs/RenameRobotStateInWarehouse
+moveit_msgs/SaveMap
+moveit_msgs/SaveRobotStateToWarehouse
+moveit_msgs/SetPlannerParams
+nav_msgs/GetMap
+nav_msgs/GetPlan
+nav_msgs/SetMap
+navfn/MakeNavPlan
+navfn/SetCostmap
+nodelet/NodeletList
+nodelet/NodeletLoad
+nodelet/NodeletUnload
+object_recognition_msgs/GetObjectInformation
+octomap_msgs/BoundingBoxQuery
+octomap_msgs/GetOctomap
+openni2_camera/GetSerial
+polled_camera/GetPolledImage
+pr2_calibration_launch/FkTest
+pr2_controllers_msgs/QueryCalibrationState
+pr2_controllers_msgs/QueryTrajectoryState
+pr2_gazebo_plugins/SetModelsJointsStates
+pr2_mechanism_controllers/SetProfile
+pr2_mechanism_msgs/ListControllerTypes
+pr2_mechanism_msgs/ListControllers
+pr2_mechanism_msgs/LoadController
+pr2_mechanism_msgs/ReloadControllerLibraries
+pr2_mechanism_msgs/SwitchController
+pr2_mechanism_msgs/UnloadController
+pr2_msgs/SetLaserTrajCmd
+pr2_msgs/SetPeriodicCmd
+pr2_power_board/PowerBoardCommand
+pr2_power_board/PowerBoardCommand2
+realsense_camera/CameraConfiguration
+realsense_camera/ForcePower
+realsense_camera/GetIMUInfo
+realsense_camera/IsPowered
+realsense_camera/SetPower
+robot_pose_ekf/GetStatus
+rocon_app_manager_msgs/GetRappList
+rocon_app_manager_msgs/Init
+rocon_app_manager_msgs/Invite
+rocon_app_manager_msgs/StartRapp
+rocon_app_manager_msgs/StopRapp
+rocon_interaction_msgs/GetInteraction
+rocon_interaction_msgs/GetInteractions
+rocon_interaction_msgs/GetPairings
+rocon_interaction_msgs/RequestInteraction
+rocon_interaction_msgs/SetInteractions
+rocon_interaction_msgs/StartPairing
+rocon_interaction_msgs/StopPairing
+rocon_std_msgs/EmptyString
+roscpp/Empty
+roscpp/GetLoggers
+roscpp/SetLoggerLevel
+roscpp_tutorials/TwoInts
+rospy_tutorials/AddTwoInts
+rospy_tutorials/BadTwoInts
+rosserial_arduino/Test
+rosserial_msgs/RequestMessageInfo
+rosserial_msgs/RequestParam
+rosserial_msgs/RequestServiceInfo
+sensor_msgs/SetCameraInfo
+std_srvs/Empty
+std_srvs/SetBool
+std_srvs/Trigger
+tf/FrameGraph
+tf2_msgs/FrameGraph
+topic_tools/DemuxAdd
+topic_tools/DemuxDelete
+topic_tools/DemuxList
+topic_tools/DemuxSelect
+topic_tools/MuxAdd
+topic_tools/MuxDelete
+topic_tools/MuxList
+topic_tools/MuxSelect
+turtlesim/Kill
+turtlesim/SetPen
+turtlesim/Spawn
+turtlesim/TeleportAbsolute
+turtlesim/TeleportRelative
+wge100_camera/BoardConfig
+zeroconf_msgs/AddListener
+zeroconf_msgs/AddService
+zeroconf_msgs/ListDiscoveredServices
+zeroconf_msgs/ListPublishedServices
+zeroconf_msgs/RemoveListener
+zeroconf_msgs/RemoveService
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://192.168.0.20:44322/ ...
+Pid: 11226
+Connections:
+ * topic: /rosout_agg
+    * to: /rostopic_10631_1540290993998
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout_agg
+    * to: /record_1540291007051035216
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /turtlebot3_diagnostics (http://192.168.0.20:36051/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /turtlebot3_core (http://192.168.0.20:40620/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/turtlebot3_core]$rosnode info /turtlebot3_core =====>
+--------------------------------------------------------------------------------
+Node [/turtlebot3_core]
+Publications: 
+ * /battery_state [sensor_msgs/BatteryState]
+ * /cmd_vel_rc100 [geometry_msgs/Twist]
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /firmware_version [turtlebot3_msgs/VersionInfo]
+ * /imu [sensor_msgs/Imu]
+ * /joint_states [sensor_msgs/JointState]
+ * /magnetic_field [sensor_msgs/MagneticField]
+ * /odom [nav_msgs/Odometry]
+ * /rosout [rosgraph_msgs/Log]
+ * /sensor_state [turtlebot3_msgs/SensorState]
+ * /tf [tf/tfMessage]
+
+Subscriptions: 
+ * /cmd_vel [unknown type]
+ * /motor_power [unknown type]
+ * /reset [unknown type]
+ * /sound [unknown type]
+
+Services: 
+ * /turtlebot3_core/get_loggers
+ * /turtlebot3_core/set_logger_level
+
+
+contacting node http://192.168.0.20:40620/ ...
+Pid: 11441
+Connections:
+ * topic: /firmware_version
+    * to: /turtlebot3_diagnostics
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /imu
+    * to: /turtlebot3_diagnostics
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sensor_state
+    * to: /turtlebot3_diagnostics
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/turtlebot3_diagnostics]$rosnode info /turtlebot3_diagnostics =====>
+--------------------------------------------------------------------------------
+Node [/turtlebot3_diagnostics]
+Publications: 
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /rosout [rosgraph_msgs/Log]
+ * /version_info [turtlebot3_msgs/VersionInfo]
+
+Subscriptions: 
+ * /firmware_version [turtlebot3_msgs/VersionInfo]
+ * /imu [sensor_msgs/Imu]
+ * /scan [unknown type]
+ * /sensor_state [turtlebot3_msgs/SensorState]
+
+Services: 
+ * /turtlebot3_diagnostics/get_loggers
+ * /turtlebot3_diagnostics/set_logger_level
+
+
+contacting node http://192.168.0.20:36051/ ...
+Pid: 11443
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rostopic_9615_1540290527056
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /record_1540290545830383161
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rostopic_10607_1540290991916
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /record_1540291007051035216
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /imu
+    * to: /turtlebot3_core (http://192.168.0.20:40620/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sensor_state
+    * to: /turtlebot3_core (http://192.168.0.20:40620/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /firmware_version
+    * to: /turtlebot3_core (http://192.168.0.20:40620/)
+    * direction: inbound
+    * transport: TCPROS
+
+[TOPIC_LIST]$rostopic list =====>
+/battery_state
+/cmd_vel
+/cmd_vel_rc100
+/diagnostics
+/firmware_version
+/imu
+/joint_states
+/magnetic_field
+/motor_power
+/odom
+/reset
+/rosout
+/rosout_agg
+/scan
+/sensor_state
+/sound
+/tf
+/version_info
+[TOPIC=/battery_state]$rostopic info /battery_state =====>
+Type: sensor_msgs/BatteryState
+
+Publishers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/battery_state]$timeout 1 rostopic hz /battery_state =====>
+subscribed to [/battery_state]
+average rate: 23.783
+	min: 0.026s max: 0.049s std dev: 0.00815s window: 11
+[TOPIC_TYPE=sensor_msgs/BatteryState]$rosmsg show sensor_msgs/BatteryState =====>
+uint8 POWER_SUPPLY_STATUS_UNKNOWN=0
+uint8 POWER_SUPPLY_STATUS_CHARGING=1
+uint8 POWER_SUPPLY_STATUS_DISCHARGING=2
+uint8 POWER_SUPPLY_STATUS_NOT_CHARGING=3
+uint8 POWER_SUPPLY_STATUS_FULL=4
+uint8 POWER_SUPPLY_HEALTH_UNKNOWN=0
+uint8 POWER_SUPPLY_HEALTH_GOOD=1
+uint8 POWER_SUPPLY_HEALTH_OVERHEAT=2
+uint8 POWER_SUPPLY_HEALTH_DEAD=3
+uint8 POWER_SUPPLY_HEALTH_OVERVOLTAGE=4
+uint8 POWER_SUPPLY_HEALTH_UNSPEC_FAILURE=5
+uint8 POWER_SUPPLY_HEALTH_COLD=6
+uint8 POWER_SUPPLY_HEALTH_WATCHDOG_TIMER_EXPIRE=7
+uint8 POWER_SUPPLY_HEALTH_SAFETY_TIMER_EXPIRE=8
+uint8 POWER_SUPPLY_TECHNOLOGY_UNKNOWN=0
+uint8 POWER_SUPPLY_TECHNOLOGY_NIMH=1
+uint8 POWER_SUPPLY_TECHNOLOGY_LION=2
+uint8 POWER_SUPPLY_TECHNOLOGY_LIPO=3
+uint8 POWER_SUPPLY_TECHNOLOGY_LIFE=4
+uint8 POWER_SUPPLY_TECHNOLOGY_NICD=5
+uint8 POWER_SUPPLY_TECHNOLOGY_LIMN=6
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 voltage
+float32 current
+float32 charge
+float32 capacity
+float32 design_capacity
+float32 percentage
+uint8 power_supply_status
+uint8 power_supply_health
+uint8 power_supply_technology
+bool present
+float32[] cell_voltage
+string location
+string serial_number
+
+[TOPIC=/cmd_vel]$rostopic info /cmd_vel =====>
+Type: geometry_msgs/Twist
+
+Publishers: None
+
+Subscribers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+
+[TOPIC_HZ=/cmd_vel]$timeout 1 rostopic hz /cmd_vel =====>
+subscribed to [/cmd_vel]
+no new messages
+[TOPIC_TYPE=geometry_msgs/Twist]$rosmsg show geometry_msgs/Twist =====>
+geometry_msgs/Vector3 linear
+  float64 x
+  float64 y
+  float64 z
+geometry_msgs/Vector3 angular
+  float64 x
+  float64 y
+  float64 z
+
+[TOPIC=/cmd_vel_rc100]$rostopic info /cmd_vel_rc100 =====>
+Type: geometry_msgs/Twist
+
+Publishers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/cmd_vel_rc100]$timeout 1 rostopic hz /cmd_vel_rc100 =====>
+subscribed to [/cmd_vel_rc100]
+average rate: 26.911
+	min: 0.014s max: 0.049s std dev: 0.01190s window: 13
+[TOPIC_TYPE=geometry_msgs/Twist]$rosmsg show geometry_msgs/Twist =====>
+geometry_msgs/Vector3 linear
+  float64 x
+  float64 y
+  float64 z
+geometry_msgs/Vector3 angular
+  float64 x
+  float64 y
+  float64 z
+
+[TOPIC=/diagnostics]$rostopic info /diagnostics =====>
+Type: diagnostic_msgs/DiagnosticArray
+
+Publishers: 
+ * /turtlebot3_diagnostics (http://192.168.0.20:36051/)
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/diagnostics]$timeout 1 rostopic hz /diagnostics =====>
+subscribed to [/diagnostics]
+no new messages
+[TOPIC_TYPE=diagnostic_msgs/DiagnosticArray]$rosmsg show diagnostic_msgs/DiagnosticArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+diagnostic_msgs/DiagnosticStatus[] status
+  byte OK=0
+  byte WARN=1
+  byte ERROR=2
+  byte STALE=3
+  byte level
+  string name
+  string message
+  string hardware_id
+  diagnostic_msgs/KeyValue[] values
+    string key
+    string value
+
+[TOPIC=/firmware_version]$rostopic info /firmware_version =====>
+Type: turtlebot3_msgs/VersionInfo
+
+Publishers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+Subscribers: 
+ * /turtlebot3_diagnostics (http://192.168.0.20:36051/)
+
+
+[TOPIC_HZ=/firmware_version]$timeout 1 rostopic hz /firmware_version =====>
+subscribed to [/firmware_version]
+no new messages
+[TOPIC_TYPE=turtlebot3_msgs/VersionInfo]$rosmsg show turtlebot3_msgs/VersionInfo =====>
+string hardware
+string firmware
+string software
+
+[TOPIC=/imu]$rostopic info /imu =====>
+Type: sensor_msgs/Imu
+
+Publishers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+Subscribers: 
+ * /turtlebot3_diagnostics (http://192.168.0.20:36051/)
+
+
+[TOPIC_HZ=/imu]$timeout 1 rostopic hz /imu =====>
+subscribed to [/imu]
+average rate: 125.689
+	min: 0.000s max: 0.025s std dev: 0.00632s window: 60
+[TOPIC_TYPE=sensor_msgs/Imu]$rosmsg show sensor_msgs/Imu =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Quaternion orientation
+  float64 x
+  float64 y
+  float64 z
+  float64 w
+float64[9] orientation_covariance
+geometry_msgs/Vector3 angular_velocity
+  float64 x
+  float64 y
+  float64 z
+float64[9] angular_velocity_covariance
+geometry_msgs/Vector3 linear_acceleration
+  float64 x
+  float64 y
+  float64 z
+float64[9] linear_acceleration_covariance
+
+[TOPIC=/joint_states]$rostopic info /joint_states =====>
+Type: sensor_msgs/JointState
+
+Publishers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/joint_states]$timeout 1 rostopic hz /joint_states =====>
+subscribed to [/joint_states]
+average rate: 29.255
+	min: 0.009s max: 0.050s std dev: 0.01435s window: 13
+[TOPIC_TYPE=sensor_msgs/JointState]$rosmsg show sensor_msgs/JointState =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string[] name
+float64[] position
+float64[] velocity
+float64[] effort
+
+[TOPIC=/magnetic_field]$rostopic info /magnetic_field =====>
+Type: sensor_msgs/MagneticField
+
+Publishers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/magnetic_field]$timeout 1 rostopic hz /magnetic_field =====>
+subscribed to [/magnetic_field]
+average rate: 133.601
+	min: 0.002s max: 0.022s std dev: 0.00548s window: 55
+[TOPIC_TYPE=sensor_msgs/MagneticField]$rosmsg show sensor_msgs/MagneticField =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Vector3 magnetic_field
+  float64 x
+  float64 y
+  float64 z
+float64[9] magnetic_field_covariance
+
+[TOPIC=/motor_power]$rostopic info /motor_power =====>
+Type: std_msgs/Bool
+
+Publishers: None
+
+Subscribers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+
+[TOPIC_HZ=/motor_power]$timeout 1 rostopic hz /motor_power =====>
+subscribed to [/motor_power]
+no new messages
+[TOPIC_TYPE=std_msgs/Bool]$rosmsg show std_msgs/Bool =====>
+bool data
+
+[TOPIC=/odom]$rostopic info /odom =====>
+Type: nav_msgs/Odometry
+
+Publishers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/odom]$timeout 1 rostopic hz /odom =====>
+subscribed to [/odom]
+[TOPIC_TYPE=nav_msgs/Odometry]$rosmsg show nav_msgs/Odometry =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string child_frame_id
+geometry_msgs/PoseWithCovariance pose
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  float64[36] covariance
+geometry_msgs/TwistWithCovariance twist
+  geometry_msgs/Twist twist
+    geometry_msgs/Vector3 linear
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Vector3 angular
+      float64 x
+      float64 y
+      float64 z
+  float64[36] covariance
+
+[TOPIC=/reset]$rostopic info /reset =====>
+Type: std_msgs/Empty
+
+Publishers: None
+
+Subscribers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+
+[TOPIC_HZ=/reset]$timeout 1 rostopic hz /reset =====>
+subscribed to [/reset]
+no new messages
+[TOPIC_TYPE=std_msgs/Empty]$rosmsg show std_msgs/Empty =====>
+
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /turtlebot3_diagnostics (http://192.168.0.20:36051/)
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+Subscribers: 
+ * /rosout (http://192.168.0.20:44322/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://192.168.0.20:44322/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+subscribed to [/rosout_agg]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/scan]$rostopic info /scan =====>
+Type: sensor_msgs/LaserScan
+
+Publishers: None
+
+Subscribers: 
+ * /turtlebot3_diagnostics (http://192.168.0.20:36051/)
+
+
+[TOPIC_HZ=/scan]$timeout 1 rostopic hz /scan =====>
+subscribed to [/scan]
+no new messages
+[TOPIC_TYPE=sensor_msgs/LaserScan]$rosmsg show sensor_msgs/LaserScan =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 angle_min
+float32 angle_max
+float32 angle_increment
+float32 time_increment
+float32 scan_time
+float32 range_min
+float32 range_max
+float32[] ranges
+float32[] intensities
+
+[TOPIC=/sensor_state]$rostopic info /sensor_state =====>
+Type: turtlebot3_msgs/SensorState
+
+Publishers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+Subscribers: 
+ * /turtlebot3_diagnostics (http://192.168.0.20:36051/)
+
+
+[TOPIC_HZ=/sensor_state]$timeout 1 rostopic hz /sensor_state =====>
+subscribed to [/sensor_state]
+no new messages
+[TOPIC_TYPE=turtlebot3_msgs/SensorState]$rosmsg show turtlebot3_msgs/SensorState =====>
+uint8 BUMPER_FORWARD=1
+uint8 BUMPER_BACKWARD=2
+uint8 CLIFF=1
+uint8 SONAR=1
+uint8 ILLUMINATION=1
+uint8 BUTTON0=1
+uint8 BUTTON1=2
+uint8 ERROR_LEFT_MOTOR=1
+uint8 ERROR_RIGHT_MOTOR=2
+uint8 TORQUE_ON=1
+uint8 TORQUE_OFF=2
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint8 bumper
+float32 cliff
+float32 sonar
+float32 illumination
+uint8 led
+uint8 button
+bool torque
+int32 left_encoder
+int32 right_encoder
+float32 battery
+
+[TOPIC=/sound]$rostopic info /sound =====>
+Type: turtlebot3_msgs/Sound
+
+Publishers: None
+
+Subscribers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+
+[TOPIC_HZ=/sound]$timeout 1 rostopic hz /sound =====>
+subscribed to [/sound]
+no new messages
+[TOPIC_TYPE=turtlebot3_msgs/Sound]$rosmsg show turtlebot3_msgs/Sound =====>
+uint8 OFF=0
+uint8 ON=1
+uint8 LOW_BATTERY=2
+uint8 ERROR=3
+uint8 BUTTON1=4
+uint8 BUTTON2=5
+uint8 value
+
+[TOPIC=/tf]$rostopic info /tf =====>
+Type: tf/tfMessage
+
+Publishers: 
+ * /turtlebot3_core (http://192.168.0.20:40620/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/tf]$timeout 1 rostopic hz /tf =====>
+subscribed to [/tf]
+[TOPIC_TYPE=tf/tfMessage]$rosmsg show tf/tfMessage =====>
+geometry_msgs/TransformStamped[] transforms
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string child_frame_id
+  geometry_msgs/Transform transform
+    geometry_msgs/Vector3 translation
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion rotation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[TOPIC=/version_info]$rostopic info /version_info =====>
+Type: turtlebot3_msgs/VersionInfo
+
+Publishers: 
+ * /turtlebot3_diagnostics (http://192.168.0.20:36051/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/version_info]$timeout 1 rostopic hz /version_info =====>
+subscribed to [/version_info]
+no new messages
+[TOPIC_TYPE=turtlebot3_msgs/VersionInfo]$rosmsg show turtlebot3_msgs/VersionInfo =====>
+string hardware
+string firmware
+string software
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>
+[0m[ INFO] [1540291129.022810521]: Recording to 2018-10-23-06-38-49.bag.[0m
+[0m[ INFO] [1540291129.037079381]: Subscribing to /firmware_version[0m
+[0m[ INFO] [1540291129.111140229]: Subscribing to /version_info[0m
+[0m[ INFO] [1540291129.187297024]: Subscribing to /battery_state[0m
+[0m[ INFO] [1540291129.263485961]: Subscribing to /joint_states[0m
+[0m[ INFO] [1540291129.340127743]: Subscribing to /rosout[0m
+[0m[ INFO] [1540291129.417354942]: Subscribing to /rosout_agg[0m
+[0m[ INFO] [1540291129.501006509]: Subscribing to /cmd_vel_rc100[0m
+[0m[ INFO] [1540291129.580371876]: Subscribing to /imu[0m
+[0m[ INFO] [1540291129.662847580]: Subscribing to /odom[0m
+[0m[ INFO] [1540291129.741597649]: Subscribing to /tf[0m
+[0m[ INFO] [1540291129.819694439]: Subscribing to /diagnostics[0m
+[0m[ INFO] [1540291129.906853290]: Subscribing to /sensor_state[0m
+[0m[ INFO] [1540291130.000923965]: Subscribing to /magnetic_field[0m

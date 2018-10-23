@@ -1,0 +1,238 @@
+[rospy.client][INFO] 2018-10-23 18:20:01,874: init_node, name[/turtlebot3_core], pid[11269]
+[xmlrpc][INFO] 2018-10-23 18:20:01,877: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-23 18:20:01,879: Started XML-RPC server [http://192.168.0.20:36901/]
+[rospy.init][INFO] 2018-10-23 18:20:01,879: ROS Slave URI: [http://192.168.0.20:36901/]
+[rospy.impl.masterslave][INFO] 2018-10-23 18:20:01,880: _ready: http://192.168.0.20:36901/
+[rospy.registration][INFO] 2018-10-23 18:20:01,885: Registering with master node http://192.168.0.20:11311
+[xmlrpc][INFO] 2018-10-23 18:20:01,886: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-23 18:20:01,981: registered with master
+[rospy.rosout][INFO] 2018-10-23 18:20:01,982: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-23 18:20:01,995: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-23 18:20:02,003: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-23 18:20:02,023: ROS Serial Python Node
+[rosout][INFO] 2018-10-23 18:20:02,059: Connecting to /dev/ttyACM0 at 115200 baud
+[rosout][ERROR] 2018-10-23 18:20:02,077: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rospy.core][INFO] 2018-10-23 18:20:02,079: signal_shutdown [Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0']
+[rospy.impl.masterslave][INFO] 2018-10-23 18:20:02,102: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rospy.core][INFO] 2018-10-23 18:20:02,204: signal_shutdown [atexit]
+[rospy.client][INFO] 2018-10-23 18:20:56,402: init_node, name[/turtlebot3_core], pid[11441]
+[xmlrpc][INFO] 2018-10-23 18:20:56,404: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-10-23 18:20:56,407: Started XML-RPC server [http://192.168.0.20:40620/]
+[rospy.init][INFO] 2018-10-23 18:20:56,408: ROS Slave URI: [http://192.168.0.20:40620/]
+[rospy.impl.masterslave][INFO] 2018-10-23 18:20:56,408: _ready: http://192.168.0.20:40620/
+[rospy.registration][INFO] 2018-10-23 18:20:56,413: Registering with master node http://192.168.0.20:11311
+[xmlrpc][INFO] 2018-10-23 18:20:56,414: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-10-23 18:20:56,509: registered with master
+[rospy.rosout][INFO] 2018-10-23 18:20:56,511: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-10-23 18:20:56,523: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-10-23 18:20:56,531: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-10-23 18:20:56,552: ROS Serial Python Node
+[rosout][INFO] 2018-10-23 18:20:56,589: Connecting to /dev/ttyACM0 at 115200 baud
+[rospy.internal][INFO] 2018-10-23 18:20:56,761: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-10-23 18:20:58,734: Note: publish buffer size is 1024 bytes
+[rosout][INFO] 2018-10-23 18:20:58,736: Setup publisher on sensor_state [turtlebot3_msgs/SensorState]
+[rosout][INFO] 2018-10-23 18:20:58,744: Setup publisher on firmware_version [turtlebot3_msgs/VersionInfo]
+[rosout][INFO] 2018-10-23 18:20:58,843: Setup publisher on imu [sensor_msgs/Imu]
+[rosout][INFO] 2018-10-23 18:20:58,859: Setup publisher on cmd_vel_rc100 [geometry_msgs/Twist]
+[rospy.internal][INFO] 2018-10-23 18:20:58,901: topic[/sensor_state] adding connection to [/turtlebot3_diagnostics], count 0
+[rosout][INFO] 2018-10-23 18:20:58,931: Setup publisher on odom [nav_msgs/Odometry]
+[rosout][INFO] 2018-10-23 18:20:58,947: Setup publisher on joint_states [sensor_msgs/JointState]
+[rosout][INFO] 2018-10-23 18:20:58,960: Setup publisher on battery_state [sensor_msgs/BatteryState]
+[rosout][INFO] 2018-10-23 18:20:58,975: Setup publisher on magnetic_field [sensor_msgs/MagneticField]
+[rospy.internal][INFO] 2018-10-23 18:20:59,036: topic[/firmware_version] adding connection to [/turtlebot3_diagnostics], count 0
+[rospy.internal][INFO] 2018-10-23 18:20:59,040: topic[/imu] adding connection to [/turtlebot3_diagnostics], count 0
+[rosout][INFO] 2018-10-23 18:21:03,160: Setup publisher on /tf [tf/tfMessage]
+[rosout][INFO] 2018-10-23 18:21:03,172: Note: subscribe buffer size is 1024 bytes
+[rosout][INFO] 2018-10-23 18:21:03,174: Setup subscriber on cmd_vel [geometry_msgs/Twist]
+[rosout][INFO] 2018-10-23 18:21:03,187: Setup subscriber on sound [turtlebot3_msgs/Sound]
+[rosout][INFO] 2018-10-23 18:21:03,199: Setup subscriber on motor_power [std_msgs/Bool]
+[rosout][INFO] 2018-10-23 18:21:03,212: Setup subscriber on reset [std_msgs/Empty]
+[rosout][WARNING] 2018-10-23 18:21:03,223: Failed to get param: timeout expired
+[rosout][INFO] 2018-10-23 18:21:03,226: Setup TF on Odometry [odom]
+[rosout][INFO] 2018-10-23 18:21:03,229: Setup TF on IMU [imu_link]
+[rosout][INFO] 2018-10-23 18:21:03,232: Setup TF on MagneticField [mag_link]
+[rosout][INFO] 2018-10-23 18:21:03,235: Setup TF on JointState [base_link]
+[rosout][INFO] 2018-10-23 18:21:03,241: --------------------------
+[rosout][INFO] 2018-10-23 18:21:03,244: Connected to OpenCR board!
+[rosout][INFO] 2018-10-23 18:21:03,247: This core(v1.2.3) is compatible with TB3 Burger
+[rosout][INFO] 2018-10-23 18:21:03,250: --------------------------
+[rosout][INFO] 2018-10-23 18:21:03,253: Start Calibration of Gyro
+[rosout][INFO] 2018-10-23 18:21:05,346: Calibration End
+[rospy.internal][INFO] 2018-10-23 18:27:32,359: topic[/battery_state] adding connection to [/rostopic_9254_1540290452028], count 0
+[rospy.internal][INFO] 2018-10-23 18:27:32,898: topic[/battery_state] removing connection to /rostopic_9254_1540290452028
+[rospy.internal][INFO] 2018-10-23 18:27:37,793: topic[/cmd_vel_rc100] adding connection to [/rostopic_9288_1540290457485], count 0
+[rospy.internal][INFO] 2018-10-23 18:27:38,219: topic[/cmd_vel_rc100] removing connection to /rostopic_9288_1540290457485
+[rospy.internal][INFO] 2018-10-23 18:27:40,781: topic[/diagnostics] adding connection to [/rostopic_9306_1540290460460], count 0
+[rospy.internal][INFO] 2018-10-23 18:27:41,290: topic[/diagnostics] removing connection to /rostopic_9306_1540290460460
+[rospy.internal][INFO] 2018-10-23 18:27:45,190: topic[/imu] adding connection to [/rostopic_9342_1540290464815], count 1
+[rospy.internal][INFO] 2018-10-23 18:27:45,606: topic[/imu] removing connection to /rostopic_9342_1540290464815
+[rospy.internal][INFO] 2018-10-23 18:27:48,123: topic[/joint_states] adding connection to [/rostopic_9360_1540290467777], count 0
+[rospy.internal][INFO] 2018-10-23 18:27:48,635: topic[/joint_states] removing connection to /rostopic_9360_1540290467777
+[rospy.internal][INFO] 2018-10-23 18:28:17,840: topic[/battery_state] adding connection to [/rostopic_9419_1540290497525], count 0
+[rospy.internal][INFO] 2018-10-23 18:28:18,358: topic[/battery_state] removing connection to /rostopic_9419_1540290497525
+[rospy.internal][INFO] 2018-10-23 18:28:23,090: topic[/cmd_vel_rc100] adding connection to [/rostopic_9456_1540290502777], count 0
+[rospy.internal][INFO] 2018-10-23 18:28:23,735: topic[/cmd_vel_rc100] removing connection to /rostopic_9456_1540290502777
+[rospy.internal][INFO] 2018-10-23 18:28:25,241: topic[/diagnostics] adding connection to [/rostopic_9474_1540290504928], count 0
+[rospy.internal][INFO] 2018-10-23 18:28:25,876: topic[/diagnostics] removing connection to /rostopic_9474_1540290504928
+[rospy.internal][INFO] 2018-10-23 18:28:29,983: topic[/imu] adding connection to [/rostopic_9513_1540290509651], count 1
+[rospy.internal][INFO] 2018-10-23 18:28:30,452: topic[/imu] removing connection to /rostopic_9513_1540290509651
+[rospy.internal][INFO] 2018-10-23 18:28:36,338: topic[/magnetic_field] adding connection to [/rostopic_9547_1540290515907], count 0
+[rospy.internal][INFO] 2018-10-23 18:28:36,556: topic[/magnetic_field] removing connection to /rostopic_9547_1540290515907
+[rospy.internal][INFO] 2018-10-23 18:28:41,817: topic[/odom] adding connection to [/rostopic_9581_1540290521481], count 0
+[rospy.internal][INFO] 2018-10-23 18:28:42,411: topic[/odom] removing connection to /rostopic_9581_1540290521481
+[rospy.internal][INFO] 2018-10-23 18:28:47,384: topic[/rosout] adding connection to [/rostopic_9615_1540290527056], count 1
+[rospy.internal][INFO] 2018-10-23 18:28:47,926: topic[/rosout] removing connection to /rostopic_9615_1540290527056
+[rospy.internal][INFO] 2018-10-23 18:29:06,180: topic[/firmware_version] adding connection to [/record_1540290545830383161], count 1
+[rospy.internal][INFO] 2018-10-23 18:29:06,400: topic[/battery_state] adding connection to [/record_1540290545830383161], count 0
+[rospy.internal][INFO] 2018-10-23 18:29:06,404: topic[/joint_states] adding connection to [/record_1540290545830383161], count 0
+[rospy.internal][INFO] 2018-10-23 18:29:06,516: topic[/rosout] adding connection to [/record_1540290545830383161], count 1
+[rospy.internal][INFO] 2018-10-23 18:29:06,626: topic[/cmd_vel_rc100] adding connection to [/record_1540290545830383161], count 0
+[rospy.internal][INFO] 2018-10-23 18:29:06,733: topic[/imu] adding connection to [/record_1540290545830383161], count 1
+[rospy.internal][INFO] 2018-10-23 18:29:06,846: topic[/odom] adding connection to [/record_1540290545830383161], count 0
+[rospy.internal][INFO] 2018-10-23 18:29:06,956: topic[/tf] adding connection to [/record_1540290545830383161], count 0
+[rospy.internal][INFO] 2018-10-23 18:29:06,960: topic[/diagnostics] adding connection to [/record_1540290545830383161], count 0
+[rospy.internal][INFO] 2018-10-23 18:29:07,067: topic[/sensor_state] adding connection to [/record_1540290545830383161], count 1
+[rospy.internal][INFO] 2018-10-23 18:29:07,177: topic[/magnetic_field] adding connection to [/record_1540290545830383161], count 0
+[rospy.internal][INFO] 2018-10-23 18:29:15,485: topic[/firmware_version] removing connection to /record_1540290545830383161
+[rospy.internal][INFO] 2018-10-23 18:29:15,495: topic[/battery_state] removing connection to /record_1540290545830383161
+[rospy.internal][INFO] 2018-10-23 18:29:15,500: topic[/joint_states] removing connection to /record_1540290545830383161
+[rospy.internal][INFO] 2018-10-23 18:29:15,505: topic[/rosout] removing connection to /record_1540290545830383161
+[rospy.internal][INFO] 2018-10-23 18:29:15,552: topic[/imu] removing connection to /record_1540290545830383161
+[rospy.internal][INFO] 2018-10-23 18:29:15,578: topic[/cmd_vel_rc100] removing connection to /record_1540290545830383161
+[rospy.internal][INFO] 2018-10-23 18:29:15,607: topic[/odom] removing connection to /record_1540290545830383161
+[rospy.internal][INFO] 2018-10-23 18:29:15,612: topic[/tf] removing connection to /record_1540290545830383161
+[rospy.internal][INFO] 2018-10-23 18:29:15,638: topic[/magnetic_field] removing connection to /record_1540290545830383161
+[rospy.internal][INFO] 2018-10-23 18:29:16,009: topic[/diagnostics] removing connection to /record_1540290545830383161
+[rospy.internal][INFO] 2018-10-23 18:29:16,011: topic[/sensor_state] removing connection to /record_1540290545830383161
+[rospy.internal][INFO] 2018-10-23 18:36:03,094: topic[/battery_state] adding connection to [/rostopic_10415_1540290962769], count 0
+[rospy.internal][INFO] 2018-10-23 18:36:03,691: topic[/battery_state] removing connection to /rostopic_10415_1540290962769
+[rospy.internal][INFO] 2018-10-23 18:36:08,680: topic[/cmd_vel_rc100] adding connection to [/rostopic_10449_1540290968350], count 0
+[rospy.internal][INFO] 2018-10-23 18:36:09,205: topic[/cmd_vel_rc100] removing connection to /rostopic_10449_1540290968350
+[rospy.internal][INFO] 2018-10-23 18:36:11,497: topic[/diagnostics] adding connection to [/rostopic_10467_1540290971176], count 0
+[rospy.internal][INFO] 2018-10-23 18:36:12,212: topic[/diagnostics] removing connection to /rostopic_10467_1540290971176
+[rospy.internal][INFO] 2018-10-23 18:36:16,034: topic[/imu] adding connection to [/rostopic_10503_1540290975707], count 1
+[rospy.internal][INFO] 2018-10-23 18:36:16,555: topic[/imu] removing connection to /rostopic_10503_1540290975707
+[rospy.internal][INFO] 2018-10-23 18:36:18,784: topic[/joint_states] adding connection to [/rostopic_10521_1540290978443], count 0
+[rospy.internal][INFO] 2018-10-23 18:36:19,390: topic[/joint_states] removing connection to /rostopic_10521_1540290978443
+[rosout][WARNING] 2018-10-23 18:36:19,913: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-23 18:36:19,927: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-23 18:36:21,568: topic[/magnetic_field] adding connection to [/rostopic_10539_1540290981186], count 0
+[rospy.internal][INFO] 2018-10-23 18:36:22,018: topic[/magnetic_field] removing connection to /rostopic_10539_1540290981186
+[rospy.internal][INFO] 2018-10-23 18:36:27,034: topic[/odom] adding connection to [/rostopic_10573_1540290986679], count 0
+[rosout][WARNING] 2018-10-23 18:36:27,470: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-23 18:36:27,473: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-23 18:36:27,570: topic[/odom] removing connection to /rostopic_10573_1540290986679
+[rospy.internal][INFO] 2018-10-23 18:36:32,303: topic[/rosout] adding connection to [/rostopic_10607_1540290991916], count 1
+[rosout][WARNING] 2018-10-23 18:36:32,697: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-23 18:36:32,701: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-23 18:36:32,751: topic[/rosout] removing connection to /rostopic_10607_1540290991916
+[rosout][WARNING] 2018-10-23 18:36:42,624: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-23 18:36:42,629: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-23 18:36:47,404: topic[/firmware_version] adding connection to [/record_1540291007051035216], count 1
+[rospy.internal][INFO] 2018-10-23 18:36:47,517: topic[/battery_state] adding connection to [/record_1540291007051035216], count 0
+[rospy.internal][INFO] 2018-10-23 18:36:47,630: topic[/joint_states] adding connection to [/record_1540291007051035216], count 0
+[rospy.internal][INFO] 2018-10-23 18:36:47,743: topic[/rosout] adding connection to [/record_1540291007051035216], count 1
+[rospy.internal][INFO] 2018-10-23 18:36:47,858: topic[/cmd_vel_rc100] adding connection to [/record_1540291007051035216], count 0
+[rospy.internal][INFO] 2018-10-23 18:36:47,974: topic[/imu] adding connection to [/record_1540291007051035216], count 1
+[rospy.internal][INFO] 2018-10-23 18:36:48,090: topic[/odom] adding connection to [/record_1540291007051035216], count 0
+[rospy.internal][INFO] 2018-10-23 18:36:48,096: topic[/tf] adding connection to [/record_1540291007051035216], count 0
+[rospy.internal][INFO] 2018-10-23 18:36:48,211: topic[/diagnostics] adding connection to [/record_1540291007051035216], count 0
+[rospy.internal][INFO] 2018-10-23 18:36:48,320: topic[/sensor_state] adding connection to [/record_1540291007051035216], count 1
+[rospy.internal][INFO] 2018-10-23 18:36:48,326: topic[/magnetic_field] adding connection to [/record_1540291007051035216], count 0
+[rospy.internal][INFO] 2018-10-23 18:36:57,081: topic[/battery_state] removing connection to /record_1540291007051035216
+[rospy.internal][INFO] 2018-10-23 18:36:57,090: topic[/joint_states] removing connection to /record_1540291007051035216
+[rospy.internal][INFO] 2018-10-23 18:36:57,101: topic[/imu] removing connection to /record_1540291007051035216
+[rospy.internal][INFO] 2018-10-23 18:36:57,139: topic[/cmd_vel_rc100] removing connection to /record_1540291007051035216
+[rospy.internal][INFO] 2018-10-23 18:36:57,169: topic[/odom] removing connection to /record_1540291007051035216
+[rospy.internal][INFO] 2018-10-23 18:36:57,174: topic[/tf] removing connection to /record_1540291007051035216
+[rospy.internal][INFO] 2018-10-23 18:36:57,194: topic[/magnetic_field] removing connection to /record_1540291007051035216
+[rospy.internal][INFO] 2018-10-23 18:36:57,297: topic[/firmware_version] removing connection to /record_1540291007051035216
+[rospy.internal][INFO] 2018-10-23 18:36:57,300: topic[/rosout] removing connection to /record_1540291007051035216
+[rospy.internal][INFO] 2018-10-23 18:36:57,303: topic[/diagnostics] removing connection to /record_1540291007051035216
+[rospy.internal][INFO] 2018-10-23 18:36:57,306: topic[/sensor_state] removing connection to /record_1540291007051035216
+[rospy.internal][INFO] 2018-10-23 18:37:59,992: topic[/battery_state] adding connection to [/rostopic_10829_1540291079653], count 0
+[rospy.internal][INFO] 2018-10-23 18:38:00,554: topic[/battery_state] removing connection to /rostopic_10829_1540291079653
+[rospy.internal][INFO] 2018-10-23 18:38:05,757: topic[/cmd_vel_rc100] adding connection to [/rostopic_10865_1540291085426], count 0
+[rospy.internal][INFO] 2018-10-23 18:38:06,357: topic[/cmd_vel_rc100] removing connection to /rostopic_10865_1540291085426
+[rospy.internal][INFO] 2018-10-23 18:38:08,528: topic[/diagnostics] adding connection to [/rostopic_10883_1540291088189], count 0
+[rospy.internal][INFO] 2018-10-23 18:38:09,424: topic[/diagnostics] removing connection to /rostopic_10883_1540291088189
+[rospy.internal][INFO] 2018-10-23 18:38:11,241: topic[/firmware_version] adding connection to [/rostopic_10903_1540291090909], count 1
+[rospy.internal][INFO] 2018-10-23 18:38:11,937: topic[/firmware_version] removing connection to /rostopic_10903_1540291090909
+[rospy.internal][INFO] 2018-10-23 18:38:14,111: topic[/imu] adding connection to [/rostopic_10921_1540291093768], count 1
+[rospy.internal][INFO] 2018-10-23 18:38:14,619: topic[/imu] removing connection to /rostopic_10921_1540291093768
+[rospy.internal][INFO] 2018-10-23 18:38:16,907: topic[/joint_states] adding connection to [/rostopic_10939_1540291096565], count 0
+[rospy.internal][INFO] 2018-10-23 18:38:17,455: topic[/joint_states] removing connection to /rostopic_10939_1540291096565
+[rospy.internal][INFO] 2018-10-23 18:38:19,708: topic[/magnetic_field] adding connection to [/rostopic_10957_1540291099320], count 0
+[rospy.internal][INFO] 2018-10-23 18:38:20,155: topic[/magnetic_field] removing connection to /rostopic_10957_1540291099320
+[rosout][WARNING] 2018-10-23 18:38:20,267: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-23 18:38:20,273: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-23 18:38:29,887: topic[/rosout] adding connection to [/rostopic_11024_1540291109529], count 1
+[rosout][WARNING] 2018-10-23 18:38:30,394: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-10-23 18:38:30,398: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-10-23 18:38:30,484: topic[/rosout] removing connection to /rostopic_11024_1540291109529
+[rospy.internal][INFO] 2018-10-23 18:38:38,362: topic[/sensor_state] adding connection to [/rostopic_11082_1540291118026], count 1
+[rospy.internal][INFO] 2018-10-23 18:38:39,001: topic[/sensor_state] removing connection to /rostopic_11082_1540291118026
+[rospy.internal][INFO] 2018-10-23 18:38:49,314: topic[/firmware_version] adding connection to [/record_1540291128959168330], count 1
+[rospy.internal][INFO] 2018-10-23 18:38:49,428: topic[/battery_state] adding connection to [/record_1540291128959168330], count 0
+[rospy.internal][INFO] 2018-10-23 18:38:49,538: topic[/joint_states] adding connection to [/record_1540291128959168330], count 0
+[rospy.internal][INFO] 2018-10-23 18:38:49,650: topic[/rosout] adding connection to [/record_1540291128959168330], count 1
+[rospy.internal][INFO] 2018-10-23 18:38:49,757: topic[/cmd_vel_rc100] adding connection to [/record_1540291128959168330], count 0
+[rospy.internal][INFO] 2018-10-23 18:38:49,870: topic[/imu] adding connection to [/record_1540291128959168330], count 1
+[rospy.internal][INFO] 2018-10-23 18:38:49,988: topic[/tf] adding connection to [/record_1540291128959168330], count 0
+[rospy.internal][INFO] 2018-10-23 18:38:49,993: topic[/odom] adding connection to [/record_1540291128959168330], count 0
+[rospy.internal][INFO] 2018-10-23 18:38:50,106: topic[/diagnostics] adding connection to [/record_1540291128959168330], count 0
+[rospy.internal][INFO] 2018-10-23 18:38:50,215: topic[/sensor_state] adding connection to [/record_1540291128959168330], count 1
+[rospy.internal][INFO] 2018-10-23 18:38:50,321: topic[/magnetic_field] adding connection to [/record_1540291128959168330], count 0
+[rospy.internal][INFO] 2018-10-23 18:38:58,960: topic[/battery_state] removing connection to /record_1540291128959168330
+[rospy.internal][INFO] 2018-10-23 18:38:59,028: topic[/joint_states] removing connection to /record_1540291128959168330
+[rospy.internal][INFO] 2018-10-23 18:38:59,033: topic[/imu] removing connection to /record_1540291128959168330
+[rospy.internal][INFO] 2018-10-23 18:38:59,043: topic[/firmware_version] removing connection to /record_1540291128959168330
+[rospy.internal][INFO] 2018-10-23 18:38:59,045: topic[/rosout] removing connection to /record_1540291128959168330
+[rospy.internal][INFO] 2018-10-23 18:38:59,047: topic[/tf] removing connection to /record_1540291128959168330
+[rospy.internal][INFO] 2018-10-23 18:38:59,051: topic[/cmd_vel_rc100] removing connection to /record_1540291128959168330
+[rospy.internal][INFO] 2018-10-23 18:38:59,053: topic[/odom] removing connection to /record_1540291128959168330
+[rospy.internal][INFO] 2018-10-23 18:38:59,058: topic[/diagnostics] removing connection to /record_1540291128959168330
+[rospy.internal][INFO] 2018-10-23 18:38:59,093: topic[/magnetic_field] removing connection to /record_1540291128959168330
+[rospy.internal][INFO] 2018-10-23 18:38:59,562: topic[/sensor_state] removing connection to /record_1540291128959168330

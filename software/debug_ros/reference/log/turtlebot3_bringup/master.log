@@ -1,0 +1,1033 @@
+[rosmaster.main][INFO] 2018-10-23 18:19:50,721: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2018-10-23 18:19:50,722: Starting ROS Master Node
+[xmlrpc][INFO] 2018-10-23 18:19:50,726: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2018-10-23 18:19:50,728: Started XML-RPC server [http://192.168.0.20:11311/]
+[rosmaster.master][INFO] 2018-10-23 18:19:50,729: Master initialized: port[11311], uri[http://192.168.0.20:11311/]
+[xmlrpc][INFO] 2018-10-23 18:19:50,730: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2018-10-23 18:19:50,837: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:19:50,846: +PARAM [/roslaunch/uris/host_192_168_0_20__40506] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:19:51,244: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:19:51,246: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:19:51,388: +SERVICE [/rosout/get_loggers] /rosout http://192.168.0.20:44322/
+[rosmaster.master][INFO] 2018-10-23 18:19:51,393: +SERVICE [/rosout/set_logger_level] /rosout http://192.168.0.20:44322/
+[rosmaster.master][INFO] 2018-10-23 18:19:51,403: +PUB [/rosout_agg] /rosout http://192.168.0.20:44322/
+[rosmaster.master][INFO] 2018-10-23 18:19:51,428: +SUB [/rosout] /rosout http://192.168.0.20:44322/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,030: +PARAM [/roslaunch/uris/host_192_168_0_20__32982] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:00,053: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:00,054: +PARAM [/turtlebot3_core/port] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:00,055: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:00,055: +PARAM [/turtlebot3_core/baud] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:00,056: +PARAM [/turtlebot3_lds/port] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:00,057: +PARAM [/turtlebot3_lds/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:00,058: +PARAM [/turtlebot3_core/tf_prefix] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:00,506: +PUB [/rosout] /turtlebot3_lds http://192.168.0.20:33558/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,512: +SERVICE [/turtlebot3_lds/get_loggers] /turtlebot3_lds http://192.168.0.20:33558/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,518: +SERVICE [/turtlebot3_lds/set_logger_level] /turtlebot3_lds http://192.168.0.20:33558/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,553: +PUB [/rosout] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,554: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:33558/']
+[rosmaster.master][INFO] 2018-10-23 18:20:00,571: +SERVICE [/turtlebot3_diagnostics/get_loggers] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,573: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:33558/']: sec=0.02, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:00,575: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:33558/', 'http://192.168.0.20:38535/']
+[rosmaster.master][INFO] 2018-10-23 18:20:00,582: +SERVICE [/turtlebot3_diagnostics/set_logger_level] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,584: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:33558/', 'http://192.168.0.20:38535/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:00,595: +PUB [/diagnostics] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,601: +PUB [/version_info] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,628: +SUB [/imu] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,654: +SUB [/scan] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,680: +SUB [/sensor_state] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,707: +SUB [/firmware_version] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,789: -PUB [/rosout] /turtlebot3_lds http://192.168.0.20:33558/
+[rosmaster.master][INFO] 2018-10-23 18:20:00,800: -SERVICE [/turtlebot3_lds/get_loggers] /turtlebot3_lds rosrpc://192.168.0.20:45390
+[rosmaster.master][INFO] 2018-10-23 18:20:00,805: -SERVICE [/turtlebot3_lds/set_logger_level] /turtlebot3_lds rosrpc://192.168.0.20:45390
+[rosmaster.master][INFO] 2018-10-23 18:20:00,856: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:38535/']
+[rosmaster.master][INFO] 2018-10-23 18:20:00,861: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:38535/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:01,991: +PUB [/rosout] /turtlebot3_core http://192.168.0.20:36901/
+[rosmaster.master][INFO] 2018-10-23 18:20:02,011: +SERVICE [/turtlebot3_core/get_loggers] /turtlebot3_core http://192.168.0.20:36901/
+[rosmaster.master][INFO] 2018-10-23 18:20:02,019: +SERVICE [/turtlebot3_core/set_logger_level] /turtlebot3_core http://192.168.0.20:36901/
+[rosmaster.master][INFO] 2018-10-23 18:20:02,059: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:38535/', 'http://192.168.0.20:36901/']
+[rosmaster.master][INFO] 2018-10-23 18:20:02,064: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:38535/', 'http://192.168.0.20:36901/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:02,072: +PUB [/diagnostics] /turtlebot3_core http://192.168.0.20:36901/
+[rosmaster.master][INFO] 2018-10-23 18:20:02,088: -PUB [/diagnostics] /turtlebot3_core http://192.168.0.20:36901/
+[rosmaster.master][INFO] 2018-10-23 18:20:02,090: -PUB [/rosout] /turtlebot3_core http://192.168.0.20:36901/
+[rosmaster.master][INFO] 2018-10-23 18:20:02,091: -SERVICE [/turtlebot3_core/set_logger_level] /turtlebot3_core rosrpc://192.168.0.20:41771
+[rosmaster.master][INFO] 2018-10-23 18:20:02,091: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:38535/']
+[rosmaster.master][INFO] 2018-10-23 18:20:02,092: -SERVICE [/turtlebot3_core/get_loggers] /turtlebot3_core rosrpc://192.168.0.20:41771
+[rosmaster.master][INFO] 2018-10-23 18:20:02,096: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:38535/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:49,466: -PUB [/rosout] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:49,469: -PUB [/diagnostics] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:49,472: -PUB [/version_info] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:49,474: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ []
+[rosmaster.master][INFO] 2018-10-23 18:20:49,476: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:49,477: -SUB [/imu] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:49,480: -SUB [/scan] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:49,483: -SUB [/sensor_state] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:49,486: -SUB [/firmware_version] /turtlebot3_diagnostics http://192.168.0.20:38535/
+[rosmaster.master][INFO] 2018-10-23 18:20:49,490: -SERVICE [/turtlebot3_diagnostics/get_loggers] /turtlebot3_diagnostics rosrpc://192.168.0.20:59815
+[rosmaster.master][INFO] 2018-10-23 18:20:49,493: -SERVICE [/turtlebot3_diagnostics/set_logger_level] /turtlebot3_diagnostics rosrpc://192.168.0.20:59815
+[rosmaster.master][INFO] 2018-10-23 18:20:54,608: +PARAM [/roslaunch/uris/host_192_168_0_20__45657] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:54,630: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:54,632: +PARAM [/turtlebot3_core/port] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:54,633: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:54,634: +PARAM [/turtlebot3_core/baud] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:54,635: +PARAM [/turtlebot3_lds/port] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:54,636: +PARAM [/turtlebot3_lds/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:54,637: +PARAM [/turtlebot3_core/tf_prefix] by /roslaunch
+[rosmaster.master][INFO] 2018-10-23 18:20:55,084: +PUB [/rosout] /turtlebot3_lds http://192.168.0.20:33947/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,089: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:33947/']
+[rosmaster.master][INFO] 2018-10-23 18:20:55,094: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:33947/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:55,097: +SERVICE [/turtlebot3_lds/get_loggers] /turtlebot3_lds http://192.168.0.20:33947/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,104: +SERVICE [/turtlebot3_lds/set_logger_level] /turtlebot3_lds http://192.168.0.20:33947/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,134: +PUB [/rosout] /turtlebot3_diagnostics http://192.168.0.20:36051/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,147: +SERVICE [/turtlebot3_diagnostics/get_loggers] /turtlebot3_diagnostics http://192.168.0.20:36051/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,148: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:33947/', 'http://192.168.0.20:36051/']
+[rosmaster.master][INFO] 2018-10-23 18:20:55,153: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:33947/', 'http://192.168.0.20:36051/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:55,158: +SERVICE [/turtlebot3_diagnostics/set_logger_level] /turtlebot3_diagnostics http://192.168.0.20:36051/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,168: +PUB [/diagnostics] /turtlebot3_diagnostics http://192.168.0.20:36051/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,174: +PUB [/version_info] /turtlebot3_diagnostics http://192.168.0.20:36051/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,201: +SUB [/imu] /turtlebot3_diagnostics http://192.168.0.20:36051/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,227: +SUB [/scan] /turtlebot3_diagnostics http://192.168.0.20:36051/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,254: +SUB [/sensor_state] /turtlebot3_diagnostics http://192.168.0.20:36051/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,282: +SUB [/firmware_version] /turtlebot3_diagnostics http://192.168.0.20:36051/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,359: -PUB [/rosout] /turtlebot3_lds http://192.168.0.20:33947/
+[rosmaster.master][INFO] 2018-10-23 18:20:55,365: -SERVICE [/turtlebot3_lds/get_loggers] /turtlebot3_lds rosrpc://192.168.0.20:48964
+[rosmaster.master][INFO] 2018-10-23 18:20:55,370: -SERVICE [/turtlebot3_lds/set_logger_level] /turtlebot3_lds rosrpc://192.168.0.20:48964
+[rosmaster.master][INFO] 2018-10-23 18:20:55,396: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/']
+[rosmaster.master][INFO] 2018-10-23 18:20:55,400: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:56,519: +PUB [/rosout] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:20:56,539: +SERVICE [/turtlebot3_core/get_loggers] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:20:56,548: +SERVICE [/turtlebot3_core/set_logger_level] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:20:56,551: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:20:56,556: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:56,596: +PUB [/diagnostics] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:20:58,732: +PUB [/sensor_state] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:20:58,742: +PUB [/firmware_version] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:20:58,760: publisherUpdate[/sensor_state] -> http://192.168.0.20:36051/ ['http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:20:58,764: publisherUpdate[/sensor_state] -> http://192.168.0.20:36051/ ['http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:58,764: publisherUpdate[/firmware_version] -> http://192.168.0.20:36051/ ['http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:20:58,767: publisherUpdate[/firmware_version] -> http://192.168.0.20:36051/ ['http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:58,839: +PUB [/imu] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:20:58,854: +PUB [/cmd_vel_rc100] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:20:58,862: publisherUpdate[/imu] -> http://192.168.0.20:36051/ ['http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:20:58,869: publisherUpdate[/imu] -> http://192.168.0.20:36051/ ['http://192.168.0.20:40620/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:20:58,927: +PUB [/odom] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:20:58,943: +PUB [/joint_states] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:20:58,957: +PUB [/battery_state] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:20:58,971: +PUB [/magnetic_field] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:21:03,157: +PUB [/tf] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:21:03,170: +SUB [/cmd_vel] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:21:03,184: +SUB [/sound] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:21:03,197: +SUB [/motor_power] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:21:03,210: +SUB [/reset] /turtlebot3_core http://192.168.0.20:40620/
+[rosmaster.master][INFO] 2018-10-23 18:27:32,206: +PUB [/rosout] /rostopic_9254_1540290452028 http://osboxes:33271/
+[rosmaster.master][INFO] 2018-10-23 18:27:32,234: +SERVICE [/rostopic_9254_1540290452028/get_loggers] /rostopic_9254_1540290452028 http://osboxes:33271/
+[rosmaster.master][INFO] 2018-10-23 18:27:32,238: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:33271/']
+[rosmaster.master][INFO] 2018-10-23 18:27:32,248: +SERVICE [/rostopic_9254_1540290452028/set_logger_level] /rostopic_9254_1540290452028 http://osboxes:33271/
+[rosmaster.master][INFO] 2018-10-23 18:27:32,281: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:33271/']: sec=0.04, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:32,301: +SUB [/battery_state] /rostopic_9254_1540290452028 http://osboxes:33271/
+[rosmaster.master][INFO] 2018-10-23 18:27:32,771: -SUB [/battery_state] /rostopic_9254_1540290452028 http://osboxes:33271/
+[rosmaster.master][INFO] 2018-10-23 18:27:32,773: -PUB [/rosout] /rostopic_9254_1540290452028 http://osboxes:33271/
+[rosmaster.master][INFO] 2018-10-23 18:27:32,774: -SERVICE [/rostopic_9254_1540290452028/get_loggers] /rostopic_9254_1540290452028 rosrpc://osboxes:45599
+[rosmaster.master][INFO] 2018-10-23 18:27:32,775: -SERVICE [/rostopic_9254_1540290452028/set_logger_level] /rostopic_9254_1540290452028 rosrpc://osboxes:45599
+[rosmaster.master][INFO] 2018-10-23 18:27:32,784: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:27:32,789: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:34,991: +PUB [/rosout] /rostopic_9272_1540290454796 http://osboxes:33967/
+[rosmaster.master][INFO] 2018-10-23 18:27:34,995: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:33967/']
+[rosmaster.master][INFO] 2018-10-23 18:27:35,007: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:33967/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:35,017: +SERVICE [/rostopic_9272_1540290454796/get_loggers] /rostopic_9272_1540290454796 http://osboxes:33967/
+[rosmaster.master][INFO] 2018-10-23 18:27:35,027: +SERVICE [/rostopic_9272_1540290454796/set_logger_level] /rostopic_9272_1540290454796 http://osboxes:33967/
+[rosmaster.master][INFO] 2018-10-23 18:27:35,067: +SUB [/cmd_vel] /rostopic_9272_1540290454796 http://osboxes:33967/
+[rosmaster.master][INFO] 2018-10-23 18:27:35,560: -SUB [/cmd_vel] /rostopic_9272_1540290454796 http://osboxes:33967/
+[rosmaster.master][INFO] 2018-10-23 18:27:35,561: -PUB [/rosout] /rostopic_9272_1540290454796 http://osboxes:33967/
+[rosmaster.master][INFO] 2018-10-23 18:27:35,563: -SERVICE [/rostopic_9272_1540290454796/set_logger_level] /rostopic_9272_1540290454796 rosrpc://osboxes:42607
+[rosmaster.master][INFO] 2018-10-23 18:27:35,564: -SERVICE [/rostopic_9272_1540290454796/get_loggers] /rostopic_9272_1540290454796 rosrpc://osboxes:42607
+[rosmaster.master][INFO] 2018-10-23 18:27:35,578: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:27:35,582: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:37,654: +PUB [/rosout] /rostopic_9288_1540290457485 http://osboxes:32997/
+[rosmaster.master][INFO] 2018-10-23 18:27:37,683: +SERVICE [/rostopic_9288_1540290457485/get_loggers] /rostopic_9288_1540290457485 http://osboxes:32997/
+[rosmaster.master][INFO] 2018-10-23 18:27:37,687: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:32997/']
+[rosmaster.master][INFO] 2018-10-23 18:27:37,699: +SERVICE [/rostopic_9288_1540290457485/set_logger_level] /rostopic_9288_1540290457485 http://osboxes:32997/
+[rosmaster.master][INFO] 2018-10-23 18:27:37,704: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:32997/']: sec=0.02, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:37,747: +SUB [/cmd_vel_rc100] /rostopic_9288_1540290457485 http://osboxes:32997/
+[rosmaster.master][INFO] 2018-10-23 18:27:38,122: -SUB [/cmd_vel_rc100] /rostopic_9288_1540290457485 http://osboxes:32997/
+[rosmaster.master][INFO] 2018-10-23 18:27:38,123: -PUB [/rosout] /rostopic_9288_1540290457485 http://osboxes:32997/
+[rosmaster.master][INFO] 2018-10-23 18:27:38,124: -SERVICE [/rostopic_9288_1540290457485/get_loggers] /rostopic_9288_1540290457485 rosrpc://osboxes:40891
+[rosmaster.master][INFO] 2018-10-23 18:27:38,125: -SERVICE [/rostopic_9288_1540290457485/set_logger_level] /rostopic_9288_1540290457485 rosrpc://osboxes:40891
+[rosmaster.master][INFO] 2018-10-23 18:27:38,150: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:27:38,153: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:40,635: +PUB [/rosout] /rostopic_9306_1540290460460 http://osboxes:41535/
+[rosmaster.master][INFO] 2018-10-23 18:27:40,658: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:41535/']
+[rosmaster.master][INFO] 2018-10-23 18:27:40,661: +SERVICE [/rostopic_9306_1540290460460/get_loggers] /rostopic_9306_1540290460460 http://osboxes:41535/
+[rosmaster.master][INFO] 2018-10-23 18:27:40,675: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:41535/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:40,679: +SERVICE [/rostopic_9306_1540290460460/set_logger_level] /rostopic_9306_1540290460460 http://osboxes:41535/
+[rosmaster.master][INFO] 2018-10-23 18:27:40,716: +SUB [/diagnostics] /rostopic_9306_1540290460460 http://osboxes:41535/
+[rosmaster.master][INFO] 2018-10-23 18:27:41,207: -SUB [/diagnostics] /rostopic_9306_1540290460460 http://osboxes:41535/
+[rosmaster.master][INFO] 2018-10-23 18:27:41,208: -PUB [/rosout] /rostopic_9306_1540290460460 http://osboxes:41535/
+[rosmaster.master][INFO] 2018-10-23 18:27:41,209: -SERVICE [/rostopic_9306_1540290460460/set_logger_level] /rostopic_9306_1540290460460 rosrpc://osboxes:43375
+[rosmaster.master][INFO] 2018-10-23 18:27:41,210: -SERVICE [/rostopic_9306_1540290460460/get_loggers] /rostopic_9306_1540290460460 rosrpc://osboxes:43375
+[rosmaster.master][INFO] 2018-10-23 18:27:41,212: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:27:41,217: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:43,102: +PUB [/rosout] /rostopic_9326_1540290462933 http://osboxes:35227/
+[rosmaster.master][INFO] 2018-10-23 18:27:43,122: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:35227/']
+[rosmaster.master][INFO] 2018-10-23 18:27:43,136: +SERVICE [/rostopic_9326_1540290462933/get_loggers] /rostopic_9326_1540290462933 http://osboxes:35227/
+[rosmaster.master][INFO] 2018-10-23 18:27:43,143: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:35227/']: sec=0.02, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:43,153: +SERVICE [/rostopic_9326_1540290462933/set_logger_level] /rostopic_9326_1540290462933 http://osboxes:35227/
+[rosmaster.master][INFO] 2018-10-23 18:27:43,244: -PUB [/rosout] /rostopic_9326_1540290462933 http://osboxes:35227/
+[rosmaster.master][INFO] 2018-10-23 18:27:43,245: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:27:43,246: -SERVICE [/rostopic_9326_1540290462933/set_logger_level] /rostopic_9326_1540290462933 rosrpc://osboxes:40869
+[rosmaster.master][INFO] 2018-10-23 18:27:43,249: -SERVICE [/rostopic_9326_1540290462933/get_loggers] /rostopic_9326_1540290462933 rosrpc://osboxes:40869
+[rosmaster.master][INFO] 2018-10-23 18:27:43,251: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:45,035: +PUB [/rosout] /rostopic_9342_1540290464815 http://osboxes:45697/
+[rosmaster.master][INFO] 2018-10-23 18:27:45,057: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45697/']
+[rosmaster.master][INFO] 2018-10-23 18:27:45,063: +SERVICE [/rostopic_9342_1540290464815/get_loggers] /rostopic_9342_1540290464815 http://osboxes:45697/
+[rosmaster.master][INFO] 2018-10-23 18:27:45,079: +SERVICE [/rostopic_9342_1540290464815/set_logger_level] /rostopic_9342_1540290464815 http://osboxes:45697/
+[rosmaster.master][INFO] 2018-10-23 18:27:45,081: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45697/']: sec=0.02, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:45,134: +SUB [/imu] /rostopic_9342_1540290464815 http://osboxes:45697/
+[rosmaster.master][INFO] 2018-10-23 18:27:45,582: -SUB [/imu] /rostopic_9342_1540290464815 http://osboxes:45697/
+[rosmaster.master][INFO] 2018-10-23 18:27:45,584: -PUB [/rosout] /rostopic_9342_1540290464815 http://osboxes:45697/
+[rosmaster.master][INFO] 2018-10-23 18:27:45,584: -SERVICE [/rostopic_9342_1540290464815/set_logger_level] /rostopic_9342_1540290464815 rosrpc://osboxes:44905
+[rosmaster.master][INFO] 2018-10-23 18:27:45,585: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:27:45,586: -SERVICE [/rostopic_9342_1540290464815/get_loggers] /rostopic_9342_1540290464815 rosrpc://osboxes:44905
+[rosmaster.master][INFO] 2018-10-23 18:27:45,590: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:47,973: +PUB [/rosout] /rostopic_9360_1540290467777 http://osboxes:36961/
+[rosmaster.master][INFO] 2018-10-23 18:27:47,994: +SERVICE [/rostopic_9360_1540290467777/get_loggers] /rostopic_9360_1540290467777 http://osboxes:36961/
+[rosmaster.master][INFO] 2018-10-23 18:27:47,997: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:36961/']
+[rosmaster.master][INFO] 2018-10-23 18:27:48,008: +SERVICE [/rostopic_9360_1540290467777/set_logger_level] /rostopic_9360_1540290467777 http://osboxes:36961/
+[rosmaster.master][INFO] 2018-10-23 18:27:48,025: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:36961/']: sec=0.03, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:27:48,059: +SUB [/joint_states] /rostopic_9360_1540290467777 http://osboxes:36961/
+[rosmaster.master][INFO] 2018-10-23 18:27:48,526: -SUB [/joint_states] /rostopic_9360_1540290467777 http://osboxes:36961/
+[rosmaster.master][INFO] 2018-10-23 18:27:48,528: -PUB [/rosout] /rostopic_9360_1540290467777 http://osboxes:36961/
+[rosmaster.master][INFO] 2018-10-23 18:27:48,529: -SERVICE [/rostopic_9360_1540290467777/set_logger_level] /rostopic_9360_1540290467777 rosrpc://osboxes:42451
+[rosmaster.master][INFO] 2018-10-23 18:27:48,530: -SERVICE [/rostopic_9360_1540290467777/get_loggers] /rostopic_9360_1540290467777 rosrpc://osboxes:42451
+[rosmaster.master][INFO] 2018-10-23 18:27:48,534: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:27:48,539: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:17,694: +PUB [/rosout] /rostopic_9419_1540290497525 http://osboxes:39053/
+[rosmaster.master][INFO] 2018-10-23 18:28:17,705: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:39053/']
+[rosmaster.master][INFO] 2018-10-23 18:28:17,721: +SERVICE [/rostopic_9419_1540290497525/get_loggers] /rostopic_9419_1540290497525 http://osboxes:39053/
+[rosmaster.master][INFO] 2018-10-23 18:28:17,732: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:39053/']: sec=0.02, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:17,737: +SERVICE [/rostopic_9419_1540290497525/set_logger_level] /rostopic_9419_1540290497525 http://osboxes:39053/
+[rosmaster.master][INFO] 2018-10-23 18:28:17,786: +SUB [/battery_state] /rostopic_9419_1540290497525 http://osboxes:39053/
+[rosmaster.master][INFO] 2018-10-23 18:28:18,277: -SUB [/battery_state] /rostopic_9419_1540290497525 http://osboxes:39053/
+[rosmaster.master][INFO] 2018-10-23 18:28:18,279: -PUB [/rosout] /rostopic_9419_1540290497525 http://osboxes:39053/
+[rosmaster.master][INFO] 2018-10-23 18:28:18,280: -SERVICE [/rostopic_9419_1540290497525/get_loggers] /rostopic_9419_1540290497525 rosrpc://osboxes:33165
+[rosmaster.master][INFO] 2018-10-23 18:28:18,281: -SERVICE [/rostopic_9419_1540290497525/set_logger_level] /rostopic_9419_1540290497525 rosrpc://osboxes:33165
+[rosmaster.master][INFO] 2018-10-23 18:28:18,282: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:18,290: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:20,369: +PUB [/rosout] /rostopic_9438_1540290500177 http://osboxes:34439/
+[rosmaster.master][INFO] 2018-10-23 18:28:20,394: +SERVICE [/rostopic_9438_1540290500177/get_loggers] /rostopic_9438_1540290500177 http://osboxes:34439/
+[rosmaster.master][INFO] 2018-10-23 18:28:20,395: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:34439/']
+[rosmaster.master][INFO] 2018-10-23 18:28:20,409: +SERVICE [/rostopic_9438_1540290500177/set_logger_level] /rostopic_9438_1540290500177 http://osboxes:34439/
+[rosmaster.master][INFO] 2018-10-23 18:28:20,417: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:34439/']: sec=0.02, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:20,457: +SUB [/cmd_vel] /rostopic_9438_1540290500177 http://osboxes:34439/
+[rosmaster.master][INFO] 2018-10-23 18:28:20,985: -SUB [/cmd_vel] /rostopic_9438_1540290500177 http://osboxes:34439/
+[rosmaster.master][INFO] 2018-10-23 18:28:20,986: -PUB [/rosout] /rostopic_9438_1540290500177 http://osboxes:34439/
+[rosmaster.master][INFO] 2018-10-23 18:28:20,988: -SERVICE [/rostopic_9438_1540290500177/set_logger_level] /rostopic_9438_1540290500177 rosrpc://osboxes:46121
+[rosmaster.master][INFO] 2018-10-23 18:28:20,989: -SERVICE [/rostopic_9438_1540290500177/get_loggers] /rostopic_9438_1540290500177 rosrpc://osboxes:46121
+[rosmaster.master][INFO] 2018-10-23 18:28:21,020: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:21,024: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:22,944: +PUB [/rosout] /rostopic_9456_1540290502777 http://osboxes:36353/
+[rosmaster.master][INFO] 2018-10-23 18:28:22,947: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:36353/']
+[rosmaster.master][INFO] 2018-10-23 18:28:22,961: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:36353/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:22,973: +SERVICE [/rostopic_9456_1540290502777/get_loggers] /rostopic_9456_1540290502777 http://osboxes:36353/
+[rosmaster.master][INFO] 2018-10-23 18:28:22,985: +SERVICE [/rostopic_9456_1540290502777/set_logger_level] /rostopic_9456_1540290502777 http://osboxes:36353/
+[rosmaster.master][INFO] 2018-10-23 18:28:23,033: +SUB [/cmd_vel_rc100] /rostopic_9456_1540290502777 http://osboxes:36353/
+[rosmaster.master][INFO] 2018-10-23 18:28:23,651: -SUB [/cmd_vel_rc100] /rostopic_9456_1540290502777 http://osboxes:36353/
+[rosmaster.master][INFO] 2018-10-23 18:28:23,653: -PUB [/rosout] /rostopic_9456_1540290502777 http://osboxes:36353/
+[rosmaster.master][INFO] 2018-10-23 18:28:23,654: -SERVICE [/rostopic_9456_1540290502777/set_logger_level] /rostopic_9456_1540290502777 rosrpc://osboxes:46701
+[rosmaster.master][INFO] 2018-10-23 18:28:23,655: -SERVICE [/rostopic_9456_1540290502777/get_loggers] /rostopic_9456_1540290502777 rosrpc://osboxes:46701
+[rosmaster.master][INFO] 2018-10-23 18:28:23,663: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:23,668: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:25,095: +PUB [/rosout] /rostopic_9474_1540290504928 http://osboxes:40021/
+[rosmaster.master][INFO] 2018-10-23 18:28:25,123: +SERVICE [/rostopic_9474_1540290504928/get_loggers] /rostopic_9474_1540290504928 http://osboxes:40021/
+[rosmaster.master][INFO] 2018-10-23 18:28:25,133: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:40021/']
+[rosmaster.master][INFO] 2018-10-23 18:28:25,138: +SERVICE [/rostopic_9474_1540290504928/set_logger_level] /rostopic_9474_1540290504928 http://osboxes:40021/
+[rosmaster.master][INFO] 2018-10-23 18:28:25,148: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:40021/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:25,183: +SUB [/diagnostics] /rostopic_9474_1540290504928 http://osboxes:40021/
+[rosmaster.master][INFO] 2018-10-23 18:28:25,796: -SUB [/diagnostics] /rostopic_9474_1540290504928 http://osboxes:40021/
+[rosmaster.master][INFO] 2018-10-23 18:28:25,797: -PUB [/rosout] /rostopic_9474_1540290504928 http://osboxes:40021/
+[rosmaster.master][INFO] 2018-10-23 18:28:25,798: -SERVICE [/rostopic_9474_1540290504928/set_logger_level] /rostopic_9474_1540290504928 rosrpc://osboxes:32815
+[rosmaster.master][INFO] 2018-10-23 18:28:25,799: -SERVICE [/rostopic_9474_1540290504928/get_loggers] /rostopic_9474_1540290504928 rosrpc://osboxes:32815
+[rosmaster.master][INFO] 2018-10-23 18:28:25,850: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:25,854: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:27,419: +PUB [/rosout] /rostopic_9495_1540290507214 http://osboxes:44569/
+[rosmaster.master][INFO] 2018-10-23 18:28:27,453: +SERVICE [/rostopic_9495_1540290507214/get_loggers] /rostopic_9495_1540290507214 http://osboxes:44569/
+[rosmaster.master][INFO] 2018-10-23 18:28:27,459: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:44569/']
+[rosmaster.master][INFO] 2018-10-23 18:28:27,466: +SERVICE [/rostopic_9495_1540290507214/set_logger_level] /rostopic_9495_1540290507214 http://osboxes:44569/
+[rosmaster.master][INFO] 2018-10-23 18:28:27,473: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:44569/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:27,620: -PUB [/rosout] /rostopic_9495_1540290507214 http://osboxes:44569/
+[rosmaster.master][INFO] 2018-10-23 18:28:27,621: -SERVICE [/rostopic_9495_1540290507214/set_logger_level] /rostopic_9495_1540290507214 rosrpc://osboxes:34993
+[rosmaster.master][INFO] 2018-10-23 18:28:27,622: -SERVICE [/rostopic_9495_1540290507214/get_loggers] /rostopic_9495_1540290507214 rosrpc://osboxes:34993
+[rosmaster.master][INFO] 2018-10-23 18:28:27,674: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:27,679: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:29,832: +PUB [/rosout] /rostopic_9513_1540290509651 http://osboxes:45887/
+[rosmaster.master][INFO] 2018-10-23 18:28:29,855: +SERVICE [/rostopic_9513_1540290509651/get_loggers] /rostopic_9513_1540290509651 http://osboxes:45887/
+[rosmaster.master][INFO] 2018-10-23 18:28:29,866: +SERVICE [/rostopic_9513_1540290509651/set_logger_level] /rostopic_9513_1540290509651 http://osboxes:45887/
+[rosmaster.master][INFO] 2018-10-23 18:28:29,879: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45887/']
+[rosmaster.master][INFO] 2018-10-23 18:28:29,897: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45887/']: sec=0.02, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:29,904: +SUB [/imu] /rostopic_9513_1540290509651 http://osboxes:45887/
+[rosmaster.master][INFO] 2018-10-23 18:28:30,430: -SUB [/imu] /rostopic_9513_1540290509651 http://osboxes:45887/
+[rosmaster.master][INFO] 2018-10-23 18:28:30,431: -PUB [/rosout] /rostopic_9513_1540290509651 http://osboxes:45887/
+[rosmaster.master][INFO] 2018-10-23 18:28:30,432: -SERVICE [/rostopic_9513_1540290509651/set_logger_level] /rostopic_9513_1540290509651 rosrpc://osboxes:42589
+[rosmaster.master][INFO] 2018-10-23 18:28:30,433: -SERVICE [/rostopic_9513_1540290509651/get_loggers] /rostopic_9513_1540290509651 rosrpc://osboxes:42589
+[rosmaster.master][INFO] 2018-10-23 18:28:30,485: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:30,489: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:33,248: +PUB [/rosout] /rostopic_9531_1540290512812 http://osboxes:38061/
+[rosmaster.master][INFO] 2018-10-23 18:28:33,270: +SERVICE [/rostopic_9531_1540290512812/get_loggers] /rostopic_9531_1540290512812 http://osboxes:38061/
+[rosmaster.master][INFO] 2018-10-23 18:28:33,282: +SERVICE [/rostopic_9531_1540290512812/set_logger_level] /rostopic_9531_1540290512812 http://osboxes:38061/
+[rosmaster.master][INFO] 2018-10-23 18:28:33,291: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:38061/']
+[rosmaster.master][INFO] 2018-10-23 18:28:33,326: -PUB [/rosout] /rostopic_9531_1540290512812 http://osboxes:38061/
+[rosmaster.master][INFO] 2018-10-23 18:28:33,327: -SERVICE [/rostopic_9531_1540290512812/set_logger_level] /rostopic_9531_1540290512812 rosrpc://osboxes:42983
+[rosmaster.master][INFO] 2018-10-23 18:28:33,327: -SERVICE [/rostopic_9531_1540290512812/get_loggers] /rostopic_9531_1540290512812 rosrpc://osboxes:42983
+[rosmaster.master][INFO] 2018-10-23 18:28:33,332: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:38061/']: sec=0.04, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:33,332: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:33,335: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:36,132: +PUB [/rosout] /rostopic_9547_1540290515907 http://osboxes:45935/
+[rosmaster.master][INFO] 2018-10-23 18:28:36,143: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45935/']
+[rosmaster.master][INFO] 2018-10-23 18:28:36,157: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45935/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:36,165: +SERVICE [/rostopic_9547_1540290515907/get_loggers] /rostopic_9547_1540290515907 http://osboxes:45935/
+[rosmaster.master][INFO] 2018-10-23 18:28:36,182: +SERVICE [/rostopic_9547_1540290515907/set_logger_level] /rostopic_9547_1540290515907 http://osboxes:45935/
+[rosmaster.master][INFO] 2018-10-23 18:28:36,270: +SUB [/magnetic_field] /rostopic_9547_1540290515907 http://osboxes:45935/
+[rosmaster.master][INFO] 2018-10-23 18:28:36,540: -SUB [/magnetic_field] /rostopic_9547_1540290515907 http://osboxes:45935/
+[rosmaster.master][INFO] 2018-10-23 18:28:36,541: -PUB [/rosout] /rostopic_9547_1540290515907 http://osboxes:45935/
+[rosmaster.master][INFO] 2018-10-23 18:28:36,541: -SERVICE [/rostopic_9547_1540290515907/set_logger_level] /rostopic_9547_1540290515907 rosrpc://osboxes:45255
+[rosmaster.master][INFO] 2018-10-23 18:28:36,542: -SERVICE [/rostopic_9547_1540290515907/get_loggers] /rostopic_9547_1540290515907 rosrpc://osboxes:45255
+[rosmaster.master][INFO] 2018-10-23 18:28:36,561: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:36,563: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:39,071: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:40959/']
+[rosmaster.master][INFO] 2018-10-23 18:28:39,073: +PUB [/rosout] /rostopic_9565_1540290518572 http://osboxes:40959/
+[rosmaster.master][INFO] 2018-10-23 18:28:39,085: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:40959/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:39,108: +SERVICE [/rostopic_9565_1540290518572/get_loggers] /rostopic_9565_1540290518572 http://osboxes:40959/
+[rosmaster.master][INFO] 2018-10-23 18:28:39,121: +SERVICE [/rostopic_9565_1540290518572/set_logger_level] /rostopic_9565_1540290518572 http://osboxes:40959/
+[rosmaster.master][INFO] 2018-10-23 18:28:39,162: +SUB [/motor_power] /rostopic_9565_1540290518572 http://osboxes:40959/
+[rosmaster.master][INFO] 2018-10-23 18:28:39,242: -SUB [/motor_power] /rostopic_9565_1540290518572 http://osboxes:40959/
+[rosmaster.master][INFO] 2018-10-23 18:28:39,243: -PUB [/rosout] /rostopic_9565_1540290518572 http://osboxes:40959/
+[rosmaster.master][INFO] 2018-10-23 18:28:39,244: -SERVICE [/rostopic_9565_1540290518572/set_logger_level] /rostopic_9565_1540290518572 rosrpc://osboxes:36653
+[rosmaster.master][INFO] 2018-10-23 18:28:39,245: -SERVICE [/rostopic_9565_1540290518572/get_loggers] /rostopic_9565_1540290518572 rosrpc://osboxes:36653
+[rosmaster.master][INFO] 2018-10-23 18:28:39,287: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:39,291: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:41,661: +PUB [/rosout] /rostopic_9581_1540290521481 http://osboxes:44169/
+[rosmaster.master][INFO] 2018-10-23 18:28:41,688: +SERVICE [/rostopic_9581_1540290521481/get_loggers] /rostopic_9581_1540290521481 http://osboxes:44169/
+[rosmaster.master][INFO] 2018-10-23 18:28:41,696: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:44169/']
+[rosmaster.master][INFO] 2018-10-23 18:28:41,704: +SERVICE [/rostopic_9581_1540290521481/set_logger_level] /rostopic_9581_1540290521481 http://osboxes:44169/
+[rosmaster.master][INFO] 2018-10-23 18:28:41,712: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:44169/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:41,752: +SUB [/odom] /rostopic_9581_1540290521481 http://osboxes:44169/
+[rosmaster.master][INFO] 2018-10-23 18:28:42,297: -SUB [/odom] /rostopic_9581_1540290521481 http://osboxes:44169/
+[rosmaster.master][INFO] 2018-10-23 18:28:42,299: -PUB [/rosout] /rostopic_9581_1540290521481 http://osboxes:44169/
+[rosmaster.master][INFO] 2018-10-23 18:28:42,300: -SERVICE [/rostopic_9581_1540290521481/set_logger_level] /rostopic_9581_1540290521481 rosrpc://osboxes:40975
+[rosmaster.master][INFO] 2018-10-23 18:28:42,301: -SERVICE [/rostopic_9581_1540290521481/get_loggers] /rostopic_9581_1540290521481 rosrpc://osboxes:40975
+[rosmaster.master][INFO] 2018-10-23 18:28:42,311: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:42,316: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:44,672: +PUB [/rosout] /rostopic_9599_1540290524501 http://osboxes:36279/
+[rosmaster.master][INFO] 2018-10-23 18:28:44,693: +SERVICE [/rostopic_9599_1540290524501/get_loggers] /rostopic_9599_1540290524501 http://osboxes:36279/
+[rosmaster.master][INFO] 2018-10-23 18:28:44,705: +SERVICE [/rostopic_9599_1540290524501/set_logger_level] /rostopic_9599_1540290524501 http://osboxes:36279/
+[rosmaster.master][INFO] 2018-10-23 18:28:44,721: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:36279/']
+[rosmaster.master][INFO] 2018-10-23 18:28:44,738: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:36279/']: sec=0.02, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:44,765: +SUB [/reset] /rostopic_9599_1540290524501 http://osboxes:36279/
+[rosmaster.master][INFO] 2018-10-23 18:28:45,317: -SUB [/reset] /rostopic_9599_1540290524501 http://osboxes:36279/
+[rosmaster.master][INFO] 2018-10-23 18:28:45,318: -PUB [/rosout] /rostopic_9599_1540290524501 http://osboxes:36279/
+[rosmaster.master][INFO] 2018-10-23 18:28:45,319: -SERVICE [/rostopic_9599_1540290524501/get_loggers] /rostopic_9599_1540290524501 rosrpc://osboxes:45183
+[rosmaster.master][INFO] 2018-10-23 18:28:45,320: -SERVICE [/rostopic_9599_1540290524501/set_logger_level] /rostopic_9599_1540290524501 rosrpc://osboxes:45183
+[rosmaster.master][INFO] 2018-10-23 18:28:45,323: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:45,328: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:47,247: +PUB [/rosout] /rostopic_9615_1540290527056 http://osboxes:32853/
+[rosmaster.master][INFO] 2018-10-23 18:28:47,270: +SERVICE [/rostopic_9615_1540290527056/get_loggers] /rostopic_9615_1540290527056 http://osboxes:32853/
+[rosmaster.master][INFO] 2018-10-23 18:28:47,282: +SERVICE [/rostopic_9615_1540290527056/set_logger_level] /rostopic_9615_1540290527056 http://osboxes:32853/
+[rosmaster.master][INFO] 2018-10-23 18:28:47,324: +SUB [/rosout] /rostopic_9615_1540290527056 http://osboxes:32853/
+[rosmaster.master][INFO] 2018-10-23 18:28:47,333: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:32853/']
+[rosmaster.master][INFO] 2018-10-23 18:28:47,347: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:32853/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:47,914: -SUB [/rosout] /rostopic_9615_1540290527056 http://osboxes:32853/
+[rosmaster.master][INFO] 2018-10-23 18:28:47,915: -PUB [/rosout] /rostopic_9615_1540290527056 http://osboxes:32853/
+[rosmaster.master][INFO] 2018-10-23 18:28:47,916: -SERVICE [/rostopic_9615_1540290527056/set_logger_level] /rostopic_9615_1540290527056 rosrpc://osboxes:37127
+[rosmaster.master][INFO] 2018-10-23 18:28:47,916: -SERVICE [/rostopic_9615_1540290527056/get_loggers] /rostopic_9615_1540290527056 rosrpc://osboxes:37127
+[rosmaster.master][INFO] 2018-10-23 18:28:47,936: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:47,938: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:49,474: +PUB [/rosout] /rostopic_9639_1540290529285 http://osboxes:40955/
+[rosmaster.master][INFO] 2018-10-23 18:28:49,502: +SERVICE [/rostopic_9639_1540290529285/get_loggers] /rostopic_9639_1540290529285 http://osboxes:40955/
+[rosmaster.master][INFO] 2018-10-23 18:28:49,516: +SERVICE [/rostopic_9639_1540290529285/set_logger_level] /rostopic_9639_1540290529285 http://osboxes:40955/
+[rosmaster.master][INFO] 2018-10-23 18:28:49,542: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:40955/']
+[rosmaster.master][INFO] 2018-10-23 18:28:49,557: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:40955/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:49,561: +SUB [/rosout_agg] /rostopic_9639_1540290529285 http://osboxes:40955/
+[rosmaster.master][INFO] 2018-10-23 18:28:50,128: -SUB [/rosout_agg] /rostopic_9639_1540290529285 http://osboxes:40955/
+[rosmaster.master][INFO] 2018-10-23 18:28:50,129: -PUB [/rosout] /rostopic_9639_1540290529285 http://osboxes:40955/
+[rosmaster.master][INFO] 2018-10-23 18:28:50,130: -SERVICE [/rostopic_9639_1540290529285/get_loggers] /rostopic_9639_1540290529285 rosrpc://osboxes:40237
+[rosmaster.master][INFO] 2018-10-23 18:28:50,131: -SERVICE [/rostopic_9639_1540290529285/set_logger_level] /rostopic_9639_1540290529285 rosrpc://osboxes:40237
+[rosmaster.master][INFO] 2018-10-23 18:28:50,149: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:50,153: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:52,233: +PUB [/rosout] /rostopic_9659_1540290532060 http://osboxes:45737/
+[rosmaster.master][INFO] 2018-10-23 18:28:52,258: +SERVICE [/rostopic_9659_1540290532060/get_loggers] /rostopic_9659_1540290532060 http://osboxes:45737/
+[rosmaster.master][INFO] 2018-10-23 18:28:52,259: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45737/']
+[rosmaster.master][INFO] 2018-10-23 18:28:52,269: +SERVICE [/rostopic_9659_1540290532060/set_logger_level] /rostopic_9659_1540290532060 http://osboxes:45737/
+[rosmaster.master][INFO] 2018-10-23 18:28:52,272: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45737/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:52,322: +SUB [/scan] /rostopic_9659_1540290532060 http://osboxes:45737/
+[rosmaster.master][INFO] 2018-10-23 18:28:52,827: -SUB [/scan] /rostopic_9659_1540290532060 http://osboxes:45737/
+[rosmaster.master][INFO] 2018-10-23 18:28:52,828: -PUB [/rosout] /rostopic_9659_1540290532060 http://osboxes:45737/
+[rosmaster.master][INFO] 2018-10-23 18:28:52,829: -SERVICE [/rostopic_9659_1540290532060/get_loggers] /rostopic_9659_1540290532060 rosrpc://osboxes:35007
+[rosmaster.master][INFO] 2018-10-23 18:28:52,830: -SERVICE [/rostopic_9659_1540290532060/set_logger_level] /rostopic_9659_1540290532060 rosrpc://osboxes:35007
+[rosmaster.master][INFO] 2018-10-23 18:28:52,860: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:52,864: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:54,962: +PUB [/rosout] /rostopic_9675_1540290534789 http://osboxes:33285/
+[rosmaster.master][INFO] 2018-10-23 18:28:54,970: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:33285/']
+[rosmaster.master][INFO] 2018-10-23 18:28:54,998: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:33285/']: sec=0.03, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:55,006: +SERVICE [/rostopic_9675_1540290534789/get_loggers] /rostopic_9675_1540290534789 http://osboxes:33285/
+[rosmaster.master][INFO] 2018-10-23 18:28:55,025: +SERVICE [/rostopic_9675_1540290534789/set_logger_level] /rostopic_9675_1540290534789 http://osboxes:33285/
+[rosmaster.master][INFO] 2018-10-23 18:28:55,133: -PUB [/rosout] /rostopic_9675_1540290534789 http://osboxes:33285/
+[rosmaster.master][INFO] 2018-10-23 18:28:55,135: -SERVICE [/rostopic_9675_1540290534789/get_loggers] /rostopic_9675_1540290534789 rosrpc://osboxes:33867
+[rosmaster.master][INFO] 2018-10-23 18:28:55,136: -SERVICE [/rostopic_9675_1540290534789/set_logger_level] /rostopic_9675_1540290534789 rosrpc://osboxes:33867
+[rosmaster.master][INFO] 2018-10-23 18:28:55,177: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:55,181: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:57,258: +PUB [/rosout] /rostopic_9691_1540290536990 http://osboxes:45629/
+[rosmaster.master][INFO] 2018-10-23 18:28:57,283: +SERVICE [/rostopic_9691_1540290536990/get_loggers] /rostopic_9691_1540290536990 http://osboxes:45629/
+[rosmaster.master][INFO] 2018-10-23 18:28:57,284: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45629/']
+[rosmaster.master][INFO] 2018-10-23 18:28:57,299: +SERVICE [/rostopic_9691_1540290536990/set_logger_level] /rostopic_9691_1540290536990 http://osboxes:45629/
+[rosmaster.master][INFO] 2018-10-23 18:28:57,301: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45629/']: sec=0.02, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:57,395: -PUB [/rosout] /rostopic_9691_1540290536990 http://osboxes:45629/
+[rosmaster.master][INFO] 2018-10-23 18:28:57,396: -SERVICE [/rostopic_9691_1540290536990/get_loggers] /rostopic_9691_1540290536990 rosrpc://osboxes:45763
+[rosmaster.master][INFO] 2018-10-23 18:28:57,398: -SERVICE [/rostopic_9691_1540290536990/set_logger_level] /rostopic_9691_1540290536990 rosrpc://osboxes:45763
+[rosmaster.master][INFO] 2018-10-23 18:28:57,404: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:28:57,408: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:59,573: +PUB [/rosout] /rostopic_9707_1540290539303 http://osboxes:33755/
+[rosmaster.master][INFO] 2018-10-23 18:28:59,596: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:33755/']
+[rosmaster.master][INFO] 2018-10-23 18:28:59,612: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:33755/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:28:59,620: +SERVICE [/rostopic_9707_1540290539303/get_loggers] /rostopic_9707_1540290539303 http://osboxes:33755/
+[rosmaster.master][INFO] 2018-10-23 18:28:59,639: +SERVICE [/rostopic_9707_1540290539303/set_logger_level] /rostopic_9707_1540290539303 http://osboxes:33755/
+[rosmaster.master][INFO] 2018-10-23 18:29:00,000: -PUB [/rosout] /rostopic_9707_1540290539303 http://osboxes:33755/
+[rosmaster.master][INFO] 2018-10-23 18:29:00,001: -SERVICE [/rostopic_9707_1540290539303/get_loggers] /rostopic_9707_1540290539303 rosrpc://osboxes:44083
+[rosmaster.master][INFO] 2018-10-23 18:29:00,002: -SERVICE [/rostopic_9707_1540290539303/set_logger_level] /rostopic_9707_1540290539303 rosrpc://osboxes:44083
+[rosmaster.master][INFO] 2018-10-23 18:29:00,010: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:29:00,015: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:29:04,219: +PUB [/rosout] /rostopic_9725_1540290543988 http://osboxes:43023/
+[rosmaster.master][INFO] 2018-10-23 18:29:04,221: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:43023/']
+[rosmaster.master][INFO] 2018-10-23 18:29:04,247: +SERVICE [/rostopic_9725_1540290543988/get_loggers] /rostopic_9725_1540290543988 http://osboxes:43023/
+[rosmaster.master][INFO] 2018-10-23 18:29:04,253: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:43023/']: sec=0.03, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:29:04,263: +SERVICE [/rostopic_9725_1540290543988/set_logger_level] /rostopic_9725_1540290543988 http://osboxes:43023/
+[rosmaster.master][INFO] 2018-10-23 18:29:04,367: -PUB [/rosout] /rostopic_9725_1540290543988 http://osboxes:43023/
+[rosmaster.master][INFO] 2018-10-23 18:29:04,368: -SERVICE [/rostopic_9725_1540290543988/get_loggers] /rostopic_9725_1540290543988 rosrpc://osboxes:44621
+[rosmaster.master][INFO] 2018-10-23 18:29:04,369: -SERVICE [/rostopic_9725_1540290543988/set_logger_level] /rostopic_9725_1540290543988 rosrpc://osboxes:44621
+[rosmaster.master][INFO] 2018-10-23 18:29:04,424: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:29:04,428: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:29:05,854: +PUB [/rosout] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:05,858: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:44945/']
+[rosmaster.master][INFO] 2018-10-23 18:29:05,871: +SERVICE [/record_1540290545830383161/get_loggers] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:05,876: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:44945/']: sec=0.02, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:29:05,885: +SERVICE [/record_1540290545830383161/set_logger_level] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,015: +SUB [/firmware_version] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,109: +SUB [/version_info] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,193: +SUB [/battery_state] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,269: +SUB [/joint_states] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,344: +SUB [/rosout] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,421: +SUB [/rosout_agg] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,494: +SUB [/cmd_vel_rc100] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,572: +SUB [/imu] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,662: +SUB [/odom] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,733: +SUB [/tf] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,805: +SUB [/diagnostics] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,894: +SUB [/sensor_state] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:06,977: +SUB [/magnetic_field] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,418: -PUB [/rosout] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,430: -SUB [/firmware_version] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,445: -SUB [/version_info] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,449: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:29:15,453: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:29:15,454: publisherUpdate[/rosout] -> http://osboxes:44945/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:29:15,460: -SUB [/battery_state] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,472: publisherUpdate[/rosout] -> http://osboxes:44945/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.02, exception=[Errno -2] Name or service not known
+[rosmaster.master][INFO] 2018-10-23 18:29:15,475: -SUB [/joint_states] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,490: -SUB [/rosout] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,506: -SUB [/rosout_agg] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.threadpool][ERROR] 2018-10-23 18:29:15,515: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1053, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 897, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 859, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 836, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+
+[rosmaster.master][INFO] 2018-10-23 18:29:15,522: -SUB [/cmd_vel_rc100] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,537: -SUB [/imu] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,554: -SUB [/odom] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,569: -SUB [/tf] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,584: -SUB [/diagnostics] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,600: -SUB [/sensor_state] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,616: -SUB [/magnetic_field] /record_1540290545830383161 http://osboxes:44945/
+[rosmaster.master][INFO] 2018-10-23 18:29:15,637: -SERVICE [/record_1540290545830383161/get_loggers] /record_1540290545830383161 rosrpc://osboxes:60745
+[rosmaster.master][INFO] 2018-10-23 18:29:15,652: -SERVICE [/record_1540290545830383161/set_logger_level] /record_1540290545830383161 rosrpc://osboxes:60745
+[rosmaster.master][INFO] 2018-10-23 18:31:02,243: +PUB [/rosout] /rqt_gui_py_node_9770 http://osboxes:46313/
+[rosmaster.master][INFO] 2018-10-23 18:31:02,248: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:46313/']
+[rosmaster.master][INFO] 2018-10-23 18:31:02,275: +SERVICE [/rqt_gui_py_node_9770/get_loggers] /rqt_gui_py_node_9770 http://osboxes:46313/
+[rosmaster.master][INFO] 2018-10-23 18:31:02,287: +SERVICE [/rqt_gui_py_node_9770/set_logger_level] /rqt_gui_py_node_9770 http://osboxes:46313/
+[rosmaster.master][INFO] 2018-10-23 18:31:02,369: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:46313/']: sec=0.12, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2018-10-23 18:31:02,465: +SUB [/statistics] /rqt_gui_py_node_9770 http://osboxes:46313/
+[rosmaster.master][INFO] 2018-10-23 18:32:16,287: -SUB [/statistics] /rqt_gui_py_node_9770 http://osboxes:46313/
+[rosmaster.master][INFO] 2018-10-23 18:32:16,287: -PUB [/rosout] /rqt_gui_py_node_9770 http://osboxes:46313/
+[rosmaster.master][INFO] 2018-10-23 18:32:16,288: -SERVICE [/rqt_gui_py_node_9770/set_logger_level] /rqt_gui_py_node_9770 rosrpc://osboxes:34651
+[rosmaster.master][INFO] 2018-10-23 18:32:16,289: -SERVICE [/rqt_gui_py_node_9770/get_loggers] /rqt_gui_py_node_9770 rosrpc://osboxes:34651
+[rosmaster.master][INFO] 2018-10-23 18:32:16,297: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:32:16,299: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:02,953: +PUB [/rosout] /rostopic_10415_1540290962769 http://osboxes:46435/
+[rosmaster.master][INFO] 2018-10-23 18:36:02,965: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:46435/']
+[rosmaster.master][INFO] 2018-10-23 18:36:02,978: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:46435/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:02,986: +SERVICE [/rostopic_10415_1540290962769/get_loggers] /rostopic_10415_1540290962769 http://osboxes:46435/
+[rosmaster.master][INFO] 2018-10-23 18:36:03,000: +SERVICE [/rostopic_10415_1540290962769/set_logger_level] /rostopic_10415_1540290962769 http://osboxes:46435/
+[rosmaster.master][INFO] 2018-10-23 18:36:03,046: +SUB [/battery_state] /rostopic_10415_1540290962769 http://osboxes:46435/
+[rosmaster.master][INFO] 2018-10-23 18:36:03,591: -SUB [/battery_state] /rostopic_10415_1540290962769 http://osboxes:46435/
+[rosmaster.master][INFO] 2018-10-23 18:36:03,592: -PUB [/rosout] /rostopic_10415_1540290962769 http://osboxes:46435/
+[rosmaster.master][INFO] 2018-10-23 18:36:03,593: -SERVICE [/rostopic_10415_1540290962769/set_logger_level] /rostopic_10415_1540290962769 rosrpc://osboxes:35585
+[rosmaster.master][INFO] 2018-10-23 18:36:03,594: -SERVICE [/rostopic_10415_1540290962769/get_loggers] /rostopic_10415_1540290962769 rosrpc://osboxes:35585
+[rosmaster.master][INFO] 2018-10-23 18:36:03,640: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:03,645: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:05,751: +PUB [/rosout] /rostopic_10433_1540290965568 http://osboxes:35843/
+[rosmaster.master][INFO] 2018-10-23 18:36:05,780: +SERVICE [/rostopic_10433_1540290965568/get_loggers] /rostopic_10433_1540290965568 http://osboxes:35843/
+[rosmaster.master][INFO] 2018-10-23 18:36:05,787: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:35843/']
+[rosmaster.master][INFO] 2018-10-23 18:36:05,792: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:35843/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:05,797: +SERVICE [/rostopic_10433_1540290965568/set_logger_level] /rostopic_10433_1540290965568 http://osboxes:35843/
+[rosmaster.master][INFO] 2018-10-23 18:36:05,853: +SUB [/cmd_vel] /rostopic_10433_1540290965568 http://osboxes:35843/
+[rosmaster.master][INFO] 2018-10-23 18:36:06,365: -SUB [/cmd_vel] /rostopic_10433_1540290965568 http://osboxes:35843/
+[rosmaster.master][INFO] 2018-10-23 18:36:06,366: -PUB [/rosout] /rostopic_10433_1540290965568 http://osboxes:35843/
+[rosmaster.master][INFO] 2018-10-23 18:36:06,368: -SERVICE [/rostopic_10433_1540290965568/get_loggers] /rostopic_10433_1540290965568 rosrpc://osboxes:46571
+[rosmaster.master][INFO] 2018-10-23 18:36:06,369: -SERVICE [/rostopic_10433_1540290965568/set_logger_level] /rostopic_10433_1540290965568 rosrpc://osboxes:46571
+[rosmaster.master][INFO] 2018-10-23 18:36:06,396: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:06,400: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:08,537: +PUB [/rosout] /rostopic_10449_1540290968350 http://osboxes:39369/
+[rosmaster.master][INFO] 2018-10-23 18:36:08,551: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:39369/']
+[rosmaster.master][INFO] 2018-10-23 18:36:08,554: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:39369/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:08,562: +SERVICE [/rostopic_10449_1540290968350/get_loggers] /rostopic_10449_1540290968350 http://osboxes:39369/
+[rosmaster.master][INFO] 2018-10-23 18:36:08,574: +SERVICE [/rostopic_10449_1540290968350/set_logger_level] /rostopic_10449_1540290968350 http://osboxes:39369/
+[rosmaster.master][INFO] 2018-10-23 18:36:08,617: +SUB [/cmd_vel_rc100] /rostopic_10449_1540290968350 http://osboxes:39369/
+[rosmaster.master][INFO] 2018-10-23 18:36:09,167: -SUB [/cmd_vel_rc100] /rostopic_10449_1540290968350 http://osboxes:39369/
+[rosmaster.master][INFO] 2018-10-23 18:36:09,168: -PUB [/rosout] /rostopic_10449_1540290968350 http://osboxes:39369/
+[rosmaster.master][INFO] 2018-10-23 18:36:09,170: -SERVICE [/rostopic_10449_1540290968350/get_loggers] /rostopic_10449_1540290968350 rosrpc://osboxes:39113
+[rosmaster.master][INFO] 2018-10-23 18:36:09,171: -SERVICE [/rostopic_10449_1540290968350/set_logger_level] /rostopic_10449_1540290968350 rosrpc://osboxes:39113
+[rosmaster.master][INFO] 2018-10-23 18:36:09,206: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:09,210: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:11,358: +PUB [/rosout] /rostopic_10467_1540290971176 http://osboxes:43827/
+[rosmaster.master][INFO] 2018-10-23 18:36:11,361: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:43827/']
+[rosmaster.master][INFO] 2018-10-23 18:36:11,367: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:43827/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:11,388: +SERVICE [/rostopic_10467_1540290971176/get_loggers] /rostopic_10467_1540290971176 http://osboxes:43827/
+[rosmaster.master][INFO] 2018-10-23 18:36:11,403: +SERVICE [/rostopic_10467_1540290971176/set_logger_level] /rostopic_10467_1540290971176 http://osboxes:43827/
+[rosmaster.master][INFO] 2018-10-23 18:36:11,447: +SUB [/diagnostics] /rostopic_10467_1540290971176 http://osboxes:43827/
+[rosmaster.master][INFO] 2018-10-23 18:36:11,951: -SUB [/diagnostics] /rostopic_10467_1540290971176 http://osboxes:43827/
+[rosmaster.master][INFO] 2018-10-23 18:36:11,952: -PUB [/rosout] /rostopic_10467_1540290971176 http://osboxes:43827/
+[rosmaster.master][INFO] 2018-10-23 18:36:11,952: -SERVICE [/rostopic_10467_1540290971176/set_logger_level] /rostopic_10467_1540290971176 rosrpc://osboxes:46095
+[rosmaster.master][INFO] 2018-10-23 18:36:11,953: -SERVICE [/rostopic_10467_1540290971176/get_loggers] /rostopic_10467_1540290971176 rosrpc://osboxes:46095
+[rosmaster.master][INFO] 2018-10-23 18:36:11,962: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:11,965: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:14,134: +PUB [/rosout] /rostopic_10487_1540290973950 http://osboxes:45211/
+[rosmaster.master][INFO] 2018-10-23 18:36:14,162: +SERVICE [/rostopic_10487_1540290973950/get_loggers] /rostopic_10487_1540290973950 http://osboxes:45211/
+[rosmaster.master][INFO] 2018-10-23 18:36:14,170: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45211/']
+[rosmaster.master][INFO] 2018-10-23 18:36:14,175: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45211/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:14,179: +SERVICE [/rostopic_10487_1540290973950/set_logger_level] /rostopic_10487_1540290973950 http://osboxes:45211/
+[rosmaster.master][INFO] 2018-10-23 18:36:14,265: -PUB [/rosout] /rostopic_10487_1540290973950 http://osboxes:45211/
+[rosmaster.master][INFO] 2018-10-23 18:36:14,266: -SERVICE [/rostopic_10487_1540290973950/set_logger_level] /rostopic_10487_1540290973950 rosrpc://osboxes:34249
+[rosmaster.master][INFO] 2018-10-23 18:36:14,268: -SERVICE [/rostopic_10487_1540290973950/get_loggers] /rostopic_10487_1540290973950 rosrpc://osboxes:34249
+[rosmaster.master][INFO] 2018-10-23 18:36:14,277: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:14,282: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:15,890: +PUB [/rosout] /rostopic_10503_1540290975707 http://osboxes:34691/
+[rosmaster.master][INFO] 2018-10-23 18:36:15,922: +SERVICE [/rostopic_10503_1540290975707/get_loggers] /rostopic_10503_1540290975707 http://osboxes:34691/
+[rosmaster.master][INFO] 2018-10-23 18:36:15,924: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:34691/']
+[rosmaster.master][INFO] 2018-10-23 18:36:15,928: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:34691/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:15,934: +SERVICE [/rostopic_10503_1540290975707/set_logger_level] /rostopic_10503_1540290975707 http://osboxes:34691/
+[rosmaster.master][INFO] 2018-10-23 18:36:15,973: +SUB [/imu] /rostopic_10503_1540290975707 http://osboxes:34691/
+[rosmaster.master][INFO] 2018-10-23 18:36:16,525: -SUB [/imu] /rostopic_10503_1540290975707 http://osboxes:34691/
+[rosmaster.master][INFO] 2018-10-23 18:36:16,527: -PUB [/rosout] /rostopic_10503_1540290975707 http://osboxes:34691/
+[rosmaster.master][INFO] 2018-10-23 18:36:16,529: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:16,535: -SERVICE [/rostopic_10503_1540290975707/set_logger_level] /rostopic_10503_1540290975707 rosrpc://osboxes:45185
+[rosmaster.master][INFO] 2018-10-23 18:36:16,539: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:16,540: -SERVICE [/rostopic_10503_1540290975707/get_loggers] /rostopic_10503_1540290975707 rosrpc://osboxes:45185
+[rosmaster.master][INFO] 2018-10-23 18:36:18,627: +PUB [/rosout] /rostopic_10521_1540290978443 http://osboxes:41117/
+[rosmaster.master][INFO] 2018-10-23 18:36:18,644: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:41117/']
+[rosmaster.master][INFO] 2018-10-23 18:36:18,649: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:41117/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:18,657: +SERVICE [/rostopic_10521_1540290978443/get_loggers] /rostopic_10521_1540290978443 http://osboxes:41117/
+[rosmaster.master][INFO] 2018-10-23 18:36:18,674: +SERVICE [/rostopic_10521_1540290978443/set_logger_level] /rostopic_10521_1540290978443 http://osboxes:41117/
+[rosmaster.master][INFO] 2018-10-23 18:36:18,720: +SUB [/joint_states] /rostopic_10521_1540290978443 http://osboxes:41117/
+[rosmaster.master][INFO] 2018-10-23 18:36:19,276: -SUB [/joint_states] /rostopic_10521_1540290978443 http://osboxes:41117/
+[rosmaster.master][INFO] 2018-10-23 18:36:19,277: -PUB [/rosout] /rostopic_10521_1540290978443 http://osboxes:41117/
+[rosmaster.master][INFO] 2018-10-23 18:36:19,277: -SERVICE [/rostopic_10521_1540290978443/set_logger_level] /rostopic_10521_1540290978443 rosrpc://osboxes:42063
+[rosmaster.master][INFO] 2018-10-23 18:36:19,278: -SERVICE [/rostopic_10521_1540290978443/get_loggers] /rostopic_10521_1540290978443 rosrpc://osboxes:42063
+[rosmaster.master][INFO] 2018-10-23 18:36:19,290: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:19,293: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:21,412: +PUB [/rosout] /rostopic_10539_1540290981186 http://osboxes:44701/
+[rosmaster.master][INFO] 2018-10-23 18:36:21,438: +SERVICE [/rostopic_10539_1540290981186/get_loggers] /rostopic_10539_1540290981186 http://osboxes:44701/
+[rosmaster.master][INFO] 2018-10-23 18:36:21,451: +SERVICE [/rostopic_10539_1540290981186/set_logger_level] /rostopic_10539_1540290981186 http://osboxes:44701/
+[rosmaster.master][INFO] 2018-10-23 18:36:21,456: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:44701/']
+[rosmaster.master][INFO] 2018-10-23 18:36:21,461: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:44701/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:21,510: +SUB [/magnetic_field] /rostopic_10539_1540290981186 http://osboxes:44701/
+[rosmaster.master][INFO] 2018-10-23 18:36:21,994: -SUB [/magnetic_field] /rostopic_10539_1540290981186 http://osboxes:44701/
+[rosmaster.master][INFO] 2018-10-23 18:36:21,996: -PUB [/rosout] /rostopic_10539_1540290981186 http://osboxes:44701/
+[rosmaster.master][INFO] 2018-10-23 18:36:21,997: -SERVICE [/rostopic_10539_1540290981186/set_logger_level] /rostopic_10539_1540290981186 rosrpc://osboxes:35855
+[rosmaster.master][INFO] 2018-10-23 18:36:21,998: -SERVICE [/rostopic_10539_1540290981186/get_loggers] /rostopic_10539_1540290981186 rosrpc://osboxes:35855
+[rosmaster.master][INFO] 2018-10-23 18:36:22,000: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:22,005: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:24,206: +PUB [/rosout] /rostopic_10557_1540290984073 http://osboxes:35617/
+[rosmaster.master][INFO] 2018-10-23 18:36:24,208: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:35617/']
+[rosmaster.master][INFO] 2018-10-23 18:36:24,213: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:35617/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:24,233: +SERVICE [/rostopic_10557_1540290984073/get_loggers] /rostopic_10557_1540290984073 http://osboxes:35617/
+[rosmaster.master][INFO] 2018-10-23 18:36:24,246: +SERVICE [/rostopic_10557_1540290984073/set_logger_level] /rostopic_10557_1540290984073 http://osboxes:35617/
+[rosmaster.master][INFO] 2018-10-23 18:36:24,288: +SUB [/motor_power] /rostopic_10557_1540290984073 http://osboxes:35617/
+[rosmaster.master][INFO] 2018-10-23 18:36:24,852: -SUB [/motor_power] /rostopic_10557_1540290984073 http://osboxes:35617/
+[rosmaster.master][INFO] 2018-10-23 18:36:24,853: -PUB [/rosout] /rostopic_10557_1540290984073 http://osboxes:35617/
+[rosmaster.master][INFO] 2018-10-23 18:36:24,854: -SERVICE [/rostopic_10557_1540290984073/get_loggers] /rostopic_10557_1540290984073 rosrpc://osboxes:36619
+[rosmaster.master][INFO] 2018-10-23 18:36:24,855: -SERVICE [/rostopic_10557_1540290984073/set_logger_level] /rostopic_10557_1540290984073 rosrpc://osboxes:36619
+[rosmaster.master][INFO] 2018-10-23 18:36:24,869: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:24,873: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:26,894: +PUB [/rosout] /rostopic_10573_1540290986679 http://osboxes:43505/
+[rosmaster.master][INFO] 2018-10-23 18:36:26,915: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:43505/']
+[rosmaster.master][INFO] 2018-10-23 18:36:26,921: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:43505/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:26,924: +SERVICE [/rostopic_10573_1540290986679/get_loggers] /rostopic_10573_1540290986679 http://osboxes:43505/
+[rosmaster.master][INFO] 2018-10-23 18:36:26,937: +SERVICE [/rostopic_10573_1540290986679/set_logger_level] /rostopic_10573_1540290986679 http://osboxes:43505/
+[rosmaster.master][INFO] 2018-10-23 18:36:26,985: +SUB [/odom] /rostopic_10573_1540290986679 http://osboxes:43505/
+[rosmaster.master][INFO] 2018-10-23 18:36:27,454: -SUB [/odom] /rostopic_10573_1540290986679 http://osboxes:43505/
+[rosmaster.master][INFO] 2018-10-23 18:36:27,456: -PUB [/rosout] /rostopic_10573_1540290986679 http://osboxes:43505/
+[rosmaster.master][INFO] 2018-10-23 18:36:27,457: -SERVICE [/rostopic_10573_1540290986679/set_logger_level] /rostopic_10573_1540290986679 rosrpc://osboxes:34349
+[rosmaster.master][INFO] 2018-10-23 18:36:27,458: -SERVICE [/rostopic_10573_1540290986679/get_loggers] /rostopic_10573_1540290986679 rosrpc://osboxes:34349
+[rosmaster.master][INFO] 2018-10-23 18:36:27,479: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:27,483: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:29,160: +PUB [/rosout] /rostopic_10591_1540290988968 http://osboxes:44061/
+[rosmaster.master][INFO] 2018-10-23 18:36:29,185: +SERVICE [/rostopic_10591_1540290988968/get_loggers] /rostopic_10591_1540290988968 http://osboxes:44061/
+[rosmaster.master][INFO] 2018-10-23 18:36:29,187: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:44061/']
+[rosmaster.master][INFO] 2018-10-23 18:36:29,194: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:44061/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:29,199: +SERVICE [/rostopic_10591_1540290988968/set_logger_level] /rostopic_10591_1540290988968 http://osboxes:44061/
+[rosmaster.master][INFO] 2018-10-23 18:36:29,240: +SUB [/reset] /rostopic_10591_1540290988968 http://osboxes:44061/
+[rosmaster.master][INFO] 2018-10-23 18:36:29,792: -SUB [/reset] /rostopic_10591_1540290988968 http://osboxes:44061/
+[rosmaster.master][INFO] 2018-10-23 18:36:29,793: -PUB [/rosout] /rostopic_10591_1540290988968 http://osboxes:44061/
+[rosmaster.master][INFO] 2018-10-23 18:36:29,794: -SERVICE [/rostopic_10591_1540290988968/set_logger_level] /rostopic_10591_1540290988968 rosrpc://osboxes:43313
+[rosmaster.master][INFO] 2018-10-23 18:36:29,794: -SERVICE [/rostopic_10591_1540290988968/get_loggers] /rostopic_10591_1540290988968 rosrpc://osboxes:43313
+[rosmaster.master][INFO] 2018-10-23 18:36:29,801: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:29,804: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:32,156: +PUB [/rosout] /rostopic_10607_1540290991916 http://osboxes:34343/
+[rosmaster.master][INFO] 2018-10-23 18:36:32,185: +SERVICE [/rostopic_10607_1540290991916/get_loggers] /rostopic_10607_1540290991916 http://osboxes:34343/
+[rosmaster.master][INFO] 2018-10-23 18:36:32,197: +SERVICE [/rostopic_10607_1540290991916/set_logger_level] /rostopic_10607_1540290991916 http://osboxes:34343/
+[rosmaster.master][INFO] 2018-10-23 18:36:32,209: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:34343/']
+[rosmaster.master][INFO] 2018-10-23 18:36:32,212: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:34343/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:32,234: +SUB [/rosout] /rostopic_10607_1540290991916 http://osboxes:34343/
+[rosmaster.master][INFO] 2018-10-23 18:36:32,679: -SUB [/rosout] /rostopic_10607_1540290991916 http://osboxes:34343/
+[rosmaster.master][INFO] 2018-10-23 18:36:32,680: -PUB [/rosout] /rostopic_10607_1540290991916 http://osboxes:34343/
+[rosmaster.master][INFO] 2018-10-23 18:36:32,682: -SERVICE [/rostopic_10607_1540290991916/get_loggers] /rostopic_10607_1540290991916 rosrpc://osboxes:44589
+[rosmaster.master][INFO] 2018-10-23 18:36:32,683: -SERVICE [/rostopic_10607_1540290991916/set_logger_level] /rostopic_10607_1540290991916 rosrpc://osboxes:44589
+[rosmaster.master][INFO] 2018-10-23 18:36:32,714: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:32,719: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:34,189: +PUB [/rosout] /rostopic_10631_1540290993998 http://osboxes:43111/
+[rosmaster.master][INFO] 2018-10-23 18:36:34,215: +SERVICE [/rostopic_10631_1540290993998/get_loggers] /rostopic_10631_1540290993998 http://osboxes:43111/
+[rosmaster.master][INFO] 2018-10-23 18:36:34,223: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:43111/']
+[rosmaster.master][INFO] 2018-10-23 18:36:34,228: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:43111/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:34,232: +SERVICE [/rostopic_10631_1540290993998/set_logger_level] /rostopic_10631_1540290993998 http://osboxes:43111/
+[rosmaster.master][INFO] 2018-10-23 18:36:34,279: +SUB [/rosout_agg] /rostopic_10631_1540290993998 http://osboxes:43111/
+[rosmaster.master][INFO] 2018-10-23 18:36:34,863: -SUB [/rosout_agg] /rostopic_10631_1540290993998 http://osboxes:43111/
+[rosmaster.master][INFO] 2018-10-23 18:36:34,866: -PUB [/rosout] /rostopic_10631_1540290993998 http://osboxes:43111/
+[rosmaster.master][INFO] 2018-10-23 18:36:34,869: -SERVICE [/rostopic_10631_1540290993998/set_logger_level] /rostopic_10631_1540290993998 rosrpc://osboxes:34049
+[rosmaster.master][INFO] 2018-10-23 18:36:34,873: -SERVICE [/rostopic_10631_1540290993998/get_loggers] /rostopic_10631_1540290993998 rosrpc://osboxes:34049
+[rosmaster.master][INFO] 2018-10-23 18:36:34,931: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:34,935: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:36,765: +PUB [/rosout] /rostopic_10649_1540290996580 http://osboxes:36197/
+[rosmaster.master][INFO] 2018-10-23 18:36:36,791: +SERVICE [/rostopic_10649_1540290996580/get_loggers] /rostopic_10649_1540290996580 http://osboxes:36197/
+[rosmaster.master][INFO] 2018-10-23 18:36:36,804: +SERVICE [/rostopic_10649_1540290996580/set_logger_level] /rostopic_10649_1540290996580 http://osboxes:36197/
+[rosmaster.master][INFO] 2018-10-23 18:36:36,839: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:36197/']
+[rosmaster.master][INFO] 2018-10-23 18:36:36,845: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:36197/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:36,852: +SUB [/scan] /rostopic_10649_1540290996580 http://osboxes:36197/
+[rosmaster.master][INFO] 2018-10-23 18:36:37,431: -SUB [/scan] /rostopic_10649_1540290996580 http://osboxes:36197/
+[rosmaster.master][INFO] 2018-10-23 18:36:37,432: -PUB [/rosout] /rostopic_10649_1540290996580 http://osboxes:36197/
+[rosmaster.master][INFO] 2018-10-23 18:36:37,434: -SERVICE [/rostopic_10649_1540290996580/set_logger_level] /rostopic_10649_1540290996580 rosrpc://osboxes:45597
+[rosmaster.master][INFO] 2018-10-23 18:36:37,435: -SERVICE [/rostopic_10649_1540290996580/get_loggers] /rostopic_10649_1540290996580 rosrpc://osboxes:45597
+[rosmaster.master][INFO] 2018-10-23 18:36:37,443: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:37,447: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:38,875: +PUB [/rosout] /rostopic_10665_1540290998674 http://osboxes:39105/
+[rosmaster.master][INFO] 2018-10-23 18:36:38,910: +SERVICE [/rostopic_10665_1540290998674/get_loggers] /rostopic_10665_1540290998674 http://osboxes:39105/
+[rosmaster.master][INFO] 2018-10-23 18:36:38,925: +SERVICE [/rostopic_10665_1540290998674/set_logger_level] /rostopic_10665_1540290998674 http://osboxes:39105/
+[rosmaster.master][INFO] 2018-10-23 18:36:38,947: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:39105/']
+[rosmaster.master][INFO] 2018-10-23 18:36:38,954: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:39105/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:39,015: -PUB [/rosout] /rostopic_10665_1540290998674 http://osboxes:39105/
+[rosmaster.master][INFO] 2018-10-23 18:36:39,017: -SERVICE [/rostopic_10665_1540290998674/set_logger_level] /rostopic_10665_1540290998674 rosrpc://osboxes:35855
+[rosmaster.master][INFO] 2018-10-23 18:36:39,019: -SERVICE [/rostopic_10665_1540290998674/get_loggers] /rostopic_10665_1540290998674 rosrpc://osboxes:35855
+[rosmaster.master][INFO] 2018-10-23 18:36:39,052: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:39,058: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:40,406: +PUB [/rosout] /rostopic_10681_1540291000218 http://osboxes:45791/
+[rosmaster.master][INFO] 2018-10-23 18:36:40,432: +SERVICE [/rostopic_10681_1540291000218/get_loggers] /rostopic_10681_1540291000218 http://osboxes:45791/
+[rosmaster.master][INFO] 2018-10-23 18:36:40,447: +SERVICE [/rostopic_10681_1540291000218/set_logger_level] /rostopic_10681_1540291000218 http://osboxes:45791/
+[rosmaster.master][INFO] 2018-10-23 18:36:40,455: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45791/']
+[rosmaster.master][INFO] 2018-10-23 18:36:40,460: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45791/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:40,539: -PUB [/rosout] /rostopic_10681_1540291000218 http://osboxes:45791/
+[rosmaster.master][INFO] 2018-10-23 18:36:40,540: -SERVICE [/rostopic_10681_1540291000218/get_loggers] /rostopic_10681_1540291000218 rosrpc://osboxes:41915
+[rosmaster.master][INFO] 2018-10-23 18:36:40,541: -SERVICE [/rostopic_10681_1540291000218/set_logger_level] /rostopic_10681_1540291000218 rosrpc://osboxes:41915
+[rosmaster.master][INFO] 2018-10-23 18:36:40,559: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:40,563: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:41,929: +PUB [/rosout] /rostopic_10697_1540291001737 http://osboxes:33389/
+[rosmaster.master][INFO] 2018-10-23 18:36:41,954: +SERVICE [/rostopic_10697_1540291001737/get_loggers] /rostopic_10697_1540291001737 http://osboxes:33389/
+[rosmaster.master][INFO] 2018-10-23 18:36:41,967: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:33389/']
+[rosmaster.master][INFO] 2018-10-23 18:36:41,969: +SERVICE [/rostopic_10697_1540291001737/set_logger_level] /rostopic_10697_1540291001737 http://osboxes:33389/
+[rosmaster.master][INFO] 2018-10-23 18:36:42,019: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:33389/']: sec=0.05, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:42,556: +SUB [/tf] /rostopic_10697_1540291001737 http://osboxes:33389/
+[rosmaster.master][INFO] 2018-10-23 18:36:42,586: -SUB [/tf] /rostopic_10697_1540291001737 http://osboxes:33389/
+[rosmaster.master][INFO] 2018-10-23 18:36:42,588: -PUB [/rosout] /rostopic_10697_1540291001737 http://osboxes:33389/
+[rosmaster.master][INFO] 2018-10-23 18:36:42,589: -SERVICE [/rostopic_10697_1540291001737/set_logger_level] /rostopic_10697_1540291001737 rosrpc://osboxes:45545
+[rosmaster.master][INFO] 2018-10-23 18:36:42,591: -SERVICE [/rostopic_10697_1540291001737/get_loggers] /rostopic_10697_1540291001737 rosrpc://osboxes:45545
+[rosmaster.master][INFO] 2018-10-23 18:36:42,621: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:42,625: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:45,480: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:34167/']
+[rosmaster.master][INFO] 2018-10-23 18:36:45,480: +PUB [/rosout] /rostopic_10715_1540291005255 http://osboxes:34167/
+[rosmaster.master][INFO] 2018-10-23 18:36:45,485: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:34167/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:45,517: +SERVICE [/rostopic_10715_1540291005255/get_loggers] /rostopic_10715_1540291005255 http://osboxes:34167/
+[rosmaster.master][INFO] 2018-10-23 18:36:45,542: +SERVICE [/rostopic_10715_1540291005255/set_logger_level] /rostopic_10715_1540291005255 http://osboxes:34167/
+[rosmaster.master][INFO] 2018-10-23 18:36:45,809: -PUB [/rosout] /rostopic_10715_1540291005255 http://osboxes:34167/
+[rosmaster.master][INFO] 2018-10-23 18:36:45,811: -SERVICE [/rostopic_10715_1540291005255/set_logger_level] /rostopic_10715_1540291005255 rosrpc://osboxes:45095
+[rosmaster.master][INFO] 2018-10-23 18:36:45,812: -SERVICE [/rostopic_10715_1540291005255/get_loggers] /rostopic_10715_1540291005255 rosrpc://osboxes:45095
+[rosmaster.master][INFO] 2018-10-23 18:36:45,833: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:45,837: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:47,091: +PUB [/rosout] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:47,103: +SERVICE [/record_1540291007051035216/get_loggers] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:47,117: +SERVICE [/record_1540291007051035216/set_logger_level] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:47,140: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:34997/']
+[rosmaster.master][INFO] 2018-10-23 18:36:47,143: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:34997/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:47,200: +SUB [/firmware_version] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:47,275: +SUB [/version_info] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:47,358: +SUB [/battery_state] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:47,435: +SUB [/joint_states] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:47,517: +SUB [/rosout] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:47,595: +SUB [/rosout_agg] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:47,679: +SUB [/cmd_vel_rc100] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:47,764: +SUB [/imu] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:47,854: +SUB [/odom] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:47,928: +SUB [/tf] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:48,004: +SUB [/diagnostics] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:48,092: +SUB [/sensor_state] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:48,176: +SUB [/magnetic_field] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:56,954: -PUB [/rosout] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:56,962: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:56,967: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:36:56,969: publisherUpdate[/rosout] -> http://osboxes:34997/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:36:56,974: -SUB [/firmware_version] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:56,978: publisherUpdate[/rosout] -> http://osboxes:34997/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.01, exception=[Errno 111] Connection refused
+[rosmaster.threadpool][ERROR] 2018-10-23 18:36:56,981: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1053, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 897, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 859, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 836, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosmaster.master][INFO] 2018-10-23 18:36:56,989: -SUB [/version_info] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:57,005: -SUB [/battery_state] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:57,020: -SUB [/joint_states] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:57,034: -SUB [/rosout] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:57,051: -SUB [/rosout_agg] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:57,069: -SUB [/cmd_vel_rc100] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:57,085: -SUB [/imu] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:57,101: -SUB [/odom] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:57,116: -SUB [/tf] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:57,133: -SUB [/diagnostics] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:57,147: -SUB [/sensor_state] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:57,160: -SUB [/magnetic_field] /record_1540291007051035216 http://osboxes:34997/
+[rosmaster.master][INFO] 2018-10-23 18:36:57,178: -SERVICE [/record_1540291007051035216/get_loggers] /record_1540291007051035216 rosrpc://osboxes:45619
+[rosmaster.master][INFO] 2018-10-23 18:36:57,191: -SERVICE [/record_1540291007051035216/set_logger_level] /record_1540291007051035216 rosrpc://osboxes:45619
+[rosmaster.master][INFO] 2018-10-23 18:37:59,848: +PUB [/rosout] /rostopic_10829_1540291079653 http://osboxes:41659/
+[rosmaster.master][INFO] 2018-10-23 18:37:59,882: +SERVICE [/rostopic_10829_1540291079653/get_loggers] /rostopic_10829_1540291079653 http://osboxes:41659/
+[rosmaster.master][INFO] 2018-10-23 18:37:59,885: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:41659/']
+[rosmaster.master][INFO] 2018-10-23 18:37:59,890: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:41659/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:37:59,895: +SERVICE [/rostopic_10829_1540291079653/set_logger_level] /rostopic_10829_1540291079653 http://osboxes:41659/
+[rosmaster.master][INFO] 2018-10-23 18:37:59,940: +SUB [/battery_state] /rostopic_10829_1540291079653 http://osboxes:41659/
+[rosmaster.master][INFO] 2018-10-23 18:38:00,468: -SUB [/battery_state] /rostopic_10829_1540291079653 http://osboxes:41659/
+[rosmaster.master][INFO] 2018-10-23 18:38:00,469: -PUB [/rosout] /rostopic_10829_1540291079653 http://osboxes:41659/
+[rosmaster.master][INFO] 2018-10-23 18:38:00,469: -SERVICE [/rostopic_10829_1540291079653/set_logger_level] /rostopic_10829_1540291079653 rosrpc://osboxes:46823
+[rosmaster.master][INFO] 2018-10-23 18:38:00,470: -SERVICE [/rostopic_10829_1540291079653/get_loggers] /rostopic_10829_1540291079653 rosrpc://osboxes:46823
+[rosmaster.master][INFO] 2018-10-23 18:38:00,492: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:00,495: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:02,798: +PUB [/rosout] /rostopic_10849_1540291082609 http://osboxes:38217/
+[rosmaster.master][INFO] 2018-10-23 18:38:02,800: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:38217/']
+[rosmaster.master][INFO] 2018-10-23 18:38:02,805: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:38217/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:02,826: +SERVICE [/rostopic_10849_1540291082609/get_loggers] /rostopic_10849_1540291082609 http://osboxes:38217/
+[rosmaster.master][INFO] 2018-10-23 18:38:02,840: +SERVICE [/rostopic_10849_1540291082609/set_logger_level] /rostopic_10849_1540291082609 http://osboxes:38217/
+[rosmaster.master][INFO] 2018-10-23 18:38:02,881: +SUB [/cmd_vel] /rostopic_10849_1540291082609 http://osboxes:38217/
+[rosmaster.master][INFO] 2018-10-23 18:38:03,430: -SUB [/cmd_vel] /rostopic_10849_1540291082609 http://osboxes:38217/
+[rosmaster.master][INFO] 2018-10-23 18:38:03,432: -PUB [/rosout] /rostopic_10849_1540291082609 http://osboxes:38217/
+[rosmaster.master][INFO] 2018-10-23 18:38:03,433: -SERVICE [/rostopic_10849_1540291082609/set_logger_level] /rostopic_10849_1540291082609 rosrpc://osboxes:35547
+[rosmaster.master][INFO] 2018-10-23 18:38:03,434: -SERVICE [/rostopic_10849_1540291082609/get_loggers] /rostopic_10849_1540291082609 rosrpc://osboxes:35547
+[rosmaster.master][INFO] 2018-10-23 18:38:03,509: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:03,516: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:05,616: +PUB [/rosout] /rostopic_10865_1540291085426 http://osboxes:35175/
+[rosmaster.master][INFO] 2018-10-23 18:38:05,622: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:35175/']
+[rosmaster.master][INFO] 2018-10-23 18:38:05,625: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:35175/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:05,644: +SERVICE [/rostopic_10865_1540291085426/get_loggers] /rostopic_10865_1540291085426 http://osboxes:35175/
+[rosmaster.master][INFO] 2018-10-23 18:38:05,657: +SERVICE [/rostopic_10865_1540291085426/set_logger_level] /rostopic_10865_1540291085426 http://osboxes:35175/
+[rosmaster.master][INFO] 2018-10-23 18:38:05,703: +SUB [/cmd_vel_rc100] /rostopic_10865_1540291085426 http://osboxes:35175/
+[rosmaster.master][INFO] 2018-10-23 18:38:06,246: -SUB [/cmd_vel_rc100] /rostopic_10865_1540291085426 http://osboxes:35175/
+[rosmaster.master][INFO] 2018-10-23 18:38:06,247: -PUB [/rosout] /rostopic_10865_1540291085426 http://osboxes:35175/
+[rosmaster.master][INFO] 2018-10-23 18:38:06,248: -SERVICE [/rostopic_10865_1540291085426/set_logger_level] /rostopic_10865_1540291085426 rosrpc://osboxes:33149
+[rosmaster.master][INFO] 2018-10-23 18:38:06,249: -SERVICE [/rostopic_10865_1540291085426/get_loggers] /rostopic_10865_1540291085426 rosrpc://osboxes:33149
+[rosmaster.master][INFO] 2018-10-23 18:38:06,318: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:06,322: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:08,381: +PUB [/rosout] /rostopic_10883_1540291088189 http://osboxes:39733/
+[rosmaster.master][INFO] 2018-10-23 18:38:08,419: +SERVICE [/rostopic_10883_1540291088189/get_loggers] /rostopic_10883_1540291088189 http://osboxes:39733/
+[rosmaster.master][INFO] 2018-10-23 18:38:08,425: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:39733/']
+[rosmaster.master][INFO] 2018-10-23 18:38:08,434: +SERVICE [/rostopic_10883_1540291088189/set_logger_level] /rostopic_10883_1540291088189 http://osboxes:39733/
+[rosmaster.master][INFO] 2018-10-23 18:38:08,436: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:39733/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:08,475: +SUB [/diagnostics] /rostopic_10883_1540291088189 http://osboxes:39733/
+[rosmaster.master][INFO] 2018-10-23 18:38:08,980: -SUB [/diagnostics] /rostopic_10883_1540291088189 http://osboxes:39733/
+[rosmaster.master][INFO] 2018-10-23 18:38:08,982: -PUB [/rosout] /rostopic_10883_1540291088189 http://osboxes:39733/
+[rosmaster.master][INFO] 2018-10-23 18:38:08,983: -SERVICE [/rostopic_10883_1540291088189/set_logger_level] /rostopic_10883_1540291088189 rosrpc://osboxes:46305
+[rosmaster.master][INFO] 2018-10-23 18:38:08,984: -SERVICE [/rostopic_10883_1540291088189/get_loggers] /rostopic_10883_1540291088189 rosrpc://osboxes:46305
+[rosmaster.master][INFO] 2018-10-23 18:38:09,029: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:09,033: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:11,095: +PUB [/rosout] /rostopic_10903_1540291090909 http://osboxes:35595/
+[rosmaster.master][INFO] 2018-10-23 18:38:11,124: +SERVICE [/rostopic_10903_1540291090909/get_loggers] /rostopic_10903_1540291090909 http://osboxes:35595/
+[rosmaster.master][INFO] 2018-10-23 18:38:11,138: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:35595/']
+[rosmaster.master][INFO] 2018-10-23 18:38:11,144: +SERVICE [/rostopic_10903_1540291090909/set_logger_level] /rostopic_10903_1540291090909 http://osboxes:35595/
+[rosmaster.master][INFO] 2018-10-23 18:38:11,146: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:35595/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:11,188: +SUB [/firmware_version] /rostopic_10903_1540291090909 http://osboxes:35595/
+[rosmaster.master][INFO] 2018-10-23 18:38:11,745: -SUB [/firmware_version] /rostopic_10903_1540291090909 http://osboxes:35595/
+[rosmaster.master][INFO] 2018-10-23 18:38:11,746: -PUB [/rosout] /rostopic_10903_1540291090909 http://osboxes:35595/
+[rosmaster.master][INFO] 2018-10-23 18:38:11,748: -SERVICE [/rostopic_10903_1540291090909/set_logger_level] /rostopic_10903_1540291090909 rosrpc://osboxes:40229
+[rosmaster.master][INFO] 2018-10-23 18:38:11,749: -SERVICE [/rostopic_10903_1540291090909/get_loggers] /rostopic_10903_1540291090909 rosrpc://osboxes:40229
+[rosmaster.master][INFO] 2018-10-23 18:38:11,752: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:11,758: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:13,959: +PUB [/rosout] /rostopic_10921_1540291093768 http://osboxes:35205/
+[rosmaster.master][INFO] 2018-10-23 18:38:13,963: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:35205/']
+[rosmaster.master][INFO] 2018-10-23 18:38:13,969: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:35205/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:13,987: +SERVICE [/rostopic_10921_1540291093768/get_loggers] /rostopic_10921_1540291093768 http://osboxes:35205/
+[rosmaster.master][INFO] 2018-10-23 18:38:14,000: +SERVICE [/rostopic_10921_1540291093768/set_logger_level] /rostopic_10921_1540291093768 http://osboxes:35205/
+[rosmaster.master][INFO] 2018-10-23 18:38:14,039: +SUB [/imu] /rostopic_10921_1540291093768 http://osboxes:35205/
+[rosmaster.master][INFO] 2018-10-23 18:38:14,583: -SUB [/imu] /rostopic_10921_1540291093768 http://osboxes:35205/
+[rosmaster.master][INFO] 2018-10-23 18:38:14,585: -PUB [/rosout] /rostopic_10921_1540291093768 http://osboxes:35205/
+[rosmaster.master][INFO] 2018-10-23 18:38:14,586: -SERVICE [/rostopic_10921_1540291093768/set_logger_level] /rostopic_10921_1540291093768 rosrpc://osboxes:36391
+[rosmaster.master][INFO] 2018-10-23 18:38:14,587: -SERVICE [/rostopic_10921_1540291093768/get_loggers] /rostopic_10921_1540291093768 rosrpc://osboxes:36391
+[rosmaster.master][INFO] 2018-10-23 18:38:14,651: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:14,657: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:16,753: +PUB [/rosout] /rostopic_10939_1540291096565 http://osboxes:41239/
+[rosmaster.master][INFO] 2018-10-23 18:38:16,756: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:41239/']
+[rosmaster.master][INFO] 2018-10-23 18:38:16,761: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:41239/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:16,779: +SERVICE [/rostopic_10939_1540291096565/get_loggers] /rostopic_10939_1540291096565 http://osboxes:41239/
+[rosmaster.master][INFO] 2018-10-23 18:38:16,791: +SERVICE [/rostopic_10939_1540291096565/set_logger_level] /rostopic_10939_1540291096565 http://osboxes:41239/
+[rosmaster.master][INFO] 2018-10-23 18:38:16,830: +SUB [/joint_states] /rostopic_10939_1540291096565 http://osboxes:41239/
+[rosmaster.master][INFO] 2018-10-23 18:38:17,345: -SUB [/joint_states] /rostopic_10939_1540291096565 http://osboxes:41239/
+[rosmaster.master][INFO] 2018-10-23 18:38:17,345: -PUB [/rosout] /rostopic_10939_1540291096565 http://osboxes:41239/
+[rosmaster.master][INFO] 2018-10-23 18:38:17,346: -SERVICE [/rostopic_10939_1540291096565/set_logger_level] /rostopic_10939_1540291096565 rosrpc://osboxes:39137
+[rosmaster.master][INFO] 2018-10-23 18:38:17,346: -SERVICE [/rostopic_10939_1540291096565/get_loggers] /rostopic_10939_1540291096565 rosrpc://osboxes:39137
+[rosmaster.master][INFO] 2018-10-23 18:38:17,363: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:17,366: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:19,512: +PUB [/rosout] /rostopic_10957_1540291099320 http://osboxes:33897/
+[rosmaster.master][INFO] 2018-10-23 18:38:19,550: +SERVICE [/rostopic_10957_1540291099320/get_loggers] /rostopic_10957_1540291099320 http://osboxes:33897/
+[rosmaster.master][INFO] 2018-10-23 18:38:19,563: +SERVICE [/rostopic_10957_1540291099320/set_logger_level] /rostopic_10957_1540291099320 http://osboxes:33897/
+[rosmaster.master][INFO] 2018-10-23 18:38:19,568: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:33897/']
+[rosmaster.master][INFO] 2018-10-23 18:38:19,573: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:33897/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:19,618: +SUB [/magnetic_field] /rostopic_10957_1540291099320 http://osboxes:33897/
+[rosmaster.master][INFO] 2018-10-23 18:38:20,119: -SUB [/magnetic_field] /rostopic_10957_1540291099320 http://osboxes:33897/
+[rosmaster.master][INFO] 2018-10-23 18:38:20,120: -PUB [/rosout] /rostopic_10957_1540291099320 http://osboxes:33897/
+[rosmaster.master][INFO] 2018-10-23 18:38:20,121: -SERVICE [/rostopic_10957_1540291099320/set_logger_level] /rostopic_10957_1540291099320 rosrpc://osboxes:39203
+[rosmaster.master][INFO] 2018-10-23 18:38:20,122: -SERVICE [/rostopic_10957_1540291099320/get_loggers] /rostopic_10957_1540291099320 rosrpc://osboxes:39203
+[rosmaster.master][INFO] 2018-10-23 18:38:20,171: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:20,176: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:21,866: +PUB [/rosout] /rostopic_10976_1540291101670 http://osboxes:41611/
+[rosmaster.master][INFO] 2018-10-23 18:38:21,880: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:41611/']
+[rosmaster.master][INFO] 2018-10-23 18:38:21,887: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:41611/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:21,894: +SERVICE [/rostopic_10976_1540291101670/get_loggers] /rostopic_10976_1540291101670 http://osboxes:41611/
+[rosmaster.master][INFO] 2018-10-23 18:38:21,907: +SERVICE [/rostopic_10976_1540291101670/set_logger_level] /rostopic_10976_1540291101670 http://osboxes:41611/
+[rosmaster.master][INFO] 2018-10-23 18:38:21,946: +SUB [/motor_power] /rostopic_10976_1540291101670 http://osboxes:41611/
+[rosmaster.master][INFO] 2018-10-23 18:38:22,484: -SUB [/motor_power] /rostopic_10976_1540291101670 http://osboxes:41611/
+[rosmaster.master][INFO] 2018-10-23 18:38:22,488: -PUB [/rosout] /rostopic_10976_1540291101670 http://osboxes:41611/
+[rosmaster.master][INFO] 2018-10-23 18:38:22,489: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:22,489: -SERVICE [/rostopic_10976_1540291101670/set_logger_level] /rostopic_10976_1540291101670 rosrpc://osboxes:37113
+[rosmaster.master][INFO] 2018-10-23 18:38:22,494: -SERVICE [/rostopic_10976_1540291101670/get_loggers] /rostopic_10976_1540291101670 rosrpc://osboxes:37113
+[rosmaster.master][INFO] 2018-10-23 18:38:22,493: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:24,615: +PUB [/rosout] /rostopic_10992_1540291104424 http://osboxes:45713/
+[rosmaster.master][INFO] 2018-10-23 18:38:24,650: +SERVICE [/rostopic_10992_1540291104424/get_loggers] /rostopic_10992_1540291104424 http://osboxes:45713/
+[rosmaster.master][INFO] 2018-10-23 18:38:24,663: +SERVICE [/rostopic_10992_1540291104424/set_logger_level] /rostopic_10992_1540291104424 http://osboxes:45713/
+[rosmaster.master][INFO] 2018-10-23 18:38:24,687: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45713/']
+[rosmaster.master][INFO] 2018-10-23 18:38:24,694: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:45713/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:25,253: -PUB [/rosout] /rostopic_10992_1540291104424 http://osboxes:45713/
+[rosmaster.master][INFO] 2018-10-23 18:38:25,255: -SERVICE [/rostopic_10992_1540291104424/get_loggers] /rostopic_10992_1540291104424 rosrpc://osboxes:44765
+[rosmaster.master][INFO] 2018-10-23 18:38:25,255: -SERVICE [/rostopic_10992_1540291104424/set_logger_level] /rostopic_10992_1540291104424 rosrpc://osboxes:44765
+[rosmaster.master][INFO] 2018-10-23 18:38:25,292: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:25,297: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:26,969: +PUB [/rosout] /rostopic_11008_1540291106781 http://osboxes:42029/
+[rosmaster.master][INFO] 2018-10-23 18:38:26,993: +SERVICE [/rostopic_11008_1540291106781/get_loggers] /rostopic_11008_1540291106781 http://osboxes:42029/
+[rosmaster.master][INFO] 2018-10-23 18:38:27,001: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:42029/']
+[rosmaster.master][INFO] 2018-10-23 18:38:27,008: +SERVICE [/rostopic_11008_1540291106781/set_logger_level] /rostopic_11008_1540291106781 http://osboxes:42029/
+[rosmaster.master][INFO] 2018-10-23 18:38:27,010: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:42029/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:27,053: +SUB [/reset] /rostopic_11008_1540291106781 http://osboxes:42029/
+[rosmaster.master][INFO] 2018-10-23 18:38:27,583: -SUB [/reset] /rostopic_11008_1540291106781 http://osboxes:42029/
+[rosmaster.master][INFO] 2018-10-23 18:38:27,584: -PUB [/rosout] /rostopic_11008_1540291106781 http://osboxes:42029/
+[rosmaster.master][INFO] 2018-10-23 18:38:27,584: -SERVICE [/rostopic_11008_1540291106781/set_logger_level] /rostopic_11008_1540291106781 rosrpc://osboxes:39321
+[rosmaster.master][INFO] 2018-10-23 18:38:27,585: -SERVICE [/rostopic_11008_1540291106781/get_loggers] /rostopic_11008_1540291106781 rosrpc://osboxes:39321
+[rosmaster.master][INFO] 2018-10-23 18:38:27,603: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:27,606: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:29,746: +PUB [/rosout] /rostopic_11024_1540291109529 http://osboxes:43281/
+[rosmaster.master][INFO] 2018-10-23 18:38:29,774: +SERVICE [/rostopic_11024_1540291109529/get_loggers] /rostopic_11024_1540291109529 http://osboxes:43281/
+[rosmaster.master][INFO] 2018-10-23 18:38:29,787: +SERVICE [/rostopic_11024_1540291109529/set_logger_level] /rostopic_11024_1540291109529 http://osboxes:43281/
+[rosmaster.master][INFO] 2018-10-23 18:38:29,815: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:43281/']
+[rosmaster.master][INFO] 2018-10-23 18:38:29,820: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:43281/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:29,825: +SUB [/rosout] /rostopic_11024_1540291109529 http://osboxes:43281/
+[rosmaster.master][INFO] 2018-10-23 18:38:30,367: -SUB [/rosout] /rostopic_11024_1540291109529 http://osboxes:43281/
+[rosmaster.master][INFO] 2018-10-23 18:38:30,368: -PUB [/rosout] /rostopic_11024_1540291109529 http://osboxes:43281/
+[rosmaster.master][INFO] 2018-10-23 18:38:30,369: -SERVICE [/rostopic_11024_1540291109529/set_logger_level] /rostopic_11024_1540291109529 rosrpc://osboxes:37545
+[rosmaster.master][INFO] 2018-10-23 18:38:30,371: -SERVICE [/rostopic_11024_1540291109529/get_loggers] /rostopic_11024_1540291109529 rosrpc://osboxes:37545
+[rosmaster.master][INFO] 2018-10-23 18:38:30,417: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:30,421: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:32,548: +PUB [/rosout] /rostopic_11048_1540291112353 http://osboxes:43343/
+[rosmaster.master][INFO] 2018-10-23 18:38:32,575: +SERVICE [/rostopic_11048_1540291112353/get_loggers] /rostopic_11048_1540291112353 http://osboxes:43343/
+[rosmaster.master][INFO] 2018-10-23 18:38:32,589: +SERVICE [/rostopic_11048_1540291112353/set_logger_level] /rostopic_11048_1540291112353 http://osboxes:43343/
+[rosmaster.master][INFO] 2018-10-23 18:38:32,630: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:43343/']
+[rosmaster.master][INFO] 2018-10-23 18:38:32,634: +SUB [/rosout_agg] /rostopic_11048_1540291112353 http://osboxes:43343/
+[rosmaster.master][INFO] 2018-10-23 18:38:32,641: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:43343/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:33,196: -SUB [/rosout_agg] /rostopic_11048_1540291112353 http://osboxes:43343/
+[rosmaster.master][INFO] 2018-10-23 18:38:33,197: -PUB [/rosout] /rostopic_11048_1540291112353 http://osboxes:43343/
+[rosmaster.master][INFO] 2018-10-23 18:38:33,198: -SERVICE [/rostopic_11048_1540291112353/set_logger_level] /rostopic_11048_1540291112353 rosrpc://osboxes:42765
+[rosmaster.master][INFO] 2018-10-23 18:38:33,199: -SERVICE [/rostopic_11048_1540291112353/get_loggers] /rostopic_11048_1540291112353 rosrpc://osboxes:42765
+[rosmaster.master][INFO] 2018-10-23 18:38:33,232: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:33,237: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:35,378: +PUB [/rosout] /rostopic_11066_1540291115190 http://osboxes:38365/
+[rosmaster.master][INFO] 2018-10-23 18:38:35,401: +SERVICE [/rostopic_11066_1540291115190/get_loggers] /rostopic_11066_1540291115190 http://osboxes:38365/
+[rosmaster.master][INFO] 2018-10-23 18:38:35,412: +SERVICE [/rostopic_11066_1540291115190/set_logger_level] /rostopic_11066_1540291115190 http://osboxes:38365/
+[rosmaster.master][INFO] 2018-10-23 18:38:35,442: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:38365/']
+[rosmaster.master][INFO] 2018-10-23 18:38:35,445: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:38365/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:35,452: +SUB [/scan] /rostopic_11066_1540291115190 http://osboxes:38365/
+[rosmaster.master][INFO] 2018-10-23 18:38:36,005: -SUB [/scan] /rostopic_11066_1540291115190 http://osboxes:38365/
+[rosmaster.master][INFO] 2018-10-23 18:38:36,007: -PUB [/rosout] /rostopic_11066_1540291115190 http://osboxes:38365/
+[rosmaster.master][INFO] 2018-10-23 18:38:36,008: -SERVICE [/rostopic_11066_1540291115190/set_logger_level] /rostopic_11066_1540291115190 rosrpc://osboxes:41255
+[rosmaster.master][INFO] 2018-10-23 18:38:36,009: -SERVICE [/rostopic_11066_1540291115190/get_loggers] /rostopic_11066_1540291115190 rosrpc://osboxes:41255
+[rosmaster.master][INFO] 2018-10-23 18:38:36,044: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:36,048: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:38,216: +PUB [/rosout] /rostopic_11082_1540291118026 http://osboxes:34583/
+[rosmaster.master][INFO] 2018-10-23 18:38:38,242: +SERVICE [/rostopic_11082_1540291118026/get_loggers] /rostopic_11082_1540291118026 http://osboxes:34583/
+[rosmaster.master][INFO] 2018-10-23 18:38:38,252: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:34583/']
+[rosmaster.master][INFO] 2018-10-23 18:38:38,259: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:34583/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:38,261: +SERVICE [/rostopic_11082_1540291118026/set_logger_level] /rostopic_11082_1540291118026 http://osboxes:34583/
+[rosmaster.master][INFO] 2018-10-23 18:38:38,307: +SUB [/sensor_state] /rostopic_11082_1540291118026 http://osboxes:34583/
+[rosmaster.master][INFO] 2018-10-23 18:38:38,829: -SUB [/sensor_state] /rostopic_11082_1540291118026 http://osboxes:34583/
+[rosmaster.master][INFO] 2018-10-23 18:38:38,830: -PUB [/rosout] /rostopic_11082_1540291118026 http://osboxes:34583/
+[rosmaster.master][INFO] 2018-10-23 18:38:38,831: -SERVICE [/rostopic_11082_1540291118026/set_logger_level] /rostopic_11082_1540291118026 rosrpc://osboxes:43589
+[rosmaster.master][INFO] 2018-10-23 18:38:38,832: -SERVICE [/rostopic_11082_1540291118026/get_loggers] /rostopic_11082_1540291118026 rosrpc://osboxes:43589
+[rosmaster.master][INFO] 2018-10-23 18:38:38,854: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:38,857: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:40,965: +PUB [/rosout] /rostopic_11100_1540291120777 http://osboxes:42565/
+[rosmaster.master][INFO] 2018-10-23 18:38:40,967: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:42565/']
+[rosmaster.master][INFO] 2018-10-23 18:38:40,973: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:42565/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:40,992: +SERVICE [/rostopic_11100_1540291120777/get_loggers] /rostopic_11100_1540291120777 http://osboxes:42565/
+[rosmaster.master][INFO] 2018-10-23 18:38:41,009: +SERVICE [/rostopic_11100_1540291120777/set_logger_level] /rostopic_11100_1540291120777 http://osboxes:42565/
+[rosmaster.master][INFO] 2018-10-23 18:38:41,047: +SUB [/sound] /rostopic_11100_1540291120777 http://osboxes:42565/
+[rosmaster.master][INFO] 2018-10-23 18:38:41,598: -SUB [/sound] /rostopic_11100_1540291120777 http://osboxes:42565/
+[rosmaster.master][INFO] 2018-10-23 18:38:41,599: -PUB [/rosout] /rostopic_11100_1540291120777 http://osboxes:42565/
+[rosmaster.master][INFO] 2018-10-23 18:38:41,600: -SERVICE [/rostopic_11100_1540291120777/set_logger_level] /rostopic_11100_1540291120777 rosrpc://osboxes:36685
+[rosmaster.master][INFO] 2018-10-23 18:38:41,601: -SERVICE [/rostopic_11100_1540291120777/get_loggers] /rostopic_11100_1540291120777 rosrpc://osboxes:36685
+[rosmaster.master][INFO] 2018-10-23 18:38:41,664: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:41,668: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:43,774: +PUB [/rosout] /rostopic_11116_1540291123574 http://osboxes:39501/
+[rosmaster.master][INFO] 2018-10-23 18:38:43,779: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:39501/']
+[rosmaster.master][INFO] 2018-10-23 18:38:43,782: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:39501/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:43,797: +SERVICE [/rostopic_11116_1540291123574/get_loggers] /rostopic_11116_1540291123574 http://osboxes:39501/
+[rosmaster.master][INFO] 2018-10-23 18:38:43,810: +SERVICE [/rostopic_11116_1540291123574/set_logger_level] /rostopic_11116_1540291123574 http://osboxes:39501/
+[rosmaster.master][INFO] 2018-10-23 18:38:44,373: -PUB [/rosout] /rostopic_11116_1540291123574 http://osboxes:39501/
+[rosmaster.master][INFO] 2018-10-23 18:38:44,374: -SERVICE [/rostopic_11116_1540291123574/set_logger_level] /rostopic_11116_1540291123574 rosrpc://osboxes:34167
+[rosmaster.master][INFO] 2018-10-23 18:38:44,375: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:44,376: -SERVICE [/rostopic_11116_1540291123574/get_loggers] /rostopic_11116_1540291123574 rosrpc://osboxes:34167
+[rosmaster.master][INFO] 2018-10-23 18:38:44,380: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:46,707: +PUB [/rosout] /rostopic_11132_1540291126516 http://osboxes:38823/
+[rosmaster.master][INFO] 2018-10-23 18:38:46,735: +SERVICE [/rostopic_11132_1540291126516/get_loggers] /rostopic_11132_1540291126516 http://osboxes:38823/
+[rosmaster.master][INFO] 2018-10-23 18:38:46,756: +SERVICE [/rostopic_11132_1540291126516/set_logger_level] /rostopic_11132_1540291126516 http://osboxes:38823/
+[rosmaster.master][INFO] 2018-10-23 18:38:46,780: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:38823/']
+[rosmaster.master][INFO] 2018-10-23 18:38:46,785: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:38823/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:46,803: +SUB [/version_info] /rostopic_11132_1540291126516 http://osboxes:38823/
+[rosmaster.master][INFO] 2018-10-23 18:38:47,311: -SUB [/version_info] /rostopic_11132_1540291126516 http://osboxes:38823/
+[rosmaster.master][INFO] 2018-10-23 18:38:47,312: -PUB [/rosout] /rostopic_11132_1540291126516 http://osboxes:38823/
+[rosmaster.master][INFO] 2018-10-23 18:38:47,312: -SERVICE [/rostopic_11132_1540291126516/set_logger_level] /rostopic_11132_1540291126516 rosrpc://osboxes:35673
+[rosmaster.master][INFO] 2018-10-23 18:38:47,313: -SERVICE [/rostopic_11132_1540291126516/get_loggers] /rostopic_11132_1540291126516 rosrpc://osboxes:35673
+[rosmaster.master][INFO] 2018-10-23 18:38:47,388: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:47,390: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:49,005: +PUB [/rosout] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,018: +SERVICE [/record_1540291128959168330/get_loggers] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,029: +SERVICE [/record_1540291128959168330/set_logger_level] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,095: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:39107/']
+[rosmaster.master][INFO] 2018-10-23 18:38:49,101: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/', 'http://osboxes:39107/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:49,130: +SUB [/firmware_version] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,207: +SUB [/version_info] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,283: +SUB [/battery_state] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,359: +SUB [/joint_states] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,436: +SUB [/rosout] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,520: +SUB [/rosout_agg] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,598: +SUB [/cmd_vel_rc100] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,682: +SUB [/imu] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,759: +SUB [/odom] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,838: +SUB [/tf] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:49,926: +SUB [/diagnostics] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:50,018: +SUB [/sensor_state] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:50,094: +SUB [/magnetic_field] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:58,868: -PUB [/rosout] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:58,883: -SUB [/firmware_version] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:58,899: -SUB [/version_info] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:58,915: -SUB [/battery_state] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:58,920: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:58,922: publisherUpdate[/rosout] -> http://osboxes:39107/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']
+[rosmaster.master][INFO] 2018-10-23 18:38:58,925: publisherUpdate[/rosout] -> http://192.168.0.20:44322/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-10-23 18:38:58,933: publisherUpdate[/rosout] -> http://osboxes:39107/ ['http://192.168.0.20:36051/', 'http://192.168.0.20:40620/']: sec=0.01, exception=[Errno 111] Connection refused
+[rosmaster.threadpool][ERROR] 2018-10-23 18:38:58,935: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1053, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 897, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 859, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 836, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosmaster.master][INFO] 2018-10-23 18:38:58,938: -SUB [/joint_states] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:58,955: -SUB [/rosout] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:58,971: -SUB [/rosout_agg] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:58,988: -SUB [/cmd_vel_rc100] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:59,001: -SUB [/imu] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:59,017: -SUB [/odom] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:59,031: -SUB [/tf] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:59,046: -SUB [/diagnostics] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:59,061: -SUB [/sensor_state] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:59,076: -SUB [/magnetic_field] /record_1540291128959168330 http://osboxes:39107/
+[rosmaster.master][INFO] 2018-10-23 18:38:59,092: -SERVICE [/record_1540291128959168330/get_loggers] /record_1540291128959168330 rosrpc://osboxes:59437
+[rosmaster.master][INFO] 2018-10-23 18:38:59,104: -SERVICE [/record_1540291128959168330/set_logger_level] /record_1540291128959168330 rosrpc://osboxes:59437

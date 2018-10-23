@@ -1,0 +1,12 @@
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_192_168_0_20__32982: 'http://192.168.0.20:32982/', host_192_168_0_20__40506: 'http://192.168.0.20:40506/',
+    host_192_168_0_20__45657: 'http://192.168.0.20:45657/'}
+rosversion: '1.12.14
+
+  '
+run_id: 296fcb32-d6ad-11e8-9638-b827ebbd06e7
+turtlebot3_core: {baud: 115200, port: /dev/ttyACM0, tf_prefix: ''}
+turtlebot3_lds: {frame_id: base_scan, port: /dev/ttyUSB0}
