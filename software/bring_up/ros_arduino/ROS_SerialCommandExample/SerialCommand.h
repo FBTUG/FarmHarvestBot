@@ -68,8 +68,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #define MAXDELIMETER 2
 
 #define SERIALCOMMANDDEBUG 1
-//#undef SERIALCOMMANDDEBUG      // Comment this out to run the library in debug mode (verbose messages)
+#undef SERIALCOMMANDDEBUG      // Comment this out to run the library in debug mode (verbose messages)
 
+#define TERMINAL Serial2
 class SerialCommand
 {
 	public:
@@ -80,11 +81,10 @@ class SerialCommand
 
 		void clearBuffer();   // Sets the command buffer to all '\0' (nulls)
 		char *next();         // returns pointer to next token found in command buffer (for getting arguments to commands)
-		//void readSerial();    // Main entry point.
-    void readSerial(char* fun_buffer);  
+		void readSerial();    // Main entry point.  
 		void addCommand(const char *, void(*)());   // Add commands to processing dictionary
 		void addDefaultHandler(void (*function)());    // A handler to call when no valid command received. 
-    int rosmode;                        // Used as boolean to see if ROS on
+    char* readSerialByBuffer(char *fun_buffer);    // used in ROS enabled  
 	
 	private:
 		char inChar;          // A character read from the serial stream 
@@ -93,6 +93,7 @@ class SerialCommand
 		char delim[MAXDELIMETER];           // null-terminated list of character to be used as delimeters for tokenizing (default " ")
 		char term;                          // Character that signals end of command (default '\r')
 		char *token;                        // Returned token from the command buffer as returned by strtok_r
+    char *tokenBuf;                     // Returned token from the fun_buffer as returned by strtok_r
 		char *last;                         // State variable used by strtok_r during processing
 		typedef struct _callback {
 			char command[SERIALCOMMANDBUFFER];
@@ -105,7 +106,6 @@ class SerialCommand
 		#ifndef SERIALCOMMAND_HARDWAREONLY 
 		SoftwareSerial *SoftSerial;         // Pointer to a user-created SoftwareSerial object
 		#endif
-    
 };
 
 #endif //SerialCommand_h

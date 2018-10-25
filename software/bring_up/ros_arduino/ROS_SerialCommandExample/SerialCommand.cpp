@@ -35,11 +35,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #include <SoftwareSerial.h>
 #endif
 
+//extern HardwareSerial & Terminal = Serial;
+
 // Constructor makes sure some things are set. 
 SerialCommand::SerialCommand()
 {
 	usingSoftwareSerial=0;
-  rosmode=1;
 	strncpy(delim," ",MAXDELIMETER);  // strtok_r needs a null-terminated string
 	term='\r';   // return character, default terminator for commands
 	numCommand=0;    // Number of callback handlers installed
@@ -84,24 +85,20 @@ char *SerialCommand::next()
 // This checks the Serial stream for characters, and assembles them into a buffer.  
 // When the terminator character (default '\r') is seen, it starts parsing the 
 // buffer for a prefix command, and calls handlers setup by addCommand() member
-void SerialCommand::readSerial(char* fun_buffer) 
+void SerialCommand::readSerial() 
 {
 	// If we're using the Hardware port, check it.   Otherwise check the user-created SoftwareSerial Port
 	#ifdef SERIALCOMMAND_HARDWAREONLY
-	while (Serial.available() > 0) 
+	while (TERMINAL.available() > 0) 
 	#else
-	while ((usingSoftwareSerial==0 && Serial.available() > 0) || (usingSoftwareSerial==1 && SoftSerial->available() > 0) || rosmode==1)
+	while ((usingSoftwareSerial==0 && TERMINAL.available() > 0) || (usingSoftwareSerial==1 && SoftSerial->available() > 0) )
 	#endif
 	{
 		int i; 
 		boolean matched; 
 		if (usingSoftwareSerial==0) {
 			// Hardware serial port
-     if(rosmode==0){
-			inChar=Serial.read();   // Read single available character, there may be more waiting
-     }else{
-      inChar=0;
-     }
+			inChar=TERMINAL.read();   // Read single available character, there may be more waiting
 		} else {
 			#ifndef SERIALCOMMAND_HARDWAREONLY
 			// SoftwareSerial port
@@ -109,39 +106,31 @@ void SerialCommand::readSerial(char* fun_buffer)
 			#endif
 		}
 		#ifdef SERIALCOMMANDDEBUG
-		Serial.print(inChar);   // Echo back to serial stream
+		TERMINAL.print(inChar);   // Echo back to serial stream
 		#endif
-		if (inChar==term || rosmode==1) {     // Check for the terminator (default '\r') meaning end of command
+		if (inChar==term) {     // Check for the terminator (default '\r') meaning end of command
 			#ifdef SERIALCOMMANDDEBUG
-			Serial.print("Received: "); 
-      if(rosmode==0){
-			  Serial.println(buffer);
-        bufPos=0;           // Reset to start of buffer
-        token = strtok_r(buffer,delim,&last);   // Search for command at start of buffer
-      }
-      else{
-        Serial.println(fun_buffer);
-        bufPos=0;           // Reset to start of buffer
-        token = strtok_r(fun_buffer,delim,&last);   // Search for command at start of buffer
-      }
+			TERMINAL.print("Received: "); 
+			TERMINAL.println(buffer);
 		    #endif
-			
+			bufPos=0;           // Reset to start of buffer
+			token = strtok_r(buffer,delim,&last);   // Search for command at start of buffer
 			if (token == NULL) return; 
 			matched=false; 
 			for (i=0; i<numCommand; i++) {
 				#ifdef SERIALCOMMANDDEBUG
-				Serial.print("Comparing ["); 
-				Serial.print(token); 
-				Serial.print("] to [");
-				Serial.print(CommandList[i].command);
-				Serial.println("]");
+				TERMINAL.print("Comparing ["); 
+				TERMINAL.print(token); 
+				TERMINAL.print("] to [");
+				TERMINAL.print(CommandList[i].command);
+				TERMINAL.println("]");
 				#endif
 				// Compare the found command against the list of known commands for a match
 				if (strncmp(token,CommandList[i].command,SERIALCOMMANDBUFFER) == 0) 
 				{
 					#ifdef SERIALCOMMANDDEBUG
-					Serial.print("Matched Command: "); 
-					Serial.println(token);
+					TERMINAL.print("Matched Command: "); 
+					TERMINAL.println(token);
 					#endif
 					// Execute the stored handler function for the command
 					(*CommandList[i].function)(); 
@@ -162,8 +151,43 @@ void SerialCommand::readSerial(char* fun_buffer)
 			buffer[bufPos]='\0';  // Null terminate
 			if (bufPos > SERIALCOMMANDBUFFER-1) bufPos=0; // wrap buffer around if full  
 		}
-   if(rosmode==1) break;
 	}
+}
+
+char* SerialCommand::readSerialByBuffer(char *fun_buffer) 
+{
+    int i; 
+
+      #ifdef SERIALCOMMANDDEBUG
+      TERMINAL.print("Received: "); 
+      TERMINAL.println(fun_buffer);
+        #endif
+      tokenBuf = strtok_r(fun_buffer,delim,&last);   // Search for command at start of buffer
+      if (tokenBuf == NULL) return NULL; 
+
+      for (i=0; i<numCommand; i++) {
+        #ifdef SERIALCOMMANDDEBUG
+        TERMINAL.print("Comparing ["); 
+        TERMINAL.print(tokenBuf); 
+        TERMINAL.print("] to [");
+        TERMINAL.print(CommandList[i].command);
+        TERMINAL.println("]");
+        #endif
+        // Compare the found command against the list of known commands for a match
+        if (strncmp(tokenBuf,CommandList[i].command,SERIALCOMMANDBUFFER) == 0) 
+        {
+          #ifdef SERIALCOMMANDDEBUG
+          TERMINAL.print("Matched Command: "); 
+          TERMINAL.println(tokenBuf);
+          #endif
+          // Execute the stored handler function for the command
+          (*CommandList[i].function)(); 
+          return tokenBuf;
+          //clearBuffer(); 
+
+        }
+      }
+      return NULL;
 }
 
 // Adds a "command" and a handler function to the list of available commands.  
@@ -173,10 +197,10 @@ void SerialCommand::addCommand(const char *command, void (*function)())
 {
 	if (numCommand < MAXSERIALCOMMANDS) {
 		#ifdef SERIALCOMMANDDEBUG
-		Serial.print(numCommand); 
-		Serial.print("-"); 
-		Serial.print("Adding command for "); 
-		Serial.println(command); 
+		TERMINAL.print(numCommand); 
+		TERMINAL.print("-"); 
+		TERMINAL.print("Adding command for "); 
+		TERMINAL.println(command); 
 		#endif
 		
 		strncpy(CommandList[numCommand].command,command,SERIALCOMMANDBUFFER); 
@@ -187,7 +211,7 @@ void SerialCommand::addCommand(const char *command, void (*function)())
 		// Not much we can do since there is no real visible error assertion, we just ignore adding
 		// the command
 		#ifdef SERIALCOMMANDDEBUG
-		Serial.println("Too many handlers - recompile changing MAXSERIALCOMMANDS"); 
+		TERMINAL.println("Too many handlers - recompile changing MAXSERIALCOMMANDS"); 
 		#endif 
 	}
 }
