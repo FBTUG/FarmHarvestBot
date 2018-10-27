@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="harvest_try1" type="vision_pub.py" name="vision_pub" />
+  <node pkg="harvest_try1" type="vision_sub.py" name="vision_sub" args="" />
+</launch>

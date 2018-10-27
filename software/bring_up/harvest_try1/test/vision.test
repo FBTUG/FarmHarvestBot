@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="harvest_try1" type="vision_pub.py" name="vision_pub" />
+  <test test-name="vision" pkg="harvest_try1" type="vision_tester_node.py" time-limit="10.0" args=""/>
+
+</launch>
