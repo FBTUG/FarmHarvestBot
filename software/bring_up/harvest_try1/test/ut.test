@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="harvest_try1" type="car_server.py" name="car_server" />
+  <node pkg="harvest_try1" type="car_client.py" name="car_client" args="10 20" />
+
+  <test test-name="ut" pkg="harvest_try1" type="ut.py" time-limit="10.0" args=""/>
+
+</launch>
