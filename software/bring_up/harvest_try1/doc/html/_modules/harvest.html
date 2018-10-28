@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>harvest &mdash; harvest_try1 0.1b documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1b',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="harvest_try1 0.1b documentation" href="../index2.html" />
+    <link rel="up" title="Module code" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for harvest</h1><div class="highlight"><pre>
+<span class="ch">#!/usr/bin/env python</span>
+<span class="kn">import</span> <span class="nn">rospy</span>
+<span class="kn">from</span> <span class="nn">harvest_try1.msg</span> <span class="kn">import</span> <span class="n">FruitCnt</span>
+<span class="kn">from</span> <span class="nn">harvest_try1.srv</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="n">fruit_cnt</span><span class="o">=</span><span class="mi">0</span>
+
+
+<div class="viewcode-block" id="harvest_package_init"><a class="viewcode-back" href="../doc/harvest.html#harvest.harvest_package_init">[docs]</a><span class="k">def</span> <span class="nf">harvest_package_init</span><span class="p">():</span>
+    
+    <span class="n">rospy</span><span class="o">.</span><span class="n">set_param</span><span class="p">(</span><span class="s1">&#39;/mode&#39;</span><span class="p">,</span> <span class="s1">&#39;debug&#39;</span><span class="p">)</span></div>
+<div class="viewcode-block" id="vision_client"><a class="viewcode-back" href="../doc/harvest.html#harvest.vision_client">[docs]</a><span class="k">def</span> <span class="nf">vision_client</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">rospy</span><span class="o">.</span><span class="n">wait_for_service</span><span class="p">(</span><span class="s1">&#39;fruit_pos&#39;</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">fruit_pos1</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ServiceProxy</span><span class="p">(</span><span class="s1">&#39;fruit_pos&#39;</span><span class="p">,</span> <span class="n">fruit_pos</span><span class="p">)</span>
+        <span class="n">resp1</span> <span class="o">=</span> <span class="n">fruit_pos1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">resp1</span><span class="o">.</span><span class="n">pos_idx</span>
+    <span class="k">except</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ServiceException</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span> <span class="s2">&quot;Service call failed: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="n">e</span><span class="p">)</span></div>
+        
+<div class="viewcode-block" id="vision_sub_callback"><a class="viewcode-back" href="../doc/harvest.html#harvest.vision_sub_callback">[docs]</a><span class="k">def</span> <span class="nf">vision_sub_callback</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">fruit_cnt</span>
+    <span class="n">fruit_cnt</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">fruit_cnt</span>
+    <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;I heard fruit_cnt=</span><span class="si">%i</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fruit_cnt</span><span class="p">)</span></div>
+    
+
+<div class="viewcode-block" id="vision_sub"><a class="viewcode-back" href="../doc/harvest.html#harvest.vision_sub">[docs]</a><span class="k">def</span> <span class="nf">vision_sub</span><span class="p">():</span>
+    <span class="c1">#rospy.init_node(&#39;vision_sub&#39;)  </span>
+    <span class="n">rospy</span><span class="o">.</span><span class="n">Subscriber</span><span class="p">(</span><span class="s1">&#39;vision_fruit_cnt&#39;</span><span class="p">,</span> <span class="n">FruitCnt</span><span class="p">,</span> <span class="n">vision_sub_callback</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="car_client"><a class="viewcode-back" href="../doc/harvest.html#harvest.car_client">[docs]</a><span class="k">def</span> <span class="nf">car_client</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">rospy</span><span class="o">.</span><span class="n">wait_for_service</span><span class="p">(</span><span class="s1">&#39;car_move&#39;</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">car_move1</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ServiceProxy</span><span class="p">(</span><span class="s1">&#39;car_move&#39;</span><span class="p">,</span> <span class="n">CarMove</span><span class="p">)</span>
+        <span class="n">resp</span> <span class="o">=</span> <span class="n">car_move1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">resp</span>
+    <span class="k">except</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ServiceException</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s2">&quot;Car Service call failed: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="n">e</span></div>
+        
+<div class="viewcode-block" id="task"><a class="viewcode-back" href="../doc/harvest.html#harvest.task">[docs]</a><span class="k">def</span> <span class="nf">task</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">fruit_cnt</span>
+    <span class="n">vision_sub</span><span class="p">()</span>
+    <span class="n">rate</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Rate</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># 10hz</span>
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">fruit_cnt</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+            <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;fruit found!&quot;</span><span class="p">)</span>
+            <span class="n">fruit_pos_idx</span> <span class="o">=</span> <span class="n">vision_client</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;ask vision to find the position of fruit, position index result=</span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span> <span class="n">fruit_pos_idx</span><span class="p">))</span>
+            <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;ask robot to pick that one!&quot;</span><span class="p">)</span>
+            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">2.5</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">resp</span> <span class="o">=</span> <span class="n">car_client</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;car move to diff_x = </span><span class="si">%s</span><span class="s2">, diff_y= </span><span class="si">%s</span><span class="s2">, cur_x=</span><span class="si">%s</span><span class="s2">, cur_y=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">resp</span><span class="o">.</span><span class="n">cur_x</span><span class="p">,</span><span class="n">resp</span><span class="o">.</span><span class="n">cur_y</span><span class="p">))</span>
+            
+        <span class="n">rate</span><span class="o">.</span><span class="n">sleep</span><span class="p">()</span>    </div>
+    
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">harvest_package_init</span><span class="p">()</span>
+        
+        
+        <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s1">&#39;harvest&#39;</span><span class="p">)</span>
+        <span class="n">mode</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">get_param</span><span class="p">(</span><span class="s2">&quot;/mode&quot;</span><span class="p">)</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;current running mode=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">mode</span><span class="p">))</span>
+        <span class="n">task</span><span class="p">()</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">spin</span><span class="p">()</span>
+    <span class="k">except</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ROSInterruptException</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index2.html">Documentation overview</a><ul>
+  <li><a href="index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, wuulong@gmail.com.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>vision_tester_node &mdash; harvest_try1 0.1b documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1b',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="harvest_try1 0.1b documentation" href="../index2.html" />
+    <link rel="up" title="Module code" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for vision_tester_node</h1><div class="highlight"><pre>
+<span class="ch">#!/usr/bin/env python</span>
+<span class="n">PKG</span> <span class="o">=</span> <span class="s1">&#39;harvest_try1&#39;</span>
+<span class="kn">import</span> <span class="nn">rospy</span>
+<span class="kn">import</span> <span class="nn">roslib</span> 
+<span class="kn">import</span> <span class="nn">unittest</span><span class="o">,</span><span class="nn">rostest</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">harvest_try1.msg</span> <span class="kn">import</span> <span class="n">FruitCnt</span>
+
+
+
+<span class="c1">## A sample python unit test</span>
+<div class="viewcode-block" id="VisionTesterNode"><a class="viewcode-back" href="../doc/vision_tester_node.html#vision_tester_node.VisionTesterNode">[docs]</a><span class="k">class</span> <span class="nc">VisionTesterNode</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">VisionTesterNode</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">msg_received</span> <span class="o">=</span> <span class="bp">False</span>
+
+<div class="viewcode-block" id="VisionTesterNode.setup"><a class="viewcode-back" href="../doc/vision_tester_node.html#vision_tester_node.VisionTesterNode.setup">[docs]</a>    <span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Setup the node</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s1">&#39;vision_tester_node&#39;</span><span class="p">,</span> <span class="n">anonymous</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+        <span class="c1"># Setup the publisher and subscriber</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sub_vision_fruit_cnt</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Subscriber</span><span class="p">(</span><span class="s1">&#39;vision_fruit_cnt&#39;</span><span class="p">,</span> <span class="n">FruitCnt</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">vision_sub_callback</span><span class="p">)</span>
+
+
+        <span class="c1"># Wait for the node  to finish starting up</span>
+        <span class="n">timeout</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Time</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">+</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Duration</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="c1"># Wait at most 5 seconds for the node to come up</span>
+        <span class="k">while</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sub_vision_fruit_cnt</span><span class="o">.</span><span class="n">get_num_connections</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="p">)</span> <span class="ow">and</span> \
+                <span class="ow">not</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">()</span> <span class="ow">and</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Time</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">timeout</span><span class="p">:</span>
+            <span class="n">rospy</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span></div>
+<div class="viewcode-block" id="VisionTesterNode.vision_sub_callback"><a class="viewcode-back" href="../doc/vision_tester_node.html#vision_tester_node.VisionTesterNode.vision_sub_callback">[docs]</a>    <span class="k">def</span> <span class="nf">vision_sub_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">data</span><span class="p">):</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;I heard fruit_cnt=</span><span class="si">%i</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">fruit_cnt</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">msg_received</span> <span class="o">=</span> <span class="bp">True</span></div>
+
+<div class="viewcode-block" id="VisionTesterNode.test_subscriber"><a class="viewcode-back" href="../doc/vision_tester_node.html#vision_tester_node.VisionTesterNode.test_subscriber">[docs]</a>    <span class="k">def</span> <span class="nf">test_subscriber</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setup</span><span class="p">()</span>    <span class="c1"># Setup the node</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertGreaterEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sub_vision_fruit_cnt</span><span class="o">.</span><span class="n">get_num_connections</span><span class="p">(),</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;No connections found on sub_vision_fruit_cnt topic&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEquals</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">msg_received</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="s2">&quot;sub_vision_fruit_cnt not received&quot;</span><span class="p">)</span></div>
+
+    <span class="c1">## test 1 == 1</span>
+<div class="viewcode-block" id="VisionTesterNode.test_one_equals_one"><a class="viewcode-back" href="../doc/vision_tester_node.html#vision_tester_node.VisionTesterNode.test_one_equals_one">[docs]</a>    <span class="k">def</span> <span class="nf">test_one_equals_one</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># only functions with &#39;test_&#39;-prefix will be run!</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEquals</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;1!=1&quot;</span><span class="p">)</span></div></div>
+
+    
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="c1">#rospy.init_node(&#39;vision_tester_node&#39;, anonymous=False)</span>
+    <span class="n">rostest</span><span class="o">.</span><span class="n">rosrun</span><span class="p">(</span><span class="n">PKG</span><span class="p">,</span> <span class="s1">&#39;vision_tester_node&#39;</span><span class="p">,</span> <span class="n">VisionTesterNode</span><span class="p">)</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index2.html">Documentation overview</a><ul>
+  <li><a href="index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, wuulong@gmail.com.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

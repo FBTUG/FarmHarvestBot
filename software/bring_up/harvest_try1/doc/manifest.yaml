@@ -1,0 +1,20 @@
+actions: []
+authors: ''
+brief: ''
+bugtracker: ''
+depends:
+- std_msgs
+- rostest
+- rospy
+- catkin
+description: The harvest_try1 package
+license: MIT
+maintainers: osboxes <osboxes@todo.todo>
+msgs:
+- FruitCnt
+package_type: package
+repo_url: ''
+srvs:
+- fruit_pos
+- CarMove
+url: ''
