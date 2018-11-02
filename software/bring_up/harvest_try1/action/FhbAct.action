@@ -1,0 +1,19 @@
+#goal definition
+uint32 act_seq 
+uint32 act_id
+uint32 act_subid
+uint32 i1
+uint32 i2
+float32 f1
+float32 f2
+string line
+---
+#result definition
+uint32 status # 0-ok, >1 error code
+uint8 error_level # 0-warning, 1-error, 2-fatal error 
+string error_msg
+---
+#feedback
+uint32 notice_id # 0-waiting, 1-ongoing ...
+uint8 progrsss # progress percent 
+string fb_msg # feedback string

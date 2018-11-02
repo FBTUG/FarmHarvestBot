@@ -1,4 +1,4 @@
- - builder: epydoc
-   output_dir: python
  - builder: sphinx
    sphinx_root_dir: sphinx
+ - builder: epydoc
+   output_dir: python
