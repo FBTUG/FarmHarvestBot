@@ -1,0 +1,14 @@
+fhb_arm: {mode: 0}
+fhb_car: {mode: 0}
+fhb_cli: {mode: 0}
+fhb_harvest: {mode: 0}
+fhb_vision: {mode: 0}
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_osboxes__42121: 'http://osboxes:42121/', host_osboxes__46269: 'http://osboxes:46269/'}
+rosversion: '1.12.13
+
+  '
+run_id: 05291e70-e163-11e8-9c84-08002773ed26

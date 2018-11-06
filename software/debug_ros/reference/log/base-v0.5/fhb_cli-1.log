@@ -1,0 +1,18 @@
+[rospy.client][INFO] 2018-11-05 20:27:27,855: init_node, name[/fhb_cli], pid[26563]
+[xmlrpc][INFO] 2018-11-05 20:27:27,857: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-11-05 20:27:27,857: Started XML-RPC server [http://osboxes:45803/]
+[rospy.impl.masterslave][INFO] 2018-11-05 20:27:27,858: _ready: http://osboxes:45803/
+[rospy.init][INFO] 2018-11-05 20:27:27,858: ROS Slave URI: [http://osboxes:45803/]
+[xmlrpc][INFO] 2018-11-05 20:27:27,863: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-11-05 20:27:27,865: Registering with master node http://osboxes.local:11311
+[rospy.init][INFO] 2018-11-05 20:27:27,959: registered with master
+[rospy.rosout][INFO] 2018-11-05 20:27:27,960: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-11-05 20:27:28,042: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-11-05 20:27:28,056: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-11-05 20:27:28,065: ----- farmharvestbot_base V0.0.5
+[rosout][INFO] 2018-11-05 20:27:28,066: ----- CLI need to run with ros master exist!
+[rospy.internal][INFO] 2018-11-05 20:27:28,361: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-11-05 20:30:45,199: topic[/rosout] adding connection to [/rostopic_29772_1541467844860], count 1
+[rospy.internal][INFO] 2018-11-05 20:30:45,578: topic[/rosout] removing connection to /rostopic_29772_1541467844860
+[rospy.internal][INFO] 2018-11-05 20:31:12,658: topic[/rosout] adding connection to [/record_1541467872284594157], count 1
+[rospy.internal][INFO] 2018-11-05 20:31:21,673: topic[/rosout] removing connection to /record_1541467872284594157

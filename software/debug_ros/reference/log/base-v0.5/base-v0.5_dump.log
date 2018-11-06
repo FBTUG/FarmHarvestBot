@@ -1,0 +1,1277 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[PARAM_DUMP]$rosparam dump debug_ros_param.yaml =====>
+[NODE_LIST]$rosnode list =====>
+/fhb_arm
+/fhb_car
+/fhb_cli
+/fhb_harvest
+/fhb_vision
+/rosout
+/rqt_gui_py_node_26793
+[SRV_LIST]$rossrv list =====>
+app_manager/GetAppDetails
+app_manager/GetInstallationState
+app_manager/InstallApp
+app_manager/ListApps
+app_manager/StartApp
+app_manager/StopApp
+app_manager/UninstallApp
+astra_camera/GetSerial
+capabilities/EstablishBond
+capabilities/FreeCapability
+capabilities/GetCapabilitySpec
+capabilities/GetCapabilitySpecs
+capabilities/GetInterfaces
+capabilities/GetNodeletManagerName
+capabilities/GetProviders
+capabilities/GetRemappings
+capabilities/GetRunningCapabilities
+capabilities/GetSemanticInterfaces
+capabilities/StartCapability
+capabilities/StopCapability
+capabilities/UseCapability
+control_msgs/QueryCalibrationState
+control_msgs/QueryTrajectoryState
+control_toolbox/SetPidGains
+controller_manager_msgs/ListControllerTypes
+controller_manager_msgs/ListControllers
+controller_manager_msgs/LoadController
+controller_manager_msgs/ReloadControllerLibraries
+controller_manager_msgs/SwitchController
+controller_manager_msgs/UnloadController
+create_node/SetDigitalOutputs
+create_node/SetTurtlebotMode
+diagnostic_msgs/AddDiagnostics
+diagnostic_msgs/SelfTest
+dynamic_reconfigure/Reconfigure
+ethercat_hardware/SoftProcessorFirmwareRead
+ethercat_hardware/SoftProcessorFirmwareWrite
+ethercat_hardware/SoftProcessorReset
+ethercat_trigger_controllers/SetMultiWaveform
+ethercat_trigger_controllers/SetWaveform
+gateway_msgs/Advertise
+gateway_msgs/AdvertiseAll
+gateway_msgs/ConnectHub
+gateway_msgs/Remote
+gateway_msgs/RemoteAll
+gateway_msgs/RemoteGatewayInfo
+gateway_msgs/SetWatcherPeriod
+gazebo_msgs/ApplyBodyWrench
+gazebo_msgs/ApplyJointEffort
+gazebo_msgs/BodyRequest
+gazebo_msgs/DeleteLight
+gazebo_msgs/DeleteModel
+gazebo_msgs/GetJointProperties
+gazebo_msgs/GetLightProperties
+gazebo_msgs/GetLinkProperties
+gazebo_msgs/GetLinkState
+gazebo_msgs/GetModelProperties
+gazebo_msgs/GetModelState
+gazebo_msgs/GetPhysicsProperties
+gazebo_msgs/GetWorldProperties
+gazebo_msgs/JointRequest
+gazebo_msgs/SetJointProperties
+gazebo_msgs/SetJointTrajectory
+gazebo_msgs/SetLightProperties
+gazebo_msgs/SetLinkProperties
+gazebo_msgs/SetLinkState
+gazebo_msgs/SetModelConfiguration
+gazebo_msgs/SetModelState
+gazebo_msgs/SetPhysicsProperties
+gazebo_msgs/SpawnModel
+harvest_try1/CarMove
+harvest_try1/fruit_pos
+laser_assembler/AssembleScans
+laser_assembler/AssembleScans2
+map_msgs/GetMapROI
+map_msgs/GetPointMap
+map_msgs/GetPointMapROI
+map_msgs/ProjectedMapsInfo
+map_msgs/SaveMap
+map_msgs/SetMapProjections
+microstrain_3dmgx2_imu/AddOffset
+moveit_msgs/ApplyPlanningScene
+moveit_msgs/CheckIfRobotStateExistsInWarehouse
+moveit_msgs/DeleteRobotStateFromWarehouse
+moveit_msgs/ExecuteKnownTrajectory
+moveit_msgs/GetCartesianPath
+moveit_msgs/GetMotionPlan
+moveit_msgs/GetPlannerParams
+moveit_msgs/GetPlanningScene
+moveit_msgs/GetPositionFK
+moveit_msgs/GetPositionIK
+moveit_msgs/GetRobotStateFromWarehouse
+moveit_msgs/GetStateValidity
+moveit_msgs/GraspPlanning
+moveit_msgs/ListRobotStatesInWarehouse
+moveit_msgs/LoadMap
+moveit_msgs/QueryPlannerInterfaces
+moveit_msgs/RenameRobotStateInWarehouse
+moveit_msgs/SaveMap
+moveit_msgs/SaveRobotStateToWarehouse
+moveit_msgs/SetPlannerParams
+nav_msgs/GetMap
+nav_msgs/GetPlan
+nav_msgs/SetMap
+navfn/MakeNavPlan
+navfn/SetCostmap
+nodelet/NodeletList
+nodelet/NodeletLoad
+nodelet/NodeletUnload
+object_recognition_msgs/GetObjectInformation
+octomap_msgs/BoundingBoxQuery
+octomap_msgs/GetOctomap
+openni2_camera/GetSerial
+polled_camera/GetPolledImage
+pr2_calibration_launch/FkTest
+pr2_controllers_msgs/QueryCalibrationState
+pr2_controllers_msgs/QueryTrajectoryState
+pr2_gazebo_plugins/SetModelsJointsStates
+pr2_mechanism_controllers/SetProfile
+pr2_mechanism_msgs/ListControllerTypes
+pr2_mechanism_msgs/ListControllers
+pr2_mechanism_msgs/LoadController
+pr2_mechanism_msgs/ReloadControllerLibraries
+pr2_mechanism_msgs/SwitchController
+pr2_mechanism_msgs/UnloadController
+pr2_msgs/SetLaserTrajCmd
+pr2_msgs/SetPeriodicCmd
+pr2_power_board/PowerBoardCommand
+pr2_power_board/PowerBoardCommand2
+realsense_camera/CameraConfiguration
+realsense_camera/ForcePower
+realsense_camera/GetIMUInfo
+realsense_camera/IsPowered
+realsense_camera/SetPower
+robot_pose_ekf/GetStatus
+rocon_app_manager_msgs/GetRappList
+rocon_app_manager_msgs/Init
+rocon_app_manager_msgs/Invite
+rocon_app_manager_msgs/StartRapp
+rocon_app_manager_msgs/StopRapp
+rocon_interaction_msgs/GetInteraction
+rocon_interaction_msgs/GetInteractions
+rocon_interaction_msgs/GetPairings
+rocon_interaction_msgs/RequestInteraction
+rocon_interaction_msgs/SetInteractions
+rocon_interaction_msgs/StartPairing
+rocon_interaction_msgs/StopPairing
+rocon_std_msgs/EmptyString
+roscpp/Empty
+roscpp/GetLoggers
+roscpp/SetLoggerLevel
+roscpp_tutorials/TwoInts
+rospy_tutorials/AddTwoInts
+rospy_tutorials/BadTwoInts
+rosserial_arduino/Test
+rosserial_msgs/RequestMessageInfo
+rosserial_msgs/RequestParam
+rosserial_msgs/RequestServiceInfo
+sensor_msgs/SetCameraInfo
+std_srvs/Empty
+std_srvs/SetBool
+std_srvs/Trigger
+tf/FrameGraph
+tf2_msgs/FrameGraph
+topic_tools/DemuxAdd
+topic_tools/DemuxDelete
+topic_tools/DemuxList
+topic_tools/DemuxSelect
+topic_tools/MuxAdd
+topic_tools/MuxDelete
+topic_tools/MuxList
+topic_tools/MuxSelect
+turtlesim/Kill
+turtlesim/SetPen
+turtlesim/Spawn
+turtlesim/TeleportAbsolute
+turtlesim/TeleportRelative
+wge100_camera/BoardConfig
+zeroconf_msgs/AddListener
+zeroconf_msgs/AddService
+zeroconf_msgs/ListDiscoveredServices
+zeroconf_msgs/ListPublishedServices
+zeroconf_msgs/RemoveListener
+zeroconf_msgs/RemoveService
+[NODE=/fhb_arm]$rosnode info /fhb_arm =====>
+--------------------------------------------------------------------------------
+Node [/fhb_arm]
+Publications: 
+ * /arm_act/feedback [farmharvestbot_msgs/FhbActActionFeedback]
+ * /arm_act/result [farmharvestbot_msgs/FhbActActionResult]
+ * /arm_act/status [actionlib_msgs/GoalStatusArray]
+ * /arm_ctrl_state [std_msgs/String]
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /rosout [rosgraph_msgs/Log]
+ * /serial_rx [std_msgs/String]
+
+Subscriptions: 
+ * /arm_act/cancel [unknown type]
+ * /arm_act/goal [unknown type]
+ * /cmd_pos [unknown type]
+ * /cmd_vel [unknown type]
+ * /serial_tx [unknown type]
+
+Services: 
+ * /fhb_arm/get_loggers
+ * /fhb_arm/set_logger_level
+
+
+contacting node http://osboxes:37187/ ...
+Pid: 26566
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /diagnostics
+    * to: /rqt_gui_py_node_26793
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/fhb_car]$rosnode info /fhb_car =====>
+--------------------------------------------------------------------------------
+Node [/fhb_car]
+Publications: 
+ * /car_act/feedback [farmharvestbot_msgs/FhbActActionFeedback]
+ * /car_act/result [farmharvestbot_msgs/FhbActActionResult]
+ * /car_act/status [actionlib_msgs/GoalStatusArray]
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /car_act/cancel [unknown type]
+ * /car_act/goal [unknown type]
+
+Services: 
+ * /fhb_car/get_loggers
+ * /fhb_car/set_logger_level
+
+
+contacting node http://osboxes:34223/ ...
+Pid: 26567
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /diagnostics
+    * to: /rqt_gui_py_node_26793
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/fhb_cli]$rosnode info /fhb_cli =====>
+--------------------------------------------------------------------------------
+Node [/fhb_cli]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: None
+
+Services: 
+ * /fhb_cli/get_loggers
+ * /fhb_cli/set_logger_level
+
+
+contacting node http://osboxes:45803/ ...
+Pid: 26563
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/fhb_harvest]$rosnode info /fhb_harvest =====>
+--------------------------------------------------------------------------------
+Node [/fhb_harvest]
+Publications: 
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /harvest_act/feedback [farmharvestbot_msgs/FhbActActionFeedback]
+ * /harvest_act/result [farmharvestbot_msgs/FhbActActionResult]
+ * /harvest_act/status [actionlib_msgs/GoalStatusArray]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /harvest_act/cancel [unknown type]
+ * /harvest_act/goal [unknown type]
+
+Services: 
+ * /fhb_harvest/get_loggers
+ * /fhb_harvest/set_logger_level
+
+
+contacting node http://osboxes:39131/ ...
+Pid: 26564
+Connections:
+ * topic: /diagnostics
+    * to: /rqt_gui_py_node_26793
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/fhb_vision]$rosnode info /fhb_vision =====>
+--------------------------------------------------------------------------------
+Node [/fhb_vision]
+Publications: 
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /rosout [rosgraph_msgs/Log]
+ * /vision_act/feedback [farmharvestbot_msgs/FhbActActionFeedback]
+ * /vision_act/result [farmharvestbot_msgs/FhbActActionResult]
+ * /vision_act/status [actionlib_msgs/GoalStatusArray]
+
+Subscriptions: 
+ * /vision_act/cancel [unknown type]
+ * /vision_act/goal [unknown type]
+
+Services: 
+ * /fhb_vision/get_loggers
+ * /fhb_vision/set_logger_level
+
+
+contacting node http://osboxes:38759/ ...
+Pid: 26565
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /diagnostics
+    * to: /rqt_gui_py_node_26793
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://osboxes:44077/ ...
+Pid: 26526
+Connections:
+ * topic: /rosout
+    * to: /fhb_harvest (http://osboxes:39131/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /fhb_vision (http://osboxes:38759/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /fhb_car (http://osboxes:34223/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /fhb_arm (http://osboxes:37187/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /fhb_cli (http://osboxes:45803/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rqt_gui_py_node_26793 (http://osboxes:37317/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/rqt_gui_py_node_26793]$rosnode info /rqt_gui_py_node_26793 =====>
+--------------------------------------------------------------------------------
+Node [/rqt_gui_py_node_26793]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+
+Services: 
+ * /rqt_gui_py_node_26793/get_loggers
+ * /rqt_gui_py_node_26793/set_logger_level
+
+
+contacting node http://osboxes:37317/ ...
+Pid: 26793
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /diagnostics
+    * to: /fhb_vision (http://osboxes:38759/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /diagnostics
+    * to: /fhb_arm (http://osboxes:37187/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /diagnostics
+    * to: /fhb_harvest (http://osboxes:39131/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /diagnostics
+    * to: /fhb_car (http://osboxes:34223/)
+    * direction: inbound
+    * transport: TCPROS
+
+[TOPIC_LIST]$rostopic list =====>
+/arm_act/cancel
+/arm_act/feedback
+/arm_act/goal
+/arm_act/result
+/arm_act/status
+/arm_ctrl_state
+/car_act/cancel
+/car_act/feedback
+/car_act/goal
+/car_act/result
+/car_act/status
+/cmd_pos
+/cmd_vel
+/diagnostics
+/harvest_act/cancel
+/harvest_act/feedback
+/harvest_act/goal
+/harvest_act/result
+/harvest_act/status
+/rosout
+/rosout_agg
+/serial_rx
+/serial_tx
+/vision_act/cancel
+/vision_act/feedback
+/vision_act/goal
+/vision_act/result
+/vision_act/status
+[TOPIC=/arm_act/cancel]$rostopic info /arm_act/cancel =====>
+Type: actionlib_msgs/GoalID
+
+Publishers: None
+
+Subscribers: 
+ * /fhb_arm (http://osboxes:37187/)
+
+
+[TOPIC_HZ=/arm_act/cancel]$timeout 1 rostopic hz /arm_act/cancel =====>
+subscribed to [/arm_act/cancel]
+no new messages
+[TOPIC_TYPE=actionlib_msgs/GoalID]$rosmsg show actionlib_msgs/GoalID =====>
+time stamp
+string id
+
+[TOPIC=/arm_act/feedback]$rostopic info /arm_act/feedback =====>
+Type: farmharvestbot_msgs/FhbActActionFeedback
+
+Publishers: 
+ * /fhb_arm (http://osboxes:37187/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/arm_act/feedback]$timeout 1 rostopic hz /arm_act/feedback =====>
+subscribed to [/arm_act/feedback]
+no new messages
+[TOPIC_TYPE=farmharvestbot_msgs/FhbActActionFeedback]$rosmsg show farmharvestbot_msgs/FhbActActionFeedback =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus status
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+farmharvestbot_msgs/FhbActFeedback feedback
+  uint32 notice_id
+  uint8 progrsss
+  string fb_msg
+
+[TOPIC=/arm_act/goal]$rostopic info /arm_act/goal =====>
+Type: farmharvestbot_msgs/FhbActActionGoal
+
+Publishers: None
+
+Subscribers: 
+ * /fhb_arm (http://osboxes:37187/)
+
+
+[TOPIC_HZ=/arm_act/goal]$timeout 1 rostopic hz /arm_act/goal =====>
+subscribed to [/arm_act/goal]
+no new messages
+[TOPIC_TYPE=farmharvestbot_msgs/FhbActActionGoal]$rosmsg show farmharvestbot_msgs/FhbActActionGoal =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalID goal_id
+  time stamp
+  string id
+farmharvestbot_msgs/FhbActGoal goal
+  uint32 act_id
+  uint32 act_subid
+  uint32 i1
+  uint32 i2
+  float32 f1
+  float32 f2
+  string line
+
+[TOPIC=/arm_act/result]$rostopic info /arm_act/result =====>
+Type: farmharvestbot_msgs/FhbActActionResult
+
+Publishers: 
+ * /fhb_arm (http://osboxes:37187/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/arm_act/result]$timeout 1 rostopic hz /arm_act/result =====>
+subscribed to [/arm_act/result]
+no new messages
+[TOPIC_TYPE=farmharvestbot_msgs/FhbActActionResult]$rosmsg show farmharvestbot_msgs/FhbActActionResult =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus status
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+farmharvestbot_msgs/FhbActResult result
+  uint32 status
+  uint8 error_level
+  string error_msg
+
+[TOPIC=/arm_act/status]$rostopic info /arm_act/status =====>
+Type: actionlib_msgs/GoalStatusArray
+
+Publishers: 
+ * /fhb_arm (http://osboxes:37187/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/arm_act/status]$timeout 1 rostopic hz /arm_act/status =====>
+subscribed to [/arm_act/status]
+average rate: 8.378
+	min: 0.040s max: 0.199s std dev: 0.07940s window: 3
+[TOPIC_TYPE=actionlib_msgs/GoalStatusArray]$rosmsg show actionlib_msgs/GoalStatusArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus[] status_list
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+
+[TOPIC=/arm_ctrl_state]$rostopic info /arm_ctrl_state =====>
+Type: std_msgs/String
+
+Publishers: 
+ * /fhb_arm (http://osboxes:37187/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/arm_ctrl_state]$timeout 1 rostopic hz /arm_ctrl_state =====>
+subscribed to [/arm_ctrl_state]
+no new messages
+[TOPIC_TYPE=std_msgs/String]$rosmsg show std_msgs/String =====>
+string data
+
+[TOPIC=/car_act/cancel]$rostopic info /car_act/cancel =====>
+Type: actionlib_msgs/GoalID
+
+Publishers: None
+
+Subscribers: 
+ * /fhb_car (http://osboxes:34223/)
+
+
+[TOPIC_HZ=/car_act/cancel]$timeout 1 rostopic hz /car_act/cancel =====>
+[TOPIC_TYPE=actionlib_msgs/GoalID]$rosmsg show actionlib_msgs/GoalID =====>
+time stamp
+string id
+
+[TOPIC=/car_act/feedback]$rostopic info /car_act/feedback =====>
+Type: farmharvestbot_msgs/FhbActActionFeedback
+
+Publishers: 
+ * /fhb_car (http://osboxes:34223/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/car_act/feedback]$timeout 1 rostopic hz /car_act/feedback =====>
+subscribed to [/car_act/feedback]
+no new messages
+[TOPIC_TYPE=farmharvestbot_msgs/FhbActActionFeedback]$rosmsg show farmharvestbot_msgs/FhbActActionFeedback =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus status
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+farmharvestbot_msgs/FhbActFeedback feedback
+  uint32 notice_id
+  uint8 progrsss
+  string fb_msg
+
+[TOPIC=/car_act/goal]$rostopic info /car_act/goal =====>
+Type: farmharvestbot_msgs/FhbActActionGoal
+
+Publishers: None
+
+Subscribers: 
+ * /fhb_car (http://osboxes:34223/)
+
+
+[TOPIC_HZ=/car_act/goal]$timeout 1 rostopic hz /car_act/goal =====>
+subscribed to [/car_act/goal]
+[TOPIC_TYPE=farmharvestbot_msgs/FhbActActionGoal]$rosmsg show farmharvestbot_msgs/FhbActActionGoal =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalID goal_id
+  time stamp
+  string id
+farmharvestbot_msgs/FhbActGoal goal
+  uint32 act_id
+  uint32 act_subid
+  uint32 i1
+  uint32 i2
+  float32 f1
+  float32 f2
+  string line
+
+[TOPIC=/car_act/result]$rostopic info /car_act/result =====>
+Type: farmharvestbot_msgs/FhbActActionResult
+
+Publishers: 
+ * /fhb_car (http://osboxes:34223/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/car_act/result]$timeout 1 rostopic hz /car_act/result =====>
+subscribed to [/car_act/result]
+no new messages
+[TOPIC_TYPE=farmharvestbot_msgs/FhbActActionResult]$rosmsg show farmharvestbot_msgs/FhbActActionResult =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus status
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+farmharvestbot_msgs/FhbActResult result
+  uint32 status
+  uint8 error_level
+  string error_msg
+
+[TOPIC=/car_act/status]$rostopic info /car_act/status =====>
+Type: actionlib_msgs/GoalStatusArray
+
+Publishers: 
+ * /fhb_car (http://osboxes:34223/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/car_act/status]$timeout 1 rostopic hz /car_act/status =====>
+subscribed to [/car_act/status]
+average rate: 8.922
+	min: 0.024s max: 0.200s std dev: 0.08807s window: 3
+[TOPIC_TYPE=actionlib_msgs/GoalStatusArray]$rosmsg show actionlib_msgs/GoalStatusArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus[] status_list
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+
+[TOPIC=/cmd_pos]$rostopic info /cmd_pos =====>
+Type: geometry_msgs/Point
+
+Publishers: None
+
+Subscribers: 
+ * /fhb_arm (http://osboxes:37187/)
+
+
+[TOPIC_HZ=/cmd_pos]$timeout 1 rostopic hz /cmd_pos =====>
+[TOPIC_TYPE=geometry_msgs/Point]$rosmsg show geometry_msgs/Point =====>
+float64 x
+float64 y
+float64 z
+
+[TOPIC=/cmd_vel]$rostopic info /cmd_vel =====>
+Type: geometry_msgs/Twist
+
+Publishers: None
+
+Subscribers: 
+ * /fhb_arm (http://osboxes:37187/)
+
+
+[TOPIC_HZ=/cmd_vel]$timeout 1 rostopic hz /cmd_vel =====>
+subscribed to [/cmd_vel]
+no new messages
+[TOPIC_TYPE=geometry_msgs/Twist]$rosmsg show geometry_msgs/Twist =====>
+geometry_msgs/Vector3 linear
+  float64 x
+  float64 y
+  float64 z
+geometry_msgs/Vector3 angular
+  float64 x
+  float64 y
+  float64 z
+
+[TOPIC=/diagnostics]$rostopic info /diagnostics =====>
+Type: diagnostic_msgs/DiagnosticArray
+
+Publishers: 
+ * /fhb_harvest (http://osboxes:39131/)
+ * /fhb_vision (http://osboxes:38759/)
+ * /fhb_car (http://osboxes:34223/)
+ * /fhb_arm (http://osboxes:37187/)
+
+Subscribers: 
+ * /rqt_gui_py_node_26793 (http://osboxes:37317/)
+
+
+[TOPIC_HZ=/diagnostics]$timeout 1 rostopic hz /diagnostics =====>
+subscribed to [/diagnostics]
+no new messages
+[TOPIC_TYPE=diagnostic_msgs/DiagnosticArray]$rosmsg show diagnostic_msgs/DiagnosticArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+diagnostic_msgs/DiagnosticStatus[] status
+  byte OK=0
+  byte WARN=1
+  byte ERROR=2
+  byte STALE=3
+  byte level
+  string name
+  string message
+  string hardware_id
+  diagnostic_msgs/KeyValue[] values
+    string key
+    string value
+
+[TOPIC=/harvest_act/cancel]$rostopic info /harvest_act/cancel =====>
+Type: actionlib_msgs/GoalID
+
+Publishers: None
+
+Subscribers: 
+ * /fhb_harvest (http://osboxes:39131/)
+
+
+[TOPIC_HZ=/harvest_act/cancel]$timeout 1 rostopic hz /harvest_act/cancel =====>
+subscribed to [/harvest_act/cancel]
+no new messages
+[TOPIC_TYPE=actionlib_msgs/GoalID]$rosmsg show actionlib_msgs/GoalID =====>
+time stamp
+string id
+
+[TOPIC=/harvest_act/feedback]$rostopic info /harvest_act/feedback =====>
+Type: farmharvestbot_msgs/FhbActActionFeedback
+
+Publishers: 
+ * /fhb_harvest (http://osboxes:39131/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvest_act/feedback]$timeout 1 rostopic hz /harvest_act/feedback =====>
+subscribed to [/harvest_act/feedback]
+no new messages
+[TOPIC_TYPE=farmharvestbot_msgs/FhbActActionFeedback]$rosmsg show farmharvestbot_msgs/FhbActActionFeedback =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus status
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+farmharvestbot_msgs/FhbActFeedback feedback
+  uint32 notice_id
+  uint8 progrsss
+  string fb_msg
+
+[TOPIC=/harvest_act/goal]$rostopic info /harvest_act/goal =====>
+Type: farmharvestbot_msgs/FhbActActionGoal
+
+Publishers: None
+
+Subscribers: 
+ * /fhb_harvest (http://osboxes:39131/)
+
+
+[TOPIC_HZ=/harvest_act/goal]$timeout 1 rostopic hz /harvest_act/goal =====>
+subscribed to [/harvest_act/goal]
+no new messages
+[TOPIC_TYPE=farmharvestbot_msgs/FhbActActionGoal]$rosmsg show farmharvestbot_msgs/FhbActActionGoal =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalID goal_id
+  time stamp
+  string id
+farmharvestbot_msgs/FhbActGoal goal
+  uint32 act_id
+  uint32 act_subid
+  uint32 i1
+  uint32 i2
+  float32 f1
+  float32 f2
+  string line
+
+[TOPIC=/harvest_act/result]$rostopic info /harvest_act/result =====>
+Type: farmharvestbot_msgs/FhbActActionResult
+
+Publishers: 
+ * /fhb_harvest (http://osboxes:39131/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvest_act/result]$timeout 1 rostopic hz /harvest_act/result =====>
+subscribed to [/harvest_act/result]
+no new messages
+[TOPIC_TYPE=farmharvestbot_msgs/FhbActActionResult]$rosmsg show farmharvestbot_msgs/FhbActActionResult =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus status
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+farmharvestbot_msgs/FhbActResult result
+  uint32 status
+  uint8 error_level
+  string error_msg
+
+[TOPIC=/harvest_act/status]$rostopic info /harvest_act/status =====>
+Type: actionlib_msgs/GoalStatusArray
+
+Publishers: 
+ * /fhb_harvest (http://osboxes:39131/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvest_act/status]$timeout 1 rostopic hz /harvest_act/status =====>
+subscribed to [/harvest_act/status]
+average rate: 5.130
+	min: 0.195s max: 0.195s std dev: 0.00000s window: 2
+[TOPIC_TYPE=actionlib_msgs/GoalStatusArray]$rosmsg show actionlib_msgs/GoalStatusArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus[] status_list
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /fhb_harvest (http://osboxes:39131/)
+ * /fhb_vision (http://osboxes:38759/)
+ * /fhb_car (http://osboxes:34223/)
+ * /fhb_arm (http://osboxes:37187/)
+ * /fhb_cli (http://osboxes:45803/)
+ * /rqt_gui_py_node_26793 (http://osboxes:37317/)
+
+Subscribers: 
+ * /rosout (http://osboxes:44077/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+average rate: 137.202
+	min: 0.001s max: 0.013s std dev: 0.00492s window: 5
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://osboxes:44077/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+subscribed to [/rosout_agg]
+no new messages
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/serial_rx]$rostopic info /serial_rx =====>
+Type: std_msgs/String
+
+Publishers: 
+ * /fhb_arm (http://osboxes:37187/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/serial_rx]$timeout 1 rostopic hz /serial_rx =====>
+subscribed to [/serial_rx]
+no new messages
+[TOPIC_TYPE=std_msgs/String]$rosmsg show std_msgs/String =====>
+string data
+
+[TOPIC=/serial_tx]$rostopic info /serial_tx =====>
+Type: std_msgs/String
+
+Publishers: None
+
+Subscribers: 
+ * /fhb_arm (http://osboxes:37187/)
+
+
+[TOPIC_HZ=/serial_tx]$timeout 1 rostopic hz /serial_tx =====>
+subscribed to [/serial_tx]
+no new messages
+[TOPIC_TYPE=std_msgs/String]$rosmsg show std_msgs/String =====>
+string data
+
+[TOPIC=/vision_act/cancel]$rostopic info /vision_act/cancel =====>
+Type: actionlib_msgs/GoalID
+
+Publishers: None
+
+Subscribers: 
+ * /fhb_vision (http://osboxes:38759/)
+
+
+[TOPIC_HZ=/vision_act/cancel]$timeout 1 rostopic hz /vision_act/cancel =====>
+subscribed to [/vision_act/cancel]
+no new messages
+[TOPIC_TYPE=actionlib_msgs/GoalID]$rosmsg show actionlib_msgs/GoalID =====>
+time stamp
+string id
+
+[TOPIC=/vision_act/feedback]$rostopic info /vision_act/feedback =====>
+Type: farmharvestbot_msgs/FhbActActionFeedback
+
+Publishers: 
+ * /fhb_vision (http://osboxes:38759/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/vision_act/feedback]$timeout 1 rostopic hz /vision_act/feedback =====>
+subscribed to [/vision_act/feedback]
+no new messages
+[TOPIC_TYPE=farmharvestbot_msgs/FhbActActionFeedback]$rosmsg show farmharvestbot_msgs/FhbActActionFeedback =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus status
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+farmharvestbot_msgs/FhbActFeedback feedback
+  uint32 notice_id
+  uint8 progrsss
+  string fb_msg
+
+[TOPIC=/vision_act/goal]$rostopic info /vision_act/goal =====>
+Type: farmharvestbot_msgs/FhbActActionGoal
+
+Publishers: None
+
+Subscribers: 
+ * /fhb_vision (http://osboxes:38759/)
+
+
+[TOPIC_HZ=/vision_act/goal]$timeout 1 rostopic hz /vision_act/goal =====>
+subscribed to [/vision_act/goal]
+no new messages
+[TOPIC_TYPE=farmharvestbot_msgs/FhbActActionGoal]$rosmsg show farmharvestbot_msgs/FhbActActionGoal =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalID goal_id
+  time stamp
+  string id
+farmharvestbot_msgs/FhbActGoal goal
+  uint32 act_id
+  uint32 act_subid
+  uint32 i1
+  uint32 i2
+  float32 f1
+  float32 f2
+  string line
+
+[TOPIC=/vision_act/result]$rostopic info /vision_act/result =====>
+Type: farmharvestbot_msgs/FhbActActionResult
+
+Publishers: 
+ * /fhb_vision (http://osboxes:38759/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/vision_act/result]$timeout 1 rostopic hz /vision_act/result =====>
+subscribed to [/vision_act/result]
+no new messages
+[TOPIC_TYPE=farmharvestbot_msgs/FhbActActionResult]$rosmsg show farmharvestbot_msgs/FhbActActionResult =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus status
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+farmharvestbot_msgs/FhbActResult result
+  uint32 status
+  uint8 error_level
+  string error_msg
+
+[TOPIC=/vision_act/status]$rostopic info /vision_act/status =====>
+Type: actionlib_msgs/GoalStatusArray
+
+Publishers: 
+ * /fhb_vision (http://osboxes:38759/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/vision_act/status]$timeout 1 rostopic hz /vision_act/status =====>
+subscribed to [/vision_act/status]
+average rate: 9.054
+	min: 0.020s max: 0.200s std dev: 0.09000s window: 3
+[TOPIC_TYPE=actionlib_msgs/GoalStatusArray]$rosmsg show actionlib_msgs/GoalStatusArray =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+actionlib_msgs/GoalStatus[] status_list
+  uint8 PENDING=0
+  uint8 ACTIVE=1
+  uint8 PREEMPTED=2
+  uint8 SUCCEEDED=3
+  uint8 ABORTED=4
+  uint8 REJECTED=5
+  uint8 PREEMPTING=6
+  uint8 RECALLING=7
+  uint8 RECALLED=8
+  uint8 LOST=9
+  actionlib_msgs/GoalID goal_id
+    time stamp
+    string id
+  uint8 status
+  string text
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>
+[0m[ INFO] [1541467872.306601275]: Recording to 2018-11-05-20-31-12.bag.[0m
+[0m[ INFO] [1541467872.308061784]: Subscribing to /car_act/result[0m
+[0m[ INFO] [1541467872.335302953]: Subscribing to /vision_act/result[0m
+[0m[ INFO] [1541467872.343753227]: Subscribing to /arm_act/feedback[0m
+[0m[ INFO] [1541467872.355845945]: Subscribing to /serial_rx[0m
+[0m[ INFO] [1541467872.367980935]: Subscribing to /rosout[0m
+[0m[ INFO] [1541467872.401923703]: Subscribing to /rosout_agg[0m
+[0m[ INFO] [1541467872.430939651]: Subscribing to /car_act/status[0m
+[0m[ INFO] [1541467872.438510855]: Subscribing to /arm_act/status[0m
+[0m[ INFO] [1541467872.451726246]: Subscribing to /car_act/feedback[0m
+[0m[ INFO] [1541467872.470949795]: Subscribing to /harvest_act/result[0m
+[0m[ INFO] [1541467872.504141330]: Subscribing to /diagnostics[0m
+[0m[ INFO] [1541467872.571006211]: Subscribing to /arm_ctrl_state[0m
+[0m[ INFO] [1541467872.586704788]: Subscribing to /vision_act/feedback[0m
+[0m[ INFO] [1541467872.611266183]: Subscribing to /harvest_act/feedback[0m
+[0m[ INFO] [1541467872.621768971]: Subscribing to /harvest_act/status[0m
+[0m[ INFO] [1541467872.688645241]: Subscribing to /vision_act/status[0m
+[0m[ INFO] [1541467872.719592847]: Subscribing to /arm_act/result[0m

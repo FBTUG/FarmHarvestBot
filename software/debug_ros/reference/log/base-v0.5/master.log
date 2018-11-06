@@ -1,0 +1,469 @@
+[rosmaster.main][INFO] 2018-11-05 20:26:45,069: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2018-11-05 20:26:45,070: Starting ROS Master Node
+[xmlrpc][INFO] 2018-11-05 20:26:45,071: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2018-11-05 20:26:45,071: Started XML-RPC server [http://osboxes:11311/]
+[xmlrpc][INFO] 2018-11-05 20:26:45,071: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2018-11-05 20:26:45,071: Master initialized: port[11311], uri[http://osboxes:11311/]
+[rosmaster.master][INFO] 2018-11-05 20:26:45,139: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2018-11-05 20:26:45,147: +PARAM [/roslaunch/uris/host_osboxes__42121] by /roslaunch
+[rosmaster.master][INFO] 2018-11-05 20:26:45,359: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2018-11-05 20:26:45,360: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2018-11-05 20:26:45,389: +SERVICE [/rosout/get_loggers] /rosout http://osboxes:44077/
+[rosmaster.master][INFO] 2018-11-05 20:26:45,391: +SERVICE [/rosout/set_logger_level] /rosout http://osboxes:44077/
+[rosmaster.master][INFO] 2018-11-05 20:26:45,398: +PUB [/rosout_agg] /rosout http://osboxes:44077/
+[rosmaster.master][INFO] 2018-11-05 20:26:45,410: +SUB [/rosout] /rosout http://osboxes:44077/
+[rosmaster.master][INFO] 2018-11-05 20:27:26,526: +PARAM [/roslaunch/uris/host_osboxes__46269] by /roslaunch
+[rosmaster.master][INFO] 2018-11-05 20:27:26,534: +PARAM [/fhb_arm/mode] by /roslaunch
+[rosmaster.master][INFO] 2018-11-05 20:27:26,534: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2018-11-05 20:27:26,535: +PARAM [/fhb_cli/mode] by /roslaunch
+[rosmaster.master][INFO] 2018-11-05 20:27:26,535: +PARAM [/fhb_harvest/mode] by /roslaunch
+[rosmaster.master][INFO] 2018-11-05 20:27:26,535: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2018-11-05 20:27:26,535: +PARAM [/fhb_vision/mode] by /roslaunch
+[rosmaster.master][INFO] 2018-11-05 20:27:26,536: +PARAM [/fhb_car/mode] by /roslaunch
+[rosmaster.master][INFO] 2018-11-05 20:27:27,642: +PUB [/rosout] /fhb_harvest http://osboxes:39131/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,657: +SERVICE [/fhb_harvest/get_loggers] /fhb_harvest http://osboxes:39131/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,667: +SERVICE [/fhb_harvest/set_logger_level] /fhb_harvest http://osboxes:39131/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,679: +PUB [/harvest_act/status] /fhb_harvest http://osboxes:39131/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,681: +PUB [/rosout] /fhb_vision http://osboxes:38759/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,687: +PUB [/harvest_act/result] /fhb_harvest http://osboxes:39131/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,700: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/']
+[rosmaster.master][INFO] 2018-11-05 20:27:27,703: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:27:27,703: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/']
+[rosmaster.master][INFO] 2018-11-05 20:27:27,704: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:27:27,711: +PUB [/harvest_act/feedback] /fhb_harvest http://osboxes:39131/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,758: +SERVICE [/fhb_vision/get_loggers] /fhb_vision http://osboxes:38759/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,770: +SUB [/harvest_act/goal] /fhb_harvest http://osboxes:39131/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,786: +PUB [/rosout] /fhb_car http://osboxes:34223/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,790: +SERVICE [/fhb_vision/set_logger_level] /fhb_vision http://osboxes:38759/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,806: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/']
+[rosmaster.master][INFO] 2018-11-05 20:27:27,811: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:27:27,812: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/']
+[rosmaster.master][INFO] 2018-11-05 20:27:27,818: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:27:27,800: +PUB [/rosout] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,859: +SUB [/harvest_act/cancel] /fhb_harvest http://osboxes:39131/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,870: +PUB [/vision_act/status] /fhb_vision http://osboxes:38759/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,871: +SERVICE [/fhb_car/get_loggers] /fhb_car http://osboxes:34223/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,875: +SERVICE [/fhb_arm/get_loggers] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,902: +SERVICE [/fhb_car/set_logger_level] /fhb_car http://osboxes:34223/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,906: +PUB [/vision_act/result] /fhb_vision http://osboxes:38759/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,908: +SERVICE [/fhb_arm/set_logger_level] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,916: +PUB [/vision_act/feedback] /fhb_vision http://osboxes:38759/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,943: +PUB [/diagnostics] /fhb_harvest http://osboxes:39131/
+[rosmaster.master][INFO] 2018-11-05 20:27:27,981: +PUB [/arm_ctrl_state] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,041: +PUB [/rosout] /fhb_cli http://osboxes:45803/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,045: +PUB [/serial_rx] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,050: +SUB [/vision_act/goal] /fhb_vision http://osboxes:38759/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,054: +PUB [/car_act/status] /fhb_car http://osboxes:34223/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,059: +SERVICE [/fhb_cli/get_loggers] /fhb_cli http://osboxes:45803/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,064: +SERVICE [/fhb_cli/set_logger_level] /fhb_cli http://osboxes:45803/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,072: +SUB [/cmd_pos] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,073: +SUB [/vision_act/cancel] /fhb_vision http://osboxes:38759/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,077: +PUB [/car_act/result] /fhb_car http://osboxes:34223/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,096: +SUB [/cmd_vel] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,142: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/']
+[rosmaster.master][INFO] 2018-11-05 20:27:28,158: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/']: sec=0.02, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:27:28,162: +PUB [/car_act/feedback] /fhb_car http://osboxes:34223/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,191: +SUB [/serial_tx] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,197: +PUB [/diagnostics] /fhb_vision http://osboxes:38759/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,198: +SUB [/car_act/goal] /fhb_car http://osboxes:34223/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,208: +PUB [/arm_act/status] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,218: +SUB [/car_act/cancel] /fhb_car http://osboxes:34223/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,220: +PUB [/arm_act/result] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,228: +PUB [/arm_act/feedback] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,265: +SUB [/arm_act/goal] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,267: +PUB [/diagnostics] /fhb_car http://osboxes:34223/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,272: +SUB [/arm_act/cancel] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:28,282: +PUB [/diagnostics] /fhb_arm http://osboxes:37187/
+[rosmaster.master][INFO] 2018-11-05 20:27:38,718: +PUB [/rosout] /rqt_gui_py_node_26793 http://osboxes:37317/
+[rosmaster.master][INFO] 2018-11-05 20:27:38,723: +SERVICE [/rqt_gui_py_node_26793/get_loggers] /rqt_gui_py_node_26793 http://osboxes:37317/
+[rosmaster.master][INFO] 2018-11-05 20:27:38,725: +SERVICE [/rqt_gui_py_node_26793/set_logger_level] /rqt_gui_py_node_26793 http://osboxes:37317/
+[rosmaster.master][INFO] 2018-11-05 20:27:38,780: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:27:38,782: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:27:38,824: +SUB [/diagnostics] /rqt_gui_py_node_26793 http://osboxes:37317/
+[rosmaster.master][INFO] 2018-11-05 20:29:35,846: +PUB [/rosout] /rostopic_28354_1541467775629 http://osboxes:33911/
+[rosmaster.master][INFO] 2018-11-05 20:29:35,853: +SERVICE [/rostopic_28354_1541467775629/get_loggers] /rostopic_28354_1541467775629 http://osboxes:33911/
+[rosmaster.master][INFO] 2018-11-05 20:29:35,856: +SERVICE [/rostopic_28354_1541467775629/set_logger_level] /rostopic_28354_1541467775629 http://osboxes:33911/
+[rosmaster.master][INFO] 2018-11-05 20:29:35,867: +SUB [/arm_act/cancel] /rostopic_28354_1541467775629 http://osboxes:33911/
+[rosmaster.master][INFO] 2018-11-05 20:29:35,889: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:33911/']
+[rosmaster.master][INFO] 2018-11-05 20:29:35,894: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:33911/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:36,195: -SUB [/arm_act/cancel] /rostopic_28354_1541467775629 http://osboxes:33911/
+[rosmaster.master][INFO] 2018-11-05 20:29:36,196: -PUB [/rosout] /rostopic_28354_1541467775629 http://osboxes:33911/
+[rosmaster.master][INFO] 2018-11-05 20:29:36,196: -SERVICE [/rostopic_28354_1541467775629/get_loggers] /rostopic_28354_1541467775629 rosrpc://osboxes:45483
+[rosmaster.master][INFO] 2018-11-05 20:29:36,197: -SERVICE [/rostopic_28354_1541467775629/set_logger_level] /rostopic_28354_1541467775629 rosrpc://osboxes:45483
+[rosmaster.master][INFO] 2018-11-05 20:29:36,199: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:29:36,203: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:38,740: +PUB [/rosout] /rostopic_28421_1541467778499 http://osboxes:37189/
+[rosmaster.master][INFO] 2018-11-05 20:29:38,742: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:37189/']
+[rosmaster.master][INFO] 2018-11-05 20:29:38,743: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:37189/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:38,746: +SERVICE [/rostopic_28421_1541467778499/get_loggers] /rostopic_28421_1541467778499 http://osboxes:37189/
+[rosmaster.master][INFO] 2018-11-05 20:29:38,749: +SERVICE [/rostopic_28421_1541467778499/set_logger_level] /rostopic_28421_1541467778499 http://osboxes:37189/
+[rosmaster.master][INFO] 2018-11-05 20:29:38,764: +SUB [/arm_act/feedback] /rostopic_28421_1541467778499 http://osboxes:37189/
+[rosmaster.master][INFO] 2018-11-05 20:29:39,142: -SUB [/arm_act/feedback] /rostopic_28421_1541467778499 http://osboxes:37189/
+[rosmaster.master][INFO] 2018-11-05 20:29:39,142: -PUB [/rosout] /rostopic_28421_1541467778499 http://osboxes:37189/
+[rosmaster.master][INFO] 2018-11-05 20:29:39,143: -SERVICE [/rostopic_28421_1541467778499/set_logger_level] /rostopic_28421_1541467778499 rosrpc://osboxes:37861
+[rosmaster.master][INFO] 2018-11-05 20:29:39,143: -SERVICE [/rostopic_28421_1541467778499/get_loggers] /rostopic_28421_1541467778499 rosrpc://osboxes:37861
+[rosmaster.master][INFO] 2018-11-05 20:29:39,144: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:29:39,146: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:42,001: +PUB [/rosout] /rostopic_28493_1541467781773 http://osboxes:44225/
+[rosmaster.master][INFO] 2018-11-05 20:29:42,048: +SERVICE [/rostopic_28493_1541467781773/get_loggers] /rostopic_28493_1541467781773 http://osboxes:44225/
+[rosmaster.master][INFO] 2018-11-05 20:29:42,050: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:44225/']
+[rosmaster.master][INFO] 2018-11-05 20:29:42,052: +SERVICE [/rostopic_28493_1541467781773/set_logger_level] /rostopic_28493_1541467781773 http://osboxes:44225/
+[rosmaster.master][INFO] 2018-11-05 20:29:42,055: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:44225/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:42,073: +SUB [/arm_act/goal] /rostopic_28493_1541467781773 http://osboxes:44225/
+[rosmaster.master][INFO] 2018-11-05 20:29:42,212: -SUB [/arm_act/goal] /rostopic_28493_1541467781773 http://osboxes:44225/
+[rosmaster.master][INFO] 2018-11-05 20:29:42,212: -PUB [/rosout] /rostopic_28493_1541467781773 http://osboxes:44225/
+[rosmaster.master][INFO] 2018-11-05 20:29:42,212: -SERVICE [/rostopic_28493_1541467781773/set_logger_level] /rostopic_28493_1541467781773 rosrpc://osboxes:36795
+[rosmaster.master][INFO] 2018-11-05 20:29:42,212: -SERVICE [/rostopic_28493_1541467781773/get_loggers] /rostopic_28493_1541467781773 rosrpc://osboxes:36795
+[rosmaster.master][INFO] 2018-11-05 20:29:42,258: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:29:42,259: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:44,935: +PUB [/rosout] /rostopic_28558_1541467784718 http://osboxes:45761/
+[rosmaster.master][INFO] 2018-11-05 20:29:44,948: +SERVICE [/rostopic_28558_1541467784718/get_loggers] /rostopic_28558_1541467784718 http://osboxes:45761/
+[rosmaster.master][INFO] 2018-11-05 20:29:44,951: +SERVICE [/rostopic_28558_1541467784718/set_logger_level] /rostopic_28558_1541467784718 http://osboxes:45761/
+[rosmaster.master][INFO] 2018-11-05 20:29:44,981: +SUB [/arm_act/result] /rostopic_28558_1541467784718 http://osboxes:45761/
+[rosmaster.master][INFO] 2018-11-05 20:29:45,025: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:45761/']
+[rosmaster.master][INFO] 2018-11-05 20:29:45,026: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:45761/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:45,362: -SUB [/arm_act/result] /rostopic_28558_1541467784718 http://osboxes:45761/
+[rosmaster.master][INFO] 2018-11-05 20:29:45,363: -PUB [/rosout] /rostopic_28558_1541467784718 http://osboxes:45761/
+[rosmaster.master][INFO] 2018-11-05 20:29:45,363: -SERVICE [/rostopic_28558_1541467784718/get_loggers] /rostopic_28558_1541467784718 rosrpc://osboxes:34391
+[rosmaster.master][INFO] 2018-11-05 20:29:45,363: -SERVICE [/rostopic_28558_1541467784718/set_logger_level] /rostopic_28558_1541467784718 rosrpc://osboxes:34391
+[rosmaster.master][INFO] 2018-11-05 20:29:45,429: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:29:45,430: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:47,757: +PUB [/rosout] /rostopic_28627_1541467787573 http://osboxes:39735/
+[rosmaster.master][INFO] 2018-11-05 20:29:47,768: +SERVICE [/rostopic_28627_1541467787573/get_loggers] /rostopic_28627_1541467787573 http://osboxes:39735/
+[rosmaster.master][INFO] 2018-11-05 20:29:47,775: +SERVICE [/rostopic_28627_1541467787573/set_logger_level] /rostopic_28627_1541467787573 http://osboxes:39735/
+[rosmaster.master][INFO] 2018-11-05 20:29:47,787: +SUB [/arm_act/status] /rostopic_28627_1541467787573 http://osboxes:39735/
+[rosmaster.master][INFO] 2018-11-05 20:29:47,850: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:39735/']
+[rosmaster.master][INFO] 2018-11-05 20:29:47,851: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:39735/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:48,225: -SUB [/arm_act/status] /rostopic_28627_1541467787573 http://osboxes:39735/
+[rosmaster.master][INFO] 2018-11-05 20:29:48,225: -PUB [/rosout] /rostopic_28627_1541467787573 http://osboxes:39735/
+[rosmaster.master][INFO] 2018-11-05 20:29:48,226: -SERVICE [/rostopic_28627_1541467787573/set_logger_level] /rostopic_28627_1541467787573 rosrpc://osboxes:34385
+[rosmaster.master][INFO] 2018-11-05 20:29:48,226: -SERVICE [/rostopic_28627_1541467787573/get_loggers] /rostopic_28627_1541467787573 rosrpc://osboxes:34385
+[rosmaster.master][INFO] 2018-11-05 20:29:48,252: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:29:48,253: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:51,634: +PUB [/rosout] /rostopic_28706_1541467791379 http://osboxes:46325/
+[rosmaster.master][INFO] 2018-11-05 20:29:51,638: +SERVICE [/rostopic_28706_1541467791379/get_loggers] /rostopic_28706_1541467791379 http://osboxes:46325/
+[rosmaster.master][INFO] 2018-11-05 20:29:51,639: +SERVICE [/rostopic_28706_1541467791379/set_logger_level] /rostopic_28706_1541467791379 http://osboxes:46325/
+[rosmaster.master][INFO] 2018-11-05 20:29:51,649: +SUB [/arm_ctrl_state] /rostopic_28706_1541467791379 http://osboxes:46325/
+[rosmaster.master][INFO] 2018-11-05 20:29:51,695: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:46325/']
+[rosmaster.master][INFO] 2018-11-05 20:29:51,697: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:46325/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:52,038: -SUB [/arm_ctrl_state] /rostopic_28706_1541467791379 http://osboxes:46325/
+[rosmaster.master][INFO] 2018-11-05 20:29:52,039: -PUB [/rosout] /rostopic_28706_1541467791379 http://osboxes:46325/
+[rosmaster.master][INFO] 2018-11-05 20:29:52,039: -SERVICE [/rostopic_28706_1541467791379/set_logger_level] /rostopic_28706_1541467791379 rosrpc://osboxes:46523
+[rosmaster.master][INFO] 2018-11-05 20:29:52,040: -SERVICE [/rostopic_28706_1541467791379/get_loggers] /rostopic_28706_1541467791379 rosrpc://osboxes:46523
+[rosmaster.master][INFO] 2018-11-05 20:29:52,098: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:29:52,106: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:57,864: +PUB [/rosout] /rostopic_28832_1541467797657 http://osboxes:37967/
+[rosmaster.master][INFO] 2018-11-05 20:29:57,870: +SERVICE [/rostopic_28832_1541467797657/get_loggers] /rostopic_28832_1541467797657 http://osboxes:37967/
+[rosmaster.master][INFO] 2018-11-05 20:29:57,873: +SERVICE [/rostopic_28832_1541467797657/set_logger_level] /rostopic_28832_1541467797657 http://osboxes:37967/
+[rosmaster.master][INFO] 2018-11-05 20:29:57,878: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:37967/']
+[rosmaster.master][INFO] 2018-11-05 20:29:57,880: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:37967/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:29:57,892: +SUB [/car_act/feedback] /rostopic_28832_1541467797657 http://osboxes:37967/
+[rosmaster.master][INFO] 2018-11-05 20:29:58,270: -SUB [/car_act/feedback] /rostopic_28832_1541467797657 http://osboxes:37967/
+[rosmaster.master][INFO] 2018-11-05 20:29:58,271: -PUB [/rosout] /rostopic_28832_1541467797657 http://osboxes:37967/
+[rosmaster.master][INFO] 2018-11-05 20:29:58,273: -SERVICE [/rostopic_28832_1541467797657/set_logger_level] /rostopic_28832_1541467797657 rosrpc://osboxes:46329
+[rosmaster.master][INFO] 2018-11-05 20:29:58,274: -SERVICE [/rostopic_28832_1541467797657/get_loggers] /rostopic_28832_1541467797657 rosrpc://osboxes:46329
+[rosmaster.master][INFO] 2018-11-05 20:29:58,287: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:29:58,291: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:01,397: +PUB [/rosout] /rostopic_28904_1541467801053 http://osboxes:37625/
+[rosmaster.master][INFO] 2018-11-05 20:30:01,410: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:37625/']
+[rosmaster.master][INFO] 2018-11-05 20:30:01,416: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:37625/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:01,418: +SERVICE [/rostopic_28904_1541467801053/get_loggers] /rostopic_28904_1541467801053 http://osboxes:37625/
+[rosmaster.master][INFO] 2018-11-05 20:30:01,429: +SERVICE [/rostopic_28904_1541467801053/set_logger_level] /rostopic_28904_1541467801053 http://osboxes:37625/
+[rosmaster.master][INFO] 2018-11-05 20:30:01,468: -PUB [/rosout] /rostopic_28904_1541467801053 http://osboxes:37625/
+[rosmaster.master][INFO] 2018-11-05 20:30:01,469: -SERVICE [/rostopic_28904_1541467801053/get_loggers] /rostopic_28904_1541467801053 rosrpc://osboxes:46675
+[rosmaster.master][INFO] 2018-11-05 20:30:01,469: -SERVICE [/rostopic_28904_1541467801053/set_logger_level] /rostopic_28904_1541467801053 rosrpc://osboxes:46675
+[rosmaster.master][INFO] 2018-11-05 20:30:01,517: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:01,520: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:11,273: +PUB [/rosout] /rostopic_29043_1541467811021 http://osboxes:34815/
+[rosmaster.master][INFO] 2018-11-05 20:30:11,280: +SERVICE [/rostopic_29043_1541467811021/get_loggers] /rostopic_29043_1541467811021 http://osboxes:34815/
+[rosmaster.master][INFO] 2018-11-05 20:30:11,284: +SERVICE [/rostopic_29043_1541467811021/set_logger_level] /rostopic_29043_1541467811021 http://osboxes:34815/
+[rosmaster.master][INFO] 2018-11-05 20:30:11,314: +SUB [/car_act/result] /rostopic_29043_1541467811021 http://osboxes:34815/
+[rosmaster.master][INFO] 2018-11-05 20:30:11,372: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:34815/']
+[rosmaster.master][INFO] 2018-11-05 20:30:11,375: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:34815/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:11,558: -SUB [/car_act/result] /rostopic_29043_1541467811021 http://osboxes:34815/
+[rosmaster.master][INFO] 2018-11-05 20:30:11,558: -PUB [/rosout] /rostopic_29043_1541467811021 http://osboxes:34815/
+[rosmaster.master][INFO] 2018-11-05 20:30:11,558: -SERVICE [/rostopic_29043_1541467811021/set_logger_level] /rostopic_29043_1541467811021 rosrpc://osboxes:42541
+[rosmaster.master][INFO] 2018-11-05 20:30:11,559: -SERVICE [/rostopic_29043_1541467811021/get_loggers] /rostopic_29043_1541467811021 rosrpc://osboxes:42541
+[rosmaster.master][INFO] 2018-11-05 20:30:11,574: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:11,577: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:14,763: +PUB [/rosout] /rostopic_29119_1541467814483 http://osboxes:44813/
+[rosmaster.master][INFO] 2018-11-05 20:30:14,782: +SERVICE [/rostopic_29119_1541467814483/get_loggers] /rostopic_29119_1541467814483 http://osboxes:44813/
+[rosmaster.master][INFO] 2018-11-05 20:30:14,790: +SERVICE [/rostopic_29119_1541467814483/set_logger_level] /rostopic_29119_1541467814483 http://osboxes:44813/
+[rosmaster.master][INFO] 2018-11-05 20:30:14,799: +SUB [/car_act/status] /rostopic_29119_1541467814483 http://osboxes:44813/
+[rosmaster.master][INFO] 2018-11-05 20:30:14,848: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:44813/']
+[rosmaster.master][INFO] 2018-11-05 20:30:14,850: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:44813/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:15,117: -SUB [/car_act/status] /rostopic_29119_1541467814483 http://osboxes:44813/
+[rosmaster.master][INFO] 2018-11-05 20:30:15,117: -PUB [/rosout] /rostopic_29119_1541467814483 http://osboxes:44813/
+[rosmaster.master][INFO] 2018-11-05 20:30:15,117: -SERVICE [/rostopic_29119_1541467814483/get_loggers] /rostopic_29119_1541467814483 rosrpc://osboxes:43391
+[rosmaster.master][INFO] 2018-11-05 20:30:15,118: -SERVICE [/rostopic_29119_1541467814483/set_logger_level] /rostopic_29119_1541467814483 rosrpc://osboxes:43391
+[rosmaster.master][INFO] 2018-11-05 20:30:15,150: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:15,152: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:22,316: +PUB [/rosout] /rostopic_29256_1541467822040 http://osboxes:46309/
+[rosmaster.master][INFO] 2018-11-05 20:30:22,352: +SERVICE [/rostopic_29256_1541467822040/get_loggers] /rostopic_29256_1541467822040 http://osboxes:46309/
+[rosmaster.master][INFO] 2018-11-05 20:30:22,356: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:46309/']
+[rosmaster.master][INFO] 2018-11-05 20:30:22,361: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:46309/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:22,367: +SERVICE [/rostopic_29256_1541467822040/set_logger_level] /rostopic_29256_1541467822040 http://osboxes:46309/
+[rosmaster.master][INFO] 2018-11-05 20:30:22,412: +SUB [/cmd_vel] /rostopic_29256_1541467822040 http://osboxes:46309/
+[rosmaster.master][INFO] 2018-11-05 20:30:22,566: -SUB [/cmd_vel] /rostopic_29256_1541467822040 http://osboxes:46309/
+[rosmaster.master][INFO] 2018-11-05 20:30:22,567: -PUB [/rosout] /rostopic_29256_1541467822040 http://osboxes:46309/
+[rosmaster.master][INFO] 2018-11-05 20:30:22,567: -SERVICE [/rostopic_29256_1541467822040/set_logger_level] /rostopic_29256_1541467822040 rosrpc://osboxes:42981
+[rosmaster.master][INFO] 2018-11-05 20:30:22,567: -SERVICE [/rostopic_29256_1541467822040/get_loggers] /rostopic_29256_1541467822040 rosrpc://osboxes:42981
+[rosmaster.master][INFO] 2018-11-05 20:30:22,658: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:22,660: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:25,829: +PUB [/rosout] /rostopic_29328_1541467825556 http://osboxes:36187/
+[rosmaster.master][INFO] 2018-11-05 20:30:25,845: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:36187/']
+[rosmaster.master][INFO] 2018-11-05 20:30:25,846: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:36187/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:25,850: +SERVICE [/rostopic_29328_1541467825556/get_loggers] /rostopic_29328_1541467825556 http://osboxes:36187/
+[rosmaster.master][INFO] 2018-11-05 20:30:25,854: +SERVICE [/rostopic_29328_1541467825556/set_logger_level] /rostopic_29328_1541467825556 http://osboxes:36187/
+[rosmaster.master][INFO] 2018-11-05 20:30:25,873: +SUB [/diagnostics] /rostopic_29328_1541467825556 http://osboxes:36187/
+[rosmaster.master][INFO] 2018-11-05 20:30:25,980: -SUB [/diagnostics] /rostopic_29328_1541467825556 http://osboxes:36187/
+[rosmaster.master][INFO] 2018-11-05 20:30:25,981: -PUB [/rosout] /rostopic_29328_1541467825556 http://osboxes:36187/
+[rosmaster.master][INFO] 2018-11-05 20:30:25,985: -SERVICE [/rostopic_29328_1541467825556/get_loggers] /rostopic_29328_1541467825556 rosrpc://osboxes:40533
+[rosmaster.master][INFO] 2018-11-05 20:30:25,986: -SERVICE [/rostopic_29328_1541467825556/set_logger_level] /rostopic_29328_1541467825556 rosrpc://osboxes:40533
+[rosmaster.master][INFO] 2018-11-05 20:30:26,047: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:26,052: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:29,782: +PUB [/rosout] /rostopic_29418_1541467829559 http://osboxes:39123/
+[rosmaster.master][INFO] 2018-11-05 20:30:29,790: +SERVICE [/rostopic_29418_1541467829559/get_loggers] /rostopic_29418_1541467829559 http://osboxes:39123/
+[rosmaster.master][INFO] 2018-11-05 20:30:29,792: +SERVICE [/rostopic_29418_1541467829559/set_logger_level] /rostopic_29418_1541467829559 http://osboxes:39123/
+[rosmaster.master][INFO] 2018-11-05 20:30:29,803: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:39123/']
+[rosmaster.master][INFO] 2018-11-05 20:30:29,808: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:39123/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:29,808: +SUB [/harvest_act/cancel] /rostopic_29418_1541467829559 http://osboxes:39123/
+[rosmaster.master][INFO] 2018-11-05 20:30:30,019: -SUB [/harvest_act/cancel] /rostopic_29418_1541467829559 http://osboxes:39123/
+[rosmaster.master][INFO] 2018-11-05 20:30:30,019: -PUB [/rosout] /rostopic_29418_1541467829559 http://osboxes:39123/
+[rosmaster.master][INFO] 2018-11-05 20:30:30,019: -SERVICE [/rostopic_29418_1541467829559/set_logger_level] /rostopic_29418_1541467829559 rosrpc://osboxes:42869
+[rosmaster.master][INFO] 2018-11-05 20:30:30,019: -SERVICE [/rostopic_29418_1541467829559/get_loggers] /rostopic_29418_1541467829559 rosrpc://osboxes:42869
+[rosmaster.master][INFO] 2018-11-05 20:30:30,025: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:30,026: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:33,141: +PUB [/rosout] /rostopic_29487_1541467832907 http://osboxes:36657/
+[rosmaster.master][INFO] 2018-11-05 20:30:33,149: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:36657/']
+[rosmaster.master][INFO] 2018-11-05 20:30:33,152: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:36657/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:33,162: +SERVICE [/rostopic_29487_1541467832907/get_loggers] /rostopic_29487_1541467832907 http://osboxes:36657/
+[rosmaster.master][INFO] 2018-11-05 20:30:33,168: +SERVICE [/rostopic_29487_1541467832907/set_logger_level] /rostopic_29487_1541467832907 http://osboxes:36657/
+[rosmaster.master][INFO] 2018-11-05 20:30:33,218: +SUB [/harvest_act/feedback] /rostopic_29487_1541467832907 http://osboxes:36657/
+[rosmaster.master][INFO] 2018-11-05 20:30:33,459: -SUB [/harvest_act/feedback] /rostopic_29487_1541467832907 http://osboxes:36657/
+[rosmaster.master][INFO] 2018-11-05 20:30:33,459: -PUB [/rosout] /rostopic_29487_1541467832907 http://osboxes:36657/
+[rosmaster.master][INFO] 2018-11-05 20:30:33,460: -SERVICE [/rostopic_29487_1541467832907/set_logger_level] /rostopic_29487_1541467832907 rosrpc://osboxes:35633
+[rosmaster.master][INFO] 2018-11-05 20:30:33,460: -SERVICE [/rostopic_29487_1541467832907/get_loggers] /rostopic_29487_1541467832907 rosrpc://osboxes:35633
+[rosmaster.master][INFO] 2018-11-05 20:30:33,530: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:33,532: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:36,362: +PUB [/rosout] /rostopic_29559_1541467836060 http://osboxes:38031/
+[rosmaster.master][INFO] 2018-11-05 20:30:36,370: +SERVICE [/rostopic_29559_1541467836060/get_loggers] /rostopic_29559_1541467836060 http://osboxes:38031/
+[rosmaster.master][INFO] 2018-11-05 20:30:36,373: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:38031/']
+[rosmaster.master][INFO] 2018-11-05 20:30:36,378: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:38031/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:36,380: +SERVICE [/rostopic_29559_1541467836060/set_logger_level] /rostopic_29559_1541467836060 http://osboxes:38031/
+[rosmaster.master][INFO] 2018-11-05 20:30:36,401: +SUB [/harvest_act/goal] /rostopic_29559_1541467836060 http://osboxes:38031/
+[rosmaster.master][INFO] 2018-11-05 20:30:36,667: -SUB [/harvest_act/goal] /rostopic_29559_1541467836060 http://osboxes:38031/
+[rosmaster.master][INFO] 2018-11-05 20:30:36,667: -PUB [/rosout] /rostopic_29559_1541467836060 http://osboxes:38031/
+[rosmaster.master][INFO] 2018-11-05 20:30:36,667: -SERVICE [/rostopic_29559_1541467836060/get_loggers] /rostopic_29559_1541467836060 rosrpc://osboxes:39297
+[rosmaster.master][INFO] 2018-11-05 20:30:36,667: -SERVICE [/rostopic_29559_1541467836060/set_logger_level] /rostopic_29559_1541467836060 rosrpc://osboxes:39297
+[rosmaster.master][INFO] 2018-11-05 20:30:36,682: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:36,690: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:38,954: +PUB [/rosout] /rostopic_29624_1541467838775 http://osboxes:36881/
+[rosmaster.master][INFO] 2018-11-05 20:30:38,963: +SERVICE [/rostopic_29624_1541467838775/get_loggers] /rostopic_29624_1541467838775 http://osboxes:36881/
+[rosmaster.master][INFO] 2018-11-05 20:30:38,973: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:36881/']
+[rosmaster.master][INFO] 2018-11-05 20:30:38,974: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:36881/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:38,980: +SERVICE [/rostopic_29624_1541467838775/set_logger_level] /rostopic_29624_1541467838775 http://osboxes:36881/
+[rosmaster.master][INFO] 2018-11-05 20:30:39,023: +SUB [/harvest_act/result] /rostopic_29624_1541467838775 http://osboxes:36881/
+[rosmaster.master][INFO] 2018-11-05 20:30:39,457: -SUB [/harvest_act/result] /rostopic_29624_1541467838775 http://osboxes:36881/
+[rosmaster.master][INFO] 2018-11-05 20:30:39,457: -PUB [/rosout] /rostopic_29624_1541467838775 http://osboxes:36881/
+[rosmaster.master][INFO] 2018-11-05 20:30:39,457: -SERVICE [/rostopic_29624_1541467838775/set_logger_level] /rostopic_29624_1541467838775 rosrpc://osboxes:38447
+[rosmaster.master][INFO] 2018-11-05 20:30:39,457: -SERVICE [/rostopic_29624_1541467838775/get_loggers] /rostopic_29624_1541467838775 rosrpc://osboxes:38447
+[rosmaster.master][INFO] 2018-11-05 20:30:39,478: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:39,482: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:42,257: +PUB [/rosout] /rostopic_29699_1541467842057 http://osboxes:40359/
+[rosmaster.master][INFO] 2018-11-05 20:30:42,267: +SERVICE [/rostopic_29699_1541467842057/get_loggers] /rostopic_29699_1541467842057 http://osboxes:40359/
+[rosmaster.master][INFO] 2018-11-05 20:30:42,274: +SERVICE [/rostopic_29699_1541467842057/set_logger_level] /rostopic_29699_1541467842057 http://osboxes:40359/
+[rosmaster.master][INFO] 2018-11-05 20:30:42,293: +SUB [/harvest_act/status] /rostopic_29699_1541467842057 http://osboxes:40359/
+[rosmaster.master][INFO] 2018-11-05 20:30:42,314: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:40359/']
+[rosmaster.master][INFO] 2018-11-05 20:30:42,328: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:40359/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:42,699: -SUB [/harvest_act/status] /rostopic_29699_1541467842057 http://osboxes:40359/
+[rosmaster.master][INFO] 2018-11-05 20:30:42,699: -PUB [/rosout] /rostopic_29699_1541467842057 http://osboxes:40359/
+[rosmaster.master][INFO] 2018-11-05 20:30:42,699: -SERVICE [/rostopic_29699_1541467842057/set_logger_level] /rostopic_29699_1541467842057 rosrpc://osboxes:45025
+[rosmaster.master][INFO] 2018-11-05 20:30:42,699: -SERVICE [/rostopic_29699_1541467842057/get_loggers] /rostopic_29699_1541467842057 rosrpc://osboxes:45025
+[rosmaster.master][INFO] 2018-11-05 20:30:42,739: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:42,740: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:45,092: +PUB [/rosout] /rostopic_29772_1541467844860 http://osboxes:43349/
+[rosmaster.master][INFO] 2018-11-05 20:30:45,097: +SERVICE [/rostopic_29772_1541467844860/get_loggers] /rostopic_29772_1541467844860 http://osboxes:43349/
+[rosmaster.master][INFO] 2018-11-05 20:30:45,102: +SERVICE [/rostopic_29772_1541467844860/set_logger_level] /rostopic_29772_1541467844860 http://osboxes:43349/
+[rosmaster.master][INFO] 2018-11-05 20:30:45,114: +SUB [/rosout] /rostopic_29772_1541467844860 http://osboxes:43349/
+[rosmaster.master][INFO] 2018-11-05 20:30:45,156: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:43349/']
+[rosmaster.master][INFO] 2018-11-05 20:30:45,159: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:43349/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:45,474: -SUB [/rosout] /rostopic_29772_1541467844860 http://osboxes:43349/
+[rosmaster.master][INFO] 2018-11-05 20:30:45,474: -PUB [/rosout] /rostopic_29772_1541467844860 http://osboxes:43349/
+[rosmaster.master][INFO] 2018-11-05 20:30:45,474: -SERVICE [/rostopic_29772_1541467844860/set_logger_level] /rostopic_29772_1541467844860 rosrpc://osboxes:44043
+[rosmaster.master][INFO] 2018-11-05 20:30:45,474: -SERVICE [/rostopic_29772_1541467844860/get_loggers] /rostopic_29772_1541467844860 rosrpc://osboxes:44043
+[rosmaster.master][INFO] 2018-11-05 20:30:45,560: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:45,562: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:47,959: +PUB [/rosout] /rostopic_29866_1541467847750 http://osboxes:35225/
+[rosmaster.master][INFO] 2018-11-05 20:30:47,968: +SERVICE [/rostopic_29866_1541467847750/get_loggers] /rostopic_29866_1541467847750 http://osboxes:35225/
+[rosmaster.master][INFO] 2018-11-05 20:30:47,980: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:35225/']
+[rosmaster.master][INFO] 2018-11-05 20:30:47,981: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:35225/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:47,982: +SERVICE [/rostopic_29866_1541467847750/set_logger_level] /rostopic_29866_1541467847750 http://osboxes:35225/
+[rosmaster.master][INFO] 2018-11-05 20:30:47,995: +SUB [/rosout_agg] /rostopic_29866_1541467847750 http://osboxes:35225/
+[rosmaster.master][INFO] 2018-11-05 20:30:48,398: -SUB [/rosout_agg] /rostopic_29866_1541467847750 http://osboxes:35225/
+[rosmaster.master][INFO] 2018-11-05 20:30:48,399: -PUB [/rosout] /rostopic_29866_1541467847750 http://osboxes:35225/
+[rosmaster.master][INFO] 2018-11-05 20:30:48,399: -SERVICE [/rostopic_29866_1541467847750/set_logger_level] /rostopic_29866_1541467847750 rosrpc://osboxes:36019
+[rosmaster.master][INFO] 2018-11-05 20:30:48,399: -SERVICE [/rostopic_29866_1541467847750/get_loggers] /rostopic_29866_1541467847750 rosrpc://osboxes:36019
+[rosmaster.master][INFO] 2018-11-05 20:30:48,484: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:48,486: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:50,978: +PUB [/rosout] /rostopic_29934_1541467850779 http://osboxes:33355/
+[rosmaster.master][INFO] 2018-11-05 20:30:51,001: +SERVICE [/rostopic_29934_1541467850779/get_loggers] /rostopic_29934_1541467850779 http://osboxes:33355/
+[rosmaster.master][INFO] 2018-11-05 20:30:51,014: +SERVICE [/rostopic_29934_1541467850779/set_logger_level] /rostopic_29934_1541467850779 http://osboxes:33355/
+[rosmaster.master][INFO] 2018-11-05 20:30:51,016: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:33355/']
+[rosmaster.master][INFO] 2018-11-05 20:30:51,021: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:33355/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:51,043: +SUB [/serial_rx] /rostopic_29934_1541467850779 http://osboxes:33355/
+[rosmaster.master][INFO] 2018-11-05 20:30:51,404: -SUB [/serial_rx] /rostopic_29934_1541467850779 http://osboxes:33355/
+[rosmaster.master][INFO] 2018-11-05 20:30:51,404: -PUB [/rosout] /rostopic_29934_1541467850779 http://osboxes:33355/
+[rosmaster.master][INFO] 2018-11-05 20:30:51,404: -SERVICE [/rostopic_29934_1541467850779/set_logger_level] /rostopic_29934_1541467850779 rosrpc://osboxes:32919
+[rosmaster.master][INFO] 2018-11-05 20:30:51,405: -SERVICE [/rostopic_29934_1541467850779/get_loggers] /rostopic_29934_1541467850779 rosrpc://osboxes:32919
+[rosmaster.master][INFO] 2018-11-05 20:30:51,423: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:51,427: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:53,736: +PUB [/rosout] /rostopic_30002_1541467853531 http://osboxes:42015/
+[rosmaster.master][INFO] 2018-11-05 20:30:53,741: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:42015/']
+[rosmaster.master][INFO] 2018-11-05 20:30:53,748: +SERVICE [/rostopic_30002_1541467853531/get_loggers] /rostopic_30002_1541467853531 http://osboxes:42015/
+[rosmaster.master][INFO] 2018-11-05 20:30:53,749: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:42015/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:53,751: +SERVICE [/rostopic_30002_1541467853531/set_logger_level] /rostopic_30002_1541467853531 http://osboxes:42015/
+[rosmaster.master][INFO] 2018-11-05 20:30:53,761: +SUB [/serial_tx] /rostopic_30002_1541467853531 http://osboxes:42015/
+[rosmaster.master][INFO] 2018-11-05 20:30:54,200: -SUB [/serial_tx] /rostopic_30002_1541467853531 http://osboxes:42015/
+[rosmaster.master][INFO] 2018-11-05 20:30:54,200: -PUB [/rosout] /rostopic_30002_1541467853531 http://osboxes:42015/
+[rosmaster.master][INFO] 2018-11-05 20:30:54,200: -SERVICE [/rostopic_30002_1541467853531/set_logger_level] /rostopic_30002_1541467853531 rosrpc://osboxes:44039
+[rosmaster.master][INFO] 2018-11-05 20:30:54,200: -SERVICE [/rostopic_30002_1541467853531/get_loggers] /rostopic_30002_1541467853531 rosrpc://osboxes:44039
+[rosmaster.master][INFO] 2018-11-05 20:30:54,246: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:54,248: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:57,051: +PUB [/rosout] /rostopic_30068_1541467856771 http://osboxes:34995/
+[rosmaster.master][INFO] 2018-11-05 20:30:57,061: +SERVICE [/rostopic_30068_1541467856771/get_loggers] /rostopic_30068_1541467856771 http://osboxes:34995/
+[rosmaster.master][INFO] 2018-11-05 20:30:57,065: +SERVICE [/rostopic_30068_1541467856771/set_logger_level] /rostopic_30068_1541467856771 http://osboxes:34995/
+[rosmaster.master][INFO] 2018-11-05 20:30:57,080: +SUB [/vision_act/cancel] /rostopic_30068_1541467856771 http://osboxes:34995/
+[rosmaster.master][INFO] 2018-11-05 20:30:57,100: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:34995/']
+[rosmaster.master][INFO] 2018-11-05 20:30:57,106: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:34995/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:30:57,254: -SUB [/vision_act/cancel] /rostopic_30068_1541467856771 http://osboxes:34995/
+[rosmaster.master][INFO] 2018-11-05 20:30:57,255: -PUB [/rosout] /rostopic_30068_1541467856771 http://osboxes:34995/
+[rosmaster.master][INFO] 2018-11-05 20:30:57,255: -SERVICE [/rostopic_30068_1541467856771/set_logger_level] /rostopic_30068_1541467856771 rosrpc://osboxes:46869
+[rosmaster.master][INFO] 2018-11-05 20:30:57,255: -SERVICE [/rostopic_30068_1541467856771/get_loggers] /rostopic_30068_1541467856771 rosrpc://osboxes:46869
+[rosmaster.master][INFO] 2018-11-05 20:30:57,302: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:30:57,303: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:31:00,245: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:45195/']
+[rosmaster.master][INFO] 2018-11-05 20:31:00,250: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:45195/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:31:00,244: +PUB [/rosout] /rostopic_30135_1541467859960 http://osboxes:45195/
+[rosmaster.master][INFO] 2018-11-05 20:31:00,262: +SERVICE [/rostopic_30135_1541467859960/get_loggers] /rostopic_30135_1541467859960 http://osboxes:45195/
+[rosmaster.master][INFO] 2018-11-05 20:31:00,266: +SERVICE [/rostopic_30135_1541467859960/set_logger_level] /rostopic_30135_1541467859960 http://osboxes:45195/
+[rosmaster.master][INFO] 2018-11-05 20:31:00,290: +SUB [/vision_act/feedback] /rostopic_30135_1541467859960 http://osboxes:45195/
+[rosmaster.master][INFO] 2018-11-05 20:31:00,580: -SUB [/vision_act/feedback] /rostopic_30135_1541467859960 http://osboxes:45195/
+[rosmaster.master][INFO] 2018-11-05 20:31:00,580: -PUB [/rosout] /rostopic_30135_1541467859960 http://osboxes:45195/
+[rosmaster.master][INFO] 2018-11-05 20:31:00,583: -SERVICE [/rostopic_30135_1541467859960/set_logger_level] /rostopic_30135_1541467859960 rosrpc://osboxes:43895
+[rosmaster.master][INFO] 2018-11-05 20:31:00,584: -SERVICE [/rostopic_30135_1541467859960/get_loggers] /rostopic_30135_1541467859960 rosrpc://osboxes:43895
+[rosmaster.master][INFO] 2018-11-05 20:31:00,643: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:31:00,644: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:31:03,560: +PUB [/rosout] /rostopic_30208_1541467863340 http://osboxes:43581/
+[rosmaster.master][INFO] 2018-11-05 20:31:03,567: +SERVICE [/rostopic_30208_1541467863340/get_loggers] /rostopic_30208_1541467863340 http://osboxes:43581/
+[rosmaster.master][INFO] 2018-11-05 20:31:03,572: +SERVICE [/rostopic_30208_1541467863340/set_logger_level] /rostopic_30208_1541467863340 http://osboxes:43581/
+[rosmaster.master][INFO] 2018-11-05 20:31:03,594: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:43581/']
+[rosmaster.master][INFO] 2018-11-05 20:31:03,595: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:43581/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:31:03,596: +SUB [/vision_act/goal] /rostopic_30208_1541467863340 http://osboxes:43581/
+[rosmaster.master][INFO] 2018-11-05 20:31:03,830: -SUB [/vision_act/goal] /rostopic_30208_1541467863340 http://osboxes:43581/
+[rosmaster.master][INFO] 2018-11-05 20:31:03,830: -PUB [/rosout] /rostopic_30208_1541467863340 http://osboxes:43581/
+[rosmaster.master][INFO] 2018-11-05 20:31:03,830: -SERVICE [/rostopic_30208_1541467863340/set_logger_level] /rostopic_30208_1541467863340 rosrpc://osboxes:35481
+[rosmaster.master][INFO] 2018-11-05 20:31:03,830: -SERVICE [/rostopic_30208_1541467863340/get_loggers] /rostopic_30208_1541467863340 rosrpc://osboxes:35481
+[rosmaster.master][INFO] 2018-11-05 20:31:03,897: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:31:03,898: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:31:06,829: +PUB [/rosout] /rostopic_30275_1541467866549 http://osboxes:40503/
+[rosmaster.master][INFO] 2018-11-05 20:31:06,840: +SERVICE [/rostopic_30275_1541467866549/get_loggers] /rostopic_30275_1541467866549 http://osboxes:40503/
+[rosmaster.master][INFO] 2018-11-05 20:31:06,841: +SERVICE [/rostopic_30275_1541467866549/set_logger_level] /rostopic_30275_1541467866549 http://osboxes:40503/
+[rosmaster.master][INFO] 2018-11-05 20:31:06,847: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:40503/']
+[rosmaster.master][INFO] 2018-11-05 20:31:06,848: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:40503/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:31:06,854: +SUB [/vision_act/result] /rostopic_30275_1541467866549 http://osboxes:40503/
+[rosmaster.master][INFO] 2018-11-05 20:31:06,999: -SUB [/vision_act/result] /rostopic_30275_1541467866549 http://osboxes:40503/
+[rosmaster.master][INFO] 2018-11-05 20:31:06,999: -PUB [/rosout] /rostopic_30275_1541467866549 http://osboxes:40503/
+[rosmaster.master][INFO] 2018-11-05 20:31:07,001: -SERVICE [/rostopic_30275_1541467866549/get_loggers] /rostopic_30275_1541467866549 rosrpc://osboxes:39765
+[rosmaster.master][INFO] 2018-11-05 20:31:07,001: -SERVICE [/rostopic_30275_1541467866549/set_logger_level] /rostopic_30275_1541467866549 rosrpc://osboxes:39765
+[rosmaster.master][INFO] 2018-11-05 20:31:07,049: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:31:07,050: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:31:09,681: +PUB [/rosout] /rostopic_30345_1541467869436 http://osboxes:40329/
+[rosmaster.master][INFO] 2018-11-05 20:31:09,694: +SERVICE [/rostopic_30345_1541467869436/get_loggers] /rostopic_30345_1541467869436 http://osboxes:40329/
+[rosmaster.master][INFO] 2018-11-05 20:31:09,695: +SERVICE [/rostopic_30345_1541467869436/set_logger_level] /rostopic_30345_1541467869436 http://osboxes:40329/
+[rosmaster.master][INFO] 2018-11-05 20:31:09,704: +SUB [/vision_act/status] /rostopic_30345_1541467869436 http://osboxes:40329/
+[rosmaster.master][INFO] 2018-11-05 20:31:09,764: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:40329/']
+[rosmaster.master][INFO] 2018-11-05 20:31:09,766: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:40329/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:31:10,099: -SUB [/vision_act/status] /rostopic_30345_1541467869436 http://osboxes:40329/
+[rosmaster.master][INFO] 2018-11-05 20:31:10,100: -PUB [/rosout] /rostopic_30345_1541467869436 http://osboxes:40329/
+[rosmaster.master][INFO] 2018-11-05 20:31:10,100: -SERVICE [/rostopic_30345_1541467869436/set_logger_level] /rostopic_30345_1541467869436 rosrpc://osboxes:44653
+[rosmaster.master][INFO] 2018-11-05 20:31:10,100: -SERVICE [/rostopic_30345_1541467869436/get_loggers] /rostopic_30345_1541467869436 rosrpc://osboxes:44653
+[rosmaster.master][INFO] 2018-11-05 20:31:10,166: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:31:10,168: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:31:12,291: +PUB [/rosout] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,293: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:41275/']
+[rosmaster.master][INFO] 2018-11-05 20:31:12,300: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:41275/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:31:12,301: +SERVICE [/record_1541467872284594157/get_loggers] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,303: +SERVICE [/record_1541467872284594157/set_logger_level] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,334: +SUB [/car_act/result] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,342: +SUB [/vision_act/result] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,355: +SUB [/arm_act/feedback] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,367: +SUB [/serial_rx] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,397: +SUB [/rosout] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,430: +SUB [/rosout_agg] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,437: +SUB [/car_act/status] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,449: +SUB [/arm_act/status] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,469: +SUB [/car_act/feedback] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,502: +SUB [/harvest_act/result] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,568: +SUB [/diagnostics] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,585: +SUB [/arm_ctrl_state] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,610: +SUB [/vision_act/feedback] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,621: +SUB [/harvest_act/feedback] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,685: +SUB [/harvest_act/status] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,719: +SUB [/vision_act/status] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:12,740: +SUB [/arm_act/result] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,517: -PUB [/rosout] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,555: -SUB [/car_act/result] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,556: -SUB [/vision_act/result] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,558: -SUB [/arm_act/feedback] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,559: -SUB [/serial_rx] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,560: -SUB [/rosout] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,589: -SUB [/rosout_agg] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,591: -SUB [/car_act/status] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,616: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:31:21,617: publisherUpdate[/rosout] -> http://osboxes:41275/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:31:21,618: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:31:21,619: publisherUpdate[/rosout] -> http://osboxes:41275/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.master][INFO] 2018-11-05 20:31:21,634: -SUB [/arm_act/status] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,711: -SUB [/car_act/feedback] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.threadpool][ERROR] 2018-11-05 20:31:21,714: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/usr/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2018-11-05 20:31:21,740: -SUB [/harvest_act/result] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,815: -SUB [/diagnostics] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,859: -SUB [/arm_ctrl_state] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,905: -SUB [/vision_act/feedback] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,923: -SUB [/harvest_act/feedback] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,958: -SUB [/harvest_act/status] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,976: -SUB [/vision_act/status] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,980: -SUB [/arm_act/result] /record_1541467872284594157 http://osboxes:41275/
+[rosmaster.master][INFO] 2018-11-05 20:31:21,982: -SERVICE [/record_1541467872284594157/get_loggers] /record_1541467872284594157 rosrpc://osboxes:39255
+[rosmaster.master][INFO] 2018-11-05 20:31:21,983: -SERVICE [/record_1541467872284594157/set_logger_level] /record_1541467872284594157 rosrpc://osboxes:39255
+[rosmaster.master][INFO] 2018-11-05 20:31:31,762: +PUB [/rosout] /rqt_gui_py_node_30810 http://osboxes:44479/
+[rosmaster.master][INFO] 2018-11-05 20:31:31,771: +SERVICE [/rqt_gui_py_node_30810/get_loggers] /rqt_gui_py_node_30810 http://osboxes:44479/
+[rosmaster.master][INFO] 2018-11-05 20:31:31,776: +SERVICE [/rqt_gui_py_node_30810/set_logger_level] /rqt_gui_py_node_30810 http://osboxes:44479/
+[rosmaster.master][INFO] 2018-11-05 20:31:31,804: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:44479/']
+[rosmaster.master][INFO] 2018-11-05 20:31:31,807: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/', 'http://osboxes:44479/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2018-11-05 20:31:31,966: +SUB [/statistics] /rqt_gui_py_node_30810 http://osboxes:44479/
+[rosmaster.master][INFO] 2018-11-05 20:32:05,390: -SUB [/statistics] /rqt_gui_py_node_30810 http://osboxes:44479/
+[rosmaster.master][INFO] 2018-11-05 20:32:05,391: -PUB [/rosout] /rqt_gui_py_node_30810 http://osboxes:44479/
+[rosmaster.master][INFO] 2018-11-05 20:32:05,392: -SERVICE [/rqt_gui_py_node_30810/set_logger_level] /rqt_gui_py_node_30810 rosrpc://osboxes:35329
+[rosmaster.master][INFO] 2018-11-05 20:32:05,393: -SERVICE [/rqt_gui_py_node_30810/get_loggers] /rqt_gui_py_node_30810 rosrpc://osboxes:35329
+[rosmaster.master][INFO] 2018-11-05 20:32:05,397: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']
+[rosmaster.master][INFO] 2018-11-05 20:32:05,405: publisherUpdate[/rosout] -> http://osboxes:44077/ ['http://osboxes:39131/', 'http://osboxes:38759/', 'http://osboxes:34223/', 'http://osboxes:37187/', 'http://osboxes:45803/', 'http://osboxes:37317/']: sec=0.00, result=[1, '', 0]

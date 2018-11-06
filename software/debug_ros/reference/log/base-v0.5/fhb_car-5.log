@@ -1,0 +1,41 @@
+[rospy.client][INFO] 2018-11-05 20:27:27,641: init_node, name[/fhb_car], pid[26567]
+[xmlrpc][INFO] 2018-11-05 20:27:27,643: XML-RPC server binding to 0.0.0.0:0
+[rospy.init][INFO] 2018-11-05 20:27:27,644: ROS Slave URI: [http://osboxes:34223/]
+[xmlrpc][INFO] 2018-11-05 20:27:27,644: Started XML-RPC server [http://osboxes:34223/]
+[rospy.impl.masterslave][INFO] 2018-11-05 20:27:27,645: _ready: http://osboxes:34223/
+[xmlrpc][INFO] 2018-11-05 20:27:27,653: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-11-05 20:27:27,655: Registering with master node http://osboxes.local:11311
+[rospy.init][INFO] 2018-11-05 20:27:27,745: registered with master
+[rospy.rosout][INFO] 2018-11-05 20:27:27,747: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-11-05 20:27:27,787: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-11-05 20:27:27,851: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-11-05 20:27:27,905: car_node started
+[rospy.internal][INFO] 2018-11-05 20:27:28,147: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-11-05 20:27:39,072: topic[/diagnostics] adding connection to [/rqt_gui_py_node_26793], count 0
+[rospy.internal][INFO] 2018-11-05 20:29:57,939: topic[/car_act/feedback] adding connection to [/rostopic_28832_1541467797657], count 0
+[rospy.internal][INFO] 2018-11-05 20:29:58,692: topic[/car_act/feedback] removing connection to /rostopic_28832_1541467797657
+[rospy.internal][INFO] 2018-11-05 20:30:11,350: topic[/car_act/result] adding connection to [/rostopic_29043_1541467811021], count 0
+[rospy.internal][INFO] 2018-11-05 20:30:11,741: topic[/car_act/result] removing connection to /rostopic_29043_1541467811021
+[rospy.internal][INFO] 2018-11-05 20:30:14,838: topic[/car_act/status] adding connection to [/rostopic_29119_1541467814483], count 0
+[rospy.internal][INFO] 2018-11-05 20:30:15,246: topic[/car_act/status] removing connection to /rostopic_29119_1541467814483
+[rosout][WARNING] 2018-11-05 20:30:26,015: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-11-05 20:30:26,017: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-11-05 20:30:45,224: topic[/rosout] adding connection to [/rostopic_29772_1541467844860], count 1
+[rospy.internal][INFO] 2018-11-05 20:30:45,825: topic[/rosout] removing connection to /rostopic_29772_1541467844860
+[rospy.internal][INFO] 2018-11-05 20:31:12,530: topic[/car_act/result] adding connection to [/record_1541467872284594157], count 0
+[rospy.internal][INFO] 2018-11-05 20:31:12,657: topic[/rosout] adding connection to [/record_1541467872284594157], count 1
+[rospy.internal][INFO] 2018-11-05 20:31:12,662: topic[/car_act/status] adding connection to [/record_1541467872284594157], count 0
+[rospy.internal][INFO] 2018-11-05 20:31:12,673: topic[/car_act/feedback] adding connection to [/record_1541467872284594157], count 0
+[rospy.internal][INFO] 2018-11-05 20:31:12,788: topic[/diagnostics] adding connection to [/record_1541467872284594157], count 1
+[rospy.internal][INFO] 2018-11-05 20:31:21,861: topic[/car_act/status] removing connection to /record_1541467872284594157
+[rospy.internal][INFO] 2018-11-05 20:31:21,944: topic[/car_act/result] removing connection to /record_1541467872284594157
+[rospy.internal][INFO] 2018-11-05 20:31:21,944: topic[/rosout] removing connection to /record_1541467872284594157
+[rospy.internal][INFO] 2018-11-05 20:31:21,945: topic[/diagnostics] removing connection to /record_1541467872284594157
+[rospy.internal][INFO] 2018-11-05 20:31:21,946: topic[/car_act/feedback] removing connection to /record_1541467872284594157
