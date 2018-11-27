@@ -1,0 +1,310 @@
+camera:
+  imager_rate: 2.0
+  rgb:
+    image_raw:
+      compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+      compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+      theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+gazebo: {auto_disable_bodies: false, cfm: 1.0e-05, contact_max_correcting_vel: 2000.0,
+  contact_surface_layer: 0.01, erp: 0.2, gravity_x: 0.0, gravity_y: 0.0, gravity_z: -9.8,
+  max_contacts: 20, max_update_rate: 1000.0, sor_pgs_iters: 150, sor_pgs_precon_iters: 0,
+  sor_pgs_rms_error_tol: 0.0, sor_pgs_w: 1.4, time_step: 0.001}
+gazebo_gui: {auto_disable_bodies: false, cfm: 1.0e-05, contact_max_correcting_vel: 2000.0,
+  contact_surface_layer: 0.01, erp: 0.2, gravity_x: 0.0, gravity_y: 0.0, gravity_z: -9.8,
+  max_contacts: 20, max_update_rate: 1000.0, sor_pgs_iters: 150, sor_pgs_precon_iters: 0,
+  sor_pgs_rms_error_tol: 0.0, sor_pgs_w: 1.4, time_step: 0.001}
+joint_state_publisher:
+  source_list: [move_group/fake_controller_joint_states]
+  use_gui: false
+joy: {autorepeat_rate: 40, coalesce_interval: 0.025, deadzone: 0.2, dev: /dev/input/js0}
+model: waffle_pi
+move_group:
+  allow_trajectory_execution: true
+  arm:
+    default_planner_config: None
+    longest_valid_segment_fraction: 0.005
+    planner_configs: [SBL, EST, LBKPIECE, BKPIECE, KPIECE, RRT, RRTConnect, RRTstar,
+      TRRT, PRM, PRMstar, FMT, BFMT, PDST, STRIDE, BiTRRT, LBTRRT, BiEST, ProjEST,
+      LazyPRM, LazyPRMstar, SPARS, SPARStwo]
+    projection_evaluator: joints(joint_1,joint_2)
+  capabilities: ''
+  controller_list:
+  - joints: [joint_1, joint_2, joint_3, joint_4, joint_5, joint_6]
+    name: fake_arm_controller
+  - joints: []
+    name: fake_gripping_tool_controller
+  disable_capabilities: ''
+  filtered_cloud:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+  filtered_label:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+  gripping_tool:
+    default_planner_config: None
+    planner_configs: [SBL, EST, LBKPIECE, BKPIECE, KPIECE, RRT, RRTConnect, RRTstar,
+      TRRT, PRM, PRMstar, FMT, BFMT, PDST, STRIDE, BiTRRT, LBTRRT, BiEST, ProjEST,
+      LazyPRM, LazyPRMstar, SPARS, SPARStwo]
+  jiggle_fraction: 0.05
+  max_range: 5.0
+  max_safe_path_cost: 1
+  model_depth:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+  moveit_controller_manager: moveit_fake_controller_manager/MoveItFakeControllerManager
+  moveit_manage_controllers: true
+  octomap_resolution: 0.025
+  ompl: {display_random_valid_states: false, link_for_exploration_tree: '', maximum_waypoint_distance: 0.0,
+    minimum_waypoint_count: 10, simplify_solutions: true}
+  plan_execution: {max_replan_attempts: 5, record_trajectory_state_frequency: 10.0}
+  planner_configs:
+    BFMT: {balanced: 0, cache_cc: 1, extended_fmt: 1, heuristics: 1, nearest_k: 1,
+      num_samples: 1000, optimality: 1, radius_multiplier: 1.0, type: 'geometric::BFMT'}
+    BKPIECE: {border_fraction: 0.9, failed_expansion_score_factor: 0.5, min_valid_path_fraction: 0.5,
+      range: 0.0, type: 'geometric::BKPIECE'}
+    BiEST: {range: 0.0, type: 'geometric::BiEST'}
+    BiTRRT: {cost_threshold: 1e300, frountier_node_ratio: 0.1, frountier_threshold: 0.0,
+      init_temperature: 100, range: 0.0, temp_change_factor: 0.1, type: 'geometric::BiTRRT'}
+    EST: {goal_bias: 0.05, range: 0.0, type: 'geometric::EST'}
+    FMT: {cache_cc: 1, extended_fmt: 1, heuristics: 0, nearest_k: 1, num_samples: 1000,
+      radius_multiplier: 1.1, type: 'geometric::FMT'}
+    KPIECE: {border_fraction: 0.9, failed_expansion_score_factor: 0.5, goal_bias: 0.05,
+      min_valid_path_fraction: 0.5, range: 0.0, type: 'geometric::KPIECE'}
+    LBKPIECE: {border_fraction: 0.9, min_valid_path_fraction: 0.5, range: 0.0, type: 'geometric::LBKPIECE'}
+    LBTRRT: {epsilon: 0.4, goal_bias: 0.05, range: 0.0, type: 'geometric::LBTRRT'}
+    LazyPRM: {range: 0.0, type: 'geometric::LazyPRM'}
+    LazyPRMstar: {type: 'geometric::LazyPRMstar'}
+    PDST: {type: 'geometric::PDST'}
+    PRM: {max_nearest_neighbors: 10, type: 'geometric::PRM'}
+    PRMstar: {type: 'geometric::PRMstar'}
+    ProjEST: {goal_bias: 0.05, range: 0.0, type: 'geometric::ProjEST'}
+    RRT: {goal_bias: 0.05, range: 0.0, type: 'geometric::RRT'}
+    RRTConnect: {range: 0.0, type: 'geometric::RRTConnect'}
+    RRTstar: {delay_collision_checking: 1, goal_bias: 0.05, range: 0.0, type: 'geometric::RRTstar'}
+    SBL: {range: 0.0, type: 'geometric::SBL'}
+    SPARS: {dense_delta_fraction: 0.001, max_failures: 1000, sparse_delta_fraction: 0.25,
+      stretch_factor: 3.0, type: 'geometric::SPARS'}
+    SPARStwo: {dense_delta_fraction: 0.001, max_failures: 5000, sparse_delta_fraction: 0.25,
+      stretch_factor: 3.0, type: 'geometric::SPARStwo'}
+    STRIDE: {degree: 16, estimated_dimension: 0.0, goal_bias: 0.05, max_degree: 18,
+      max_pts_per_leaf: 6, min_degree: 12, min_valid_path_fraction: 0.2, range: 0.0,
+      type: 'geometric::STRIDE', use_projected_distance: 0}
+    TRRT: {frountierNodeRatio: 0.1, frountier_threshold: 0.0, goal_bias: 0.05, init_temperature: 10e-6,
+      k_constant: 0.0, max_states_failed: 10, min_temperature: 10e-10, range: 0.0,
+      temp_change_factor: 2.0, type: 'geometric::TRRT'}
+  planning_plugin: ompl_interface/OMPLPlanner
+  planning_scene_monitor: {publish_geometry_updates: true, publish_planning_scene: true,
+    publish_planning_scene_hz: 4.0, publish_state_updates: true, publish_transforms_updates: true}
+  request_adapters: default_planner_request_adapters/AddTimeParameterization            default_planner_request_adapters/FixWorkspaceBounds            default_planner_request_adapters/FixStartStateBounds            default_planner_request_adapters/FixStartStateCollision            default_planner_request_adapters/FixStartStatePathConstraints
+  sense_for_plan: {discard_overlapping_cost_sources: 0.8, max_cost_sources: 100, max_look_attempts: 3,
+    max_safe_path_cost: 0.01}
+  sensors:
+  - {far_clipping_plane_distance: 5.0, filtered_cloud_topic: filtered_cloud, image_topic: /head_mount_kinect/depth_registered/image_raw,
+    max_range: 5.0, max_update_rate: 1.0, near_clipping_plane_distance: 0.3, padding_offset: 0.03,
+    padding_scale: 4.0, point_cloud_topic: /head_mount_kinect/depth_registered/points,
+    point_subsample: 1, queue_size: 5, sensor_plugin: occupancy_map_monitor/DepthImageOctomapUpdater,
+    shadow_threshold: 0.2}
+  start_state_max_bounds_error: 0.1
+  trajectory_execution: {allowed_execution_duration_scaling: 1.2, allowed_goal_duration_margin: 0.5,
+    allowed_start_tolerance: 0.01, execution_duration_monitoring: true, execution_velocity_scaling: 1.0,
+    wait_for_trajectory_completion: true}
+robot_description: "<?xml version=\"1.0\" ?>\n<!-- ===================================================================================\
+  \ -->\n<!-- |    This document was autogenerated by xacro from irb2400.xacro   \
+  \               | -->\n<!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED  \
+  \                               | -->\n<!-- ===================================================================================\
+  \ -->\n<robot name=\"abb_irb2400\" xmlns:xacro=\"http://ros.org/wiki/xacro\">\n\
+  \  <!-- Conversion were obtained from http://www.e-paint.co.uk/Lab_values.asp\n\
+  \       unless otherwise stated. -->\n  <!-- Actual colors -->\n  <!-- NCS 2070-Y60R\
+  \ orange, standard robot color 1974 - May 2014 -->\n  <!-- RAL 7035 light grey (abb\
+  \ graphite white), standard robot color May 2014 - current -->\n  <!-- RAL 9003\
+  \ signal white (abb white), cleanroom robot color -->\n  <!-- RAL 7032 pebble gray,\
+  \ controller -->\n  <!-- RAL 7012 basalt gray (abb dark gray) , robot primer -->\n\
+  \  <!-- RAL 7021 black gray (abb black) , robot with dark link color -->\n  <!--\
+  \ Other robot colours availble, but not limited too. -->\n  <!-- RAL 3001 signal\
+  \ red -->\n  <!-- RAL 3002 carmine red -->\n  <!-- RAL 5002 ultramarine blue -->\n\
+  \  <!-- RAL 5015 sky blue -->\n  <!-- RAL 6002 leaf green -->\n  <!-- RAL 9002 gray\
+  \ white -->\n  <!-- RAL 9010 pure white -->\n  <!-- approximations -->\n  <!-- yellow,\
+  \ collision model -->\n  <!-- link list -->\n  <link name=\"base_link\">\n    <visual>\n\
+  \      <origin rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"\
+  package://abb_irb2400_support/meshes/irb2400/visual/base_link.dae\"/>\n      </geometry>\n\
+  \      <material name=\"\">\n        <color rgba=\"0.7372549 0.3490196 0.1607843\
+  \ 1\"/>\n      </material>\n    </visual>\n    <collision>\n      <geometry>\n \
+  \       <mesh filename=\"package://abb_irb2400_support/meshes/irb2400/collision/base_link.stl\"\
+  />\n      </geometry>\n      <material name=\"\">\n        <color rgba=\"1 1 0 1\"\
+  />\n      </material>\n    </collision>\n  </link>\n  <link name=\"link_1\">\n \
+  \   <visual>\n      <origin rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n  \
+  \      <mesh filename=\"package://abb_irb2400_support/meshes/irb2400/visual/link_1.dae\"\
+  />\n      </geometry>\n      <material name=\"\">\n        <color rgba=\"0.7372549\
+  \ 0.3490196 0.1607843 1\"/>\n      </material>\n    </visual>\n    <collision>\n\
+  \      <origin rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"\
+  package://abb_irb2400_support/meshes/irb2400/collision/link_1.stl\"/>\n      </geometry>\n\
+  \      <material name=\"\">\n        <color rgba=\"1 1 0 1\"/>\n      </material>\n\
+  \    </collision>\n  </link>\n  <link name=\"link_2\">\n    <visual>\n      <origin\
+  \ rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"package://abb_irb2400_support/meshes/irb2400/visual/link_2.dae\"\
+  />\n      </geometry>\n      <material name=\"\">\n        <color rgba=\"0.7372549\
+  \ 0.3490196 0.1607843 1\"/>\n      </material>\n    </visual>\n    <collision>\n\
+  \      <origin rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"\
+  package://abb_irb2400_support/meshes/irb2400/collision/link_2_whole.stl\"/>\n  \
+  \    </geometry>\n      <material name=\"\">\n        <color rgba=\"1 1 0 1\"/>\n\
+  \      </material>\n    </collision>\n  </link>\n  <link name=\"link_3\">\n    <visual>\n\
+  \      <origin rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"\
+  package://abb_irb2400_support/meshes/irb2400/visual/link_3.dae\"/>\n      </geometry>\n\
+  \      <material name=\"\">\n        <color rgba=\"0.7372549 0.3490196 0.1607843\
+  \ 1\"/>\n      </material>\n    </visual>\n    <collision>\n      <origin rpy=\"\
+  0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"package://abb_irb2400_support/meshes/irb2400/collision/link_3.stl\"\
+  />\n      </geometry>\n      <material name=\"\">\n        <color rgba=\"1 1 0 1\"\
+  />\n      </material>\n    </collision>\n  </link>\n  <link name=\"link_4\">\n \
+  \   <visual>\n      <origin rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n  \
+  \      <mesh filename=\"package://abb_irb2400_support/meshes/irb2400/visual/link_4.dae\"\
+  />\n      </geometry>\n      <material name=\"\">\n        <color rgba=\"0.7372549\
+  \ 0.3490196 0.1607843 1\"/>\n      </material>\n    </visual>\n    <collision>\n\
+  \      <origin rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"\
+  package://abb_irb2400_support/meshes/irb2400/collision/link_4.stl\"/>\n      </geometry>\n\
+  \      <material name=\"\">\n        <color rgba=\"1 1 0 1\"/>\n      </material>\n\
+  \    </collision>\n  </link>\n  <link name=\"link_5\">\n    <visual>\n      <origin\
+  \ rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"package://abb_irb2400_support/meshes/irb2400/visual/link_5.dae\"\
+  />\n      </geometry>\n      <material name=\"\">\n        <color rgba=\"0.7372549\
+  \ 0.3490196 0.1607843 1\"/>\n      </material>\n    </visual>\n    <collision>\n\
+  \      <origin rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"\
+  package://abb_irb2400_support/meshes/irb2400/collision/link_5.stl\"/>\n      </geometry>\n\
+  \      <material name=\"\">\n        <color rgba=\"1 1 0 1\"/>\n      </material>\n\
+  \    </collision>\n  </link>\n  <link name=\"link_6\">\n    <visual>\n      <origin\
+  \ rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"package://abb_irb2400_support/meshes/irb2400/visual/link_6.dae\"\
+  />\n      </geometry>\n      <material name=\"\">\n        <color rgba=\"0.1882353\
+  \ 0.1960784 0.2039216 1\"/>\n      </material>\n    </visual>\n    <collision>\n\
+  \      <origin rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"\
+  package://abb_irb2400_support/meshes/irb2400/collision/link_6.stl\"/>\n      </geometry>\n\
+  \      <material name=\"\">\n        <color rgba=\"1 1 0 1\"/>\n      </material>\n\
+  \    </collision>\n  </link>\n  <link name=\"tool0\"/>\n  <!-- end of link list\
+  \ -->\n  <!-- joint list -->\n  <joint name=\"joint_1\" type=\"revolute\">\n   \
+  \ <origin rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n    <parent link=\"base_link\"/>\n    <child\
+  \ link=\"link_1\"/>\n    <axis xyz=\"0 0 1\"/>\n    <limit effort=\"0\" lower=\"\
+  -3.1416\" upper=\"3.1416\" velocity=\"2.618\"/>\n  </joint>\n  <joint name=\"joint_2\"\
+  \ type=\"revolute\">\n    <origin rpy=\"0 0 0\" xyz=\"0.1 0 0.615\"/>\n    <parent\
+  \ link=\"link_1\"/>\n    <child link=\"link_2\"/>\n    <axis xyz=\"0 1 0\"/>\n \
+  \   <limit effort=\"0\" lower=\"-1.7453\" upper=\"1.9199\" velocity=\"2.618\"/>\n\
+  \  </joint>\n  <joint name=\"joint_3\" type=\"revolute\">\n    <origin rpy=\"0 0\
+  \ 0\" xyz=\"0 0 0.705\"/>\n    <parent link=\"link_2\"/>\n    <child link=\"link_3\"\
+  />\n    <axis xyz=\"0 1 0\"/>\n    <limit effort=\"0\" lower=\"-1.0472\" upper=\"\
+  1.1345\" velocity=\"2.618\"/>\n  </joint>\n  <joint name=\"joint_4\" type=\"revolute\"\
+  >\n    <origin rpy=\"0 0 0\" xyz=\"0.258 0 0.135\"/>\n    <parent link=\"link_3\"\
+  />\n    <child link=\"link_4\"/>\n    <axis xyz=\"1 0 0\"/>\n    <limit effort=\"\
+  0\" lower=\"-3.49\" upper=\"3.49\" velocity=\"6.2832\"/>\n  </joint>\n  <joint name=\"\
+  joint_5\" type=\"revolute\">\n    <origin rpy=\"0 0 0\" xyz=\"0.497 0 0\"/>\n  \
+  \  <parent link=\"link_4\"/>\n    <child link=\"link_5\"/>\n    <axis xyz=\"0 1\
+  \ 0\"/>\n    <limit effort=\"0\" lower=\"-2.0944\" upper=\"2.0944\" velocity=\"\
+  6.2832\"/>\n  </joint>\n  <joint name=\"joint_6\" type=\"revolute\">\n    <origin\
+  \ rpy=\"0 0 0\" xyz=\"0.085 0 0\"/>\n    <parent link=\"link_5\"/>\n    <child link=\"\
+  link_6\"/>\n    <axis xyz=\"1 0 0\"/>\n    <limit effort=\"0\" lower=\"-6.9813\"\
+  \ upper=\"6.9813\" velocity=\"7.854\"/>\n  </joint>\n  <joint name=\"joint_6-tool0\"\
+  \ type=\"fixed\">\n    <parent link=\"link_6\"/>\n    <child link=\"tool0\"/>\n\
+  \    <origin rpy=\"0 1.57079632679 0\" xyz=\"0 0 0\"/>\n  </joint>\n  <!-- end of\
+  \ joint list -->\n  <!-- ROS base_link to ABB World Coordinates transform -->\n\
+  \  <link name=\"base\"/>\n  <joint name=\"base_link-base\" type=\"fixed\">\n   \
+  \ <origin rpy=\"0 0 0\" xyz=\"0 0 0\"/>\n    <parent link=\"base_link\"/>\n    <child\
+  \ link=\"base\"/>\n  </joint>\n</robot>\n\n"
+robot_description_kinematics:
+  arm: {kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin, kinematics_solver_attempts: 3,
+    kinematics_solver_search_resolution: 0.005, kinematics_solver_timeout: 0.005}
+robot_description_planning:
+  joint_limits:
+    joint_1: {has_acceleration_limits: false, has_velocity_limits: true, max_acceleration: 0,
+      max_velocity: 2.618}
+    joint_2: {has_acceleration_limits: false, has_velocity_limits: true, max_acceleration: 0,
+      max_velocity: 2.618}
+    joint_3: {has_acceleration_limits: false, has_velocity_limits: true, max_acceleration: 0,
+      max_velocity: 2.618}
+    joint_4: {has_acceleration_limits: false, has_velocity_limits: true, max_acceleration: 0,
+      max_velocity: 6.2832}
+    joint_5: {has_acceleration_limits: false, has_velocity_limits: true, max_acceleration: 0,
+      max_velocity: 6.2832}
+    joint_6: {has_acceleration_limits: false, has_velocity_limits: true, max_acceleration: 0,
+      max_velocity: 7.854}
+robot_description_semantic: "<?xml version=\"1.0\" ?>\n<!--This does not replace URDF,\
+  \ and is not an extension of URDF.\n    This is a format for representing semantic\
+  \ information about the robot structure.\n    A URDF file must exist for this robot\
+  \ as well, where the joints and the links that are referenced are defined\n-->\n\
+  <robot name=\"abb_irb2400\">\n    <!--GROUPS: Representation of a set of joints\
+  \ and links. This can be useful for specifying DOF to plan for, defining arms, end\
+  \ effectors, etc-->\n    <!--LINKS: When a link is specified, the parent joint of\
+  \ that link (if it exists) is automatically included-->\n    <!--JOINTS: When a\
+  \ joint is specified, the child link of that joint (which will always exist) is\
+  \ automatically included-->\n    <!--CHAINS: When a chain is specified, all the\
+  \ links along the chain (including endpoints) are included in the group. Additionally,\
+  \ all the joints that are parents to included links are also included. This means\
+  \ that joints along the chain and the parent joint of the base link are included\
+  \ in the group-->\n    <!--SUBGROUPS: Groups can also be formed by referencing to\
+  \ already defined group names-->\n    <group name=\"arm\">\n        <joint name=\"\
+  joint_1\" />\n        <joint name=\"joint_2\" />\n        <joint name=\"joint_3\"\
+  \ />\n        <joint name=\"joint_4\" />\n        <joint name=\"joint_5\" />\n \
+  \       <joint name=\"joint_6\" />\n    </group>\n    <group name=\"gripping_tool\"\
+  >\n        <joint name=\"joint_6-tool0\" />\n    </group>\n    <!--END EFFECTOR:\
+  \ Purpose: Represent information about an end effector.-->\n    <end_effector name=\"\
+  gripper\" parent_link=\"link_6\" group=\"gripping_tool\" />\n    <!--VIRTUAL JOINT:\
+  \ Purpose: this element defines a virtual joint between a robot link and an external\
+  \ frame of reference (considered fixed with respect to the robot)-->\n    <virtual_joint\
+  \ name=\"virtual_joint\" type=\"fixed\" parent_frame=\"base_footprint\" child_link=\"\
+  base_link\" />\n    <!--DISABLE COLLISIONS: By default it is assumed that any link\
+  \ of the robot could potentially come into collision with any other link in the\
+  \ robot. This tag disables collision checking between a specified pair of links.\
+  \ -->\n    <disable_collisions link1=\"base_link\" link2=\"link_1\" reason=\"Adjacent\"\
+  \ />\n    <disable_collisions link1=\"base_link\" link2=\"link_2\" reason=\"Never\"\
+  \ />\n    <disable_collisions link1=\"base_link\" link2=\"link_3\" reason=\"Never\"\
+  \ />\n    <disable_collisions link1=\"link_1\" link2=\"link_2\" reason=\"Adjacent\"\
+  \ />\n    <disable_collisions link1=\"link_1\" link2=\"link_3\" reason=\"Never\"\
+  \ />\n    <disable_collisions link1=\"link_2\" link2=\"link_3\" reason=\"Adjacent\"\
+  \ />\n    <disable_collisions link1=\"link_2\" link2=\"link_4\" reason=\"Never\"\
+  \ />\n    <disable_collisions link1=\"link_2\" link2=\"link_5\" reason=\"Never\"\
+  \ />\n    <disable_collisions link1=\"link_2\" link2=\"link_6\" reason=\"Never\"\
+  \ />\n    <disable_collisions link1=\"link_3\" link2=\"link_4\" reason=\"Adjacent\"\
+  \ />\n    <disable_collisions link1=\"link_3\" link2=\"link_5\" reason=\"Never\"\
+  \ />\n    <disable_collisions link1=\"link_3\" link2=\"link_6\" reason=\"Never\"\
+  \ />\n    <disable_collisions link1=\"link_4\" link2=\"link_5\" reason=\"Adjacent\"\
+  \ />\n    <disable_collisions link1=\"link_4\" link2=\"link_6\" reason=\"Default\"\
+  \ />\n    <disable_collisions link1=\"link_5\" link2=\"link_6\" reason=\"Adjacent\"\
+  \ />\n</robot>\n"
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_localhost__34407: 'http://localhost:34407/', host_localhost__35223: 'http://localhost:35223/',
+    host_localhost__36113: 'http://localhost:36113/', host_localhost__37247: 'http://localhost:37247/',
+    host_localhost__38035: 'http://localhost:38035/', host_localhost__39097: 'http://localhost:39097/',
+    host_localhost__39271: 'http://localhost:39271/', host_localhost__41225: 'http://localhost:41225/',
+    host_localhost__41583: 'http://localhost:41583/', host_localhost__41971: 'http://localhost:41971/',
+    host_localhost__42515: 'http://localhost:42515/', host_localhost__42979: 'http://localhost:42979/',
+    host_localhost__42981: 'http://localhost:42981/', host_localhost__45935: 'http://localhost:45935/',
+    host_localhost__46031: 'http://localhost:46031/', host_localhost__46189: 'http://localhost:46189/'}
+rosversion: '1.12.14
+
+  '
+run_id: efb22f3c-f1d4-11e8-a704-309c23a767fd
+rviz_hadi_14095_8432393663254090976:
+  arm: {kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin, kinematics_solver_attempts: 3,
+    kinematics_solver_search_resolution: 0.005, kinematics_solver_timeout: 0.005}
+  motionplanning_planning_scene_monitor: {publish_geometry_updates: true, publish_planning_scene: false,
+    publish_planning_scene_hz: 4.0, publish_state_updates: false, publish_transforms_updates: false}
+rviz_hadi_17625_195671761382896879:
+  arm: {kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin, kinematics_solver_attempts: 3,
+    kinematics_solver_search_resolution: 0.005, kinematics_solver_timeout: 0.005}
+  motionplanning_planning_scene_monitor: {publish_geometry_updates: true, publish_planning_scene: false,
+    publish_planning_scene_hz: 4.0, publish_state_updates: false, publish_transforms_updates: false}
+rviz_hadi_19892_6505949823999822746:
+  arm: {kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin, kinematics_solver_attempts: 3,
+    kinematics_solver_search_resolution: 0.005, kinematics_solver_timeout: 0.005}
+  motionplanning_planning_scene_monitor: {publish_geometry_updates: true, publish_planning_scene: false,
+    publish_planning_scene_hz: 4.0, publish_state_updates: false, publish_transforms_updates: false}
+rviz_hadi_22444_9209618198152984870:
+  arm: {kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin, kinematics_solver_attempts: 3,
+    kinematics_solver_search_resolution: 0.005, kinematics_solver_timeout: 0.005}
+  motionplanning_planning_scene_monitor: {publish_geometry_updates: true, publish_planning_scene: false,
+    publish_planning_scene_hz: 4.0, publish_state_updates: false, publish_transforms_updates: false}
+rviz_hadi_24449_1969308681187767477:
+  arm: {kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin, kinematics_solver_attempts: 3,
+    kinematics_solver_search_resolution: 0.005, kinematics_solver_timeout: 0.005}
+  motionplanning_planning_scene_monitor: {publish_geometry_updates: true, publish_planning_scene: false,
+    publish_planning_scene_hz: 4.0, publish_state_updates: false, publish_transforms_updates: false}
+use_sim_time: true

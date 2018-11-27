@@ -1,0 +1,173 @@
+[rospy.client][INFO] 2018-11-27 08:09:57,516: init_node, name[/turtlebot3_teleop_keyboard], pid[13687]
+[xmlrpc][INFO] 2018-11-27 08:09:57,516: XML-RPC server binding to 127.0.0.1:0
+[xmlrpc][INFO] 2018-11-27 08:09:57,516: Started XML-RPC server [http://localhost:35755/]
+[rospy.init][INFO] 2018-11-27 08:09:57,517: ROS Slave URI: [http://localhost:35755/]
+[rospy.impl.masterslave][INFO] 2018-11-27 08:09:57,517: _ready: http://localhost:35755/
+[rospy.registration][INFO] 2018-11-27 08:09:57,517: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2018-11-27 08:09:57,518: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-11-27 08:09:57,617: registered with master
+[rospy.rosout][INFO] 2018-11-27 08:09:57,617: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-11-27 08:09:57,620: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-11-27 08:09:57,621: initializing /clock core topic
+[rospy.simtime][INFO] 2018-11-27 08:09:57,623: connected to core topic /clock
+[rospy.internal][INFO] 2018-11-27 08:09:57,632: topic[/clock] adding connection to [http://localhost:41125/], count 0
+[rospy.internal][INFO] 2018-11-27 08:09:57,795: topic[/cmd_vel] adding connection to [/gazebo], count 0
+[rospy.internal][INFO] 2018-11-27 08:09:57,894: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][ERROR] 2018-11-27 08:51:18,813: Unable to initiate TCP/IP socket to localhost:56117 (http://localhost:41125/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 56117 to [127.0.0.1:49886 on socket 17]] [/turtlebot3_teleop_keyboard].
+
+[rospy.internal][ERROR] 2018-11-27 08:51:19,814: Unable to initiate TCP/IP socket to localhost:56117 (http://localhost:41125/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 56117 to [127.0.0.1:49968 on socket 16]] [/turtlebot3_teleop_keyboard].
+
+[rospy.internal][ERROR] 2018-11-27 08:51:21,817: Unable to initiate TCP/IP socket to localhost:56117 (http://localhost:41125/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 56117 to [127.0.0.1:49972 on socket 16]] [/turtlebot3_teleop_keyboard].
+
+[rospy.internal][ERROR] 2018-11-27 08:51:25,822: Unable to initiate TCP/IP socket to localhost:56117 (http://localhost:41125/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 56117 to [127.0.0.1:49976 on socket 16]] [/turtlebot3_teleop_keyboard].
+
+[rospy.internal][INFO] 2018-11-27 08:51:33,767: topic[/cmd_vel] removing connection to /gazebo
+[rospy.internal][WARNING] 2018-11-27 08:51:33,841: Unknown error initiating TCP/IP socket to localhost:56117 (http://localhost:41125/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2018-11-27 08:51:33,841: topic[/clock] removing connection to http://localhost:41125/
+[rospy.internal][INFO] 2018-11-27 08:51:58,438: topic[/clock] adding connection to [http://localhost:42383/], count 0
+[rospy.internal][INFO] 2018-11-27 08:51:59,166: topic[/cmd_vel] adding connection to [/gazebo], count 0
+[rospy.internal][ERROR] 2018-11-27 08:53:03,590: Unable to initiate TCP/IP socket to localhost:58507 (http://localhost:42383/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 58507 to [127.0.0.1:55386 on socket 17]] [/turtlebot3_teleop_keyboard].
+
+[rospy.internal][ERROR] 2018-11-27 08:53:04,592: Unable to initiate TCP/IP socket to localhost:58507 (http://localhost:42383/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 58507 to [127.0.0.1:55470 on socket 16]] [/turtlebot3_teleop_keyboard].
+
+[rospy.internal][ERROR] 2018-11-27 08:53:06,595: Unable to initiate TCP/IP socket to localhost:58507 (http://localhost:42383/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 58507 to [127.0.0.1:55474 on socket 16]] [/turtlebot3_teleop_keyboard].
+
+[rospy.internal][ERROR] 2018-11-27 08:53:10,599: Unable to initiate TCP/IP socket to localhost:58507 (http://localhost:42383/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 58507 to [127.0.0.1:55480 on socket 16]] [/turtlebot3_teleop_keyboard].
+
+[rospy.internal][INFO] 2018-11-27 08:53:18,459: topic[/cmd_vel] removing connection to /gazebo
+[rospy.internal][WARNING] 2018-11-27 08:53:18,608: Unknown error initiating TCP/IP socket to localhost:58507 (http://localhost:42383/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2018-11-27 08:53:18,608: topic[/clock] removing connection to http://localhost:42383/
+[rospy.internal][INFO] 2018-11-27 08:53:30,527: topic[/clock] adding connection to [http://localhost:42687/], count 0
+[rospy.internal][INFO] 2018-11-27 08:53:31,308: topic[/cmd_vel] adding connection to [/gazebo], count 0
+[rospy.internal][ERROR] 2018-11-27 08:55:33,333: Unable to initiate TCP/IP socket to localhost:33039 (http://localhost:42687/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 33039 to [127.0.0.1:58134 on socket 17]] [/turtlebot3_teleop_keyboard].
+
+[rospy.internal][ERROR] 2018-11-27 08:55:34,335: Unable to initiate TCP/IP socket to localhost:33039 (http://localhost:42687/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 33039 to [127.0.0.1:58204 on socket 16]] [/turtlebot3_teleop_keyboard].
+
+[rospy.internal][ERROR] 2018-11-27 08:55:36,337: Unable to initiate TCP/IP socket to localhost:33039 (http://localhost:42687/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 33039 to [127.0.0.1:58210 on socket 16]] [/turtlebot3_teleop_keyboard].
+
+[rospy.internal][ERROR] 2018-11-27 08:55:40,342: Unable to initiate TCP/IP socket to localhost:33039 (http://localhost:42687/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/clock] from [TCPROS connection on port 33039 to [127.0.0.1:58214 on socket 17]] [/turtlebot3_teleop_keyboard].
+
+[rospy.internal][WARNING] 2018-11-27 08:55:48,350: Unknown error initiating TCP/IP socket to localhost:33039 (http://localhost:42687/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2018-11-27 08:55:48,351: topic[/clock] removing connection to http://localhost:42687/
+[rospy.internal][INFO] 2018-11-27 08:55:48,413: topic[/cmd_vel] removing connection to /gazebo
+[rospy.internal][INFO] 2018-11-27 08:56:02,030: topic[/clock] adding connection to [http://localhost:35197/], count 0
+[rospy.internal][INFO] 2018-11-27 08:56:02,837: topic[/cmd_vel] adding connection to [/gazebo], count 0
+[rospy.internal][INFO] 2018-11-27 09:18:47,499: topic[/cmd_vel] adding connection to [/rostopic_27059_1543281527324], count 1
+[rosout][WARNING] 2018-11-27 09:18:48,331: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2018-11-27 09:18:48,342: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-11-27 09:18:48,370: topic[/cmd_vel] removing connection to /rostopic_27059_1543281527324
+[rospy.internal][INFO] 2018-11-27 09:21:52,110: topic[/rosout] adding connection to [/rostopic_30616_1543281711944], count 1
+[rospy.internal][INFO] 2018-11-27 09:21:52,931: topic[/rosout] removing connection to /rostopic_30616_1543281711944
+[rospy.internal][INFO] 2018-11-27 09:22:15,718: topic[/cmd_vel] adding connection to [/record_1543281734967653249], count 1
+[rospy.internal][INFO] 2018-11-27 09:22:15,720: topic[/rosout] adding connection to [/record_1543281734967653249], count 1
+[rospy.internal][INFO] 2018-11-27 09:22:24,899: topic[/cmd_vel] removing connection to /record_1543281734967653249
+[rospy.internal][INFO] 2018-11-27 09:22:24,940: topic[/rosout] removing connection to /record_1543281734967653249
