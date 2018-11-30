@@ -1,0 +1,5 @@
+
+wuulong@hadi:~/catkin_ws/src/harvestbot_model/harvestbot_description/launch$ roslaunch harvestbot_rviz.launch
+wuulong@hadi:~/catkin_ws/src/harvestbot_model/harvestbot_gazebo/launch$ roslaunch harvestbot_world.launch
+wuulong@hadi:~/catkin_ws/src/harvestbot_model/harvestbot_control/launch$ roslaunch harvestbot_rqt.launch
+  click to enable sending messages

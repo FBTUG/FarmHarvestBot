@@ -1,0 +1,4 @@
+[33m[ WARN] [1543618628.519596367]: The 'state_publisher' executable is deprecated. Please use 'robot_state_publisher' instead[0m
+[33m[ WARN] [1543618628.521576101]: The root link vehicle_body has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.[0m
+[33m[ WARN] [1543618650.962891164]: Shutdown request received.[0m
+[33m[ WARN] [1543618650.962924574]: Reason given for shutdown: [new node registered with same name][0m

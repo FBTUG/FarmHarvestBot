@@ -1,0 +1,26 @@
+[rospy.client][INFO] 2018-12-01 06:57:54,124: init_node, name[/harvestbot_rqt], pid[6541]
+[xmlrpc][INFO] 2018-12-01 06:57:54,124: XML-RPC server binding to 127.0.0.1:0
+[xmlrpc][INFO] 2018-12-01 06:57:54,125: Started XML-RPC server [http://localhost:38637/]
+[rospy.init][INFO] 2018-12-01 06:57:54,125: ROS Slave URI: [http://localhost:38637/]
+[rospy.impl.masterslave][INFO] 2018-12-01 06:57:54,125: _ready: http://localhost:38637/
+[rospy.registration][INFO] 2018-12-01 06:57:54,125: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2018-12-01 06:57:54,126: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-12-01 06:57:54,225: registered with master
+[rospy.rosout][INFO] 2018-12-01 06:57:54,226: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-01 06:57:54,227: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-01 06:57:54,229: initializing /clock core topic
+[rospy.simtime][INFO] 2018-12-01 06:57:54,231: connected to core topic /clock
+[rospy.internal][INFO] 2018-12-01 06:57:54,246: topic[/clock] adding connection to [http://localhost:34649/], count 0
+[rospy.internal][INFO] 2018-12-01 06:57:54,500: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-12-01 06:57:55,477: topic[/harvestbot/slide_x_position_controller/state] adding connection to [http://localhost:34649/], count 0
+[rospy.internal][INFO] 2018-12-01 06:57:55,563: topic[/harvestbot/slide_x_position_controller/command] adding connection to [http://localhost:38637/], count 0
+[rospy.internal][INFO] 2018-12-01 06:57:55,569: topic[/harvestbot/slide_x_position_controller/command] adding connection to [/harvestbot_rqt], count 0
+[rospy.internal][INFO] 2018-12-01 06:57:55,704: topic[/harvestbot/slide_x_position_controller/command] adding connection to [/gazebo], count 1
+[rospy.internal][INFO] 2018-12-01 07:00:14,409: topic[/harvestbot/slide_x_position_controller/command] adding connection to [/rostopic_8471_1543618814212], count 2
+[rospy.internal][INFO] 2018-12-01 07:00:15,126: topic[/harvestbot/slide_x_position_controller/command] removing connection to /rostopic_8471_1543618814212
+[rospy.internal][INFO] 2018-12-01 07:01:01,842: topic[/rosout] adding connection to [/rostopic_9383_1543618861656], count 1
+[rospy.internal][INFO] 2018-12-01 07:01:02,848: topic[/rosout] removing connection to /rostopic_9383_1543618861656
+[rospy.internal][INFO] 2018-12-01 07:01:10,284: topic[/rosout] adding connection to [/record_1543618869717571921], count 1
+[rospy.internal][INFO] 2018-12-01 07:01:10,287: topic[/harvestbot/slide_x_position_controller/command] adding connection to [/record_1543618869717571921], count 2
+[rospy.internal][INFO] 2018-12-01 07:01:19,561: topic[/harvestbot/slide_x_position_controller/command] removing connection to /record_1543618869717571921
+[rospy.internal][INFO] 2018-12-01 07:01:19,882: topic[/rosout] removing connection to /record_1543618869717571921

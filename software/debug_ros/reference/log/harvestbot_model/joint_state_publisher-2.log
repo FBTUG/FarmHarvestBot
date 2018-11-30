@@ -1,0 +1,23 @@
+[rospy.client][INFO] 2018-12-01 06:57:08,763: init_node, name[/joint_state_publisher], pid[5349]
+[xmlrpc][INFO] 2018-12-01 06:57:08,764: XML-RPC server binding to 127.0.0.1:0
+[xmlrpc][INFO] 2018-12-01 06:57:08,764: Started XML-RPC server [http://localhost:41287/]
+[rospy.init][INFO] 2018-12-01 06:57:08,764: ROS Slave URI: [http://localhost:41287/]
+[rospy.impl.masterslave][INFO] 2018-12-01 06:57:08,764: _ready: http://localhost:41287/
+[rospy.registration][INFO] 2018-12-01 06:57:08,765: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2018-12-01 06:57:08,765: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-12-01 06:57:08,865: registered with master
+[rospy.rosout][INFO] 2018-12-01 06:57:08,865: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-01 06:57:08,869: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-01 06:57:08,870: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-12-01 06:57:09,040: Centering
+[rospy.internal][INFO] 2018-12-01 06:57:09,140: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-12-01 06:57:09,334: topic[/joint_states] adding connection to [/robot_state_publisher], count 0
+[rospy.internal][INFO] 2018-12-01 06:57:31,151: topic[/joint_states] removing connection to /robot_state_publisher
+[rospy.internal][INFO] 2018-12-01 07:00:57,730: topic[/joint_states] adding connection to [/rostopic_9296_1543618857559], count 0
+[rospy.internal][INFO] 2018-12-01 07:00:58,551: topic[/joint_states] removing connection to /rostopic_9296_1543618857559
+[rospy.internal][INFO] 2018-12-01 07:01:01,830: topic[/rosout] adding connection to [/rostopic_9383_1543618861656], count 1
+[rospy.internal][INFO] 2018-12-01 07:01:02,831: topic[/rosout] removing connection to /rostopic_9383_1543618861656
+[rospy.internal][INFO] 2018-12-01 07:01:10,283: topic[/joint_states] adding connection to [/record_1543618869717571921], count 0
+[rospy.internal][INFO] 2018-12-01 07:01:10,284: topic[/rosout] adding connection to [/record_1543618869717571921], count 1
+[rospy.internal][INFO] 2018-12-01 07:01:19,551: topic[/joint_states] removing connection to /record_1543618869717571921
+[rospy.internal][INFO] 2018-12-01 07:01:19,837: topic[/rosout] removing connection to /record_1543618869717571921

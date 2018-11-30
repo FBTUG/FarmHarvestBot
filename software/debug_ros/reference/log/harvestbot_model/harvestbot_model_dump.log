@@ -1,0 +1,3094 @@
+User defined setting: NODE=/turtlesim, TOPIC=/turtle1/cmd_vel, MSG=geometry_msgs/Twist
+[PARAM_DUMP]$rosparam dump debug_ros_param.yaml =====>
+[NODE_LIST]$rosnode list =====>
+/gazebo
+/gazebo_gui
+/harvestbot/controller_spawner
+/harvestbot_rqt
+/joint_state_publisher
+/robot_state_publisher
+/rosout
+/rviz
+[SRV_LIST]$rossrv list =====>
+astra_camera/GetSerial
+bhand_controller/Actions
+bhand_controller/SetControlMode
+capabilities/EstablishBond
+capabilities/FreeCapability
+capabilities/GetCapabilitySpec
+capabilities/GetCapabilitySpecs
+capabilities/GetInterfaces
+capabilities/GetNodeletManagerName
+capabilities/GetProviders
+capabilities/GetRemappings
+capabilities/GetRunningCapabilities
+capabilities/GetSemanticInterfaces
+capabilities/StartCapability
+capabilities/StopCapability
+capabilities/UseCapability
+control_msgs/QueryCalibrationState
+control_msgs/QueryTrajectoryState
+control_toolbox/SetPidGains
+controller_manager_msgs/ListControllerTypes
+controller_manager_msgs/ListControllers
+controller_manager_msgs/LoadController
+controller_manager_msgs/ReloadControllerLibraries
+controller_manager_msgs/SwitchController
+controller_manager_msgs/UnloadController
+create_node/SetDigitalOutputs
+create_node/SetTurtlebotMode
+diagnostic_msgs/AddDiagnostics
+diagnostic_msgs/SelfTest
+dynamic_reconfigure/Reconfigure
+franka_control/SetCartesianImpedance
+franka_control/SetEEFrame
+franka_control/SetForceTorqueCollisionBehavior
+franka_control/SetFullCollisionBehavior
+franka_control/SetJointImpedance
+franka_control/SetKFrame
+franka_control/SetLoad
+gateway_msgs/Advertise
+gateway_msgs/AdvertiseAll
+gateway_msgs/ConnectHub
+gateway_msgs/Remote
+gateway_msgs/RemoteAll
+gateway_msgs/RemoteGatewayInfo
+gateway_msgs/SetWatcherPeriod
+gazebo_msgs/ApplyBodyWrench
+gazebo_msgs/ApplyJointEffort
+gazebo_msgs/BodyRequest
+gazebo_msgs/DeleteLight
+gazebo_msgs/DeleteModel
+gazebo_msgs/GetJointProperties
+gazebo_msgs/GetLightProperties
+gazebo_msgs/GetLinkProperties
+gazebo_msgs/GetLinkState
+gazebo_msgs/GetModelProperties
+gazebo_msgs/GetModelState
+gazebo_msgs/GetPhysicsProperties
+gazebo_msgs/GetWorldProperties
+gazebo_msgs/JointRequest
+gazebo_msgs/SetJointProperties
+gazebo_msgs/SetJointTrajectory
+gazebo_msgs/SetLightProperties
+gazebo_msgs/SetLinkProperties
+gazebo_msgs/SetLinkState
+gazebo_msgs/SetModelConfiguration
+gazebo_msgs/SetModelState
+gazebo_msgs/SetPhysicsProperties
+gazebo_msgs/SpawnModel
+harvest_try1/CarMove
+harvest_try1/fruit_pos
+industrial_msgs/CmdJointTrajectory
+industrial_msgs/GetRobotInfo
+industrial_msgs/SetDrivePower
+industrial_msgs/SetRemoteLoggerLevel
+industrial_msgs/StartMotion
+industrial_msgs/StopMotion
+laser_assembler/AssembleScans
+laser_assembler/AssembleScans2
+map_msgs/GetMapROI
+map_msgs/GetPointMap
+map_msgs/GetPointMapROI
+map_msgs/ProjectedMapsInfo
+map_msgs/SaveMap
+map_msgs/SetMapProjections
+moveit_msgs/ApplyPlanningScene
+moveit_msgs/CheckIfRobotStateExistsInWarehouse
+moveit_msgs/DeleteRobotStateFromWarehouse
+moveit_msgs/ExecuteKnownTrajectory
+moveit_msgs/GetCartesianPath
+moveit_msgs/GetMotionPlan
+moveit_msgs/GetPlannerParams
+moveit_msgs/GetPlanningScene
+moveit_msgs/GetPositionFK
+moveit_msgs/GetPositionIK
+moveit_msgs/GetRobotStateFromWarehouse
+moveit_msgs/GetStateValidity
+moveit_msgs/GraspPlanning
+moveit_msgs/ListRobotStatesInWarehouse
+moveit_msgs/LoadMap
+moveit_msgs/QueryPlannerInterfaces
+moveit_msgs/RenameRobotStateInWarehouse
+moveit_msgs/SaveMap
+moveit_msgs/SaveRobotStateToWarehouse
+moveit_msgs/SetPlannerParams
+nav_msgs/GetMap
+nav_msgs/GetPlan
+nav_msgs/SetMap
+navfn/MakeNavPlan
+navfn/SetCostmap
+nodelet/NodeletList
+nodelet/NodeletLoad
+nodelet/NodeletUnload
+object_recognition_msgs/GetObjectInformation
+octomap_msgs/BoundingBoxQuery
+octomap_msgs/GetOctomap
+openni2_camera/GetSerial
+polled_camera/GetPolledImage
+pr2_controllers_msgs/QueryCalibrationState
+pr2_controllers_msgs/QueryTrajectoryState
+pr2_mechanism_msgs/ListControllerTypes
+pr2_mechanism_msgs/ListControllers
+pr2_mechanism_msgs/LoadController
+pr2_mechanism_msgs/ReloadControllerLibraries
+pr2_mechanism_msgs/SwitchController
+pr2_mechanism_msgs/UnloadController
+pr2_msgs/SetLaserTrajCmd
+pr2_msgs/SetPeriodicCmd
+pr2_power_board/PowerBoardCommand
+pr2_power_board/PowerBoardCommand2
+py_trees_msgs/CloseBlackboardWatcher
+py_trees_msgs/GetBlackboardVariables
+py_trees_msgs/OpenBlackboardWatcher
+realsense_camera/CameraConfiguration
+realsense_camera/ForcePower
+realsense_camera/GetIMUInfo
+realsense_camera/IsPowered
+realsense_camera/SetPower
+robot_pose_ekf/GetStatus
+rocon_app_manager_msgs/GetRappList
+rocon_app_manager_msgs/Init
+rocon_app_manager_msgs/Invite
+rocon_app_manager_msgs/StartRapp
+rocon_app_manager_msgs/StopRapp
+rocon_interaction_msgs/GetInteraction
+rocon_interaction_msgs/GetInteractions
+rocon_interaction_msgs/GetPairings
+rocon_interaction_msgs/RequestInteraction
+rocon_interaction_msgs/SetInteractions
+rocon_interaction_msgs/StartPairing
+rocon_interaction_msgs/StopPairing
+rocon_std_msgs/EmptyString
+roscpp/Empty
+roscpp/GetLoggers
+roscpp/SetLoggerLevel
+roscpp_tutorials/TwoInts
+rospy_tutorials/AddTwoInts
+rospy_tutorials/BadTwoInts
+rosserial_arduino/Test
+rosserial_msgs/RequestMessageInfo
+rosserial_msgs/RequestParam
+rosserial_msgs/RequestServiceInfo
+sensor_msgs/SetCameraInfo
+std_srvs/Empty
+std_srvs/SetBool
+std_srvs/Trigger
+stdr_msgs/AddCO2Source
+stdr_msgs/AddRfidTag
+stdr_msgs/AddSoundSource
+stdr_msgs/AddThermalSource
+stdr_msgs/DeleteCO2Source
+stdr_msgs/DeleteRfidTag
+stdr_msgs/DeleteSoundSource
+stdr_msgs/DeleteThermalSource
+stdr_msgs/LoadExternalMap
+stdr_msgs/LoadMap
+stdr_msgs/MoveRobot
+stdr_msgs/RegisterGui
+tf/FrameGraph
+tf2_msgs/FrameGraph
+topic_tools/DemuxAdd
+topic_tools/DemuxDelete
+topic_tools/DemuxList
+topic_tools/DemuxSelect
+topic_tools/MuxAdd
+topic_tools/MuxDelete
+topic_tools/MuxList
+topic_tools/MuxSelect
+turtlebot_msgs/SetFollowState
+turtlebot_msgs/TakePanorama
+turtlesim/Kill
+turtlesim/SetPen
+turtlesim/Spawn
+turtlesim/TeleportAbsolute
+turtlesim/TeleportRelative
+world_canvas_msgs/DeleteAnnotations
+world_canvas_msgs/DeleteMap
+world_canvas_msgs/EditAnnotationsData
+world_canvas_msgs/GetAnnotations
+world_canvas_msgs/GetAnnotationsData
+world_canvas_msgs/ListMaps
+world_canvas_msgs/ListWorlds
+world_canvas_msgs/PubAnnotationsData
+world_canvas_msgs/PublishMap
+world_canvas_msgs/RenameMap
+world_canvas_msgs/ResetDatabase
+world_canvas_msgs/SaveAnnotationsData
+world_canvas_msgs/SaveMap
+world_canvas_msgs/SetKeyword
+world_canvas_msgs/SetRelationship
+world_canvas_msgs/YAMLExport
+world_canvas_msgs/YAMLImport
+yocs_msgs/WaypointListService
+zeroconf_msgs/AddListener
+zeroconf_msgs/AddService
+zeroconf_msgs/ListDiscoveredServices
+zeroconf_msgs/ListPublishedServices
+zeroconf_msgs/RemoveListener
+zeroconf_msgs/RemoveService
+[NODE=/gazebo]$rosnode info /gazebo =====>
+--------------------------------------------------------------------------------
+Node [/gazebo]
+Publications: 
+ * /clock [rosgraph_msgs/Clock]
+ * /gazebo/link_states [gazebo_msgs/LinkStates]
+ * /gazebo/model_states [gazebo_msgs/ModelStates]
+ * /gazebo/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /gazebo/parameter_updates [dynamic_reconfigure/Config]
+ * /harvestbot/camera1/camera_info [sensor_msgs/CameraInfo]
+ * /harvestbot/camera1/image_raw [sensor_msgs/Image]
+ * /harvestbot/camera1/image_raw/compressed [sensor_msgs/CompressedImage]
+ * /harvestbot/camera1/image_raw/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /harvestbot/camera1/image_raw/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /harvestbot/camera1/image_raw/compressedDepth [sensor_msgs/CompressedImage]
+ * /harvestbot/camera1/image_raw/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /harvestbot/camera1/image_raw/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /harvestbot/camera1/image_raw/theora [theora_image_transport/Packet]
+ * /harvestbot/camera1/image_raw/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /harvestbot/camera1/image_raw/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /harvestbot/camera1/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /harvestbot/camera1/parameter_updates [dynamic_reconfigure/Config]
+ * /harvestbot/gripper_rotate_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /harvestbot/gripper_rotate_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /harvestbot/gripper_rotate_controller/state [control_msgs/JointControllerState]
+ * /harvestbot/joint_states [sensor_msgs/JointState]
+ * /harvestbot/knife_position_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /harvestbot/knife_position_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /harvestbot/knife_position_controller/state [control_msgs/JointControllerState]
+ * /harvestbot/laser/scan [sensor_msgs/LaserScan]
+ * /harvestbot/slide_x_position_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /harvestbot/slide_x_position_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /harvestbot/slide_x_position_controller/state [control_msgs/JointControllerState]
+ * /harvestbot/slide_y_position_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /harvestbot/slide_y_position_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /harvestbot/slide_y_position_controller/state [control_msgs/JointControllerState]
+ * /harvestbot/slide_z_position_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /harvestbot/slide_z_position_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /harvestbot/slide_z_position_controller/state [control_msgs/JointControllerState]
+ * /harvestbot/wheel_left_position_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /harvestbot/wheel_left_position_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /harvestbot/wheel_left_position_controller/state [control_msgs/JointControllerState]
+ * /harvestbot/wheel_right_position_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /harvestbot/wheel_right_position_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /harvestbot/wheel_right_position_controller/state [control_msgs/JointControllerState]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+ * /gazebo/set_link_state [unknown type]
+ * /gazebo/set_model_state [unknown type]
+ * /harvestbot/gripper_rotate_controller/command [unknown type]
+ * /harvestbot/knife_position_controller/command [unknown type]
+ * /harvestbot/slide_x_position_controller/command [std_msgs/Float64]
+ * /harvestbot/slide_y_position_controller/command [unknown type]
+ * /harvestbot/slide_z_position_controller/command [unknown type]
+ * /harvestbot/wheel_left_position_controller/command [unknown type]
+ * /harvestbot/wheel_right_position_controller/command [unknown type]
+
+Services: 
+ * /gazebo/apply_body_wrench
+ * /gazebo/apply_joint_effort
+ * /gazebo/clear_body_wrenches
+ * /gazebo/clear_joint_forces
+ * /gazebo/delete_light
+ * /gazebo/delete_model
+ * /gazebo/get_joint_properties
+ * /gazebo/get_light_properties
+ * /gazebo/get_link_properties
+ * /gazebo/get_link_state
+ * /gazebo/get_loggers
+ * /gazebo/get_model_properties
+ * /gazebo/get_model_state
+ * /gazebo/get_physics_properties
+ * /gazebo/get_world_properties
+ * /gazebo/pause_physics
+ * /gazebo/reset_simulation
+ * /gazebo/reset_world
+ * /gazebo/set_joint_properties
+ * /gazebo/set_light_properties
+ * /gazebo/set_link_properties
+ * /gazebo/set_link_state
+ * /gazebo/set_logger_level
+ * /gazebo/set_model_configuration
+ * /gazebo/set_model_state
+ * /gazebo/set_parameters
+ * /gazebo/set_physics_properties
+ * /gazebo/spawn_sdf_model
+ * /gazebo/spawn_urdf_model
+ * /gazebo/unpause_physics
+ * /harvestbot/camera1/image_raw/compressed/set_parameters
+ * /harvestbot/camera1/image_raw/compressedDepth/set_parameters
+ * /harvestbot/camera1/image_raw/theora/set_parameters
+ * /harvestbot/camera1/set_camera_info
+ * /harvestbot/camera1/set_parameters
+ * /harvestbot/controller_manager/list_controller_types
+ * /harvestbot/controller_manager/list_controllers
+ * /harvestbot/controller_manager/load_controller
+ * /harvestbot/controller_manager/reload_controller_libraries
+ * /harvestbot/controller_manager/switch_controller
+ * /harvestbot/controller_manager/unload_controller
+ * /harvestbot/gripper_rotate_controller/pid/set_parameters
+ * /harvestbot/knife_position_controller/pid/set_parameters
+ * /harvestbot/slide_x_position_controller/pid/set_parameters
+ * /harvestbot/slide_y_position_controller/pid/set_parameters
+ * /harvestbot/slide_z_position_controller/pid/set_parameters
+ * /harvestbot/wheel_left_position_controller/pid/set_parameters
+ * /harvestbot/wheel_right_position_controller/pid/set_parameters
+
+
+contacting node http://localhost:34649/ ...
+Pid: 5639
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /clock
+    * to: /harvestbot/controller_spawner
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /robot_state_publisher
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo_gui
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /harvestbot_rqt
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /harvestbot/laser/scan
+    * to: /rviz
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /harvestbot/camera1/image_raw
+    * to: /rviz
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /harvestbot/camera1/camera_info
+    * to: /rviz
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /harvestbot/joint_states
+    * to: /robot_state_publisher
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /harvestbot/slide_x_position_controller/state
+    * to: /harvestbot_rqt
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:34649/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /harvestbot/slide_x_position_controller/command
+    * to: /harvestbot_rqt (http://localhost:38637/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/gazebo_gui]$rosnode info /gazebo_gui =====>
+--------------------------------------------------------------------------------
+Node [/gazebo_gui]
+Publications: 
+ * /gazebo_gui/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /gazebo_gui/parameter_updates [dynamic_reconfigure/Config]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /gazebo_gui/get_loggers
+ * /gazebo_gui/set_logger_level
+ * /gazebo_gui/set_parameters
+
+
+contacting node http://localhost:38555/ ...
+Pid: 5654
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:34649/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/harvestbot/controller_spawner]$rosnode info /harvestbot/controller_spawner =====>
+--------------------------------------------------------------------------------
+Node [/harvestbot/controller_spawner]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /harvestbot/controller_spawner/get_loggers
+ * /harvestbot/controller_spawner/set_logger_level
+
+
+contacting node http://localhost:33727/ ...
+Pid: 5548
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:34649/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/harvestbot_rqt]$rosnode info /harvestbot_rqt =====>
+--------------------------------------------------------------------------------
+Node [/harvestbot_rqt]
+Publications: 
+ * /harvestbot/slide_x_position_controller/command [std_msgs/Float64]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+ * /harvestbot/slide_x_position_controller/command [std_msgs/Float64]
+ * /harvestbot/slide_x_position_controller/state [control_msgs/JointControllerState]
+
+Services: 
+ * /harvestbot_rqt/get_loggers
+ * /harvestbot_rqt/set_logger_level
+
+
+contacting node http://localhost:38637/ ...
+Pid: 6541
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /harvestbot/slide_x_position_controller/command
+    * to: /harvestbot_rqt
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /harvestbot/slide_x_position_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /harvestbot/slide_x_position_controller/state
+    * to: /gazebo (http://localhost:34649/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:34649/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /harvestbot/slide_x_position_controller/command
+    * to: /harvestbot_rqt (http://localhost:38637/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/joint_state_publisher]$rosnode info /joint_state_publisher =====>
+--------------------------------------------------------------------------------
+Node [/joint_state_publisher]
+Publications: 
+ * /joint_states [sensor_msgs/JointState]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: None
+
+Services: 
+ * /joint_state_publisher/get_loggers
+ * /joint_state_publisher/set_logger_level
+
+
+contacting node http://localhost:41287/ ...
+Pid: 5349
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+
+[NODE=/robot_state_publisher]$rosnode info /robot_state_publisher =====>
+--------------------------------------------------------------------------------
+Node [/robot_state_publisher]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [tf2_msgs/TFMessage]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+ * /harvestbot/joint_states [sensor_msgs/JointState]
+
+Services: 
+ * /robot_state_publisher/get_loggers
+ * /robot_state_publisher/set_logger_level
+
+
+contacting node http://localhost:46795/ ...
+Pid: 5549
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rviz
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /rviz
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:34649/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /harvestbot/joint_states
+    * to: /gazebo (http://localhost:34649/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/rosout]$rosnode info /rosout =====>
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://localhost:45629/ ...
+Pid: 5339
+Connections:
+ * topic: /rosout
+    * to: /rviz (http://localhost:42605/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /joint_state_publisher (http://localhost:41287/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /robot_state_publisher (http://localhost:46795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /harvestbot/controller_spawner (http://localhost:33727/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /gazebo (http://localhost:34649/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /gazebo_gui (http://localhost:38555/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /harvestbot_rqt (http://localhost:38637/)
+    * direction: inbound
+    * transport: TCPROS
+
+[NODE=/rviz]$rosnode info /rviz =====>
+--------------------------------------------------------------------------------
+Node [/rviz]
+Publications: 
+ * /clicked_point [geometry_msgs/PointStamped]
+ * /initialpose [geometry_msgs/PoseWithCovarianceStamped]
+ * /move_base_simple/goal [geometry_msgs/PoseStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /harvestbot/camera1/camera_info [sensor_msgs/CameraInfo]
+ * /harvestbot/camera1/image_raw [sensor_msgs/Image]
+ * /harvestbot/laser/scan [sensor_msgs/LaserScan]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [tf2_msgs/TFMessage]
+
+Services: 
+ * /rviz/get_loggers
+ * /rviz/reload_shaders
+ * /rviz/set_logger_level
+
+
+contacting node http://localhost:42605/ ...
+Pid: 5358
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /robot_state_publisher (http://localhost:46795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /robot_state_publisher (http://localhost:46795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /harvestbot/camera1/image_raw
+    * to: /gazebo (http://localhost:34649/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /harvestbot/camera1/camera_info
+    * to: /gazebo (http://localhost:34649/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /harvestbot/laser/scan
+    * to: /gazebo (http://localhost:34649/)
+    * direction: inbound
+    * transport: TCPROS
+
+[TOPIC_LIST]$rostopic list =====>
+/clicked_point
+/clock
+/gazebo/link_states
+/gazebo/model_states
+/gazebo/parameter_descriptions
+/gazebo/parameter_updates
+/gazebo/set_link_state
+/gazebo/set_model_state
+/gazebo_gui/parameter_descriptions
+/gazebo_gui/parameter_updates
+/harvestbot/camera1/camera_info
+/harvestbot/camera1/image_raw
+/harvestbot/camera1/image_raw/compressed
+/harvestbot/camera1/image_raw/compressed/parameter_descriptions
+/harvestbot/camera1/image_raw/compressed/parameter_updates
+/harvestbot/camera1/image_raw/compressedDepth
+/harvestbot/camera1/image_raw/compressedDepth/parameter_descriptions
+/harvestbot/camera1/image_raw/compressedDepth/parameter_updates
+/harvestbot/camera1/image_raw/theora
+/harvestbot/camera1/image_raw/theora/parameter_descriptions
+/harvestbot/camera1/image_raw/theora/parameter_updates
+/harvestbot/camera1/parameter_descriptions
+/harvestbot/camera1/parameter_updates
+/harvestbot/gripper_rotate_controller/command
+/harvestbot/gripper_rotate_controller/pid/parameter_descriptions
+/harvestbot/gripper_rotate_controller/pid/parameter_updates
+/harvestbot/gripper_rotate_controller/state
+/harvestbot/joint_states
+/harvestbot/knife_position_controller/command
+/harvestbot/knife_position_controller/pid/parameter_descriptions
+/harvestbot/knife_position_controller/pid/parameter_updates
+/harvestbot/knife_position_controller/state
+/harvestbot/laser/scan
+/harvestbot/slide_x_position_controller/command
+/harvestbot/slide_x_position_controller/pid/parameter_descriptions
+/harvestbot/slide_x_position_controller/pid/parameter_updates
+/harvestbot/slide_x_position_controller/state
+/harvestbot/slide_y_position_controller/command
+/harvestbot/slide_y_position_controller/pid/parameter_descriptions
+/harvestbot/slide_y_position_controller/pid/parameter_updates
+/harvestbot/slide_y_position_controller/state
+/harvestbot/slide_z_position_controller/command
+/harvestbot/slide_z_position_controller/pid/parameter_descriptions
+/harvestbot/slide_z_position_controller/pid/parameter_updates
+/harvestbot/slide_z_position_controller/state
+/harvestbot/wheel_left_position_controller/command
+/harvestbot/wheel_left_position_controller/pid/parameter_descriptions
+/harvestbot/wheel_left_position_controller/pid/parameter_updates
+/harvestbot/wheel_left_position_controller/state
+/harvestbot/wheel_right_position_controller/command
+/harvestbot/wheel_right_position_controller/pid/parameter_descriptions
+/harvestbot/wheel_right_position_controller/pid/parameter_updates
+/harvestbot/wheel_right_position_controller/state
+/initialpose
+/joint_states
+/move_base_simple/goal
+/rosout
+/rosout_agg
+/tf
+/tf_static
+[TOPIC=/clicked_point]$rostopic info /clicked_point =====>
+Type: geometry_msgs/PointStamped
+
+Publishers: 
+ * /rviz (http://localhost:42605/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/clicked_point]$timeout 1 rostopic hz /clicked_point =====>
+subscribed to [/clicked_point]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PointStamped]$rosmsg show geometry_msgs/PointStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Point point
+  float64 x
+  float64 y
+  float64 z
+
+[TOPIC=/clock]$rostopic info /clock =====>
+Type: rosgraph_msgs/Clock
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: 
+ * /robot_state_publisher (http://localhost:46795/)
+ * /harvestbot/controller_spawner (http://localhost:33727/)
+ * /gazebo (http://localhost:34649/)
+ * /gazebo_gui (http://localhost:38555/)
+ * /harvestbot_rqt (http://localhost:38637/)
+
+
+[TOPIC_HZ=/clock]$timeout 1 rostopic hz /clock =====>
+subscribed to [/clock]
+average rate: 1000.000
+	min: 0.001s max: 0.001s std dev: 0.00000s window: 704
+[TOPIC_TYPE=rosgraph_msgs/Clock]$rosmsg show rosgraph_msgs/Clock =====>
+time clock
+
+[TOPIC=/gazebo/link_states]$rostopic info /gazebo/link_states =====>
+Type: gazebo_msgs/LinkStates
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/gazebo/link_states]$timeout 1 rostopic hz /gazebo/link_states =====>
+subscribed to [/gazebo/link_states]
+average rate: 1000.000
+	min: 0.000s max: 0.044s std dev: 0.00634s window: 670
+[TOPIC_TYPE=gazebo_msgs/LinkStates]$rosmsg show gazebo_msgs/LinkStates =====>
+string[] name
+geometry_msgs/Pose[] pose
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+geometry_msgs/Twist[] twist
+  geometry_msgs/Vector3 linear
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Vector3 angular
+    float64 x
+    float64 y
+    float64 z
+
+[TOPIC=/gazebo/model_states]$rostopic info /gazebo/model_states =====>
+Type: gazebo_msgs/ModelStates
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/gazebo/model_states]$timeout 1 rostopic hz /gazebo/model_states =====>
+subscribed to [/gazebo/model_states]
+average rate: 1000.000
+	min: 0.000s max: 0.002s std dev: 0.00026s window: 717
+[TOPIC_TYPE=gazebo_msgs/ModelStates]$rosmsg show gazebo_msgs/ModelStates =====>
+string[] name
+geometry_msgs/Pose[] pose
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+geometry_msgs/Twist[] twist
+  geometry_msgs/Vector3 linear
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Vector3 angular
+    float64 x
+    float64 y
+    float64 z
+
+[TOPIC=/gazebo/parameter_descriptions]$rostopic info /gazebo/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/gazebo/parameter_descriptions]$timeout 1 rostopic hz /gazebo/parameter_descriptions =====>
+subscribed to [/gazebo/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/gazebo/parameter_updates]$rostopic info /gazebo/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/gazebo/parameter_updates]$timeout 1 rostopic hz /gazebo/parameter_updates =====>
+subscribed to [/gazebo/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/gazebo/set_link_state]$rostopic info /gazebo/set_link_state =====>
+Type: gazebo_msgs/LinkState
+
+Publishers: None
+
+Subscribers: 
+ * /gazebo (http://localhost:34649/)
+
+
+[TOPIC_HZ=/gazebo/set_link_state]$timeout 1 rostopic hz /gazebo/set_link_state =====>
+subscribed to [/gazebo/set_link_state]
+no new messages
+[TOPIC_TYPE=gazebo_msgs/LinkState]$rosmsg show gazebo_msgs/LinkState =====>
+string link_name
+geometry_msgs/Pose pose
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+geometry_msgs/Twist twist
+  geometry_msgs/Vector3 linear
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Vector3 angular
+    float64 x
+    float64 y
+    float64 z
+string reference_frame
+
+[TOPIC=/gazebo/set_model_state]$rostopic info /gazebo/set_model_state =====>
+Type: gazebo_msgs/ModelState
+
+Publishers: None
+
+Subscribers: 
+ * /gazebo (http://localhost:34649/)
+
+
+[TOPIC_HZ=/gazebo/set_model_state]$timeout 1 rostopic hz /gazebo/set_model_state =====>
+subscribed to [/gazebo/set_model_state]
+no new messages
+[TOPIC_TYPE=gazebo_msgs/ModelState]$rosmsg show gazebo_msgs/ModelState =====>
+string model_name
+geometry_msgs/Pose pose
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+geometry_msgs/Twist twist
+  geometry_msgs/Vector3 linear
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Vector3 angular
+    float64 x
+    float64 y
+    float64 z
+string reference_frame
+
+[TOPIC=/gazebo_gui/parameter_descriptions]$rostopic info /gazebo_gui/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo_gui (http://localhost:38555/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/gazebo_gui/parameter_descriptions]$timeout 1 rostopic hz /gazebo_gui/parameter_descriptions =====>
+subscribed to [/gazebo_gui/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/gazebo_gui/parameter_updates]$rostopic info /gazebo_gui/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo_gui (http://localhost:38555/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/gazebo_gui/parameter_updates]$timeout 1 rostopic hz /gazebo_gui/parameter_updates =====>
+subscribed to [/gazebo_gui/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/harvestbot/camera1/camera_info]$rostopic info /harvestbot/camera1/camera_info =====>
+Type: sensor_msgs/CameraInfo
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: 
+ * /rviz (http://localhost:42605/)
+
+
+[TOPIC_HZ=/harvestbot/camera1/camera_info]$timeout 1 rostopic hz /harvestbot/camera1/camera_info =====>
+subscribed to [/harvestbot/camera1/camera_info]
+average rate: 30.111
+	min: 0.030s max: 0.037s std dev: 0.00217s window: 20
+[TOPIC_TYPE=sensor_msgs/CameraInfo]$rosmsg show sensor_msgs/CameraInfo =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string distortion_model
+float64[] D
+float64[9] K
+float64[9] R
+float64[12] P
+uint32 binning_x
+uint32 binning_y
+sensor_msgs/RegionOfInterest roi
+  uint32 x_offset
+  uint32 y_offset
+  uint32 height
+  uint32 width
+  bool do_rectify
+
+[TOPIC=/harvestbot/camera1/image_raw]$rostopic info /harvestbot/camera1/image_raw =====>
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: 
+ * /rviz (http://localhost:42605/)
+
+
+[TOPIC_HZ=/harvestbot/camera1/image_raw]$timeout 1 rostopic hz /harvestbot/camera1/image_raw =====>
+subscribed to [/harvestbot/camera1/image_raw]
+average rate: 31.157
+	min: 0.009s max: 0.035s std dev: 0.00524s window: 22
+[TOPIC_TYPE=sensor_msgs/Image]$rosmsg show sensor_msgs/Image =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+
+[TOPIC=/harvestbot/camera1/image_raw/compressed]$rostopic info /harvestbot/camera1/image_raw/compressed =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/camera1/image_raw/compressed]$timeout 1 rostopic hz /harvestbot/camera1/image_raw/compressed =====>
+subscribed to [/harvestbot/camera1/image_raw/compressed]
+average rate: 31.308
+	min: 0.012s max: 0.038s std dev: 0.00616s window: 18
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/harvestbot/camera1/image_raw/compressed/parameter_descriptions]$rostopic info /harvestbot/camera1/image_raw/compressed/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/camera1/image_raw/compressed/parameter_descriptions]$timeout 1 rostopic hz /harvestbot/camera1/image_raw/compressed/parameter_descriptions =====>
+subscribed to [/harvestbot/camera1/image_raw/compressed/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/harvestbot/camera1/image_raw/compressed/parameter_updates]$rostopic info /harvestbot/camera1/image_raw/compressed/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/camera1/image_raw/compressed/parameter_updates]$timeout 1 rostopic hz /harvestbot/camera1/image_raw/compressed/parameter_updates =====>
+subscribed to [/harvestbot/camera1/image_raw/compressed/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/harvestbot/camera1/image_raw/compressedDepth]$rostopic info /harvestbot/camera1/image_raw/compressedDepth =====>
+Type: sensor_msgs/CompressedImage
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/camera1/image_raw/compressedDepth]$timeout 1 rostopic hz /harvestbot/camera1/image_raw/compressedDepth =====>
+subscribed to [/harvestbot/camera1/image_raw/compressedDepth]
+no new messages
+[TOPIC_TYPE=sensor_msgs/CompressedImage]$rosmsg show sensor_msgs/CompressedImage =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string format
+uint8[] data
+
+[TOPIC=/harvestbot/camera1/image_raw/compressedDepth/parameter_descriptions]$rostopic info /harvestbot/camera1/image_raw/compressedDepth/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/camera1/image_raw/compressedDepth/parameter_descriptions]$timeout 1 rostopic hz /harvestbot/camera1/image_raw/compressedDepth/parameter_descriptions =====>
+subscribed to [/harvestbot/camera1/image_raw/compressedDepth/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/harvestbot/camera1/image_raw/compressedDepth/parameter_updates]$rostopic info /harvestbot/camera1/image_raw/compressedDepth/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/camera1/image_raw/compressedDepth/parameter_updates]$timeout 1 rostopic hz /harvestbot/camera1/image_raw/compressedDepth/parameter_updates =====>
+subscribed to [/harvestbot/camera1/image_raw/compressedDepth/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/harvestbot/camera1/image_raw/theora]$rostopic info /harvestbot/camera1/image_raw/theora =====>
+Type: theora_image_transport/Packet
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/camera1/image_raw/theora]$timeout 1 rostopic hz /harvestbot/camera1/image_raw/theora =====>
+subscribed to [/harvestbot/camera1/image_raw/theora]
+average rate: 31.770
+	min: 0.000s max: 0.061s std dev: 0.01256s window: 22
+[TOPIC_TYPE=theora_image_transport/Packet]$rosmsg show theora_image_transport/Packet =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint8[] data
+int32 b_o_s
+int32 e_o_s
+int64 granulepos
+int64 packetno
+
+[TOPIC=/harvestbot/camera1/image_raw/theora/parameter_descriptions]$rostopic info /harvestbot/camera1/image_raw/theora/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/camera1/image_raw/theora/parameter_descriptions]$timeout 1 rostopic hz /harvestbot/camera1/image_raw/theora/parameter_descriptions =====>
+subscribed to [/harvestbot/camera1/image_raw/theora/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/harvestbot/camera1/image_raw/theora/parameter_updates]$rostopic info /harvestbot/camera1/image_raw/theora/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/camera1/image_raw/theora/parameter_updates]$timeout 1 rostopic hz /harvestbot/camera1/image_raw/theora/parameter_updates =====>
+subscribed to [/harvestbot/camera1/image_raw/theora/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/harvestbot/camera1/parameter_descriptions]$rostopic info /harvestbot/camera1/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/camera1/parameter_descriptions]$timeout 1 rostopic hz /harvestbot/camera1/parameter_descriptions =====>
+subscribed to [/harvestbot/camera1/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/harvestbot/camera1/parameter_updates]$rostopic info /harvestbot/camera1/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/camera1/parameter_updates]$timeout 1 rostopic hz /harvestbot/camera1/parameter_updates =====>
+subscribed to [/harvestbot/camera1/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/harvestbot/gripper_rotate_controller/command]$rostopic info /harvestbot/gripper_rotate_controller/command =====>
+Type: std_msgs/Float64
+
+Publishers: None
+
+Subscribers: 
+ * /gazebo (http://localhost:34649/)
+
+
+[TOPIC_HZ=/harvestbot/gripper_rotate_controller/command]$timeout 1 rostopic hz /harvestbot/gripper_rotate_controller/command =====>
+subscribed to [/harvestbot/gripper_rotate_controller/command]
+no new messages
+[TOPIC_TYPE=std_msgs/Float64]$rosmsg show std_msgs/Float64 =====>
+float64 data
+
+[TOPIC=/harvestbot/gripper_rotate_controller/pid/parameter_descriptions]$rostopic info /harvestbot/gripper_rotate_controller/pid/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/gripper_rotate_controller/pid/parameter_descriptions]$timeout 1 rostopic hz /harvestbot/gripper_rotate_controller/pid/parameter_descriptions =====>
+subscribed to [/harvestbot/gripper_rotate_controller/pid/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/harvestbot/gripper_rotate_controller/pid/parameter_updates]$rostopic info /harvestbot/gripper_rotate_controller/pid/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/gripper_rotate_controller/pid/parameter_updates]$timeout 1 rostopic hz /harvestbot/gripper_rotate_controller/pid/parameter_updates =====>
+subscribed to [/harvestbot/gripper_rotate_controller/pid/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/harvestbot/gripper_rotate_controller/state]$rostopic info /harvestbot/gripper_rotate_controller/state =====>
+Type: control_msgs/JointControllerState
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/gripper_rotate_controller/state]$timeout 1 rostopic hz /harvestbot/gripper_rotate_controller/state =====>
+subscribed to [/harvestbot/gripper_rotate_controller/state]
+average rate: 100.000
+	min: 0.010s max: 0.010s std dev: 0.00000s window: 69
+[TOPIC_TYPE=control_msgs/JointControllerState]$rosmsg show control_msgs/JointControllerState =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float64 set_point
+float64 process_value
+float64 process_value_dot
+float64 error
+float64 time_step
+float64 command
+float64 p
+float64 i
+float64 d
+float64 i_clamp
+bool antiwindup
+
+[TOPIC=/harvestbot/joint_states]$rostopic info /harvestbot/joint_states =====>
+Type: sensor_msgs/JointState
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: 
+ * /robot_state_publisher (http://localhost:46795/)
+
+
+[TOPIC_HZ=/harvestbot/joint_states]$timeout 1 rostopic hz /harvestbot/joint_states =====>
+subscribed to [/harvestbot/joint_states]
+average rate: 50.000
+	min: 0.020s max: 0.020s std dev: 0.00000s window: 36
+[TOPIC_TYPE=sensor_msgs/JointState]$rosmsg show sensor_msgs/JointState =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string[] name
+float64[] position
+float64[] velocity
+float64[] effort
+
+[TOPIC=/harvestbot/knife_position_controller/command]$rostopic info /harvestbot/knife_position_controller/command =====>
+Type: std_msgs/Float64
+
+Publishers: None
+
+Subscribers: 
+ * /gazebo (http://localhost:34649/)
+
+
+[TOPIC_HZ=/harvestbot/knife_position_controller/command]$timeout 1 rostopic hz /harvestbot/knife_position_controller/command =====>
+subscribed to [/harvestbot/knife_position_controller/command]
+no new messages
+[TOPIC_TYPE=std_msgs/Float64]$rosmsg show std_msgs/Float64 =====>
+float64 data
+
+[TOPIC=/harvestbot/knife_position_controller/pid/parameter_descriptions]$rostopic info /harvestbot/knife_position_controller/pid/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/knife_position_controller/pid/parameter_descriptions]$timeout 1 rostopic hz /harvestbot/knife_position_controller/pid/parameter_descriptions =====>
+subscribed to [/harvestbot/knife_position_controller/pid/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/harvestbot/knife_position_controller/pid/parameter_updates]$rostopic info /harvestbot/knife_position_controller/pid/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/knife_position_controller/pid/parameter_updates]$timeout 1 rostopic hz /harvestbot/knife_position_controller/pid/parameter_updates =====>
+subscribed to [/harvestbot/knife_position_controller/pid/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/harvestbot/knife_position_controller/state]$rostopic info /harvestbot/knife_position_controller/state =====>
+Type: control_msgs/JointControllerState
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/knife_position_controller/state]$timeout 1 rostopic hz /harvestbot/knife_position_controller/state =====>
+subscribed to [/harvestbot/knife_position_controller/state]
+average rate: 100.000
+	min: 0.009s max: 0.011s std dev: 0.00017s window: 68
+[TOPIC_TYPE=control_msgs/JointControllerState]$rosmsg show control_msgs/JointControllerState =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float64 set_point
+float64 process_value
+float64 process_value_dot
+float64 error
+float64 time_step
+float64 command
+float64 p
+float64 i
+float64 d
+float64 i_clamp
+bool antiwindup
+
+[TOPIC=/harvestbot/laser/scan]$rostopic info /harvestbot/laser/scan =====>
+Type: sensor_msgs/LaserScan
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: 
+ * /rviz (http://localhost:42605/)
+
+
+[TOPIC_HZ=/harvestbot/laser/scan]$timeout 1 rostopic hz /harvestbot/laser/scan =====>
+subscribed to [/harvestbot/laser/scan]
+average rate: 39.809
+	min: 0.000s max: 0.044s std dev: 0.01583s window: 26
+[TOPIC_TYPE=sensor_msgs/LaserScan]$rosmsg show sensor_msgs/LaserScan =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float32 angle_min
+float32 angle_max
+float32 angle_increment
+float32 time_increment
+float32 scan_time
+float32 range_min
+float32 range_max
+float32[] ranges
+float32[] intensities
+
+[TOPIC=/harvestbot/slide_x_position_controller/command]$rostopic info /harvestbot/slide_x_position_controller/command =====>
+Type: std_msgs/Float64
+
+Publishers: 
+ * /harvestbot_rqt (http://localhost:38637/)
+
+Subscribers: 
+ * /gazebo (http://localhost:34649/)
+ * /harvestbot_rqt (http://localhost:38637/)
+
+
+[TOPIC_HZ=/harvestbot/slide_x_position_controller/command]$timeout 1 rostopic hz /harvestbot/slide_x_position_controller/command =====>
+subscribed to [/harvestbot/slide_x_position_controller/command]
+average rate: 47.934
+	min: 0.003s max: 0.036s std dev: 0.01105s window: 30
+[TOPIC_TYPE=std_msgs/Float64]$rosmsg show std_msgs/Float64 =====>
+float64 data
+
+[TOPIC=/harvestbot/slide_x_position_controller/pid/parameter_descriptions]$rostopic info /harvestbot/slide_x_position_controller/pid/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/slide_x_position_controller/pid/parameter_descriptions]$timeout 1 rostopic hz /harvestbot/slide_x_position_controller/pid/parameter_descriptions =====>
+subscribed to [/harvestbot/slide_x_position_controller/pid/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/harvestbot/slide_x_position_controller/pid/parameter_updates]$rostopic info /harvestbot/slide_x_position_controller/pid/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/slide_x_position_controller/pid/parameter_updates]$timeout 1 rostopic hz /harvestbot/slide_x_position_controller/pid/parameter_updates =====>
+subscribed to [/harvestbot/slide_x_position_controller/pid/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/harvestbot/slide_x_position_controller/state]$rostopic info /harvestbot/slide_x_position_controller/state =====>
+Type: control_msgs/JointControllerState
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: 
+ * /harvestbot_rqt (http://localhost:38637/)
+
+
+[TOPIC_HZ=/harvestbot/slide_x_position_controller/state]$timeout 1 rostopic hz /harvestbot/slide_x_position_controller/state =====>
+subscribed to [/harvestbot/slide_x_position_controller/state]
+average rate: 100.000
+	min: 0.010s max: 0.010s std dev: 0.00000s window: 70
+[TOPIC_TYPE=control_msgs/JointControllerState]$rosmsg show control_msgs/JointControllerState =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float64 set_point
+float64 process_value
+float64 process_value_dot
+float64 error
+float64 time_step
+float64 command
+float64 p
+float64 i
+float64 d
+float64 i_clamp
+bool antiwindup
+
+[TOPIC=/harvestbot/slide_y_position_controller/command]$rostopic info /harvestbot/slide_y_position_controller/command =====>
+Type: std_msgs/Float64
+
+Publishers: None
+
+Subscribers: 
+ * /gazebo (http://localhost:34649/)
+
+
+[TOPIC_HZ=/harvestbot/slide_y_position_controller/command]$timeout 1 rostopic hz /harvestbot/slide_y_position_controller/command =====>
+subscribed to [/harvestbot/slide_y_position_controller/command]
+no new messages
+[TOPIC_TYPE=std_msgs/Float64]$rosmsg show std_msgs/Float64 =====>
+float64 data
+
+[TOPIC=/harvestbot/slide_y_position_controller/pid/parameter_descriptions]$rostopic info /harvestbot/slide_y_position_controller/pid/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/slide_y_position_controller/pid/parameter_descriptions]$timeout 1 rostopic hz /harvestbot/slide_y_position_controller/pid/parameter_descriptions =====>
+subscribed to [/harvestbot/slide_y_position_controller/pid/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/harvestbot/slide_y_position_controller/pid/parameter_updates]$rostopic info /harvestbot/slide_y_position_controller/pid/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/slide_y_position_controller/pid/parameter_updates]$timeout 1 rostopic hz /harvestbot/slide_y_position_controller/pid/parameter_updates =====>
+subscribed to [/harvestbot/slide_y_position_controller/pid/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/harvestbot/slide_y_position_controller/state]$rostopic info /harvestbot/slide_y_position_controller/state =====>
+Type: control_msgs/JointControllerState
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/slide_y_position_controller/state]$timeout 1 rostopic hz /harvestbot/slide_y_position_controller/state =====>
+subscribed to [/harvestbot/slide_y_position_controller/state]
+average rate: 100.000
+	min: 0.010s max: 0.010s std dev: 0.00000s window: 70
+[TOPIC_TYPE=control_msgs/JointControllerState]$rosmsg show control_msgs/JointControllerState =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float64 set_point
+float64 process_value
+float64 process_value_dot
+float64 error
+float64 time_step
+float64 command
+float64 p
+float64 i
+float64 d
+float64 i_clamp
+bool antiwindup
+
+[TOPIC=/harvestbot/slide_z_position_controller/command]$rostopic info /harvestbot/slide_z_position_controller/command =====>
+Type: std_msgs/Float64
+
+Publishers: None
+
+Subscribers: 
+ * /gazebo (http://localhost:34649/)
+
+
+[TOPIC_HZ=/harvestbot/slide_z_position_controller/command]$timeout 1 rostopic hz /harvestbot/slide_z_position_controller/command =====>
+subscribed to [/harvestbot/slide_z_position_controller/command]
+no new messages
+[TOPIC_TYPE=std_msgs/Float64]$rosmsg show std_msgs/Float64 =====>
+float64 data
+
+[TOPIC=/harvestbot/slide_z_position_controller/pid/parameter_descriptions]$rostopic info /harvestbot/slide_z_position_controller/pid/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/slide_z_position_controller/pid/parameter_descriptions]$timeout 1 rostopic hz /harvestbot/slide_z_position_controller/pid/parameter_descriptions =====>
+subscribed to [/harvestbot/slide_z_position_controller/pid/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/harvestbot/slide_z_position_controller/pid/parameter_updates]$rostopic info /harvestbot/slide_z_position_controller/pid/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/slide_z_position_controller/pid/parameter_updates]$timeout 1 rostopic hz /harvestbot/slide_z_position_controller/pid/parameter_updates =====>
+subscribed to [/harvestbot/slide_z_position_controller/pid/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/harvestbot/slide_z_position_controller/state]$rostopic info /harvestbot/slide_z_position_controller/state =====>
+Type: control_msgs/JointControllerState
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/slide_z_position_controller/state]$timeout 1 rostopic hz /harvestbot/slide_z_position_controller/state =====>
+subscribed to [/harvestbot/slide_z_position_controller/state]
+average rate: 100.000
+	min: 0.010s max: 0.010s std dev: 0.00000s window: 70
+[TOPIC_TYPE=control_msgs/JointControllerState]$rosmsg show control_msgs/JointControllerState =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float64 set_point
+float64 process_value
+float64 process_value_dot
+float64 error
+float64 time_step
+float64 command
+float64 p
+float64 i
+float64 d
+float64 i_clamp
+bool antiwindup
+
+[TOPIC=/harvestbot/wheel_left_position_controller/command]$rostopic info /harvestbot/wheel_left_position_controller/command =====>
+Type: std_msgs/Float64
+
+Publishers: None
+
+Subscribers: 
+ * /gazebo (http://localhost:34649/)
+
+
+[TOPIC_HZ=/harvestbot/wheel_left_position_controller/command]$timeout 1 rostopic hz /harvestbot/wheel_left_position_controller/command =====>
+subscribed to [/harvestbot/wheel_left_position_controller/command]
+no new messages
+[TOPIC_TYPE=std_msgs/Float64]$rosmsg show std_msgs/Float64 =====>
+float64 data
+
+[TOPIC=/harvestbot/wheel_left_position_controller/pid/parameter_descriptions]$rostopic info /harvestbot/wheel_left_position_controller/pid/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/wheel_left_position_controller/pid/parameter_descriptions]$timeout 1 rostopic hz /harvestbot/wheel_left_position_controller/pid/parameter_descriptions =====>
+subscribed to [/harvestbot/wheel_left_position_controller/pid/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/harvestbot/wheel_left_position_controller/pid/parameter_updates]$rostopic info /harvestbot/wheel_left_position_controller/pid/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/wheel_left_position_controller/pid/parameter_updates]$timeout 1 rostopic hz /harvestbot/wheel_left_position_controller/pid/parameter_updates =====>
+subscribed to [/harvestbot/wheel_left_position_controller/pid/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/harvestbot/wheel_left_position_controller/state]$rostopic info /harvestbot/wheel_left_position_controller/state =====>
+Type: control_msgs/JointControllerState
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/wheel_left_position_controller/state]$timeout 1 rostopic hz /harvestbot/wheel_left_position_controller/state =====>
+subscribed to [/harvestbot/wheel_left_position_controller/state]
+average rate: 100.000
+	min: 0.010s max: 0.010s std dev: 0.00000s window: 70
+[TOPIC_TYPE=control_msgs/JointControllerState]$rosmsg show control_msgs/JointControllerState =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float64 set_point
+float64 process_value
+float64 process_value_dot
+float64 error
+float64 time_step
+float64 command
+float64 p
+float64 i
+float64 d
+float64 i_clamp
+bool antiwindup
+
+[TOPIC=/harvestbot/wheel_right_position_controller/command]$rostopic info /harvestbot/wheel_right_position_controller/command =====>
+Type: std_msgs/Float64
+
+Publishers: None
+
+Subscribers: 
+ * /gazebo (http://localhost:34649/)
+
+
+[TOPIC_HZ=/harvestbot/wheel_right_position_controller/command]$timeout 1 rostopic hz /harvestbot/wheel_right_position_controller/command =====>
+subscribed to [/harvestbot/wheel_right_position_controller/command]
+no new messages
+[TOPIC_TYPE=std_msgs/Float64]$rosmsg show std_msgs/Float64 =====>
+float64 data
+
+[TOPIC=/harvestbot/wheel_right_position_controller/pid/parameter_descriptions]$rostopic info /harvestbot/wheel_right_position_controller/pid/parameter_descriptions =====>
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/wheel_right_position_controller/pid/parameter_descriptions]$timeout 1 rostopic hz /harvestbot/wheel_right_position_controller/pid/parameter_descriptions =====>
+subscribed to [/harvestbot/wheel_right_position_controller/pid/parameter_descriptions]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/ConfigDescription]$rosmsg show dynamic_reconfigure/ConfigDescription =====>
+dynamic_reconfigure/Group[] groups
+  string name
+  string type
+  dynamic_reconfigure/ParamDescription[] parameters
+    string name
+    string type
+    uint32 level
+    string description
+    string edit_method
+  int32 parent
+  int32 id
+dynamic_reconfigure/Config max
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config min
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+dynamic_reconfigure/Config dflt
+  dynamic_reconfigure/BoolParameter[] bools
+    string name
+    bool value
+  dynamic_reconfigure/IntParameter[] ints
+    string name
+    int32 value
+  dynamic_reconfigure/StrParameter[] strs
+    string name
+    string value
+  dynamic_reconfigure/DoubleParameter[] doubles
+    string name
+    float64 value
+  dynamic_reconfigure/GroupState[] groups
+    string name
+    bool state
+    int32 id
+    int32 parent
+
+[TOPIC=/harvestbot/wheel_right_position_controller/pid/parameter_updates]$rostopic info /harvestbot/wheel_right_position_controller/pid/parameter_updates =====>
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/wheel_right_position_controller/pid/parameter_updates]$timeout 1 rostopic hz /harvestbot/wheel_right_position_controller/pid/parameter_updates =====>
+subscribed to [/harvestbot/wheel_right_position_controller/pid/parameter_updates]
+no new messages
+[TOPIC_TYPE=dynamic_reconfigure/Config]$rosmsg show dynamic_reconfigure/Config =====>
+dynamic_reconfigure/BoolParameter[] bools
+  string name
+  bool value
+dynamic_reconfigure/IntParameter[] ints
+  string name
+  int32 value
+dynamic_reconfigure/StrParameter[] strs
+  string name
+  string value
+dynamic_reconfigure/DoubleParameter[] doubles
+  string name
+  float64 value
+dynamic_reconfigure/GroupState[] groups
+  string name
+  bool state
+  int32 id
+  int32 parent
+
+[TOPIC=/harvestbot/wheel_right_position_controller/state]$rostopic info /harvestbot/wheel_right_position_controller/state =====>
+Type: control_msgs/JointControllerState
+
+Publishers: 
+ * /gazebo (http://localhost:34649/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/harvestbot/wheel_right_position_controller/state]$timeout 1 rostopic hz /harvestbot/wheel_right_position_controller/state =====>
+subscribed to [/harvestbot/wheel_right_position_controller/state]
+average rate: 100.000
+	min: 0.010s max: 0.010s std dev: 0.00000s window: 70
+[TOPIC_TYPE=control_msgs/JointControllerState]$rosmsg show control_msgs/JointControllerState =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+float64 set_point
+float64 process_value
+float64 process_value_dot
+float64 error
+float64 time_step
+float64 command
+float64 p
+float64 i
+float64 d
+float64 i_clamp
+bool antiwindup
+
+[TOPIC=/initialpose]$rostopic info /initialpose =====>
+Type: geometry_msgs/PoseWithCovarianceStamped
+
+Publishers: 
+ * /rviz (http://localhost:42605/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/initialpose]$timeout 1 rostopic hz /initialpose =====>
+subscribed to [/initialpose]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PoseWithCovarianceStamped]$rosmsg show geometry_msgs/PoseWithCovarianceStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/PoseWithCovariance pose
+  geometry_msgs/Pose pose
+    geometry_msgs/Point position
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion orientation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+  float64[36] covariance
+
+[TOPIC=/joint_states]$rostopic info /joint_states =====>
+Type: sensor_msgs/JointState
+
+Publishers: 
+ * /joint_state_publisher (http://localhost:41287/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/joint_states]$timeout 1 rostopic hz /joint_states =====>
+subscribed to [/joint_states]
+average rate: 10.017
+	min: 0.099s max: 0.100s std dev: 0.00037s window: 7
+[TOPIC_TYPE=sensor_msgs/JointState]$rosmsg show sensor_msgs/JointState =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string[] name
+float64[] position
+float64[] velocity
+float64[] effort
+
+[TOPIC=/move_base_simple/goal]$rostopic info /move_base_simple/goal =====>
+Type: geometry_msgs/PoseStamped
+
+Publishers: 
+ * /rviz (http://localhost:42605/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/move_base_simple/goal]$timeout 1 rostopic hz /move_base_simple/goal =====>
+subscribed to [/move_base_simple/goal]
+no new messages
+[TOPIC_TYPE=geometry_msgs/PoseStamped]$rosmsg show geometry_msgs/PoseStamped =====>
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Pose pose
+  geometry_msgs/Point position
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Quaternion orientation
+    float64 x
+    float64 y
+    float64 z
+    float64 w
+
+[TOPIC=/rosout]$rostopic info /rosout =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rviz (http://localhost:42605/)
+ * /joint_state_publisher (http://localhost:41287/)
+ * /robot_state_publisher (http://localhost:46795/)
+ * /harvestbot/controller_spawner (http://localhost:33727/)
+ * /gazebo (http://localhost:34649/)
+ * /gazebo_gui (http://localhost:38555/)
+ * /harvestbot_rqt (http://localhost:38637/)
+
+Subscribers: 
+ * /rosout (http://localhost:45629/)
+
+
+[TOPIC_HZ=/rosout]$timeout 1 rostopic hz /rosout =====>
+subscribed to [/rosout]
+average rate: 399.116
+	min: 0.000s max: 0.040s std dev: 0.00771s window: 272
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/rosout_agg]$rostopic info /rosout_agg =====>
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://localhost:45629/)
+
+Subscribers: None
+
+
+[TOPIC_HZ=/rosout_agg]$timeout 1 rostopic hz /rosout_agg =====>
+subscribed to [/rosout_agg]
+average rate: 407.895
+	min: 0.000s max: 0.044s std dev: 0.00904s window: 280
+[TOPIC_TYPE=rosgraph_msgs/Log]$rosmsg show rosgraph_msgs/Log =====>
+byte DEBUG=1
+byte INFO=2
+byte WARN=4
+byte ERROR=8
+byte FATAL=16
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+byte level
+string name
+string msg
+string file
+string function
+uint32 line
+string[] topics
+
+[TOPIC=/tf]$rostopic info /tf =====>
+Type: tf2_msgs/TFMessage
+
+Publishers: 
+ * /robot_state_publisher (http://localhost:46795/)
+
+Subscribers: 
+ * /rviz (http://localhost:42605/)
+
+
+[TOPIC_HZ=/tf]$timeout 1 rostopic hz /tf =====>
+subscribed to [/tf]
+average rate: 50.000
+	min: 0.020s max: 0.020s std dev: 0.00000s window: 36
+[TOPIC_TYPE=tf2_msgs/TFMessage]$rosmsg show tf2_msgs/TFMessage =====>
+geometry_msgs/TransformStamped[] transforms
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string child_frame_id
+  geometry_msgs/Transform transform
+    geometry_msgs/Vector3 translation
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion rotation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[TOPIC=/tf_static]$rostopic info /tf_static =====>
+Type: tf2_msgs/TFMessage
+
+Publishers: 
+ * /robot_state_publisher (http://localhost:46795/)
+
+Subscribers: 
+ * /rviz (http://localhost:42605/)
+
+
+[TOPIC_HZ=/tf_static]$timeout 1 rostopic hz /tf_static =====>
+subscribed to [/tf_static]
+no new messages
+[TOPIC_TYPE=tf2_msgs/TFMessage]$rosmsg show tf2_msgs/TFMessage =====>
+geometry_msgs/TransformStamped[] transforms
+  std_msgs/Header header
+    uint32 seq
+    time stamp
+    string frame_id
+  string child_frame_id
+  geometry_msgs/Transform transform
+    geometry_msgs/Vector3 translation
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Quaternion rotation
+      float64 x
+      float64 y
+      float64 z
+      float64 w
+
+[BAG]$timeout -s SIGINT 10 rosbag record -a =====>
+[0m[ INFO] [1543618869.978474923, 216.718000000]: Recording to 2018-12-01-07-01-09.bag.[0m
+[0m[ INFO] [1543618869.979618768, 216.719000000]: Subscribing to /harvestbot/slide_x_position_controller/state[0m
+[0m[ INFO] [1543618869.983651390, 216.724000000]: Subscribing to /harvestbot/camera1/image_raw/compressedDepth/parameter_updates[0m
+[0m[ INFO] [1543618869.986825035, 216.727000000]: Subscribing to /harvestbot/wheel_left_position_controller/state[0m
+[0m[ INFO] [1543618869.990027169, 216.730000000]: Subscribing to /harvestbot/slide_y_position_controller/pid/parameter_descriptions[0m
+[0m[ INFO] [1543618869.994057200, 216.734000000]: Subscribing to /tf[0m
+[0m[ INFO] [1543618869.997660344, 216.738000000]: Subscribing to /clicked_point[0m
+[0m[ INFO] [1543618870.001151307, 216.741000000]: Subscribing to /harvestbot/camera1/image_raw/theora/parameter_updates[0m
+[0m[ INFO] [1543618870.004741650, 216.745000000]: Subscribing to /harvestbot/wheel_right_position_controller/state[0m
+[0m[ INFO] [1543618870.008043655, 216.748000000]: Subscribing to /harvestbot/knife_position_controller/state[0m
+[0m[ INFO] [1543618870.011974246, 216.752000000]: Subscribing to /harvestbot/camera1/image_raw/compressedDepth[0m
+[0m[ INFO] [1543618870.014990271, 216.755000000]: Subscribing to /harvestbot/camera1/image_raw/compressed/parameter_updates[0m
+[0m[ INFO] [1543618870.017500810, 216.757000000]: Subscribing to /harvestbot/gripper_rotate_controller/pid/parameter_descriptions[0m
+[0m[ INFO] [1543618870.019764109, 216.760000000]: Subscribing to /move_base_simple/goal[0m
+[0m[ INFO] [1543618870.023079064, 216.763000000]: Subscribing to /harvestbot/knife_position_controller/pid/parameter_updates[0m
+[0m[ INFO] [1543618870.026675936, 216.767000000]: Subscribing to /harvestbot/laser/scan[0m
+[0m[ INFO] [1543618870.030455039, 216.770000000]: Subscribing to /harvestbot/slide_z_position_controller/pid/parameter_descriptions[0m
+[0m[ INFO] [1543618870.033398475, 216.773000000]: Subscribing to /harvestbot/gripper_rotate_controller/pid/parameter_updates[0m
+[0m[ INFO] [1543618870.036355301, 216.776000000]: Subscribing to /gazebo_gui/parameter_updates[0m
+[0m[ INFO] [1543618870.039070728, 216.779000000]: Subscribing to /tf_static[0m
+[0m[ INFO] [1543618870.042506252, 216.782000000]: Subscribing to /gazebo/parameter_descriptions[0m
+[0m[ INFO] [1543618870.045733097, 216.786000000]: Subscribing to /harvestbot/camera1/camera_info[0m
+[0m[ INFO] [1543618870.048705434, 216.789000000]: Subscribing to /harvestbot/joint_states[0m
+[0m[ INFO] [1543618870.051041383, 216.791000000]: Subscribing to /harvestbot/gripper_rotate_controller/state[0m
+[0m[ INFO] [1543618870.053316841, 216.793000000]: Subscribing to /harvestbot/camera1/image_raw/compressedDepth/parameter_descriptions[0m
+[0m[ INFO] [1543618870.055920909, 216.796000000]: Subscribing to /harvestbot/slide_x_position_controller/pid/parameter_descriptions[0m
+[0m[ INFO] [1543618870.059066875, 216.799000000]: Subscribing to /harvestbot/slide_z_position_controller/pid/parameter_updates[0m
+[0m[ INFO] [1543618870.061914632, 216.802000000]: Subscribing to /harvestbot/camera1/image_raw[0m
+[0m[ INFO] [1543618870.065716493, 216.806000000]: Subscribing to /harvestbot/slide_x_position_controller/pid/parameter_updates[0m
+[0m[ INFO] [1543618870.069276086, 216.809000000]: Subscribing to /harvestbot/camera1/image_raw/compressed[0m
+[0m[ INFO] [1543618870.072897330, 216.813000000]: Subscribing to /harvestbot/camera1/image_raw/compressed/parameter_descriptions[0m
+[0m[ INFO] [1543618870.075806956, 216.816000000]: Subscribing to /joint_states[0m
+[0m[ INFO] [1543618870.078529522, 216.818000000]: Subscribing to /rosout[0m
+[0m[ INFO] [1543618870.083036432, 216.823000000]: Subscribing to /harvestbot/slide_z_position_controller/state[0m
+[0m[ INFO] [1543618870.086012008, 216.826000000]: Subscribing to /harvestbot/camera1/parameter_updates[0m
+[0m[ INFO] [1543618870.089274852, 216.829000000]: Subscribing to /initialpose[0m
+[0m[ INFO] [1543618870.091965069, 216.832000000]: Subscribing to /harvestbot/wheel_right_position_controller/pid/parameter_descriptions[0m
+[0m[ INFO] [1543618870.094494428, 216.834000000]: Subscribing to /rosout_agg[0m
+[0m[ INFO] [1543618870.097304115, 216.837000000]: Subscribing to /harvestbot/camera1/image_raw/theora/parameter_descriptions[0m
+[0m[ INFO] [1543618870.100427020, 216.840000000]: Subscribing to /harvestbot/wheel_left_position_controller/pid/parameter_updates[0m
+[0m[ INFO] [1543618870.104276041, 216.844000000]: Subscribing to /gazebo_gui/parameter_descriptions[0m
+[0m[ INFO] [1543618870.107446737, 216.847000000]: Subscribing to /harvestbot/slide_y_position_controller/state[0m
+[0m[ INFO] [1543618870.111497218, 216.851000000]: Subscribing to /harvestbot/slide_x_position_controller/command[0m
+[0m[ INFO] [1543618870.114787621, 216.855000000]: Subscribing to /gazebo/link_states[0m
+[0m[ INFO] [1543618870.118761433, 216.859000000]: Subscribing to /harvestbot/knife_position_controller/pid/parameter_descriptions[0m
+[0m[ INFO] [1543618870.122143858, 216.862000000]: Subscribing to /harvestbot/wheel_right_position_controller/pid/parameter_updates[0m
+[0m[ INFO] [1543618870.166515978, 216.906000000]: Subscribing to /gazebo/model_states[0m
+[0m[ INFO] [1543618870.169621974, 216.909000000]: Subscribing to /clock[0m
+[0m[ INFO] [1543618870.172066393, 216.912000000]: Subscribing to /harvestbot/camera1/parameter_descriptions[0m
+[0m[ INFO] [1543618870.176182793, 216.916000000]: Subscribing to /harvestbot/slide_y_position_controller/pid/parameter_updates[0m
+[0m[ INFO] [1543618870.180620062, 216.919000000]: Subscribing to /harvestbot/wheel_left_position_controller/pid/parameter_descriptions[0m
+[0m[ INFO] [1543618870.184244315, 216.924000000]: Subscribing to /harvestbot/camera1/image_raw/theora[0m
+[0m[ INFO] [1543618870.187013163, 216.927000000]: Subscribing to /gazebo/parameter_updates[0m
+invalid option `
