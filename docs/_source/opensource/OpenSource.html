@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>PC Setup &mdash; FarmHarvestBot  documentation</title>
+  <title>OpenSource and Licenses &mdash; FarmHarvestBot  documentation</title>
   
 
   
@@ -29,8 +29,7 @@
   <link rel="stylesheet" href="../../_static/override.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="FarmHarvestBot Installation" href="../installation/Installation---FarmHarvestBot.html" />
-    <link rel="prev" title="FarmHarvestBot Project Document" href="../../index.html" /> 
+    <link rel="prev" title="Resources" href="../resources/Resources.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -85,16 +84,8 @@
 <li class="toctree-l1"><a class="reference external" href="http://bit.ly/2PqPy3e">FarmHarvestBot Introduction Slides</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://paper.dropbox.com/doc/FBTUG-FarmHarvestBot--ATA_PO6BSWn_n1pJsIed8Yn7Ag-w2FKkhc4ZTlj6knhOK43p">FarmHarvestBot Project</a></li>
 </ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">PC Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#virtual-machine-configuration-recommended">Virtual Machine Configuration (<strong>Recommended</strong>)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#limitations-of-virtual-box">Limitations of Virtual Box</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#common-vm-issues">Common VM Issues</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#manual-setup">Manual Setup</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../setup/PC-Setup---ROS-Kinetic.html">PC Setup</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/Installation---FarmHarvestBot.html">FarmHarvestBot Installation and Usage</a></li>
@@ -114,8 +105,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../resources/Resources.html">Resources</a></li>
 </ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../opensource/OpenSource.html">Open Source and Licences</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Open Source and Licences</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#open-source-software">Open Source Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open-source-hardware">Open Source Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#software-license">Software License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-license">Hardware License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documents-license">Documents License</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -171,14 +169,14 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>PC Setup</li>
+      <li>OpenSource and Licenses</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/FBTUG/FarmHarvestBot/blob/master/docs/gh_pages/_source/setup/PC-Setup---ROS-Kinetic.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/FBTUG/FarmHarvestBot/blob/master/docs/gh_pages/_source/opensource/OpenSource.md" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -192,35 +190,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="pc-setup">
-<span id="pc-setup"></span><h1>PC Setup<a class="headerlink" href="#pc-setup" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="virtual-machine-configuration-recommended">
-<span id="virtual-machine-configuration-recommended"></span><h2>Virtual Machine Configuration (<strong>Recommended</strong>)<a class="headerlink" href="#virtual-machine-configuration-recommended" title="Permalink to this headline">¶</a></h2>
-<p>The VM method is the most convenient method of utilizing the training materials:</p>
-<ol class="simple">
-<li><a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">Download virtual box</a></li>
-<li><a class="reference external" href="https://drive.google.com/file/d/1TvNun7dO-KR-Z_7JN2-8LeWV9BNeLksB/view">Download ROS Kinetic  VM</a></li>
-<li><a class="reference external" href="https://www.virtualbox.org/manual/ch01.html#ovf">Import image into virtual box</a></li>
-<li>Start virtual machine</li>
-<li>Log into virtual machine, user: <code class="docutils literal notranslate"><span class="pre">osboxes</span></code>, pass: <code class="docutils literal notranslate"><span class="pre">osboxes.org</span></code> (no spaces or hyphens)</li>
-</ol>
-<div class="section" id="limitations-of-virtual-box">
-<span id="limitations-of-virtual-box"></span><h3>Limitations of Virtual Box<a class="headerlink" href="#limitations-of-virtual-box" title="Permalink to this headline">¶</a></h3>
-<p>The Virtual Box is limited both in hardware capability(due to VM limitations) and package installs (to save space).  Kinect-based demos aren’t possible due to USB limitations.</p>
-</div>
-<div class="section" id="common-vm-issues">
-<span id="common-vm-issues"></span><h3>Common VM Issues<a class="headerlink" href="#common-vm-issues" title="Permalink to this headline">¶</a></h3>
-<p>On most new systems, Virtual Box and VMs work out of the box.  The following is a list of issues others have encountered and solutions:</p>
+  <div class="section" id="opensource-and-licenses">
+<span id="opensource-and-licenses"></span><h1>OpenSource and Licenses<a class="headerlink" href="#opensource-and-licenses" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="open-source-software">
+<span id="open-source-software"></span><h2>Open Source Software<a class="headerlink" href="#open-source-software" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Virtualization must be enabled - Older systems do not have virtualization enabled (by default).  Virtualization must be enabled in the BIOS.  See <a class="reference external" href="http://www.sysprobs.com/disable-enable-virtualization-technology-bios">http://www.sysprobs.com/disable-enable-virtualization-technology-bios</a> for more information.</li>
+<li><a class="reference external" href="https://github.com/FBTUG/farmharvestbot_base">farmharvestbot_base software</a></li>
+<li><a class="reference external" href="https://github.com/FBTUG/FarmHarvestBot/tree/master/mechanical/gripper">夾具 - hand_bringup firmware</a></li>
 </ul>
 </div>
+<div class="section" id="open-source-hardware">
+<span id="open-source-hardware"></span><h2>Open Source Hardware<a class="headerlink" href="#open-source-hardware" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://cad.onshape.com/documents/42dc577e79d53860f9ca77b5/w/f77afde14897320e043a8323/e/91d48cbd7dbe9c51ca289d95">夾具 - hand_bringup mechanical</a></li>
+</ul>
 </div>
-<div class="section" id="manual-setup">
-<span id="manual-setup"></span><h2>Manual Setup<a class="headerlink" href="#manual-setup" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><a class="reference external" href="https://paper.dropbox.com/doc/FBTUG-FarmHarvestBot--ATDe887EhobuDuaVhVkk1wAdAg-fNLXTm8xpJD8plZd3cTOT">FarmHarvestBot 安裝與使用</a></li>
-</ol>
+<div class="section" id="software-license">
+<span id="software-license"></span><h2>Software License<a class="headerlink" href="#software-license" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Main software is released under the Apache license 2.0. However, some of the sources are under the licenses 3-Clause BSD License.</li>
+</ul>
+</div>
+<div class="section" id="hardware-license">
+<span id="hardware-license"></span><h2>Hardware License<a class="headerlink" href="#hardware-license" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>FarmHarvestBot is an open source hardware project</li>
+</ul>
+</div>
+<div class="section" id="documents-license">
+<span id="documents-license"></span><h2>Documents License<a class="headerlink" href="#documents-license" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Documents are released under the CC BY 3.0 TW.</li>
+</ul>
 </div>
 </div>
 
@@ -232,10 +233,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../installation/Installation---FarmHarvestBot.html" class="btn btn-neutral float-right" title="FarmHarvestBot Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="../../index.html" class="btn btn-neutral" title="FarmHarvestBot Project Document" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../resources/Resources.html" class="btn btn-neutral" title="Resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

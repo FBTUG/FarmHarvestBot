@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>PC Setup &mdash; FarmHarvestBot  documentation</title>
+  <title>Modules &mdash; FarmHarvestBot  documentation</title>
   
 
   
@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="../../_static/override.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="FarmHarvestBot Installation" href="../installation/Installation---FarmHarvestBot.html" />
-    <link rel="prev" title="FarmHarvestBot Project Document" href="../../index.html" /> 
+    <link rel="next" title="Tools" href="../tools/Tools.html" />
+    <link rel="prev" title="Development" href="../development/Development.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -85,16 +85,8 @@
 <li class="toctree-l1"><a class="reference external" href="http://bit.ly/2PqPy3e">FarmHarvestBot Introduction Slides</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://paper.dropbox.com/doc/FBTUG-FarmHarvestBot--ATA_PO6BSWn_n1pJsIed8Yn7Ag-w2FKkhc4ZTlj6knhOK43p">FarmHarvestBot Project</a></li>
 </ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">PC Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#virtual-machine-configuration-recommended">Virtual Machine Configuration (<strong>Recommended</strong>)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#limitations-of-virtual-box">Limitations of Virtual Box</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#common-vm-issues">Common VM Issues</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#manual-setup">Manual Setup</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../setup/PC-Setup---ROS-Kinetic.html">PC Setup</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/Installation---FarmHarvestBot.html">FarmHarvestBot Installation and Usage</a></li>
@@ -102,8 +94,19 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../development/Development.html">Development</a></li>
 </ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../modules/Modules.html">Modules</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#core">core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#msgs">msgs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#harvestbot-model">Harvestbot_model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#harvest">harvest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vision">vision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arm">arm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#car">car</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#test">test</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tools/Tools.html">Tools</a></li>
@@ -171,14 +174,14 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>PC Setup</li>
+      <li>Modules</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/FBTUG/FarmHarvestBot/blob/master/docs/gh_pages/_source/setup/PC-Setup---ROS-Kinetic.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/FBTUG/FarmHarvestBot/blob/master/docs/gh_pages/_source/modules/Modules.md" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -192,35 +195,59 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="pc-setup">
-<span id="pc-setup"></span><h1>PC Setup<a class="headerlink" href="#pc-setup" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="virtual-machine-configuration-recommended">
-<span id="virtual-machine-configuration-recommended"></span><h2>Virtual Machine Configuration (<strong>Recommended</strong>)<a class="headerlink" href="#virtual-machine-configuration-recommended" title="Permalink to this headline">¶</a></h2>
-<p>The VM method is the most convenient method of utilizing the training materials:</p>
-<ol class="simple">
-<li><a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">Download virtual box</a></li>
-<li><a class="reference external" href="https://drive.google.com/file/d/1TvNun7dO-KR-Z_7JN2-8LeWV9BNeLksB/view">Download ROS Kinetic  VM</a></li>
-<li><a class="reference external" href="https://www.virtualbox.org/manual/ch01.html#ovf">Import image into virtual box</a></li>
-<li>Start virtual machine</li>
-<li>Log into virtual machine, user: <code class="docutils literal notranslate"><span class="pre">osboxes</span></code>, pass: <code class="docutils literal notranslate"><span class="pre">osboxes.org</span></code> (no spaces or hyphens)</li>
-</ol>
-<div class="section" id="limitations-of-virtual-box">
-<span id="limitations-of-virtual-box"></span><h3>Limitations of Virtual Box<a class="headerlink" href="#limitations-of-virtual-box" title="Permalink to this headline">¶</a></h3>
-<p>The Virtual Box is limited both in hardware capability(due to VM limitations) and package installs (to save space).  Kinect-based demos aren’t possible due to USB limitations.</p>
-</div>
-<div class="section" id="common-vm-issues">
-<span id="common-vm-issues"></span><h3>Common VM Issues<a class="headerlink" href="#common-vm-issues" title="Permalink to this headline">¶</a></h3>
-<p>On most new systems, Virtual Box and VMs work out of the box.  The following is a list of issues others have encountered and solutions:</p>
+  <div class="section" id="modules">
+<span id="modules"></span><h1>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li>Virtualization must be enabled - Older systems do not have virtualization enabled (by default).  Virtualization must be enabled in the BIOS.  See <a class="reference external" href="http://www.sysprobs.com/disable-enable-virtualization-technology-bios">http://www.sysprobs.com/disable-enable-virtualization-technology-bios</a> for more information.</li>
+<li><a class="reference external" href="https://paper.dropbox.com/doc/FBTUG-FarmHarvestBot-Base--ATHsJq0_N0knNQDuFdo~9HsTAg-ychnvBySo6k1JsVhE64o9">FarmHarvestBot Base 帶起</a></li>
+</ul>
+<div class="section" id="core">
+<span id="core"></span><h2>core<a class="headerlink" href="#core" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>fhb Action_lib framework</li>
+<li>Project library</li>
+<li>Report framework</li>
 </ul>
 </div>
+<div class="section" id="basic">
+<span id="basic"></span><h2>basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>fsm</li>
+<li>NodeJS ROS Test</li>
+<li>ActionLib for Web</li>
+</ul>
 </div>
-<div class="section" id="manual-setup">
-<span id="manual-setup"></span><h2>Manual Setup<a class="headerlink" href="#manual-setup" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><a class="reference external" href="https://paper.dropbox.com/doc/FBTUG-FarmHarvestBot--ATDe887EhobuDuaVhVkk1wAdAg-fNLXTm8xpJD8plZd3cTOT">FarmHarvestBot 安裝與使用</a></li>
-</ol>
+<div class="section" id="msgs">
+<span id="msgs"></span><h2>msgs<a class="headerlink" href="#msgs" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="harvestbot-model">
+<span id="harvestbot-model"></span><h2>Harvestbot_model<a class="headerlink" href="#harvestbot-model" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="harvest">
+<span id="harvest"></span><h2>harvest<a class="headerlink" href="#harvest" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="vision">
+<span id="vision"></span><h2>vision<a class="headerlink" href="#vision" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>ROS with RPI camera</li>
+<li>ROS+RPI camera+python opencv</li>
+<li>ROS + YOLO</li>
+<li>Publishing an image from disk</li>
+</ul>
+</div>
+<div class="section" id="arm">
+<span id="arm"></span><h2>arm<a class="headerlink" href="#arm" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>MoveIT</li>
+</ul>
+</div>
+<div class="section" id="car">
+<span id="car"></span><h2>car<a class="headerlink" href="#car" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="test">
+<span id="test"></span><h2>test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>unittest by bag file</li>
+</ul>
 </div>
 </div>
 
@@ -232,10 +259,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../installation/Installation---FarmHarvestBot.html" class="btn btn-neutral float-right" title="FarmHarvestBot Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../tools/Tools.html" class="btn btn-neutral float-right" title="Tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../../index.html" class="btn btn-neutral" title="FarmHarvestBot Project Document" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../development/Development.html" class="btn btn-neutral" title="Development" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -1,0 +1,464 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FarmHarvestBot Installation &mdash; FarmHarvestBot  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/override.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Development" href="../development/Development.html" />
+    <link rel="prev" title="PC Setup" href="../setup/PC-Setup---ROS-Kinetic.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  
+  <script src="../../_static/clipboard.min.js"></script>
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> FarmHarvestBot
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference external" href="http://bit.ly/2PqPy3e">FarmHarvestBot Introduction Slides</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://paper.dropbox.com/doc/FBTUG-FarmHarvestBot--ATA_PO6BSWn_n1pJsIed8Yn7Ag-w2FKkhc4ZTlj6knhOK43p">FarmHarvestBot Project</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../setup/PC-Setup---ROS-Kinetic.html">PC Setup</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FarmHarvestBot Installation and Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cli-user-manual">CLI User Manual</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/Development.html">Development</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/Modules.html">Modules</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/Tools.html">Tools</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../maintain/Maintain.html">Maintain</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../resources/Resources.html">Resources</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../opensource/OpenSource.html">Open Source and Licences</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">FarmHarvestBot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+      
+  <div class="header-override">
+    <a href="https://www.facebook.com/groups/FarmBotTUG/">
+      <img src="../../static/FBTUG-logo-horizontal.png"/>
+    </a>
+    <p>
+      <a href="https://www.facebook.com/groups/FarmBotTUG/">FBTUG Facebook</a>
+    </p>
+  </div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>FarmHarvestBot Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/FBTUG/FarmHarvestBot/blob/master/docs/gh_pages/_source/installation/Installation---FarmHarvestBot.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="farmharvestbot-installation">
+<span id="farmharvestbot-installation"></span><h1>FarmHarvestBot Installation<a class="headerlink" href="#farmharvestbot-installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="usage">
+<span id="usage"></span><h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p class="first">Build</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="n">cd</span> <span class="o">~/</span><span class="n">catkin_ws</span><span class="o">/</span><span class="n">src</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">FBTUG</span><span class="o">/</span><span class="n">farmharvestbot_base</span>
+<span class="n">cd</span> <span class="o">~/</span><span class="n">catkin_ws</span>
+<span class="n">catkin_make</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre>~/catkin_ws/src/farmharvestbot_base/10-basic/cli/launch$ roslaunch fhb.launch
+</pre></div>
+</div>
+</li>
+<li><p class="first">fhb.launch setting</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre> <span class="o">&lt;</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;cli_enabled&quot;</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;false&quot;</span><span class="o">/&gt;</span>
+ <span class="o">&lt;</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;harvest_enabled&quot;</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;true&quot;</span><span class="o">/&gt;</span>
+ <span class="o">&lt;</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;model_enabled&quot;</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;true&quot;</span><span class="o">/&gt;</span>
+ <span class="o">&lt;</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;vision_enabled&quot;</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;true&quot;</span><span class="o">/&gt;</span>
+ <span class="o">&lt;</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;camera_enabled&quot;</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;false&quot;</span><span class="o">/&gt;</span>
+ <span class="o">&lt;</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;feature_detector_enabled&quot;</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;false&quot;</span><span class="o">/&gt;</span>
+ <span class="o">&lt;</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;arm_enabled&quot;</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;true&quot;</span><span class="o">/&gt;</span>
+ <span class="o">&lt;</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;fake_arm_enabled&quot;</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;false&quot;</span><span class="o">/&gt;</span>
+ <span class="o">&lt;</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;car_enabled&quot;</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;true&quot;</span><span class="o">/&gt;</span>
+ <span class="o">&lt;</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;sim_enabled&quot;</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;false&quot;</span><span class="o">/&gt;</span>
+ <span class="o">&lt;</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;test_enabled&quot;</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;false&quot;</span><span class="o">/&gt;</span>
+ <span class="o">&lt;</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;fsm_enabled&quot;</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;false&quot;</span><span class="o">/&gt;</span>   
+</pre></div>
+</div>
+</li>
+<li><p class="first"><a class="reference external" href="https://paper.dropbox.com/doc/FBTUG-FarmHarvestBot--ATDe887EhobuDuaVhVkk1wAdAg-fNLXTm8xpJD8plZd3cTOT">More information</a></p>
+</li>
+</ol>
+</div>
+<div class="section" id="cli-user-manual">
+<span id="cli-user-manual"></span><h2>CLI User Manual<a class="headerlink" href="#cli-user-manual" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre> oroslaunch fhb.launch 
+ SUMMARY
+ ========
+
+ PARAMETERS
+  * /fhb_arm/mode: 0
+  * /fhb_car/mode: 0
+  * /fhb_cli/mode: 0
+  * /fhb_harvest/mode: 0
+  * /fhb_vision/mode: 0
+  * /rosdistro: kinetic
+  * /rosversion: 1.12.13
+
+ NODES
+   /
+     fhb_arm (farmharvestbot_arm/arm_node.py)
+     fhb_car (farmharvestbot_car/car_node.py)
+     fhb_cli (farmharvestbot_cli/cli_node.py)
+     fhb_harvest (farmharvestbot_harvest/harvest_node.py)
+     fhb_vision (farmharvestbot_vision/vision_node.py)
+
+ Base&gt;help
+
+ Documented commands (type help &lt;topic&gt;):
+ ========================================
+ arm  car  harvest  help  quit  sim  sys  test  version  vision
+
+ Base&gt;help sys
+ sys sub command directory
+ Base&gt;sys
+ Base:sys&gt;help
+
+ Documented commands (type help &lt;topic&gt;):
+ ========================================
+ actionclient  help  monitor_statistic  quit
+
+ Base:sys&gt;quit
+ Base&gt;harvest
+ Base:harvest&gt;help
+
+ Documented commands (type help &lt;topic&gt;):
+ ========================================
+ help  quit
+
+ Base:harvest&gt;quit
+ Base&gt;vision
+ Base:vision&gt;help
+
+ Documented commands (type help &lt;topic&gt;):
+ ========================================
+ help  quit
+
+ Base:vision&gt;quit
+ Base&gt;arm
+ Base:arm&gt;help
+
+ Documented commands (type help &lt;topic&gt;):
+ ========================================
+ arm_setup  cmd_pos  help  quit
+
+ Base:arm&gt;quit
+ Base&gt;car
+ Base:car&gt;help
+
+ Documented commands (type help &lt;topic&gt;):
+ ========================================
+ help  quit
+
+ Base:car&gt;quit
+ Base&gt;sim
+ Base:sim&gt;help
+
+ Documented commands (type help &lt;topic&gt;):
+ ========================================
+ help  quit  sim_setup  sim_turtlesim_key
+
+ Base:sim&gt;quit
+ Base&gt;help
+
+ Documented commands (type help &lt;topic&gt;):
+ ========================================
+ arm  car  harvest  help  quit  sim  sys  test  version  vision
+
+ Base&gt;sys
+
+ Base:sys&gt;actionclient
+ [INFO] [1541468190.900285]: missing enable information, use default: 101 1 0 0 0.0 0.0 test
+ [INFO] [1541468190.900671]: act_grp=harvest
+ [INFO] [1541468191.028853]: harvest_act: Executing... Goal =
+ act_id: 101
+ act_subid: 1
+ i1: 0
+ i2: 0
+ f1: 0.0
+ f2: 0.0
+ line: &quot;test&quot;
+ [INFO] [1541468191.030214]: feedback: notice_id: 0
+ progrsss: 0
+ fb_msg: &#39;&#39;
+ [INFO] [1541468192.033419]: feedback: notice_id: 0
+ progrsss: 20
+ fb_msg: &#39;&#39;
+ [INFO] [1541468193.030142]: feedback: notice_id: 0
+ progrsss: 40
+ fb_msg: &#39;&#39;
+ [INFO] [1541468194.030546]: feedback: notice_id: 0
+ progrsss: 60
+ fb_msg: &#39;&#39;
+ [INFO] [1541468195.031611]: feedback: notice_id: 0
+ progrsss: 80
+ fb_msg: &#39;&#39;
+ [INFO] [1541468196.030016]: harvest_act Succeeded :success
+ [INFO] [1541468196.052794]: status: 3
+ error_level: 0
+ error_msg: &quot;success&quot;
+ Base:sys&gt;monitor_statistic
+ [INFO] [1541468202.330091]: missing enable information, use default: 1
+ [INFO] [1541468202.341122]: sys monitor statistic been setup!
+ Base:sys&gt;[INFO] [1541468202.569276]: cli_node:receive from /diagnostics: header: 
+   seq: 87
+   stamp: 
+     secs: 1541468202
+     nsecs: 568011045
+   frame_id: &#39;&#39;
+ status: 
+   - 
+     level: 0
+     name: &quot;fhb_vision: vision_statistic&quot;
+     message: &quot;vision statistic&quot;
+     hardware_id: &quot;vision&quot;
+     values: 
+       - 
+     key: &quot;fruit_cnt&quot;
+     value: &quot;87&quot;
+
+ Base:sys&gt;quit
+ Base&gt;help
+
+ Documented commands (type help &lt;topic&gt;):
+ ========================================
+ arm  car  harvest  help  quit  sim  sys  test  version  vision
+
+ Base&gt;version
+ V0.0.5
+ Base&gt;quit
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../development/Development.html" class="btn btn-neutral float-right" title="Development" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../setup/PC-Setup---ROS-Kinetic.html" class="btn btn-neutral" title="PC Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div class="footer-override">
+    <a href="https://www.facebook.com/groups/FarmBotTUG/">FBTUG FB
+    </a>
+  </div>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright CC BY 3.0 TW
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+  <script>
+  var pre = document.getElementsByTagName('pre');
+  for (var i = 0; i < pre.length; i++) {
+    var button = document.createElement('button');
+    button.className = 'btn-copyboard fa fa-copy btn';
+    pre[i].before(button);
+  }
+  var clipboard = new Clipboard('.btn-copyboard', {
+    target: function(trigger) {return trigger.nextElementSibling;}
+  });
+  function showSuccess(elem){elem.setAttribute('class','btn-copyboard fa fa-check btn');}
+  function sleep (time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }
+  clipboard.on('success',function(e){
+    showSuccess(e.trigger);
+    sleep(350).then(() => {e.clearSelection();
+      e.trigger.setAttribute('class','btn-copyboard fa fa-copy btn');})
+  });
+  </script>
+
+
+</body>
+</html>
