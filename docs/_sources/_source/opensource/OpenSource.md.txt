@@ -14,7 +14,7 @@
 
 ## Software License
 
-* Main software is released under the Apache license 2.0. However, some of the sources are under the licenses 3-Clause BSD License.
+* Main software is released under the Apache license 2.0. However, some of the sources are under the MIT and licenses 3-Clause BSD License.
 
 ## Hardware License
 

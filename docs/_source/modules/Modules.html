@@ -87,6 +87,7 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../setup/PC-Setup---ROS-Kinetic.html">PC Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../setup/Setup-SBC.html">SBC Setup</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/Installation---FarmHarvestBot.html">FarmHarvestBot Installation and Usage</a></li>
@@ -205,46 +206,103 @@
 <ul class="simple">
 <li>fhb Action_lib framework</li>
 <li>Project library</li>
-<li>Report framework</li>
+<li>Report framework
+<img alt="" src="../../_images/report1.png" /></li>
 </ul>
 </div>
 <div class="section" id="basic">
 <span id="basic"></span><h2>basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="n">roslaunch</span> <span class="o">./</span><span class="mi">10</span><span class="o">-</span><span class="n">basic</span><span class="o">/</span><span class="n">cli</span><span class="o">/</span><span class="n">launch</span><span class="o">/</span><span class="n">cli</span><span class="o">.</span><span class="n">launch</span>
+<span class="n">roslaunch</span>  <span class="o">./</span><span class="mi">10</span><span class="o">-</span><span class="n">basic</span><span class="o">/</span><span class="n">cli</span><span class="o">/</span><span class="n">launch</span><span class="o">/</span><span class="n">cli_sim</span><span class="o">.</span><span class="n">launch</span>
+<span class="n">roslaunch</span>  <span class="o">./</span><span class="mi">10</span><span class="o">-</span><span class="n">basic</span><span class="o">/</span><span class="n">cli</span><span class="o">/</span><span class="n">launch</span><span class="o">/</span><span class="n">fsm</span><span class="o">.</span><span class="n">launch</span>
+<span class="n">roslaunch</span>  <span class="o">./</span><span class="mi">10</span><span class="o">-</span><span class="n">basic</span><span class="o">/</span><span class="n">cli</span><span class="o">/</span><span class="n">launch</span><span class="o">/</span><span class="n">sim</span><span class="o">.</span><span class="n">launch</span>
+</pre></div>
+</div>
 <ul class="simple">
-<li>fsm</li>
+<li>CLI
+<img alt="" src="../../_images/sim1.png" /></li>
 <li>NodeJS ROS Test</li>
-<li>ActionLib for Web</li>
+<li>ActionLib for Web
+<img alt="" src="../../_images/web1.png" /></li>
 </ul>
 </div>
 <div class="section" id="msgs">
 <span id="msgs"></span><h2>msgs<a class="headerlink" href="#msgs" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/FBTUG/farmharvestbot_base/tree/master/20-msgs/action">FhbAct.action</a></p>
 </div>
 <div class="section" id="harvestbot-model">
 <span id="harvestbot-model"></span><h2>Harvestbot_model<a class="headerlink" href="#harvestbot-model" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Installation</li>
+</ul>
+<p><a class="reference external" href="http://gazebosim.org/tutorials?tut=ros_installing&amp;fbclid=IwAR2LlxwI3-s2LaOrcWPE-FSZYbAoyndSzWMt_WpyePqJ6j40pdA0O_w5Rbg">安裝gazebo_ros_pkgs</a></p>
+<ul class="simple">
+<li>Usage</li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="n">以rviz觀看harvestbot</span><span class="p">:</span>
+<span class="n">roslaunch</span> <span class="n">harvestbot_description</span> <span class="n">harvestbot_rviz</span><span class="o">.</span><span class="n">launch</span>
+<span class="n">在gazebo模擬時可看到camera跟laser</span> <span class="n">scan訊號</span>
+
+<span class="n">以gazebo模擬harvestbot</span><span class="p">:</span>
+<span class="n">roslaunch</span> <span class="n">harvestbot_gazebo</span> <span class="n">harvestbot_world</span><span class="o">.</span><span class="n">launch</span>
+
+<span class="n">在gazebo模擬時可打開rqt發送topic控制harvestbot</span><span class="p">:</span>
+<span class="n">roslaunch</span> <span class="n">harvestbot_control</span> <span class="n">harvestbot_rqt</span><span class="o">.</span><span class="n">launch</span>
+</pre></div>
+</div>
+<p><img alt="" src="../../_images/model1.png" />
+<img alt="" src="../../_images/model_msgflow.png" />
+<img alt="" src="../../_images/model_race.png" /></p>
 </div>
 <div class="section" id="harvest">
 <span id="harvest"></span><h2>harvest<a class="headerlink" href="#harvest" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="n">roslaunch</span> <span class="o">./</span><span class="mi">30</span><span class="o">-</span><span class="n">harvest</span><span class="o">/</span><span class="n">launch</span><span class="o">/</span><span class="n">harvest_analyzer</span><span class="o">.</span><span class="n">launch</span>
+<span class="n">roslaunch</span> <span class="o">./</span><span class="mi">30</span><span class="o">-</span><span class="n">harvest</span><span class="o">/</span><span class="n">launch</span><span class="o">/</span><span class="n">harvest_sys</span><span class="o">.</span><span class="n">launch</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>fsm</li>
+</ul>
 </div>
 <div class="section" id="vision">
 <span id="vision"></span><h2>vision<a class="headerlink" href="#vision" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="n">roslaunch</span> <span class="o">./</span><span class="mi">40</span><span class="o">-</span><span class="n">vision</span><span class="o">/</span><span class="n">launch</span><span class="o">/</span><span class="n">vision_sys</span><span class="o">.</span><span class="n">launch</span>
+<span class="n">roslaunch</span>  <span class="o">./</span><span class="mi">40</span><span class="o">-</span><span class="n">vision</span><span class="o">/</span><span class="n">launch</span><span class="o">/</span><span class="n">vision_test</span><span class="o">.</span><span class="n">launch</span>
+</pre></div>
+</div>
 <ul class="simple">
 <li>ROS with RPI camera</li>
 <li>ROS+RPI camera+python opencv</li>
-<li>ROS + YOLO</li>
+<li>ROS + YOLO
+<img alt="" src="../../_images/darknet1.png" /></li>
 <li>Publishing an image from disk</li>
 </ul>
 </div>
 <div class="section" id="arm">
 <span id="arm"></span><h2>arm<a class="headerlink" href="#arm" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="n">roslaunch</span> <span class="o">./</span><span class="mi">50</span><span class="o">-</span><span class="n">arm</span><span class="o">/</span><span class="n">launch</span><span class="o">/</span><span class="n">arm_sys</span><span class="o">.</span><span class="n">launch</span>
+</pre></div>
+</div>
 <ul class="simple">
-<li>MoveIT</li>
+<li>MoveIT
+<a class="reference external" href="https://paper.dropbox.com/doc/FBTUG-FarmHarvestBot-MoveIT--ATJRGbqpsAU8Y6Escp~iWIpLAg-p2YqvAMuQikfHsMfeaefU">FarmHarvestBot 研究筆記-MoveIT</a>
+<img alt="" src="../../_images/moveit_mindmap.png" />
+<img alt="" src="../../_images/moveit_example1.png" />
+<img alt="" src="../../_images/moveit_xyz1.png" />
+<img alt="demo.launch" src="../../_images/moveit_demolaunch.png" /></li>
 </ul>
 </div>
 <div class="section" id="car">
 <span id="car"></span><h2>car<a class="headerlink" href="#car" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="n">roslaunch</span> <span class="o">./</span><span class="mi">60</span><span class="o">-</span><span class="n">car</span><span class="o">/</span><span class="n">launch</span><span class="o">/</span><span class="n">car_sys</span><span class="o">.</span><span class="n">launch</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="test">
 <span id="test"></span><h2>test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="n">roslaunch</span> <span class="o">./</span><span class="mi">80</span><span class="o">-</span><span class="n">test</span><span class="o">/</span><span class="n">launch</span><span class="o">/</span><span class="n">test_sys</span><span class="o">.</span><span class="n">launch</span>
+</pre></div>
+</div>
 <ul class="simple">
 <li>unittest by bag file</li>
 </ul>

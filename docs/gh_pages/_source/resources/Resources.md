@@ -18,7 +18,6 @@
 * [哈爸-採果專案軟體 farmharvestbot_base 開發心得分享與 V0.1 釋出](https://drive.google.com/open?id=143kx_UPAuk9bJIB4BkmTbK1rlivbSWb-)
 * [Kobe-開源版權分享討論](https://docs.google.com/presentation/d/1BLIfqCzlfkwFOy8xGHgAfaZeekAUJeDCl2Wykq7YUYA/edit?usp=sharing)
 * [Hao TE Liu-搖桿手臂實作分享](https://paper.dropbox.com/doc/Arduino-Uno-cnc-shield--AQbZPZwNl3Ggbts0fzGjzyZBAQ-NqmUuk6K21Fa2p6FzuGj2?fbclid=IwAR0uL6kCyNI8mWjogsjIc6U90MY-0Vl8VNngAW_cOck1RfL4WHJOAZp00yg)
-* [哈爸- farmharvestbot_v0.1 專案建構與 code 的解析](20181106-farmharvestbot_v0.1.pdf)
 * [20181120-farmharvestbot_v0.2.pdf](https://drive.google.com/open?id=1EetLBx3w-5ZIfeXSS_lVDvL1KXpoanrJ)
 
 * [FSM](https://docs.google.com/presentation/d/1H24BUjFrAJ1ux2A1mTW4fJhLbYuHkOq6uPqeRaFJ1FE/edit#slide=id.g46ab4974c8_0_0)
