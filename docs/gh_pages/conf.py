@@ -121,7 +121,7 @@ html_context = {
     "github_user": "FBTUG",
     "github_repo": "FarmHarvestBot",
     "github_version": current_branch,
-    "conf_py_path": "gh_pages/",
+    "conf_py_path": "master/docs/gh_pages/",
     "source_suffix": source_suffix,
     "css_files": ['_static/override.css'],
 }
